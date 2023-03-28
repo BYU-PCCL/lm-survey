@@ -53,17 +53,23 @@ class SurveyResults:
     def _estimate_standard_error(
         self,
         groups: pandas.core.groupby.generic.DataFrameGroupBy,
-        n_bootstraps: int = 1000,
+        n_bootstraps: int,
     ) -> pd.Series:
         bootstraps = pd.concat([self._bootstrap(groups) for _ in range(n_bootstraps)])
 
         return bootstraps.groupby(level=0).std()
 
-    def get_mean_score(self, slice_by: typing.List[str]) -> pd.DataFrame:
+    def get_stats(
+        self,
+        slice_by: typing.List[str],
+        n_bootstraps: int = 1000,
+    ) -> pd.DataFrame:
         groups = self.slice(columns=slice_by)
 
-        means = self._compute_mean(groups).rename("fraction_correct")
-        errors = self._estimate_standard_error(groups).rename("std_error")
+        means = self._compute_mean(groups=groups).rename("fraction_correct")
+        errors = self._estimate_standard_error(
+            groups=groups, n_bootstraps=n_bootstraps
+        ).rename("std_error")
         counts = groups.count().is_completion_correct.rename("n_samples")
 
         scores_df = pd.concat([means, errors, counts], axis=1)
@@ -98,4 +104,4 @@ if __name__ == "__main__":
         dependent_variable_samples=dependent_variable_samples
     )
 
-    print(survey_results.get_mean_score(slice_by=["gender"]))
+    print(survey_results.get_stats(slice_by=["gender"]))
