@@ -1,23 +1,19 @@
 from samplers.base_sampler import BaseSampler
 
 import torch
-from transformers import GPT2Tokenizer, GPT2LMHeadModel  # type: ignore
+from transformers import AutoTokenizer, AutoModel  # type: ignore
 
 
-class GPT2Sampler(BaseSampler):
+class HfSampler(BaseSampler):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        """
-        Supported models: 'gpt2', 'gpt2-medium', 'gpt2-large', 'gpt2-xl', 'distilgpt2'
-        """
+
         print(f"Loading {self.model_name}...")
 
-        self.model = GPT2LMHeadModel.from_pretrained(
-            self.model_name, device_map="balanced"
-        )
-        self.model.eval()  # type: ignore
+        self.model = AutoModel.from_pretrained(self.model_name, device_map="balanced")
+        self.model.eval()
 
-        self.tokenizer = GPT2Tokenizer.from_pretrained(
+        self.tokenizer = AutoTokenizer.from_pretrained(
             self.model_name, config=self.config_path
         )
         self.tokenizer.pad_token = self.tokenizer.eos_token
@@ -26,7 +22,7 @@ class GPT2Sampler(BaseSampler):
 
         if self.state_dict_path is not None:
             state_dict = torch.load(self.state_dict_path, map_location=self.device)
-            self.model.load_state_dict(state_dict)  # type: ignore
+            self.model.load_state_dict(state_dict)
 
         print(f"Using {torch.cuda.device_count()} GPUs.")
 
@@ -39,7 +35,7 @@ class GPT2Sampler(BaseSampler):
         ).to(self.device)
 
         with torch.no_grad():
-            output = self.model(**inputs)  # type: ignore
+            output = self.model(**inputs)
 
         # get logits for final word (the prediction) from model output
         logits = output.logits[-1][-1].to("cpu")
@@ -66,14 +62,12 @@ class GPT2Sampler(BaseSampler):
 
     def sample_several(self, prompt, temperature=0, n_tokens=10):
         inputs = self.tokenizer(prompt, return_tensors="pt").to(self.device)
-        tokens = self.model.generate(  # type: ignore
+        tokens = self.model.generate(
             **inputs,
             max_new_tokens=n_tokens,
             temperature=temperature,
             pad_token_id=self.tokenizer.eos_token_id,
-        ).to(  # type: ignore
-            "cpu"
-        )
+        ).to("cpu")
         preds = self.tokenizer.batch_decode(
             tokens, clean_up_tokenization_spaces=True, skip_special_tokens=True
         )
@@ -81,7 +75,7 @@ class GPT2Sampler(BaseSampler):
 
 
 if __name__ == "__main__":
-    sampler = GPT2Sampler("gpt2")
+    sampler = HfSampler("gpt2")
     text = sampler.get_best_next_token(
         prompt="What is the capital of France?\nThe capital of France is",
     )
