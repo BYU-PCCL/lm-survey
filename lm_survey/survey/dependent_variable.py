@@ -1,6 +1,10 @@
 import typing
 import pandas as pd
 from lm_survey.constants import MULTIPLE_CHOICE_LIST
+from lm_survey.prompt_templates import (
+    DEPENDENT_VARIABLE_TEMPLATE,
+    format_multiple_choice_options,
+)
 
 
 class DependentVariable:
@@ -20,19 +24,9 @@ class DependentVariable:
         self.invalid_options = set(invalid_options)
 
     def templatize(self) -> str:
-        sep = "\n\n"
-        return sep.join(
-            [
-                f"Question: {self.question}",
-                "\n".join(
-                    [
-                        f"{MULTIPLE_CHOICE_LIST[i]}) {choice}"
-                        for i, choice in enumerate(self.valid_options)
-                    ]
-                ),
-                f"Please respond with the letter of the answer choice that best fits the self-identified person's response.",
-                f"Answer:",
-            ]
+        return DEPENDENT_VARIABLE_TEMPLATE.format(
+            question=self.question,
+            choices=format_multiple_choice_options(self.valid_options),
         )
 
     def is_valid(self, row: pd.Series) -> bool:

@@ -1,7 +1,12 @@
 import typing
 import pandas as pd
 
-from . import IndependentVariable, DependentVariable, DependentVariableSample
+from lm_survey.survey import (
+    IndependentVariable,
+    DependentVariable,
+    DependentVariableSample,
+)
+from lm_survey.prompt_templates import INDEPENDENT_VARIABLE_SUMMARY_TEMPLATE
 import json
 import functools
 
@@ -60,12 +65,9 @@ class Survey:
     def _templatize(
         self, independent_variable_summary: str, dependent_variable: DependentVariable
     ) -> str:
-        return "\n\n".join(
-            [
-                # TODO(alexgshaw): Make this more generalizable.
-                f"Self-Identification: {independent_variable_summary}",
-                dependent_variable.templatize(),
-            ]
+        return INDEPENDENT_VARIABLE_SUMMARY_TEMPLATE.format(
+            context_summary=independent_variable_summary,
+            dependent_variable_prompt=dependent_variable.templatize(),
         )
 
     def iterate(
