@@ -36,13 +36,13 @@ class Survey:
                 return func(self, row)
             except ValueError as error:
                 raise ValueError(
-                    f"Row does not contain all fields for backstory. {error}"
+                    f"Row does not contain all fields for the independent variable summary. {error}"
                 )
 
         return wrapper
 
     @_handle_missing_independent_variable
-    def _create_backstory(self, row: pd.Series) -> str:
+    def _create_independent_variable_summary(self, row: pd.Series) -> str:
         return " ".join(
             [
                 independent_variable.to_sentence(row)
@@ -57,11 +57,13 @@ class Survey:
             for independent_variable in self.independent_variables
         }
 
-    def _templatize(self, backstory: str, dependent_variable: DependentVariable) -> str:
+    def _templatize(
+        self, independent_variable_summary: str, dependent_variable: DependentVariable
+    ) -> str:
         return "\n\n".join(
             [
                 # TODO(alexgshaw): Make this more generalizable.
-                f"Self-Identification: {backstory}",
+                f"Self-Identification: {independent_variable_summary}",
                 dependent_variable.templatize(),
             ]
         )
@@ -79,7 +81,9 @@ class Survey:
         # The index from iterrows gives type errors when using it as a key in iloc.
         for i, (_, row) in enumerate(self.df.iterrows()):
             try:
-                backstory = self._create_backstory(row)
+                independent_variable_summary = (
+                    self._create_independent_variable_summary(row)
+                )
             except ValueError:
                 continue
 
@@ -91,7 +95,9 @@ class Survey:
                 ):
                     continue
 
-                prompt = self._templatize(backstory, dependent_variable)
+                prompt = self._templatize(
+                    independent_variable_summary, dependent_variable
+                )
                 correct_letter = dependent_variable.get_correct_letter(row)
                 independent_variables = self._get_independent_variable_dict(row)
 
