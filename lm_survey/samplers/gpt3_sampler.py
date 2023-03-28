@@ -1,4 +1,4 @@
-from samplers.base_sampler import BaseSampler
+from lm_survey.samplers.base_sampler import BaseSampler
 import openai
 
 

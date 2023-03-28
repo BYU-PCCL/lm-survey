@@ -1,18 +1,16 @@
-from samplers.gpt2_sampler import GPT2Sampler
-from samplers.gpt3_sampler import GPT3Sampler
-from samplers.base_sampler import BaseSampler
+from lm_survey.samplers.hf_sampler import HfSampler
+from lm_survey.samplers.gpt3_sampler import GPT3Sampler
+from lm_survey.samplers.base_sampler import BaseSampler
 
 
 class AutoSampler(BaseSampler):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-        if self.model_name.startswith("gpt2"):
-            self.sampler = GPT2Sampler(*args, **kwargs)
-        elif self.model_name.startswith("gpt3"):
+        if self.model_name.startswith("gpt3"):
             self.sampler = GPT3Sampler(*args, **kwargs)
         else:
-            raise ValueError(f"Model name {self.model_name} not supported")
+            self.sampler = HfSampler(*args, **kwargs)
 
     def send_prompt(self, prompt, n_probs):
         return self.sampler.send_prompt(prompt, n_probs)

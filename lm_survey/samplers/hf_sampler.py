@@ -1,7 +1,9 @@
-from samplers.base_sampler import BaseSampler
+from lm_survey.samplers.base_sampler import BaseSampler
 
 import torch
-from transformers import AutoTokenizer, AutoModel  # type: ignore
+
+# TODO(alexgshaw): Update this once the tokenizer name is correct for Llama
+from transformers import AutoTokenizer, AutoModelForCausalLM, LlamaTokenizer  # type: ignore
 
 
 class HfSampler(BaseSampler):
@@ -10,10 +12,13 @@ class HfSampler(BaseSampler):
 
         print(f"Loading {self.model_name}...")
 
-        self.model = AutoModel.from_pretrained(self.model_name, device_map="balanced")
+        self.model = AutoModelForCausalLM.from_pretrained(
+            self.model_name, device_map="balanced"
+        )
         self.model.eval()
 
-        self.tokenizer = AutoTokenizer.from_pretrained(
+        # TODO(alexgshaw): Update this once the tokenizer name is correct for Llama
+        self.tokenizer = LlamaTokenizer.from_pretrained(
             self.model_name, config=self.config_path
         )
         self.tokenizer.pad_token = self.tokenizer.eos_token
@@ -75,7 +80,8 @@ class HfSampler(BaseSampler):
 
 
 if __name__ == "__main__":
-    sampler = HfSampler("gpt2")
+    sampler = HfSampler("decapoda-research/llama-65b-hf")
+    # sampler = HfSampler("aleksickx/llama-7b-hf")
     text = sampler.get_best_next_token(
         prompt="What is the capital of France?\nThe capital of France is",
     )
