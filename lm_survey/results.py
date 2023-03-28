@@ -2,13 +2,18 @@ import json
 import typing
 import pandas as pd
 import pandas.core.groupby.generic
-from lm_survey.survey import QuestionSample
+from lm_survey.survey import DependentVariableSample
 
 
 class SurveyResults:
-    def __init__(self, question_samples: typing.List[QuestionSample]):
+    def __init__(
+        self, dependent_variable_samples: typing.List[DependentVariableSample]
+    ):
         df = pd.DataFrame(
-            data=[self._flatten_dict(sample.to_dict()) for sample in question_samples]
+            data=[
+                self._flatten_dict(sample.to_dict())
+                for sample in dependent_variable_samples
+            ]
         )
         # Make the index the df_index column and sort by it
         df.set_index("df_index", inplace=True)
@@ -56,19 +61,11 @@ class SurveyResults:
     def get_mean_score(self, slice_by: typing.List[str]) -> pd.DataFrame:
         groups = self.slice(columns=slice_by)
 
-        means = self._compute_mean(groups)
-        errors = self._estimate_standard_error(groups)
-        counts = groups.count().is_completion_correct
+        means = self._compute_mean(groups).rename("mean")
+        errors = self._estimate_standard_error(groups).rename("std_error")
+        counts = groups.count().is_completion_correct.rename("n_samples")
 
-        scores_df = pd.concat(
-            [
-                means,
-                errors,
-                counts,
-            ],
-            axis=1,
-        )
-        scores_df.columns = ["mean", "error", "n_samples"]
+        scores_df = pd.concat([means, errors, counts], axis=1)
 
         return scores_df
 
@@ -79,13 +76,15 @@ if __name__ == "__main__":
     with open(input_filepath, "r") as file:
         results = json.load(file)
 
-    question_samples = [
-        QuestionSample(
+    dependent_variable_samples = [
+        DependentVariableSample(
             **sample_dict,
         )
         for sample_dict in results["gpt3-text-davinci-003"]
     ]
 
-    survey_results = SurveyResults(question_samples=question_samples)
+    survey_results = SurveyResults(
+        dependent_variable_samples=dependent_variable_samples
+    )
 
     print(survey_results.get_mean_score(slice_by=["gender"]))
