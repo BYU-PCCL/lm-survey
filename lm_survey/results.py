@@ -3,6 +3,7 @@ import typing
 import pandas as pd
 import pandas.core.groupby.generic
 from lm_survey.survey import DependentVariableSample
+import argparse
 
 
 class SurveyResults:
@@ -61,7 +62,7 @@ class SurveyResults:
     def get_mean_score(self, slice_by: typing.List[str]) -> pd.DataFrame:
         groups = self.slice(columns=slice_by)
 
-        means = self._compute_mean(groups).rename("mean")
+        means = self._compute_mean(groups).rename("fraction_correct")
         errors = self._estimate_standard_error(groups).rename("std_error")
         counts = groups.count().is_completion_correct.rename("n_samples")
 
@@ -69,11 +70,21 @@ class SurveyResults:
 
         return scores_df
 
+    # TODO(alexgshaw): Create a method that plots the mean scores along with error bounds
+
 
 if __name__ == "__main__":
-    input_filepath = "data/roper/results.json"
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "-i",
+        "--input_filepath",
+        type=str,
+        default="data/roper/results.json",
+        help="Path to the JSON file containing the survey results from the LLM.",
+    )
+    args = parser.parse_args()
 
-    with open(input_filepath, "r") as file:
+    with open(args.input_filepath, "r") as file:
         results = json.load(file)
 
     dependent_variable_samples = [

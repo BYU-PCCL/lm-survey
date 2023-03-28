@@ -9,6 +9,7 @@ from lm_survey.survey import (
 from lm_survey.prompt_templates import INDEPENDENT_VARIABLE_SUMMARY_TEMPLATE
 import json
 import functools
+import argparse
 
 
 class Survey:
@@ -121,11 +122,33 @@ class Survey:
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "-d",
+        "--data_filename",
+        type=str,
+        default="data/roper/data.csv",
+        help="The filename of the data.",
+    )
+    parser.add_argument(
+        "--independent_variables_filename",
+        type=str,
+        default="data/roper/demographics.json",
+        help="The filename of the independent variables.",
+    )
+    parser.add_argument(
+        "--dependent_variables_filename",
+        type=str,
+        default="data/roper/questions.json",
+        help="The filename of the dependent variables.",
+    )
+    args = parser.parse_args()
+
     survey = Survey(
         name="roper",
-        data_filename="data/roper/data.csv",
-        independent_variables_filename="data/roper/demographics.json",
-        dependent_variables_filename="data/roper/questions.json",
+        data_filename=args.data_filename,
+        independent_variables_filename=args.independent_variables_filename,
+        dependent_variables_filename=args.dependent_variables_filename,
     )
 
     prompt_info = next(iter(survey))
