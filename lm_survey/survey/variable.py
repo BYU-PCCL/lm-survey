@@ -11,9 +11,12 @@ class Variable:
             key: Question(key=key, **value) for key, value in questions.items()
         }
 
+    def is_valid(self, row: pd.Series) -> bool:
+        return any(question.is_valid(row) for question in self.questions.values())
+
     def _get_key(self, row: pd.Series) -> str:
-        for key in self.questions.keys():
-            if row[key] not in self.questions[key].invalid_options:
+        for key, question in self.questions.items():
+            if question.is_valid(row):
                 return key
 
         raise ValueError(
@@ -44,6 +47,10 @@ class Variable:
 
     def to_phrase(self, row: pd.Series) -> str:
         return self._to_value(value_key="phrase", row=row)
+
+    def to_question(self, row: pd.Series) -> str:
+        key = self._get_key(row)
+        return self.questions[key].text
 
     def get_correct_letter(self, row: pd.Series) -> str:
         key = self._get_key(row)
