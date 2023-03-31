@@ -48,7 +48,40 @@ class Question:
         return row[self.key] not in self.invalid_options
 
     def get_correct_letter(self, row: pd.Series) -> str:
-        return MULTIPLE_CHOICE_LIST[self.valid_options_index_map[row[self.key]]]
+        try:
+            return MULTIPLE_CHOICE_LIST[self.valid_options_index_map[row[self.key]]]
+        except KeyError:
+            raise ValueError(
+                f"This row's response is not a valid option: {row[self.key]}"
+            )
 
     def __str__(self):
         return self.text
+
+
+if __name__ == "__main__":
+    # TODO make this a unit test later.
+    question = Question(
+        key="q1",
+        text="What is your favorite color?",
+        valid_options={
+            "0": {"text": "red", "phrase": "I like the color red."},
+            "1": {"text": "blue", "phrase": "I like the color blue."},
+            "2": {"text": "green", "phrase": "I like the color green."},
+        },
+        invalid_options=["3", "4"],
+    )
+
+    print(question.to_prompt())
+
+    print(question.is_valid(pd.Series({"q1": "0"})))
+    print(question.is_valid(pd.Series({"q1": "3"})))
+
+    print(question.get_correct_letter(pd.Series({"q1": "0"})))
+    print(question.get_correct_letter(pd.Series({"q1": "1"})))
+    print(question.get_correct_letter(pd.Series({"q1": "2"})))
+
+    try:
+        question.get_correct_letter(pd.Series({"q1": "3"}))
+    except ValueError as error:
+        print(error)
