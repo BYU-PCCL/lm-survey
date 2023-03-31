@@ -11,6 +11,7 @@ class DependentVariableSample:
         prompt: str,
         correct_letter: str,
         completion: typing.Optional[str] = None,
+        **kwargs,
     ):
         self.question = question
         self.independent_variables = independent_variables
