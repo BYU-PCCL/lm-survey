@@ -1,5 +1,4 @@
 import typing
-
 import pandas as pd
 from lm_survey.survey.question import Question
 

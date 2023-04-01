@@ -1,13 +1,10 @@
 import typing
-
 import pandas as pd
 from lm_survey.constants import MULTIPLE_CHOICE_LIST
-
 from lm_survey.prompt_templates import (
     DEPENDENT_VARIABLE_TEMPLATE,
     format_multiple_choice_options,
 )
-
 
 # Make it immutable so people don't accidentally change it during inference.
 class ValidOption(typing.NamedTuple):

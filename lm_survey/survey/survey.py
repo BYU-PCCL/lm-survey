@@ -1,10 +1,8 @@
 import typing
 import pandas as pd
 
-from lm_survey.survey import (
-    DependentVariableSample,
-    Variable,
-)
+from lm_survey.survey.dependent_variable_sample import DependentVariableSample
+from lm_survey.survey.variable import Variable
 from lm_survey.prompt_templates import INDEPENDENT_VARIABLE_SUMMARY_TEMPLATE
 import json
 import functools
@@ -34,17 +32,6 @@ class Survey:
     def _load_variables(self, config_filename: str) -> typing.List[Variable]:
         with open(config_filename, "r") as file:
             return [Variable(**variable) for variable in json.load(file)]
-
-    def _filter_variables(
-        self, variable_names: typing.List[str]
-    ) -> typing.List[Variable]:
-        variable_name_set = set(variable_names)
-
-        return [
-            variable
-            for variable in self.variables
-            if variable.name in variable_name_set
-        ]
 
     def set_independent_variables(self, independent_variable_names: typing.List[str]):
         acceptable_names = set(independent_variable_names)
@@ -160,27 +147,81 @@ if __name__ == "__main__":
         help="The filename of the data.",
     )
     parser.add_argument(
-        "--independent_variables_filename",
+        "-c",
+        "--config_filename",
         type=str,
-        default="data/roper/demographics.json",
+        default="data/roper/config.json",
         help="The filename of the independent variables.",
-    )
-    parser.add_argument(
-        "--dependent_variables_filename",
-        type=str,
-        default="data/roper/questions.json",
-        help="The filename of the dependent variables.",
     )
     args = parser.parse_args()
 
-    # survey = Survey(
-    #     name="roper",
-    #     data_filename=args.data_filename,
-    #     independent_variables_filename=args.independent_variables_filename,
-    #     dependent_variables_filename=args.dependent_variables_filename,
-    # )
+    independent_variable_names = [
+        "age",
+        "party",
+        "ideology",
+        "religion",
+        "marital",
+        "employment",
+        "education",
+        "income",
+        "ethnicity",
+        "gender",
+    ]
 
-    # prompt_info = next(iter(survey))
-    # prompt_info.completion = " C)"
+    dependent_variable_names = [
+        "q1g",
+        "q8a",
+        "q8b",
+        "q8c",
+        "q9",
+        "q10",
+        "q11a",
+        "q11b",
+        "q11c",
+        "q11d",
+        "q11e",
+        "q13",
+        "q14",
+        "q16",
+        "q17",
+        "q18",
+        "q19",
+        "q20",
+        "q21",
+        "q22",
+        "q22a",
+        "q23",
+        "q23a",
+        "q24",
+        "q24a",
+        "q25",
+        "q26a",
+        "q26b",
+        "q26c",
+        "q27",
+        "q28",
+        "q29",
+        "q30",
+        "q31",
+        "q32a",
+        "q32b",
+        "q32c",
+        "q33",
+        "q34a",
+        "q34b",
+        "abort1",
+        "abort2",
+    ]
 
-    # print(prompt_info)
+    survey = Survey(
+        name="roper",
+        data_filename=args.data_filename,
+        config_filename=args.config_filename,
+        independent_variable_names=independent_variable_names,
+        dependent_variable_names=dependent_variable_names,
+    )
+
+    prompt_info = next(iter(survey))
+    prompt_info.completion = " C)"
+
+    print(prompt_info)
