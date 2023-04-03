@@ -16,7 +16,9 @@ Please respond with the letter of the answer choice that best fits the context.
 Answer:"""
 
 
-def format_multiple_choice_options(options: typing.List[str]) -> str:
+def format_multiple_choice_options(
+    options: typing.List[typing.Union[str, None]]
+) -> str:
     return "\n".join(
         [f"{MULTIPLE_CHOICE_LIST[i]}) {option}" for i, option in enumerate(options)]
     )

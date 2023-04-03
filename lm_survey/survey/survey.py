@@ -1,11 +1,8 @@
 import typing
 import pandas as pd
 
-from lm_survey.survey import (
-    IndependentVariable,
-    DependentVariable,
-    DependentVariableSample,
-)
+from lm_survey.survey.dependent_variable_sample import DependentVariableSample
+from lm_survey.survey.variable import Variable
 from lm_survey.prompt_templates import INDEPENDENT_VARIABLE_SUMMARY_TEMPLATE
 import json
 import functools
@@ -17,23 +14,40 @@ class Survey:
         self,
         name: str,
         data_filename: str,
-        independent_variables_filename: str,
-        dependent_variables_filename: str,
+        config_filename: str,
+        independent_variable_names: typing.List[str] = [],
+        dependent_variable_names: typing.List[str] = [],
     ):
         self.name = name
         self.df = pd.read_csv(data_filename)
 
-        with open(independent_variables_filename, "r") as file:
-            self.independent_variables = [
-                IndependentVariable(**independent_variable)
-                for independent_variable in json.load(file)
-            ]
+        self.variables = self._load_variables(config_filename=config_filename)
 
-        with open(dependent_variables_filename, "r") as file:
-            self.dependent_variables = {
-                dependent_variable["key"]: DependentVariable(**dependent_variable)
-                for dependent_variable in json.load(file)
-            }
+        self.set_independent_variables(
+            independent_variable_names=independent_variable_names
+        )
+
+        self.set_dependent_variables(dependent_variable_names=dependent_variable_names)
+
+    def _load_variables(self, config_filename: str) -> typing.List[Variable]:
+        with open(config_filename, "r") as file:
+            return [Variable(**variable) for variable in json.load(file)]
+
+    def set_independent_variables(self, independent_variable_names: typing.List[str]):
+        acceptable_names = set(independent_variable_names)
+
+        self._independent_variables = [
+            variable for variable in self.variables if variable.name in acceptable_names
+        ]
+
+    def set_dependent_variables(self, dependent_variable_names: typing.List[str]):
+        acceptable_names = set(dependent_variable_names)
+
+        self._dependent_variables = {
+            variable.name: variable
+            for variable in self.variables
+            if variable.name in acceptable_names
+        }
 
     def _handle_missing_independent_variable(func: typing.Callable) -> typing.Callable:  # type: ignore
         @functools.wraps(func)
@@ -51,24 +65,26 @@ class Survey:
     def _create_independent_variable_summary(self, row: pd.Series) -> str:
         return " ".join(
             [
-                independent_variable.to_sentence(row)
-                for independent_variable in self.independent_variables
+                variable.to_natural_language(row)
+                for variable in self._independent_variables
             ]
         )
 
     @_handle_missing_independent_variable
-    def _get_independent_variable_dict(self, row: pd.Series) -> dict:
+    def _get_independent_variable_dict(self, row: pd.Series) -> typing.Dict[str, str]:
         return {
-            independent_variable.name: independent_variable.to_option(row)
-            for independent_variable in self.independent_variables
+            variable.name: variable.to_text(row)
+            for variable in self._independent_variables
         }
 
     def _templatize(
-        self, independent_variable_summary: str, dependent_variable: DependentVariable
+        self,
+        independent_variable_summary: str,
+        dependent_variable_prompt: str,
     ) -> str:
         return INDEPENDENT_VARIABLE_SUMMARY_TEMPLATE.format(
             context_summary=independent_variable_summary,
-            dependent_variable_prompt=dependent_variable.templatize(),
+            dependent_variable_prompt=dependent_variable_prompt,
         )
 
     def iterate(
@@ -78,7 +94,7 @@ class Survey:
             n_samples_per_dependent_variable = len(self.df)
 
         n_sampled_per_dependent_variable = {
-            key: 0 for key in self.dependent_variables.keys()
+            key: 0 for key in self._dependent_variables.keys()
         }
 
         # The index from iterrows gives type errors when using it as a key in iloc.
@@ -90,7 +106,7 @@ class Survey:
             except ValueError:
                 continue
 
-            for key, dependent_variable in self.dependent_variables.items():
+            for key, dependent_variable in self._dependent_variables.items():
                 if n_sampled_per_dependent_variable[
                     key
                 ] >= n_samples_per_dependent_variable or not dependent_variable.is_valid(
@@ -98,14 +114,17 @@ class Survey:
                 ):
                     continue
 
+                dependent_variable_prompt = dependent_variable.to_prompt(row)
+
                 prompt = self._templatize(
-                    independent_variable_summary, dependent_variable
+                    independent_variable_summary=independent_variable_summary,
+                    dependent_variable_prompt=dependent_variable_prompt,
                 )
                 correct_letter = dependent_variable.get_correct_letter(row)
                 independent_variables = self._get_independent_variable_dict(row)
 
                 yield DependentVariableSample(
-                    question=dependent_variable.question,
+                    question=dependent_variable.to_question(row),
                     independent_variables=independent_variables,
                     df_index=i,
                     key=key,
@@ -131,24 +150,78 @@ if __name__ == "__main__":
         help="The filename of the data.",
     )
     parser.add_argument(
-        "--independent_variables_filename",
+        "-c",
+        "--config_filename",
         type=str,
-        default="data/roper/demographics.json",
+        default="data/roper/config.json",
         help="The filename of the independent variables.",
     )
-    parser.add_argument(
-        "--dependent_variables_filename",
-        type=str,
-        default="data/roper/questions.json",
-        help="The filename of the dependent variables.",
-    )
     args = parser.parse_args()
+
+    independent_variable_names = [
+        "age",
+        "party",
+        "ideology",
+        "religion",
+        "marital",
+        "employment",
+        "education",
+        "income",
+        "ethnicity",
+        "gender",
+    ]
+
+    dependent_variable_names = [
+        "q1g",
+        "q8a",
+        "q8b",
+        "q8c",
+        "q9",
+        "q10",
+        "q11a",
+        "q11b",
+        "q11c",
+        "q11d",
+        "q11e",
+        "q13",
+        "q14",
+        "q16",
+        "q17",
+        "q18",
+        "q19",
+        "q20",
+        "q21",
+        "q22",
+        "q22a",
+        "q23",
+        "q23a",
+        "q24",
+        "q24a",
+        "q25",
+        "q26a",
+        "q26b",
+        "q26c",
+        "q27",
+        "q28",
+        "q29",
+        "q30",
+        "q31",
+        "q32a",
+        "q32b",
+        "q32c",
+        "q33",
+        "q34a",
+        "q34b",
+        "abort1",
+        "abort2",
+    ]
 
     survey = Survey(
         name="roper",
         data_filename=args.data_filename,
-        independent_variables_filename=args.independent_variables_filename,
-        dependent_variables_filename=args.dependent_variables_filename,
+        config_filename=args.config_filename,
+        independent_variable_names=independent_variable_names,
+        dependent_variable_names=dependent_variable_names,
     )
 
     prompt_info = next(iter(survey))

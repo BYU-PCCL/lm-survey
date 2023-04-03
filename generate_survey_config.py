@@ -55,9 +55,7 @@ def create_dict_for_var(var, df):
         invalid_ixs = set(range(len(unique_answer_codes))) - set(valid_ixs)
 
         invalid_options_dict = {
-            ix: ans
-            for ix, ans in ixd_unique_answer_codes.items()
-            if ix in invalid_ixs
+            ix: ans for ix, ans in ixd_unique_answer_codes.items() if ix in invalid_ixs
         }
 
         valid_options_dict = {}
@@ -145,9 +143,8 @@ def create_dict_for_var(var, df):
     return var_dict
 
 
-def main(args):
-    args.data = "data/raw.csv"
-    df = pd.read_csv(args.data)
+def main(data_filename):
+    df = pd.read_csv(data_filename)
     var_list = []
     while True:
         iv = input(
@@ -169,7 +166,9 @@ if __name__ == "__main__":
     import argparse
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("-d", "--data", type=str)
+    parser.add_argument(
+        "-d", "--data_filename", type=str, default="data/roper/data.csv"
+    )
     args = parser.parse_args()
 
-    main(args)
+    main(data_filename=args.data_filename)
