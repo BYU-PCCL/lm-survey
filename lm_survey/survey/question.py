@@ -10,7 +10,7 @@ from lm_survey.prompt_templates import (
 class ValidOption(typing.NamedTuple):
     raw: str
     text: typing.Optional[str] = None
-    phrase: typing.Optional[str] = None
+    natural_language: typing.Optional[str] = None
 
 
 class Question:
@@ -62,9 +62,9 @@ if __name__ == "__main__":
         key="q1",
         text="What is your favorite color?",
         valid_options={
-            "0": {"text": "red", "phrase": "I like the color red."},
-            "1": {"text": "blue", "phrase": "I like the color blue."},
-            "2": {"text": "green", "phrase": "I like the color green."},
+            "0": {"text": "red", "natural_language": "I like the color red."},
+            "1": {"text": "blue", "natural_language": "I like the color blue."},
+            "2": {"text": "green", "natural_language": "I like the color green."},
         },
         invalid_options=["3", "4"],
     )

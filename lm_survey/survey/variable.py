@@ -44,8 +44,8 @@ class Variable:
     def to_text(self, row: pd.Series) -> str:
         return self._to_value(value_key="text", row=row)
 
-    def to_phrase(self, row: pd.Series) -> str:
-        return self._to_value(value_key="phrase", row=row)
+    def to_natural_language(self, row: pd.Series) -> str:
+        return self._to_value(value_key="natural_language", row=row)
 
     def to_question(self, row: pd.Series) -> str:
         key = self._get_key(row)
@@ -65,15 +65,18 @@ if __name__ == "__main__":
             "q1": {
                 "text": "What is your favorite color?",
                 "valid_options": {
-                    "0": {"text": "red", "phrase": "I like the color red."},
-                    "1": {"text": "blue", "phrase": "I like the color blue."},
+                    "0": {"text": "red", "natural_language": "I like the color red."},
+                    "1": {"text": "blue", "natural_language": "I like the color blue."},
                 },
                 "invalid_options": ["2", "3", "4"],
             },
             "q2": {
                 "text": "What is your favorite color?",
                 "valid_options": {
-                    "2": {"text": "green", "phrase": "I like the color green."},
+                    "2": {
+                        "text": "green",
+                        "natural_language": "I like the color green.",
+                    },
                 },
                 "invalid_options": ["3", "4"],
             },
@@ -92,8 +95,8 @@ if __name__ == "__main__":
     print(variable.to_text(valid_rows[0]))
     print(variable.to_text(valid_rows[1]))
 
-    print(variable.to_phrase(valid_rows[0]))
-    print(variable.to_phrase(valid_rows[1]))
+    print(variable.to_natural_language(valid_rows[0]))
+    print(variable.to_natural_language(valid_rows[1]))
 
     print(variable.get_correct_letter(valid_rows[0]))
     print(variable.get_correct_letter(valid_rows[1]))

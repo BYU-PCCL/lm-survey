@@ -64,7 +64,10 @@ class Survey:
     @_handle_missing_independent_variable
     def _create_independent_variable_summary(self, row: pd.Series) -> str:
         return " ".join(
-            [variable.to_phrase(row) for variable in self._independent_variables]
+            [
+                variable.to_natural_language(row)
+                for variable in self._independent_variables
+            ]
         )
 
     @_handle_missing_independent_variable
