@@ -1,7 +1,9 @@
 import typing
+import numpy as np
 import pandas as pd
 
 from lm_survey.survey.dependent_variable_sample import DependentVariableSample
+from lm_survey.survey.question import Question, ValidOption
 from lm_survey.survey.variable import Variable
 from lm_survey.prompt_templates import INDEPENDENT_VARIABLE_SUMMARY_TEMPLATE
 import json
@@ -14,14 +16,20 @@ class Survey:
         self,
         name: str,
         data_filename: str,
-        config_filename: str,
+        config_filename: typing.Optional[str] = None,
         independent_variable_names: typing.List[str] = [],
         dependent_variable_names: typing.List[str] = [],
     ):
         self.name = name
         self.df = pd.read_csv(data_filename)
 
-        self.variables = self._load_variables(config_filename=config_filename)
+        if config_filename is not None:
+            self.variables = self._load_variables(config_filename=config_filename)
+        else:
+            self.variables = []
+            print(
+                "No config file provided. You will need to generate one using the `generate_config` method."
+            )
 
         self.set_independent_variables(
             independent_variable_names=independent_variable_names
@@ -86,6 +94,169 @@ class Survey:
             context_summary=independent_variable_summary,
             dependent_variable_prompt=dependent_variable_prompt,
         )
+
+    def _get_question_text(self, key: str) -> str:
+        return input(
+            f"\nFor question {key}, what is the text for this"
+            " question in the codebook?\n:"
+        )
+
+    def _process_option_index(self, index: str) -> typing.List[int]:
+        if not "-" in index:
+            return [int(index)]
+
+        minimum, maximum = index.split("-")
+
+        return list(range(int(minimum), int(maximum) + 1))
+
+    def _process_option_indices(self, indices: str) -> typing.Set[int]:
+        return {
+            processed_index
+            for index in indices.split(",")
+            for processed_index in self._process_option_index(index)
+        }
+
+    def _process_valid_option(
+        self, raw: str, natural_language_template: str, use_default: bool
+    ) -> typing.Tuple[bool, ValidOption]:
+        if use_default:
+            return use_default, ValidOption(raw=raw, text=raw, natural_language=raw)
+
+        text = input(
+            f"\nText from codebook corresponding to option '{raw}' (hit enter to use the default value): "
+        )
+
+        if text == "skip":
+            return True, ValidOption(raw=raw, text=raw, natural_language=raw)
+        if text == "":
+            text = raw
+
+        rephrasing = input(
+            f"Rephrasing for option '{raw}' to appear in the"
+            f" {'{X}'} slot of your template (or to appear, if you"
+            " didn't write a template): "
+        )
+
+        if rephrasing == "skip":
+            return True, ValidOption(raw=raw, text=raw, natural_language=raw)
+        elif rephrasing == "":
+            natural_language = raw
+        else:
+            natural_language = natural_language_template.format(X=rephrasing)
+
+        return use_default, ValidOption(
+            raw=raw, text=text, natural_language=natural_language
+        )
+
+    def _get_natural_language_template(self) -> str:
+        natural_language_template = input(
+            "\nNow you will be asked whether you want to specify a general"
+            " format for the data corresponding to this question to assume in"
+            " your prompts and then whether there will be any exceptions to"
+            ' that format. Do you want to specify a general format? (e.g. "I am'
+            ' {X} years old" where {X} is a special token representing each'
+            " specific answer)\nPress ENTER to skip\n:"
+        )
+
+        return natural_language_template if natural_language_template != "" else "{X}"
+
+    def _process_options(
+        self, valid_indices: typing.Set[int], unique_raw_options: np.ndarray
+    ) -> typing.Tuple[typing.List[ValidOption], typing.List[str]]:
+        valid_options = []
+        invalid_options = []
+
+        natural_language_template = self._get_natural_language_template()
+
+        print(
+            "Now you will be asked about the text in the codebook corresponding"
+            " to each code, along with how to phrase each option to the"
+            " language model.\nPress ENTER to skip this option, and type 'skip'"
+            " to start specifying exceptions to the general rule\n:"
+        )
+
+        use_default = False
+
+        for i, raw_option in enumerate(unique_raw_options):
+            if i in valid_indices:
+                use_default, valid_option = self._process_valid_option(
+                    raw=raw_option,
+                    natural_language_template=natural_language_template,
+                    use_default=use_default,
+                )
+                valid_options.append(valid_option)
+            else:
+                invalid_options.append(raw_option)
+
+        return valid_options, invalid_options
+
+    def _get_options(
+        self, key: str
+    ) -> typing.Tuple[typing.List[ValidOption], typing.List[str]]:
+        unique_raw_options = self.df[key].unique()
+        unique_raw_options.sort()
+
+        print(
+            "\nFor that question, here is a list of the possible responses, each with its respective index.\n."
+        )
+
+        for i, raw_option in enumerate(unique_raw_options):
+            print(f"{i}: {raw_option}")
+
+        input_indices = input(
+            "Please give a comma-delimited list of indices for values you want"
+            " to include (e.g., 1, 2, 5 ) or a range (e.g., 1-5 inclusive). The"
+            " rest will be excluded\n:"
+        )
+
+        valid_indices = self._process_option_indices(input_indices)
+
+        valid_options, invalid_options = self._process_options(
+            valid_indices=valid_indices, unique_raw_options=unique_raw_options
+        )
+
+        return valid_options, invalid_options
+
+    def _create_question(
+        self, column_names: typing.List[str]
+    ) -> typing.Iterator[Question]:
+        for column_name in column_names:
+            question_text = self._get_question_text(key=column_name)
+            valid_options, invalid_options = self._get_options(key=column_name)
+
+            yield Question(
+                key=column_name,
+                text=question_text,
+                valid_options=valid_options,
+                invalid_options=invalid_options,
+            )
+
+    def generate_config(self, config_filename: str):
+        variables = []
+
+        while True:
+            variable_name = input(
+                "\nWhich variables do you want to include (e.g., 'gender')? (type"
+                " 'done' to finish and write a json objects for the variables"
+                " you've specified)\n:"
+            )
+
+            if variable_name == "done":
+                break
+
+            variable = Variable(name=variable_name)
+
+            column_names = input(
+                "\nWhat columns correspond to this variable? (comma-delimited, e.g.,"
+                " 'v102, v103, v104')\n:"
+            ).split(",")
+
+            for question in self._create_question(column_names=column_names):
+                variable.upsert_question(question=question)
+
+            variables.append(variable)
+
+        self.variables = variables
 
     def iterate(
         self, n_samples_per_dependent_variable: typing.Optional[int] = None

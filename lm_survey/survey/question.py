@@ -12,6 +12,13 @@ class ValidOption(typing.NamedTuple):
     text: typing.Optional[str] = None
     natural_language: typing.Optional[str] = None
 
+    def to_dict(self) -> typing.Dict[str, typing.Optional[str]]:
+        return {
+            "raw": self.raw,
+            "text": self.text,
+            "natural_language": self.natural_language,
+        }
+
 
 class Question:
     def __init__(

@@ -4,11 +4,14 @@ from lm_survey.survey.question import Question
 
 
 class Variable:
-    def __init__(self, name: str, questions: typing.Dict[str, dict]) -> None:
+    def __init__(self, name: str, questions: typing.Dict[str, dict] = {}) -> None:
         self.name = name
         self.questions = {
             key: Question(key=key, **value) for key, value in questions.items()
         }
+
+    def upsert_question(self, question: Question) -> None:
+        self.questions[question.key] = question
 
     def is_valid(self, row: pd.Series) -> bool:
         return any(question.is_valid(row) for question in self.questions.values())
