@@ -123,7 +123,7 @@ class Survey:
             return use_default, ValidOption(raw=raw, text=raw, natural_language=raw)
 
         text = input(
-            f"\nText from codebook corresponding to option '{raw}' (hit enter to use the default value): "
+            f"\nText from codebook corresponding to option '{raw}' (hit ENTER to use the default value): "
         )
 
         if text == "skip":
@@ -147,6 +147,50 @@ class Survey:
         return use_default, ValidOption(
             raw=raw, text=text, natural_language=natural_language
         )
+
+    def _process_valid_option_exceptions(self, valid_options: typing.List[ValidOption]):
+        while True:
+            exception = input(
+                "\nAre there any exceptions to the general format?\n(e.g., for"
+                " the index, value pairs \n\n0 Republican\n1 Democrat\n2"
+                " Independent\n\nyou would type 2 to provide an exception for"
+                " Independent)\nType 'done' to finish\n:"
+            )
+
+            if exception == "done":
+                break
+            else:
+                option_index = int(exception)
+
+                text = input(
+                    "What is the text corresponding to this code in the"
+                    " codebook? Press ENTER to leave as is\n"
+                )
+
+                if text != "":
+                    try:
+                        valid_options[option_index].text = text
+                    except IndexError:
+                        print(
+                            f"Index {option_index} is not a valid option. Please try again"
+                        )
+                        continue
+
+                natural_language = input(
+                    "How do you want to phrase this exception? Press ENTER to"
+                    " leave as is\n"
+                )
+
+                if natural_language != "":
+                    try:
+                        valid_options[option_index].natural_language = natural_language
+                    except IndexError:
+                        print(
+                            f"Index {option_index} is not a valid option. Please try again"
+                        )
+                        continue
+
+        return valid_options
 
     def _get_natural_language_template(self) -> str:
         natural_language_template = input(
@@ -188,12 +232,20 @@ class Survey:
             else:
                 invalid_options.append(raw_option)
 
+        valid_options = self._process_valid_option_exceptions(
+            valid_options=valid_options
+        )
+
         return valid_options, invalid_options
 
     def _get_options(
         self, key: str
     ) -> typing.Tuple[typing.List[ValidOption], typing.List[str]]:
-        unique_raw_options = self.df[key].unique()
+        try:
+            unique_raw_options = self.df[key].unique()
+        except KeyError:
+            raise ValueError(f"{key} is not a valid column name.")
+
         unique_raw_options.sort()
 
         print(
@@ -222,7 +274,12 @@ class Survey:
     ) -> typing.Iterator[Question]:
         for column_name in column_names:
             question_text = self._get_question_text(key=column_name)
-            valid_options, invalid_options = self._get_options(key=column_name)
+
+            try:
+                valid_options, invalid_options = self._get_options(key=column_name)
+            except ValueError as error:
+                print(f"Skipping {column_name}: {error}.")
+                continue
 
             yield Question(
                 key=column_name,

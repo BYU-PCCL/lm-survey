@@ -6,18 +6,23 @@ from lm_survey.prompt_templates import (
     format_multiple_choice_options,
 )
 
-# Make it immutable so people don't accidentally change it during inference.
-class ValidOption(typing.NamedTuple):
-    raw: str
-    text: typing.Optional[str] = None
-    natural_language: typing.Optional[str] = None
+
+class ValidOption:
+    def __init__(
+        self,
+        raw: str,
+        text: typing.Optional[str] = None,
+        natural_language: typing.Optional[str] = None,
+    ) -> None:
+        self.raw = raw
+        self.text = text
+        self.natural_language = natural_language
 
     def to_dict(self) -> typing.Dict[str, typing.Optional[str]]:
-        return {
-            "raw": self.raw,
-            "text": self.text,
-            "natural_language": self.natural_language,
-        }
+        return self.__dict__
+
+    def __str__(self):
+        return self.text
 
 
 class Question:
