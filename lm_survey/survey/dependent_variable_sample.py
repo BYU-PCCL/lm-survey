@@ -47,6 +47,9 @@ class DependentVariableSample:
             ]
         )
 
+    def __repr__(self) -> str:
+        return self.__str__()
+
     def to_dict(self) -> dict:
         self_dict = self.__dict__
         self_dict.update({"is_completion_correct": self.is_completion_correct})

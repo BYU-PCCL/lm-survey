@@ -209,7 +209,7 @@ class Survey:
             " format for the data corresponding to this question to assume in"
             " your prompts and then whether there will be any exceptions to"
             ' that format. Do you want to specify a general format? (e.g. "I am'
-            ' {X} years old" where {X} is a special token representing each'
+            ' {X} years old." where {X} is a special token representing each'
             " specific answer)\nPress ENTER to skip\n:"
         )
 
