@@ -30,6 +30,9 @@ class ValidOption:
             ]
         )
 
+    def __repr__(self) -> str:
+        return self.__str__()
+
 
 class Question:
     def __init__(

@@ -47,13 +47,20 @@ def main(
 ) -> None:
     survey_directory = os.path.join("data", survey_name)
 
+    with open(
+        os.path.join(survey_directory, "independent-variables.json"), "r"
+    ) as file:
+        independent_variable_names = json.load(file)
+
+    with open(os.path.join(survey_directory, "dependent-variables.json"), "r") as file:
+        dependent_variable_names = json.load(file)
+
     survey = Survey(
         name=survey_name,
         data_filename=os.path.join(survey_directory, "data.csv"),
-        dependent_variables_filename=os.path.join(survey_directory, "questions.json"),
-        independent_variables_filename=os.path.join(
-            survey_directory, "demographics.json"
-        ),
+        config_filename=os.path.join(survey_directory, "config.json"),
+        independent_variable_names=independent_variable_names,
+        dependent_variable_names=dependent_variable_names,
     )
 
     sampler = AutoSampler(model_name=model_name)
@@ -94,11 +101,16 @@ if __name__ == "__main__":
         "-n",
         "--n_samples_per_dependent_variable",
         type=int,
-        required=False,
-        default=100,
     )
 
     args = parser.parse_args()
+
+    # To prevent overbilling OpenAI.
+    if (
+        args.model_name.startswith("gpt3")
+        and args.n_samples_per_dependent_variable is None
+    ):
+        args.n_samples_per_dependent_variable = 100
 
     main(
         model_name=args.model_name,
