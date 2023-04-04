@@ -25,7 +25,7 @@ class Question:
         self,
         key: str,
         text: str,
-        valid_options: typing.Dict[str, typing.Dict[str, str]],
+        valid_options: typing.List[typing.Dict[str, typing.Any]],
         invalid_options: typing.List[str],
     ) -> None:
         self.key = key
@@ -33,11 +33,21 @@ class Question:
         self.invalid_options = set(invalid_options)
 
         self.valid_options = {
-            key: ValidOption(raw=key, **value) for key, value in valid_options.items()
+            option["raw"]: ValidOption(**option) for option in valid_options
         }
 
         self.valid_options_index_map = {
-            option: i for i, option in enumerate(valid_options.keys())
+            option: i for i, option in enumerate(self.valid_options.keys())
+        }
+
+    def to_dict(self) -> typing.Dict[str, typing.Any]:
+        return {
+            "key": self.key,
+            "text": self.text,
+            "valid_options": [
+                option.to_dict() for option in self.valid_options.values()
+            ],
+            "invalid_options": list(self.invalid_options),
         }
 
     def to_prompt(self) -> str:
@@ -68,11 +78,15 @@ if __name__ == "__main__":
     question = Question(
         key="q1",
         text="What is your favorite color?",
-        valid_options={
-            "0": {"text": "red", "natural_language": "I like the color red."},
-            "1": {"text": "blue", "natural_language": "I like the color blue."},
-            "2": {"text": "green", "natural_language": "I like the color green."},
-        },
+        valid_options=[
+            {"raw": "0", "text": "red", "natural_language": "I like the color red."},
+            {"raw": "1", "text": "blue", "natural_language": "I like the color blue."},
+            {
+                "raw": "2",
+                "text": "green",
+                "natural_language": "I like the color green.",
+            },
+        ],
         invalid_options=["3", "4"],
     )
 

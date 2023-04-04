@@ -227,7 +227,10 @@ class Survey:
             yield Question(
                 key=column_name,
                 text=question_text,
-                valid_options=valid_options,
+                # TODO make it so that you can optionally input `ValidOption`s.
+                valid_options=[
+                    valid_option.to_dict() for valid_option in valid_options
+                ],
                 invalid_options=invalid_options,
             )
 
@@ -246,10 +249,14 @@ class Survey:
 
             variable = Variable(name=variable_name)
 
-            column_names = input(
+            column_names_input = input(
                 "\nWhat columns correspond to this variable? (comma-delimited, e.g.,"
                 " 'v102, v103, v104')\n:"
-            ).split(",")
+            )
+
+            column_names = [
+                column_name.strip() for column_name in column_names_input.split(",")
+            ]
 
             for question in self._create_question(column_names=column_names):
                 variable.upsert_question(question=question)
@@ -257,6 +264,15 @@ class Survey:
             variables.append(variable)
 
         self.variables = variables
+
+        self.export_config(config_filename=config_filename)
+
+    def export_config(self, config_filename: str):
+        with open(config_filename, "w") as file:
+            json.dump(self.to_dict(), file, indent=4)
+
+    def to_dict(self) -> typing.List[typing.Dict]:
+        return [variable.to_dict() for variable in self.variables]
 
     def iterate(
         self, n_samples_per_dependent_variable: typing.Optional[int] = None

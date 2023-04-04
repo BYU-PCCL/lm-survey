@@ -4,10 +4,16 @@ from lm_survey.survey.question import Question
 
 
 class Variable:
-    def __init__(self, name: str, questions: typing.Dict[str, dict] = {}) -> None:
+    def __init__(self, name: str, questions: typing.List[dict] = []) -> None:
         self.name = name
         self.questions = {
-            key: Question(key=key, **value) for key, value in questions.items()
+            question["key"]: Question(**question) for question in questions
+        }
+
+    def to_dict(self) -> typing.Dict[str, typing.Any]:
+        return {
+            "name": self.name,
+            "questions": [question.to_dict() for question in self.questions.values()],
         }
 
     def upsert_question(self, question: Question) -> None:
@@ -64,8 +70,9 @@ if __name__ == "__main__":
     # TODO probably make this a unit test later.
     variable = Variable(
         name="color",
-        questions={
-            "q1": {
+        questions=[
+            {
+                "key": "q1",
                 "text": "What is your favorite color?",
                 "valid_options": {
                     "0": {"text": "red", "natural_language": "I like the color red."},
@@ -73,7 +80,8 @@ if __name__ == "__main__":
                 },
                 "invalid_options": ["2", "3", "4"],
             },
-            "q2": {
+            {
+                "key": "q2",
                 "text": "What is your favorite color?",
                 "valid_options": {
                     "2": {
@@ -83,7 +91,7 @@ if __name__ == "__main__":
                 },
                 "invalid_options": ["3", "4"],
             },
-        },
+        ],
     )
 
     valid_rows = [pd.Series({"q1": "0", "q2": "0"}), pd.Series({"q1": "2", "q2": "2"})]
