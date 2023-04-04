@@ -133,14 +133,14 @@ class Survey:
 
         rephrasing = input(
             f"Rephrasing for option '{raw}' to appear in the"
-            f" {'{X}'} slot of your template (or to appear, if you"
-            " didn't write a template): "
+            f" {'{X}'} slot of your template, or to appear, if you"
+            " didn't write a template (hit ENTER to use the text value): "
         )
 
         if rephrasing == "skip":
             return True, ValidOption(raw=raw, text=raw, natural_language=raw)
         elif rephrasing == "":
-            natural_language = raw
+            natural_language = natural_language_template.format(X=text)
         else:
             natural_language = natural_language_template.format(X=rephrasing)
 
@@ -150,6 +150,17 @@ class Survey:
 
     def _process_valid_option_exceptions(self, valid_options: typing.List[ValidOption]):
         while True:
+            print(
+                "\nHere is what you have so far:\n",
+                "\n\n".join(
+                    [
+                        f"{i}.{valid_option}"
+                        for i, valid_option in enumerate(valid_options)
+                    ]
+                ),
+                sep="\n",
+            )
+
             exception = input(
                 "\nAre there any exceptions to the general format?\n(e.g., for"
                 " the index, value pairs \n\n0 Republican\n1 Democrat\n2"
@@ -249,7 +260,7 @@ class Survey:
         unique_raw_options.sort()
 
         print(
-            "\nFor that question, here is a list of the possible responses, each with its respective index.\n."
+            "\nFor that question, here is a list of the possible responses, each with its respective index.\n"
         )
 
         for i, raw_option in enumerate(unique_raw_options):
@@ -385,90 +396,97 @@ class Survey:
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "-d",
-        "--data_filename",
-        type=str,
-        default="data/roper/data.csv",
-        help="The filename of the data.",
-    )
-    parser.add_argument(
-        "-c",
-        "--config_filename",
-        type=str,
-        default="data/roper/config.json",
-        help="The filename of the independent variables.",
-    )
-    args = parser.parse_args()
-
-    independent_variable_names = [
-        "age",
-        "party",
-        "ideology",
-        "religion",
-        "marital",
-        "employment",
-        "education",
-        "income",
-        "ethnicity",
-        "gender",
-    ]
-
-    dependent_variable_names = [
-        "q1g",
-        "q8a",
-        "q8b",
-        "q8c",
-        "q9",
-        "q10",
-        "q11a",
-        "q11b",
-        "q11c",
-        "q11d",
-        "q11e",
-        "q13",
-        "q14",
-        "q16",
-        "q17",
-        "q18",
-        "q19",
-        "q20",
-        "q21",
-        "q22",
-        "q22a",
-        "q23",
-        "q23a",
-        "q24",
-        "q24a",
-        "q25",
-        "q26a",
-        "q26b",
-        "q26c",
-        "q27",
-        "q28",
-        "q29",
-        "q30",
-        "q31",
-        "q32a",
-        "q32b",
-        "q32c",
-        "q33",
-        "q34a",
-        "q34b",
-        "abort1",
-        "abort2",
-    ]
-
     survey = Survey(
-        name="roper",
-        data_filename=args.data_filename,
-        config_filename=args.config_filename,
-        independent_variable_names=independent_variable_names,
-        dependent_variable_names=dependent_variable_names,
+        name="test",
+        data_filename="data/roper/data.csv",
     )
 
-    prompt_info = next(iter(survey))
-    prompt_info.completion = " C)"
+    survey.generate_config(config_filename="data/roper/config-test.json")
 
-    print(prompt_info)
+    # parser = argparse.ArgumentParser()
+    # parser.add_argument(
+    #     "-d",
+    #     "--data_filename",
+    #     type=str,
+    #     default="data/roper/data.csv",
+    #     help="The filename of the data.",
+    # )
+    # parser.add_argument(
+    #     "-c",
+    #     "--config_filename",
+    #     type=str,
+    #     default="data/roper/config.json",
+    #     help="The filename of the independent variables.",
+    # )
+    # args = parser.parse_args()
+
+    # independent_variable_names = [
+    #     "age",
+    #     "party",
+    #     "ideology",
+    #     "religion",
+    #     "marital",
+    #     "employment",
+    #     "education",
+    #     "income",
+    #     "ethnicity",
+    #     "gender",
+    # ]
+
+    # dependent_variable_names = [
+    #     "q1g",
+    #     "q8a",
+    #     "q8b",
+    #     "q8c",
+    #     "q9",
+    #     "q10",
+    #     "q11a",
+    #     "q11b",
+    #     "q11c",
+    #     "q11d",
+    #     "q11e",
+    #     "q13",
+    #     "q14",
+    #     "q16",
+    #     "q17",
+    #     "q18",
+    #     "q19",
+    #     "q20",
+    #     "q21",
+    #     "q22",
+    #     "q22a",
+    #     "q23",
+    #     "q23a",
+    #     "q24",
+    #     "q24a",
+    #     "q25",
+    #     "q26a",
+    #     "q26b",
+    #     "q26c",
+    #     "q27",
+    #     "q28",
+    #     "q29",
+    #     "q30",
+    #     "q31",
+    #     "q32a",
+    #     "q32b",
+    #     "q32c",
+    #     "q33",
+    #     "q34a",
+    #     "q34b",
+    #     "abort1",
+    #     "abort2",
+    # ]
+
+    # survey = Survey(
+    #     name="roper",
+    #     data_filename=args.data_filename,
+    #     config_filename=args.config_filename,
+    #     independent_variable_names=independent_variable_names,
+    #     dependent_variable_names=dependent_variable_names,
+    # )
+
+    # prompt_info = next(iter(survey))
+    # prompt_info.completion = " C)"
+
+    # print(prompt_info)

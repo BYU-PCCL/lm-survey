@@ -21,8 +21,14 @@ class ValidOption:
     def to_dict(self) -> typing.Dict[str, typing.Optional[str]]:
         return self.__dict__
 
-    def __str__(self):
-        return self.text
+    def __str__(self) -> str:
+        return "\n".join(
+            [
+                f"\tRaw: {self.raw}",
+                f"\tText: {self.text}",
+                f"\tNatural Language: {self.natural_language}",
+            ]
+        )
 
 
 class Question:
