@@ -267,7 +267,7 @@ class Survey:
             print(f"{i}: {raw_option}")
 
         input_indices = input(
-            "Please give a comma-delimited list of indices for values you want"
+            "\nPlease give a comma-delimited list of indices for values you want"
             " to include (e.g., 1, 2, 5 ) or a range (e.g., 1-5 inclusive). The"
             " rest will be excluded\n:"
         )
@@ -303,7 +303,13 @@ class Survey:
             )
 
     def generate_config(self, config_filename: str):
-        variables = []
+        while True:
+            restart = input("\nDo you want to start over? (y/n) :")
+            if restart.lower() == "y":
+                self.variables = []
+                break
+            elif restart.lower() == "n":
+                break
 
         while True:
             variable_name = input(
@@ -329,11 +335,10 @@ class Survey:
             for question in self._create_question(column_names=column_names):
                 variable.upsert_question(question=question)
 
-            variables.append(variable)
+            self.variables.append(variable)
 
-        self.variables = variables
-
-        self.export_config(config_filename=config_filename)
+            # Export every time a variable is added to not accidentally lose progress.
+            self.export_config(config_filename=config_filename)
 
     def export_config(self, config_filename: str):
         with open(config_filename, "w") as file:
