@@ -1,7 +1,10 @@
+import typing
 from lm_survey.samplers.base_sampler import BaseSampler
 
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
+
+LogProbabilityDict = typing.Dict[str, float]
 
 
 class HfSampler(BaseSampler):
@@ -26,7 +29,35 @@ class HfSampler(BaseSampler):
 
         print(f"Using {torch.cuda.device_count()} GPUs.")
 
-    def send_prompt(self, prompt, n_probs, **kwargs):
+    def rank_completions(
+        self, prompt: str, completions: typing.List[str]
+    ) -> LogProbabilityDict:
+        inputs = self.tokenizer(
+            prompt,
+            padding="max_length",
+            truncation=True,
+            return_tensors="pt",
+        ).to(self.device)
+
+        with torch.no_grad():
+            output = self.model(**inputs)
+
+        logits = output.logits[-1, -1].to("cpu")
+
+        completion_ids = self.tokenizer(
+            completions,
+            return_tensors="pt",
+        ).input_ids
+
+        completion_logits = torch.gather(logits, 0, completion_ids[:, -1])
+        completion_log_probs = torch.nn.functional.log_softmax(completion_logits, dim=0)
+
+        return {
+            completion: log_prob.item()
+            for completion, log_prob in zip(completions, completion_log_probs)
+        }
+
+    def send_prompt(self, prompt: str, n_probs: int, **kwargs) -> LogProbabilityDict:
         inputs = self.tokenizer(
             prompt,
             padding="max_length",
@@ -75,8 +106,11 @@ class HfSampler(BaseSampler):
 
 
 if __name__ == "__main__":
-    sampler = HfSampler(model_name="/mnt/pccfs2/backed_up/models/llama/hf/llama-65b-hf")
-    text = sampler.get_best_next_token(
-        prompt="What is the capital of France?\nThe capital of France is",
+    sampler = HfSampler(model_name="/mnt/pccfs2/backed_up/models/llama/hf/llama-7b-hf")
+
+    completions_dict = sampler.rank_completions(
+        prompt="What is the capital of France?\n\nA) Paris\nB) London\nC) Berlin\nD) Rome\n\nAnswer:",
+        completions=["A", "B", "C", "D"],
     )
-    print(text)
+
+    print(completions_dict)
