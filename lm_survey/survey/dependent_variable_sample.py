@@ -1,49 +1,112 @@
+import functools
 import typing
 
+import numpy as np
+from lm_survey.survey.variable import Variable
 
-class DependentVariableSample:
+
+class Completion:
     def __init__(
         self,
-        question: str,
-        independent_variables: typing.Dict[str, str],
-        df_index: int,
-        key: str,
-        prompt: str,
-        correct_letter: str,
-        completion: typing.Optional[str] = None,
-        **kwargs,
+        possible_completions: typing.List[str],
+        correct_completion: str,
+        completion_log_probs: typing.Optional[typing.Dict[str, float]] = None,
     ):
-        self.question = question
-        self.independent_variables = independent_variables
-        self.df_index = df_index
-        self.key = key
-        self.prompt = prompt
-        self.correct_letter = correct_letter
-        self.completion = completion
+        self.possible_completions = possible_completions
+        self.correct_completion = correct_completion
+
+        if completion_log_probs is not None:
+            self.set_completion_log_probs(completion_log_probs)
+        else:
+            self._completion_log_probs = None
+
+    def to_dict(self) -> typing.Dict[str, typing.Any]:
+        self_dict = self.__dict__.copy()
+
+        if self.are_completion_log_probs_set():
+            self_dict["top_completion"] = self.top_completion
+            self_dict["is_completion_correct"] = self.is_completion_correct
+        else:
+            self_dict["top_completion"] = None
+            self_dict["is_completion_correct"] = None
+
+        return self_dict
+
+    def set_completion_log_probs(
+        self, completion_log_probs: typing.Dict[str, float]
+    ) -> None:
+        self._completion_log_probs = dict(
+            sorted(
+                completion_log_probs.items(),
+                key=lambda completion: completion[1],
+                reverse=True,
+            )
+        )
+
+    def are_completion_log_probs_set(self) -> bool:
+        return self._completion_log_probs is not None
 
     def _extract_letter(self, completion: str) -> str:
         return completion.strip().upper()[:1]
 
     @property
+    def top_completion(self) -> str:
+        if not self.are_completion_log_probs_set():
+            raise ValueError("No completion log probs have been set.")
+
+        return max(
+            self.possible_completions,
+            key=lambda completion: self._completion_log_probs[completion],  # type: ignore
+        )
+
+    def get_correct_completion_ranking(self) -> int:
+        if not self.are_completion_log_probs_set():
+            raise ValueError("No completion log probs have been set.")
+
+        ranked_completions_dict = {
+            self._extract_letter(completion): rank
+            for rank, completion in enumerate(self._completion_log_probs.keys())  # type: ignore
+        }
+
+        return ranked_completions_dict[self._extract_letter(self.correct_completion)]
+
+    @property
     def is_completion_correct(self) -> bool:
-        if self.completion is None:
-            raise ValueError("Completion is None.")
-        else:
-            return self.correct_letter == self._extract_letter(self.completion)
+        return self._extract_letter(self.top_completion) == self._extract_letter(
+            self.correct_completion
+        )
+
+
+class DependentVariableSample:
+    def __init__(
+        self,
+        index: int,
+        independent_variables: typing.Dict[str, str],
+        variable_name: str,
+        question: str,
+        prompt: str,
+        completion: Completion,
+        **kwargs,
+    ) -> None:
+        self.index = index
+        self.independent_variables = independent_variables
+        self.variable_name = variable_name
+        self.question = question
+        self.prompt = prompt
+        self.completion = completion
 
     def __str__(self) -> str:
         sep = "\n\n"
         prompt = (
-            self.prompt + self.completion
-            if self.completion is not None
+            self.prompt + self.completion.top_completion
+            if self.completion.are_completion_log_probs_set()
             else self.prompt
         )
         return sep.join(
             [
-                f"Question Key: {self.key}",
-                f"Row Index: {self.df_index}",
+                f"Variable Name: {self.variable_name}",
                 prompt,
-                f"Correct Answer: {self.correct_letter}",
+                f"Correct Answer: {self.completion.correct_completion}",
             ]
         )
 
@@ -51,7 +114,8 @@ class DependentVariableSample:
         return self.__str__()
 
     def to_dict(self) -> dict:
-        self_dict = self.__dict__
-        self_dict.update({"is_completion_correct": self.is_completion_correct})
+        self_dict = self.__dict__.copy()
+
+        self_dict["completion"] = self.completion.to_dict()
 
         return self_dict

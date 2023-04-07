@@ -62,8 +62,11 @@ class Variable:
 
     def get_correct_letter(self, row: pd.Series) -> str:
         key = self._get_key(row)
-
         return self.questions[key].get_correct_letter(row)
+
+    def get_possible_letters(self, row: pd.Series) -> typing.List[str]:
+        key = self._get_key(row)
+        return self.questions[key].get_possible_letters()
 
 
 if __name__ == "__main__":

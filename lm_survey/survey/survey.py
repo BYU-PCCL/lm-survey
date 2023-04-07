@@ -2,7 +2,10 @@ import typing
 import numpy as np
 import pandas as pd
 
-from lm_survey.survey.dependent_variable_sample import DependentVariableSample
+from lm_survey.survey.dependent_variable_sample import (
+    Completion,
+    DependentVariableSample,
+)
 from lm_survey.survey.question import Question, ValidOption
 from lm_survey.survey.variable import Variable
 from lm_survey.prompt_templates import INDEPENDENT_VARIABLE_SUMMARY_TEMPLATE
@@ -366,9 +369,9 @@ class Survey:
             except ValueError:
                 continue
 
-            for key, dependent_variable in self._dependent_variables.items():
+            for name, dependent_variable in self._dependent_variables.items():
                 if n_sampled_per_dependent_variable[
-                    key
+                    name
                 ] >= n_samples_per_dependent_variable or not dependent_variable.is_valid(
                     row
                 ):
@@ -380,19 +383,26 @@ class Survey:
                     independent_variable_summary=independent_variable_summary,
                     dependent_variable_prompt=dependent_variable_prompt,
                 )
-                correct_letter = dependent_variable.get_correct_letter(row)
+
+                correct_completion = dependent_variable.get_correct_letter(row)
+                possible_completions = dependent_variable.get_possible_letters(row)
                 independent_variables = self._get_independent_variable_dict(row)
 
-                yield DependentVariableSample(
-                    question=dependent_variable.to_question(row),
-                    independent_variables=independent_variables,
-                    df_index=i,
-                    key=key,
-                    prompt=prompt,
-                    correct_letter=correct_letter,
+                completion = Completion(
+                    possible_completions=possible_completions,
+                    correct_completion=correct_completion,
                 )
 
-                n_sampled_per_dependent_variable[key] += 1
+                yield DependentVariableSample(
+                    variable_name=name,
+                    question=dependent_variable.to_question(row),
+                    independent_variables=independent_variables,
+                    index=i,
+                    prompt=prompt,
+                    completion=completion,
+                )
+
+                n_sampled_per_dependent_variable[name] += 1
 
     def __iter__(
         self,
@@ -401,97 +411,96 @@ class Survey:
 
 
 if __name__ == "__main__":
+    # survey = Survey(
+    #     name="test",
+    #     data_filename="data/roper/data.csv",
+    # )
+
+    # survey.generate_config(config_filename="data/roper/config-test.json")
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "-d",
+        "--data_filename",
+        type=str,
+        default="data/roper/data.csv",
+        help="The filename of the data.",
+    )
+    parser.add_argument(
+        "-c",
+        "--config_filename",
+        type=str,
+        default="data/roper/config.json",
+        help="The filename of the independent variables.",
+    )
+    args = parser.parse_args()
+
+    independent_variable_names = [
+        "age",
+        "party",
+        "ideology",
+        "religion",
+        "marital",
+        "employment",
+        "education",
+        "income",
+        "ethnicity",
+        "gender",
+    ]
+
+    dependent_variable_names = [
+        "q1g",
+        "q8a",
+        "q8b",
+        "q8c",
+        "q9",
+        "q10",
+        "q11a",
+        "q11b",
+        "q11c",
+        "q11d",
+        "q11e",
+        "q13",
+        "q14",
+        "q16",
+        "q17",
+        "q18",
+        "q19",
+        "q20",
+        "q21",
+        "q22",
+        "q22a",
+        "q23",
+        "q23a",
+        "q24",
+        "q24a",
+        "q25",
+        "q26a",
+        "q26b",
+        "q26c",
+        "q27",
+        "q28",
+        "q29",
+        "q30",
+        "q31",
+        "q32a",
+        "q32b",
+        "q32c",
+        "q33",
+        "q34a",
+        "q34b",
+        "abort1",
+        "abort2",
+    ]
+
     survey = Survey(
-        name="test",
-        data_filename="data/roper/data.csv",
+        name="roper",
+        data_filename=args.data_filename,
+        config_filename=args.config_filename,
+        independent_variable_names=independent_variable_names,
+        dependent_variable_names=dependent_variable_names,
     )
 
-    survey.generate_config(config_filename="data/roper/config-test.json")
+    question_sample = next(iter(survey))
 
-    # parser = argparse.ArgumentParser()
-    # parser.add_argument(
-    #     "-d",
-    #     "--data_filename",
-    #     type=str,
-    #     default="data/roper/data.csv",
-    #     help="The filename of the data.",
-    # )
-    # parser.add_argument(
-    #     "-c",
-    #     "--config_filename",
-    #     type=str,
-    #     default="data/roper/config.json",
-    #     help="The filename of the independent variables.",
-    # )
-    # args = parser.parse_args()
-
-    # independent_variable_names = [
-    #     "age",
-    #     "party",
-    #     "ideology",
-    #     "religion",
-    #     "marital",
-    #     "employment",
-    #     "education",
-    #     "income",
-    #     "ethnicity",
-    #     "gender",
-    # ]
-
-    # dependent_variable_names = [
-    #     "q1g",
-    #     "q8a",
-    #     "q8b",
-    #     "q8c",
-    #     "q9",
-    #     "q10",
-    #     "q11a",
-    #     "q11b",
-    #     "q11c",
-    #     "q11d",
-    #     "q11e",
-    #     "q13",
-    #     "q14",
-    #     "q16",
-    #     "q17",
-    #     "q18",
-    #     "q19",
-    #     "q20",
-    #     "q21",
-    #     "q22",
-    #     "q22a",
-    #     "q23",
-    #     "q23a",
-    #     "q24",
-    #     "q24a",
-    #     "q25",
-    #     "q26a",
-    #     "q26b",
-    #     "q26c",
-    #     "q27",
-    #     "q28",
-    #     "q29",
-    #     "q30",
-    #     "q31",
-    #     "q32a",
-    #     "q32b",
-    #     "q32c",
-    #     "q33",
-    #     "q34a",
-    #     "q34b",
-    #     "abort1",
-    #     "abort2",
-    # ]
-
-    # survey = Survey(
-    #     name="roper",
-    #     data_filename=args.data_filename,
-    #     config_filename=args.config_filename,
-    #     independent_variable_names=independent_variable_names,
-    #     dependent_variable_names=dependent_variable_names,
-    # )
-
-    # prompt_info = next(iter(survey))
-    # prompt_info.completion = " C)"
-
-    # print(prompt_info)
+    print(question_sample)

@@ -25,6 +25,12 @@ class BaseSampler(metaclass=ABCMeta):
         """
         pass
 
+    @abstractmethod
+    def rank_completions(
+        self, prompt: str, completions: typing.List[str]
+    ) -> typing.Dict[str, float]:
+        pass
+
     def get_best_next_token(self, prompt: str, **kwargs) -> str:
         """
         Generates a sequence of tokens from a prompt.

@@ -12,6 +12,9 @@ class AutoSampler(BaseSampler):
         else:
             self.sampler = HfSampler(*args, **kwargs)
 
+    def rank_completions(self, prompt, completions):
+        return self.sampler.rank_completions(prompt, completions)
+
     def send_prompt(self, prompt, n_probs):
         return self.sampler.send_prompt(prompt, n_probs)
 
