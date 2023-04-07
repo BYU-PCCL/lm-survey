@@ -385,7 +385,10 @@ class Survey:
                 )
 
                 correct_completion = dependent_variable.get_correct_letter(row)
-                possible_completions = dependent_variable.get_possible_letters(row)
+                possible_completions = [
+                    f" {letter}"
+                    for letter in dependent_variable.get_possible_letters(row)
+                ]
                 independent_variables = self._get_independent_variable_dict(row)
 
                 completion = Completion(

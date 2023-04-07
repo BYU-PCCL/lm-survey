@@ -1,10 +1,9 @@
-import numpy as np
 import torch
 from lm_survey.samplers.base_sampler import BaseSampler
 import openai
 
 
-class GPT3Sampler(BaseSampler):
+class OpenAiSampler(BaseSampler):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
@@ -24,7 +23,7 @@ class GPT3Sampler(BaseSampler):
         top_log_probs = self.send_prompt(prompt, n_probs=100)
 
         log_probs = torch.tensor(
-            [top_log_probs.get(completion, -np.inf) for completion in completions]
+            [top_log_probs.get(completion, -torch.inf) for completion in completions]
         )
 
         normalized_log_probs = torch.nn.functional.log_softmax(log_probs, dim=0)
@@ -67,8 +66,9 @@ class GPT3Sampler(BaseSampler):
 
 
 if __name__ == "__main__":
-    sampler = GPT3Sampler("gpt3-davinci")
-    text = sampler.get_best_next_token(
+    sampler = OpenAiSampler("gpt3-ada")
+    text = sampler.rank_completions(
         prompt="What is the capital of France?\nThe capital of France is",
+        completions=[" Paris", " London", " Berlin"],
     )
     print(text)
