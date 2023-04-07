@@ -1,9 +1,7 @@
 from lm_survey.samplers.base_sampler import BaseSampler
 
 import torch
-
-# TODO(alexgshaw): Update this once the tokenizer name is correct for Llama
-from transformers import AutoTokenizer, AutoModelForCausalLM, LlamaTokenizer  # type: ignore
+from transformers import AutoTokenizer, AutoModelForCausalLM
 
 
 class HfSampler(BaseSampler):
@@ -17,10 +15,7 @@ class HfSampler(BaseSampler):
         )
         self.model.eval()
 
-        # TODO(alexgshaw): Update this once the tokenizer name is correct for Llama
-        self.tokenizer = LlamaTokenizer.from_pretrained(
-            self.model_name, config=self.config_path
-        )
+        self.tokenizer = AutoTokenizer.from_pretrained(self.model_name, use_fast=False)
         self.tokenizer.pad_token = self.tokenizer.eos_token
 
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -80,8 +75,7 @@ class HfSampler(BaseSampler):
 
 
 if __name__ == "__main__":
-    sampler = HfSampler("decapoda-research/llama-65b-hf")
-    # sampler = HfSampler("aleksickx/llama-7b-hf")
+    sampler = HfSampler(model_name="/mnt/pccfs2/backed_up/models/llama/hf/llama-65b-hf")
     text = sampler.get_best_next_token(
         prompt="What is the capital of France?\nThe capital of France is",
     )

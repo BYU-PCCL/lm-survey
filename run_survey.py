@@ -12,6 +12,9 @@ def save_results(
     model_name: str,
     survey_name: str,
 ):
+    if model_name.startswith("/"):
+        model_name = model_name.split("/")[-1]
+
     new_results = {
         model_name: [
             {
