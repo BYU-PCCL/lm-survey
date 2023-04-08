@@ -1,4 +1,6 @@
 import typing
+
+import numpy as np
 from lm_survey.survey import Survey, DependentVariableSample
 from lm_survey.samplers import AutoSampler
 from tqdm import tqdm
@@ -8,7 +10,7 @@ import argparse
 
 
 def save_results(
-    question_samples: typing.List[DependentVariableSample],
+    dependent_variable_samples: typing.List[DependentVariableSample],
     model_name: str,
     survey_name: str,
 ):
@@ -20,7 +22,7 @@ def save_results(
             {
                 **question_sample.to_dict(),
             }
-            for question_sample in question_samples
+            for question_sample in dependent_variable_samples
         ]
     }
 
@@ -68,18 +70,35 @@ def main(
 
     sampler = AutoSampler(model_name=model_name)
 
-    question_samples = list(
+    dependent_variable_samples = list(
         survey.iterate(
             n_samples_per_dependent_variable=n_samples_per_dependent_variable
         )
     )
 
-    for question_sample in tqdm(question_samples):
-        completion = sampler.get_best_next_token(prompt=question_sample.prompt)
-        question_sample.completion = completion
+    for dependent_variable_sample in tqdm(dependent_variable_samples):
+
+        completion_log_probs = sampler.rank_completions(
+            prompt=dependent_variable_sample.prompt,
+            completions=dependent_variable_sample.completion.possible_completions,
+        )
+        dependent_variable_sample.completion.set_completion_log_probs(
+            completion_log_probs
+        )
+
+    accuracy = np.mean(
+        [
+            dependent_variable_sample.completion.is_completion_correct
+            for dependent_variable_sample in dependent_variable_samples
+        ]
+    )
+
+    print(
+        f"Accuracy: {accuracy * 100:.2f}% ({len(dependent_variable_samples)} samples)"
+    )
 
     save_results(
-        question_samples=question_samples,
+        dependent_variable_samples=dependent_variable_samples,
         model_name=model_name,
         survey_name=survey_name,
     )

@@ -4,8 +4,6 @@ from lm_survey.samplers.base_sampler import BaseSampler
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
-LogProbabilityDict = typing.Dict[str, float]
-
 
 class HfSampler(BaseSampler):
     def __init__(self, *args, **kwargs):
@@ -31,7 +29,7 @@ class HfSampler(BaseSampler):
 
     def rank_completions(
         self, prompt: str, completions: typing.List[str]
-    ) -> LogProbabilityDict:
+    ) -> typing.Dict[str, float]:
         inputs = self.tokenizer(
             prompt,
             padding="max_length",
@@ -57,7 +55,9 @@ class HfSampler(BaseSampler):
             for completion, log_prob in zip(completions, completion_log_probs)
         }
 
-    def send_prompt(self, prompt: str, n_probs: int, **kwargs) -> LogProbabilityDict:
+    def send_prompt(
+        self, prompt: str, n_probs: int, **kwargs
+    ) -> typing.Dict[str, float]:
         inputs = self.tokenizer(
             prompt,
             padding="max_length",

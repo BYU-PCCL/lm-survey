@@ -54,6 +54,9 @@ class Question:
             option: i for i, option in enumerate(self.valid_options.keys())
         }
 
+    def get_possible_letters(self) -> typing.List[str]:
+        return MULTIPLE_CHOICE_LIST[: len(self.valid_options)]
+
     def to_dict(self) -> typing.Dict[str, typing.Any]:
         return {
             "key": self.key,

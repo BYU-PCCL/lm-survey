@@ -1,5 +1,5 @@
 from lm_survey.samplers.hf_sampler import HfSampler
-from lm_survey.samplers.gpt3_sampler import GPT3Sampler
+from lm_survey.samplers.openai_sampler import OpenAiSampler
 from lm_survey.samplers.base_sampler import BaseSampler
 
 
@@ -7,10 +7,13 @@ class AutoSampler(BaseSampler):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-        if self.model_name.startswith("gpt3"):
-            self.sampler = GPT3Sampler(*args, **kwargs)
+        if self.model_name.startswith("gpt3") or self.model_name.startswith("gpt4"):
+            self.sampler = OpenAiSampler(*args, **kwargs)
         else:
             self.sampler = HfSampler(*args, **kwargs)
+
+    def rank_completions(self, prompt, completions):
+        return self.sampler.rank_completions(prompt, completions)
 
     def send_prompt(self, prompt, n_probs):
         return self.sampler.send_prompt(prompt, n_probs)
