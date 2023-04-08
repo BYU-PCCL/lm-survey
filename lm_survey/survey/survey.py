@@ -1,3 +1,4 @@
+import os
 import typing
 import numpy as np
 import pandas as pd
@@ -21,9 +22,9 @@ class Survey:
         dependent_variable_names: typing.List[str] = [],
     ):
         self.name = name
-        self.df = pd.read_csv(data_filename)
+        self.df = pd.read_csv(data_filename, dtype=str)
 
-        if config_filename is not None:
+        if config_filename is not None and os.path.exists(config_filename):
             self.variables = self._load_variables(config_filename=config_filename)
         else:
             self.variables = []
@@ -171,7 +172,11 @@ class Survey:
             if exception == "done":
                 break
             else:
-                option_index = int(exception)
+                try:
+                    option_index = int(exception)
+                except ValueError:
+                    print("Please enter a valid integer or 'done'")
+                    continue
 
                 text = input(
                     "What is the text corresponding to this code in the"
@@ -249,6 +254,15 @@ class Survey:
 
         return valid_options, invalid_options
 
+    def _get_raw_sort_key(
+        self, item: str
+    ) -> typing.Tuple[int, typing.Union[str, float]]:
+        try:
+            num = float(item)
+            return (0, num)
+        except ValueError:
+            return (1, item)
+
     def _get_options(
         self, key: str
     ) -> typing.Tuple[typing.List[ValidOption], typing.List[str]]:
@@ -257,7 +271,7 @@ class Survey:
         except KeyError:
             raise ValueError(f"{key} is not a valid column name.")
 
-        unique_raw_options.sort()
+        unique_raw_options = sorted(unique_raw_options, key=self._get_raw_sort_key)
 
         print(
             "\nFor that question, here is a list of the possible responses, each with its respective index.\n"
@@ -275,7 +289,7 @@ class Survey:
         valid_indices = self._process_option_indices(input_indices)
 
         valid_options, invalid_options = self._process_options(
-            valid_indices=valid_indices, unique_raw_options=unique_raw_options
+            valid_indices=valid_indices, unique_raw_options=unique_raw_options  # type: ignore
         )
 
         return valid_options, invalid_options
@@ -325,8 +339,11 @@ class Survey:
 
             column_names_input = input(
                 "\nWhat columns correspond to this variable? (comma-delimited, e.g.,"
-                " 'v102, v103, v104')\n:"
+                " 'v102, v103, v104'; press ENTER to use the name of the variable)\n:"
             )
+
+            if column_names_input == "":
+                column_names_input = variable_name
 
             column_names = [
                 column_name.strip() for column_name in column_names_input.split(",")
@@ -401,12 +418,22 @@ class Survey:
 
 
 if __name__ == "__main__":
+    survey_name = "cces"
+
+    survey_directory = os.path.join("data", survey_name)
+
+    data_filename = os.path.join(survey_directory, "data.csv")
+    config_filename = os.path.join(survey_directory, "config.json")
+
     survey = Survey(
-        name="test",
-        data_filename="data/roper/data.csv",
+        name=survey_name,
+        data_filename=data_filename,
+        config_filename=config_filename,
     )
 
-    survey.generate_config(config_filename="data/roper/config-test.json")
+    survey.generate_config(
+        config_filename=config_filename,
+    )
 
     # parser = argparse.ArgumentParser()
     # parser.add_argument(
