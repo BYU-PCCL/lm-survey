@@ -27,6 +27,43 @@ class HfSampler(BaseSampler):
 
         print(f"Using {torch.cuda.device_count()} GPUs.")
 
+    def sample_batch(
+        self, prompts: typing.List[str], completions: typing.List[typing.List[str]]
+    ):
+        inputs = self.tokenizer(
+            prompts,
+            padding="max_length",
+            truncation=True,
+            return_tensors="pt",
+        ).to(self.device)
+
+        with torch.no_grad():
+            outputs = self.model(**inputs)
+
+        logits = [
+            output.logits[attention_mask.bool()][-1].to("cpu")
+            for output, attention_mask in zip(outputs, inputs.attention_mask)
+        ]
+
+        return [
+            self._get_rankings(sample_completions, sample_logits)
+            for sample_completions, sample_logits in zip(completions, logits)
+        ]
+
+    def _get_rankings(self, completions: typing.List[str], logits: torch.Tensor):
+        completion_ids = self.tokenizer(
+            completions,
+            return_tensors="pt",
+        ).input_ids
+
+        completion_logits = torch.gather(logits, 0, completion_ids[:, -1])
+        completion_log_probs = torch.nn.functional.log_softmax(completion_logits, dim=0)
+
+        return {
+            completion: log_prob.item()
+            for completion, log_prob in zip(completions, completion_log_probs)
+        }
+
     def rank_completions(
         self, prompt: str, completions: typing.List[str]
     ) -> typing.Dict[str, float]:
@@ -42,18 +79,7 @@ class HfSampler(BaseSampler):
 
         logits = output.logits[-1, -1].to("cpu")
 
-        completion_ids = self.tokenizer(
-            completions,
-            return_tensors="pt",
-        ).input_ids
-
-        completion_logits = torch.gather(logits, 0, completion_ids[:, -1])
-        completion_log_probs = torch.nn.functional.log_softmax(completion_logits, dim=0)
-
-        return {
-            completion: log_prob.item()
-            for completion, log_prob in zip(completions, completion_log_probs)
-        }
+        return self._get_rankings(completions, logits)
 
     def send_prompt(
         self, prompt: str, n_probs: int, **kwargs

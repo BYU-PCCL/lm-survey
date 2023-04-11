@@ -19,7 +19,9 @@ class SurveyDataset(Dataset):
     def __len__(self):
         return len(self.data)
 
-    def __getitem__(self, idx) -> typing.Tuple[str, DependentVariableSample]:
+    def __getitem__(
+        self, idx
+    ) -> typing.Tuple[str, typing.List[str], DependentVariableSample]:
         sample = self.data[idx]
 
-        return sample.prompt, sample
+        return sample.prompt, sample.completion.possible_completions, sample
