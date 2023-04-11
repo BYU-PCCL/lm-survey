@@ -477,6 +477,8 @@ if __name__ == "__main__":
         dependent_variable_names=dependent_variable_names,
     )
 
-    question_sample = next(iter(survey))
+    question_samples = list(iter(survey))
 
-    print(question_sample)
+    print(
+        f"{len(question_samples) / len(dependent_variable_names) / len(survey.df) * 100:.2f}%"
+    )

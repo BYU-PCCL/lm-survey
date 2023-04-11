@@ -76,7 +76,7 @@ class Question:
         )
 
     def is_valid(self, row: pd.Series) -> bool:
-        return row[self.key] not in self.invalid_options
+        return row[self.key] not in self.invalid_options and not pd.isna(row[self.key])
 
     def get_correct_letter(self, row: pd.Series) -> str:
         try:
