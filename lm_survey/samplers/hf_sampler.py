@@ -27,12 +27,12 @@ class HfSampler(BaseSampler):
 
         print(f"Using {torch.cuda.device_count()} GPUs.")
 
-    def sample_batch(
+    def rank_completions(
         self, prompts: typing.List[str], completions: typing.List[typing.List[str]]
-    ):
+    ) -> typing.List[typing.Dict[str, float]]:
         inputs = self.tokenizer(
             prompts,
-            padding="max_length",
+            padding=True,
             truncation=True,
             return_tensors="pt",
         ).to(self.device)
@@ -41,8 +41,8 @@ class HfSampler(BaseSampler):
             outputs = self.model(**inputs)
 
         logits = [
-            output.logits[attention_mask.bool()][-1].to("cpu")
-            for output, attention_mask in zip(outputs, inputs.attention_mask)
+            logits[attention_mask.bool()][-1].to("cpu")
+            for logits, attention_mask in zip(outputs.logits, inputs.attention_mask)
         ]
 
         return [
@@ -63,23 +63,6 @@ class HfSampler(BaseSampler):
             completion: log_prob.item()
             for completion, log_prob in zip(completions, completion_log_probs)
         }
-
-    def rank_completions(
-        self, prompt: str, completions: typing.List[str]
-    ) -> typing.Dict[str, float]:
-        inputs = self.tokenizer(
-            prompt,
-            padding="max_length",
-            truncation=True,
-            return_tensors="pt",
-        ).to(self.device)
-
-        with torch.no_grad():
-            output = self.model(**inputs)
-
-        logits = output.logits[-1, -1].to("cpu")
-
-        return self._get_rankings(completions, logits)
 
     def send_prompt(
         self, prompt: str, n_probs: int, **kwargs
@@ -135,8 +118,11 @@ if __name__ == "__main__":
     sampler = HfSampler(model_name="/mnt/pccfs2/backed_up/models/llama/hf/llama-7b-hf")
 
     completions_dict = sampler.rank_completions(
-        prompt="What is the capital of France?\n\nA) Paris\nB) London\nC) Berlin\nD) Rome\n\nAnswer:",
-        completions=["A", "B", "C", "D"],
+        prompts=[
+            "What is the capital of France?\n\nA) Paris\nB) London\nC) Berlin\nD) Rome\n\nAnswer:",
+            "What is the capital of Germany?\n\nA) Paris\nB) Berlin\nC) Rome\n\nAnswer:",
+        ],
+        completions=[["A", "B", "C", "D"], ["A", "B", "C"]],
     )
 
     print(completions_dict)
