@@ -11,6 +11,7 @@ class Completion:
         possible_completions: typing.List[str],
         correct_completion: str,
         completion_log_probs: typing.Optional[typing.Dict[str, float]] = None,
+        **kwargs,
     ):
         self.possible_completions = possible_completions
         self.correct_completion = correct_completion
@@ -85,7 +86,7 @@ class DependentVariableSample:
         variable_name: str,
         question: str,
         prompt: str,
-        completion: Completion,
+        completion: typing.Union[Completion, typing.Dict[str, typing.Any]],
         **kwargs,
     ) -> None:
         self.index = index
@@ -93,7 +94,11 @@ class DependentVariableSample:
         self.variable_name = variable_name
         self.question = question
         self.prompt = prompt
-        self.completion = completion
+
+        if isinstance(completion, Completion):
+            self.completion = completion
+        else:
+            self.completion = Completion(**completion)
 
     def __str__(self) -> str:
         sep = "\n\n"
