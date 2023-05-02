@@ -16,6 +16,13 @@ class Completion:
         self.possible_completions = possible_completions
         self.correct_completion = correct_completion
 
+        # For backwards compatibility.
+        completion_log_probs = (
+            kwargs.pop("_completion_log_probs", None)
+            if completion_log_probs is None
+            else completion_log_probs
+        )
+
         if completion_log_probs is not None:
             self.set_completion_log_probs(completion_log_probs)
         else:
@@ -23,6 +30,9 @@ class Completion:
 
     def to_dict(self) -> typing.Dict[str, typing.Any]:
         self_dict = self.__dict__.copy()
+
+        self_dict["completion_log_probs"] = self._completion_log_probs
+        del self_dict["_completion_log_probs"]
 
         if self.are_completion_log_probs_set():
             self_dict["top_completion"] = self.top_completion
