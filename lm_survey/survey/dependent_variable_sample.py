@@ -11,9 +11,17 @@ class Completion:
         possible_completions: typing.List[str],
         correct_completion: str,
         completion_log_probs: typing.Optional[typing.Dict[str, float]] = None,
+        **kwargs,
     ):
         self.possible_completions = possible_completions
         self.correct_completion = correct_completion
+
+        # For backwards compatibility.
+        completion_log_probs = (
+            kwargs.pop("_completion_log_probs", None)
+            if completion_log_probs is None
+            else completion_log_probs
+        )
 
         if completion_log_probs is not None:
             self.set_completion_log_probs(completion_log_probs)
@@ -22,6 +30,9 @@ class Completion:
 
     def to_dict(self) -> typing.Dict[str, typing.Any]:
         self_dict = self.__dict__.copy()
+
+        self_dict["completion_log_probs"] = self._completion_log_probs
+        del self_dict["_completion_log_probs"]
 
         if self.are_completion_log_probs_set():
             self_dict["top_completion"] = self.top_completion
@@ -85,7 +96,7 @@ class DependentVariableSample:
         variable_name: str,
         question: str,
         prompt: str,
-        completion: Completion,
+        completion: typing.Union[Completion, typing.Dict[str, typing.Any]],
         **kwargs,
     ) -> None:
         self.index = index
@@ -93,7 +104,11 @@ class DependentVariableSample:
         self.variable_name = variable_name
         self.question = question
         self.prompt = prompt
-        self.completion = completion
+
+        if isinstance(completion, Completion):
+            self.completion = completion
+        else:
+            self.completion = Completion(**completion)
 
     def __str__(self) -> str:
         sep = "\n\n"
