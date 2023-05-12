@@ -1,5 +1,7 @@
 import os
 import typing
+from pathlib import Path
+
 import numpy as np
 import pandas as pd
 
@@ -354,6 +356,143 @@ class Survey:
 
             for question in self._create_question(column_names=column_names):
                 variable.upsert_question(question=question)
+
+            self.variables.append(variable)
+
+            # Export every time a variable is added to not accidentally lose progress.
+            self.export_config(config_filename=config_filename)
+
+    def generate_dv_config(self, config_filename: str):
+        config_path = Path(config_filename)
+        info_csv_path = config_path.parent / "info.csv"
+
+        info_df = pd.read_csv(info_csv_path)
+
+        variable_names = list(info_df["key"])
+
+        import subprocess
+        import tempfile
+
+        def get_editor():
+            if "VISUAL" in os.environ:
+                return os.environ["VISUAL"]
+            elif "EDITOR" in os.environ:
+                return os.environ["EDITOR"]
+            else:
+                return "vim"
+
+        editor = get_editor()
+
+        def temp_lines_editor(lines):
+            with tempfile.NamedTemporaryFile(mode="w+", suffix=".ini") as tf:
+                tf.write("\n".join(lines))
+                tf.flush()
+
+                subprocess.run([editor, tf.name])
+
+                tf.seek(0)
+                lines = list(map(str.strip, tf.read().splitlines()))
+                lines = [l for l in lines if not l.startswith("#") and l != ""]
+                return lines
+
+        existing_variable_names = set(v.name for v in self.variables)
+
+        processed_variable_names = []
+        unprocessed_variable_names = []
+
+        for variable_name in variable_names:
+            if variable_name in existing_variable_names:
+                processed_variable_names.append(variable_name)
+            else:
+                unprocessed_variable_names.append(variable_name)
+
+        processed_variable_line_options = [
+            f"# {variable_name}" for variable_name in processed_variable_names
+        ]
+        if processed_variable_line_options:
+            processed_variable_line_options = [
+                "#",
+                "# Processed variables; uncomment line to process variable again.",
+                "#",
+                "",
+                *processed_variable_line_options,
+                "",
+            ]
+
+        unprocessed_variable_line_options = [
+            variable_name for variable_name in unprocessed_variable_names
+        ]
+        if unprocessed_variable_line_options:
+            unprocessed_variable_line_options = [
+                "#",
+                "# Unprocessed variables; delete line to skip variable.",
+                "#",
+                "",
+                *unprocessed_variable_line_options,
+                "",
+            ]
+
+        variable_names = temp_lines_editor(
+            [
+                *processed_variable_line_options,
+                *unprocessed_variable_line_options,
+            ]
+        )
+
+        variables_info = {}
+        variable_count = len(variable_names)
+        variable_count_padding = len(str(variable_count))
+        for i, variable_name in enumerate(variable_names):
+            print(
+                (
+                    f"({i+1:0{variable_count_padding}}/{variable_count}) Press enter to"
+                    f" process {variable_name} or ctrl-c to exit"
+                ),
+                end="",
+            )
+            input()
+            if variable_name in existing_variable_names:
+                print(
+                    f"WARNING: {variable_name} was selected but it already exists in"
+                    " config, overwriting"
+                )
+                # Find and remove existing variable
+                for i, v in enumerate(self.variables):
+                    if v.name == variable_name:
+                        self.variables.pop(i)
+                        break
+
+            variable_row = info_df[info_df["key"] == variable_name].iloc[0]
+            question_text = str(variable_row["question"])
+            option_mapping = eval(str(variable_row["option_mapping"]))
+            variables_info[variable_name] = {
+                "question": question_text,
+                "option_mapping": option_mapping,
+            }
+
+            original_options = list(option_mapping.values())
+            line_editor_options = [
+                option if option != "Refused" else f"# {option}"
+                for option in original_options
+            ]
+            valid_options = temp_lines_editor(
+                [f"# Question: {question_text}", "", *line_editor_options]
+            )
+            invalid_options = [
+                option for option in original_options if option not in valid_options
+            ]
+
+            question = Question(
+                key=variable_name,
+                text=question_text,
+                valid_options=[
+                    ValidOption(raw=option, text=option).to_dict()
+                    for option in valid_options
+                ],
+                invalid_options=invalid_options,
+            ).to_dict()
+
+            variable = Variable(name=variable_name, questions=[question])
 
             self.variables.append(variable)
 
