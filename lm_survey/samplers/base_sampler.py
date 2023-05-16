@@ -42,3 +42,14 @@ class BaseSampler(metaclass=ABCMeta):
         """
         logprobs = self.send_prompt(prompt=prompt, n_probs=1, **kwargs)
         return list(logprobs.keys())[0]
+
+    @abstractmethod
+    def estimate_prompt_cost(self, prompt: str, **kwargs) -> float:
+        """
+        Estimates the cost of sending the given prompt to a LM.
+        Arguments:
+            prompt (str) a prompt to be sent to LM
+        Return:
+            float the estimated cost of sending the prompt in USD cents
+        """
+        pass

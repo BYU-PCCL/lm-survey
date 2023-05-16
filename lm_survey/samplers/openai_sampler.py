@@ -1,6 +1,24 @@
+import typing
+
+import tiktoken
 import torch
+
 from lm_survey.samplers.base_sampler import BaseSampler
 import openai
+
+OPENAI_TOKEN_COSTS = {
+    # cents per 1000 tokens
+    "text-davinci-003": 2,
+    "text-davinci-002": 2,
+    "text-davinci-001": 2,
+    "text-curie-001": 0.2,
+    "text-babbage-001": 0.05,
+    "text-ada-001": 0.04,
+    "davinci": 2,
+    "curie": 0.2,
+    "babbage": 0.05,
+    "ada": 0.04,
+}
 
 
 class OpenAiSampler(BaseSampler):
@@ -17,6 +35,8 @@ class OpenAiSampler(BaseSampler):
 
         if openai.api_key is None:
             raise ValueError("OpenAI API key must be set")
+
+        self.tokenizer = None
 
     def rank_completions(self, prompt, completions):
         # 100 is the maximum number of log probs we can get.
@@ -63,6 +83,29 @@ class OpenAiSampler(BaseSampler):
             temperature=temperature,
         )
         return response["choices"][0]["text"]  # type: ignore
+
+    def _setup_tokenizer(self):
+        if not self.tokenizer:
+            self.tokenizer = tiktoken.encoding_for_model(self.engine)
+
+    def estimate_prompt_cost(self, prompt: str):
+        self._setup_tokenizer()
+        # +1 for single token completion
+        token_count = len(self.tokenizer.encode(prompt)) + 1
+        return OPENAI_TOKEN_COSTS[self.engine] * token_count / 1000
+
+    def batch_estimate_prompt_cost(
+        self, prompts: typing.List[str]
+    ) -> typing.List[float]:
+        self._setup_tokenizer()
+        # +1 for single token completion
+        token_counts = [
+            len(encoded) + 1 for encoded in self.tokenizer.encode_batch(prompts)
+        ]
+        return [
+            OPENAI_TOKEN_COSTS[self.engine] * (token_count / 1000)
+            for token_count in token_counts
+        ]
 
 
 if __name__ == "__main__":

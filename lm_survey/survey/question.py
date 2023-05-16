@@ -14,8 +14,8 @@ class ValidOption:
         text: typing.Optional[str] = None,
         natural_language: typing.Optional[str] = None,
     ) -> None:
-        self.raw = raw
-        self.text = text
+        self.raw = raw.lower()
+        self.text = text.lower()
         self.natural_language = natural_language
 
     def to_dict(self) -> typing.Dict[str, typing.Optional[str]]:

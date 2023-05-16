@@ -104,6 +104,9 @@ class HfSampler(BaseSampler):
         )
         return preds[0][len(prompt) + 1 :]
 
+    def estimate_prompt_cost(self, _prompt: str, **_kwargs) -> float:
+        raise NotImplementedError
+
 
 if __name__ == "__main__":
     sampler = HfSampler(model_name="/mnt/pccfs2/backed_up/models/llama/hf/llama-7b-hf")

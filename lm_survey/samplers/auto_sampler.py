@@ -21,6 +21,12 @@ class AutoSampler(BaseSampler):
     def sample_several(self, prompt, temperature=0, n_tokens=10):
         return self.sampler.sample_several(prompt, temperature, n_tokens)
 
+    def estimate_prompt_cost(self, prompt: str) -> float:
+        return self.sampler.estimate_prompt_cost(prompt)
+
+    def __getattr__(self, attr):
+        return getattr(self.sampler, attr)
+
 
 if __name__ == "__main__":
     sampler = AutoSampler("gpt3-ada")

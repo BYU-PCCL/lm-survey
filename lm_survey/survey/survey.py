@@ -4,6 +4,7 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
+from sklearn.metrics import normalized_mutual_info_score
 
 from lm_survey.survey.dependent_variable_sample import (
     Completion,
@@ -362,7 +363,7 @@ class Survey:
             # Export every time a variable is added to not accidentally lose progress.
             self.export_config(config_filename=config_filename)
 
-    def generate_dv_config(self, config_filename: str):
+    def generate_atp_config(self, config_filename: str):
         config_path = Path(config_filename)
         info_csv_path = config_path.parent / "info.csv"
 
@@ -457,6 +458,39 @@ class Survey:
                 )
 
                 n_sampled_per_dependent_variable[name] += 1
+
+    def mutual_info_stats(self, include_demographics=False) -> pd.DataFrame:
+        mutual_info_dvs = {}
+        independent_variable_names = [iv.name for iv in self._independent_variables]
+        dependent_variable_names = [
+            dv.name for dv in self._dependent_variables.values()
+        ]
+
+        columns = (
+            dependent_variable_names + independent_variable_names
+            if include_demographics
+            else dependent_variable_names
+        )
+
+        for dv in columns:
+            dv_mi = {}
+            for demographic in independent_variable_names:
+                # Create a new table with only the dv and demographic columns where
+                # neither include nans or "Refused":
+                compliant_responses = self.df[[dv, demographic]].dropna()
+                compliant_responses = compliant_responses[
+                    compliant_responses[dv] != "Refused"
+                ]
+                cleaned_dv_col = compliant_responses.iloc[:, 0].dropna()
+                cleaned_demographic_col = compliant_responses.iloc[:, 1].dropna()
+                mi = normalized_mutual_info_score(
+                    cleaned_dv_col, cleaned_demographic_col
+                )
+                dv_mi[demographic] = mi
+            mutual_info_dvs[dv] = {"average": np.mean(list(dv_mi.values())), **dv_mi}
+        mi_df = pd.DataFrame.from_dict(mutual_info_dvs, orient="index")
+        mi_df = mi_df.sort_values(by="average", ascending=False)
+        return mi_df
 
     def __iter__(
         self,
