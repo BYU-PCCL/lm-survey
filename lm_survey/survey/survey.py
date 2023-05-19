@@ -1,3 +1,6 @@
+import argparse
+import functools
+import json
 import os
 import typing
 from pathlib import Path
@@ -6,16 +9,13 @@ import numpy as np
 import pandas as pd
 from sklearn.metrics import normalized_mutual_info_score
 
+from lm_survey.prompt_templates import INDEPENDENT_VARIABLE_SUMMARY_TEMPLATE
 from lm_survey.survey.dependent_variable_sample import (
     Completion,
     DependentVariableSample,
 )
 from lm_survey.survey.question import Question, ValidOption
 from lm_survey.survey.variable import Variable
-from lm_survey.prompt_templates import INDEPENDENT_VARIABLE_SUMMARY_TEMPLATE
-import json
-import functools
-import argparse
 
 
 class Survey:
@@ -23,26 +23,43 @@ class Survey:
         self,
         name: str,
         data_filename: str,
-        config_filename: typing.Optional[str] = None,
+        variables_filename: typing.Optional[str] = None,
         independent_variable_names: typing.List[str] = [],
         dependent_variable_names: typing.List[str] = [],
     ):
+        """A class for creating a survey from a CSV file and a variables file.
+
+        Args:
+            name (str): The name of the survey (for reference).
+            data_filename (str): The path to the CSV file containing the survey data.
+            variables_filename (typing.Optional[str], optional): The path to the variables file containing the survey variables. Defaults to None.
+            independent_variable_names (typing.List[str], optional): The names of the independent variables. Defaults to [].
+            dependent_variable_names (typing.List[str], optional): The names of the dependent variables. Defaults to [].
+        """
+
         self.name = name
         self.df = pd.read_csv(data_filename, dtype=str)
 
-        if config_filename is not None and os.path.exists(config_filename):
-            self.variables = self._load_variables(config_filename=config_filename)
+        if variables_filename is not None and os.path.exists(
+            variables_filename
+        ):
+            self.variables = self._load_variables(
+                variables_filename=variables_filename
+            )
         else:
             self.variables = []
             print(
-                "No config file provided. You will need to generate one using the `generate_config` method."
+                "No variables file provided. You will need to generate one"
+                " using the `generate_variables_file` method."
             )
 
         self.set_independent_variables(
             independent_variable_names=independent_variable_names
         )
 
-        self.set_dependent_variables(dependent_variable_names=dependent_variable_names)
+        self.set_dependent_variables(
+            dependent_variable_names=dependent_variable_names
+        )
 
         self._lowercase_variables_neurips()
         self._filter_demographics_neurips()
@@ -62,18 +79,24 @@ class Survey:
                     lambda x: x.lower() if isinstance(x, str) else x
                 )
 
-    def _load_variables(self, config_filename: str) -> typing.List[Variable]:
-        with open(config_filename, "r") as file:
+    def _load_variables(self, variables_filename: str) -> typing.List[Variable]:
+        with open(variables_filename, "r") as file:
             return [Variable(**variable) for variable in json.load(file)]
 
-    def set_independent_variables(self, independent_variable_names: typing.List[str]):
+    def set_independent_variables(
+        self, independent_variable_names: typing.List[str]
+    ):
         acceptable_names = set(independent_variable_names)
 
         self._independent_variables = [
-            variable for variable in self.variables if variable.name in acceptable_names
+            variable
+            for variable in self.variables
+            if variable.name in acceptable_names
         ]
 
-    def set_dependent_variables(self, dependent_variable_names: typing.List[str]):
+    def set_dependent_variables(
+        self, dependent_variable_names: typing.List[str]
+    ):
         acceptable_names = set(dependent_variable_names)
 
         self._dependent_variables = {
@@ -89,7 +112,8 @@ class Survey:
                 return func(self, row)
             except ValueError as error:
                 raise ValueError(
-                    f"Row does not contain all fields for the independent variable summary. {error}"
+                    "Row does not contain all fields for the independent"
+                    f" variable summary. {error}"
                 )
 
         return wrapper
@@ -104,7 +128,9 @@ class Survey:
         )
 
     @_handle_missing_independent_variable
-    def _get_independent_variable_dict(self, row: pd.Series) -> typing.Dict[str, str]:
+    def _get_independent_variable_dict(
+        self, row: pd.Series
+    ) -> typing.Dict[str, str]:
         return {
             variable.name: variable.to_text(row)
             for variable in self._independent_variables
@@ -145,14 +171,23 @@ class Survey:
         self, raw: str, natural_language_template: str, use_default: bool
     ) -> typing.Tuple[bool, ValidOption]:
         if use_default:
-            return use_default, ValidOption(raw=raw, text=raw, natural_language=raw)
+            return use_default, ValidOption(
+                raw=raw,
+                text=raw,
+                natural_language=natural_language_template.format(X=raw),
+            )
 
         text = input(
-            f"\nText from codebook corresponding to option '{raw}' (hit ENTER to use the default value): "
+            f"\nText from codebook corresponding to option '{raw}' (hit ENTER"
+            " to use the default value): "
         )
 
         if text == "skip":
-            return True, ValidOption(raw=raw, text=raw, natural_language=raw)
+            return True, ValidOption(
+                raw=raw,
+                text=raw,
+                natural_language=natural_language_template.format(X=raw),
+            )
         if text == "":
             text = raw
 
@@ -163,17 +198,26 @@ class Survey:
         )
 
         if rephrasing == "skip":
-            return True, ValidOption(raw=raw, text=raw, natural_language=raw)
+            return True, ValidOption(
+                raw=raw,
+                text=raw,
+                natural_language=natural_language_template.format(
+                    X=natural_language_template.format(X=raw)
+                ),
+            )
         elif rephrasing == "":
             natural_language = natural_language_template.format(X=text)
         else:
             natural_language = natural_language_template.format(X=rephrasing)
 
+        # TODO: I feel like calling this `use_default` is confusing, since we probably want to default to using the template.
         return use_default, ValidOption(
             raw=raw, text=text, natural_language=natural_language
         )
 
-    def _process_valid_option_exceptions(self, valid_options: typing.List[ValidOption]):
+    def _process_valid_option_exceptions(
+        self, valid_options: typing.List[ValidOption]
+    ):
         while True:
             print(
                 "\nHere is what you have so far:\n",
@@ -212,7 +256,8 @@ class Survey:
                         valid_options[option_index].text = text
                     except IndexError:
                         print(
-                            f"Index {option_index} is not a valid option. Please try again"
+                            f"Index {option_index} is not a valid option."
+                            " Please try again"
                         )
                         continue
 
@@ -223,10 +268,13 @@ class Survey:
 
                 if natural_language != "":
                     try:
-                        valid_options[option_index].natural_language = natural_language
+                        valid_options[
+                            option_index
+                        ].natural_language = natural_language
                     except IndexError:
                         print(
-                            f"Index {option_index} is not a valid option. Please try again"
+                            f"Index {option_index} is not a valid option."
+                            " Please try again"
                         )
                         continue
 
@@ -242,7 +290,11 @@ class Survey:
             " specific answer)\nPress ENTER to skip\n:"
         )
 
-        return natural_language_template if natural_language_template != "" else "{X}"
+        return (
+            natural_language_template
+            if natural_language_template != ""
+            else "{X}"
+        )
 
     def _process_options(
         self, valid_indices: typing.Set[int], unique_raw_options: np.ndarray
@@ -295,19 +347,22 @@ class Survey:
         except KeyError:
             raise ValueError(f"{key} is not a valid column name.")
 
-        unique_raw_options = sorted(unique_raw_options, key=self._get_raw_sort_key)
+        unique_raw_options = sorted(
+            unique_raw_options, key=self._get_raw_sort_key
+        )
 
         print(
-            "\nFor that question, here is a list of the possible responses, each with its respective index.\n"
+            "\nFor that question, here is a list of the possible responses,"
+            " each with its respective index.\n"
         )
 
         for i, raw_option in enumerate(unique_raw_options):
             print(f"{i}: {raw_option}")
 
         input_indices = input(
-            "\nPlease give a comma-delimited list of indices for values you want"
-            " to include (e.g., 1, 2, 5 ) or a range (e.g., 1-5 inclusive). The"
-            " rest will be excluded\n:"
+            "\nPlease give a comma-delimited list of indices for values you"
+            " want to include (e.g., 1, 2, 5 ) or a range (e.g., 1-5"
+            " inclusive). The rest will be excluded\n:"
         )
 
         valid_indices = self._process_option_indices(input_indices)
@@ -325,7 +380,9 @@ class Survey:
             question_text = self._get_question_text(key=column_name)
 
             try:
-                valid_options, invalid_options = self._get_options(key=column_name)
+                valid_options, invalid_options = self._get_options(
+                    key=column_name
+                )
             except ValueError as error:
                 print(f"Skipping {column_name}: {error}.")
                 continue
@@ -340,7 +397,7 @@ class Survey:
                 invalid_options=invalid_options,
             )
 
-    def generate_config(self, config_filename: str):
+    def generate_variables_file(self, variables_filename: str):
         while True:
             restart = input("\nDo you want to start over? (y/n) :")
             if restart.lower() == "y":
@@ -351,9 +408,9 @@ class Survey:
 
         while True:
             variable_name = input(
-                "\nWhich variables do you want to include (e.g., 'gender')? (type"
-                " 'done' to finish and write a json objects for the variables"
-                " you've specified)\n:"
+                "\nWhich variables do you want to include (e.g., 'gender')?"
+                " (type 'done' to finish and write a json objects for the"
+                " variables you've specified)\n:"
             )
 
             if variable_name == "done":
@@ -362,15 +419,17 @@ class Survey:
             variable = Variable(name=variable_name)
 
             column_names_input = input(
-                "\nWhat columns correspond to this variable? (comma-delimited, e.g.,"
-                " 'v102, v103, v104'; press ENTER to use the name of the variable)\n:"
+                "\nWhat columns correspond to this variable? (comma-delimited,"
+                " e.g., 'v102, v103, v104'; press ENTER to use the name of the"
+                " variable)\n:"
             )
 
             if column_names_input == "":
                 column_names_input = variable_name
 
             column_names = [
-                column_name.strip() for column_name in column_names_input.split(",")
+                column_name.strip()
+                for column_name in column_names_input.split(",")
             ]
 
             for question in self._create_question(column_names=column_names):
@@ -379,7 +438,7 @@ class Survey:
             self.variables.append(variable)
 
             # Export every time a variable is added to not accidentally lose progress.
-            self.export_config(config_filename=config_filename)
+            self.export_variables(variables_filename=variables_filename)
 
     def generate_atp_config(self, config_filename: str):
         config_path = Path(config_filename)
@@ -411,10 +470,10 @@ class Survey:
             self.variables.append(variable)
 
             # Export every time a variable is added to not accidentally lose progress.
-            self.export_config(config_filename=config_filename)
+            self.export_variables(config_filename=config_filename)
 
-    def export_config(self, config_filename: str):
-        with open(config_filename, "w") as file:
+    def export_variables(self, variables_filename: str):
+        with open(variables_filename, "w") as file:
             json.dump(self.to_dict(), file, indent=4)
 
     def to_dict(self) -> typing.List[typing.Dict]:
@@ -545,23 +604,6 @@ class Survey:
 
 
 if __name__ == "__main__":
-    # survey_name = "cces"
-
-    # survey_directory = os.path.join("data", survey_name)
-
-    # data_filename = os.path.join(survey_directory, "data.csv")
-    # config_filename = os.path.join(survey_directory, "config.json")
-
-    # survey = Survey(
-    #     name=survey_name,
-    #     data_filename=data_filename,
-    #     config_filename=config_filename,
-    # )
-
-    # survey.generate_config(
-    #     config_filename=config_filename,
-    # )
-
     parser = argparse.ArgumentParser()
 
     parser.add_argument(
@@ -580,13 +622,15 @@ if __name__ == "__main__":
     ) as file:
         independent_variable_names = json.load(file)
 
-    with open(os.path.join(survey_directory, "dependent-variables.json"), "r") as file:
+    with open(
+        os.path.join(survey_directory, "dependent-variables.json"), "r"
+    ) as file:
         dependent_variable_names = json.load(file)
 
     survey = Survey(
         name="roper",
         data_filename=os.path.join(survey_directory, "data.csv"),
-        config_filename=os.path.join(survey_directory, "config.json"),
+        variables_filename=os.path.join(survey_directory, "variables.json"),
         independent_variable_names=independent_variable_names,
         dependent_variable_names=dependent_variable_names,
     )
