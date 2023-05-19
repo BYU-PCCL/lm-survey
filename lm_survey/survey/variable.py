@@ -36,12 +36,9 @@ class Variable:
         return self.questions[key].to_prompt()
 
     def _to_value(self, value_key: str, row: pd.Series) -> str:
-        try:
-            key = self._get_key(row)
+        key = self._get_key(row)
 
-            value = getattr(self.questions[key].valid_options[row[key].lower()], value_key)
-        except:
-            raise
+        value = getattr(self.questions[key].valid_options[row[key]], value_key)
 
         if value is None:
             raise ValueError(

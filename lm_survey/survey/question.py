@@ -44,10 +44,10 @@ class Question:
     ) -> None:
         self.key = key
         self.text = text
-        self.invalid_options = set(map(str.lower, (invalid_options)))
+        self.invalid_options = set(invalid_options)
 
         self.valid_options = {
-            option["raw"].lower(): ValidOption(**option) for option in valid_options
+            option["raw"]: ValidOption(**option) for option in valid_options
         }
 
         self.valid_options_index_map = {

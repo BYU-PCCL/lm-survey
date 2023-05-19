@@ -61,24 +61,6 @@ class Survey:
             dependent_variable_names=dependent_variable_names
         )
 
-        self._lowercase_variables_neurips()
-        self._filter_demographics_neurips()
-
-    def _filter_demographics_neurips(self):
-        for demographic in self._independent_variables:
-            for question in demographic.questions.values():
-                key = question.key
-                valid_options = set(question.valid_options.keys())
-                self.df = self.df[self.df[key].isin(valid_options)]
-
-    def _lowercase_variables_neurips(self):
-        for variable in self.variables:
-            for question in variable.questions.values():
-                key = question.key
-                self.df[key] = self.df[key].apply(
-                    lambda x: x.lower() if isinstance(x, str) else x
-                )
-
     def _load_variables(self, variables_filename: str) -> typing.List[Variable]:
         with open(variables_filename, "r") as file:
             return [Variable(**variable) for variable in json.load(file)]
