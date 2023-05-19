@@ -597,6 +597,14 @@ class Survey:
         mi_df = mi_df.sort_values(by="average", ascending=False)
         return mi_df
 
+    def print_demographics_natural_language_summary(self):
+        for variable in self._independent_variables:
+            for question in variable.questions.values():
+                print(f"QUESTION '{question.key}': '{question.text}'")
+                for option in question.valid_options.values():
+                    print(f"  '{option.raw}': '{option.natural_language}'")
+                print()
+
     def __iter__(
         self,
     ) -> typing.Iterator[DependentVariableSample]:
