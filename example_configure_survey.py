@@ -10,6 +10,6 @@ if __name__ == "__main__":
     survey = Survey(
         name="ATP_W92",
         data_filename=os.path.join(survey_directory, "responses.csv"),
-        variables_filename=os.path.join(survey_directory, "config.json"),
+        variables_filename=os.path.join(survey_directory, "variables.json"),
     )
-    survey.generate_atp_config(os.path.join(survey_directory, "config.json"))
+    survey.generate_variables_file(os.path.join(survey_directory, "variables.json"))
