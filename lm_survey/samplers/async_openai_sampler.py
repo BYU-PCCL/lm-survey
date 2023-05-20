@@ -23,7 +23,7 @@ class AsyncOpenAiSampler(BaseSampler):
             self.engine = "-".join(self.model_name.split("-")[2:])
         else:
             self.engine = self.model_name
-        
+
         self._async_limiter = AsyncLimiter(OPENAI_RPM)
 
         print(f"Using async {self.engine} engine.")
@@ -86,6 +86,6 @@ class AsyncOpenAiSampler(BaseSampler):
             temperature=temperature,
         )
         return response["choices"][0]["text"]  # type: ignore
-    
+
     def estimate_prompt_cost(self, prompt: str, **kwargs) -> float:
         raise NotImplementedError
