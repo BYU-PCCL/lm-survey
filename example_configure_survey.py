@@ -1,5 +1,4 @@
 from lm_survey.survey.survey import Survey
-import argparse
 import os
 
 
