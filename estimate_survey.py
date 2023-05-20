@@ -17,7 +17,6 @@ def estimate_survey_costs(
     *,
     n_samples_per_dependent_variable: typing.Optional[int] = None,
     n_top_mutual_info_dvs: typing.Optional[int] = None,
-    n_cull_sampled_below: typing.Optional[int] = None,
 ):
     # TODO(vinhowe): fix this
     survey_directory = survey_name
@@ -65,8 +64,7 @@ def estimate_survey_costs(
 
     dependent_variable_samples = list(
         survey.iterate(
-            n_samples_per_dependent_variable=n_samples_per_dependent_variable,
-            n_cull_sampled_below=n_cull_sampled_below,
+            n_samples_per_dependent_variable=n_samples_per_dependent_variable
         )
     )
 
@@ -113,7 +111,6 @@ def main(
     survey_names: typing.List[str],
     n_samples_per_dependent_variable: typing.Optional[int] = None,
     n_top_mutual_info_dvs: typing.Optional[int] = None,
-    n_cull_sampled_below: typing.Optional[int] = None,
 ) -> None:
     sampler = AutoSampler(model_name=model_name)
 
@@ -124,7 +121,6 @@ def main(
             survey_name=survey_name,
             n_samples_per_dependent_variable=n_samples_per_dependent_variable,
             n_top_mutual_info_dvs=n_top_mutual_info_dvs,
-            n_cull_sampled_below=n_cull_sampled_below,
         )
         survey_costs[survey_name] = estimate
 
@@ -160,10 +156,6 @@ if __name__ == "__main__":
         type=int,
     )
     parser.add_argument(
-        "--n_cull_sampled_below",
-        type=int,
-    )
-    parser.add_argument(
         "--n_top_mutual_info_dvs",
         type=int,
     )
@@ -181,5 +173,4 @@ if __name__ == "__main__":
         survey_names=args.survey_name,
         n_samples_per_dependent_variable=args.n_samples_per_dependent_variable,
         n_top_mutual_info_dvs=args.n_top_mutual_info_dvs,
-        n_cull_sampled_below=args.n_cull_sampled_below,
     )
