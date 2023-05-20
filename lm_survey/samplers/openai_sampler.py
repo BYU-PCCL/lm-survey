@@ -6,7 +6,7 @@ import torch
 from lm_survey.samplers.base_sampler import BaseSampler
 import openai
 
-# model cost in cents per 1000 tokens
+# model cost in cents per 1000 tokens (https://openai.com/pricing)
 # tuple is (prompt cost per token, completion cost per token)
 OPENAI_TOKEN_COSTS = {
     # chat
