@@ -422,8 +422,8 @@ class Survey:
             # Export every time a variable is added to not accidentally lose progress.
             self.export_variables(variables_filename=variables_filename)
 
-    def generate_atp_config(self, config_filename: str):
-        config_path = Path(config_filename)
+    def generate_atp_config(self, variables_filename: str):
+        config_path = Path(variables_filename)
         info_csv_path = config_path.parent / "info.csv"
 
         info_df = pd.read_csv(info_csv_path)
@@ -452,7 +452,7 @@ class Survey:
             self.variables.append(variable)
 
             # Export every time a variable is added to not accidentally lose progress.
-            self.export_variables(config_filename=config_filename)
+            self.export_variables(variables_filename=variables_filename)
 
     def export_variables(self, variables_filename: str):
         with open(variables_filename, "w") as file:

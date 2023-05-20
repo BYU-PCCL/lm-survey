@@ -63,7 +63,7 @@ def main(
     survey = Survey(
         name=survey_name,
         data_filename=os.path.join(survey_directory, "data.csv"),
-        config_filename=os.path.join(survey_directory, "config.json"),
+        variables_filename=os.path.join(survey_directory, "config.json"),
         independent_variable_names=independent_variable_names,
         dependent_variable_names=dependent_variable_names,
     )

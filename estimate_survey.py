@@ -30,12 +30,12 @@ def estimate_survey_costs(
         dependent_variable_names = json.load(file)
 
     data_filename = os.path.join(survey_directory, "responses.csv")
-    config_filename = os.path.join(survey_directory, "config.json")
+    variables_filename = os.path.join(survey_directory, "config.json")
 
     survey = Survey(
         name=survey_name,
         data_filename=data_filename,
-        config_filename=config_filename,
+        variables_filename=variables_filename,
         independent_variable_names=independent_variable_names,
         dependent_variable_names=dependent_variable_names,
     )
@@ -57,7 +57,7 @@ def estimate_survey_costs(
         survey = Survey(
             name=survey_name,
             data_filename=data_filename,
-            config_filename=config_filename,
+            variables_filename=variables_filename,
             independent_variable_names=independent_variable_names,
             dependent_variable_names=dependent_variable_names,
         )
