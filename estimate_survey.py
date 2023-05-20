@@ -51,9 +51,7 @@ def estimate_survey_costs(
         else:
             mutual_info_stats = survey.mutual_info_stats()
             mutual_info_stats.to_csv(cached_mutual_info_stats_filename)
-        # already sorted; get the first n_top_mutual_info_dvs from the index
         dependent_variable_names = mutual_info_stats.index[:n_top_mutual_info_dvs]
-        # replace survey with a new one with only the top n_top_mutual_info_dvs
         survey = Survey(
             name=survey_name,
             data_filename=data_filename,
