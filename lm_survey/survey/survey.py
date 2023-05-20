@@ -1,6 +1,3 @@
-import argparse
-import functools
-import json
 import os
 import typing
 from pathlib import Path
@@ -9,13 +6,16 @@ import numpy as np
 import pandas as pd
 from sklearn.metrics import normalized_mutual_info_score
 
-from lm_survey.prompt_templates import INDEPENDENT_VARIABLE_SUMMARY_TEMPLATE
 from lm_survey.survey.dependent_variable_sample import (
     Completion,
     DependentVariableSample,
 )
 from lm_survey.survey.question import Question, ValidOption
 from lm_survey.survey.variable import Variable
+from lm_survey.prompt_templates import INDEPENDENT_VARIABLE_SUMMARY_TEMPLATE
+import json
+import functools
+import argparse
 
 
 class Survey:
