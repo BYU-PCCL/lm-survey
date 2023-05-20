@@ -68,19 +68,6 @@ def estimate_survey_costs(
         )
     )
 
-    # print random sample of prompts
-    # print(
-    #     "\n===\n===\n===\n".join(
-    #         np.random.choice(
-    #             [
-    #                 dependent_variable_sample.prompt
-    #                 for dependent_variable_sample in dependent_variable_samples
-    #             ],
-    #             10,
-    #         )
-    #     )
-    # )
-
     prompt_count = len(dependent_variable_samples)
 
     if hasattr(sampler, "batch_estimate_prompt_cost"):
