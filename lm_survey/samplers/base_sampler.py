@@ -1,5 +1,4 @@
 from abc import ABCMeta, abstractmethod
-import asyncio
 import typing
 
 T = typing.TypeVar("T")

@@ -549,28 +549,32 @@ if __name__ == "__main__":
         default="roper",
     )
 
+    parser.add_argument(
+        "-e",
+        "--experiment_name",
+        type=str,
+        default="default",
+    )
+
     args = parser.parse_args()
 
-    survey_directory = os.path.join("data", args.survey_name)
+    data_dir = os.path.join("data", args.survey_name)
+    experiment_dir = os.path.join("experiments", args.survey_name, args.experiment_name)
+    schema_dir = os.path.join("schemas", args.survey_name)
 
-    with open(
-        os.path.join(survey_directory, "independent-variables.json"), "r"
-    ) as file:
-        independent_variable_names = json.load(file)
-
-    with open(os.path.join(survey_directory, "dependent-variables.json"), "r") as file:
-        dependent_variable_names = json.load(file)
+    with open(os.path.join(experiment_dir, "config.json"), "r") as file:
+        config = json.load(file)
 
     survey = Survey(
         name="roper",
-        data_filename=os.path.join(survey_directory, "data.csv"),
-        variables_filename=os.path.join(survey_directory, "variables.json"),
-        independent_variable_names=independent_variable_names,
-        dependent_variable_names=dependent_variable_names,
+        data_filename=os.path.join(data_dir, "data.csv"),
+        variables_filename=os.path.join(schema_dir, "schema.json"),
+        independent_variable_names=config["independent_variable_names"],
+        dependent_variable_names=config["dependent_variable_names"],
     )
 
     question_samples = list(iter(survey))
 
     print(
-        f"{len(question_samples) / len(dependent_variable_names) / len(survey.df) * 100:.2f}%"
+        f"{len(question_samples) / len(config['dependent_variable_names']) / len(survey.df) * 100:.2f}%"
     )

@@ -56,9 +56,9 @@ class Variable:
     def to_natural_language(self, row: pd.Series) -> str:
         return self._to_value(value_key="natural_language", row=row)
 
-    def to_question(self, row: pd.Series) -> str:
+    def to_question(self, row: pd.Series) -> Question:
         key = self._get_key(row)
-        return self.questions[key].text
+        return self.questions[key]
 
     def get_correct_letter(self, row: pd.Series) -> str:
         key = self._get_key(row)
