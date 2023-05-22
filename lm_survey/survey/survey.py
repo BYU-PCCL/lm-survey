@@ -55,15 +55,6 @@ class Survey:
 
         self.set_dependent_variables(dependent_variable_names=dependent_variable_names)
 
-        self._filter_invalid_variable_values()
-
-    def _filter_invalid_variable_values(self):
-        for demographic in self._independent_variables:
-            for question in demographic.questions.values():
-                key = question.key
-                valid_options = set(question.valid_options.keys())
-                self.df = self.df[self.df[key].isin(valid_options)]
-
     def _load_variables(self, variables_filename: str) -> typing.List[Variable]:
         with open(variables_filename, "r") as file:
             return [Variable(**variable) for variable in json.load(file)]
@@ -454,20 +445,22 @@ class Survey:
         }
 
         # The index from iterrows gives type errors when using it as a key in iloc.
-        for i, row in self.df.iterrows():
-            try:
-                independent_variable_summary = (
-                    self._create_independent_variable_summary(row)
-                )
-            except ValueError:
-                continue
+        for name, dependent_variable in self._dependent_variables.items():
+            for i, row in self.df.sample(frac=1).iterrows():
+                try:
+                    independent_variable_summary = (
+                        self._create_independent_variable_summary(row)
+                    )
+                except ValueError:
+                    continue
 
-            for name, dependent_variable in self._dependent_variables.items():
-                if n_sampled_per_dependent_variable[
-                    name
-                ] >= n_samples_per_dependent_variable or not dependent_variable.is_valid(
-                    row
+                if (
+                    n_sampled_per_dependent_variable[name]
+                    >= n_samples_per_dependent_variable
                 ):
+                    break
+
+                if not dependent_variable.is_valid(row):
                     continue
 
                 dependent_variable_prompt = dependent_variable.to_prompt(row)
