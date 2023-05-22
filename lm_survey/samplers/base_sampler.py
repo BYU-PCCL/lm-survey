@@ -14,7 +14,9 @@ class BaseSampler(metaclass=ABCMeta):
         self.config_path = config_path
 
     @abstractmethod
-    def send_prompt(self, prompt: str, n_probs: int, **kwargs) -> typing.Dict[str, int]:
+    def send_prompt(
+        self, prompt: str, n_probs: int, **kwargs
+    ) -> typing.Tuple[typing.Dict[str, int], typing.Any]:
         """
         Sends the given prompt to a LM.
         Arguments:
@@ -28,10 +30,12 @@ class BaseSampler(metaclass=ABCMeta):
     @abstractmethod
     def rank_completions(
         self, prompt: str, completions: typing.List[str]
-    ) -> typing.Dict[str, float]:
+    ) -> typing.Tuple[typing.Dict[str, float], typing.Any]:
         pass
 
-    def get_best_next_token(self, prompt: str, **kwargs) -> str:
+    def get_best_next_token(
+        self, prompt: str, **kwargs
+    ) -> typing.Tuple[str, typing.Any]:
         """
         Generates a sequence of tokens from a prompt.
         Arguments:
@@ -40,8 +44,8 @@ class BaseSampler(metaclass=ABCMeta):
         Return:
             str a generated sequence
         """
-        logprobs = self.send_prompt(prompt=prompt, n_probs=1, **kwargs)
-        return list(logprobs.keys())[0]
+        logprobs, response = self.send_prompt(prompt=prompt, n_probs=1, **kwargs)
+        return list(logprobs.keys())[0], response
 
     @abstractmethod
     def estimate_prompt_cost(self, prompt: str, **kwargs) -> float:

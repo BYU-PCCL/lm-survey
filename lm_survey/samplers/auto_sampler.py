@@ -30,7 +30,7 @@ class AutoSampler(BaseSampler):
 
 if __name__ == "__main__":
     sampler = AutoSampler("gpt3-ada")
-    text = sampler.get_best_next_token(
+    text, response = sampler.get_best_next_token(
         prompt="What is the capital of France?\nThe capital of France is",
     )
     print(text)
