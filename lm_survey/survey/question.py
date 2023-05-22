@@ -89,6 +89,12 @@ class Question:
                 f"This row's response is not a valid option: {row[self.key]}"
             )
 
+    def get_ordinal_per_letter(self) -> typing.Dict[str, typing.Optional[int]]:
+        return {
+            MULTIPLE_CHOICE_LIST[i]: option.ordinal
+            for i, option in enumerate(self.valid_options.values())
+        }
+
     def __str__(self):
         return self.text
 

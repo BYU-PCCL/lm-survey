@@ -1,8 +1,5 @@
-import functools
 import typing
-
-import numpy as np
-from lm_survey.survey.variable import Variable
+from lm_survey.survey.question import Question
 
 
 class Completion:
@@ -96,7 +93,7 @@ class DependentVariableSample:
         index: int,
         independent_variables: typing.Dict[str, str],
         variable_name: str,
-        question: str,
+        question: Question,
         prompt: str,
         completion: typing.Union[Completion, typing.Dict[str, typing.Any]],
         **kwargs,
@@ -134,5 +131,6 @@ class DependentVariableSample:
         self_dict = self.__dict__.copy()
 
         self_dict["completion"] = self.completion.to_dict()
+        self_dict["question"] = self.question.to_dict()
 
         return self_dict

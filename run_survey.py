@@ -120,9 +120,7 @@ async def main(
                 )
                 dependent_variable_sample.completion.response_object = response_object
 
-            sample_coroutines.append(
-                request_completion(dependent_variable_sample)
-            )
+            sample_coroutines.append(request_completion(dependent_variable_sample))
 
         await tqdm_asyncio.gather(*sample_coroutines)
     else:
