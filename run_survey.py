@@ -1,9 +1,11 @@
 import typing
+import asyncio
 
 import numpy as np
 from lm_survey.survey import Survey, DependentVariableSample
 from lm_survey.samplers import AutoSampler
 from tqdm import tqdm
+from tqdm.asyncio import tqdm_asyncio
 import json
 import os
 import argparse
@@ -69,7 +71,7 @@ def save_experiment_data(
         )
 
 
-def main(
+async def main(
     model_name: str,
     survey_name: str,
     experiment_name: str,
@@ -101,16 +103,38 @@ def main(
         )
     )
 
-    for dependent_variable_sample in tqdm(dependent_variable_samples):
+    # TODO: This is a really lame way to do this. We should probably do it another way,
+    # especially because it seems obvious that the model name should not be tied to its
+    # sampler implementation. This is a symptom of a very lazy async implementation.
+    if sampler.model_name.startswith("async"):
+        sample_coroutines = []
+        for dependent_variable_sample in dependent_variable_samples:
 
-        completion_log_probs, response_object = sampler.rank_completions(
-            prompt=dependent_variable_sample.prompt,
-            completions=dependent_variable_sample.completion.possible_completions,
-        )
-        dependent_variable_sample.completion.set_completion_log_probs(
-            completion_log_probs
-        )
-        dependent_variable_sample.completion.response_object = response_object
+            async def request_completion(dependent_variable_sample):
+                completion_log_probs, response_object = await sampler.rank_completions(
+                    prompt=dependent_variable_sample.prompt,
+                    completions=dependent_variable_sample.completion.possible_completions,
+                )
+                dependent_variable_sample.completion.set_completion_log_probs(
+                    completion_log_probs
+                )
+                dependent_variable_sample.completion.response_object = response_object
+
+            sample_coroutines.append(
+                request_completion(dependent_variable_sample)
+            )
+
+        await tqdm_asyncio.gather(*sample_coroutines)
+    else:
+        for dependent_variable_sample in tqdm(dependent_variable_samples):
+            completion_log_probs, response_object = sampler.rank_completions(
+                prompt=dependent_variable_sample.prompt,
+                completions=dependent_variable_sample.completion.possible_completions,
+            )
+            dependent_variable_sample.completion.set_completion_log_probs(
+                completion_log_probs
+            )
+            dependent_variable_sample.completion.response_object = response_object
 
     accuracy = np.mean(
         [
@@ -172,9 +196,11 @@ if __name__ == "__main__":
     ):
         args.n_samples_per_dependent_variable = 100
 
-    main(
-        model_name=args.model_name,
-        survey_name=args.survey_name,
-        experiment_name=args.experiment_name,
-        n_samples_per_dependent_variable=args.n_samples_per_dependent_variable,
+    asyncio.run(
+        main(
+            model_name=args.model_name,
+            survey_name=args.survey_name,
+            experiment_name=args.experiment_name,
+            n_samples_per_dependent_variable=args.n_samples_per_dependent_variable,
+        )
     )

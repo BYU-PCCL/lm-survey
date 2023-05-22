@@ -1,5 +1,9 @@
 from abc import ABCMeta, abstractmethod
+import asyncio
 import typing
+
+T = typing.TypeVar("T")
+MaybeAwaitable = typing.Union[T, typing.Awaitable[T]]
 
 
 class BaseSampler(metaclass=ABCMeta):
@@ -16,7 +20,7 @@ class BaseSampler(metaclass=ABCMeta):
     @abstractmethod
     def send_prompt(
         self, prompt: str, n_probs: int, **kwargs
-    ) -> typing.Tuple[typing.Dict[str, int], typing.Any]:
+    ) -> MaybeAwaitable[typing.Tuple[typing.Dict[str, int], typing.Any]]:
         """
         Sends the given prompt to a LM.
         Arguments:
@@ -30,12 +34,12 @@ class BaseSampler(metaclass=ABCMeta):
     @abstractmethod
     def rank_completions(
         self, prompt: str, completions: typing.List[str]
-    ) -> typing.Tuple[typing.Dict[str, float], typing.Any]:
+    ) -> MaybeAwaitable[typing.Tuple[typing.Dict[str, float], typing.Any]]:
         pass
 
     def get_best_next_token(
         self, prompt: str, **kwargs
-    ) -> typing.Tuple[str, typing.Any]:
+    ) -> MaybeAwaitable[typing.Tuple[str, typing.Any]]:
         """
         Generates a sequence of tokens from a prompt.
         Arguments:
@@ -44,11 +48,21 @@ class BaseSampler(metaclass=ABCMeta):
         Return:
             str a generated sequence
         """
-        logprobs, response = self.send_prompt(prompt=prompt, n_probs=1, **kwargs)
-        return list(logprobs.keys())[0], response
+        # TODO(vinhowe): This is an AWFUL way to do this and it is SO FRAGILE
+        if not self.model_name.startswith("async"):
+            logprobs, response = self.send_prompt(prompt=prompt, n_probs=1, **kwargs)
+            return list(logprobs.keys())[0], response
+
+        async def _get_best_next_token():
+            logprobs, response = await self.send_prompt(
+                prompt=prompt, n_probs=1, **kwargs
+            )
+            return list(logprobs.keys())[0], response
+
+        return _get_best_next_token()
 
     @abstractmethod
-    def estimate_prompt_cost(self, prompt: str, **kwargs) -> float:
+    def estimate_prompt_cost(self, prompt: str, **kwargs) -> MaybeAwaitable[float]:
         """
         Estimates the cost of sending the given prompt to a LM.
         Arguments:
