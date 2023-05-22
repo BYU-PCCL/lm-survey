@@ -405,6 +405,7 @@ class Survey:
             variable_row = info_df[info_df["key"] == variable_name].iloc[0]
             question_text = str(variable_row["question"])
             option_mapping = eval(str(variable_row["option_mapping"]))
+            option_ordinals = eval(str(variable_row["option_ordinal"]))
 
             original_options = list(option_mapping.values())
             valid_options = [o for o in original_options if o != "Refused"]
@@ -414,8 +415,8 @@ class Survey:
                 key=variable_name,
                 text=question_text,
                 valid_options=[
-                    ValidOption(raw=option, text=option).to_dict()
-                    for option in valid_options
+                    ValidOption(raw=option, text=option, ordinal=ordinal).to_dict()
+                    for ordinal, option in zip(option_ordinals, valid_options)
                 ],
                 invalid_options=invalid_options,
             ).to_dict()
