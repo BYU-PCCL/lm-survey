@@ -11,10 +11,12 @@ class Completion:
         possible_completions: typing.List[str],
         correct_completion: str,
         completion_log_probs: typing.Optional[typing.Dict[str, float]] = None,
+        response_object: typing.Optional[typing.Dict[str, typing.Any]] = None,
         **kwargs,
     ):
         self.possible_completions = possible_completions
         self.correct_completion = correct_completion
+        self.response_object = response_object
 
         # For backwards compatibility.
         completion_log_probs = (

@@ -43,24 +43,30 @@ class OpenAiSampler(BaseSampler):
 
         self.tokenizer = None
 
-    def rank_completions(self, prompt, completions):
+    def rank_completions(
+        self, prompt, completions
+    ) -> typing.Tuple[typing.Dict[str, float], typing.Any]:
         # 100 is the maximum number of log probs we can get.
-        top_log_probs = self.send_prompt(prompt, n_probs=100)
+        top_log_probs, response = self.send_prompt(prompt, n_probs=100)
 
         log_probs = torch.tensor(
-            [top_log_probs.get(completion, -torch.inf) for completion in completions]
+            [top_log_probs.get(completion, -torch.inf) for completion in completions]  # type: ignore
         )
 
         normalized_log_probs = torch.nn.functional.log_softmax(log_probs, dim=0)
 
-        return {
+        completion_log_probs = {
             completion: normalized_log_prob.item()
             for completion, normalized_log_prob in zip(
                 completions, normalized_log_probs
             )
         }
 
-    def send_prompt(self, prompt, n_probs=100, **kwargs):
+        return completion_log_probs, response
+
+    def send_prompt(
+        self, prompt: str, n_probs: int, **kwargs
+    ) -> typing.Tuple[typing.Dict[str, int], typing.Any]:
         try:
             response = openai.Completion.create(
                 engine=self.engine,
@@ -75,19 +81,21 @@ class OpenAiSampler(BaseSampler):
             sorted_logprobs = dict(
                 sorted(logprobs.items(), key=lambda x: x[1], reverse=True)
             )
-            return sorted_logprobs
+            return sorted_logprobs, response
         except Exception as e:
             print(e)
-            return {}
+            return {}, None
 
-    def sample_several(self, prompt, temperature=0, n_tokens=10):
+    def sample_several(
+        self, prompt, temperature=0, n_tokens=10
+    ) -> typing.Tuple[str, typing.Any]:
         response = openai.Completion.create(
             engine=self.engine,
             prompt=prompt,
             max_tokens=n_tokens,
             temperature=temperature,
         )
-        return response["choices"][0]["text"]  # type: ignore
+        return response["choices"][0]["text"], response  # type: ignore
 
     def _setup_tokenizer(self):
         if not self.tokenizer:
@@ -96,7 +104,7 @@ class OpenAiSampler(BaseSampler):
     def estimate_prompt_cost(self, prompt: str):
         self._setup_tokenizer()
         # +1 for single token completion
-        prompt_token_count = len(self.tokenizer.encode(prompt))
+        prompt_token_count = len(self.tokenizer.encode(prompt))  # type: ignore
         prompt_cost, completion_cost = OPENAI_TOKEN_COSTS[self.engine]
         return ((prompt_cost * prompt_token_count) + (completion_cost)) / 1000
 
@@ -106,7 +114,7 @@ class OpenAiSampler(BaseSampler):
         self._setup_tokenizer()
         # +1 for single token completion
         token_counts = [
-            len(encoded) + 1 for encoded in self.tokenizer.encode_batch(prompts)
+            len(encoded) + 1 for encoded in self.tokenizer.encode_batch(prompts)  # type: ignore
         ]
         prompt_cost, completion_cost = OPENAI_TOKEN_COSTS[self.engine]
         return [
@@ -117,7 +125,7 @@ class OpenAiSampler(BaseSampler):
 
 if __name__ == "__main__":
     sampler = OpenAiSampler("gpt3-ada")
-    text = sampler.rank_completions(
+    text, response = sampler.rank_completions(
         prompt="What is the capital of France?\nThe capital of France is",
         completions=[" Paris", " London", " Berlin"],
     )
