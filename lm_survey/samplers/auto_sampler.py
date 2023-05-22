@@ -1,14 +1,15 @@
 from lm_survey.samplers.hf_sampler import HfSampler
 from lm_survey.samplers.openai_sampler import OpenAiSampler
+from lm_survey.samplers.async_openai_sampler import AsyncOpenAiSampler
 from lm_survey.samplers.base_sampler import BaseSampler
 
 
 class AutoSampler(BaseSampler):
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-
-        if self.model_name.startswith("gpt3") or self.model_name.startswith("gpt4"):
-            self.sampler = OpenAiSampler(*args, **kwargs)
+    def __init__(self, model_name: str, *args, **kwargs):
+        if model_name.startswith("gpt3") or model_name.startswith("gpt4"):
+            self.sampler = OpenAiSampler(model_name, *args, **kwargs)
+        elif model_name.startswith("async-gpt3") or model_name.startswith("async-gpt4"):
+            self.sampler = AsyncOpenAiSampler(model_name, *args, **kwargs)
         else:
             self.sampler = HfSampler(*args, **kwargs)
 
