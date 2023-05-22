@@ -13,10 +13,12 @@ class ValidOption:
         raw: str,
         text: typing.Optional[str] = None,
         natural_language: typing.Optional[str] = None,
+        ordinal: typing.Optional[int] = None,
     ) -> None:
         self.raw = raw
         self.text = text
         self.natural_language = natural_language
+        self.ordinal = ordinal
 
     def to_dict(self) -> typing.Dict[str, typing.Optional[str]]:
         return self.__dict__
@@ -27,6 +29,7 @@ class ValidOption:
                 f"\tRaw: {self.raw}",
                 f"\tText: {self.text}",
                 f"\tNatural Language: {self.natural_language}",
+                f"\tOrdinal: {self.ordinal}",
             ]
         )
 
