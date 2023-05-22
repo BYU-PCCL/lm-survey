@@ -33,7 +33,7 @@ class AsyncOpenAiSampler(BaseSampler):
 
     async def rank_completions(self, prompt, completions):
         # 100 is the maximum number of log probs we can get.
-        top_log_probs = await self.send_prompt(prompt, n_probs=100)
+        top_log_probs, response = await self.send_prompt(prompt, n_probs=100)
 
         log_probs = torch.tensor(
             [top_log_probs.get(completion, -torch.inf) for completion in completions]
@@ -41,12 +41,14 @@ class AsyncOpenAiSampler(BaseSampler):
 
         normalized_log_probs = torch.nn.functional.log_softmax(log_probs, dim=0)
 
-        return {
+        completion_log_probs = {
             completion: normalized_log_prob.item()
             for completion, normalized_log_prob in zip(
                 completions, normalized_log_probs
             )
         }
+
+        return completion_log_probs, response
 
     async def _throttled_completion(self, **kwargs):
         while True:
@@ -74,10 +76,10 @@ class AsyncOpenAiSampler(BaseSampler):
             sorted_logprobs = dict(
                 sorted(logprobs.items(), key=lambda x: x[1], reverse=True)
             )
-            return sorted_logprobs
+            return sorted_logprobs, response
         except Exception as e:
             print(e)
-            return {}
+            return {}, None
 
     async def sample_several(self, prompt, temperature=0, n_tokens=10):
         response = await self._throttled_completion(
@@ -85,7 +87,7 @@ class AsyncOpenAiSampler(BaseSampler):
             max_tokens=n_tokens,
             temperature=temperature,
         )
-        return response["choices"][0]["text"]  # type: ignore
+        return response["choices"][0]["text"], response  # type: ignore
 
     def estimate_prompt_cost(self, prompt: str, **kwargs) -> float:
         raise NotImplementedError
