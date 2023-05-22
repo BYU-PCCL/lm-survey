@@ -129,10 +129,12 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-
 data
 docker
 results
 nb_*
 .Trash-0
 *.sh
+.DS_Store
+experiments
+schemas
