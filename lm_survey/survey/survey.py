@@ -395,9 +395,8 @@ class Survey:
             # Export every time a variable is added to not accidentally lose progress.
             self.export_variables(variables_filename=variables_filename)
 
-    def generate_atp_schema(self, variables_filename: str):
-        schema_path = Path(variables_filename)
-        info_csv_path = schema_path.parent / "info.csv"
+    def generate_atp_schema(self, survey_path: str, variables_filename: str):
+        info_csv_path = Path(survey_path) / "info.csv"
 
         info_df = pd.read_csv(info_csv_path)
 
@@ -425,7 +424,6 @@ class Survey:
 
             self.variables.append(variable)
 
-            # Export every time a variable is added to not accidentally lose progress.
             self.export_variables(variables_filename=variables_filename)
 
     def export_variables(self, variables_filename: str):

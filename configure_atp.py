@@ -10,6 +10,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "wave", type=Path, nargs="+", help="Path(s) to wave of ATP to configure"
     )
+    parser.add_argument("output_path", type=Path, help="Path to output directory")
     parser.add_argument(
         "--base-variables", type=Path, help="Path to optional base variables"
     )
@@ -20,7 +21,10 @@ if __name__ == "__main__":
 
         survey = Survey(name="ATP_W92", data_filename=wave / "data.csv")
 
-        survey.generate_atp_schema(variables_path)
+        wave_output_dir = args.output_path / wave
+        wave_output_dir.mkdir(parents=True, exist_ok=True)
+
+        survey.generate_atp_schema(wave, wave_output_dir / "variables.json")
 
         # This is a simple way to put some extra stuff in the variables file
         if args.base_variables:
