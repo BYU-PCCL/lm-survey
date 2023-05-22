@@ -454,7 +454,7 @@ class Survey:
         }
 
         # The index from iterrows gives type errors when using it as a key in iloc.
-        for i, (_, row) in enumerate(self.df.iterrows()):
+        for i, row in self.df.iterrows():
             try:
                 independent_variable_summary = (
                     self._create_independent_variable_summary(row)
@@ -493,7 +493,7 @@ class Survey:
                     variable_name=name,
                     question=dependent_variable.to_question(row),
                     independent_variables=independent_variables,
-                    index=i,
+                    index=i,  # type: ignore
                     prompt=prompt,
                     completion=completion,
                 )
