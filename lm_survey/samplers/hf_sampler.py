@@ -106,11 +106,8 @@ class HfSampler(BaseSampler):
 
 
 if __name__ == "__main__":
-    sampler = HfSampler(model_name="/mnt/pccfs2/backed_up/models/llama/hf/llama-7b-hf")
+    sampler = HfSampler(model_name="/mnt/pccfs2/backed_up/models/llama/finetunes/llama-30b-hf-left")
 
-    completions_dict = sampler.rank_completions(
-        prompt="What is the capital of France?\n\nA) Paris\nB) London\nC) Berlin\nD) Rome\n\nAnswer:",
-        completions=["A", "B", "C", "D"],
-    )
+    generation = sampler.sample_several("I think abortion is", temperature=0.7, n_tokens=200)
 
-    print(completions_dict)
+    print(generation)

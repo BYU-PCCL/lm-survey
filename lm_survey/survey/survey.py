@@ -499,24 +499,33 @@ if __name__ == "__main__":
         default="roper",
     )
 
+    parser.add_argument(
+        "-e",
+        "--experiment_name",
+        type=str,
+        default="default",
+    )
+
     args = parser.parse_args()
 
-    survey_directory = os.path.join("data", args.survey_name)
+    data_dir = os.path.join("data", args.survey_name)
+    experiment_dir = os.path.join("experiments", args.survey_name, args.experiment_name)
+    schema_dir = os.path.join("schemas", args.survey_name)
 
     with open(
-        os.path.join(survey_directory, "independent-variables.json"), "r"
+        os.path.join(experiment_dir, "independent-variables.json"), "r"
     ) as file:
         independent_variable_names = json.load(file)
 
     with open(
-        os.path.join(survey_directory, "dependent-variables.json"), "r"
+        os.path.join(experiment_dir, "dependent-variables.json"), "r"
     ) as file:
         dependent_variable_names = json.load(file)
 
     survey = Survey(
         name="roper",
-        data_filename=os.path.join(survey_directory, "data.csv"),
-        variables_filename=os.path.join(survey_directory, "variables.json"),
+        data_filename=os.path.join(data_dir, "data.csv"),
+        variables_filename=os.path.join(schema_dir, "schema.json"),
         independent_variable_names=independent_variable_names,
         dependent_variable_names=dependent_variable_names,
     )

@@ -117,10 +117,10 @@ if __name__ == "__main__":
         DependentVariableSample(
             **sample_dict,
         )
-        for sample_dict in results["llama-7b-hf"]
+        for sample_dict in results["llama-65b-hf"]
     ]
 
     survey_results = SurveyResults(question_samples=question_samples)
 
     # Print with 2 decimal places
-    print(survey_results.get_mean_score(slice_by=["gender"]).round(2))
+    print(survey_results.get_mean_score(slice_by=["religion"]).round(2))
