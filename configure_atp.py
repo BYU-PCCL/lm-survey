@@ -16,7 +16,7 @@ if __name__ == "__main__":
     for wave in args.wave:
         config_path = wave / "config.json"
 
-        survey = Survey(name="ATP_W92", data_filename=wave / "responses.csv")
+        survey = Survey(name="ATP_W92", data_filename=wave / "data.csv")
 
         survey.generate_atp_config(config_path)
 

@@ -20,8 +20,7 @@ def check_survey_prompts(survey_directory: Path):
 
     survey = Survey(
         name=survey_name,
-        # TODO: responses.csv is ATP-specific; not sure how this should work
-        data_filename=survey_directory / "responses.csv",
+        data_filename=survey_directory / "data.csv",
         variables_filename=survey_directory / "config.json",
         independent_variable_names=independent_variable_names,
         dependent_variable_names=dependent_variable_names,
