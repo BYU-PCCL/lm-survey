@@ -48,7 +48,8 @@ class BaseSampler(metaclass=ABCMeta):
         Return:
             str a generated sequence
         """
-        if not asyncio.iscoroutinefunction(self.send_prompt):
+        # TODO(vinhowe): This is an AWFUL way to do this and it is SO FRAGILE
+        if not self.model_name.startswith("async"):
             logprobs, response = self.send_prompt(prompt=prompt, n_probs=1, **kwargs)
             return list(logprobs.keys())[0], response
 
