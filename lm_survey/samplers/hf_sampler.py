@@ -29,7 +29,7 @@ class HfSampler(BaseSampler):
 
     def rank_completions(
         self, prompt: str, completions: typing.List[str]
-    ) -> typing.Dict[str, float]:
+    ) -> typing.Tuple[typing.Dict[str, float], typing.Any]:
         inputs = self.tokenizer(
             prompt,
             padding="max_length",
@@ -50,14 +50,17 @@ class HfSampler(BaseSampler):
         completion_logits = torch.gather(logits, 0, completion_ids[:, -1])
         completion_log_probs = torch.nn.functional.log_softmax(completion_logits, dim=0)
 
-        return {
-            completion: log_prob.item()
-            for completion, log_prob in zip(completions, completion_log_probs)
-        }
+        return (
+            {
+                completion: log_prob.item()
+                for completion, log_prob in zip(completions, completion_log_probs)
+            },
+            None,
+        )
 
     def send_prompt(
         self, prompt: str, n_probs: int, **kwargs
-    ) -> typing.Dict[str, float]:
+    ) -> typing.Tuple[typing.Dict[str, float], typing.Any]:
         inputs = self.tokenizer(
             prompt,
             padding="max_length",
@@ -89,9 +92,11 @@ class HfSampler(BaseSampler):
         for pred, log_prob in zip(preds, log_probs):
             self.pred_dict[pred] = log_prob.item()
 
-        return self.pred_dict
+        return self.pred_dict, None
 
-    def sample_several(self, prompt, temperature=0, n_tokens=10):
+    def sample_several(
+        self, prompt, temperature=0, n_tokens=10
+    ) -> typing.Tuple[str, typing.Any]:
         inputs = self.tokenizer(prompt, return_tensors="pt").to(self.device)
         tokens = self.model.generate(
             **inputs,
@@ -102,7 +107,7 @@ class HfSampler(BaseSampler):
         preds = self.tokenizer.batch_decode(
             tokens, clean_up_tokenization_spaces=True, skip_special_tokens=True
         )
-        return preds[0][len(prompt) + 1 :]
+        return preds[0][len(prompt) + 1 :], None
 
     def estimate_prompt_cost(self, _prompt: str, **_kwargs) -> float:
         raise NotImplementedError
@@ -111,7 +116,7 @@ class HfSampler(BaseSampler):
 if __name__ == "__main__":
     sampler = HfSampler(model_name="/mnt/pccfs2/backed_up/models/llama/hf/llama-7b-hf")
 
-    completions_dict = sampler.rank_completions(
+    completions_dict, _ = sampler.rank_completions(
         prompt="What is the capital of France?\n\nA) Paris\nB) London\nC) Berlin\nD) Rome\n\nAnswer:",
         completions=["A", "B", "C", "D"],
     )

@@ -16,9 +16,9 @@ def save_results(
     model_name: str,
     survey_name: str,
 ):
-    model_name = parse_model_name(model_name)
+    parsed_model_name = parse_model_name(model_name)
 
-    results_dir = os.path.join("results", survey_name, model_name)
+    results_dir = os.path.join("results", survey_name, parsed_model_name)
 
     results = [
         question_sample.to_dict() for question_sample in dependent_variable_samples
@@ -34,6 +34,8 @@ def save_results(
 def parse_model_name(model_name: str) -> str:
     if model_name.startswith("/"):
         model_name = model_name.split("/")[-1]
+    else:
+        model_name = model_name.replace("/", "-")
 
     return model_name
 
@@ -48,14 +50,15 @@ def save_experiment_data(
     experiment_dir: str,
     n_samples_per_dependent_variable: typing.Optional[int] = None,
 ):
-    model_name = parse_model_name(model_name)
+    parsed_model_name = parse_model_name(model_name)
 
     metadata = {
+        "model_name": model_name,
         "n_samples_per_dependent_variable": n_samples_per_dependent_variable,
         "commit_hash": get_commit_hash(),
     }
 
-    experiment_metadata_dir = os.path.join(experiment_dir, model_name)
+    experiment_metadata_dir = os.path.join(experiment_dir, parsed_model_name)
 
     if not os.path.exists(experiment_metadata_dir):
         os.makedirs(experiment_metadata_dir)
@@ -107,29 +110,31 @@ async def main(
         sample_coroutines = []
         for dependent_variable_sample in dependent_variable_samples:
 
-            async def request_completion_log_probs(dependent_variable_sample):
-                completion_log_probs = await sampler.rank_completions(
+            async def request_completion(dependent_variable_sample):
+                completion_log_probs, response_object = await sampler.rank_completions(
                     prompt=dependent_variable_sample.prompt,
                     completions=dependent_variable_sample.completion.possible_completions,
                 )
                 dependent_variable_sample.completion.set_completion_log_probs(
                     completion_log_probs
                 )
+                dependent_variable_sample.completion.response_object = response_object
 
             sample_coroutines.append(
-                request_completion_log_probs(dependent_variable_sample)
+                request_completion(dependent_variable_sample)
             )
 
         await tqdm_asyncio.gather(*sample_coroutines)
     else:
         for dependent_variable_sample in tqdm(dependent_variable_samples):
-            completion_log_probs = sampler.rank_completions(
+            completion_log_probs, response_object = sampler.rank_completions(
                 prompt=dependent_variable_sample.prompt,
                 completions=dependent_variable_sample.completion.possible_completions,
             )
             dependent_variable_sample.completion.set_completion_log_probs(
                 completion_log_probs
             )
+            dependent_variable_sample.completion.response_object = response_object
 
     accuracy = np.mean(
         [
