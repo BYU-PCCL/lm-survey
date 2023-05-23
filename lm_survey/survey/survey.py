@@ -493,7 +493,7 @@ if __name__ == "__main__":
     survey = Survey(
         name="roper",
         data_filename=os.path.join(data_dir, "data.csv"),
-        variables_filename=os.path.join(variable_dir, "variable.json"),
+        variables_filename=os.path.join(variable_dir, "variables.json"),
         independent_variable_names=config["independent_variable_names"],
         dependent_variable_names=config["dependent_variable_names"],
     )

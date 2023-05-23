@@ -87,16 +87,16 @@ class SurveyResults:
         errors = self._estimate_standard_error(groups)
         baselines = self._calculate_random_guess(groups)
         n_samples = groups.size()
-        improvement_lower_bounds = means - baselines - errors
+        improvement_lower_bounds = means - baselines - errors * 1.96
 
         scores_df = pd.concat(
             [means, errors, baselines, improvement_lower_bounds, n_samples], axis=1
         )
         scores_df.columns = [
             "mean",
-            "error",
+            "std_error",
             "baseline",
-            "improvement_lower_bound",
+            "95%_lower_bound_gain",
             "n_samples",
         ]
 
@@ -105,8 +105,10 @@ class SurveyResults:
 
 if __name__ == "__main__":
     input_filepath = os.path.join(
-        "results",
+        "experiments",
+        "default",
         "roper",
+        "llama-65b-hf",
         "results.json",
     )
 
@@ -117,10 +119,10 @@ if __name__ == "__main__":
         DependentVariableSample(
             **sample_dict,
         )
-        for sample_dict in results["llama-65b-hf"]
+        for sample_dict in results
     ]
 
     survey_results = SurveyResults(question_samples=question_samples)
 
     # Print with 2 decimal places
-    print(survey_results.get_mean_score(slice_by=["religion"]).round(2))
+    print(survey_results.get_mean_score(slice_by=["gender"]).round(2))
