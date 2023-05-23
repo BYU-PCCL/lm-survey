@@ -1,8 +1,9 @@
 import typing
-from lm_survey.samplers.base_sampler import BaseSampler
 
 import torch
-from transformers import AutoTokenizer, AutoModelForCausalLM
+from transformers import AutoModelForCausalLM, AutoTokenizer
+
+from lm_survey.samplers.base_sampler import BaseSampler
 
 
 class HfSampler(BaseSampler):

@@ -1,6 +1,5 @@
 import typing
 
-
 MULTIPLE_CHOICE_LIST: typing.List[str] = [
     "A",
     "B",

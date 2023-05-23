@@ -1,10 +1,10 @@
 import typing
 
+import openai
 import tiktoken
 import torch
 
 from lm_survey.samplers.base_sampler import BaseSampler
-import openai
 
 OPENAI_TOKEN_COSTS = {
     # cents per 1000 tokens
