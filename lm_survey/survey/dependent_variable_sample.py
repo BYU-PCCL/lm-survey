@@ -93,7 +93,7 @@ class DependentVariableSample:
         index: int,
         independent_variables: typing.Dict[str, str],
         variable_name: str,
-        question: Question,
+        question: typing.Union[Question, typing.Dict[str, typing.Any]],
         prompt: str,
         completion: typing.Union[Completion, typing.Dict[str, typing.Any]],
         **kwargs,
@@ -101,13 +101,17 @@ class DependentVariableSample:
         self.index = index
         self.independent_variables = independent_variables
         self.variable_name = variable_name
-        self.question = question
         self.prompt = prompt
 
         if isinstance(completion, Completion):
             self.completion = completion
         else:
             self.completion = Completion(**completion)
+
+        if isinstance(question, Question):
+            self.question = question
+        else:
+            self.question = Question(**question)
 
     def __str__(self) -> str:
         sep = "\n\n"
