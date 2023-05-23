@@ -1,32 +1,13 @@
+import argparse
+import json
+import os
 import typing
 
 import numpy as np
-from lm_survey.survey import Survey, DependentVariableSample
-from lm_survey.samplers import AutoSampler
 from tqdm import tqdm
-import json
-import os
-import argparse
 
-
-def save_results(
-    dependent_variable_samples: typing.List[DependentVariableSample],
-    model_name: str,
-    survey_name: str,
-):
-    parsed_model_name = parse_model_name(model_name)
-
-    results_dir = os.path.join("results", survey_name, parsed_model_name)
-
-    results = [
-        question_sample.to_dict() for question_sample in dependent_variable_samples
-    ]
-
-    if not os.path.exists(results_dir):
-        os.makedirs(results_dir)
-
-    with open(os.path.join(results_dir, "results.json"), "w") as file:
-        json.dump(results, file, indent=4)
+from lm_survey.samplers import AutoSampler
+from lm_survey.survey import DependentVariableSample, Survey
 
 
 def parse_model_name(model_name: str) -> str:
@@ -43,12 +24,17 @@ def get_commit_hash():
     return commit_hash
 
 
-def save_experiment_data(
+def save_experiment(
     model_name: str,
     experiment_dir: str,
+    dependent_variable_samples: typing.List[DependentVariableSample],
     n_samples_per_dependent_variable: typing.Optional[int] = None,
 ):
     parsed_model_name = parse_model_name(model_name)
+
+    results = [
+        question_sample.to_dict() for question_sample in dependent_variable_samples
+    ]
 
     metadata = {
         "model_name": model_name,
@@ -68,6 +54,13 @@ def save_experiment_data(
             indent=4,
         )
 
+    with open(os.path.join(experiment_metadata_dir, "results.json"), "w") as file:
+        json.dump(
+            results,
+            file,
+            indent=4,
+        )
+
 
 def main(
     model_name: str,
@@ -77,20 +70,17 @@ def main(
 ) -> None:
     data_dir = os.path.join("data", survey_name)
     schema_dir = os.path.join("schemas", survey_name)
-    experiment_dir = os.path.join("experiments", survey_name, experiment_name)
+    experiment_dir = os.path.join("experiments", experiment_name, survey_name)
 
-    with open(os.path.join(experiment_dir, "independent-variables.json"), "r") as file:
-        independent_variable_names = json.load(file)
-
-    with open(os.path.join(experiment_dir, "dependent-variables.json"), "r") as file:
-        dependent_variable_names = json.load(file)
+    with open(os.path.join(experiment_dir, "config.json"), "r") as file:
+        config = json.load(file)
 
     survey = Survey(
         name=survey_name,
         data_filename=os.path.join(data_dir, "data.csv"),
         variables_filename=os.path.join(schema_dir, "schema.json"),
-        independent_variable_names=independent_variable_names,
-        dependent_variable_names=dependent_variable_names,
+        independent_variable_names=config["independent_variable_names"],
+        dependent_variable_names=config["dependent_variable_names"],
     )
 
     sampler = AutoSampler(model_name=model_name)
@@ -122,16 +112,11 @@ def main(
         f"Accuracy: {accuracy * 100:.2f}% ({len(dependent_variable_samples)} samples)"
     )
 
-    save_experiment_data(
+    save_experiment(
         model_name=model_name,
         experiment_dir=experiment_dir,
-        n_samples_per_dependent_variable=n_samples_per_dependent_variable,
-    )
-
-    save_results(
         dependent_variable_samples=dependent_variable_samples,
-        model_name=model_name,
-        survey_name=survey_name,
+        n_samples_per_dependent_variable=n_samples_per_dependent_variable,
     )
 
 

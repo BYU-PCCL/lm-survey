@@ -37,12 +37,8 @@ class Survey:
         self.name = name
         self.df = pd.read_csv(data_filename, dtype=str)
 
-        if variables_filename is not None and os.path.exists(
-            variables_filename
-        ):
-            self.variables = self._load_variables(
-                variables_filename=variables_filename
-            )
+        if variables_filename is not None and os.path.exists(variables_filename):
+            self.variables = self._load_variables(variables_filename=variables_filename)
         else:
             self.variables = []
             print(
@@ -54,28 +50,20 @@ class Survey:
             independent_variable_names=independent_variable_names
         )
 
-        self.set_dependent_variables(
-            dependent_variable_names=dependent_variable_names
-        )
+        self.set_dependent_variables(dependent_variable_names=dependent_variable_names)
 
     def _load_variables(self, variables_filename: str) -> typing.List[Variable]:
         with open(variables_filename, "r") as file:
             return [Variable(**variable) for variable in json.load(file)]
 
-    def set_independent_variables(
-        self, independent_variable_names: typing.List[str]
-    ):
+    def set_independent_variables(self, independent_variable_names: typing.List[str]):
         acceptable_names = set(independent_variable_names)
 
         self._independent_variables = [
-            variable
-            for variable in self.variables
-            if variable.name in acceptable_names
+            variable for variable in self.variables if variable.name in acceptable_names
         ]
 
-    def set_dependent_variables(
-        self, dependent_variable_names: typing.List[str]
-    ):
+    def set_dependent_variables(self, dependent_variable_names: typing.List[str]):
         acceptable_names = set(dependent_variable_names)
 
         self._dependent_variables = {
@@ -107,9 +95,7 @@ class Survey:
         )
 
     @_handle_missing_independent_variable
-    def _get_independent_variable_dict(
-        self, row: pd.Series
-    ) -> typing.Dict[str, str]:
+    def _get_independent_variable_dict(self, row: pd.Series) -> typing.Dict[str, str]:
         return {
             variable.name: variable.to_text(row)
             for variable in self._independent_variables
@@ -194,9 +180,7 @@ class Survey:
             raw=raw, text=text, natural_language=natural_language
         )
 
-    def _process_valid_option_exceptions(
-        self, valid_options: typing.List[ValidOption]
-    ):
+    def _process_valid_option_exceptions(self, valid_options: typing.List[ValidOption]):
         while True:
             print(
                 "\nHere is what you have so far:\n",
@@ -247,9 +231,7 @@ class Survey:
 
                 if natural_language != "":
                     try:
-                        valid_options[
-                            option_index
-                        ].natural_language = natural_language
+                        valid_options[option_index].natural_language = natural_language
                     except IndexError:
                         print(
                             f"Index {option_index} is not a valid option."
@@ -269,11 +251,7 @@ class Survey:
             " specific answer)\nPress ENTER to skip\n:"
         )
 
-        return (
-            natural_language_template
-            if natural_language_template != ""
-            else "{X}"
-        )
+        return natural_language_template if natural_language_template != "" else "{X}"
 
     def _process_options(
         self, valid_indices: typing.Set[int], unique_raw_options: np.ndarray
@@ -326,9 +304,7 @@ class Survey:
         except KeyError:
             raise ValueError(f"{key} is not a valid column name.")
 
-        unique_raw_options = sorted(
-            unique_raw_options, key=self._get_raw_sort_key
-        )
+        unique_raw_options = sorted(unique_raw_options, key=self._get_raw_sort_key)
 
         print(
             "\nFor that question, here is a list of the possible responses,"
@@ -359,9 +335,7 @@ class Survey:
             question_text = self._get_question_text(key=column_name)
 
             try:
-                valid_options, invalid_options = self._get_options(
-                    key=column_name
-                )
+                valid_options, invalid_options = self._get_options(key=column_name)
             except ValueError as error:
                 print(f"Skipping {column_name}: {error}.")
                 continue
@@ -407,8 +381,7 @@ class Survey:
                 column_names_input = variable_name
 
             column_names = [
-                column_name.strip()
-                for column_name in column_names_input.split(",")
+                column_name.strip() for column_name in column_names_input.split(",")
             ]
 
             for question in self._create_question(column_names=column_names):
@@ -437,20 +410,22 @@ class Survey:
         }
 
         # The index from iterrows gives type errors when using it as a key in iloc.
-        for i, (_, row) in enumerate(self.df.iterrows()):
-            try:
-                independent_variable_summary = (
-                    self._create_independent_variable_summary(row)
-                )
-            except ValueError:
-                continue
+        for name, dependent_variable in self._dependent_variables.items():
+            for i, row in self.df.sample(frac=1).iterrows():
+                try:
+                    independent_variable_summary = (
+                        self._create_independent_variable_summary(row)
+                    )
+                except ValueError:
+                    continue
 
-            for name, dependent_variable in self._dependent_variables.items():
-                if n_sampled_per_dependent_variable[
-                    name
-                ] >= n_samples_per_dependent_variable or not dependent_variable.is_valid(
-                    row
+                if (
+                    n_sampled_per_dependent_variable[name]
+                    >= n_samples_per_dependent_variable
                 ):
+                    break
+
+                if not dependent_variable.is_valid(row):
                     continue
 
                 dependent_variable_prompt = dependent_variable.to_prompt(row)
@@ -476,7 +451,7 @@ class Survey:
                     variable_name=name,
                     question=dependent_variable.to_question(row),
                     independent_variables=independent_variables,
-                    index=i,
+                    index=i,  # type: ignore
                     prompt=prompt,
                     completion=completion,
                 )
@@ -512,26 +487,19 @@ if __name__ == "__main__":
     experiment_dir = os.path.join("experiments", args.survey_name, args.experiment_name)
     schema_dir = os.path.join("schemas", args.survey_name)
 
-    with open(
-        os.path.join(experiment_dir, "independent-variables.json"), "r"
-    ) as file:
-        independent_variable_names = json.load(file)
-
-    with open(
-        os.path.join(experiment_dir, "dependent-variables.json"), "r"
-    ) as file:
-        dependent_variable_names = json.load(file)
+    with open(os.path.join(experiment_dir, "config.json"), "r") as file:
+        config = json.load(file)
 
     survey = Survey(
         name="roper",
         data_filename=os.path.join(data_dir, "data.csv"),
         variables_filename=os.path.join(schema_dir, "schema.json"),
-        independent_variable_names=independent_variable_names,
-        dependent_variable_names=dependent_variable_names,
+        independent_variable_names=config["independent_variable_names"],
+        dependent_variable_names=config["dependent_variable_names"],
     )
 
     question_samples = list(iter(survey))
 
     print(
-        f"{len(question_samples) / len(dependent_variable_names) / len(survey.df) * 100:.2f}%"
+        f"{len(question_samples) / len(config['dependent_variable_names']) / len(survey.df) * 100:.2f}%"
     )
