@@ -24,7 +24,7 @@ if __name__ == "__main__":
         wave_output_dir = args.output_path / wave
         wave_output_dir.mkdir(parents=True, exist_ok=True)
 
-        survey.generate_atp_schema(wave, wave_output_dir / "variables.json")
+        survey.generate_atp_variables(wave, wave_output_dir / "variables.json")
 
         # This is a simple way to put some extra stuff in the variables file
         if args.base_variables:
