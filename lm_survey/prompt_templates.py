@@ -2,7 +2,6 @@ import typing
 
 from lm_survey.constants import MULTIPLE_CHOICE_LIST
 
-
 INDEPENDENT_VARIABLE_SUMMARY_TEMPLATE = """Context: {context_summary}
 
 {dependent_variable_prompt}"""

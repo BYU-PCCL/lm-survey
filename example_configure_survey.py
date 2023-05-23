@@ -1,6 +1,6 @@
-from lm_survey.survey.survey import Survey
 import os
 
+from lm_survey.survey.survey import Survey
 
 if __name__ == "__main__":
     survey_directory = os.path.join("data", "ATP", "American_Trends_Panel_W92")

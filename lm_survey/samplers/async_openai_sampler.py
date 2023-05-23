@@ -1,10 +1,9 @@
 import sys
 
 import openai
-from openai.error import RateLimitError
-
 import torch
 from aiolimiter import AsyncLimiter
+from openai.error import RateLimitError
 
 from lm_survey.samplers.base_sampler import BaseSampler, MaybeAwaitable
 

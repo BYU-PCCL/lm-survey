@@ -1,5 +1,7 @@
 import typing
+
 import pandas as pd
+
 from lm_survey.constants import MULTIPLE_CHOICE_LIST
 from lm_survey.prompt_templates import (
     DEPENDENT_VARIABLE_TEMPLATE,
