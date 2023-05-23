@@ -13,10 +13,12 @@ class ValidOption:
         raw: str,
         text: typing.Optional[str] = None,
         natural_language: typing.Optional[str] = None,
+        ordinal: typing.Optional[int] = None,
     ) -> None:
         self.raw = raw
         self.text = text
         self.natural_language = natural_language
+        self.ordinal = ordinal
 
     def to_dict(self) -> typing.Dict[str, typing.Optional[str]]:
         return self.__dict__
@@ -27,6 +29,7 @@ class ValidOption:
                 f"\tRaw: {self.raw}",
                 f"\tText: {self.text}",
                 f"\tNatural Language: {self.natural_language}",
+                f"\tOrdinal: {self.ordinal}",
             ]
         )
 
@@ -85,6 +88,12 @@ class Question:
             raise ValueError(
                 f"This row's response is not a valid option: {row[self.key]}"
             )
+
+    def get_ordinal_per_letter(self) -> typing.Dict[str, typing.Optional[int]]:
+        return {
+            MULTIPLE_CHOICE_LIST[i]: option.ordinal
+            for i, option in enumerate(self.valid_options.values())
+        }
 
     def __str__(self):
         return self.text

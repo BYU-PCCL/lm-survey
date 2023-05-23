@@ -55,15 +55,6 @@ class Survey:
 
         self.set_dependent_variables(dependent_variable_names=dependent_variable_names)
 
-        self._filter_invalid_variable_values()
-
-    def _filter_invalid_variable_values(self):
-        for demographic in self._independent_variables:
-            for question in demographic.questions.values():
-                key = question.key
-                valid_options = set(question.valid_options.keys())
-                self.df = self.df[self.df[key].isin(valid_options)]
-
     def _load_variables(self, variables_filename: str) -> typing.List[Variable]:
         with open(variables_filename, "r") as file:
             return [Variable(**variable) for variable in json.load(file)]
@@ -404,9 +395,8 @@ class Survey:
             # Export every time a variable is added to not accidentally lose progress.
             self.export_variables(variables_filename=variables_filename)
 
-    def generate_atp_schema(self, variables_filename: str):
-        schema_path = Path(variables_filename)
-        info_csv_path = schema_path.parent / "info.csv"
+    def generate_atp_schema(self, survey_path: str, variables_filename: str):
+        info_csv_path = Path(survey_path) / "info.csv"
 
         info_df = pd.read_csv(info_csv_path)
 
@@ -414,6 +404,7 @@ class Survey:
             variable_row = info_df[info_df["key"] == variable_name].iloc[0]
             question_text = str(variable_row["question"])
             option_mapping = eval(str(variable_row["option_mapping"]))
+            option_ordinals = eval(str(variable_row["option_ordinal"]))
 
             original_options = list(option_mapping.values())
             valid_options = [o for o in original_options if o != "Refused"]
@@ -423,8 +414,8 @@ class Survey:
                 key=variable_name,
                 text=question_text,
                 valid_options=[
-                    ValidOption(raw=option, text=option).to_dict()
-                    for option in valid_options
+                    ValidOption(raw=option, text=option, ordinal=ordinal).to_dict()
+                    for ordinal, option in zip(option_ordinals, valid_options)
                 ],
                 invalid_options=invalid_options,
             ).to_dict()
@@ -433,7 +424,6 @@ class Survey:
 
             self.variables.append(variable)
 
-            # Export every time a variable is added to not accidentally lose progress.
             self.export_variables(variables_filename=variables_filename)
 
     def export_variables(self, variables_filename: str):
@@ -454,20 +444,22 @@ class Survey:
         }
 
         # The index from iterrows gives type errors when using it as a key in iloc.
-        for i, row in self.df.iterrows():
-            try:
-                independent_variable_summary = (
-                    self._create_independent_variable_summary(row)
-                )
-            except ValueError:
-                continue
+        for name, dependent_variable in self._dependent_variables.items():
+            for i, row in self.df.sample(frac=1).iterrows():
+                try:
+                    independent_variable_summary = (
+                        self._create_independent_variable_summary(row)
+                    )
+                except ValueError:
+                    continue
 
-            for name, dependent_variable in self._dependent_variables.items():
-                if n_sampled_per_dependent_variable[
-                    name
-                ] >= n_samples_per_dependent_variable or not dependent_variable.is_valid(
-                    row
+                if (
+                    n_sampled_per_dependent_variable[name]
+                    >= n_samples_per_dependent_variable
                 ):
+                    break
+
+                if not dependent_variable.is_valid(row):
                     continue
 
                 dependent_variable_prompt = dependent_variable.to_prompt(row)
@@ -557,28 +549,32 @@ if __name__ == "__main__":
         default="roper",
     )
 
+    parser.add_argument(
+        "-e",
+        "--experiment_name",
+        type=str,
+        default="default",
+    )
+
     args = parser.parse_args()
 
-    survey_directory = os.path.join("data", args.survey_name)
+    data_dir = os.path.join("data", args.survey_name)
+    experiment_dir = os.path.join("experiments", args.survey_name, args.experiment_name)
+    schema_dir = os.path.join("schemas", args.survey_name)
 
-    with open(
-        os.path.join(survey_directory, "independent-variables.json"), "r"
-    ) as file:
-        independent_variable_names = json.load(file)
-
-    with open(os.path.join(survey_directory, "dependent-variables.json"), "r") as file:
-        dependent_variable_names = json.load(file)
+    with open(os.path.join(experiment_dir, "config.json"), "r") as file:
+        config = json.load(file)
 
     survey = Survey(
         name="roper",
-        data_filename=os.path.join(survey_directory, "data.csv"),
-        variables_filename=os.path.join(survey_directory, "variables.json"),
-        independent_variable_names=independent_variable_names,
-        dependent_variable_names=dependent_variable_names,
+        data_filename=os.path.join(data_dir, "data.csv"),
+        variables_filename=os.path.join(schema_dir, "schema.json"),
+        independent_variable_names=config["independent_variable_names"],
+        dependent_variable_names=config["dependent_variable_names"],
     )
 
     question_samples = list(iter(survey))
 
     print(
-        f"{len(question_samples) / len(dependent_variable_names) / len(survey.df) * 100:.2f}%"
+        f"{len(question_samples) / len(config['dependent_variable_names']) / len(survey.df) * 100:.2f}%"
     )

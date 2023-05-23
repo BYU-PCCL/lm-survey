@@ -10,22 +10,28 @@ if __name__ == "__main__":
     parser.add_argument(
         "wave", type=Path, nargs="+", help="Path(s) to wave of ATP to configure"
     )
-    parser.add_argument("--base-config", type=Path, help="Path to optional base config")
+    parser.add_argument("output_path", type=Path, help="Path to output directory")
+    parser.add_argument(
+        "--base-variables", type=Path, help="Path to optional base variables"
+    )
     args = parser.parse_args()
 
     for wave in args.wave:
-        config_path = wave / "config.json"
+        variables_path = wave / "variables.json"
 
         survey = Survey(name="ATP_W92", data_filename=wave / "data.csv")
 
-        survey.generate_atp_config(config_path)
+        wave_output_dir = args.output_path / wave
+        wave_output_dir.mkdir(parents=True, exist_ok=True)
 
-        # This is a simple way to put some extra stuff in the config
-        if args.base_config:
-            with args.base_config.open("r") as f:
-                base_config = json.load(f)
-            with config_path.open("r") as f:
+        survey.generate_atp_schema(wave, wave_output_dir / "variables.json")
+
+        # This is a simple way to put some extra stuff in the variables file
+        if args.base_variables:
+            with args.base_variables.open("r") as f:
+                base_variables = json.load(f)
+            with variables_path.open("r") as f:
                 config = json.load(f)
-            config.extend(base_config)
-            with config_path.open("w") as f:
+            config.extend(base_variables)
+            with variables_path.open("w") as f:
                 json.dump(config, f, indent=2)
