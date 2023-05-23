@@ -74,7 +74,7 @@ async def main(
     schema_dir = os.path.join("schemas", survey_name)
     experiment_dir = os.path.join("experiments", experiment_name, survey_name)
 
-    with open(os.path.join(schema_dir, "config.json"), "r") as file:
+    with open(os.path.join(experiment_dir, "config.json"), "r") as file:
         config = json.load(file)
 
     survey = Survey(
