@@ -485,7 +485,7 @@ if __name__ == "__main__":
 
     data_dir = os.path.join("data", args.survey_name)
     experiment_dir = os.path.join("experiments", args.survey_name, args.experiment_name)
-    schema_dir = os.path.join("schemas", args.survey_name)
+    variable_dir = os.path.join("variables", args.survey_name)
 
     with open(os.path.join(experiment_dir, "config.json"), "r") as file:
         config = json.load(file)
@@ -493,7 +493,7 @@ if __name__ == "__main__":
     survey = Survey(
         name="roper",
         data_filename=os.path.join(data_dir, "data.csv"),
-        variables_filename=os.path.join(schema_dir, "schema.json"),
+        variables_filename=os.path.join(variable_dir, "variable.json"),
         independent_variable_names=config["independent_variable_names"],
         dependent_variable_names=config["dependent_variable_names"],
     )

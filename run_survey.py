@@ -69,7 +69,7 @@ def main(
     n_samples_per_dependent_variable: typing.Optional[int] = None,
 ) -> None:
     data_dir = os.path.join("data", survey_name)
-    schema_dir = os.path.join("schemas", survey_name)
+    variable_dir = os.path.join("variables", survey_name)
     experiment_dir = os.path.join("experiments", experiment_name, survey_name)
 
     with open(os.path.join(experiment_dir, "config.json"), "r") as file:
@@ -78,7 +78,7 @@ def main(
     survey = Survey(
         name=survey_name,
         data_filename=os.path.join(data_dir, "data.csv"),
-        variables_filename=os.path.join(schema_dir, "schema.json"),
+        variables_filename=os.path.join(variable_dir, "variable.json"),
         independent_variable_names=config["independent_variable_names"],
         dependent_variable_names=config["dependent_variable_names"],
     )

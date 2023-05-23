@@ -137,4 +137,4 @@ nb_*
 *.sh
 .DS_Store
 experiments
-schemas
+variables
