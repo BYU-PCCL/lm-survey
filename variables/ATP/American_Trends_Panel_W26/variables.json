@@ -1,0 +1,3075 @@
+[
+  {
+    "name": "SAFECRIME_W26",
+    "questions": [
+      {
+        "key": "SAFECRIME_W26",
+        "text": "How safe, if at all, would you say your local community is from crime? Would you say it is",
+        "valid_options": [
+          {
+            "raw": "Very safe",
+            "text": "Very safe",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat safe",
+            "text": "Somewhat safe",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too safe",
+            "text": "Not too safe",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all safe",
+            "text": "Not at all safe",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WORLDDANGER_W26",
+    "questions": [
+      {
+        "key": "WORLDDANGER_W26",
+        "text": "Compared to 50 years ago, do you think",
+        "valid_options": [
+          {
+            "raw": "We live in a safer world",
+            "text": "We live in a safer world",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "We live in a more dangerous world",
+            "text": "We live in a more dangerous world",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "The world we live in is neither safer nor more dangerous",
+            "text": "The world we live in is neither safer nor more dangerous",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WORRYA_W26",
+    "questions": [
+      {
+        "key": "WORRYA_W26",
+        "text": "How much, if at all, do you worry about the following happening to you? Having your home broken into",
+        "valid_options": [
+          {
+            "raw": "Worry a lot",
+            "text": "Worry a lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Worry a little",
+            "text": "Worry a little",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Do not worry at all",
+            "text": "Do not worry at all",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WORRYB_W26",
+    "questions": [
+      {
+        "key": "WORRYB_W26",
+        "text": "How much, if at all, do you worry about the following happening to you? Being the victim of a terrorist attack",
+        "valid_options": [
+          {
+            "raw": "Worry a lot",
+            "text": "Worry a lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Worry a little",
+            "text": "Worry a little",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Do not worry at all",
+            "text": "Do not worry at all",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WORRYC_W26",
+    "questions": [
+      {
+        "key": "WORRYC_W26",
+        "text": "How much, if at all, do you worry about the following happening to you? Losing your job",
+        "valid_options": [
+          {
+            "raw": "Worry a lot",
+            "text": "Worry a lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Worry a little",
+            "text": "Worry a little",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Do not worry at all",
+            "text": "Do not worry at all",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WORRYD_W26",
+    "questions": [
+      {
+        "key": "WORRYD_W26",
+        "text": "How much, if at all, do you worry about the following happening to you? Not being able to pay your bills",
+        "valid_options": [
+          {
+            "raw": "Worry a lot",
+            "text": "Worry a lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Worry a little",
+            "text": "Worry a little",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Do not worry at all",
+            "text": "Do not worry at all",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WORRYE_W26",
+    "questions": [
+      {
+        "key": "WORRYE_W26",
+        "text": "How much, if at all, do you worry about the following happening to you? Being the victim of a violent crime",
+        "valid_options": [
+          {
+            "raw": "Worry a lot",
+            "text": "Worry a lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Worry a little",
+            "text": "Worry a little",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Do not worry at all",
+            "text": "Do not worry at all",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WORRYF_W26",
+    "questions": [
+      {
+        "key": "WORRYF_W26",
+        "text": "How much, if at all, do you worry about the following happening to you? Being the victim of a mass shooting",
+        "valid_options": [
+          {
+            "raw": "Worry a lot",
+            "text": "Worry a lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Worry a little",
+            "text": "Worry a little",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Do not worry at all",
+            "text": "Do not worry at all",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WORRYG_W26",
+    "questions": [
+      {
+        "key": "WORRYG_W26",
+        "text": "How much, if at all, do you worry about the following happening to you? Having a personal health crisis",
+        "valid_options": [
+          {
+            "raw": "Worry a lot",
+            "text": "Worry a lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Worry a little",
+            "text": "Worry a little",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Do not worry at all",
+            "text": "Do not worry at all",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUN_W26",
+    "questions": [
+      {
+        "key": "GUN_W26",
+        "text": "Do you personally own any guns (not including air guns, such as paintball, BB or pellet guns)?",
+        "valid_options": [
+          {
+            "raw": "Yes, I own a gun",
+            "text": "Yes, I own a gun",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, I don't own any guns",
+            "text": "No, I don't own any guns",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUN1_W26",
+    "questions": [
+      {
+        "key": "GUN1_W26",
+        "text": "Does anyone else in your household own any guns (not including air guns, such as paintball, BB or pellet guns)?",
+        "valid_options": [
+          {
+            "raw": "Yes, someone else in my household owns a gun",
+            "text": "Yes, someone else in my household owns a gun",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, no one else in my household owns a gun",
+            "text": "No, no one else in my household owns a gun",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "EVEROWN_W26",
+    "questions": [
+      {
+        "key": "EVEROWN_W26",
+        "text": "Have you ever owned a gun at any point in your life, or have you never owned a gun?",
+        "valid_options": [
+          {
+            "raw": "Yes, have owned a gun",
+            "text": "Yes, have owned a gun",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, have never owned a gun",
+            "text": "No, have never owned a gun",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "NEVEROWN_W26",
+    "questions": [
+      {
+        "key": "NEVEROWN_W26",
+        "text": "Which best describes you?",
+        "valid_options": [
+          {
+            "raw": "I could never see myself not owning a gun",
+            "text": "I could never see myself not owning a gun",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "I could see myself not owning a gun at some point in the future",
+            "text": "I could see myself not owning a gun at some point in the future",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUNTYPEOWNC_W26",
+    "questions": [
+      {
+        "key": "GUNTYPEOWNC_W26",
+        "text": "Do you currently or have you ever owned a shotgun?",
+        "valid_options": [
+          {
+            "raw": "Yes, I currently own",
+            "text": "Yes, I currently own",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Yes, I have owned in the past but do not currently own",
+            "text": "Yes, I have owned in the past but do not currently own",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No, I have never owned",
+            "text": "No, I have never owned",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "EVERSHOT_W26",
+    "questions": [
+      {
+        "key": "EVERSHOT_W26",
+        "text": "Regardless of whether or not you own a gun, have you ever fired a gun?",
+        "valid_options": [
+          {
+            "raw": "Yes, I have fired a gun",
+            "text": "Yes, I have fired a gun",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, I have never fired a gun",
+            "text": "No, I have never fired a gun",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "REASONGUNA_W26",
+    "questions": [
+      {
+        "key": "REASONGUNA_W26",
+        "text": "Please indicate whether the following is a major reason, a minor reason, or not a reason why you own a gun. For protection",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "REASONGUNB_W26",
+    "questions": [
+      {
+        "key": "REASONGUNB_W26",
+        "text": "Please indicate whether the following is a major reason, a minor reason, or not a reason why you own a gun. For hunting",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "REASONGUNC_W26",
+    "questions": [
+      {
+        "key": "REASONGUNC_W26",
+        "text": "Please indicate whether the following is a major reason, a minor reason, or not a reason why you own a gun. For sport shooting, including target shooting and trap and skeet",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "REASONGUND_W26",
+    "questions": [
+      {
+        "key": "REASONGUND_W26",
+        "text": "Please indicate whether the following is a major reason, a minor reason, or not a reason why you own a gun. As part of a gun collection",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "REASONGUNE_W26",
+    "questions": [
+      {
+        "key": "REASONGUNE_W26",
+        "text": "Please indicate whether the following is a major reason, a minor reason, or not a reason why you own a gun. For my job",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "IMPREASONGUN_W26",
+    "questions": [
+      {
+        "key": "IMPREASONGUN_W26",
+        "text": "Which of the following is the most important reason why you own a gun?",
+        "valid_options": [
+          {
+            "raw": "For protection",
+            "text": "For protection",
+            "natural_language": null,
+            "ordinal": 1
+          },
+          {
+            "raw": "For hunting",
+            "text": "For hunting",
+            "natural_language": null,
+            "ordinal": 1
+          },
+          {
+            "raw": "For sport shooting, including target shooting and trap and skeet",
+            "text": "For sport shooting, including target shooting and trap and skeet",
+            "natural_language": null,
+            "ordinal": 1
+          },
+          {
+            "raw": "As part of a gun collection",
+            "text": "As part of a gun collection",
+            "natural_language": null,
+            "ordinal": 1
+          },
+          {
+            "raw": "For my job",
+            "text": "For my job",
+            "natural_language": null,
+            "ordinal": 1
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUNIDENTITY_W26",
+    "questions": [
+      {
+        "key": "GUNIDENTITY_W26",
+        "text": "How important, if at all, is being a gun owner to your overall identity?",
+        "valid_options": [
+          {
+            "raw": "Very important",
+            "text": "Very important",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat important",
+            "text": "Somewhat important",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too important",
+            "text": "Not too important",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all important",
+            "text": "Not at all important",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUNFRIEND_W26",
+    "questions": [
+      {
+        "key": "GUNFRIEND_W26",
+        "text": "As far as you know, how many of your friends, if any, own guns?",
+        "valid_options": [
+          {
+            "raw": "All or most",
+            "text": "All or most",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Only a few",
+            "text": "Only a few",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "None",
+            "text": "None",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUNSOCIETY_W26",
+    "questions": [
+      {
+        "key": "GUNSOCIETY_W26",
+        "text": "Do you feel that society in general tends to look at most gun owners in a positive way or a negative way?",
+        "valid_options": [
+          {
+            "raw": "Positive way",
+            "text": "Positive way",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Negative way",
+            "text": "Negative way",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUNCOMMUNITY_W26",
+    "questions": [
+      {
+        "key": "GUNCOMMUNITY_W26",
+        "text": "Do you feel that people in your local community tend to look at most gun owners in a positive way or a negative way?",
+        "valid_options": [
+          {
+            "raw": "Positive way",
+            "text": "Positive way",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Negative way",
+            "text": "Negative way",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SHOOTFREQ_W26",
+    "questions": [
+      {
+        "key": "SHOOTFREQ_W26",
+        "text": "How often, if ever, do you go shooting or to a gun range?",
+        "valid_options": [
+          {
+            "raw": "Often",
+            "text": "Often",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Sometimes",
+            "text": "Sometimes",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Rarely",
+            "text": "Rarely",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Never",
+            "text": "Never",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUNSAFE_W26",
+    "questions": [
+      {
+        "key": "GUNSAFE_W26",
+        "text": "Does having a gun in your household make you feel",
+        "valid_options": [
+          {
+            "raw": "Safer than you would feel without a gun in your household",
+            "text": "Safer than you would feel without a gun in your household",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Less safe than you would feel without a gun in your household",
+            "text": "Less safe than you would feel without a gun in your household",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No more or less safe",
+            "text": "No more or less safe",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUNSAFE2_W26",
+    "questions": [
+      {
+        "key": "GUNSAFE2_W26",
+        "text": "Would having a gun in your household make you feel",
+        "valid_options": [
+          {
+            "raw": "Safer than you feel without a gun in your household",
+            "text": "Safer than you feel without a gun in your household",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Less safe than you feel without a gun in your household",
+            "text": "Less safe than you feel without a gun in your household",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No more or less safe",
+            "text": "No more or less safe",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUNCOURSES_W26",
+    "questions": [
+      {
+        "key": "GUNCOURSES_W26",
+        "text": "Have you ever taken any gun safety courses such as weapons training, hunter safety or firearm safety?",
+        "valid_options": [
+          {
+            "raw": "Yes",
+            "text": "Yes",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No",
+            "text": "No",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUNACCESS_W26",
+    "questions": [
+      {
+        "key": "GUNACCESS_W26",
+        "text": "Thinking about when you're at home, would you say there is a gun that is both loaded and easily accessible to you",
+        "valid_options": [
+          {
+            "raw": "All of the time",
+            "text": "All of the time",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Most of the time",
+            "text": "Most of the time",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Only some of the time",
+            "text": "Only some of the time",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Never",
+            "text": "Never",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUNLOCKED1_W26",
+    "questions": [
+      {
+        "key": "GUNLOCKED1_W26",
+        "text": "In general, as far as you know, how many of the guns in your home would you say are kept in a locked place?",
+        "valid_options": [
+          {
+            "raw": "All are kept in a locked place",
+            "text": "All are kept in a locked place",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some are kept in a locked place and some are not",
+            "text": "Some are kept in a locked place and some are not",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "None are kept in a locked place",
+            "text": "None are kept in a locked place",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUNLOADED1_W26",
+    "questions": [
+      {
+        "key": "GUNLOADED1_W26",
+        "text": "In general, as far as you know, how many of the guns in your home would you say are kept loaded?",
+        "valid_options": [
+          {
+            "raw": "All are kept loaded",
+            "text": "All are kept loaded",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some are kept loaded and some are not",
+            "text": "Some are kept loaded and some are not",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "None are kept loaded",
+            "text": "None are kept loaded",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUNLOCKED2_W26",
+    "questions": [
+      {
+        "key": "GUNLOCKED2_W26",
+        "text": "In general, is the gun in your home kept in a locked place, or not?",
+        "valid_options": [
+          {
+            "raw": "Yes, kept in a locked place",
+            "text": "Yes, kept in a locked place",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, not kept in a locked place",
+            "text": "No, not kept in a locked place",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUNLOADED2_W26",
+    "questions": [
+      {
+        "key": "GUNLOADED2_W26",
+        "text": "In general, is the gun in your home kept loaded, or not?",
+        "valid_options": [
+          {
+            "raw": "Yes, kept loaded",
+            "text": "Yes, kept loaded",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, not kept loaded",
+            "text": "No, not kept loaded",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUNCONTRIBA_W26",
+    "questions": [
+      {
+        "key": "GUNCONTRIBA_W26",
+        "text": "How much, if at all, do you think the ease with which people can legally obtain guns contributes to gun violence in the country today?",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much",
+            "text": "Not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUNCONTRIBB_W26",
+    "questions": [
+      {
+        "key": "GUNCONTRIBB_W26",
+        "text": "How much, if at all, do you think the ease with which people can illegally obtain guns contributes to gun violence in the country today?",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much",
+            "text": "Not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUNCONTRIBC_W26",
+    "questions": [
+      {
+        "key": "GUNCONTRIBC_W26",
+        "text": "How much, if at all, do you think the amount of gun violence in movies and television contributes to gun violence in the country today?",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much",
+            "text": "Not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUNCONTRIBD_W26",
+    "questions": [
+      {
+        "key": "GUNCONTRIBD_W26",
+        "text": "How much, if at all, do you think lack of economic opportunities contributes to gun violence in the country today?",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much",
+            "text": "Not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUNCONTRIBE_W26",
+    "questions": [
+      {
+        "key": "GUNCONTRIBE_W26",
+        "text": "How much, if at all, do you think the amount of gun violence in video games contributes to gun violence in the country today?",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much",
+            "text": "Not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUNCONTRIBF_W26",
+    "questions": [
+      {
+        "key": "GUNCONTRIBF_W26",
+        "text": "How much, if at all, do you think family instability contributes to gun violence in the country today?",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much",
+            "text": "Not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GROWUPVIOL_W26",
+    "questions": [
+      {
+        "key": "GROWUPVIOL_W26",
+        "text": "How much of a problem was gun violence in the community where you spent the majority of time when you were growing up?",
+        "valid_options": [
+          {
+            "raw": "A very big problem",
+            "text": "A very big problem",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A moderately big problem",
+            "text": "A moderately big problem",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "A small problem",
+            "text": "A small problem",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not a problem at all",
+            "text": "Not a problem at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GROWUPGUN1_W26",
+    "questions": [
+      {
+        "key": "GROWUPGUN1_W26",
+        "text": "Thinking about when you were growing up, as far as you know, were there ever any guns in your household or not?",
+        "valid_options": [
+          {
+            "raw": "Yes, there were guns in my household",
+            "text": "Yes, there were guns in my household",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, there were no guns in my household",
+            "text": "No, there were no guns in my household",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "I am not sure if there were guns in my household",
+            "text": "I am not sure if there were guns in my household",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GROWUPGUN2A_W26",
+    "questions": [
+      {
+        "key": "GROWUPGUN2A_W26",
+        "text": "Would you say the following was a reason or was not a reason why there were guns in your household when you were growing up? For protection",
+        "valid_options": [
+          {
+            "raw": "Yes, was a reason",
+            "text": "Yes, was a reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, was not a reason",
+            "text": "No, was not a reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GROWUPGUN2B_W26",
+    "questions": [
+      {
+        "key": "GROWUPGUN2B_W26",
+        "text": "Would you say the following was a reason or was not a reason why there were guns in your household when you were growing up? For hunting",
+        "valid_options": [
+          {
+            "raw": "Yes, was a reason",
+            "text": "Yes, was a reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, was not a reason",
+            "text": "No, was not a reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GROWUPGUN2C_W26",
+    "questions": [
+      {
+        "key": "GROWUPGUN2C_W26",
+        "text": "Would you say the following was a reason or was not a reason why there were guns in your household when you were growing up? For sport shooting, including target shooting and trap and skeet",
+        "valid_options": [
+          {
+            "raw": "Yes, was a reason",
+            "text": "Yes, was a reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, was not a reason",
+            "text": "No, was not a reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GROWUPGUN4_W26",
+    "questions": [
+      {
+        "key": "GROWUPGUN4_W26",
+        "text": "Thinking about the people in the community where you spent the majority of time when you were growing up, as far as you know, how many people owned guns?",
+        "valid_options": [
+          {
+            "raw": "All or most",
+            "text": "All or most",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Only a few",
+            "text": "Only a few",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "None",
+            "text": "None",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GROWUPGUN6_W26",
+    "questions": [
+      {
+        "key": "GROWUPGUN6_W26",
+        "text": "How often, if ever, did you go shooting or to a gun range when you were growing up?",
+        "valid_options": [
+          {
+            "raw": "Often",
+            "text": "Often",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Sometimes",
+            "text": "Sometimes",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hardly ever",
+            "text": "Hardly ever",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Never",
+            "text": "Never",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GROWUPGUN7_W26",
+    "questions": [
+      {
+        "key": "GROWUPGUN7_W26",
+        "text": "How often, if ever, did you use air guns, such as paintball, BB or pellet guns when you were growing up?",
+        "valid_options": [
+          {
+            "raw": "Often",
+            "text": "Often",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Sometimes",
+            "text": "Sometimes",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hardly ever",
+            "text": "Hardly ever",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Never",
+            "text": "Never",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUNRESPNOKIDSA_W26",
+    "questions": [
+      {
+        "key": "GUNRESPNOKIDSA_W26",
+        "text": "Thinking about gun owners who do not have children in their home how important do you think it is for them to: Keep all of their guns in a locked place",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important but not essential",
+            "text": "Important but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Should not be done",
+            "text": "Should not be done",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUNRESPNOKIDSB_W26",
+    "questions": [
+      {
+        "key": "GUNRESPNOKIDSB_W26",
+        "text": "Thinking about gun owners who do not have children in their home how important do you think it is for them to: Keep all of their guns unloaded",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important but not essential",
+            "text": "Important but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Should not be done",
+            "text": "Should not be done",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUNRESPNOKIDSC_W26",
+    "questions": [
+      {
+        "key": "GUNRESPNOKIDSC_W26",
+        "text": "Thinking about gun owners who do not have children in their home how important do you think it is for them to: Take gun safety courses",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important but not essential",
+            "text": "Important but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Should not be done",
+            "text": "Should not be done",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUNRESPNOKIDSD_W26",
+    "questions": [
+      {
+        "key": "GUNRESPNOKIDSD_W26",
+        "text": "Thinking about gun owners who do not have children in their home how important do you think it is for them to: Advise visitors that there are guns in the house",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important but not essential",
+            "text": "Important but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Should not be done",
+            "text": "Should not be done",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUNRESPNOKIDSE_W26",
+    "questions": [
+      {
+        "key": "GUNRESPNOKIDSE_W26",
+        "text": "Thinking about gun owners who do not have children in their home how important do you think it is for them to: Advise visitors with children that there are guns in the house",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important but not essential",
+            "text": "Important but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Should not be done",
+            "text": "Should not be done",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUNRESPNOKIDSF_W26",
+    "questions": [
+      {
+        "key": "GUNRESPNOKIDSF_W26",
+        "text": "Thinking about gun owners who do not have children in their home how important do you think it is for them to: Store guns and ammunition separately",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important but not essential",
+            "text": "Important but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Should not be done",
+            "text": "Should not be done",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUNRESPNOKIDSG_W26",
+    "questions": [
+      {
+        "key": "GUNRESPNOKIDSG_W26",
+        "text": "Thinking about gun owners who do not have children in their home how important do you think it is for them to: Keep their shooting skills up-to-date",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important but not essential",
+            "text": "Important but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Should not be done",
+            "text": "Should not be done",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUNRESPKIDSA_W26",
+    "questions": [
+      {
+        "key": "GUNRESPKIDSA_W26",
+        "text": "Thinking about gun owners who have children in their home, how important do you think it is for them to: Keep all of their guns in a locked place",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important but not essential",
+            "text": "Important but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Should not be done",
+            "text": "Should not be done",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUNRESPKIDSB_W26",
+    "questions": [
+      {
+        "key": "GUNRESPKIDSB_W26",
+        "text": "Thinking about gun owners who have children in their home, how important do you think it is for them to: Keep all of their guns unloaded",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important but not essential",
+            "text": "Important but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Should not be done",
+            "text": "Should not be done",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUNRESPKIDSC_W26",
+    "questions": [
+      {
+        "key": "GUNRESPKIDSC_W26",
+        "text": "Thinking about gun owners who have children in their home, how important do you think it is for them to: Take gun safety courses",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important but not essential",
+            "text": "Important but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Should not be done",
+            "text": "Should not be done",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUNRESPKIDSD_W26",
+    "questions": [
+      {
+        "key": "GUNRESPKIDSD_W26",
+        "text": "Thinking about gun owners who have children in their home, how important do you think it is for them to: Advise visitors that there are guns in the house",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important but not essential",
+            "text": "Important but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Should not be done",
+            "text": "Should not be done",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUNRESPKIDSE_W26",
+    "questions": [
+      {
+        "key": "GUNRESPKIDSE_W26",
+        "text": "Thinking about gun owners who have children in their home, how important do you think it is for them to: Advise visitors with children that there are guns in the house",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important but not essential",
+            "text": "Important but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Should not be done",
+            "text": "Should not be done",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUNRESPKIDSF_W26",
+    "questions": [
+      {
+        "key": "GUNRESPKIDSF_W26",
+        "text": "Thinking about gun owners who have children in their home, how important do you think it is for them to: Store guns and ammunition separately",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important but not essential",
+            "text": "Important but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Should not be done",
+            "text": "Should not be done",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUNRESPKIDSG_W26",
+    "questions": [
+      {
+        "key": "GUNRESPKIDSG_W26",
+        "text": "Thinking about gun owners who have children in their home, how important do you think it is for them to: Keep their shooting skills up-to-date",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important but not essential",
+            "text": "Important but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Should not be done",
+            "text": "Should not be done",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUNRESPKIDSH_W26",
+    "questions": [
+      {
+        "key": "GUNRESPKIDSH_W26",
+        "text": "Thinking about gun owners who have children in their home, how important do you think it is for them to: Talk to their children about gun safety",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important but not essential",
+            "text": "Important but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Should not be done",
+            "text": "Should not be done",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUNSAFETYKIDS_W26",
+    "questions": [
+      {
+        "key": "GUNSAFETYKIDS_W26",
+        "text": "For this question, please think about your child or children who are under 18. Have you ever talked with your child or children about gun safety?",
+        "valid_options": [
+          {
+            "raw": "Yes",
+            "text": "Yes",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No",
+            "text": "No",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "I do not have children under 18",
+            "text": "I do not have children under 18",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CARRYGUN_W26",
+    "questions": [
+      {
+        "key": "CARRYGUN_W26",
+        "text": "How often, if ever, do you carry a handgun or pistol outside your home, not including times when you are transporting it?",
+        "valid_options": [
+          {
+            "raw": "All of the time",
+            "text": "All of the time",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Most of the time",
+            "text": "Most of the time",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Only some of the time",
+            "text": "Only some of the time",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Never",
+            "text": "Never",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "NOCARRYGUN_W26",
+    "questions": [
+      {
+        "key": "NOCARRYGUN_W26",
+        "text": "And would you say you never carry a handgun or pistol because you don't want to or for some other reason?",
+        "valid_options": [
+          {
+            "raw": "Don't want to carry",
+            "text": "Don't want to carry",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some other reason",
+            "text": "Some other reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUNKILLF1_W26",
+    "questions": [
+      {
+        "key": "GUNKILLF1_W26",
+        "text": "Which comes closer to your view, even if neither is exactly right?",
+        "valid_options": [
+          {
+            "raw": "People who want to kill or harm others will find a way to do it whether they have a gun or not",
+            "text": "People who want to kill or harm others will find a way to do it whether they have a gun or not",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "People who want to kill or harm others are less likely to do it if they don't have a gun",
+            "text": "People who want to kill or harm others are less likely to do it if they don't have a gun",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUNKILLF2_W26",
+    "questions": [
+      {
+        "key": "GUNKILLF2_W26",
+        "text": "Thinking about people who commit suicide using a gun, which comes closer to your view, even if neither is exactly right?",
+        "valid_options": [
+          {
+            "raw": "They would find a way to do it whether they had access to a gun or not",
+            "text": "They would find a way to do it whether they had access to a gun or not",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "They would be less likely to do it if they didn't have access to a gun",
+            "text": "They would be less likely to do it if they didn't have access to a gun",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "DEFENDGUN_W26",
+    "questions": [
+      {
+        "key": "DEFENDGUN_W26",
+        "text": "Not including in military combat or as part of your job, have you ever used a gun to defend yourself, your family or possessions, either by firing it or threatening to fire it?",
+        "valid_options": [
+          {
+            "raw": "Yes",
+            "text": "Yes",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No",
+            "text": "No",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUNTHREAT_W26",
+    "questions": [
+      {
+        "key": "GUNTHREAT_W26",
+        "text": "Has anyone ever used a gun to threaten or intimidate you or someone in your family?",
+        "valid_options": [
+          {
+            "raw": "Yes",
+            "text": "Yes",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No",
+            "text": "No",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CRIMEVICTIM_W26",
+    "questions": [
+      {
+        "key": "CRIMEVICTIM_W26",
+        "text": "Have you ever been a victim of a violent crime, whether a gun was used or not?",
+        "valid_options": [
+          {
+            "raw": "Yes",
+            "text": "Yes",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No",
+            "text": "No",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MARGUN_W26",
+    "questions": [
+      {
+        "key": "MARGUN_W26",
+        "text": "Now thinking about your spouse or partner. Does your spouse or partner own any guns?",
+        "valid_options": [
+          {
+            "raw": "Yes",
+            "text": "Yes",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No",
+            "text": "No",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUNASSOCIATIONA_W26",
+    "questions": [
+      {
+        "key": "GUNASSOCIATIONA_W26",
+        "text": "Are you currently a member of a gun or shooting club or gun range",
+        "valid_options": [
+          {
+            "raw": "Yes",
+            "text": "Yes",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No",
+            "text": "No",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUNACTIVITYA_W26",
+    "questions": [
+      {
+        "key": "GUNACTIVITYA_W26",
+        "text": "How often, if ever, do you visit websites about guns, hunting or other shooting sports",
+        "valid_options": [
+          {
+            "raw": "Often",
+            "text": "Often",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Sometimes",
+            "text": "Sometimes",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hardly ever",
+            "text": "Hardly ever",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Never",
+            "text": "Never",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUNACTIVITYB_W26",
+    "questions": [
+      {
+        "key": "GUNACTIVITYB_W26",
+        "text": "How often, if ever, do you watch TV programs about guns or watch gun-oriented videos",
+        "valid_options": [
+          {
+            "raw": "Often",
+            "text": "Often",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Sometimes",
+            "text": "Sometimes",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hardly ever",
+            "text": "Hardly ever",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Never",
+            "text": "Never",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUNACTIVITYC_W26",
+    "questions": [
+      {
+        "key": "GUNACTIVITYC_W26",
+        "text": "How often, if ever, do you listen to gun-oriented podcasts or radio shows",
+        "valid_options": [
+          {
+            "raw": "Often",
+            "text": "Often",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Sometimes",
+            "text": "Sometimes",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hardly ever",
+            "text": "Hardly ever",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Never",
+            "text": "Never",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUNACTIVITYD_W26",
+    "questions": [
+      {
+        "key": "GUNACTIVITYD_W26",
+        "text": "How often, if ever, do you participate in online discussion forums about guns",
+        "valid_options": [
+          {
+            "raw": "Often",
+            "text": "Often",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Sometimes",
+            "text": "Sometimes",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hardly ever",
+            "text": "Hardly ever",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Never",
+            "text": "Never",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GUNACTIVITYE_W26",
+    "questions": [
+      {
+        "key": "GUNACTIVITYE_W26",
+        "text": "How often, if ever, do you attend gun shows",
+        "valid_options": [
+          {
+            "raw": "Often",
+            "text": "Often",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Sometimes",
+            "text": "Sometimes",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hardly ever",
+            "text": "Hardly ever",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Never",
+            "text": "Never",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CREGION",
+    "questions": [
+      {
+        "key": "CREGION",
+        "text": "Which part of the United States do you currently live in?",
+        "valid_options": [
+          {
+            "raw": "Midwest",
+            "text": "Midwest",
+            "natural_language": "I live in the Midwest of the United States."
+          },
+          {
+            "raw": "Northeast",
+            "text": "Northeast",
+            "natural_language": "I live in the Northeast of the United States."
+          },
+          {
+            "raw": "South",
+            "text": "South",
+            "natural_language": "I live in the South of the United States."
+          },
+          {
+            "raw": "West",
+            "text": "West",
+            "natural_language": "I live in the West of the United States."
+          }
+        ],
+        "invalid_options": []
+      }
+    ]
+  },
+  {
+    "name": "AGE",
+    "questions": [
+      {
+        "key": "AGE",
+        "text": "How old are you?",
+        "valid_options": [
+          {
+            "raw": "18-29",
+            "text": "18-29",
+            "natural_language": "I am between 18-29 years old."
+          },
+          {
+            "raw": "30-49",
+            "text": "30-49",
+            "natural_language": "I am between 30-49 years old."
+          },
+          {
+            "raw": "50-64",
+            "text": "50-64",
+            "natural_language": "I am between 50-64 years old."
+          },
+          {
+            "raw": "65+",
+            "text": "65+",
+            "natural_language": "I am 65+ years old."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SEX",
+    "questions": [
+      {
+        "key": "SEX",
+        "text": "What is the sex that you were assigned at birth?",
+        "valid_options": [
+          {
+            "raw": "Female",
+            "text": "Female",
+            "natural_language": "I am female."
+          },
+          {
+            "raw": "Male",
+            "text": "Male",
+            "natural_language": "I am male."
+          }
+        ],
+        "invalid_options": [
+          "In some other way",
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "EDUCATION",
+    "questions": [
+      {
+        "key": "EDUCATION",
+        "text": "What is the highest level of schooling or degree that you have completed?",
+        "valid_options": [
+          {
+            "raw": "Associate's degree",
+            "text": "Associate's degree",
+            "natural_language": "I earned an associate's degree."
+          },
+          {
+            "raw": "College graduate/some postgrad",
+            "text": "graduated from college",
+            "natural_language": "I graduated from college."
+          },
+          {
+            "raw": "High school graduate",
+            "text": "High school graduate",
+            "natural_language": "I graduated from high school."
+          },
+          {
+            "raw": "Less than high school",
+            "text": "Less than high school",
+            "natural_language": "I did not graduate from high school."
+          },
+          {
+            "raw": "Postgraduate",
+            "text": "Postgraduate",
+            "natural_language": "I went to graduate school."
+          },
+          {
+            "raw": "Some college, no degree",
+            "text": "Some college, no degree",
+            "natural_language": "I went to some college."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CITIZEN",
+    "questions": [
+      {
+        "key": "CITIZEN",
+        "text": "Are you a citizen of the United States?",
+        "valid_options": [
+          {
+            "raw": "No",
+            "text": "No",
+            "natural_language": "I am not a citizen of the United States."
+          },
+          {
+            "raw": "Yes",
+            "text": "Yes",
+            "natural_language": "I am a citizen of the United States."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MARITAL",
+    "questions": [
+      {
+        "key": "MARITAL",
+        "text": "Which of these best describes you?",
+        "valid_options": [
+          {
+            "raw": "Divorced",
+            "text": "Divorced",
+            "natural_language": "I am divorced."
+          },
+          {
+            "raw": "Living with a partner",
+            "text": "Living with a partner",
+            "natural_language": "I am living with a partner."
+          },
+          {
+            "raw": "Married",
+            "text": "Married",
+            "natural_language": "I am married."
+          },
+          {
+            "raw": "Never been married",
+            "text": "Never been married",
+            "natural_language": "I have never been married."
+          },
+          {
+            "raw": "Separated",
+            "text": "Separated",
+            "natural_language": "I am separated from my partner."
+          },
+          {
+            "raw": "Widowed",
+            "text": "Widowed",
+            "natural_language": "I am widowed."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RELIG",
+    "questions": [
+      {
+        "key": "RELIG",
+        "text": "What is your present religion, if any?",
+        "valid_options": [
+          {
+            "raw": "Agnostic",
+            "text": "Agnostic",
+            "natural_language": "Religiously speaking, I am agnostic."
+          },
+          {
+            "raw": "Atheist",
+            "text": "Atheist",
+            "natural_language": "Religiously speaking, I am atheist."
+          },
+          {
+            "raw": "Buddhist",
+            "text": "Buddhist",
+            "natural_language": "Religiously speaking, I am Buddhist."
+          },
+          {
+            "raw": "Hindu",
+            "text": "Hindu",
+            "natural_language": "Religiously speaking, I am Hindu."
+          },
+          {
+            "raw": "Jewish",
+            "text": "Jewish",
+            "natural_language": "Religiously speaking, I am Jewish."
+          },
+          {
+            "raw": "Mormon",
+            "text": "Mormon",
+            "natural_language": "Religiously speaking, I am a member of the Church of Jesus Christ of Latter-day Saints."
+          },
+          {
+            "raw": "Muslim",
+            "text": "Muslim",
+            "natural_language": "Religiously speaking, I am Muslim."
+          },
+          {
+            "raw": "Nothing in particular",
+            "text": "Nothing in particular",
+            "natural_language": "Religiously speaking, I don't identify with anything in particular."
+          },
+          {
+            "raw": "Orthodox",
+            "text": "Orthodox",
+            "natural_language": "Religiously speaking, I am Orthodox."
+          },
+          {
+            "raw": "Other",
+            "text": "Other",
+            "natural_language": "Religiously speaking, I am not mainstream."
+          },
+          {
+            "raw": "Protestant",
+            "text": "Protestant",
+            "natural_language": "Religiously speaking, I am Protestant."
+          },
+          {
+            "raw": "Roman Catholic",
+            "text": "Roman Catholic",
+            "natural_language": "Religiously speaking, I am Roman Catholic."
+          }
+        ],
+        "invalid_options": [
+          "Refused",
+          "Christian",
+          "Unitarian"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RELIGATTEND",
+    "questions": [
+      {
+        "key": "RELIGATTEND",
+        "text": "Aside from weddings and funerals, how often do you attend religious services?",
+        "valid_options": [
+          {
+            "raw": "A few times a year",
+            "text": "A few times a year",
+            "natural_language": "I attend religious services a few times a year."
+          },
+          {
+            "raw": "More than once a week",
+            "text": "More than once a week",
+            "natural_language": "I attend religious services more than once a week."
+          },
+          {
+            "raw": "Never",
+            "text": "Never",
+            "natural_language": "I never attend religious services."
+          },
+          {
+            "raw": "Once a week",
+            "text": "Once a week",
+            "natural_language": "I attend religious services once a week."
+          },
+          {
+            "raw": "Once or twice a month",
+            "text": "Once or twice a month",
+            "natural_language": "I attend religious services once or twice a month."
+          },
+          {
+            "raw": "Seldom",
+            "text": "Seldom",
+            "natural_language": "I seldom attend religious services."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "POLPARTY",
+    "questions": [
+      {
+        "key": "POLPARTY",
+        "text": "In politics today, what do you consider yourself?",
+        "valid_options": [
+          {
+            "raw": "Democrat",
+            "text": "Democrat",
+            "natural_language": "Politically, I am a Democrat."
+          },
+          {
+            "raw": "Independent",
+            "text": "Independent",
+            "natural_language": "Politically, I am an independent."
+          },
+          {
+            "raw": "Republican",
+            "text": "Republican",
+            "natural_language": "Politically, I am a Republican."
+          }
+        ],
+        "invalid_options": [
+          "Other",
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INCOME",
+    "questions": [
+      {
+        "key": "INCOME",
+        "text": "Last year, what was your total family income from all sources, before taxes?",
+        "valid_options": [
+          {
+            "raw": "$100,000 or more",
+            "text": "$100,000 or more",
+            "natural_language": "Last year, my household income was $100,000 or more before taxes."
+          },
+          {
+            "raw": "$30,000-$50,000",
+            "text": "$30,000-$50,000",
+            "natural_language": "Last year, my household income was $30,000-$50,000 before taxes."
+          },
+          {
+            "raw": "$50,000-$75,000",
+            "text": "$50,000-$75,000",
+            "natural_language": "Last year, my household income was $50,000-$75,000 before taxes."
+          },
+          {
+            "raw": "$75,000-$100,000",
+            "text": "$75,000-$100,000",
+            "natural_language": "Last year, my household income was $75,000-$100,000 before taxes."
+          },
+          {
+            "raw": "Less than $30,000",
+            "text": "Less than $30,000",
+            "natural_language": "Last year, my household income was less than $30,000 before taxes."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "POLIDEOLOGY",
+    "questions": [
+      {
+        "key": "POLIDEOLOGY",
+        "text": "In general, how would you describe your political ideology?",
+        "valid_options": [
+          {
+            "raw": "Conservative",
+            "text": "Conservative",
+            "natural_language": "Politically, I am conservative."
+          },
+          {
+            "raw": "Liberal",
+            "text": "Liberal",
+            "natural_language": "Politically, I am liberal."
+          },
+          {
+            "raw": "Moderate",
+            "text": "Moderate",
+            "natural_language": "Politically, I am moderate."
+          },
+          {
+            "raw": "Very conservative",
+            "text": "Very conservative",
+            "natural_language": "Politically, I am very conservative."
+          },
+          {
+            "raw": "Very liberal",
+            "text": "Very liberal",
+            "natural_language": "Politically, I am very liberal."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACE",
+    "questions": [
+      {
+        "key": "RACE",
+        "text": "What is your race or origin?",
+        "valid_options": [
+          {
+            "raw": "Asian",
+            "text": "Asian",
+            "natural_language": "I am Asian."
+          },
+          {
+            "raw": "Black",
+            "text": "Black",
+            "natural_language": "I am Black."
+          },
+          {
+            "raw": "Hispanic",
+            "text": "Hispanic",
+            "natural_language": "I am Hispanic."
+          },
+          {
+            "raw": "Mixed Race",
+            "text": "Mixed Race",
+            "natural_language": "I am mixed race."
+          },
+          {
+            "raw": "Other",
+            "text": "Other",
+            "natural_language": "I am racially ambiguous."
+          },
+          {
+            "raw": "White",
+            "text": "White",
+            "natural_language": "I am White."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  }
+]

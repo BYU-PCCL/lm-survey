@@ -137,6 +137,5 @@ nb_*
 *.sh
 .DS_Store
 experiments
-variables
 *.tar.gz
 *.zip

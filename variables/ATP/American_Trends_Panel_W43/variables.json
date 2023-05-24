@@ -1,0 +1,4545 @@
+[
+  {
+    "name": "RACESURV1a_W43",
+    "questions": [
+      {
+        "key": "RACESURV1a_W43",
+        "text": "For your physical health aspects of your life, would you say that you are, or about where you expected to be at this point in your life?",
+        "valid_options": [
+          {
+            "raw": "In a better situation than I expected",
+            "text": "In a better situation than I expected",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "In a worse situation than I expected",
+            "text": "In a worse situation than I expected",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "About where I expected",
+            "text": "About where I expected",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV1b_W43",
+    "questions": [
+      {
+        "key": "RACESURV1b_W43",
+        "text": "For your job or career aspects of your life, would you say that you are, or about where you expected to be at this point in your life?",
+        "valid_options": [
+          {
+            "raw": "In a better situation than I expected",
+            "text": "In a better situation than I expected",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "In a worse situation than I expected",
+            "text": "In a worse situation than I expected",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "About where I expected",
+            "text": "About where I expected",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV1c_W43",
+    "questions": [
+      {
+        "key": "RACESURV1c_W43",
+        "text": "For your relationships with family and friends aspects of your life, would you say that you are, or about where you expected to be at this point in your life?",
+        "valid_options": [
+          {
+            "raw": "In a better situation than I expected",
+            "text": "In a better situation than I expected",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "In a worse situation than I expected",
+            "text": "In a worse situation than I expected",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "About where I expected",
+            "text": "About where I expected",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV1d_W43",
+    "questions": [
+      {
+        "key": "RACESURV1d_W43",
+        "text": "For your personal finances aspects of your life, would you say that you are, or about where you expected to be at this point in your life?",
+        "valid_options": [
+          {
+            "raw": "In a better situation than I expected",
+            "text": "In a better situation than I expected",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "In a worse situation than I expected",
+            "text": "In a worse situation than I expected",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "About where I expected",
+            "text": "About where I expected",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ADMISSIONa_W43",
+    "questions": [
+      {
+        "key": "ADMISSIONa_W43",
+        "text": "Do you think race or ethnicity should be a major factor, minor factor, or not a factor in college admissions?",
+        "valid_options": [
+          {
+            "raw": "Major factor",
+            "text": "Major factor",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor factor",
+            "text": "Minor factor",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a factor",
+            "text": "Not a factor",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ADMISSIONb_W43",
+    "questions": [
+      {
+        "key": "ADMISSIONb_W43",
+        "text": "Do you think gender should be a major factor, minor factor, or not a factor in college admissions?",
+        "valid_options": [
+          {
+            "raw": "Major factor",
+            "text": "Major factor",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor factor",
+            "text": "Minor factor",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a factor",
+            "text": "Not a factor",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ADMISSIONc_W43",
+    "questions": [
+      {
+        "key": "ADMISSIONc_W43",
+        "text": "Do you think whether a relative attended the school should be a major factor, minor factor, or not a factor in college admissions?",
+        "valid_options": [
+          {
+            "raw": "Major factor",
+            "text": "Major factor",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor factor",
+            "text": "Minor factor",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a factor",
+            "text": "Not a factor",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ADMISSIONd_W43",
+    "questions": [
+      {
+        "key": "ADMISSIONd_W43",
+        "text": "Do you think athletic ability should be a major factor, minor factor, or not a factor in college admissions?",
+        "valid_options": [
+          {
+            "raw": "Major factor",
+            "text": "Major factor",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor factor",
+            "text": "Minor factor",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a factor",
+            "text": "Not a factor",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ADMISSIONe_W43",
+    "questions": [
+      {
+        "key": "ADMISSIONe_W43",
+        "text": "Do you think involvement in community service should be a major factor, minor factor, or not a factor in college admissions?",
+        "valid_options": [
+          {
+            "raw": "Major factor",
+            "text": "Major factor",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor factor",
+            "text": "Minor factor",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a factor",
+            "text": "Not a factor",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ADMISSIONf_W43",
+    "questions": [
+      {
+        "key": "ADMISSIONf_W43",
+        "text": "Do you think scores on standardized tests, such as the SAT or act should be a major factor, minor factor, or not a factor in college admissions?",
+        "valid_options": [
+          {
+            "raw": "Major factor",
+            "text": "Major factor",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor factor",
+            "text": "Minor factor",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a factor",
+            "text": "Not a factor",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ADMISSIONg_W43",
+    "questions": [
+      {
+        "key": "ADMISSIONg_W43",
+        "text": "Do you think high school grades should be a major factor, minor factor, or not a factor in college admissions?",
+        "valid_options": [
+          {
+            "raw": "Major factor",
+            "text": "Major factor",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor factor",
+            "text": "Minor factor",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a factor",
+            "text": "Not a factor",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ADMISSIONh_W43",
+    "questions": [
+      {
+        "key": "ADMISSIONh_W43",
+        "text": "Do you think being the first person in the family to go to college should be a major factor, minor factor, or not a factor in college admissions?",
+        "valid_options": [
+          {
+            "raw": "Major factor",
+            "text": "Major factor",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor factor",
+            "text": "Minor factor",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a factor",
+            "text": "Not a factor",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV2_W43",
+    "questions": [
+      {
+        "key": "RACESURV2_W43",
+        "text": "The U.S. population is made up of people of many different races and ethnicities. Overall, do you think this is",
+        "valid_options": [
+          {
+            "raw": "Very good for the country",
+            "text": "Very good for the country",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat good for the country",
+            "text": "Somewhat good for the country",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Somewhat bad for the country",
+            "text": "Somewhat bad for the country",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Very bad for the country",
+            "text": "Very bad for the country",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Neither good nor bad for the country",
+            "text": "Neither good nor bad for the country",
+            "natural_language": null,
+            "ordinal": 2.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV3_W43",
+    "questions": [
+      {
+        "key": "RACESURV3_W43",
+        "text": "In general, do you think the fact that the U.S. population is made up of people of many different races and ethnicities makes it",
+        "valid_options": [
+          {
+            "raw": "Easier for policymakers to solve the country's problems",
+            "text": "Easier for policymakers to solve the country's problems",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Harder for policymakers to solve the country's problems",
+            "text": "Harder for policymakers to solve the country's problems",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Doesn't make much difference",
+            "text": "Doesn't make much difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV4_W43",
+    "questions": [
+      {
+        "key": "RACESURV4_W43",
+        "text": "In general, do you think the fact that the U.S. population is made up of people of many different races and ethnicities has",
+        "valid_options": [
+          {
+            "raw": "A positive impact on the country's culture",
+            "text": "A positive impact on the country's culture",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A negative impact on the country's culture",
+            "text": "A negative impact on the country's culture",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Doesn't make much difference",
+            "text": "Doesn't make much difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV5a_W43",
+    "questions": [
+      {
+        "key": "RACESURV5a_W43",
+        "text": "Overall, how does being white affect people's ability to get ahead in our country these days?",
+        "valid_options": [
+          {
+            "raw": "Helps a lot",
+            "text": "Helps a lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Helps a little",
+            "text": "Helps a little",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hurts a little",
+            "text": "Hurts a little",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Hurts a lot",
+            "text": "Hurts a lot",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Neither helps nor hurts",
+            "text": "Neither helps nor hurts",
+            "natural_language": null,
+            "ordinal": 2.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV5b_W43",
+    "questions": [
+      {
+        "key": "RACESURV5b_W43",
+        "text": "Overall, how does being black affect people's ability to get ahead in our country these days?",
+        "valid_options": [
+          {
+            "raw": "Helps a lot",
+            "text": "Helps a lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Helps a little",
+            "text": "Helps a little",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hurts a little",
+            "text": "Hurts a little",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Hurts a lot",
+            "text": "Hurts a lot",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Neither helps nor hurts",
+            "text": "Neither helps nor hurts",
+            "natural_language": null,
+            "ordinal": 2.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV5c_W43",
+    "questions": [
+      {
+        "key": "RACESURV5c_W43",
+        "text": "Overall, how does being Hispanic affect people's ability to get ahead in our country these days?",
+        "valid_options": [
+          {
+            "raw": "Helps a lot",
+            "text": "Helps a lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Helps a little",
+            "text": "Helps a little",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hurts a little",
+            "text": "Hurts a little",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Hurts a lot",
+            "text": "Hurts a lot",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Neither helps nor hurts",
+            "text": "Neither helps nor hurts",
+            "natural_language": null,
+            "ordinal": 2.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV5d_W43",
+    "questions": [
+      {
+        "key": "RACESURV5d_W43",
+        "text": "Overall, how does being Asian affect people's ability to get ahead in our country these days?",
+        "valid_options": [
+          {
+            "raw": "Helps a lot",
+            "text": "Helps a lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Helps a little",
+            "text": "Helps a little",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hurts a little",
+            "text": "Hurts a little",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Hurts a lot",
+            "text": "Hurts a lot",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Neither helps nor hurts",
+            "text": "Neither helps nor hurts",
+            "natural_language": null,
+            "ordinal": 2.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV5e_W43",
+    "questions": [
+      {
+        "key": "RACESURV5e_W43",
+        "text": "Overall, how does being Native American affect people's ability to get ahead in our country these days?",
+        "valid_options": [
+          {
+            "raw": "Helps a lot",
+            "text": "Helps a lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Helps a little",
+            "text": "Helps a little",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hurts a little",
+            "text": "Hurts a little",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Hurts a lot",
+            "text": "Hurts a lot",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Neither helps nor hurts",
+            "text": "Neither helps nor hurts",
+            "natural_language": null,
+            "ordinal": 2.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV5f_W43",
+    "questions": [
+      {
+        "key": "RACESURV5f_W43",
+        "text": "Overall, how does being Jewish affect people's ability to get ahead in our country these days?",
+        "valid_options": [
+          {
+            "raw": "Helps a lot",
+            "text": "Helps a lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Helps a little",
+            "text": "Helps a little",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hurts a little",
+            "text": "Hurts a little",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Hurts a lot",
+            "text": "Hurts a lot",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Neither helps nor hurts",
+            "text": "Neither helps nor hurts",
+            "natural_language": null,
+            "ordinal": 2.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV5g_W43",
+    "questions": [
+      {
+        "key": "RACESURV5g_W43",
+        "text": "Overall, how does being Muslim affect people's ability to get ahead in our country these days?",
+        "valid_options": [
+          {
+            "raw": "Helps a lot",
+            "text": "Helps a lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Helps a little",
+            "text": "Helps a little",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hurts a little",
+            "text": "Hurts a little",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Hurts a lot",
+            "text": "Hurts a lot",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Neither helps nor hurts",
+            "text": "Neither helps nor hurts",
+            "natural_language": null,
+            "ordinal": 2.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV5h_W43",
+    "questions": [
+      {
+        "key": "RACESURV5h_W43",
+        "text": "Overall, how does being an evangelical Christian affect people's ability to get ahead in our country these days?",
+        "valid_options": [
+          {
+            "raw": "Helps a lot",
+            "text": "Helps a lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Helps a little",
+            "text": "Helps a little",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hurts a little",
+            "text": "Hurts a little",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Hurts a lot",
+            "text": "Hurts a lot",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Neither helps nor hurts",
+            "text": "Neither helps nor hurts",
+            "natural_language": null,
+            "ordinal": 2.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV5i_W43",
+    "questions": [
+      {
+        "key": "RACESURV5i_W43",
+        "text": "Overall, how does being a man affect people's ability to get ahead in our country these days?",
+        "valid_options": [
+          {
+            "raw": "Helps a lot",
+            "text": "Helps a lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Helps a little",
+            "text": "Helps a little",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hurts a little",
+            "text": "Hurts a little",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Hurts a lot",
+            "text": "Hurts a lot",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Neither helps nor hurts",
+            "text": "Neither helps nor hurts",
+            "natural_language": null,
+            "ordinal": 2.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV5j_W43",
+    "questions": [
+      {
+        "key": "RACESURV5j_W43",
+        "text": "Overall, how does being a woman affect people's ability to get ahead in our country these days?",
+        "valid_options": [
+          {
+            "raw": "Helps a lot",
+            "text": "Helps a lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Helps a little",
+            "text": "Helps a little",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hurts a little",
+            "text": "Hurts a little",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Hurts a lot",
+            "text": "Hurts a lot",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Neither helps nor hurts",
+            "text": "Neither helps nor hurts",
+            "natural_language": null,
+            "ordinal": 2.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV5k_W43",
+    "questions": [
+      {
+        "key": "RACESURV5k_W43",
+        "text": "Overall, how does being poor affect people's ability to get ahead in our country these days?",
+        "valid_options": [
+          {
+            "raw": "Helps a lot",
+            "text": "Helps a lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Helps a little",
+            "text": "Helps a little",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hurts a little",
+            "text": "Hurts a little",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Hurts a lot",
+            "text": "Hurts a lot",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Neither helps nor hurts",
+            "text": "Neither helps nor hurts",
+            "natural_language": null,
+            "ordinal": 2.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV5l_W43",
+    "questions": [
+      {
+        "key": "RACESURV5l_W43",
+        "text": "Overall, how does being wealthy affect people's ability to get ahead in our country these days?",
+        "valid_options": [
+          {
+            "raw": "Helps a lot",
+            "text": "Helps a lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Helps a little",
+            "text": "Helps a little",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hurts a little",
+            "text": "Hurts a little",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Hurts a lot",
+            "text": "Hurts a lot",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Neither helps nor hurts",
+            "text": "Neither helps nor hurts",
+            "natural_language": null,
+            "ordinal": 2.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV6_W43",
+    "questions": [
+      {
+        "key": "RACESURV6_W43",
+        "text": "When it comes to racial discrimination, which do you think is the bigger problem for the country today?",
+        "valid_options": [
+          {
+            "raw": "People seeing racial discrimination where it really does not exist",
+            "text": "People seeing racial discrimination where it really does not exist",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "People not seeing racial discrimination where it really does exist",
+            "text": "People not seeing racial discrimination where it really does exist",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV7_W43",
+    "questions": [
+      {
+        "key": "RACESURV7_W43",
+        "text": "How often, if ever, does race or race relations come up in your conversations with family and friends?",
+        "valid_options": [
+          {
+            "raw": "Often",
+            "text": "Often",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Sometimes",
+            "text": "Sometimes",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Rarely",
+            "text": "Rarely",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Never",
+            "text": "Never",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV8_W43",
+    "questions": [
+      {
+        "key": "RACESURV8_W43",
+        "text": "When race or race relations comes up in your conversations with family and friends, are you generally",
+        "valid_options": [
+          {
+            "raw": "Very comfortable",
+            "text": "Very comfortable",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat comfortable",
+            "text": "Somewhat comfortable",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Somewhat uncomfortable",
+            "text": "Somewhat uncomfortable",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Very uncomfortable",
+            "text": "Very uncomfortable",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV9_W43",
+    "questions": [
+      {
+        "key": "RACESURV9_W43",
+        "text": "When race or race relations comes up in your conversations with family and friends, is it",
+        "valid_options": [
+          {
+            "raw": "Always with people who are the same race as you",
+            "text": "Always with people who are the same race as you",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Mostly with people who are the same race as you",
+            "text": "Mostly with people who are the same race as you",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Mostly with people who are not the same race as you",
+            "text": "Mostly with people who are not the same race as you",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Always with people who are not the same race as you",
+            "text": "Always with people who are not the same race as you",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Both about equally",
+            "text": "Both about equally",
+            "natural_language": null,
+            "ordinal": 2.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV10_W43",
+    "questions": [
+      {
+        "key": "RACESURV10_W43",
+        "text": "Do you think race relations in the United States are",
+        "valid_options": [
+          {
+            "raw": "Generally good",
+            "text": "Generally good",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Generally bad",
+            "text": "Generally bad",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV11_W43",
+    "questions": [
+      {
+        "key": "RACESURV11_W43",
+        "text": "Do you think race relations in the United States are",
+        "valid_options": [
+          {
+            "raw": "Getting better",
+            "text": "Getting better",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Getting worse",
+            "text": "Getting worse",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Staying about the same",
+            "text": "Staying about the same",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV12_W43",
+    "questions": [
+      {
+        "key": "RACESURV12_W43",
+        "text": "When it comes to giving black people equal rights with whites, do you think our country has",
+        "valid_options": [
+          {
+            "raw": "Gone too far",
+            "text": "Gone too far",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Not gone far enough",
+            "text": "Not gone far enough",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Been about right",
+            "text": "Been about right",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV13_W43",
+    "questions": [
+      {
+        "key": "RACESURV13_W43",
+        "text": "How likely, if at all, is it that black people in our country will eventually have equal rights with whites?",
+        "valid_options": [
+          {
+            "raw": "Very likely",
+            "text": "Very likely",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat likely",
+            "text": "Somewhat likely",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too likely",
+            "text": "Not too likely",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all likely",
+            "text": "Not at all likely",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACATTN_W43",
+    "questions": [
+      {
+        "key": "RACATTN_W43",
+        "text": "In general, do you think there is too much, too little, or about the right amount of attention paid to race and racial issues in our country these days?",
+        "valid_options": [
+          {
+            "raw": "Too much attention",
+            "text": "Too much attention",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Too little attention",
+            "text": "Too little attention",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "About the right amount of attention",
+            "text": "About the right amount of attention",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV14_W43",
+    "questions": [
+      {
+        "key": "RACESURV14_W43",
+        "text": "Would you say President Trump has",
+        "valid_options": [
+          {
+            "raw": "Made progress toward improving race relations",
+            "text": "Made progress toward improving race relations",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Tried but failed to make progress toward improving race relations",
+            "text": "Tried but failed to make progress toward improving race relations",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not addressed race relations",
+            "text": "Not addressed race relations",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Made race relations worse",
+            "text": "Made race relations worse",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV15a_W43",
+    "questions": [
+      {
+        "key": "RACESURV15a_W43",
+        "text": "Since President Trump was elected, do you think it has become more common or less common for people to express racist or racially insensitive views, or is it about as common as it was before?",
+        "valid_options": [
+          {
+            "raw": "More common",
+            "text": "More common",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Less common",
+            "text": "Less common",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "About as common",
+            "text": "About as common",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV15b_W43",
+    "questions": [
+      {
+        "key": "RACESURV15b_W43",
+        "text": "Since President Trump was elected, do you think it has become more acceptable or less acceptable for people to express racist or racially insensitive views, or is it about as acceptable as it was before?",
+        "valid_options": [
+          {
+            "raw": "More acceptable",
+            "text": "More acceptable",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Less acceptable",
+            "text": "Less acceptable",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "About as acceptable",
+            "text": "About as acceptable",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV16_W43",
+    "questions": [
+      {
+        "key": "RACESURV16_W43",
+        "text": "When it comes to improving race relations, do you think it is more important for people to focus on",
+        "valid_options": [
+          {
+            "raw": "The unique experiences of different racial and ethnic groups",
+            "text": "The unique experiences of different racial and ethnic groups",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "What different racial and ethnic groups have in common",
+            "text": "What different racial and ethnic groups have in common",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV17_W43",
+    "questions": [
+      {
+        "key": "RACESURV17_W43",
+        "text": "How much, if at all, do you think the legacy of slavery affects the position of black people in American society today?",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not much",
+            "text": "Not much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV18a_W43",
+    "questions": [
+      {
+        "key": "RACESURV18a_W43",
+        "text": "Thinking again about race and race relations in the U.S. in general, how well, if at all, do you think each of these groups get along with each other in our society these days? Whites and Hispanics",
+        "valid_options": [
+          {
+            "raw": "Very well",
+            "text": "Very well",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Pretty well",
+            "text": "Pretty well",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too well",
+            "text": "Not too well",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all well",
+            "text": "Not at all well",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV18b_W43",
+    "questions": [
+      {
+        "key": "RACESURV18b_W43",
+        "text": "Thinking again about race and race relations in the U.S. in general, how well, if at all, do you think each of these groups get along with each other in our society these days? Blacks and Hispanics",
+        "valid_options": [
+          {
+            "raw": "Very well",
+            "text": "Very well",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Pretty well",
+            "text": "Pretty well",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too well",
+            "text": "Not too well",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all well",
+            "text": "Not at all well",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV18c_W43",
+    "questions": [
+      {
+        "key": "RACESURV18c_W43",
+        "text": "Thinking again about race and race relations in the U.S. in general, how well, if at all, do you think each of these groups get along with each other in our society these days? Blacks and whites",
+        "valid_options": [
+          {
+            "raw": "Very well",
+            "text": "Very well",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Pretty well",
+            "text": "Pretty well",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too well",
+            "text": "Not too well",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all well",
+            "text": "Not at all well",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV18d_W43",
+    "questions": [
+      {
+        "key": "RACESURV18d_W43",
+        "text": "Thinking again about race and race relations in the U.S. in general, how well, if at all, do you think each of these groups get along with each other in our society these days? Whites and Asians",
+        "valid_options": [
+          {
+            "raw": "Very well",
+            "text": "Very well",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Pretty well",
+            "text": "Pretty well",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too well",
+            "text": "Not too well",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all well",
+            "text": "Not at all well",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV18e_W43",
+    "questions": [
+      {
+        "key": "RACESURV18e_W43",
+        "text": "Thinking again about race and race relations in the U.S. in general, how well, if at all, do you think each of these groups get along with each other in our society these days? Blacks and Asians",
+        "valid_options": [
+          {
+            "raw": "Very well",
+            "text": "Very well",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Pretty well",
+            "text": "Pretty well",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too well",
+            "text": "Not too well",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all well",
+            "text": "Not at all well",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV18f_W43",
+    "questions": [
+      {
+        "key": "RACESURV18f_W43",
+        "text": "Thinking again about race and race relations in the U.S. in general, how well, if at all, do you think each of these groups get along with each other in our society these days? Hispanics and Asians",
+        "valid_options": [
+          {
+            "raw": "Very well",
+            "text": "Very well",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Pretty well",
+            "text": "Pretty well",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too well",
+            "text": "Not too well",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all well",
+            "text": "Not at all well",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV19a_W43",
+    "questions": [
+      {
+        "key": "RACESURV19a_W43",
+        "text": "Do you think each is a major reason, minor reason, or not a reason why black people in our country may have a harder time getting ahead than white people? Racial discrimination",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV19b_W43",
+    "questions": [
+      {
+        "key": "RACESURV19b_W43",
+        "text": "Do you think each is a major reason, minor reason, or not a reason why black people in our country may have a harder time getting ahead than white people? Lack of motivation to work hard",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV19c_W43",
+    "questions": [
+      {
+        "key": "RACESURV19c_W43",
+        "text": "Do you think each is a major reason, minor reason, or not a reason why black people in our country may have a harder time getting ahead than white people? Less access to good quality schools",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV19d_W43",
+    "questions": [
+      {
+        "key": "RACESURV19d_W43",
+        "text": "Do you think each is a major reason, minor reason, or not a reason why black people in our country may have a harder time getting ahead than white people? Lack of good role models",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV19e_W43",
+    "questions": [
+      {
+        "key": "RACESURV19e_W43",
+        "text": "Do you think each is a major reason, minor reason, or not a reason why black people in our country may have a harder time getting ahead than white people? Less access to high-paying jobs",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV19f_W43",
+    "questions": [
+      {
+        "key": "RACESURV19f_W43",
+        "text": "Do you think each is a major reason, minor reason, or not a reason why black people in our country may have a harder time getting ahead than white people? Family instability",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV20_W43",
+    "questions": [
+      {
+        "key": "RACESURV20_W43",
+        "text": "Thinking about your own experience, have you ever personally experienced discrimination or been treated unfairly because of your race or ethnicity?",
+        "valid_options": [
+          {
+            "raw": "Yes, regularly",
+            "text": "Yes, regularly",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Yes, from time to time",
+            "text": "Yes, from time to time",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No",
+            "text": "No",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV21_W43",
+    "questions": [
+      {
+        "key": "RACESURV21_W43",
+        "text": "How often, if ever, did your family talk to you about challenges you might face because of your race or ethnicity?",
+        "valid_options": [
+          {
+            "raw": "Often",
+            "text": "Often",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Sometimes",
+            "text": "Sometimes",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Rarely",
+            "text": "Rarely",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Never",
+            "text": "Never",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV22_W43",
+    "questions": [
+      {
+        "key": "RACESURV22_W43",
+        "text": "How often, if ever, did your family talk to you about advantages you might have because of your race or ethnicity?",
+        "valid_options": [
+          {
+            "raw": "Often",
+            "text": "Often",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Sometimes",
+            "text": "Sometimes",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Rarely",
+            "text": "Rarely",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Never",
+            "text": "Never",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV24_W43",
+    "questions": [
+      {
+        "key": "RACESURV24_W43",
+        "text": "How much, if at all, do you think what happens to white people in the country overall affects what happens in your own life?",
+        "valid_options": [
+          {
+            "raw": "A lot",
+            "text": "A lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not much",
+            "text": "Not much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV25_W43",
+    "questions": [
+      {
+        "key": "RACESURV25_W43",
+        "text": "How much, if at all, do you think what happens to black people in the country overall affects what happens in your own life?",
+        "valid_options": [
+          {
+            "raw": "A lot",
+            "text": "A lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not much",
+            "text": "Not much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV26_W43",
+    "questions": [
+      {
+        "key": "RACESURV26_W43",
+        "text": "How much, if at all, do you think what happens to Hispanics in the country overall affects what happens in your own life?",
+        "valid_options": [
+          {
+            "raw": "A lot",
+            "text": "A lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not much",
+            "text": "Not much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV27_W43",
+    "questions": [
+      {
+        "key": "RACESURV27_W43",
+        "text": "How much, if at all, do you think what happens to Asians in the country overall affects what happens in your own life?",
+        "valid_options": [
+          {
+            "raw": "A lot",
+            "text": "A lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not much",
+            "text": "Not much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "IDIMPORT_W43",
+    "questions": [
+      {
+        "key": "IDIMPORT_W43",
+        "text": "How important is being white to how you think about yourself?",
+        "valid_options": [
+          {
+            "raw": "Extremely important",
+            "text": "Extremely important",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Very important",
+            "text": "Very important",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Moderately important",
+            "text": "Moderately important",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Only a little important",
+            "text": "Only a little important",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Not at all important",
+            "text": "Not at all important",
+            "natural_language": null,
+            "ordinal": 5.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "IDIMPORT_W43",
+    "questions": [
+      {
+        "key": "IDIMPORT_W43",
+        "text": "How important is being white to how you think about yourself?",
+        "valid_options": [
+          {
+            "raw": "Extremely important",
+            "text": "Extremely important",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Very important",
+            "text": "Very important",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Moderately important",
+            "text": "Moderately important",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Only a little important",
+            "text": "Only a little important",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Not at all important",
+            "text": "Not at all important",
+            "natural_language": null,
+            "ordinal": 5.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "IDIMPORT_W43",
+    "questions": [
+      {
+        "key": "IDIMPORT_W43",
+        "text": "How important is being white to how you think about yourself?",
+        "valid_options": [
+          {
+            "raw": "Extremely important",
+            "text": "Extremely important",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Very important",
+            "text": "Very important",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Moderately important",
+            "text": "Moderately important",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Only a little important",
+            "text": "Only a little important",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Not at all important",
+            "text": "Not at all important",
+            "natural_language": null,
+            "ordinal": 5.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "IDIMPORT_W43",
+    "questions": [
+      {
+        "key": "IDIMPORT_W43",
+        "text": "How important is being white to how you think about yourself?",
+        "valid_options": [
+          {
+            "raw": "Extremely important",
+            "text": "Extremely important",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Very important",
+            "text": "Very important",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Moderately important",
+            "text": "Moderately important",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Only a little important",
+            "text": "Only a little important",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Not at all important",
+            "text": "Not at all important",
+            "natural_language": null,
+            "ordinal": 5.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "IDIMPORT_W43",
+    "questions": [
+      {
+        "key": "IDIMPORT_W43",
+        "text": "How important is being white to how you think about yourself?",
+        "valid_options": [
+          {
+            "raw": "Extremely important",
+            "text": "Extremely important",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Very important",
+            "text": "Very important",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Moderately important",
+            "text": "Moderately important",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Only a little important",
+            "text": "Only a little important",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Not at all important",
+            "text": "Not at all important",
+            "natural_language": null,
+            "ordinal": 5.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV28a_W43",
+    "questions": [
+      {
+        "key": "RACESURV28a_W43",
+        "text": "Would you say that black people are treated less fairly than white people, white people are treated less fairly than black people, or both are treated about equally in in hiring, pay and promotions situations?",
+        "valid_options": [
+          {
+            "raw": "Black people are treated less fairly than white people",
+            "text": "Black people are treated less fairly than white people",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "White people are treated less fairly than black people",
+            "text": "White people are treated less fairly than black people",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Both are treated about equally",
+            "text": "Both are treated about equally",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV28b_W43",
+    "questions": [
+      {
+        "key": "RACESURV28b_W43",
+        "text": "Would you say that black people are treated less fairly than white people, white people are treated less fairly than black people, or both are treated about equally in in stores or restaurants situations?",
+        "valid_options": [
+          {
+            "raw": "Black people are treated less fairly than white people",
+            "text": "Black people are treated less fairly than white people",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "White people are treated less fairly than black people",
+            "text": "White people are treated less fairly than black people",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Both are treated about equally",
+            "text": "Both are treated about equally",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV28c_W43",
+    "questions": [
+      {
+        "key": "RACESURV28c_W43",
+        "text": "Would you say that black people are treated less fairly than white people, white people are treated less fairly than black people, or both are treated about equally in when applying for a loan or mortgage situations?",
+        "valid_options": [
+          {
+            "raw": "Black people are treated less fairly than white people",
+            "text": "Black people are treated less fairly than white people",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "White people are treated less fairly than black people",
+            "text": "White people are treated less fairly than black people",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Both are treated about equally",
+            "text": "Both are treated about equally",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV28d_W43",
+    "questions": [
+      {
+        "key": "RACESURV28d_W43",
+        "text": "Would you say that black people are treated less fairly than white people, white people are treated less fairly than black people, or both are treated about equally in in dealing with the police situations?",
+        "valid_options": [
+          {
+            "raw": "Black people are treated less fairly than white people",
+            "text": "Black people are treated less fairly than white people",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "White people are treated less fairly than black people",
+            "text": "White people are treated less fairly than black people",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Both are treated about equally",
+            "text": "Both are treated about equally",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV28e_W43",
+    "questions": [
+      {
+        "key": "RACESURV28e_W43",
+        "text": "Would you say that black people are treated less fairly than white people, white people are treated less fairly than black people, or both are treated about equally in by the criminal justice system situations?",
+        "valid_options": [
+          {
+            "raw": "Black people are treated less fairly than white people",
+            "text": "Black people are treated less fairly than white people",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "White people are treated less fairly than black people",
+            "text": "White people are treated less fairly than black people",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Both are treated about equally",
+            "text": "Both are treated about equally",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV28f_W43",
+    "questions": [
+      {
+        "key": "RACESURV28f_W43",
+        "text": "Would you say that black people are treated less fairly than white people, white people are treated less fairly than black people, or both are treated about equally in when voting in elections situations?",
+        "valid_options": [
+          {
+            "raw": "Black people are treated less fairly than white people",
+            "text": "Black people are treated less fairly than white people",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "White people are treated less fairly than black people",
+            "text": "White people are treated less fairly than black people",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Both are treated about equally",
+            "text": "Both are treated about equally",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV28g_W43",
+    "questions": [
+      {
+        "key": "RACESURV28g_W43",
+        "text": "Would you say that black people are treated less fairly than white people, white people are treated less fairly than black people, or both are treated about equally in when seeking medical treatment situations?",
+        "valid_options": [
+          {
+            "raw": "Black people are treated less fairly than white people",
+            "text": "Black people are treated less fairly than white people",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "White people are treated less fairly than black people",
+            "text": "White people are treated less fairly than black people",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Both are treated about equally",
+            "text": "Both are treated about equally",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV29a_W43",
+    "questions": [
+      {
+        "key": "RACESURV29a_W43",
+        "text": "In your daily life, how much interaction, if any, would you say you have with people who are White",
+        "valid_options": [
+          {
+            "raw": "A lot of interaction",
+            "text": "A lot of interaction",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some interaction",
+            "text": "Some interaction",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not much interaction",
+            "text": "Not much interaction",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "No interaction at all",
+            "text": "No interaction at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV29b_W43",
+    "questions": [
+      {
+        "key": "RACESURV29b_W43",
+        "text": "In your daily life, how much interaction, if any, would you say you have with people who are black",
+        "valid_options": [
+          {
+            "raw": "A lot of interaction",
+            "text": "A lot of interaction",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some interaction",
+            "text": "Some interaction",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not much interaction",
+            "text": "Not much interaction",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "No interaction at all",
+            "text": "No interaction at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV29c_W43",
+    "questions": [
+      {
+        "key": "RACESURV29c_W43",
+        "text": "In your daily life, how much interaction, if any, would you say you have with people who are hispanic",
+        "valid_options": [
+          {
+            "raw": "A lot of interaction",
+            "text": "A lot of interaction",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some interaction",
+            "text": "Some interaction",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not much interaction",
+            "text": "Not much interaction",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "No interaction at all",
+            "text": "No interaction at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV29d_W43",
+    "questions": [
+      {
+        "key": "RACESURV29d_W43",
+        "text": "In your daily life, how much interaction, if any, would you say you have with people who are asian",
+        "valid_options": [
+          {
+            "raw": "A lot of interaction",
+            "text": "A lot of interaction",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some interaction",
+            "text": "Some interaction",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not much interaction",
+            "text": "Not much interaction",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "No interaction at all",
+            "text": "No interaction at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV34a_W43",
+    "questions": [
+      {
+        "key": "RACESURV34a_W43",
+        "text": "Overall, how much has being white/Being black/Being Hispanic/Being Asian/Your racial background helped or hurt your ability to get ahead?",
+        "valid_options": [
+          {
+            "raw": "Helped a lot",
+            "text": "Helped a lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Helped a little",
+            "text": "Helped a little",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hurt a little",
+            "text": "Hurt a little",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Hurt a lot",
+            "text": "Hurt a lot",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Neither helped nor hurt",
+            "text": "Neither helped nor hurt",
+            "natural_language": null,
+            "ordinal": 2.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV34b_W43",
+    "questions": [
+      {
+        "key": "RACESURV34b_W43",
+        "text": "Overall, how much has being a man/Being a woman/Your gender helped or hurt your ability to get ahead?",
+        "valid_options": [
+          {
+            "raw": "Helped a lot",
+            "text": "Helped a lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Helped a little",
+            "text": "Helped a little",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hurt a little",
+            "text": "Hurt a little",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Hurt a lot",
+            "text": "Hurt a lot",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Neither helped nor hurt",
+            "text": "Neither helped nor hurt",
+            "natural_language": null,
+            "ordinal": 2.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV34c_W43",
+    "questions": [
+      {
+        "key": "RACESURV34c_W43",
+        "text": "Overall, how much has your family's financial situation when you were growing up helped or hurt your ability to get ahead?",
+        "valid_options": [
+          {
+            "raw": "Helped a lot",
+            "text": "Helped a lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Helped a little",
+            "text": "Helped a little",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hurt a little",
+            "text": "Hurt a little",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Hurt a lot",
+            "text": "Hurt a lot",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Neither helped nor hurt",
+            "text": "Neither helped nor hurt",
+            "natural_language": null,
+            "ordinal": 2.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV34d_W43",
+    "questions": [
+      {
+        "key": "RACESURV34d_W43",
+        "text": "Overall, how much has how hard you've worked helped or hurt your ability to get ahead?",
+        "valid_options": [
+          {
+            "raw": "Helped a lot",
+            "text": "Helped a lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Helped a little",
+            "text": "Helped a little",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hurt a little",
+            "text": "Hurt a little",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Hurt a lot",
+            "text": "Hurt a lot",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Neither helped nor hurt",
+            "text": "Neither helped nor hurt",
+            "natural_language": null,
+            "ordinal": 2.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV34e_W43",
+    "questions": [
+      {
+        "key": "RACESURV34e_W43",
+        "text": "Overall, how much has the people you know helped or hurt your ability to get ahead?",
+        "valid_options": [
+          {
+            "raw": "Helped a lot",
+            "text": "Helped a lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Helped a little",
+            "text": "Helped a little",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hurt a little",
+            "text": "Hurt a little",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Hurt a lot",
+            "text": "Hurt a lot",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Neither helped nor hurt",
+            "text": "Neither helped nor hurt",
+            "natural_language": null,
+            "ordinal": 2.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV36_W43",
+    "questions": [
+      {
+        "key": "RACESURV36_W43",
+        "text": "How often, if ever, do you hear a white friend or family member make comments or jokes that might be considered racist or racially insensitive about people who are not white?",
+        "valid_options": [
+          {
+            "raw": "Often",
+            "text": "Often",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Sometimes",
+            "text": "Sometimes",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Rarely",
+            "text": "Rarely",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Never",
+            "text": "Never",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV36_W43",
+    "questions": [
+      {
+        "key": "RACESURV36_W43",
+        "text": "How often, if ever, do you hear a white friend or family member make comments or jokes that might be considered racist or racially insensitive about people who are not white?",
+        "valid_options": [
+          {
+            "raw": "Often",
+            "text": "Often",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Sometimes",
+            "text": "Sometimes",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Rarely",
+            "text": "Rarely",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Never",
+            "text": "Never",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV36_W43",
+    "questions": [
+      {
+        "key": "RACESURV36_W43",
+        "text": "How often, if ever, do you hear a white friend or family member make comments or jokes that might be considered racist or racially insensitive about people who are not white?",
+        "valid_options": [
+          {
+            "raw": "Often",
+            "text": "Often",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Sometimes",
+            "text": "Sometimes",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Rarely",
+            "text": "Rarely",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Never",
+            "text": "Never",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV36_W43",
+    "questions": [
+      {
+        "key": "RACESURV36_W43",
+        "text": "How often, if ever, do you hear a white friend or family member make comments or jokes that might be considered racist or racially insensitive about people who are not white?",
+        "valid_options": [
+          {
+            "raw": "Often",
+            "text": "Often",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Sometimes",
+            "text": "Sometimes",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Rarely",
+            "text": "Rarely",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Never",
+            "text": "Never",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV36_W43",
+    "questions": [
+      {
+        "key": "RACESURV36_W43",
+        "text": "How often, if ever, do you hear a white friend or family member make comments or jokes that might be considered racist or racially insensitive about people who are not white?",
+        "valid_options": [
+          {
+            "raw": "Often",
+            "text": "Often",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Sometimes",
+            "text": "Sometimes",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Rarely",
+            "text": "Rarely",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Never",
+            "text": "Never",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV37_W43",
+    "questions": [
+      {
+        "key": "RACESURV37_W43",
+        "text": "Have you ever confronted a white friend or family member who has made a comment or joke that might be considered racist or racially insensitive about people who are not white?",
+        "valid_options": [
+          {
+            "raw": "Yes, have done this",
+            "text": "Yes, have done this",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, have not done this",
+            "text": "No, have not done this",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV37_W43",
+    "questions": [
+      {
+        "key": "RACESURV37_W43",
+        "text": "Have you ever confronted a white friend or family member who has made a comment or joke that might be considered racist or racially insensitive about people who are not white?",
+        "valid_options": [
+          {
+            "raw": "Yes, have done this",
+            "text": "Yes, have done this",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, have not done this",
+            "text": "No, have not done this",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV37_W43",
+    "questions": [
+      {
+        "key": "RACESURV37_W43",
+        "text": "Have you ever confronted a white friend or family member who has made a comment or joke that might be considered racist or racially insensitive about people who are not white?",
+        "valid_options": [
+          {
+            "raw": "Yes, have done this",
+            "text": "Yes, have done this",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, have not done this",
+            "text": "No, have not done this",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV37_W43",
+    "questions": [
+      {
+        "key": "RACESURV37_W43",
+        "text": "Have you ever confronted a white friend or family member who has made a comment or joke that might be considered racist or racially insensitive about people who are not white?",
+        "valid_options": [
+          {
+            "raw": "Yes, have done this",
+            "text": "Yes, have done this",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, have not done this",
+            "text": "No, have not done this",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV37_W43",
+    "questions": [
+      {
+        "key": "RACESURV37_W43",
+        "text": "Have you ever confronted a white friend or family member who has made a comment or joke that might be considered racist or racially insensitive about people who are not white?",
+        "valid_options": [
+          {
+            "raw": "Yes, have done this",
+            "text": "Yes, have done this",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, have not done this",
+            "text": "No, have not done this",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV38_W43",
+    "questions": [
+      {
+        "key": "RACESURV38_W43",
+        "text": "How often, if ever, do you stop yourself from saying something because someone might think you are racist or racially insensitive?",
+        "valid_options": [
+          {
+            "raw": "Often",
+            "text": "Often",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Sometimes",
+            "text": "Sometimes",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Rarely",
+            "text": "Rarely",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Never",
+            "text": "Never",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV40_W43",
+    "questions": [
+      {
+        "key": "RACESURV40_W43",
+        "text": "How many white people in our country do you think are prejudiced against black people?",
+        "valid_options": [
+          {
+            "raw": "All or most",
+            "text": "All or most",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Only a few",
+            "text": "Only a few",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "None",
+            "text": "None",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV41_W43",
+    "questions": [
+      {
+        "key": "RACESURV41_W43",
+        "text": "How many white people in our country do you think would confront a white friend or family member if they made a racist or racially insensitive comment or joke about people who are black?",
+        "valid_options": [
+          {
+            "raw": "All or most",
+            "text": "All or most",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Only a few",
+            "text": "Only a few",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "None",
+            "text": "None",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV44_W43",
+    "questions": [
+      {
+        "key": "RACESURV44_W43",
+        "text": "How many black people in our country do you think are prejudiced against white people?",
+        "valid_options": [
+          {
+            "raw": "All or most",
+            "text": "All or most",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Only a few",
+            "text": "Only a few",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "None",
+            "text": "None",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV45_W43",
+    "questions": [
+      {
+        "key": "RACESURV45_W43",
+        "text": "How many black people in our country do you think would confront a black friend or family member if they made a racist or racially insensitive comment or joke about people who are white?",
+        "valid_options": [
+          {
+            "raw": "All or most",
+            "text": "All or most",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Only a few",
+            "text": "Only a few",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "None",
+            "text": "None",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV47a_W43",
+    "questions": [
+      {
+        "key": "RACESURV47a_W43",
+        "text": "For each, please indicate if you, personally, think it is acceptable. A sports team using Native American tribal names or images as mascots",
+        "valid_options": [
+          {
+            "raw": "Always acceptable",
+            "text": "Always acceptable",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Sometimes acceptable",
+            "text": "Sometimes acceptable",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Rarely acceptable",
+            "text": "Rarely acceptable",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Never acceptable",
+            "text": "Never acceptable",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV47b_W43",
+    "questions": [
+      {
+        "key": "RACESURV47b_W43",
+        "text": "For each, please indicate if you, personally, think it is acceptable. A black person using the n-word",
+        "valid_options": [
+          {
+            "raw": "Always acceptable",
+            "text": "Always acceptable",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Sometimes acceptable",
+            "text": "Sometimes acceptable",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Rarely acceptable",
+            "text": "Rarely acceptable",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Never acceptable",
+            "text": "Never acceptable",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV47c_W43",
+    "questions": [
+      {
+        "key": "RACESURV47c_W43",
+        "text": "For each, please indicate if you, personally, think it is acceptable. A white person using the n-word",
+        "valid_options": [
+          {
+            "raw": "Always acceptable",
+            "text": "Always acceptable",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Sometimes acceptable",
+            "text": "Sometimes acceptable",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Rarely acceptable",
+            "text": "Rarely acceptable",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Never acceptable",
+            "text": "Never acceptable",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV47d_W43",
+    "questions": [
+      {
+        "key": "RACESURV47d_W43",
+        "text": "For each, please indicate if you, personally, think it is acceptable. Casting an actor to play a character of a race or ethnicity other than their own",
+        "valid_options": [
+          {
+            "raw": "Always acceptable",
+            "text": "Always acceptable",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Sometimes acceptable",
+            "text": "Sometimes acceptable",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Rarely acceptable",
+            "text": "Rarely acceptable",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Never acceptable",
+            "text": "Never acceptable",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV47e_W43",
+    "questions": [
+      {
+        "key": "RACESURV47e_W43",
+        "text": "For each, please indicate if you, personally, think it is acceptable. A person wearing traditional dress from a country or culture other than their own as part of a Halloween costume",
+        "valid_options": [
+          {
+            "raw": "Always acceptable",
+            "text": "Always acceptable",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Sometimes acceptable",
+            "text": "Sometimes acceptable",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Rarely acceptable",
+            "text": "Rarely acceptable",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Never acceptable",
+            "text": "Never acceptable",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV47f_W43",
+    "questions": [
+      {
+        "key": "RACESURV47f_W43",
+        "text": "For each, please indicate if you, personally, think it is acceptable. A white person using makeup to darken their skin so they appear to be a different race as part of a Halloween costume",
+        "valid_options": [
+          {
+            "raw": "Always acceptable",
+            "text": "Always acceptable",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Sometimes acceptable",
+            "text": "Sometimes acceptable",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Rarely acceptable",
+            "text": "Rarely acceptable",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Never acceptable",
+            "text": "Never acceptable",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV48_W43",
+    "questions": [
+      {
+        "key": "RACESURV48_W43",
+        "text": "How important, if at all, would you say it is for companies and organizations to promote racial and ethnic diversity in their workplace?",
+        "valid_options": [
+          {
+            "raw": "Very important",
+            "text": "Very important",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat important",
+            "text": "Somewhat important",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too important",
+            "text": "Not too important",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all important",
+            "text": "Not at all important",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV49_W43",
+    "questions": [
+      {
+        "key": "RACESURV49_W43",
+        "text": "When it comes to decisions about hiring and promotions, do you think companies and organizations",
+        "valid_options": [
+          {
+            "raw": "Should take a person's race and ethnicity into account, in addition to their qualifications, in order to increase divers",
+            "text": "Should take a person's race and ethnicity into account, in addition to their qualifications, in order to increase divers",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Should only take a person's qualifications into account, even if it results in less diversity in the workplace",
+            "text": "Should only take a person's qualifications into account, even if it results in less diversity in the workplace",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV50_W43",
+    "questions": [
+      {
+        "key": "RACESURV50_W43",
+        "text": "When it comes to the schools students attend, do you think students",
+        "valid_options": [
+          {
+            "raw": "Should go to schools that are racially and ethnically mixed, even if it means that some students don't go to school in their local community",
+            "text": "Should go to schools that are racially and ethnically mixed, even if it means that some students don't go to school in their local community",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Should go to schools in their local community, even if it means that most schools are not racially and ethnically mixed",
+            "text": "Should go to schools in their local community, even if it means that most schools are not racially and ethnically mixed",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV51_W43",
+    "questions": [
+      {
+        "key": "RACESURV51_W43",
+        "text": "Thinking about the community where you live, do you wish your community was",
+        "valid_options": [
+          {
+            "raw": "More racially mixed",
+            "text": "More racially mixed",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Less racially mixed",
+            "text": "Less racially mixed",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "About as racially mixed as it is",
+            "text": "About as racially mixed as it is",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV52_W43",
+    "questions": [
+      {
+        "key": "RACESURV52_W43",
+        "text": "How much, if at all, would it bother you to hear people speak a language other than English in a public place?",
+        "valid_options": [
+          {
+            "raw": "A lot",
+            "text": "A lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not much",
+            "text": "Not much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV53a_W43",
+    "questions": [
+      {
+        "key": "RACESURV53a_W43",
+        "text": "Please indicate whether or not each has happened to you because of your race or ethnicity. Been unfairly stopped by police",
+        "valid_options": [
+          {
+            "raw": "Yes, has happened to me",
+            "text": "Yes, has happened to me",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, has not happened to me",
+            "text": "No, has not happened to me",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV53b_W43",
+    "questions": [
+      {
+        "key": "RACESURV53b_W43",
+        "text": "Please indicate whether or not each has happened to you because of your race or ethnicity. People acted as if they were suspicious of you",
+        "valid_options": [
+          {
+            "raw": "Yes, has happened to me",
+            "text": "Yes, has happened to me",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, has not happened to me",
+            "text": "No, has not happened to me",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV53c_W43",
+    "questions": [
+      {
+        "key": "RACESURV53c_W43",
+        "text": "Please indicate whether or not each has happened to you because of your race or ethnicity. People acted as if they thought you were not smart",
+        "valid_options": [
+          {
+            "raw": "Yes, has happened to me",
+            "text": "Yes, has happened to me",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, has not happened to me",
+            "text": "No, has not happened to me",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV53d_W43",
+    "questions": [
+      {
+        "key": "RACESURV53d_W43",
+        "text": "Please indicate whether or not each has happened to you because of your race or ethnicity. Been treated unfairly by an employer in hiring, pay or promotion",
+        "valid_options": [
+          {
+            "raw": "Yes, has happened to me",
+            "text": "Yes, has happened to me",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, has not happened to me",
+            "text": "No, has not happened to me",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV53e_W43",
+    "questions": [
+      {
+        "key": "RACESURV53e_W43",
+        "text": "Please indicate whether or not each has happened to you because of your race or ethnicity. Been subject to slurs or jokes",
+        "valid_options": [
+          {
+            "raw": "Yes, has happened to me",
+            "text": "Yes, has happened to me",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, has not happened to me",
+            "text": "No, has not happened to me",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV53f_W43",
+    "questions": [
+      {
+        "key": "RACESURV53f_W43",
+        "text": "Please indicate whether or not each has happened to you because of your race or ethnicity. Feared for your personal safety",
+        "valid_options": [
+          {
+            "raw": "Yes, has happened to me",
+            "text": "Yes, has happened to me",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, has not happened to me",
+            "text": "No, has not happened to me",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV53g_W43",
+    "questions": [
+      {
+        "key": "RACESURV53g_W43",
+        "text": "Please indicate whether or not each has happened to you because of your race or ethnicity. People assumed you are racist or prejudiced",
+        "valid_options": [
+          {
+            "raw": "Yes, has happened to me",
+            "text": "Yes, has happened to me",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, has not happened to me",
+            "text": "No, has not happened to me",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CREGION",
+    "questions": [
+      {
+        "key": "CREGION",
+        "text": "Which part of the United States do you currently live in?",
+        "valid_options": [
+          {
+            "raw": "Midwest",
+            "text": "Midwest",
+            "natural_language": "I live in the Midwest of the United States."
+          },
+          {
+            "raw": "Northeast",
+            "text": "Northeast",
+            "natural_language": "I live in the Northeast of the United States."
+          },
+          {
+            "raw": "South",
+            "text": "South",
+            "natural_language": "I live in the South of the United States."
+          },
+          {
+            "raw": "West",
+            "text": "West",
+            "natural_language": "I live in the West of the United States."
+          }
+        ],
+        "invalid_options": []
+      }
+    ]
+  },
+  {
+    "name": "AGE",
+    "questions": [
+      {
+        "key": "AGE",
+        "text": "How old are you?",
+        "valid_options": [
+          {
+            "raw": "18-29",
+            "text": "18-29",
+            "natural_language": "I am between 18-29 years old."
+          },
+          {
+            "raw": "30-49",
+            "text": "30-49",
+            "natural_language": "I am between 30-49 years old."
+          },
+          {
+            "raw": "50-64",
+            "text": "50-64",
+            "natural_language": "I am between 50-64 years old."
+          },
+          {
+            "raw": "65+",
+            "text": "65+",
+            "natural_language": "I am 65+ years old."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SEX",
+    "questions": [
+      {
+        "key": "SEX",
+        "text": "What is the sex that you were assigned at birth?",
+        "valid_options": [
+          {
+            "raw": "Female",
+            "text": "Female",
+            "natural_language": "I am female."
+          },
+          {
+            "raw": "Male",
+            "text": "Male",
+            "natural_language": "I am male."
+          }
+        ],
+        "invalid_options": [
+          "In some other way",
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "EDUCATION",
+    "questions": [
+      {
+        "key": "EDUCATION",
+        "text": "What is the highest level of schooling or degree that you have completed?",
+        "valid_options": [
+          {
+            "raw": "Associate's degree",
+            "text": "Associate's degree",
+            "natural_language": "I earned an associate's degree."
+          },
+          {
+            "raw": "College graduate/some postgrad",
+            "text": "graduated from college",
+            "natural_language": "I graduated from college."
+          },
+          {
+            "raw": "High school graduate",
+            "text": "High school graduate",
+            "natural_language": "I graduated from high school."
+          },
+          {
+            "raw": "Less than high school",
+            "text": "Less than high school",
+            "natural_language": "I did not graduate from high school."
+          },
+          {
+            "raw": "Postgraduate",
+            "text": "Postgraduate",
+            "natural_language": "I went to graduate school."
+          },
+          {
+            "raw": "Some college, no degree",
+            "text": "Some college, no degree",
+            "natural_language": "I went to some college."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CITIZEN",
+    "questions": [
+      {
+        "key": "CITIZEN",
+        "text": "Are you a citizen of the United States?",
+        "valid_options": [
+          {
+            "raw": "No",
+            "text": "No",
+            "natural_language": "I am not a citizen of the United States."
+          },
+          {
+            "raw": "Yes",
+            "text": "Yes",
+            "natural_language": "I am a citizen of the United States."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MARITAL",
+    "questions": [
+      {
+        "key": "MARITAL",
+        "text": "Which of these best describes you?",
+        "valid_options": [
+          {
+            "raw": "Divorced",
+            "text": "Divorced",
+            "natural_language": "I am divorced."
+          },
+          {
+            "raw": "Living with a partner",
+            "text": "Living with a partner",
+            "natural_language": "I am living with a partner."
+          },
+          {
+            "raw": "Married",
+            "text": "Married",
+            "natural_language": "I am married."
+          },
+          {
+            "raw": "Never been married",
+            "text": "Never been married",
+            "natural_language": "I have never been married."
+          },
+          {
+            "raw": "Separated",
+            "text": "Separated",
+            "natural_language": "I am separated from my partner."
+          },
+          {
+            "raw": "Widowed",
+            "text": "Widowed",
+            "natural_language": "I am widowed."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RELIG",
+    "questions": [
+      {
+        "key": "RELIG",
+        "text": "What is your present religion, if any?",
+        "valid_options": [
+          {
+            "raw": "Agnostic",
+            "text": "Agnostic",
+            "natural_language": "Religiously speaking, I am agnostic."
+          },
+          {
+            "raw": "Atheist",
+            "text": "Atheist",
+            "natural_language": "Religiously speaking, I am atheist."
+          },
+          {
+            "raw": "Buddhist",
+            "text": "Buddhist",
+            "natural_language": "Religiously speaking, I am Buddhist."
+          },
+          {
+            "raw": "Hindu",
+            "text": "Hindu",
+            "natural_language": "Religiously speaking, I am Hindu."
+          },
+          {
+            "raw": "Jewish",
+            "text": "Jewish",
+            "natural_language": "Religiously speaking, I am Jewish."
+          },
+          {
+            "raw": "Mormon",
+            "text": "Mormon",
+            "natural_language": "Religiously speaking, I am a member of the Church of Jesus Christ of Latter-day Saints."
+          },
+          {
+            "raw": "Muslim",
+            "text": "Muslim",
+            "natural_language": "Religiously speaking, I am Muslim."
+          },
+          {
+            "raw": "Nothing in particular",
+            "text": "Nothing in particular",
+            "natural_language": "Religiously speaking, I don't identify with anything in particular."
+          },
+          {
+            "raw": "Orthodox",
+            "text": "Orthodox",
+            "natural_language": "Religiously speaking, I am Orthodox."
+          },
+          {
+            "raw": "Other",
+            "text": "Other",
+            "natural_language": "Religiously speaking, I am not mainstream."
+          },
+          {
+            "raw": "Protestant",
+            "text": "Protestant",
+            "natural_language": "Religiously speaking, I am Protestant."
+          },
+          {
+            "raw": "Roman Catholic",
+            "text": "Roman Catholic",
+            "natural_language": "Religiously speaking, I am Roman Catholic."
+          }
+        ],
+        "invalid_options": [
+          "Refused",
+          "Christian",
+          "Unitarian"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RELIGATTEND",
+    "questions": [
+      {
+        "key": "RELIGATTEND",
+        "text": "Aside from weddings and funerals, how often do you attend religious services?",
+        "valid_options": [
+          {
+            "raw": "A few times a year",
+            "text": "A few times a year",
+            "natural_language": "I attend religious services a few times a year."
+          },
+          {
+            "raw": "More than once a week",
+            "text": "More than once a week",
+            "natural_language": "I attend religious services more than once a week."
+          },
+          {
+            "raw": "Never",
+            "text": "Never",
+            "natural_language": "I never attend religious services."
+          },
+          {
+            "raw": "Once a week",
+            "text": "Once a week",
+            "natural_language": "I attend religious services once a week."
+          },
+          {
+            "raw": "Once or twice a month",
+            "text": "Once or twice a month",
+            "natural_language": "I attend religious services once or twice a month."
+          },
+          {
+            "raw": "Seldom",
+            "text": "Seldom",
+            "natural_language": "I seldom attend religious services."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "POLPARTY",
+    "questions": [
+      {
+        "key": "POLPARTY",
+        "text": "In politics today, what do you consider yourself?",
+        "valid_options": [
+          {
+            "raw": "Democrat",
+            "text": "Democrat",
+            "natural_language": "Politically, I am a Democrat."
+          },
+          {
+            "raw": "Independent",
+            "text": "Independent",
+            "natural_language": "Politically, I am an independent."
+          },
+          {
+            "raw": "Republican",
+            "text": "Republican",
+            "natural_language": "Politically, I am a Republican."
+          }
+        ],
+        "invalid_options": [
+          "Other",
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INCOME",
+    "questions": [
+      {
+        "key": "INCOME",
+        "text": "Last year, what was your total family income from all sources, before taxes?",
+        "valid_options": [
+          {
+            "raw": "$100,000 or more",
+            "text": "$100,000 or more",
+            "natural_language": "Last year, my household income was $100,000 or more before taxes."
+          },
+          {
+            "raw": "$30,000-$50,000",
+            "text": "$30,000-$50,000",
+            "natural_language": "Last year, my household income was $30,000-$50,000 before taxes."
+          },
+          {
+            "raw": "$50,000-$75,000",
+            "text": "$50,000-$75,000",
+            "natural_language": "Last year, my household income was $50,000-$75,000 before taxes."
+          },
+          {
+            "raw": "$75,000-$100,000",
+            "text": "$75,000-$100,000",
+            "natural_language": "Last year, my household income was $75,000-$100,000 before taxes."
+          },
+          {
+            "raw": "Less than $30,000",
+            "text": "Less than $30,000",
+            "natural_language": "Last year, my household income was less than $30,000 before taxes."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "POLIDEOLOGY",
+    "questions": [
+      {
+        "key": "POLIDEOLOGY",
+        "text": "In general, how would you describe your political ideology?",
+        "valid_options": [
+          {
+            "raw": "Conservative",
+            "text": "Conservative",
+            "natural_language": "Politically, I am conservative."
+          },
+          {
+            "raw": "Liberal",
+            "text": "Liberal",
+            "natural_language": "Politically, I am liberal."
+          },
+          {
+            "raw": "Moderate",
+            "text": "Moderate",
+            "natural_language": "Politically, I am moderate."
+          },
+          {
+            "raw": "Very conservative",
+            "text": "Very conservative",
+            "natural_language": "Politically, I am very conservative."
+          },
+          {
+            "raw": "Very liberal",
+            "text": "Very liberal",
+            "natural_language": "Politically, I am very liberal."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACE",
+    "questions": [
+      {
+        "key": "RACE",
+        "text": "What is your race or origin?",
+        "valid_options": [
+          {
+            "raw": "Asian",
+            "text": "Asian",
+            "natural_language": "I am Asian."
+          },
+          {
+            "raw": "Black",
+            "text": "Black",
+            "natural_language": "I am Black."
+          },
+          {
+            "raw": "Hispanic",
+            "text": "Hispanic",
+            "natural_language": "I am Hispanic."
+          },
+          {
+            "raw": "Mixed Race",
+            "text": "Mixed Race",
+            "natural_language": "I am mixed race."
+          },
+          {
+            "raw": "Other",
+            "text": "Other",
+            "natural_language": "I am racially ambiguous."
+          },
+          {
+            "raw": "White",
+            "text": "White",
+            "natural_language": "I am White."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  }
+]
