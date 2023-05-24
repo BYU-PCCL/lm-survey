@@ -9,37 +9,44 @@ from tqdm import tqdm
 from lm_survey.survey import Survey
 
 
-def check_survey_prompts(survey_directory: Path):
-    survey_name = survey_directory.name
+def check_survey_prompts(
+    survey_name: str,
+    experiment_name: str,
+):
+    data_dir = os.path.join("data", survey_name)
+    variables_dir = os.path.join("variables", survey_name)
+    experiment_dir = os.path.join("experiments", experiment_name, survey_name)
 
-    with (survey_directory / "independent-variables.json").open("r") as file:
-        independent_variable_names = json.load(file)
+    with open(os.path.join(experiment_dir, "config.json"), "r") as file:
+        config = json.load(file)
 
-    with (survey_directory / "dependent-variables.json").open("r") as file:
-        dependent_variable_names = json.load(file)
+    print(os.path.join(variables_dir, "variables.json"))
 
     survey = Survey(
         name=survey_name,
-        data_filename=survey_directory / "data.csv",
-        variables_filename=survey_directory / "config.json",
-        independent_variable_names=independent_variable_names,
-        dependent_variable_names=dependent_variable_names,
+        data_filename=os.path.join(data_dir, "data.csv"),
+        variables_filename=os.path.join(variables_dir, "variables.json"),
+        independent_variable_names=config["independent_variable_names"],
+        dependent_variable_names=config["dependent_variable_names"],
     )
 
-    print(f"## EXAMPLE PROMPT FOR {survey_directory}:")
+    next_survey_sample = next(survey.iterate())
+    print(f"## EXAMPLE PROMPT FOR {data_dir}:")
     print()
     print('"""')
-    print(f"{next(iter(survey)).prompt}█")
+    print(
+        f"{next_survey_sample.prompt}█{next_survey_sample.completion.correct_completion}"
+    )
     print('"""')
     print()
-    print(f"## DEMOGRAPHICS NATURAL LANGUAGE SUMMARY FOR {survey_directory}:")
+    print(f"## DEMOGRAPHICS NATURAL LANGUAGE SUMMARY FOR {data_dir}:")
     print()
     survey.print_demographics_natural_language_summary()
 
 
-def main(survey_directories: typing.List[Path]) -> None:
+def main(survey_directories: typing.List[Path], experiment_name: str) -> None:
     for survey_directory in survey_directories:
-        check_survey_prompts(survey_directory)
+        check_survey_prompts(survey_directory, experiment_name)
 
 
 if __name__ == "__main__":
@@ -51,7 +58,13 @@ if __name__ == "__main__":
         nargs="+",
         type=Path,
     )
+    parser.add_argument(
+        "-e",
+        "--experiment_name",
+        type=str,
+        default="default",
+    )
 
     args = parser.parse_args()
 
-    main(survey_directories=args.survey_directory)
+    main(survey_directories=args.survey_directory, experiment_name=args.experiment_name)
