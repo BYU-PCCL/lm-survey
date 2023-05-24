@@ -10,6 +10,7 @@ from tqdm.asyncio import tqdm_asyncio
 
 from lm_survey.samplers import AutoSampler
 from lm_survey.survey import DependentVariableSample, Survey
+from pathlib import Path
 
 
 def parse_model_name(model_name: str) -> str:
@@ -35,7 +36,8 @@ def save_experiment(
     parsed_model_name = parse_model_name(model_name)
 
     results = [
-        question_sample.to_dict() for question_sample in dependent_variable_samples
+        question_sample.to_dict()
+        for question_sample in dependent_variable_samples
     ]
 
     metadata = {
@@ -49,14 +51,18 @@ def save_experiment(
     if not os.path.exists(experiment_metadata_dir):
         os.makedirs(experiment_metadata_dir)
 
-    with open(os.path.join(experiment_metadata_dir, "metadata.json"), "w") as file:
+    with open(
+        os.path.join(experiment_metadata_dir, "metadata.json"), "w"
+    ) as file:
         json.dump(
             metadata,
             file,
             indent=4,
         )
 
-    with open(os.path.join(experiment_metadata_dir, "results.json"), "w") as file:
+    with open(
+        os.path.join(experiment_metadata_dir, "results.json"), "w"
+    ) as file:
         json.dump(
             results,
             file,
@@ -79,7 +85,7 @@ async def main(
 
     survey = Survey(
         name=survey_name,
-        data_filename=os.path.join(data_dir, "data.csv"),
+        data_filename=os.path.join(data_dir, "responses.csv"),
         variables_filename=os.path.join(variables_dir, "variables.json"),
         independent_variable_names=config["independent_variable_names"],
         dependent_variable_names=config["dependent_variable_names"],
@@ -101,16 +107,23 @@ async def main(
         for dependent_variable_sample in dependent_variable_samples:
 
             async def request_completion(dependent_variable_sample):
-                completion_log_probs, response_object = await sampler.rank_completions(
+                (
+                    completion_log_probs,
+                    response_object,
+                ) = await sampler.rank_completions(
                     prompt=dependent_variable_sample.prompt,
                     completions=dependent_variable_sample.completion.possible_completions,
                 )
                 dependent_variable_sample.completion.set_completion_log_probs(
                     completion_log_probs
                 )
-                dependent_variable_sample.completion.response_object = response_object
+                dependent_variable_sample.completion.response_object = (
+                    response_object
+                )
 
-            sample_coroutines.append(request_completion(dependent_variable_sample))
+            sample_coroutines.append(
+                request_completion(dependent_variable_sample)
+            )
 
         await tqdm_asyncio.gather(*sample_coroutines)
     else:
@@ -122,7 +135,9 @@ async def main(
             dependent_variable_sample.completion.set_completion_log_probs(
                 completion_log_probs
             )
-            dependent_variable_sample.completion.response_object = response_object
+            dependent_variable_sample.completion.response_object = (
+                response_object
+            )
 
     accuracy = np.mean(
         [
@@ -132,7 +147,8 @@ async def main(
     )
 
     print(
-        f"Accuracy: {accuracy * 100:.2f}% ({len(dependent_variable_samples)} samples)"
+        f"Accuracy: {accuracy * 100:.2f}%"
+        f" ({len(dependent_variable_samples)} samples)"
     )
 
     save_experiment(
@@ -179,11 +195,25 @@ if __name__ == "__main__":
     ):
         args.n_samples_per_dependent_variable = 100
 
-    asyncio.run(
-        main(
-            model_name=args.model_name,
-            survey_name=args.survey_name,
-            experiment_name=args.experiment_name,
-            n_samples_per_dependent_variable=args.n_samples_per_dependent_variable,
+    if args.survey_name == "all":
+        paths = sorted(Path("data").glob("ATP/American*/"))
+        for path in tqdm(paths):
+            args.survey_name = str(path.relative_to("data"))
+            asyncio.run(
+                main(
+                    model_name=args.model_name,
+                    survey_name=args.survey_name,
+                    experiment_name=args.experiment_name,
+                    n_samples_per_dependent_variable=args.n_samples_per_dependent_variable,
+                )
+            )
+
+    else:
+        asyncio.run(
+            main(
+                model_name=args.model_name,
+                survey_name=args.survey_name,
+                experiment_name=args.experiment_name,
+                n_samples_per_dependent_variable=args.n_samples_per_dependent_variable,
+            )
         )
-    )
