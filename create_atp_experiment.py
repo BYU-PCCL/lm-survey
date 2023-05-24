@@ -26,7 +26,7 @@ def main(survey_name: str, experiment_name: str) -> None:
     }
 
     with (experiment_dir / "config.json").open("w") as file:
-        json.dump(experiment_config, file)
+        json.dump(experiment_config, file, indent=4)
 
 
 if __name__ == "__main__":
