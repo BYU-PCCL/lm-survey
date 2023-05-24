@@ -4,10 +4,6 @@ from pathlib import Path
 
 import pandas as pd
 from tqdm import tqdm
-from tqdm.asyncio import tqdm_asyncio
-
-from lm_survey.samplers import AutoSampler
-from lm_survey.survey import DependentVariableSample, Survey
 
 
 def main(survey_name: str, experiment_name: str) -> None:
