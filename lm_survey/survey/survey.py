@@ -434,16 +434,14 @@ class Survey:
             option_ordinals = eval(str(variable_row["option_ordinal"]))
 
             original_options = list(option_mapping.values())
-            valid_options = [o for o in original_options if o != "Refused"]
-            invalid_options = [o for o in original_options if o == "Refused"]
+            valid_options = original_options[: len(option_mapping)]
+            invalid_options = original_options[len(option_mapping) :]
 
             question = Question(
                 key=variable_name,
                 text=question_text,
                 valid_options=[
-                    ValidOption(
-                        raw=option, text=option, ordinal=ordinal
-                    ).to_dict()
+                    ValidOption(raw=option, text=option, ordinal=ordinal).to_dict()
                     for ordinal, option in zip(option_ordinals, valid_options)
                 ],
                 invalid_options=invalid_options,
