@@ -104,25 +104,36 @@ class SurveyResults:
 
 
 if __name__ == "__main__":
-    input_filepath = os.path.join(
-        "experiments",
-        "default",
-        "roper",
-        "llama-65b-hf",
-        "results.json",
-    )
+    experiment_dir = "experiments/default/roper"
+    center_path = os.path.join(experiment_dir, "llama-65b-hf","results.json")
+    left_path = os.path.join(experiment_dir, "llama-65b-hf-left","results.json")
 
-    with open(input_filepath, "r") as file:
-        results = json.load(file)
+    with open(center_path, "r") as file:
+        center_results = json.load(file)
 
-    question_samples = [
+    with open(left_path, "r") as file:
+        left_results = json.load(file)
+
+    center_question_samples = [
         DependentVariableSample(
             **sample_dict,
         )
-        for sample_dict in results
+        for sample_dict in center_results
     ]
 
-    survey_results = SurveyResults(question_samples=question_samples)
+    left_question_samples = [
+        DependentVariableSample(
+            **sample_dict,
+        )
+        for sample_dict in left_results
+    ]
 
-    # Print with 2 decimal places
-    print(survey_results.get_mean_score(slice_by=["gender"]).round(2))
+    center_survey_results = SurveyResults(question_samples=center_question_samples)
+    left_survey_results = SurveyResults(question_samples=left_question_samples)
+
+    slices = ["ethnicity"]
+
+    print("CENTER", center_survey_results.get_mean_score(slice_by=slices).round(2), sep="\n", end="\n\n")
+    print("LEFT", left_survey_results.get_mean_score(slice_by=slices).round(2), sep="\n", end="\n\n")
+
+    # Give battery of standard tests and view performance
