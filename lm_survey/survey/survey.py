@@ -434,8 +434,8 @@ class Survey:
             option_ordinals = eval(str(variable_row["option_ordinal"]))
 
             original_options = list(option_mapping.values())
-            valid_options = original_options[: len(option_mapping)]
-            invalid_options = original_options[len(option_mapping) :]
+            valid_options = original_options[: len(option_ordinals)]
+            invalid_options = original_options[len(option_ordinals) :]
 
             question = Question(
                 key=variable_name,
