@@ -21,13 +21,8 @@ def estimate_survey_costs(
     # TODO(vinhowe): fix this
     survey_directory = survey_name
 
-    with open(
-        os.path.join(survey_directory, "independent-variables.json"), "r"
-    ) as file:
-        independent_variable_names = json.load(file)
-
-    with open(os.path.join(survey_directory, "dependent-variables.json"), "r") as file:
-        dependent_variable_names = json.load(file)
+    with open(os.path.join(experiment_dir, "config.json"), "r") as file:
+        config = json.load(file)
 
     data_filename = os.path.join(survey_directory, "data.csv")
     variables_filename = os.path.join(survey_directory, "config.json")
