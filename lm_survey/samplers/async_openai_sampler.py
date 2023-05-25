@@ -56,7 +56,7 @@ class AsyncOpenAiSampler(BaseSampler):
             async with self._async_limiter:
                 try:
                     return await openai.Completion.acreate(engine=self.engine, **kwargs)
-                except openai.RateLimitError:
+                except RateLimitError:
                     # TODO: This is not a good way to do logging; we should actually use
                     # the logging module or something similar.
                     print("Rate limited, retrying...", file=sys.stderr)
