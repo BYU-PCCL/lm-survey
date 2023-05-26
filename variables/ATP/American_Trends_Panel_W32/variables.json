@@ -2788,6 +2788,7 @@
           }
         ],
         "invalid_options": [
+          "Not sure",
           "Refused"
         ]
       }

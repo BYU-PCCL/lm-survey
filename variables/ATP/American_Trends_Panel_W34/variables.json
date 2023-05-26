@@ -796,6 +796,7 @@
           }
         ],
         "invalid_options": [
+          "Not sure",
           "Refused"
         ]
       }
@@ -1814,7 +1815,8 @@
           }
         ],
         "invalid_options": [
-          "Refused"
+          "Refused",
+          "Other view"
         ]
       }
     ]
@@ -1904,7 +1906,8 @@
           }
         ],
         "invalid_options": [
-          "Refused"
+          "Refused",
+          "Other view"
         ]
       }
     ]
@@ -1930,6 +1933,7 @@
           }
         ],
         "invalid_options": [
+          "Not sure",
           "Refused"
         ]
       }
@@ -2008,6 +2012,7 @@
           }
         ],
         "invalid_options": [
+          "Not sure",
           "Refused"
         ]
       }
@@ -2034,6 +2039,7 @@
           }
         ],
         "invalid_options": [
+          "Not sure",
           "Refused"
         ]
       }
