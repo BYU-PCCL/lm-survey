@@ -11,7 +11,7 @@ class AutoSampler(BaseSampler):
         elif model_name.startswith("async-gpt3") or model_name.startswith("async-gpt4"):
             self.sampler = AsyncOpenAiSampler(model_name, *args, **kwargs)
         else:
-            self.sampler = HfSampler(*args, **kwargs)
+            self.sampler = HfSampler(model_name, *args, **kwargs)
 
     def rank_completions(self, prompt, completions):
         return self.sampler.rank_completions(prompt, completions)
