@@ -4240,8 +4240,8 @@
           }
         ],
         "invalid_options": [
-          "I don't know the answer",
-          "Refused"
+          "Refused",
+          "I don't know the answer"
         ]
       }
     ]

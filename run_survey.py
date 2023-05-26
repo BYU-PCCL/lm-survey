@@ -97,10 +97,25 @@ async def main(
     survey_name: str,
     experiment_name: str,
     n_samples_per_dependent_variable: typing.Optional[int] = None,
+    should_overwrite: bool = False,
 ) -> None:
     data_dir = os.path.join("data", survey_name)
     variables_dir = os.path.join("variables", survey_name)
     experiment_dir = os.path.join("experiments", experiment_name, survey_name)
+
+    parsed_model_name = parse_model_name(model_name)
+
+    # Use pathlib to check if  a file exists
+    if Path(
+        os.path.join(experiment_dir, parsed_model_name, "results.json")
+    ).is_file():
+        print(f"Experiment {experiment_name} already exists.")
+
+        if not should_overwrite:
+            print("Use --force to overwrite. Exiting.")
+            return
+        else:
+            print("Overwriting.")
 
     if logging:
         logger = logging.getLogger(__name__)
@@ -118,7 +133,7 @@ async def main(
 
     survey = Survey(
         name=survey_name,
-        data_filename=os.path.join(data_dir, "responses.csv"),
+        data_filename=os.path.join(data_dir, "data.csv"),
         variables_filename=os.path.join(variables_dir, "variables.json"),
         independent_variable_names=config["independent_variable_names"],
         dependent_variable_names=config["dependent_variable_names"],
@@ -233,6 +248,12 @@ if __name__ == "__main__":
         type=str,
         default="default",
     )
+    parser.add_argument(
+        "-f",
+        "--force",
+        action="store_true",
+        help="Force overwrite of existing experiment.",
+    )
 
     args = parser.parse_args()
 
@@ -253,6 +274,7 @@ if __name__ == "__main__":
                     survey_name=args.survey_name,
                     experiment_name=args.experiment_name,
                     n_samples_per_dependent_variable=args.n_samples_per_dependent_variable,
+                    should_overwrite=args.force,
                 )
             )
 
@@ -263,5 +285,6 @@ if __name__ == "__main__":
                 survey_name=args.survey_name,
                 experiment_name=args.experiment_name,
                 n_samples_per_dependent_variable=args.n_samples_per_dependent_variable,
+                should_overwrite=args.force,
             )
         )

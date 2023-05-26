@@ -13,7 +13,7 @@ class AutoSampler(BaseSampler):
         ):
             self.sampler = AsyncOpenAiSampler(model_name, *args, **kwargs)
         else:
-            self.sampler = HfSampler(*args, **kwargs)
+            self.sampler = HfSampler(model_name, *args, **kwargs)
 
     def rank_completions(self, prompt, completions):
         return self.sampler.rank_completions(prompt, completions)

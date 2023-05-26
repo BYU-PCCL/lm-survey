@@ -9,9 +9,7 @@ from aiolimiter import AsyncLimiter
 from lm_survey.samplers.base_sampler import BaseSampler, MaybeAwaitable
 
 # Constants for throttling
-# OPENAI_RPM = 3000
-# Take off 500 to be a little cautious
-OPENAI_RPM = 3000 - 500
+OPENAI_RPM = 3000
 
 
 class AsyncOpenAiSampler(BaseSampler):
