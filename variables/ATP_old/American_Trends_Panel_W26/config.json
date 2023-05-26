@@ -1,0 +1,20 @@
+{
+    "independent_variable_names": [
+        "CREGION",
+        "AGE",
+        "SEX",
+        "EDUCATION",
+        "CITIZEN",
+        "MARITAL",
+        "RELIG",
+        "RELIGATTEND",
+        "POLPARTY",
+        "INCOME",
+        "POLIDEOLOGY",
+        "RACE"
+    ],
+    "dependent_variable_names": [
+        "SAFECRIME_W26",
+        "WORLDDANGER_W26"
+    ]
+}

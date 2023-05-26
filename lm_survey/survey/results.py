@@ -126,7 +126,10 @@ class SurveyResults:
         Calculate the representativeness for each dv and print it
         """
         df = self.df.copy()
-        for dv in df.variable_name.unique():
+        reps = []
+        for dv in sorted(df.variable_name.unique()):
+            if dv == "INDUSTRY_W27":
+                print("here")
             tdf = df[df.variable_name == dv]
             ordinal = [k["ordinal"] for k in tdf.iloc[0]["valid_options"]]
             # Make a dictionary where the keys are the possible_completions and the values are the number of times they appear
@@ -160,6 +163,24 @@ class SurveyResults:
             for k in D_H.keys():
                 print(f"{tab * ' '}{k.ljust(tab)}{D_M[k]} {D_H[k]}")
             print("\n")
+            reps.append(rep)
+        mean_score = np.mean(reps)
+        if np.isnan(mean_score):
+            raise ValueError("Mean score is NaN")
+        return mean_score
+
+    def calculate_avg_samples(self):
+        """
+        Calculate the average number of samples per dv
+        """
+        df = self.df.copy()
+        f = lambda x: (isinstance(x, dict) and len(x) == 0)
+        print(
+            df.variable_name.iloc[0][-3:],
+            df.completion_log_probs.apply(f).sum(),
+            df.response_object.apply(f).sum(),
+        )
+        return (df.shape[0] / len(df.variable_name.unique()),)
 
     def _get_max_wd(self, ordered_ref_weights):
         d0, d1 = np.zeros(len(ordered_ref_weights)), np.zeros(

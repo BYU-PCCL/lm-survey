@@ -78,13 +78,15 @@ class Completion:
             for rank, completion in enumerate(self._completion_log_probs.keys())  # type: ignore
         }
 
-        return ranked_completions_dict[self._extract_letter(self.correct_completion)]
+        return ranked_completions_dict[
+            self._extract_letter(self.correct_completion)
+        ]
 
     @property
     def is_completion_correct(self) -> bool:
-        return self._extract_letter(self.top_completion) == self._extract_letter(
-            self.correct_completion
-        )
+        return self._extract_letter(
+            self.top_completion
+        ) == self._extract_letter(self.correct_completion)
 
 
 class DependentVariableSample:
@@ -138,3 +140,7 @@ class DependentVariableSample:
         self_dict["question"] = self.question.to_dict()
 
         return self_dict
+
+    def has_response(self) -> bool:
+        # Check if self_dict['completion']['response_object'] is an empty dictionary
+        return bool(self.completion.response_object)

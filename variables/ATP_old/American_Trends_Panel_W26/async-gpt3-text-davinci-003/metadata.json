@@ -1,0 +1,5 @@
+{
+    "model_name": "async-gpt3-text-davinci-003",
+    "n_samples_per_dependent_variable": 5,
+    "commit_hash": "f260e71e775c55ee582ccf8e6f23cd38ab778bf8"
+}

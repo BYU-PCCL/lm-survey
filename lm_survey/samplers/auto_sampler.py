@@ -8,7 +8,9 @@ class AutoSampler(BaseSampler):
     def __init__(self, model_name: str, *args, **kwargs):
         if model_name.startswith("gpt3") or model_name.startswith("gpt4"):
             self.sampler = OpenAiSampler(model_name, *args, **kwargs)
-        elif model_name.startswith("async-gpt3") or model_name.startswith("async-gpt4"):
+        elif model_name.startswith("async-gpt3") or model_name.startswith(
+            "async-gpt4"
+        ):
             self.sampler = AsyncOpenAiSampler(model_name, *args, **kwargs)
         else:
             self.sampler = HfSampler(*args, **kwargs)
@@ -33,5 +35,5 @@ if __name__ == "__main__":
     sampler = AutoSampler("gpt3-ada")
     text, response = sampler.get_best_next_token(
         prompt="What is the capital of France?\nThe capital of France is",
-    )
+    )  # type: ignore
     print(text)

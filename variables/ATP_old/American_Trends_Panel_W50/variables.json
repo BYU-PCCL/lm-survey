@@ -1,0 +1,4723 @@
+[
+  {
+    "name": "SATLIFEa_W50",
+    "questions": [
+      {
+        "key": "SATLIFEa_W50",
+        "text": "Please tell us whether you are satisfied or dissatisfied with your family life.",
+        "valid_options": [
+          {
+            "raw": "Very satisfied",
+            "text": "Very satisfied",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat satisfied",
+            "text": "Somewhat satisfied",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Somewhat dissatisfied",
+            "text": "Somewhat dissatisfied",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Very dissatisfied",
+            "text": "Very dissatisfied",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SATLIFEb_W50",
+    "questions": [
+      {
+        "key": "SATLIFEb_W50",
+        "text": "Please tell us whether you are satisfied or dissatisfied with your social life.",
+        "valid_options": [
+          {
+            "raw": "Very satisfied",
+            "text": "Very satisfied",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat satisfied",
+            "text": "Somewhat satisfied",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Somewhat dissatisfied",
+            "text": "Somewhat dissatisfied",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Very dissatisfied",
+            "text": "Very dissatisfied",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SATLIFEc_W50",
+    "questions": [
+      {
+        "key": "SATLIFEc_W50",
+        "text": "Please tell us whether you are satisfied or dissatisfied with your personal financial situation.",
+        "valid_options": [
+          {
+            "raw": "Very satisfied",
+            "text": "Very satisfied",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat satisfied",
+            "text": "Somewhat satisfied",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Somewhat dissatisfied",
+            "text": "Somewhat dissatisfied",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Very dissatisfied",
+            "text": "Very dissatisfied",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SATLIFEd_W50",
+    "questions": [
+      {
+        "key": "SATLIFEd_W50",
+        "text": "Please tell us whether you are satisfied or dissatisfied with your current job or career.",
+        "valid_options": [
+          {
+            "raw": "Very satisfied",
+            "text": "Very satisfied",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat satisfied",
+            "text": "Somewhat satisfied",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Somewhat dissatisfied",
+            "text": "Somewhat dissatisfied",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Very dissatisfied",
+            "text": "Very dissatisfied",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV1_W50",
+    "questions": [
+      {
+        "key": "FAMSURV1_W50",
+        "text": "At this point in your life, which of the following would be best for you personally?",
+        "valid_options": [
+          {
+            "raw": "Working full-time for pay",
+            "text": "Working full-time for pay",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Working part-time for pay",
+            "text": "Working part-time for pay",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not working for pay at all",
+            "text": "Not working for pay at all",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV2Ma_W50",
+    "questions": [
+      {
+        "key": "FAMSURV2Ma_W50",
+        "text": "In general, how important, if at all, is being married in order for a man to live a fulfilling life?",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important, but not essential",
+            "text": "Important, but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV2Mb_W50",
+    "questions": [
+      {
+        "key": "FAMSURV2Mb_W50",
+        "text": "In general, how important, if at all, is being in a committed romantic relationship in order for a man to live a fulfilling life?",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important, but not essential",
+            "text": "Important, but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV2Mc_W50",
+    "questions": [
+      {
+        "key": "FAMSURV2Mc_W50",
+        "text": "In general, how important, if at all, is having children in order for a man to live a fulfilling life?",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important, but not essential",
+            "text": "Important, but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV2Md_W50",
+    "questions": [
+      {
+        "key": "FAMSURV2Md_W50",
+        "text": "In general, how important, if at all, is having a job or career they enjoy in order for a man to live a fulfilling life?",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important, but not essential",
+            "text": "Important, but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV2Me_W50",
+    "questions": [
+      {
+        "key": "FAMSURV2Me_W50",
+        "text": "In general, how important, if at all, is having a lot of money in order for a man to live a fulfilling life?",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important, but not essential",
+            "text": "Important, but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV2Wa_W50",
+    "questions": [
+      {
+        "key": "FAMSURV2Wa_W50",
+        "text": "In general, how important, if at all, is being married in order for a woman to live a fulfilling life?",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important, but not essential",
+            "text": "Important, but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV2Wb_W50",
+    "questions": [
+      {
+        "key": "FAMSURV2Wb_W50",
+        "text": "In general, how important, if at all, is being in a committed romantic relationship in order for a woman to live a fulfilling life?",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important, but not essential",
+            "text": "Important, but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV2Wc_W50",
+    "questions": [
+      {
+        "key": "FAMSURV2Wc_W50",
+        "text": "In general, how important, if at all, is having children in order for a woman to live a fulfilling life?",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important, but not essential",
+            "text": "Important, but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV2Wd_W50",
+    "questions": [
+      {
+        "key": "FAMSURV2Wd_W50",
+        "text": "In general, how important, if at all, is having a job or career they enjoy in order for a woman to live a fulfilling life?",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important, but not essential",
+            "text": "Important, but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV2We_W50",
+    "questions": [
+      {
+        "key": "FAMSURV2We_W50",
+        "text": "In general, how important, if at all, is having a lot of money in order for a woman to live a fulfilling life?",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important, but not essential",
+            "text": "Important, but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV3_W50",
+    "questions": [
+      {
+        "key": "FAMSURV3_W50",
+        "text": "Do you think it is ever acceptable for an unmarried couple to live together?",
+        "valid_options": [
+          {
+            "raw": "Yes, even if they don't plan to get married",
+            "text": "Yes, even if they don't plan to get married",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Yes, but only if they plan to get married",
+            "text": "Yes, but only if they plan to get married",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No, never acceptable",
+            "text": "No, never acceptable",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV4_W50",
+    "questions": [
+      {
+        "key": "FAMSURV4_W50",
+        "text": "Which statement comes closer to your view?",
+        "valid_options": [
+          {
+            "raw": "Society is better off if couples who want to stay together long-term eventually get married",
+            "text": "Society is better off if couples who want to stay together long-term eventually get married",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Society is just as well off if couples who want to stay together long-term decide not to marry",
+            "text": "Society is just as well off if couples who want to stay together long-term decide not to marry",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV5a_W50",
+    "questions": [
+      {
+        "key": "FAMSURV5a_W50",
+        "text": "Here are some things that people may want out of life. In general, who do you think has it easier when it comes to achieving being financially secure goals?",
+        "valid_options": [
+          {
+            "raw": "An unmarried person living with a partner has it easier",
+            "text": "An unmarried person living with a partner has it easier",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A married person has it easier",
+            "text": "A married person has it easier",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Doesn't make much difference",
+            "text": "Doesn't make much difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV5b_W50",
+    "questions": [
+      {
+        "key": "FAMSURV5b_W50",
+        "text": "Here are some things that people may want out of life. In general, who do you think has it easier when it comes to achieving having a fulfilling sex life goals?",
+        "valid_options": [
+          {
+            "raw": "An unmarried person living with a partner has it easier",
+            "text": "An unmarried person living with a partner has it easier",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A married person has it easier",
+            "text": "A married person has it easier",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Doesn't make much difference",
+            "text": "Doesn't make much difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV5c_W50",
+    "questions": [
+      {
+        "key": "FAMSURV5c_W50",
+        "text": "Here are some things that people may want out of life. In general, who do you think has it easier when it comes to achieving having social status goals?",
+        "valid_options": [
+          {
+            "raw": "An unmarried person living with a partner has it easier",
+            "text": "An unmarried person living with a partner has it easier",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A married person has it easier",
+            "text": "A married person has it easier",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Doesn't make much difference",
+            "text": "Doesn't make much difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV5d_W50",
+    "questions": [
+      {
+        "key": "FAMSURV5d_W50",
+        "text": "Here are some things that people may want out of life. In general, who do you think has it easier when it comes to achieving being happy goals?",
+        "valid_options": [
+          {
+            "raw": "An unmarried person living with a partner has it easier",
+            "text": "An unmarried person living with a partner has it easier",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A married person has it easier",
+            "text": "A married person has it easier",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Doesn't make much difference",
+            "text": "Doesn't make much difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV6_W50",
+    "questions": [
+      {
+        "key": "FAMSURV6_W50",
+        "text": "How do you feel about allowing unmarried couples to enter into legal agreements that would give them the same rights as married couples when it comes to things like health insurance, inheritance or tax benefits?",
+        "valid_options": [
+          {
+            "raw": "Strongly favor",
+            "text": "Strongly favor",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat favor",
+            "text": "Somewhat favor",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Somewhat oppose",
+            "text": "Somewhat oppose",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Strongly oppose",
+            "text": "Strongly oppose",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV7_W50",
+    "questions": [
+      {
+        "key": "FAMSURV7_W50",
+        "text": "Compared with couples who don't live together before marriage, do you think couples who do live together before marriage have a",
+        "valid_options": [
+          {
+            "raw": "Better chance of having a successful marriage",
+            "text": "Better chance of having a successful marriage",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Worse chance of having a successful marriage",
+            "text": "Worse chance of having a successful marriage",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Doesn't make much difference",
+            "text": "Doesn't make much difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV8_W50",
+    "questions": [
+      {
+        "key": "FAMSURV8_W50",
+        "text": "Which statement comes closer to your view?",
+        "valid_options": [
+          {
+            "raw": "Couples who are married do a better job raising children than couples who are living together but are not married",
+            "text": "Couples who are married do a better job raising children than couples who are living together but are not married",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Couples who are living together but are not married can raise children just as well as married couples",
+            "text": "Couples who are living together but are not married can raise children just as well as married couples",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV9a_W50",
+    "questions": [
+      {
+        "key": "FAMSURV9a_W50",
+        "text": "How important, if at all, do you think it is for a person to be financially stable before getting married?",
+        "valid_options": [
+          {
+            "raw": "Very important",
+            "text": "Very important",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat important",
+            "text": "Somewhat important",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too important",
+            "text": "Not too important",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all important",
+            "text": "Not at all important",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV9b_W50",
+    "questions": [
+      {
+        "key": "FAMSURV9b_W50",
+        "text": "How important, if at all, do you think it is for a person to have a steady job before getting married?",
+        "valid_options": [
+          {
+            "raw": "Very important",
+            "text": "Very important",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat important",
+            "text": "Somewhat important",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too important",
+            "text": "Not too important",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all important",
+            "text": "Not at all important",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV9c_W50",
+    "questions": [
+      {
+        "key": "FAMSURV9c_W50",
+        "text": "How important, if at all, do you think it is for a person to buy a house before getting married?",
+        "valid_options": [
+          {
+            "raw": "Very important",
+            "text": "Very important",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat important",
+            "text": "Somewhat important",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too important",
+            "text": "Not too important",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all important",
+            "text": "Not at all important",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV9e_W50",
+    "questions": [
+      {
+        "key": "FAMSURV9e_W50",
+        "text": "How important, if at all, do you think it is for a person to be completely committed to their partner before getting married?",
+        "valid_options": [
+          {
+            "raw": "Very important",
+            "text": "Very important",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat important",
+            "text": "Somewhat important",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too important",
+            "text": "Not too important",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all important",
+            "text": "Not at all important",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV10a_W50",
+    "questions": [
+      {
+        "key": "FAMSURV10a_W50",
+        "text": "If a person decides to move in with a partner without being married, how important, if at all, do you think it is for that person to be financially stable before moving in with their partner?",
+        "valid_options": [
+          {
+            "raw": "Very important",
+            "text": "Very important",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat important",
+            "text": "Somewhat important",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too important",
+            "text": "Not too important",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all important",
+            "text": "Not at all important",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV10b_W50",
+    "questions": [
+      {
+        "key": "FAMSURV10b_W50",
+        "text": "If a person decides to move in with a partner without being married, how important, if at all, do you think it is for that person to have a steady job before moving in with their partner?",
+        "valid_options": [
+          {
+            "raw": "Very important",
+            "text": "Very important",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat important",
+            "text": "Somewhat important",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too important",
+            "text": "Not too important",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all important",
+            "text": "Not at all important",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV10c_W50",
+    "questions": [
+      {
+        "key": "FAMSURV10c_W50",
+        "text": "If a person decides to move in with a partner without being married, how important, if at all, do you think it is for that person to buy a house before moving in with their partner?",
+        "valid_options": [
+          {
+            "raw": "Very important",
+            "text": "Very important",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat important",
+            "text": "Somewhat important",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too important",
+            "text": "Not too important",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all important",
+            "text": "Not at all important",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV10e_W50",
+    "questions": [
+      {
+        "key": "FAMSURV10e_W50",
+        "text": "If a person decides to move in with a partner without being married, how important, if at all, do you think it is for that person to be completely committed to their partner before moving in with their partner?",
+        "valid_options": [
+          {
+            "raw": "Very important",
+            "text": "Very important",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat important",
+            "text": "Somewhat important",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too important",
+            "text": "Not too important",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all important",
+            "text": "Not at all important",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV11W_W50",
+    "questions": [
+      {
+        "key": "FAMSURV11W_W50",
+        "text": "What do you think is the ideal situation for women with young children?",
+        "valid_options": [
+          {
+            "raw": "Working full-time for pay",
+            "text": "Working full-time for pay",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Working part-time for pay",
+            "text": "Working part-time for pay",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not working for pay at all",
+            "text": "Not working for pay at all",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV11M_W50",
+    "questions": [
+      {
+        "key": "FAMSURV11M_W50",
+        "text": "What do you think is the ideal situation for men with young children?",
+        "valid_options": [
+          {
+            "raw": "Working full-time for pay",
+            "text": "Working full-time for pay",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Working part-time for pay",
+            "text": "Working part-time for pay",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not working for pay at all",
+            "text": "Not working for pay at all",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV12_W50",
+    "questions": [
+      {
+        "key": "FAMSURV12_W50",
+        "text": "Thinking about parents of young adults ages 18 to 29",
+        "valid_options": [
+          {
+            "raw": "Too much for their adult children",
+            "text": "Too much for their adult children",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Too little for their adult children",
+            "text": "Too little for their adult children",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "About the right amount",
+            "text": "About the right amount",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MOTHER_W50",
+    "questions": [
+      {
+        "key": "MOTHER_W50",
+        "text": "Is your mother living?",
+        "valid_options": [
+          {
+            "raw": "Yes",
+            "text": "Yes",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No",
+            "text": "No",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FATHER_W50",
+    "questions": [
+      {
+        "key": "FATHER_W50",
+        "text": "Is your father living?",
+        "valid_options": [
+          {
+            "raw": "Yes",
+            "text": "Yes",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No",
+            "text": "No",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SIB_W50",
+    "questions": [
+      {
+        "key": "SIB_W50",
+        "text": "Do you have any brothers or sisters?",
+        "valid_options": [
+          {
+            "raw": "Yes, one",
+            "text": "Yes, one",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Yes, more than one",
+            "text": "Yes, more than one",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No, do not have any brothers or sisters",
+            "text": "No, do not have any brothers or sisters",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "REMARR_W50",
+    "questions": [
+      {
+        "key": "REMARR_W50",
+        "text": "Have you been married more than once?",
+        "valid_options": [
+          {
+            "raw": "Yes",
+            "text": "Yes",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No",
+            "text": "No",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ENG_W50",
+    "questions": [
+      {
+        "key": "ENG_W50",
+        "text": "Are you currently engaged to be married?",
+        "valid_options": [
+          {
+            "raw": "Yes, engaged",
+            "text": "Yes, engaged",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, not engaged",
+            "text": "No, not engaged",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "LWPT_W50",
+    "questions": [
+      {
+        "key": "LWPT_W50",
+        "text": "Are you currently living with a partner or boyfriend or girlfriend? By living together we mean that you are in a relationship and neither of you have a separate residence.",
+        "valid_options": [
+          {
+            "raw": "Yes",
+            "text": "Yes",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No",
+            "text": "No",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MAR2_W50",
+    "questions": [
+      {
+        "key": "MAR2_W50",
+        "text": "Are you currently in a committed romantic relationship?",
+        "valid_options": [
+          {
+            "raw": "Yes",
+            "text": "Yes",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No",
+            "text": "No",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV16_W50",
+    "questions": [
+      {
+        "key": "FAMSURV16_W50",
+        "text": "Which of the following best describes your current situation? Would you say you",
+        "valid_options": [
+          {
+            "raw": "Would like to be in a romantic relationship",
+            "text": "Would like to be in a romantic relationship",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Don't want to be in a romantic relationship",
+            "text": "Don't want to be in a romantic relationship",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Doesn't make much difference",
+            "text": "Doesn't make much difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV17_W50",
+    "questions": [
+      {
+        "key": "FAMSURV17_W50",
+        "text": "Thinking about the adults in your life, who is the person you feel closest to?",
+        "valid_options": [
+          {
+            "raw": "Your spouse",
+            "text": "Your spouse",
+            "natural_language": null,
+            "ordinal": 1
+          },
+          {
+            "raw": "Your partner or boyfriend or girlfriend",
+            "text": "Your partner or boyfriend or girlfriend",
+            "natural_language": null,
+            "ordinal": 1
+          },
+          {
+            "raw": "An adult child",
+            "text": "An adult child",
+            "natural_language": null,
+            "ordinal": 1
+          },
+          {
+            "raw": "A sibling",
+            "text": "A sibling",
+            "natural_language": null,
+            "ordinal": 1
+          },
+          {
+            "raw": "Your mother",
+            "text": "Your mother",
+            "natural_language": null,
+            "ordinal": 1
+          },
+          {
+            "raw": "Your father",
+            "text": "Your father",
+            "natural_language": null,
+            "ordinal": 1
+          },
+          {
+            "raw": "A friend",
+            "text": "A friend",
+            "natural_language": null,
+            "ordinal": 1
+          },
+          {
+            "raw": "Another A family member",
+            "text": "Another A family member",
+            "natural_language": null,
+            "ordinal": 1
+          },
+          {
+            "raw": "Someone else",
+            "text": "Someone else",
+            "natural_language": null,
+            "ordinal": 1
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ADKIDS_W50",
+    "questions": [
+      {
+        "key": "ADKIDS_W50",
+        "text": "Do you have any children ages 18 to 29?",
+        "valid_options": [
+          {
+            "raw": "Yes, one child ages 18 to 29",
+            "text": "Yes, one child ages 18 to 29",
+            "natural_language": null,
+            "ordinal": 1
+          },
+          {
+            "raw": "Yes, more than one child ages 18 to 29",
+            "text": "Yes, more than one child ages 18 to 29",
+            "natural_language": null,
+            "ordinal": 1
+          },
+          {
+            "raw": "No children ages 18 to 29",
+            "text": "No children ages 18 to 29",
+            "natural_language": null,
+            "ordinal": 1
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "PAR1_W50",
+    "questions": [
+      {
+        "key": "PAR1_W50",
+        "text": "In general, do you think you do",
+        "valid_options": [
+          {
+            "raw": "Too much for your adult child(ren) ages 18 to 29",
+            "text": "Too much for your adult child(ren) ages 18 to 29",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Too little for your adult child(ren) ages 18 to 29",
+            "text": "Too little for your adult child(ren) ages 18 to 29",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "About the right amount",
+            "text": "About the right amount",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "PAR2_W50",
+    "questions": [
+      {
+        "key": "PAR2_W50",
+        "text": "In general, do you think your parents do mother does father does",
+        "valid_options": [
+          {
+            "raw": "Too much for you",
+            "text": "Too much for you",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Too little for you",
+            "text": "Too little for you",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "About the right amount",
+            "text": "About the right amount",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ROMRELDUR_W50",
+    "questions": [
+      {
+        "key": "ROMRELDUR_W50",
+        "text": "How long have you been in your current romantic relationship?",
+        "valid_options": [
+          {
+            "raw": "Less than 3 months",
+            "text": "Less than 3 months",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "3 months to less than 6 months",
+            "text": "3 months to less than 6 months",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "6 months to less than 1 year",
+            "text": "6 months to less than 1 year",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "1 year to less than 3 years",
+            "text": "1 year to less than 3 years",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "3 years to less than 5 years",
+            "text": "3 years to less than 5 years",
+            "natural_language": null,
+            "ordinal": 5.0
+          },
+          {
+            "raw": "5 years or more",
+            "text": "5 years or more",
+            "natural_language": null,
+            "ordinal": 6.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MARRDUR_W50",
+    "questions": [
+      {
+        "key": "MARRDUR_W50",
+        "text": "Now thinking about your spouse how long have you and your spouse been married?",
+        "valid_options": [
+          {
+            "raw": "Less than one year",
+            "text": "Less than one year",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "1 year to less than 3 years",
+            "text": "1 year to less than 3 years",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "3 years to less than 5 years",
+            "text": "3 years to less than 5 years",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "5 years to less than 10 years",
+            "text": "5 years to less than 10 years",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "10 years to less than 20 years",
+            "text": "10 years to less than 20 years",
+            "natural_language": null,
+            "ordinal": 5.0
+          },
+          {
+            "raw": "20 years or more",
+            "text": "20 years or more",
+            "natural_language": null,
+            "ordinal": 6.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "COHABDUR_W50",
+    "questions": [
+      {
+        "key": "COHABDUR_W50",
+        "text": "Now thinking about the partner you are currently living with how long have you and your partner been living together?",
+        "valid_options": [
+          {
+            "raw": "Less than one year",
+            "text": "Less than one year",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "1 year to less than 3 years",
+            "text": "1 year to less than 3 years",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "3 years to less than 5 years",
+            "text": "3 years to less than 5 years",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "5 years to less than 10 years",
+            "text": "5 years to less than 10 years",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "10 years to less than 20 years",
+            "text": "10 years to less than 20 years",
+            "natural_language": null,
+            "ordinal": 5.0
+          },
+          {
+            "raw": "20 years or more",
+            "text": "20 years or more",
+            "natural_language": null,
+            "ordinal": 6.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "LWPSP_W50",
+    "questions": [
+      {
+        "key": "LWPSP_W50",
+        "text": "Did you live with your current spouse before getting married?",
+        "valid_options": [
+          {
+            "raw": "Yes",
+            "text": "Yes",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No",
+            "text": "No",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV18A_W50",
+    "questions": [
+      {
+        "key": "FAMSURV18A_W50",
+        "text": "When you started living with your spouse did you think about it as a step toward marriage?",
+        "valid_options": [
+          {
+            "raw": "Yes, thought of it as a step toward marriage",
+            "text": "Yes, thought of it as a step toward marriage",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, did not think of it as a step toward marriage",
+            "text": "No, did not think of it as a step toward marriage",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV18B_W50",
+    "questions": [
+      {
+        "key": "FAMSURV18B_W50",
+        "text": "Were you and your spouse engaged to be married before you moved in together?",
+        "valid_options": [
+          {
+            "raw": "Yes, were engaged first",
+            "text": "Yes, were engaged first",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, were not engaged first",
+            "text": "No, were not engaged first",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ROMRELSER_W50",
+    "questions": [
+      {
+        "key": "ROMRELSER_W50",
+        "text": "How serious would you say your current romantic relationship is?",
+        "valid_options": [
+          {
+            "raw": "Very serious",
+            "text": "Very serious",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat serious",
+            "text": "Somewhat serious",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too serious",
+            "text": "Not too serious",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all serious",
+            "text": "Not at all serious",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV19_W50",
+    "questions": [
+      {
+        "key": "FAMSURV19_W50",
+        "text": "Overall, would you say that things in your marriage/relationship are going",
+        "valid_options": [
+          {
+            "raw": "Very well",
+            "text": "Very well",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Fairly well",
+            "text": "Fairly well",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too well",
+            "text": "Not too well",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all well",
+            "text": "Not at all well",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV20_W50",
+    "questions": [
+      {
+        "key": "FAMSURV20_W50",
+        "text": "When you started living with your partner did you think about it as a step toward marriage?",
+        "valid_options": [
+          {
+            "raw": "Yes, thought of it as a step toward marriage",
+            "text": "Yes, thought of it as a step toward marriage",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, did not think of it as a step toward marriage",
+            "text": "No, did not think of it as a step toward marriage",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV21_W50",
+    "questions": [
+      {
+        "key": "FAMSURV21_W50",
+        "text": "Were you and your partner engaged to be married before you moved in together?",
+        "valid_options": [
+          {
+            "raw": "Yes, were engaged first",
+            "text": "Yes, were engaged first",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, were not engaged first",
+            "text": "No, were not engaged first",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV22a_W50",
+    "questions": [
+      {
+        "key": "FAMSURV22a_W50",
+        "text": "Thinking back to when you got married, how much, if at all, was love a reason you decided to get married?",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV22b_W50",
+    "questions": [
+      {
+        "key": "FAMSURV22b_W50",
+        "text": "Thinking back to when you got married, how much, if at all, was companionship a reason you decided to get married?",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV22c_W50",
+    "questions": [
+      {
+        "key": "FAMSURV22c_W50",
+        "text": "Thinking back to when you got married, how much, if at all, was you or your partner were pregnan a reason you decided to get married?",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV22d_W50",
+    "questions": [
+      {
+        "key": "FAMSURV22d_W50",
+        "text": "Thinking back to when you got married, how much, if at all, was wanted to have children someday a reason you decided to get married?",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV22e_W50",
+    "questions": [
+      {
+        "key": "FAMSURV22e_W50",
+        "text": "Thinking back to when you got married, how much, if at all, was it made sense financially a reason you decided to get married?",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV22f_W50",
+    "questions": [
+      {
+        "key": "FAMSURV22f_W50",
+        "text": "Thinking back to when you got married, how much, if at all, was it was convenient a reason you decided to get married?",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV22g_W50",
+    "questions": [
+      {
+        "key": "FAMSURV22g_W50",
+        "text": "Thinking back to when you got married, how much, if at all, was wanted to make a formal commitment a reason you decided to get married?",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV23a_W50",
+    "questions": [
+      {
+        "key": "FAMSURV23a_W50",
+        "text": "Thinking back to when you started living with your partner, how much, if at all, was love a reason you decided to move in together?",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV23b_W50",
+    "questions": [
+      {
+        "key": "FAMSURV23b_W50",
+        "text": "Thinking back to when you started living with your partner, how much, if at all, was companionship a reason you decided to move in together?",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV23c_W50",
+    "questions": [
+      {
+        "key": "FAMSURV23c_W50",
+        "text": "Thinking back to when you started living with your partner, how much, if at all, was you or your partner were pregnant a reason you decided to move in together?",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV23d_W50",
+    "questions": [
+      {
+        "key": "FAMSURV23d_W50",
+        "text": "Thinking back to when you started living with your partner, how much, if at all, was wanted to have children someday a reason you decided to move in together?",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV23e_W50",
+    "questions": [
+      {
+        "key": "FAMSURV23e_W50",
+        "text": "Thinking back to when you started living with your partner, how much, if at all, was it made sense financially a reason you decided to move in together?",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV23f_W50",
+    "questions": [
+      {
+        "key": "FAMSURV23f_W50",
+        "text": "Thinking back to when you started living with your partner, how much, if at all, was it was convenient a reason you decided to move in together?",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV23g_W50",
+    "questions": [
+      {
+        "key": "FAMSURV23g_W50",
+        "text": "Thinking back to when you started living with your partner, how much, if at all, was wanted to test your relationship a reason you decided to move in together?",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MARRYPREF1_W50",
+    "questions": [
+      {
+        "key": "MARRYPREF1_W50",
+        "text": "Thinking about the future, would you say you",
+        "valid_options": [
+          {
+            "raw": "Want to get married someday",
+            "text": "Want to get married someday",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Don't want to get married",
+            "text": "Don't want to get married",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Are not sure if you want to get married",
+            "text": "Are not sure if you want to get married",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MARRYPREF2_W50",
+    "questions": [
+      {
+        "key": "MARRYPREF2_W50",
+        "text": "Thinking about the future, would you say you",
+        "valid_options": [
+          {
+            "raw": "Want to get married again someday",
+            "text": "Want to get married again someday",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Don't want to get married again",
+            "text": "Don't want to get married again",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Are not sure if you want to get married again",
+            "text": "Are not sure if you want to get married again",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV25_W50",
+    "questions": [
+      {
+        "key": "FAMSURV25_W50",
+        "text": "How likely, if at all, is it that you and your partner will get married someday?",
+        "valid_options": [
+          {
+            "raw": "Very likely",
+            "text": "Very likely",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat likely",
+            "text": "Somewhat likely",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too likely",
+            "text": "Not too likely",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all likely",
+            "text": "Not at all likely",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV26a_W50",
+    "questions": [
+      {
+        "key": "FAMSURV26a_W50",
+        "text": "How much pressure, if any, do you feel from your partner to marry your partner?",
+        "valid_options": [
+          {
+            "raw": "A lot of pressure",
+            "text": "A lot of pressure",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some pressure",
+            "text": "Some pressure",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much pressure",
+            "text": "Not too much pressure",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "No pressure at all",
+            "text": "No pressure at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV26b_W50",
+    "questions": [
+      {
+        "key": "FAMSURV26b_W50",
+        "text": "How much pressure, if any, do you feel from family members to marry your partner?",
+        "valid_options": [
+          {
+            "raw": "A lot of pressure",
+            "text": "A lot of pressure",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some pressure",
+            "text": "Some pressure",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much pressure",
+            "text": "Not too much pressure",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "No pressure at all",
+            "text": "No pressure at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV26c_W50",
+    "questions": [
+      {
+        "key": "FAMSURV26c_W50",
+        "text": "How much pressure, if any, do you feel from your friends to marry your partner?",
+        "valid_options": [
+          {
+            "raw": "A lot of pressure",
+            "text": "A lot of pressure",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some pressure",
+            "text": "Some pressure",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much pressure",
+            "text": "Not too much pressure",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "No pressure at all",
+            "text": "No pressure at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV26d_W50",
+    "questions": [
+      {
+        "key": "FAMSURV26d_W50",
+        "text": "How much pressure, if any, do you feel from society to marry your partner?",
+        "valid_options": [
+          {
+            "raw": "A lot of pressure",
+            "text": "A lot of pressure",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some pressure",
+            "text": "Some pressure",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much pressure",
+            "text": "Not too much pressure",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "No pressure at all",
+            "text": "No pressure at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV27a_W50",
+    "questions": [
+      {
+        "key": "FAMSURV27a_W50",
+        "text": "How much pressure, if any, did you feel from your partner to marry your partner after you moved in together?",
+        "valid_options": [
+          {
+            "raw": "A lot of pressure",
+            "text": "A lot of pressure",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some pressure",
+            "text": "Some pressure",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much pressure",
+            "text": "Not too much pressure",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "No pressure at all",
+            "text": "No pressure at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV27b_W50",
+    "questions": [
+      {
+        "key": "FAMSURV27b_W50",
+        "text": "How much pressure, if any, did you feel from family members to marry your partner after you moved in together?",
+        "valid_options": [
+          {
+            "raw": "A lot of pressure",
+            "text": "A lot of pressure",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some pressure",
+            "text": "Some pressure",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much pressure",
+            "text": "Not too much pressure",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "No pressure at all",
+            "text": "No pressure at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV27c_W50",
+    "questions": [
+      {
+        "key": "FAMSURV27c_W50",
+        "text": "How much pressure, if any, did you feel from your friends to marry your partner after you moved in together?",
+        "valid_options": [
+          {
+            "raw": "A lot of pressure",
+            "text": "A lot of pressure",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some pressure",
+            "text": "Some pressure",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much pressure",
+            "text": "Not too much pressure",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "No pressure at all",
+            "text": "No pressure at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV27d_W50",
+    "questions": [
+      {
+        "key": "FAMSURV27d_W50",
+        "text": "How much pressure, if any, did you feel from society to marry your partner after you moved in together?",
+        "valid_options": [
+          {
+            "raw": "A lot of pressure",
+            "text": "A lot of pressure",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some pressure",
+            "text": "Some pressure",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much pressure",
+            "text": "Not too much pressure",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "No pressure at all",
+            "text": "No pressure at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV28_W50",
+    "questions": [
+      {
+        "key": "FAMSURV28_W50",
+        "text": "Would you say most people in your family consider your spouse partner to be part of their family?",
+        "valid_options": [
+          {
+            "raw": "Yes",
+            "text": "Yes",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No",
+            "text": "No",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV29_W50",
+    "questions": [
+      {
+        "key": "FAMSURV29_W50",
+        "text": "How often, if ever, do you and your partner talk about getting married?",
+        "valid_options": [
+          {
+            "raw": "Often",
+            "text": "Often",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Sometimes",
+            "text": "Sometimes",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Rarely",
+            "text": "Rarely",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Never",
+            "text": "Never",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV30a_W50",
+    "questions": [
+      {
+        "key": "FAMSURV30a_W50",
+        "text": "How much, if at all, is your partner is not ready financially a reason why you are not engaged or married to your current partner?",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV30b_W50",
+    "questions": [
+      {
+        "key": "FAMSURV30b_W50",
+        "text": "How much, if at all, is you are not ready financially a reason why you are not engaged or married to your current partner?",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV30c_W50",
+    "questions": [
+      {
+        "key": "FAMSURV30c_W50",
+        "text": "How much, if at all, is your partner is not ready to make that kind of commitment a reason why you are not engaged or married to your current partner?",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV30d_W50",
+    "questions": [
+      {
+        "key": "FAMSURV30d_W50",
+        "text": "How much, if at all, is you are not ready to make that kind of commitment a reason why you are not engaged or married to your current partner?",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV30e_W50",
+    "questions": [
+      {
+        "key": "FAMSURV30e_W50",
+        "text": "How much, if at all, is you are not far enough along in your job or career a reason why you are not engaged or married to your current partner?",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV30f_W50",
+    "questions": [
+      {
+        "key": "FAMSURV30f_W50",
+        "text": "How much, if at all, is you are not sure your partner is the right person for you a reason why you are not engaged or married to your current partner?",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "E5MOD_W50",
+    "questions": [
+      {
+        "key": "E5MOD_W50",
+        "text": "Is your spouse/partner now employed full-time, part-time or not employed?",
+        "valid_options": [
+          {
+            "raw": "Full-time",
+            "text": "Full-time",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Part-time",
+            "text": "Part-time",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not employed",
+            "text": "Not employed",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV32a_W50",
+    "questions": [
+      {
+        "key": "FAMSURV32a_W50",
+        "text": "How do you feel about the way household chores are divided between you and your spouse/partner?",
+        "valid_options": [
+          {
+            "raw": "Very satisfied",
+            "text": "Very satisfied",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat satisfied",
+            "text": "Somewhat satisfied",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Somewhat dissatisfied",
+            "text": "Somewhat dissatisfied",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Very dissatisfied",
+            "text": "Very dissatisfied",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV32b_W50",
+    "questions": [
+      {
+        "key": "FAMSURV32b_W50",
+        "text": "How do you feel about your sex life?",
+        "valid_options": [
+          {
+            "raw": "Very satisfied",
+            "text": "Very satisfied",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat satisfied",
+            "text": "Somewhat satisfied",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Somewhat dissatisfied",
+            "text": "Somewhat dissatisfied",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Very dissatisfied",
+            "text": "Very dissatisfied",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV32c_W50",
+    "questions": [
+      {
+        "key": "FAMSURV32c_W50",
+        "text": "How do you feel about how well you and your spouse/partner communicate with each other?",
+        "valid_options": [
+          {
+            "raw": "Very satisfied",
+            "text": "Very satisfied",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat satisfied",
+            "text": "Somewhat satisfied",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Somewhat dissatisfied",
+            "text": "Somewhat dissatisfied",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Very dissatisfied",
+            "text": "Very dissatisfied",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV32d_W50",
+    "questions": [
+      {
+        "key": "FAMSURV32d_W50",
+        "text": "How do you feel about how well your spouse/partner balances work and their personal life?",
+        "valid_options": [
+          {
+            "raw": "Very satisfied",
+            "text": "Very satisfied",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat satisfied",
+            "text": "Somewhat satisfied",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Somewhat dissatisfied",
+            "text": "Somewhat dissatisfied",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Very dissatisfied",
+            "text": "Very dissatisfied",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV32e_W50",
+    "questions": [
+      {
+        "key": "FAMSURV32e_W50",
+        "text": "How do you feel about your spouse's/partner's approach to parenting?",
+        "valid_options": [
+          {
+            "raw": "Very satisfied",
+            "text": "Very satisfied",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat satisfied",
+            "text": "Somewhat satisfied",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Somewhat dissatisfied",
+            "text": "Somewhat dissatisfied",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Very dissatisfied",
+            "text": "Very dissatisfied",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV33a_W50",
+    "questions": [
+      {
+        "key": "FAMSURV33a_W50",
+        "text": "How much, if at all, do you trust your spouse/partner to always tell you the truth",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not much",
+            "text": "Not much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV33b_W50",
+    "questions": [
+      {
+        "key": "FAMSURV33b_W50",
+        "text": "How much, if at all, do you trust your spouse/partner to be faithful to you",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not much",
+            "text": "Not much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV33c_W50",
+    "questions": [
+      {
+        "key": "FAMSURV33c_W50",
+        "text": "How much, if at all, do you trust your spouse/partner to handle money responsibly",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not much",
+            "text": "Not much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV33d_W50",
+    "questions": [
+      {
+        "key": "FAMSURV33d_W50",
+        "text": "How much, if at all, do you trust your spouse/partner to Act in your best interest",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not much",
+            "text": "Not much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV34A_W50",
+    "questions": [
+      {
+        "key": "FAMSURV34A_W50",
+        "text": "How does being a working parent affect your ability to advance in your job or career?",
+        "valid_options": [
+          {
+            "raw": "Makes it easier",
+            "text": "Makes it easier",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Makes it harder",
+            "text": "Makes it harder",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hasn't made a difference",
+            "text": "Hasn't made a difference",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV34B_W50",
+    "questions": [
+      {
+        "key": "FAMSURV34B_W50",
+        "text": "How does being a working parent affect your ability to be a good parent?",
+        "valid_options": [
+          {
+            "raw": "Makes it easier",
+            "text": "Makes it easier",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Makes it harder",
+            "text": "Makes it harder",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hasn't made a difference",
+            "text": "Hasn't made a difference",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV35a_W50",
+    "questions": [
+      {
+        "key": "FAMSURV35a_W50",
+        "text": "Have you personally experienced the following because you were balancing work and parenting responsibilities? Needing to reduce your work hours",
+        "valid_options": [
+          {
+            "raw": "Yes, have experienced this",
+            "text": "Yes, have experienced this",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, have not experienced this",
+            "text": "No, have not experienced this",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV35b_W50",
+    "questions": [
+      {
+        "key": "FAMSURV35b_W50",
+        "text": "Have you personally experienced the following because you were balancing work and parenting responsibilities? Feeling like you couldn't give 100% at work",
+        "valid_options": [
+          {
+            "raw": "Yes, have experienced this",
+            "text": "Yes, have experienced this",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, have not experienced this",
+            "text": "No, have not experienced this",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV35c_W50",
+    "questions": [
+      {
+        "key": "FAMSURV35c_W50",
+        "text": "Have you personally experienced the following because you were balancing work and parenting responsibilities? Turning down a promotion",
+        "valid_options": [
+          {
+            "raw": "Yes, have experienced this",
+            "text": "Yes, have experienced this",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, have not experienced this",
+            "text": "No, have not experienced this",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV36a_W50",
+    "questions": [
+      {
+        "key": "FAMSURV36a_W50",
+        "text": "Have you personally experienced the following at work because you have children? Being passed over for a promotion",
+        "valid_options": [
+          {
+            "raw": "Yes, have experienced this",
+            "text": "Yes, have experienced this",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, have not experienced this",
+            "text": "No, have not experienced this",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV36b_W50",
+    "questions": [
+      {
+        "key": "FAMSURV36b_W50",
+        "text": "Have you personally experienced the following at work because you have children? Being passed over for an important assignment",
+        "valid_options": [
+          {
+            "raw": "Yes, have experienced this",
+            "text": "Yes, have experienced this",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, have not experienced this",
+            "text": "No, have not experienced this",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV36c_W50",
+    "questions": [
+      {
+        "key": "FAMSURV36c_W50",
+        "text": "Have you personally experienced the following at work because you have children? Being treated as if you weren't committed to your work",
+        "valid_options": [
+          {
+            "raw": "Yes, have experienced this",
+            "text": "Yes, have experienced this",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, have not experienced this",
+            "text": "No, have not experienced this",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "HAVEKIDS1_W50",
+    "questions": [
+      {
+        "key": "HAVEKIDS1_W50",
+        "text": "Thinking about the future, how likely, if at all, is it that you will have children someday?",
+        "valid_options": [
+          {
+            "raw": "Very likely",
+            "text": "Very likely",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat likely",
+            "text": "Somewhat likely",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too likely",
+            "text": "Not too likely",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all likely",
+            "text": "Not at all likely",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV37_W50",
+    "questions": [
+      {
+        "key": "FAMSURV37_W50",
+        "text": "Looking ahead, would having children make it",
+        "valid_options": [
+          {
+            "raw": "Easier to advance in your job or career",
+            "text": "Easier to advance in your job or career",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Harder to advance in your job or career",
+            "text": "Harder to advance in your job or career",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Would not make a difference",
+            "text": "Would not make a difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV38a_W50",
+    "questions": [
+      {
+        "key": "FAMSURV38a_W50",
+        "text": "For household chores and responsibilities, who would you say does more?",
+        "valid_options": [
+          {
+            "raw": "You do more than your spouse/partner",
+            "text": "You do more than your spouse/partner",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Your spouse/partner does more than you",
+            "text": "Your spouse/partner does more than you",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Both about equally",
+            "text": "Both about equally",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV38b_W50",
+    "questions": [
+      {
+        "key": "FAMSURV38b_W50",
+        "text": "For managing household finances, who would you say does more?",
+        "valid_options": [
+          {
+            "raw": "You do more than your spouse/partner",
+            "text": "You do more than your spouse/partner",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Your spouse/partner does more than you",
+            "text": "Your spouse/partner does more than you",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Both about equally",
+            "text": "Both about equally",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV38c_W50",
+    "questions": [
+      {
+        "key": "FAMSURV38c_W50",
+        "text": "For managing your child(ren)'s schedule and activities, who would you say does more?",
+        "valid_options": [
+          {
+            "raw": "You do more than your spouse/partner",
+            "text": "You do more than your spouse/partner",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Your spouse/partner does more than you",
+            "text": "Your spouse/partner does more than you",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Both about equally",
+            "text": "Both about equally",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV39_W50",
+    "questions": [
+      {
+        "key": "FAMSURV39_W50",
+        "text": "In general, how much, if at all, would you say that you rely on a parent for emotional support?",
+        "valid_options": [
+          {
+            "raw": "A lot",
+            "text": "A lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Only a little",
+            "text": "Only a little",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV40_W50",
+    "questions": [
+      {
+        "key": "FAMSURV40_W50",
+        "text": "In the past 12 months, how much financial help, if any, did you receive from a parent?",
+        "valid_options": [
+          {
+            "raw": "A lot",
+            "text": "A lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Only a little",
+            "text": "Only a little",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "None at all",
+            "text": "None at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV43_W50",
+    "questions": [
+      {
+        "key": "FAMSURV43_W50",
+        "text": "In general, how much, if at all, would you say that your adult child(ren) ages 18 to 29 rely on you for emotional support?",
+        "valid_options": [
+          {
+            "raw": "A lot",
+            "text": "A lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Only a little",
+            "text": "Only a little",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAMSURV44_W50",
+    "questions": [
+      {
+        "key": "FAMSURV44_W50",
+        "text": "In the past 12 months, how much financial help, if any, did you provide for your adult child(ren) ages 18 to 29?",
+        "valid_options": [
+          {
+            "raw": "A lot",
+            "text": "A lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Only a little",
+            "text": "Only a little",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "None at all",
+            "text": "None at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "DNATEST_W50",
+    "questions": [
+      {
+        "key": "DNATEST_W50",
+        "text": "Have you ever used a mail-in DNA testing service from a company such as AncestryDNA or 23andMe?",
+        "valid_options": [
+          {
+            "raw": "Yes, have used this",
+            "text": "Yes, have used this",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, have not used this",
+            "text": "No, have not used this",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "DNA2a_W50",
+    "questions": [
+      {
+        "key": "DNA2a_W50",
+        "text": "Was to learn more about where your family came from a reason you used a mail-in DNA testing service?",
+        "valid_options": [
+          {
+            "raw": "Yes, a reason",
+            "text": "Yes, a reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, not a reason",
+            "text": "No, not a reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "DNA2b_W50",
+    "questions": [
+      {
+        "key": "DNA2b_W50",
+        "text": "Was to get information about your health or family medical history a reason you used a mail-in DNA testing service?",
+        "valid_options": [
+          {
+            "raw": "Yes, a reason",
+            "text": "Yes, a reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, not a reason",
+            "text": "No, not a reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "DNA2c_W50",
+    "questions": [
+      {
+        "key": "DNA2c_W50",
+        "text": "Was to connect with relatives you might have but didn't know about a reason you used a mail-in DNA testing service?",
+        "valid_options": [
+          {
+            "raw": "Yes, a reason",
+            "text": "Yes, a reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, not a reason",
+            "text": "No, not a reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "DNA3a_W50",
+    "questions": [
+      {
+        "key": "DNA3a_W50",
+        "text": "Were you surprised by what your DNA test results showed about what countries or continents your ancestors came from?",
+        "valid_options": [
+          {
+            "raw": "Yes, surprised",
+            "text": "Yes, surprised",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, not surprised",
+            "text": "No, not surprised",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "DNA3b_W50",
+    "questions": [
+      {
+        "key": "DNA3b_W50",
+        "text": "Were you surprised by what your DNA test results showed about the racial or ethnic background of your ancestors?",
+        "valid_options": [
+          {
+            "raw": "Yes, surprised",
+            "text": "Yes, surprised",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, not surprised",
+            "text": "No, not surprised",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "DNA3c_W50",
+    "questions": [
+      {
+        "key": "DNA3c_W50",
+        "text": "Were you surprised by what your DNA test results showed about information about your health or family medical history?",
+        "valid_options": [
+          {
+            "raw": "Yes, surprised",
+            "text": "Yes, surprised",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, not surprised",
+            "text": "No, not surprised",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "DNA4_W50",
+    "questions": [
+      {
+        "key": "DNA4_W50",
+        "text": "Did you learn about any close relatives you didn't know about from your DNA test results?",
+        "valid_options": [
+          {
+            "raw": "Yes, learned about close relatives you didn't know about",
+            "text": "Yes, learned about close relatives you didn't know about",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, did not learn about close relatives you didn't know about",
+            "text": "No, did not learn about close relatives you didn't know about",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "DNA5_W50",
+    "questions": [
+      {
+        "key": "DNA5_W50",
+        "text": "Did your DNA test results change the way you think about your racial or ethnic identity?",
+        "valid_options": [
+          {
+            "raw": "Yes, changed",
+            "text": "Yes, changed",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, did not change",
+            "text": "No, did not change",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SPOUSESEX_W50",
+    "questions": [
+      {
+        "key": "SPOUSESEX_W50",
+        "text": "Is your spouse or partner of the opposite sex as you or the same sex as you?",
+        "valid_options": [
+          {
+            "raw": "Opposite sex",
+            "text": "Opposite sex",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Same sex",
+            "text": "Same sex",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ORIENTATIONMOD_W50",
+    "questions": [
+      {
+        "key": "ORIENTATIONMOD_W50",
+        "text": "Do you think of yourself as",
+        "valid_options": [
+          {
+            "raw": "Gay or lesbian",
+            "text": "Gay or lesbian",
+            "natural_language": null,
+            "ordinal": 1
+          },
+          {
+            "raw": "Straight, that is, not gay or lesbian",
+            "text": "Straight, that is, not gay or lesbian",
+            "natural_language": null,
+            "ordinal": 1
+          },
+          {
+            "raw": "Bisexual",
+            "text": "Bisexual",
+            "natural_language": null,
+            "ordinal": 1
+          },
+          {
+            "raw": "Something else",
+            "text": "Something else",
+            "natural_language": null,
+            "ordinal": 1
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CREGION",
+    "questions": [
+      {
+        "key": "CREGION",
+        "text": "Which part of the United States do you currently live in?",
+        "valid_options": [
+          {
+            "raw": "Midwest",
+            "text": "Midwest",
+            "natural_language": "I live in the Midwest of the United States."
+          },
+          {
+            "raw": "Northeast",
+            "text": "Northeast",
+            "natural_language": "I live in the Northeast of the United States."
+          },
+          {
+            "raw": "South",
+            "text": "South",
+            "natural_language": "I live in the South of the United States."
+          },
+          {
+            "raw": "West",
+            "text": "West",
+            "natural_language": "I live in the West of the United States."
+          }
+        ],
+        "invalid_options": []
+      }
+    ]
+  },
+  {
+    "name": "AGE",
+    "questions": [
+      {
+        "key": "AGE",
+        "text": "How old are you?",
+        "valid_options": [
+          {
+            "raw": "18-29",
+            "text": "18-29",
+            "natural_language": "I am between 18-29 years old."
+          },
+          {
+            "raw": "30-49",
+            "text": "30-49",
+            "natural_language": "I am between 30-49 years old."
+          },
+          {
+            "raw": "50-64",
+            "text": "50-64",
+            "natural_language": "I am between 50-64 years old."
+          },
+          {
+            "raw": "65+",
+            "text": "65+",
+            "natural_language": "I am 65+ years old."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SEX",
+    "questions": [
+      {
+        "key": "SEX",
+        "text": "What is the sex that you were assigned at birth?",
+        "valid_options": [
+          {
+            "raw": "Female",
+            "text": "Female",
+            "natural_language": "I am female."
+          },
+          {
+            "raw": "Male",
+            "text": "Male",
+            "natural_language": "I am male."
+          }
+        ],
+        "invalid_options": [
+          "In some other way",
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "EDUCATION",
+    "questions": [
+      {
+        "key": "EDUCATION",
+        "text": "What is the highest level of schooling or degree that you have completed?",
+        "valid_options": [
+          {
+            "raw": "Associate's degree",
+            "text": "Associate's degree",
+            "natural_language": "I earned an associate's degree."
+          },
+          {
+            "raw": "College graduate/some postgrad",
+            "text": "graduated from college",
+            "natural_language": "I graduated from college."
+          },
+          {
+            "raw": "High school graduate",
+            "text": "High school graduate",
+            "natural_language": "I graduated from high school."
+          },
+          {
+            "raw": "Less than high school",
+            "text": "Less than high school",
+            "natural_language": "I did not graduate from high school."
+          },
+          {
+            "raw": "Postgraduate",
+            "text": "Postgraduate",
+            "natural_language": "I went to graduate school."
+          },
+          {
+            "raw": "Some college, no degree",
+            "text": "Some college, no degree",
+            "natural_language": "I went to some college."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CITIZEN",
+    "questions": [
+      {
+        "key": "CITIZEN",
+        "text": "Are you a citizen of the United States?",
+        "valid_options": [
+          {
+            "raw": "No",
+            "text": "No",
+            "natural_language": "I am not a citizen of the United States."
+          },
+          {
+            "raw": "Yes",
+            "text": "Yes",
+            "natural_language": "I am a citizen of the United States."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MARITAL",
+    "questions": [
+      {
+        "key": "MARITAL",
+        "text": "Which of these best describes you?",
+        "valid_options": [
+          {
+            "raw": "Divorced",
+            "text": "Divorced",
+            "natural_language": "I am divorced."
+          },
+          {
+            "raw": "Living with a partner",
+            "text": "Living with a partner",
+            "natural_language": "I am living with a partner."
+          },
+          {
+            "raw": "Married",
+            "text": "Married",
+            "natural_language": "I am married."
+          },
+          {
+            "raw": "Never been married",
+            "text": "Never been married",
+            "natural_language": "I have never been married."
+          },
+          {
+            "raw": "Separated",
+            "text": "Separated",
+            "natural_language": "I am separated from my partner."
+          },
+          {
+            "raw": "Widowed",
+            "text": "Widowed",
+            "natural_language": "I am widowed."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RELIG",
+    "questions": [
+      {
+        "key": "RELIG",
+        "text": "What is your present religion, if any?",
+        "valid_options": [
+          {
+            "raw": "Agnostic",
+            "text": "Agnostic",
+            "natural_language": "Religiously speaking, I am agnostic."
+          },
+          {
+            "raw": "Atheist",
+            "text": "Atheist",
+            "natural_language": "Religiously speaking, I am atheist."
+          },
+          {
+            "raw": "Buddhist",
+            "text": "Buddhist",
+            "natural_language": "Religiously speaking, I am Buddhist."
+          },
+          {
+            "raw": "Hindu",
+            "text": "Hindu",
+            "natural_language": "Religiously speaking, I am Hindu."
+          },
+          {
+            "raw": "Jewish",
+            "text": "Jewish",
+            "natural_language": "Religiously speaking, I am Jewish."
+          },
+          {
+            "raw": "Mormon",
+            "text": "Mormon",
+            "natural_language": "Religiously speaking, I am a member of the Church of Jesus Christ of Latter-day Saints."
+          },
+          {
+            "raw": "Muslim",
+            "text": "Muslim",
+            "natural_language": "Religiously speaking, I am Muslim."
+          },
+          {
+            "raw": "Nothing in particular",
+            "text": "Nothing in particular",
+            "natural_language": "Religiously speaking, I don't identify with anything in particular."
+          },
+          {
+            "raw": "Orthodox",
+            "text": "Orthodox",
+            "natural_language": "Religiously speaking, I am Orthodox."
+          },
+          {
+            "raw": "Other",
+            "text": "Other",
+            "natural_language": "Religiously speaking, I am not mainstream."
+          },
+          {
+            "raw": "Protestant",
+            "text": "Protestant",
+            "natural_language": "Religiously speaking, I am Protestant."
+          },
+          {
+            "raw": "Roman Catholic",
+            "text": "Roman Catholic",
+            "natural_language": "Religiously speaking, I am Roman Catholic."
+          }
+        ],
+        "invalid_options": [
+          "Refused",
+          "Christian",
+          "Unitarian"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RELIGATTEND",
+    "questions": [
+      {
+        "key": "RELIGATTEND",
+        "text": "Aside from weddings and funerals, how often do you attend religious services?",
+        "valid_options": [
+          {
+            "raw": "A few times a year",
+            "text": "A few times a year",
+            "natural_language": "I attend religious services a few times a year."
+          },
+          {
+            "raw": "More than once a week",
+            "text": "More than once a week",
+            "natural_language": "I attend religious services more than once a week."
+          },
+          {
+            "raw": "Never",
+            "text": "Never",
+            "natural_language": "I never attend religious services."
+          },
+          {
+            "raw": "Once a week",
+            "text": "Once a week",
+            "natural_language": "I attend religious services once a week."
+          },
+          {
+            "raw": "Once or twice a month",
+            "text": "Once or twice a month",
+            "natural_language": "I attend religious services once or twice a month."
+          },
+          {
+            "raw": "Seldom",
+            "text": "Seldom",
+            "natural_language": "I seldom attend religious services."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "POLPARTY",
+    "questions": [
+      {
+        "key": "POLPARTY",
+        "text": "In politics today, what do you consider yourself?",
+        "valid_options": [
+          {
+            "raw": "Democrat",
+            "text": "Democrat",
+            "natural_language": "Politically, I am a Democrat."
+          },
+          {
+            "raw": "Independent",
+            "text": "Independent",
+            "natural_language": "Politically, I am an independent."
+          },
+          {
+            "raw": "Republican",
+            "text": "Republican",
+            "natural_language": "Politically, I am a Republican."
+          }
+        ],
+        "invalid_options": [
+          "Other",
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INCOME",
+    "questions": [
+      {
+        "key": "INCOME",
+        "text": "Last year, what was your total family income from all sources, before taxes?",
+        "valid_options": [
+          {
+            "raw": "$100,000 or more",
+            "text": "$100,000 or more",
+            "natural_language": "Last year, my household income was $100,000 or more before taxes."
+          },
+          {
+            "raw": "$30,000-$50,000",
+            "text": "$30,000-$50,000",
+            "natural_language": "Last year, my household income was $30,000-$50,000 before taxes."
+          },
+          {
+            "raw": "$50,000-$75,000",
+            "text": "$50,000-$75,000",
+            "natural_language": "Last year, my household income was $50,000-$75,000 before taxes."
+          },
+          {
+            "raw": "$75,000-$100,000",
+            "text": "$75,000-$100,000",
+            "natural_language": "Last year, my household income was $75,000-$100,000 before taxes."
+          },
+          {
+            "raw": "Less than $30,000",
+            "text": "Less than $30,000",
+            "natural_language": "Last year, my household income was less than $30,000 before taxes."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "POLIDEOLOGY",
+    "questions": [
+      {
+        "key": "POLIDEOLOGY",
+        "text": "In general, how would you describe your political ideology?",
+        "valid_options": [
+          {
+            "raw": "Conservative",
+            "text": "Conservative",
+            "natural_language": "Politically, I am conservative."
+          },
+          {
+            "raw": "Liberal",
+            "text": "Liberal",
+            "natural_language": "Politically, I am liberal."
+          },
+          {
+            "raw": "Moderate",
+            "text": "Moderate",
+            "natural_language": "Politically, I am moderate."
+          },
+          {
+            "raw": "Very conservative",
+            "text": "Very conservative",
+            "natural_language": "Politically, I am very conservative."
+          },
+          {
+            "raw": "Very liberal",
+            "text": "Very liberal",
+            "natural_language": "Politically, I am very liberal."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACE",
+    "questions": [
+      {
+        "key": "RACE",
+        "text": "What is your race or origin?",
+        "valid_options": [
+          {
+            "raw": "Asian",
+            "text": "Asian",
+            "natural_language": "I am Asian."
+          },
+          {
+            "raw": "Black",
+            "text": "Black",
+            "natural_language": "I am Black."
+          },
+          {
+            "raw": "Hispanic",
+            "text": "Hispanic",
+            "natural_language": "I am Hispanic."
+          },
+          {
+            "raw": "Mixed Race",
+            "text": "Mixed Race",
+            "natural_language": "I am mixed race."
+          },
+          {
+            "raw": "Other",
+            "text": "Other",
+            "natural_language": "I am racially ambiguous."
+          },
+          {
+            "raw": "White",
+            "text": "White",
+            "natural_language": "I am White."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  }
+]

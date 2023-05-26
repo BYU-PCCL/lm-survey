@@ -1,0 +1,3579 @@
+[
+  {
+    "name": "OPTIMIST_W41",
+    "questions": [
+      {
+        "key": "OPTIMIST_W41",
+        "text": "Please think about what things will be like in 2050, about 30 years from now. Thinking about the future of the United States, would you say you are",
+        "valid_options": [
+          {
+            "raw": "Very optimistic",
+            "text": "Very optimistic",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat optimistic",
+            "text": "Somewhat optimistic",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Somewhat pessimistic",
+            "text": "Somewhat pessimistic",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Very pessimistic",
+            "text": "Very pessimistic",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "AVGFAM_W41",
+    "questions": [
+      {
+        "key": "AVGFAM_W41",
+        "text": "Over the next 30 years, do you think that the average American family will see its standard of living",
+        "valid_options": [
+          {
+            "raw": "Get better",
+            "text": "Get better",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Stay about the same",
+            "text": "Stay about the same",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Get worse",
+            "text": "Get worse",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "HAPPENa_W41",
+    "questions": [
+      {
+        "key": "HAPPENa_W41",
+        "text": "Still thinking ahead 30 years, which do you think is more likely to happen in the U.S.? The U.S. economy will be stronger/weaker",
+        "valid_options": [
+          {
+            "raw": "The U.S. economy will be stronger",
+            "text": "The U.S. economy will be stronger",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "The U.S. economy will be weaker",
+            "text": "The U.S. economy will be weaker",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "HAPPENb_W41",
+    "questions": [
+      {
+        "key": "HAPPENb_W41",
+        "text": "Still thinking ahead 30 years, which do you think is more likely to happen in the U.S.? Health care will be more/less affordable",
+        "valid_options": [
+          {
+            "raw": "Health care will be more affordable",
+            "text": "Health care will be more affordable",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Health care will be less affordable",
+            "text": "Health care will be less affordable",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "HAPPENc_W41",
+    "questions": [
+      {
+        "key": "HAPPENc_W41",
+        "text": "Still thinking ahead 30 years, which do you think is more likely to happen in the U.S.? Race relations will improve/get worse",
+        "valid_options": [
+          {
+            "raw": "Race relations will improve",
+            "text": "Race relations will improve",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Race relations will get worse",
+            "text": "Race relations will get worse",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "HAPPENd_W41",
+    "questions": [
+      {
+        "key": "HAPPENd_W41",
+        "text": "Still thinking ahead 30 years, which do you think is more likely to happen in the U.S.? The U.S. will be more/less important in the world",
+        "valid_options": [
+          {
+            "raw": "The U.S. will be more important in the world",
+            "text": "The U.S. will be more important in the world",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "The U.S. will be less important in the world",
+            "text": "The U.S. will be less important in the world",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "HAPPENe_W41",
+    "questions": [
+      {
+        "key": "HAPPENe_W41",
+        "text": "Still thinking ahead 30 years, which do you think is more likely to happen in the U.S.? The gap between the rich and the poor will grow/get smaller",
+        "valid_options": [
+          {
+            "raw": "The gap between the rich and the poor will grow",
+            "text": "The gap between the rich and the poor will grow",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "The gap between the rich and the poor will get smaller",
+            "text": "The gap between the rich and the poor will get smaller",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "HAPPENf_W41",
+    "questions": [
+      {
+        "key": "HAPPENf_W41",
+        "text": "Still thinking ahead 30 years, which do you think is more likely to happen in the U.S.? The public education system will improve/get worse",
+        "valid_options": [
+          {
+            "raw": "The public education system will improve",
+            "text": "The public education system will improve",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "The public education system will get worse",
+            "text": "The public education system will get worse",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "HAPPENg_W41",
+    "questions": [
+      {
+        "key": "HAPPENg_W41",
+        "text": "Still thinking ahead 30 years, which do you think is more likely to happen in the U.S.? Religion will become less/about as important",
+        "valid_options": [
+          {
+            "raw": "Religion will become less important",
+            "text": "Religion will become less important",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Religion will be about as important as it is now",
+            "text": "Religion will be about as important as it is now",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "HAPPENhF1_W41",
+    "questions": [
+      {
+        "key": "HAPPENhF1_W41",
+        "text": "Still thinking ahead 30 years, which do you think is more likely to happen in the U.S.? People 65 and older will have a better/worse standard of living",
+        "valid_options": [
+          {
+            "raw": "People 65 and older will have a better standard of living",
+            "text": "People 65 and older will have a better standard of living",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "People 65 and older will have a worse standard of living",
+            "text": "People 65 and older will have a worse standard of living",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "HAPPENiF2_W41",
+    "questions": [
+      {
+        "key": "HAPPENiF2_W41",
+        "text": "Still thinking ahead 30 years, which do you think is more likely to happen in the U.S.? Children will have a better/worse standard of living",
+        "valid_options": [
+          {
+            "raw": "Children will have a better standard of living",
+            "text": "Children will have a better standard of living",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Children will have a worse standard of living",
+            "text": "Children will have a worse standard of living",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "HAPPENj_W41",
+    "questions": [
+      {
+        "key": "HAPPENj_W41",
+        "text": "Still thinking ahead 30 years, which do you think is more likely to happen in the U.S.? The country will be more/less politically divided",
+        "valid_options": [
+          {
+            "raw": "The country will be more politically divided",
+            "text": "The country will be more politically divided",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "The country will be less politically divided",
+            "text": "The country will be less politically divided",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "HAPPEN2a_W41",
+    "questions": [
+      {
+        "key": "HAPPEN2a_W41",
+        "text": "How likely do you think it is that the following will happen in the next 30 years? There will be a terrorist attack on the U.S. as bad as or worse than 9/11",
+        "valid_options": [
+          {
+            "raw": "Will definitely happen",
+            "text": "Will definitely happen",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Will probably happen",
+            "text": "Will probably happen",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Will probably not happen",
+            "text": "Will probably not happen",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Will definitely not happen",
+            "text": "Will definitely not happen",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "HAPPEN2b_W41",
+    "questions": [
+      {
+        "key": "HAPPEN2b_W41",
+        "text": "How likely do you think it is that the following will happen in the next 30 years? The world will face a major energy crisis",
+        "valid_options": [
+          {
+            "raw": "Will definitely happen",
+            "text": "Will definitely happen",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Will probably happen",
+            "text": "Will probably happen",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Will probably not happen",
+            "text": "Will probably not happen",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Will definitely not happen",
+            "text": "Will definitely not happen",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "HAPPEN2c_W41",
+    "questions": [
+      {
+        "key": "HAPPEN2c_W41",
+        "text": "How likely do you think it is that the following will happen in the next 30 years? There will be a cure for Alzheimer's disease",
+        "valid_options": [
+          {
+            "raw": "Will definitely happen",
+            "text": "Will definitely happen",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Will probably happen",
+            "text": "Will probably happen",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Will probably not happen",
+            "text": "Will probably not happen",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Will definitely not happen",
+            "text": "Will definitely not happen",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "HAPPEN2d_W41",
+    "questions": [
+      {
+        "key": "HAPPEN2d_W41",
+        "text": "How likely do you think it is that the following will happen in the next 30 years? China will overtake the U.S. as the world's main superpower",
+        "valid_options": [
+          {
+            "raw": "Will definitely happen",
+            "text": "Will definitely happen",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Will probably happen",
+            "text": "Will probably happen",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Will probably not happen",
+            "text": "Will probably not happen",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Will definitely not happen",
+            "text": "Will definitely not happen",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "HAPPEN2e_W41",
+    "questions": [
+      {
+        "key": "HAPPEN2e_W41",
+        "text": "How likely do you think it is that the following will happen in the next 30 years? A woman will be elected U.S. president",
+        "valid_options": [
+          {
+            "raw": "Will definitely happen",
+            "text": "Will definitely happen",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Will probably happen",
+            "text": "Will probably happen",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Will probably not happen",
+            "text": "Will probably not happen",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Will definitely not happen",
+            "text": "Will definitely not happen",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "HAPPEN2f_W41",
+    "questions": [
+      {
+        "key": "HAPPEN2f_W41",
+        "text": "How likely do you think it is that the following will happen in the next 30 years? A Hispanic person will be elected U.S. president",
+        "valid_options": [
+          {
+            "raw": "Will definitely happen",
+            "text": "Will definitely happen",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Will probably happen",
+            "text": "Will probably happen",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Will probably not happen",
+            "text": "Will probably not happen",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Will definitely not happen",
+            "text": "Will definitely not happen",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "HAPPEN2g_W41",
+    "questions": [
+      {
+        "key": "HAPPEN2g_W41",
+        "text": "How likely do you think it is that the following will happen in the next 30 years? Most Americans will work into their 70s to have enough resources to retire",
+        "valid_options": [
+          {
+            "raw": "Will definitely happen",
+            "text": "Will definitely happen",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Will probably happen",
+            "text": "Will probably happen",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Will probably not happen",
+            "text": "Will probably not happen",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Will definitely not happen",
+            "text": "Will definitely not happen",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "HAPPEN2h_W41",
+    "questions": [
+      {
+        "key": "HAPPEN2h_W41",
+        "text": "How likely do you think it is that the following will happen in the next 30 years? There will be increasing violence against Jews in the U.S.",
+        "valid_options": [
+          {
+            "raw": "Will definitely happen",
+            "text": "Will definitely happen",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Will probably happen",
+            "text": "Will probably happen",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Will probably not happen",
+            "text": "Will probably not happen",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Will definitely not happen",
+            "text": "Will definitely not happen",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "NATDEBT_W41",
+    "questions": [
+      {
+        "key": "NATDEBT_W41",
+        "text": "Which do you think is most likely to occur over the next 30 years? The national debt will",
+        "valid_options": [
+          {
+            "raw": "Grow larger",
+            "text": "Grow larger",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Stay about the same",
+            "text": "Stay about the same",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Be reduced",
+            "text": "Be reduced",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Be eliminated",
+            "text": "Be eliminated",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ENVC_W41",
+    "questions": [
+      {
+        "key": "ENVC_W41",
+        "text": "By the year 2050, do you think the overall condition of the environment will be",
+        "valid_options": [
+          {
+            "raw": "Better than it is now",
+            "text": "Better than it is now",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Worse than it is now",
+            "text": "Worse than it is now",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "About the same as it is now",
+            "text": "About the same as it is now",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "POPPROB_W41",
+    "questions": [
+      {
+        "key": "POPPROB_W41",
+        "text": "In 2050, do you think population growth in the U.S. will be a",
+        "valid_options": [
+          {
+            "raw": "Major problem",
+            "text": "Major problem",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor problem",
+            "text": "Minor problem",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a problem",
+            "text": "Not a problem",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FTRWORRYa_W41",
+    "questions": [
+      {
+        "key": "FTRWORRYa_W41",
+        "text": "Still thinking about the future of our country, how worried are you, if at all, about the overall soundness of our economic system?",
+        "valid_options": [
+          {
+            "raw": "Very worried",
+            "text": "Very worried",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Fairly worried",
+            "text": "Fairly worried",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too worried",
+            "text": "Not too worried",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all worried",
+            "text": "Not at all worried",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FTRWORRYb_W41",
+    "questions": [
+      {
+        "key": "FTRWORRYb_W41",
+        "text": "Still thinking about the future of our country, how worried are you, if at all, about the ability of public schools to provide a quality education?",
+        "valid_options": [
+          {
+            "raw": "Very worried",
+            "text": "Very worried",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Fairly worried",
+            "text": "Fairly worried",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too worried",
+            "text": "Not too worried",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all worried",
+            "text": "Not at all worried",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FTRWORRYc_W41",
+    "questions": [
+      {
+        "key": "FTRWORRYc_W41",
+        "text": "Still thinking about the future of our country, how worried are you, if at all, about the way the government in Washington works?",
+        "valid_options": [
+          {
+            "raw": "Very worried",
+            "text": "Very worried",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Fairly worried",
+            "text": "Fairly worried",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too worried",
+            "text": "Not too worried",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all worried",
+            "text": "Not at all worried",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FTRWORRYd_W41",
+    "questions": [
+      {
+        "key": "FTRWORRYd_W41",
+        "text": "Still thinking about the future of our country, how worried are you, if at all, about the ability of political leaders to solve the country's biggest problems?",
+        "valid_options": [
+          {
+            "raw": "Very worried",
+            "text": "Very worried",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Fairly worried",
+            "text": "Fairly worried",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too worried",
+            "text": "Not too worried",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all worried",
+            "text": "Not at all worried",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FTRWORRYe_W41",
+    "questions": [
+      {
+        "key": "FTRWORRYe_W41",
+        "text": "Still thinking about the future of our country, how worried are you, if at all, about the moral values of Americans?",
+        "valid_options": [
+          {
+            "raw": "Very worried",
+            "text": "Very worried",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Fairly worried",
+            "text": "Fairly worried",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too worried",
+            "text": "Not too worried",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all worried",
+            "text": "Not at all worried",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FTRWORRYf_W41",
+    "questions": [
+      {
+        "key": "FTRWORRYf_W41",
+        "text": "Still thinking about the future of our country, how worried are you, if at all, about climate change?",
+        "valid_options": [
+          {
+            "raw": "Very worried",
+            "text": "Very worried",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Fairly worried",
+            "text": "Fairly worried",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too worried",
+            "text": "Not too worried",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all worried",
+            "text": "Not at all worried",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ELDCARE_W41",
+    "questions": [
+      {
+        "key": "ELDCARE_W41",
+        "text": "Thinking ahead 30 years from now, which do you think is more likely to happen? Adults ages 65 and older will be",
+        "valid_options": [
+          {
+            "raw": "better prepared financially for retirement than older adults are today",
+            "text": "better prepared financially for retirement than older adults are today",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "less prepared financially for retirement than older adults today",
+            "text": "less prepared financially for retirement than older adults today",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ELDFINANCEF1_W41",
+    "questions": [
+      {
+        "key": "ELDFINANCEF1_W41",
+        "text": "Who do you think will be mostly responsible for paying for the long-term care older Americans may need?",
+        "valid_options": [
+          {
+            "raw": "Family members",
+            "text": "Family members",
+            "natural_language": null,
+            "ordinal": 1
+          },
+          {
+            "raw": "Government",
+            "text": "Government",
+            "natural_language": null,
+            "ordinal": 1
+          },
+          {
+            "raw": "Older Americans themselves",
+            "text": "Older Americans themselves",
+            "natural_language": null,
+            "ordinal": 1
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ELDFINANCEF2_W41",
+    "questions": [
+      {
+        "key": "ELDFINANCEF2_W41",
+        "text": "Who do you think should be mostly responsible for paying for the long-term care older Americans may need?",
+        "valid_options": [
+          {
+            "raw": "Family members",
+            "text": "Family members",
+            "natural_language": null,
+            "ordinal": 1
+          },
+          {
+            "raw": "Government",
+            "text": "Government",
+            "natural_language": null,
+            "ordinal": 1
+          },
+          {
+            "raw": "Older Americans themselves",
+            "text": "Older Americans themselves",
+            "natural_language": null,
+            "ordinal": 1
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GOVPRIOa_W41",
+    "questions": [
+      {
+        "key": "GOVPRIOa_W41",
+        "text": "If you were deciding what the federal government should do to improve the quality of life for future generations, what priority would you give to reducing the national debt?",
+        "valid_options": [
+          {
+            "raw": "A top priority",
+            "text": "A top priority",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "An important, but not a top priority",
+            "text": "An important, but not a top priority",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "A lower priority",
+            "text": "A lower priority",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Should not be done",
+            "text": "Should not be done",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GOVPRIOb_W41",
+    "questions": [
+      {
+        "key": "GOVPRIOb_W41",
+        "text": "If you were deciding what the federal government should do to improve the quality of life for future generations, what priority would you give to increasing spending for education?",
+        "valid_options": [
+          {
+            "raw": "A top priority",
+            "text": "A top priority",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "An important, but not a top priority",
+            "text": "An important, but not a top priority",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "A lower priority",
+            "text": "A lower priority",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Should not be done",
+            "text": "Should not be done",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GOVPRIOc_W41",
+    "questions": [
+      {
+        "key": "GOVPRIOc_W41",
+        "text": "If you were deciding what the federal government should do to improve the quality of life for future generations, what priority would you give to providing high-quality, affordable health care to all Americans?",
+        "valid_options": [
+          {
+            "raw": "A top priority",
+            "text": "A top priority",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "An important, but not a top priority",
+            "text": "An important, but not a top priority",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "A lower priority",
+            "text": "A lower priority",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Should not be done",
+            "text": "Should not be done",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GOVPRIOd_W41",
+    "questions": [
+      {
+        "key": "GOVPRIOd_W41",
+        "text": "If you were deciding what the federal government should do to improve the quality of life for future generations, what priority would you give to increasing spending on scientific research?",
+        "valid_options": [
+          {
+            "raw": "A top priority",
+            "text": "A top priority",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "An important, but not a top priority",
+            "text": "An important, but not a top priority",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "A lower priority",
+            "text": "A lower priority",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Should not be done",
+            "text": "Should not be done",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GOVPRIOe_W41",
+    "questions": [
+      {
+        "key": "GOVPRIOe_W41",
+        "text": "If you were deciding what the federal government should do to improve the quality of life for future generations, what priority would you give to reducing the gap between the rich and the poor?",
+        "valid_options": [
+          {
+            "raw": "A top priority",
+            "text": "A top priority",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "An important, but not a top priority",
+            "text": "An important, but not a top priority",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "A lower priority",
+            "text": "A lower priority",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Should not be done",
+            "text": "Should not be done",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GOVPRIOfF1_W41",
+    "questions": [
+      {
+        "key": "GOVPRIOfF1_W41",
+        "text": "If you were deciding what the federal government should do to improve the quality of life for future generations, what priority would you give to reducing military spending?",
+        "valid_options": [
+          {
+            "raw": "A top priority",
+            "text": "A top priority",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "An important, but not a top priority",
+            "text": "An important, but not a top priority",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "A lower priority",
+            "text": "A lower priority",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Should not be done",
+            "text": "Should not be done",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GOVPRIOgF1_W41",
+    "questions": [
+      {
+        "key": "GOVPRIOgF1_W41",
+        "text": "If you were deciding what the federal government should do to improve the quality of life for future generations, what priority would you give to reducing the number of undocumented immigrants coming into the U.S.?",
+        "valid_options": [
+          {
+            "raw": "A top priority",
+            "text": "A top priority",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "An important, but not a top priority",
+            "text": "An important, but not a top priority",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "A lower priority",
+            "text": "A lower priority",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Should not be done",
+            "text": "Should not be done",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GOVPRIOhF1_W41",
+    "questions": [
+      {
+        "key": "GOVPRIOhF1_W41",
+        "text": "If you were deciding what the federal government should do to improve the quality of life for future generations, what priority would you give to reducing spending on Social Security, Medicare and Medicaid?",
+        "valid_options": [
+          {
+            "raw": "A top priority",
+            "text": "A top priority",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "An important, but not a top priority",
+            "text": "An important, but not a top priority",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "A lower priority",
+            "text": "A lower priority",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Should not be done",
+            "text": "Should not be done",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GOVPRIOiF1_W41",
+    "questions": [
+      {
+        "key": "GOVPRIOiF1_W41",
+        "text": "If you were deciding what the federal government should do to improve the quality of life for future generations, what priority would you give to increasing spending for roads, bridges and other infrastructure?",
+        "valid_options": [
+          {
+            "raw": "A top priority",
+            "text": "A top priority",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "An important, but not a top priority",
+            "text": "An important, but not a top priority",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "A lower priority",
+            "text": "A lower priority",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Should not be done",
+            "text": "Should not be done",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GOVPRIOjF1_W41",
+    "questions": [
+      {
+        "key": "GOVPRIOjF1_W41",
+        "text": "If you were deciding what the federal government should do to improve the quality of life for future generations, what priority would you give to avoiding tax increases?",
+        "valid_options": [
+          {
+            "raw": "A top priority",
+            "text": "A top priority",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "An important, but not a top priority",
+            "text": "An important, but not a top priority",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "A lower priority",
+            "text": "A lower priority",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Should not be done",
+            "text": "Should not be done",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GOVPRIOkF2_W41",
+    "questions": [
+      {
+        "key": "GOVPRIOkF2_W41",
+        "text": "If you were deciding what the federal government should do to improve the quality of life for future generations, what priority would you give to increasing military spending?",
+        "valid_options": [
+          {
+            "raw": "A top priority",
+            "text": "A top priority",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "An important, but not a top priority",
+            "text": "An important, but not a top priority",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "A lower priority",
+            "text": "A lower priority",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Should not be done",
+            "text": "Should not be done",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GOVPRIOlF2_W41",
+    "questions": [
+      {
+        "key": "GOVPRIOlF2_W41",
+        "text": "If you were deciding what the federal government should do to improve the quality of life for future generations, what priority would you give to who come here legally? Allowing more immigrants into the U.S.",
+        "valid_options": [
+          {
+            "raw": "A top priority",
+            "text": "A top priority",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "An important, but not a top priority",
+            "text": "An important, but not a top priority",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "A lower priority",
+            "text": "A lower priority",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Should not be done",
+            "text": "Should not be done",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GOVPRIOmF2_W41",
+    "questions": [
+      {
+        "key": "GOVPRIOmF2_W41",
+        "text": "If you were deciding what the federal government should do to improve the quality of life for future generations, what priority would you give to increasing spending on Social Security, Medicare and Medicaid?",
+        "valid_options": [
+          {
+            "raw": "A top priority",
+            "text": "A top priority",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "An important, but not a top priority",
+            "text": "An important, but not a top priority",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "A lower priority",
+            "text": "A lower priority",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Should not be done",
+            "text": "Should not be done",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GOVPRIOnF2_W41",
+    "questions": [
+      {
+        "key": "GOVPRIOnF2_W41",
+        "text": "If you were deciding what the federal government should do to improve the quality of life for future generations, what priority would you give to reducing spending for roads, bridges and other infrastructure?",
+        "valid_options": [
+          {
+            "raw": "A top priority",
+            "text": "A top priority",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "An important, but not a top priority",
+            "text": "An important, but not a top priority",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "A lower priority",
+            "text": "A lower priority",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Should not be done",
+            "text": "Should not be done",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GOVPRIOoF2_W41",
+    "questions": [
+      {
+        "key": "GOVPRIOoF2_W41",
+        "text": "If you were deciding what the federal government should do to improve the quality of life for future generations, what priority would you give to dealing with climate change?",
+        "valid_options": [
+          {
+            "raw": "A top priority",
+            "text": "A top priority",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "An important, but not a top priority",
+            "text": "An important, but not a top priority",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "A lower priority",
+            "text": "A lower priority",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Should not be done",
+            "text": "Should not be done",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WRKTRN1F1_W41",
+    "questions": [
+      {
+        "key": "WRKTRN1F1_W41",
+        "text": "Over the next 30 years, who should be most responsible for making sure American workers have the right skills and training to get a good job?",
+        "valid_options": [
+          {
+            "raw": "Government",
+            "text": "Government",
+            "natural_language": null,
+            "ordinal": 1
+          },
+          {
+            "raw": "Employers",
+            "text": "Employers",
+            "natural_language": null,
+            "ordinal": 1
+          },
+          {
+            "raw": "The education system",
+            "text": "The education system",
+            "natural_language": null,
+            "ordinal": 1
+          },
+          {
+            "raw": "Individuals themselves",
+            "text": "Individuals themselves",
+            "natural_language": null,
+            "ordinal": 1
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WRKTRN1F2_W41",
+    "questions": [
+      {
+        "key": "WRKTRN1F2_W41",
+        "text": "Over the next 30 years, who should be most responsible for making sure young adults have the right skills and training to get a good job?",
+        "valid_options": [
+          {
+            "raw": "Government",
+            "text": "Government",
+            "natural_language": null,
+            "ordinal": 1
+          },
+          {
+            "raw": "Employers",
+            "text": "Employers",
+            "natural_language": null,
+            "ordinal": 1
+          },
+          {
+            "raw": "The education system",
+            "text": "The education system",
+            "natural_language": null,
+            "ordinal": 1
+          },
+          {
+            "raw": "Individuals themselves",
+            "text": "Individuals themselves",
+            "natural_language": null,
+            "ordinal": 1
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "JOBSECURITY_W41",
+    "questions": [
+      {
+        "key": "JOBSECURITY_W41",
+        "text": "By the year 2050, will the average working person in this country have",
+        "valid_options": [
+          {
+            "raw": "More job security",
+            "text": "More job security",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Less job security",
+            "text": "Less job security",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "About the same",
+            "text": "About the same",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "JOBBENEFITS_W41",
+    "questions": [
+      {
+        "key": "JOBBENEFITS_W41",
+        "text": "Over the next 30 years, will the average working person in this country have employee benefits, such as health insurance, paid vacations and retirement plans that are",
+        "valid_options": [
+          {
+            "raw": "Better than they are now",
+            "text": "Better than they are now",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Not as good as they are now",
+            "text": "Not as good as they are now",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "About the same as they are now",
+            "text": "About the same as they are now",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "AUTOWKPLC_W41",
+    "questions": [
+      {
+        "key": "AUTOWKPLC_W41",
+        "text": "Overall, has the automation of jobs through new technology in the workplace",
+        "valid_options": [
+          {
+            "raw": "Mostly helped American workers",
+            "text": "Mostly helped American workers",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Mostly hurt American workers",
+            "text": "Mostly hurt American workers",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Neither helped nor hurt",
+            "text": "Neither helped nor hurt",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ROBWRK_W41",
+    "questions": [
+      {
+        "key": "ROBWRK_W41",
+        "text": "Overall, how likely do you think it is that 30 years from now robots and computers will do much of the work currently done by humans? Do you think this will",
+        "valid_options": [
+          {
+            "raw": "Definitely happen",
+            "text": "Definitely happen",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Probably happen",
+            "text": "Probably happen",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Probably not happen",
+            "text": "Probably not happen",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Definitely not happen",
+            "text": "Definitely not happen",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ROBWRK2_W41",
+    "questions": [
+      {
+        "key": "ROBWRK2_W41",
+        "text": "If robots and computers do much of the work currently done by humans, do you think this would be",
+        "valid_options": [
+          {
+            "raw": "A very good thing for the country",
+            "text": "A very good thing for the country",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A somewhat good thing for the country",
+            "text": "A somewhat good thing for the country",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "A somewhat bad thing for the country",
+            "text": "A somewhat bad thing for the country",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "A very bad thing for the country",
+            "text": "A very bad thing for the country",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "AUTOLKLY_W41",
+    "questions": [
+      {
+        "key": "AUTOLKLY_W41",
+        "text": "Within the next 30 years, how likely do you think it is that the type of work that you do will be done by robots or computers? Do you think this will",
+        "valid_options": [
+          {
+            "raw": "Definitely happen",
+            "text": "Definitely happen",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Probably happen",
+            "text": "Probably happen",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Probably not happen",
+            "text": "Probably not happen",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Definitely not happen",
+            "text": "Definitely not happen",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ROBIMPACTa_W41",
+    "questions": [
+      {
+        "key": "ROBIMPACTa_W41",
+        "text": "If robots and computers perform most of the jobs currently being done by humans, do you think it is likely or not that inequality between the rich and the poor would increase",
+        "valid_options": [
+          {
+            "raw": "Yes, likely",
+            "text": "Yes, likely",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, not likely",
+            "text": "No, not likely",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ROBIMPACTb_W41",
+    "questions": [
+      {
+        "key": "ROBIMPACTb_W41",
+        "text": "If robots and computers perform most of the jobs currently being done by humans, do you think it is likely or not that the economy would create many new, better-paying jobs for humans",
+        "valid_options": [
+          {
+            "raw": "Yes, likely",
+            "text": "Yes, likely",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, not likely",
+            "text": "No, not likely",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "LEGALIMG_W41",
+    "questions": [
+      {
+        "key": "LEGALIMG_W41",
+        "text": "In order to maintain the strength of the U.S. economy over the next 30 years, do you think that legal immigration will need to be",
+        "valid_options": [
+          {
+            "raw": "Increased",
+            "text": "Increased",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Maintained at current levels",
+            "text": "Maintained at current levels",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Decreased",
+            "text": "Decreased",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FUTRCLASSa_W41",
+    "questions": [
+      {
+        "key": "FUTRCLASSa_W41",
+        "text": "Over the next 30 years, do you think the share of Americans who are upper class will increase, decrease, or stay about the same?",
+        "valid_options": [
+          {
+            "raw": "Increase",
+            "text": "Increase",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Decrease",
+            "text": "Decrease",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Stay about the same",
+            "text": "Stay about the same",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FUTRCLASSb_W41",
+    "questions": [
+      {
+        "key": "FUTRCLASSb_W41",
+        "text": "Over the next 30 years, do you think the share of Americans who are in Middle Class will increase, decrease, or stay about the same?",
+        "valid_options": [
+          {
+            "raw": "Increase",
+            "text": "Increase",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Decrease",
+            "text": "Decrease",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Stay about the same",
+            "text": "Stay about the same",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FUTRCLASSc_W41",
+    "questions": [
+      {
+        "key": "FUTRCLASSc_W41",
+        "text": "Over the next 30 years, do you think the share of Americans who are lower class will increase, decrease, or stay about the same?",
+        "valid_options": [
+          {
+            "raw": "Increase",
+            "text": "Increase",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Decrease",
+            "text": "Decrease",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Stay about the same",
+            "text": "Stay about the same",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "HARASS1F1a_W41",
+    "questions": [
+      {
+        "key": "HARASS1F1a_W41",
+        "text": "When it comes to sexual harassment and sexual assault in the workplace today, how much of a problem, if at all, would you say women claiming they have experienced sexual harassment or assault when it hasn't actually is?",
+        "valid_options": [
+          {
+            "raw": "Major problem",
+            "text": "Major problem",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor problem",
+            "text": "Minor problem",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a problem",
+            "text": "Not a problem",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "HARASS1F1b_W41",
+    "questions": [
+      {
+        "key": "HARASS1F1b_W41",
+        "text": "When it comes to sexual harassment and sexual assault in the workplace today, how much of a problem, if at all, would you say employers firing men who have been accused of sexual harassment or assault before finding ou is?",
+        "valid_options": [
+          {
+            "raw": "Major problem",
+            "text": "Major problem",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor problem",
+            "text": "Minor problem",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a problem",
+            "text": "Not a problem",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "HARASS1F1c_W41",
+    "questions": [
+      {
+        "key": "HARASS1F1c_W41",
+        "text": "When it comes to sexual harassment and sexual assault in the workplace today, how much of a problem, if at all, would you say men getting away with committing sexual harassment or assault is?",
+        "valid_options": [
+          {
+            "raw": "Major problem",
+            "text": "Major problem",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor problem",
+            "text": "Minor problem",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a problem",
+            "text": "Not a problem",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "HARASS1F1d_W41",
+    "questions": [
+      {
+        "key": "HARASS1F1d_W41",
+        "text": "When it comes to sexual harassment and sexual assault in the workplace today, how much of a problem, if at all, would you say women not being believed when they claim that they have experienced sexual harassment or ass is?",
+        "valid_options": [
+          {
+            "raw": "Major problem",
+            "text": "Major problem",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor problem",
+            "text": "Minor problem",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a problem",
+            "text": "Not a problem",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "HARASS1NOWRKF2a_W41",
+    "questions": [
+      {
+        "key": "HARASS1NOWRKF2a_W41",
+        "text": "When it comes to sexual harassment and sexual assault today, how much of a problem, if at all, would you say women claiming they have experienced sexual harassment or assault when it hasn't actually occurred is?",
+        "valid_options": [
+          {
+            "raw": "Major problem",
+            "text": "Major problem",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor problem",
+            "text": "Minor problem",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a problem",
+            "text": "Not a problem",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "HARASS1NOWRKF2c_W41",
+    "questions": [
+      {
+        "key": "HARASS1NOWRKF2c_W41",
+        "text": "When it comes to sexual harassment and sexual assault today, how much of a problem, if at all, would you say men getting away with committing sexual harassment or assault is?",
+        "valid_options": [
+          {
+            "raw": "Major problem",
+            "text": "Major problem",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor problem",
+            "text": "Minor problem",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a problem",
+            "text": "Not a problem",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "HARASS1NOWRKF2d_W41",
+    "questions": [
+      {
+        "key": "HARASS1NOWRKF2d_W41",
+        "text": "When it comes to sexual harassment and sexual assault today, how much of a problem, if at all, would you say women not being believed when they claim that they have experienced sexual harassment or assault is?",
+        "valid_options": [
+          {
+            "raw": "Major problem",
+            "text": "Major problem",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor problem",
+            "text": "Minor problem",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a problem",
+            "text": "Not a problem",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "HARASS3F1_W41",
+    "questions": [
+      {
+        "key": "HARASS3F1_W41",
+        "text": "Do you think the increased focus on sexual harassment and assault has made it easier or harder for men to know how to interact with women in the workplace, or hasn't it made much difference?",
+        "valid_options": [
+          {
+            "raw": "Has made it easier for men",
+            "text": "Has made it easier for men",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Has made it harder for men",
+            "text": "Has made it harder for men",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hasn't made much difference",
+            "text": "Hasn't made much difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "HARASS3NOWRKF2_W41",
+    "questions": [
+      {
+        "key": "HARASS3NOWRKF2_W41",
+        "text": "Do you think the increased focus on sexual harassment and assault has made it easier or harder for men to know how to interact with women, or hasn't it made much difference?",
+        "valid_options": [
+          {
+            "raw": "Has made it easier for men",
+            "text": "Has made it easier for men",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Has made it harder for men",
+            "text": "Has made it harder for men",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hasn't made much difference",
+            "text": "Hasn't made much difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "HARASS4_W41",
+    "questions": [
+      {
+        "key": "HARASS4_W41",
+        "text": "Now thinking about your own experiences have you ever personally received unwanted sexual advances or verbal or physical harassment of a sexual nature? This can be in any circumstance, whether or not work-related.",
+        "valid_options": [
+          {
+            "raw": "Yes",
+            "text": "Yes",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No",
+            "text": "No",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "HARASS5_W41",
+    "questions": [
+      {
+        "key": "HARASS5_W41",
+        "text": "Have you received unwanted sexual advances or verbal or physical harassment of a sexual nature",
+        "valid_options": [
+          {
+            "raw": "In a professional or work setting",
+            "text": "In a professional or work setting",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Outside of a professional or work setting",
+            "text": "Outside of a professional or work setting",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Both",
+            "text": "Both",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ETHNCMAJMOD_W41",
+    "questions": [
+      {
+        "key": "ETHNCMAJMOD_W41",
+        "text": "According to the U.S. Census Bureau, by the year 2050, a majority of the population will be made up of blacks, Asians, Hispanics, and other racial minorities. In terms of its impact on the country, do you think this will be",
+        "valid_options": [
+          {
+            "raw": "A very good thing",
+            "text": "A very good thing",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A somewhat good thing",
+            "text": "A somewhat good thing",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "A somewhat bad thing",
+            "text": "A somewhat bad thing",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "A very bad thing",
+            "text": "A very bad thing",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Neither a good nor bad thing",
+            "text": "Neither a good nor bad thing",
+            "natural_language": null,
+            "ordinal": 2.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "AGEMAJ_W41",
+    "questions": [
+      {
+        "key": "AGEMAJ_W41",
+        "text": "According to the U.S. Census Bureau, by the year 2050, the number of people in the population who are 65 or older will outnumber people younger than 18. In terms of its impact on the country, do you think this will be",
+        "valid_options": [
+          {
+            "raw": "A very good thing",
+            "text": "A very good thing",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A somewhat good thing",
+            "text": "A somewhat good thing",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "A somewhat bad thing",
+            "text": "A somewhat bad thing",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "A very bad thing",
+            "text": "A very bad thing",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Neither a good nor bad thing",
+            "text": "Neither a good nor bad thing",
+            "natural_language": null,
+            "ordinal": 2.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INTRMAR_W41",
+    "questions": [
+      {
+        "key": "INTRMAR_W41",
+        "text": "According to the U.S. Census Bureau, more people of different races are marrying each other these days than in the past. In terms of its impact on the country, do you think this is",
+        "valid_options": [
+          {
+            "raw": "A very good thing",
+            "text": "A very good thing",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A somewhat good thing",
+            "text": "A somewhat good thing",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "A somewhat bad thing",
+            "text": "A somewhat bad thing",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "A very bad thing",
+            "text": "A very bad thing",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Neither a good nor bad thing",
+            "text": "Neither a good nor bad thing",
+            "natural_language": null,
+            "ordinal": 2.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SSMONEY_W41",
+    "questions": [
+      {
+        "key": "SSMONEY_W41",
+        "text": "Thinking about what the Social Security system will look like when you are ready to retire, do you think there will be enough money to provide benefits to older Americans?",
+        "valid_options": [
+          {
+            "raw": "Yes, at current levels",
+            "text": "Yes, at current levels",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Yes, but at reduced levels",
+            "text": "Yes, but at reduced levels",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No",
+            "text": "No",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SSCUT_W41",
+    "questions": [
+      {
+        "key": "SSCUT_W41",
+        "text": "Thinking about the long-term future of Social Security, which statement comes closer to your view, even if neither is exactly right?",
+        "valid_options": [
+          {
+            "raw": "Some reductions in benefits for future retirees will need to be made",
+            "text": "Some reductions in benefits for future retirees will need to be made",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Social Security benefits should not be reduced in any way",
+            "text": "Social Security benefits should not be reduced in any way",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FUTR_ABR_W41",
+    "questions": [
+      {
+        "key": "FUTR_ABR_W41",
+        "text": "Thinking again about the year 2050, or 30 years from now, do you think abortion will be",
+        "valid_options": [
+          {
+            "raw": "Legal with no restrictions",
+            "text": "Legal with no restrictions",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Legal but with some restrictions",
+            "text": "Legal but with some restrictions",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Illegal except in certain cases",
+            "text": "Illegal except in certain cases",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Illegal with no exceptions",
+            "text": "Illegal with no exceptions",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FUTR_DIV_W41",
+    "questions": [
+      {
+        "key": "FUTR_DIV_W41",
+        "text": "By 2050, do you expect that people who are married will be",
+        "valid_options": [
+          {
+            "raw": "More likely to get divorced than people are now",
+            "text": "More likely to get divorced than people are now",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Less likely to get divorced than people are now",
+            "text": "Less likely to get divorced than people are now",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "About as likely to get divorced as people are now",
+            "text": "About as likely to get divorced as people are now",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FUTR_M_W41",
+    "questions": [
+      {
+        "key": "FUTR_M_W41",
+        "text": "By 2050, do you expect that people will be",
+        "valid_options": [
+          {
+            "raw": "More likely to get married than people are now",
+            "text": "More likely to get married than people are now",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Less likely to get married than people are now",
+            "text": "Less likely to get married than people are now",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "About as likely to get married as people are now",
+            "text": "About as likely to get married as people are now",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FUTR_K_W41",
+    "questions": [
+      {
+        "key": "FUTR_K_W41",
+        "text": "By 2050, do you expect that people will be",
+        "valid_options": [
+          {
+            "raw": "More likely to have children than people are now",
+            "text": "More likely to have children than people are now",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Less likely to have children than people are now",
+            "text": "Less likely to have children than people are now",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "About as likely to have children as people are now",
+            "text": "About as likely to have children as people are now",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SOLVPROBa_W41",
+    "questions": [
+      {
+        "key": "SOLVPROBa_W41",
+        "text": "In the future, what kind of an impact do you think science and technology will have in solving the biggest problems facing the country?",
+        "valid_options": [
+          {
+            "raw": "A very positive impact",
+            "text": "A very positive impact",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A somewhat positive impact",
+            "text": "A somewhat positive impact",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "A somewhat negative impact",
+            "text": "A somewhat negative impact",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "A very negative impact",
+            "text": "A very negative impact",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SOLVPROBb_W41",
+    "questions": [
+      {
+        "key": "SOLVPROBb_W41",
+        "text": "In the future, what kind of an impact do you think major corporations will have in solving the biggest problems facing the country?",
+        "valid_options": [
+          {
+            "raw": "A very positive impact",
+            "text": "A very positive impact",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A somewhat positive impact",
+            "text": "A somewhat positive impact",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "A somewhat negative impact",
+            "text": "A somewhat negative impact",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "A very negative impact",
+            "text": "A very negative impact",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SOLVPROBc_W41",
+    "questions": [
+      {
+        "key": "SOLVPROBc_W41",
+        "text": "In the future, what kind of an impact do you think religious groups will have in solving the biggest problems facing the country?",
+        "valid_options": [
+          {
+            "raw": "A very positive impact",
+            "text": "A very positive impact",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A somewhat positive impact",
+            "text": "A somewhat positive impact",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "A somewhat negative impact",
+            "text": "A somewhat negative impact",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "A very negative impact",
+            "text": "A very negative impact",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SOLVPROBdF1_W41",
+    "questions": [
+      {
+        "key": "SOLVPROBdF1_W41",
+        "text": "In the future, what kind of an impact do you think the government in Washington will have in solving the biggest problems facing the country?",
+        "valid_options": [
+          {
+            "raw": "A very positive impact",
+            "text": "A very positive impact",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A somewhat positive impact",
+            "text": "A somewhat positive impact",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "A somewhat negative impact",
+            "text": "A somewhat negative impact",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "A very negative impact",
+            "text": "A very negative impact",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SOLVPROBeF2_W41",
+    "questions": [
+      {
+        "key": "SOLVPROBeF2_W41",
+        "text": "In the future, what kind of an impact do you think state and local government will have in solving the biggest problems facing the country?",
+        "valid_options": [
+          {
+            "raw": "A very positive impact",
+            "text": "A very positive impact",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A somewhat positive impact",
+            "text": "A somewhat positive impact",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "A somewhat negative impact",
+            "text": "A somewhat negative impact",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "A very negative impact",
+            "text": "A very negative impact",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SOLVPROBf_W41",
+    "questions": [
+      {
+        "key": "SOLVPROBf_W41",
+        "text": "In the future, what kind of an impact do you think the news media will have in solving the biggest problems facing the country?",
+        "valid_options": [
+          {
+            "raw": "A very positive impact",
+            "text": "A very positive impact",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A somewhat positive impact",
+            "text": "A somewhat positive impact",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "A somewhat negative impact",
+            "text": "A somewhat negative impact",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "A very negative impact",
+            "text": "A very negative impact",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SOLVPROBg_W41",
+    "questions": [
+      {
+        "key": "SOLVPROBg_W41",
+        "text": "In the future, what kind of an impact do you think the military will have in solving the biggest problems facing the country?",
+        "valid_options": [
+          {
+            "raw": "A very positive impact",
+            "text": "A very positive impact",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A somewhat positive impact",
+            "text": "A somewhat positive impact",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "A somewhat negative impact",
+            "text": "A somewhat negative impact",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "A very negative impact",
+            "text": "A very negative impact",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SOLVPROBh_W41",
+    "questions": [
+      {
+        "key": "SOLVPROBh_W41",
+        "text": "In the future, what kind of an impact do you think colleges and universities will have in solving the biggest problems facing the country?",
+        "valid_options": [
+          {
+            "raw": "A very positive impact",
+            "text": "A very positive impact",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A somewhat positive impact",
+            "text": "A somewhat positive impact",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "A somewhat negative impact",
+            "text": "A somewhat negative impact",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "A very negative impact",
+            "text": "A very negative impact",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SOLVPROBi_W41",
+    "questions": [
+      {
+        "key": "SOLVPROBi_W41",
+        "text": "In the future, what kind of an impact do you think public K-12 schools will have in solving the biggest problems facing the country?",
+        "valid_options": [
+          {
+            "raw": "A very positive impact",
+            "text": "A very positive impact",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A somewhat positive impact",
+            "text": "A somewhat positive impact",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "A somewhat negative impact",
+            "text": "A somewhat negative impact",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "A very negative impact",
+            "text": "A very negative impact",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CREGION",
+    "questions": [
+      {
+        "key": "CREGION",
+        "text": "Which part of the United States do you currently live in?",
+        "valid_options": [
+          {
+            "raw": "Midwest",
+            "text": "Midwest",
+            "natural_language": "I live in the Midwest of the United States."
+          },
+          {
+            "raw": "Northeast",
+            "text": "Northeast",
+            "natural_language": "I live in the Northeast of the United States."
+          },
+          {
+            "raw": "South",
+            "text": "South",
+            "natural_language": "I live in the South of the United States."
+          },
+          {
+            "raw": "West",
+            "text": "West",
+            "natural_language": "I live in the West of the United States."
+          }
+        ],
+        "invalid_options": []
+      }
+    ]
+  },
+  {
+    "name": "AGE",
+    "questions": [
+      {
+        "key": "AGE",
+        "text": "How old are you?",
+        "valid_options": [
+          {
+            "raw": "18-29",
+            "text": "18-29",
+            "natural_language": "I am between 18-29 years old."
+          },
+          {
+            "raw": "30-49",
+            "text": "30-49",
+            "natural_language": "I am between 30-49 years old."
+          },
+          {
+            "raw": "50-64",
+            "text": "50-64",
+            "natural_language": "I am between 50-64 years old."
+          },
+          {
+            "raw": "65+",
+            "text": "65+",
+            "natural_language": "I am 65+ years old."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SEX",
+    "questions": [
+      {
+        "key": "SEX",
+        "text": "What is the sex that you were assigned at birth?",
+        "valid_options": [
+          {
+            "raw": "Female",
+            "text": "Female",
+            "natural_language": "I am female."
+          },
+          {
+            "raw": "Male",
+            "text": "Male",
+            "natural_language": "I am male."
+          }
+        ],
+        "invalid_options": [
+          "In some other way",
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "EDUCATION",
+    "questions": [
+      {
+        "key": "EDUCATION",
+        "text": "What is the highest level of schooling or degree that you have completed?",
+        "valid_options": [
+          {
+            "raw": "Associate's degree",
+            "text": "Associate's degree",
+            "natural_language": "I earned an associate's degree."
+          },
+          {
+            "raw": "College graduate/some postgrad",
+            "text": "graduated from college",
+            "natural_language": "I graduated from college."
+          },
+          {
+            "raw": "High school graduate",
+            "text": "High school graduate",
+            "natural_language": "I graduated from high school."
+          },
+          {
+            "raw": "Less than high school",
+            "text": "Less than high school",
+            "natural_language": "I did not graduate from high school."
+          },
+          {
+            "raw": "Postgraduate",
+            "text": "Postgraduate",
+            "natural_language": "I went to graduate school."
+          },
+          {
+            "raw": "Some college, no degree",
+            "text": "Some college, no degree",
+            "natural_language": "I went to some college."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CITIZEN",
+    "questions": [
+      {
+        "key": "CITIZEN",
+        "text": "Are you a citizen of the United States?",
+        "valid_options": [
+          {
+            "raw": "No",
+            "text": "No",
+            "natural_language": "I am not a citizen of the United States."
+          },
+          {
+            "raw": "Yes",
+            "text": "Yes",
+            "natural_language": "I am a citizen of the United States."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MARITAL",
+    "questions": [
+      {
+        "key": "MARITAL",
+        "text": "Which of these best describes you?",
+        "valid_options": [
+          {
+            "raw": "Divorced",
+            "text": "Divorced",
+            "natural_language": "I am divorced."
+          },
+          {
+            "raw": "Living with a partner",
+            "text": "Living with a partner",
+            "natural_language": "I am living with a partner."
+          },
+          {
+            "raw": "Married",
+            "text": "Married",
+            "natural_language": "I am married."
+          },
+          {
+            "raw": "Never been married",
+            "text": "Never been married",
+            "natural_language": "I have never been married."
+          },
+          {
+            "raw": "Separated",
+            "text": "Separated",
+            "natural_language": "I am separated from my partner."
+          },
+          {
+            "raw": "Widowed",
+            "text": "Widowed",
+            "natural_language": "I am widowed."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RELIG",
+    "questions": [
+      {
+        "key": "RELIG",
+        "text": "What is your present religion, if any?",
+        "valid_options": [
+          {
+            "raw": "Agnostic",
+            "text": "Agnostic",
+            "natural_language": "Religiously speaking, I am agnostic."
+          },
+          {
+            "raw": "Atheist",
+            "text": "Atheist",
+            "natural_language": "Religiously speaking, I am atheist."
+          },
+          {
+            "raw": "Buddhist",
+            "text": "Buddhist",
+            "natural_language": "Religiously speaking, I am Buddhist."
+          },
+          {
+            "raw": "Hindu",
+            "text": "Hindu",
+            "natural_language": "Religiously speaking, I am Hindu."
+          },
+          {
+            "raw": "Jewish",
+            "text": "Jewish",
+            "natural_language": "Religiously speaking, I am Jewish."
+          },
+          {
+            "raw": "Mormon",
+            "text": "Mormon",
+            "natural_language": "Religiously speaking, I am a member of the Church of Jesus Christ of Latter-day Saints."
+          },
+          {
+            "raw": "Muslim",
+            "text": "Muslim",
+            "natural_language": "Religiously speaking, I am Muslim."
+          },
+          {
+            "raw": "Nothing in particular",
+            "text": "Nothing in particular",
+            "natural_language": "Religiously speaking, I don't identify with anything in particular."
+          },
+          {
+            "raw": "Orthodox",
+            "text": "Orthodox",
+            "natural_language": "Religiously speaking, I am Orthodox."
+          },
+          {
+            "raw": "Other",
+            "text": "Other",
+            "natural_language": "Religiously speaking, I am not mainstream."
+          },
+          {
+            "raw": "Protestant",
+            "text": "Protestant",
+            "natural_language": "Religiously speaking, I am Protestant."
+          },
+          {
+            "raw": "Roman Catholic",
+            "text": "Roman Catholic",
+            "natural_language": "Religiously speaking, I am Roman Catholic."
+          }
+        ],
+        "invalid_options": [
+          "Refused",
+          "Christian",
+          "Unitarian"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RELIGATTEND",
+    "questions": [
+      {
+        "key": "RELIGATTEND",
+        "text": "Aside from weddings and funerals, how often do you attend religious services?",
+        "valid_options": [
+          {
+            "raw": "A few times a year",
+            "text": "A few times a year",
+            "natural_language": "I attend religious services a few times a year."
+          },
+          {
+            "raw": "More than once a week",
+            "text": "More than once a week",
+            "natural_language": "I attend religious services more than once a week."
+          },
+          {
+            "raw": "Never",
+            "text": "Never",
+            "natural_language": "I never attend religious services."
+          },
+          {
+            "raw": "Once a week",
+            "text": "Once a week",
+            "natural_language": "I attend religious services once a week."
+          },
+          {
+            "raw": "Once or twice a month",
+            "text": "Once or twice a month",
+            "natural_language": "I attend religious services once or twice a month."
+          },
+          {
+            "raw": "Seldom",
+            "text": "Seldom",
+            "natural_language": "I seldom attend religious services."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "POLPARTY",
+    "questions": [
+      {
+        "key": "POLPARTY",
+        "text": "In politics today, what do you consider yourself?",
+        "valid_options": [
+          {
+            "raw": "Democrat",
+            "text": "Democrat",
+            "natural_language": "Politically, I am a Democrat."
+          },
+          {
+            "raw": "Independent",
+            "text": "Independent",
+            "natural_language": "Politically, I am an independent."
+          },
+          {
+            "raw": "Republican",
+            "text": "Republican",
+            "natural_language": "Politically, I am a Republican."
+          }
+        ],
+        "invalid_options": [
+          "Other",
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INCOME",
+    "questions": [
+      {
+        "key": "INCOME",
+        "text": "Last year, what was your total family income from all sources, before taxes?",
+        "valid_options": [
+          {
+            "raw": "$100,000 or more",
+            "text": "$100,000 or more",
+            "natural_language": "Last year, my household income was $100,000 or more before taxes."
+          },
+          {
+            "raw": "$30,000-$50,000",
+            "text": "$30,000-$50,000",
+            "natural_language": "Last year, my household income was $30,000-$50,000 before taxes."
+          },
+          {
+            "raw": "$50,000-$75,000",
+            "text": "$50,000-$75,000",
+            "natural_language": "Last year, my household income was $50,000-$75,000 before taxes."
+          },
+          {
+            "raw": "$75,000-$100,000",
+            "text": "$75,000-$100,000",
+            "natural_language": "Last year, my household income was $75,000-$100,000 before taxes."
+          },
+          {
+            "raw": "Less than $30,000",
+            "text": "Less than $30,000",
+            "natural_language": "Last year, my household income was less than $30,000 before taxes."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "POLIDEOLOGY",
+    "questions": [
+      {
+        "key": "POLIDEOLOGY",
+        "text": "In general, how would you describe your political ideology?",
+        "valid_options": [
+          {
+            "raw": "Conservative",
+            "text": "Conservative",
+            "natural_language": "Politically, I am conservative."
+          },
+          {
+            "raw": "Liberal",
+            "text": "Liberal",
+            "natural_language": "Politically, I am liberal."
+          },
+          {
+            "raw": "Moderate",
+            "text": "Moderate",
+            "natural_language": "Politically, I am moderate."
+          },
+          {
+            "raw": "Very conservative",
+            "text": "Very conservative",
+            "natural_language": "Politically, I am very conservative."
+          },
+          {
+            "raw": "Very liberal",
+            "text": "Very liberal",
+            "natural_language": "Politically, I am very liberal."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACE",
+    "questions": [
+      {
+        "key": "RACE",
+        "text": "What is your race or origin?",
+        "valid_options": [
+          {
+            "raw": "Asian",
+            "text": "Asian",
+            "natural_language": "I am Asian."
+          },
+          {
+            "raw": "Black",
+            "text": "Black",
+            "natural_language": "I am Black."
+          },
+          {
+            "raw": "Hispanic",
+            "text": "Hispanic",
+            "natural_language": "I am Hispanic."
+          },
+          {
+            "raw": "Mixed Race",
+            "text": "Mixed Race",
+            "natural_language": "I am mixed race."
+          },
+          {
+            "raw": "Other",
+            "text": "Other",
+            "natural_language": "I am racially ambiguous."
+          },
+          {
+            "raw": "White",
+            "text": "White",
+            "natural_language": "I am White."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  }
+]

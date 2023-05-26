@@ -1,0 +1,4573 @@
+[
+  {
+    "name": "FIN_SIT_W54",
+    "questions": [
+      {
+        "key": "FIN_SIT_W54",
+        "text": "How would you describe your household's financial situation?",
+        "valid_options": [
+          {
+            "raw": "Live comfortably",
+            "text": "Live comfortably",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Meet your basic expenses with a little left over for extras",
+            "text": "Meet your basic expenses with a little left over for extras",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Just meet your basic expenses",
+            "text": "Just meet your basic expenses",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Don't even have enough to meet basic expenses",
+            "text": "Don't even have enough to meet basic expenses",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FIN_SITFUT_W54",
+    "questions": [
+      {
+        "key": "FIN_SITFUT_W54",
+        "text": "In the future, do you think your household will have enough money to live comfortably?",
+        "valid_options": [
+          {
+            "raw": "Yes",
+            "text": "Yes",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No",
+            "text": "No",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FIN_SITMOST_W54",
+    "questions": [
+      {
+        "key": "FIN_SITMOST_W54",
+        "text": "How would you describe the financial situation of most Americans?",
+        "valid_options": [
+          {
+            "raw": "Live comfortably",
+            "text": "Live comfortably",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Meet their basic expenses with a little left over for extras",
+            "text": "Meet their basic expenses with a little left over for extras",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Just meet their basic expenses",
+            "text": "Just meet their basic expenses",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Don't even have enough to meet basic expenses",
+            "text": "Don't even have enough to meet basic expenses",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FIN_SITCOMM_W54",
+    "questions": [
+      {
+        "key": "FIN_SITCOMM_W54",
+        "text": "How would you describe the financial situation of most people in the area where you live?",
+        "valid_options": [
+          {
+            "raw": "Live comfortably",
+            "text": "Live comfortably",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Meet their basic expenses with a little left over for extras",
+            "text": "Meet their basic expenses with a little left over for extras",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Just meet their basic expenses",
+            "text": "Just meet their basic expenses",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Don't even have enough to meet basic expenses",
+            "text": "Don't even have enough to meet basic expenses",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FIN_SITGROWUP_W54",
+    "questions": [
+      {
+        "key": "FIN_SITGROWUP_W54",
+        "text": "Now thinking about when you were growing up, how would you describe your family's financial situation for most of the time when you were growing up?",
+        "valid_options": [
+          {
+            "raw": "Lived comfortably",
+            "text": "Lived comfortably",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Met basic expenses with a little left over for extras",
+            "text": "Met basic expenses with a little left over for extras",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Just met basic expenses",
+            "text": "Just met basic expenses",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Didn't even have enough to meet basic expenses",
+            "text": "Didn't even have enough to meet basic expenses",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "JOBTRAIN_W54",
+    "questions": [
+      {
+        "key": "JOBTRAIN_W54",
+        "text": "Looking ahead, how important do you think it will be for you to get training and develop new skills throughout your work life in order to keep up with changes in the workplace?",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important, but not essential",
+            "text": "Important, but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GOVPRIORITYa_W54",
+    "questions": [
+      {
+        "key": "GOVPRIORITYa_W54",
+        "text": "How much of a priority should the following be for the federal government to address: Making health care more affordable",
+        "valid_options": [
+          {
+            "raw": "A top priority",
+            "text": "A top priority",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important, but lower priority",
+            "text": "Important, but lower priority",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too important",
+            "text": "Not too important",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Should not be done",
+            "text": "Should not be done",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GOVPRIORITYb_W54",
+    "questions": [
+      {
+        "key": "GOVPRIORITYb_W54",
+        "text": "How much of a priority should the following be for the federal government to address: Reducing illegal immigration",
+        "valid_options": [
+          {
+            "raw": "A top priority",
+            "text": "A top priority",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important, but lower priority",
+            "text": "Important, but lower priority",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too important",
+            "text": "Not too important",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Should not be done",
+            "text": "Should not be done",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GOVPRIORITYc_W54",
+    "questions": [
+      {
+        "key": "GOVPRIORITYc_W54",
+        "text": "How much of a priority should the following be for the federal government to address: Reducing economic inequality",
+        "valid_options": [
+          {
+            "raw": "A top priority",
+            "text": "A top priority",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important, but lower priority",
+            "text": "Important, but lower priority",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too important",
+            "text": "Not too important",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Should not be done",
+            "text": "Should not be done",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GOVPRIORITYd_W54",
+    "questions": [
+      {
+        "key": "GOVPRIORITYd_W54",
+        "text": "How much of a priority should the following be for the federal government to address: Addressing climate change",
+        "valid_options": [
+          {
+            "raw": "A top priority",
+            "text": "A top priority",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important, but lower priority",
+            "text": "Important, but lower priority",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too important",
+            "text": "Not too important",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Should not be done",
+            "text": "Should not be done",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GOVPRIORITYe_W54",
+    "questions": [
+      {
+        "key": "GOVPRIORITYe_W54",
+        "text": "How much of a priority should the following be for the federal government to address: Dealing with terrorism",
+        "valid_options": [
+          {
+            "raw": "A top priority",
+            "text": "A top priority",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important, but lower priority",
+            "text": "Important, but lower priority",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too important",
+            "text": "Not too important",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Should not be done",
+            "text": "Should not be done",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GOVPRIORITYf_W54",
+    "questions": [
+      {
+        "key": "GOVPRIORITYf_W54",
+        "text": "How much of a priority should the following be for the federal government to address: Reducing gun violence",
+        "valid_options": [
+          {
+            "raw": "A top priority",
+            "text": "A top priority",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important, but lower priority",
+            "text": "Important, but lower priority",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too important",
+            "text": "Not too important",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Should not be done",
+            "text": "Should not be done",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GOVRESP_a_W54",
+    "questions": [
+      {
+        "key": "GOVRESP_a_W54",
+        "text": "Do you think an adequate standard of living is something the federal government has a responsibility to provide for all Americans?",
+        "valid_options": [
+          {
+            "raw": "Yes, a responsibility of the federal government to provide for all Americans",
+            "text": "Yes, a responsibility of the federal government to provide for all Americans",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, not the responsibility of the federal government to provide",
+            "text": "No, not the responsibility of the federal government to provide",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GOVRESP_b_W54",
+    "questions": [
+      {
+        "key": "GOVRESP_b_W54",
+        "text": "Do you think adequate housing is something the federal government has a responsibility to provide for all Americans?",
+        "valid_options": [
+          {
+            "raw": "Yes, a responsibility of the federal government to provide for all Americans",
+            "text": "Yes, a responsibility of the federal government to provide for all Americans",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, not the responsibility of the federal government to provide",
+            "text": "No, not the responsibility of the federal government to provide",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GOVRESP_c_W54",
+    "questions": [
+      {
+        "key": "GOVRESP_c_W54",
+        "text": "Do you think high quality K-12 education is something the federal government has a responsibility to provide for all Americans?",
+        "valid_options": [
+          {
+            "raw": "Yes, a responsibility of the federal government to provide for all Americans",
+            "text": "Yes, a responsibility of the federal government to provide for all Americans",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, not the responsibility of the federal government to provide",
+            "text": "No, not the responsibility of the federal government to provide",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GOVRESP_d_W54",
+    "questions": [
+      {
+        "key": "GOVRESP_d_W54",
+        "text": "Do you think a college education is something the federal government has a responsibility to provide for all Americans?",
+        "valid_options": [
+          {
+            "raw": "Yes, a responsibility of the federal government to provide for all Americans",
+            "text": "Yes, a responsibility of the federal government to provide for all Americans",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, not the responsibility of the federal government to provide",
+            "text": "No, not the responsibility of the federal government to provide",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GOVRESP_e_W54",
+    "questions": [
+      {
+        "key": "GOVRESP_e_W54",
+        "text": "Do you think adequate income in retirement is something the federal government has a responsibility to provide for all Americans?",
+        "valid_options": [
+          {
+            "raw": "Yes, a responsibility of the federal government to provide for all Americans",
+            "text": "Yes, a responsibility of the federal government to provide for all Americans",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, not the responsibility of the federal government to provide",
+            "text": "No, not the responsibility of the federal government to provide",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GOVRESP_f_W54",
+    "questions": [
+      {
+        "key": "GOVRESP_f_W54",
+        "text": "Do you think adequate medical care is something the federal government has a responsibility to provide for all Americans?",
+        "valid_options": [
+          {
+            "raw": "Yes, a responsibility of the federal government to provide for all Americans",
+            "text": "Yes, a responsibility of the federal government to provide for all Americans",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, not the responsibility of the federal government to provide",
+            "text": "No, not the responsibility of the federal government to provide",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GOVRESP_g_W54",
+    "questions": [
+      {
+        "key": "GOVRESP_g_W54",
+        "text": "Do you think Health insurance is something the federal government has a responsibility to provide for all Americans?",
+        "valid_options": [
+          {
+            "raw": "Yes, a responsibility of the federal government to provide for all Americans",
+            "text": "Yes, a responsibility of the federal government to provide for all Americans",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, not the responsibility of the federal government to provide",
+            "text": "No, not the responsibility of the federal government to provide",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GOVRESP_h_W54",
+    "questions": [
+      {
+        "key": "GOVRESP_h_W54",
+        "text": "Do you think access to high-speed internet is something the federal government has a responsibility to provide for all Americans?",
+        "valid_options": [
+          {
+            "raw": "Yes, a responsibility of the federal government to provide for all Americans",
+            "text": "Yes, a responsibility of the federal government to provide for all Americans",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, not the responsibility of the federal government to provide",
+            "text": "No, not the responsibility of the federal government to provide",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ECON1_W54",
+    "questions": [
+      {
+        "key": "ECON1_W54",
+        "text": "Thinking about the nation's economy, how would you rate economic conditions in this country today?",
+        "valid_options": [
+          {
+            "raw": "Excellent",
+            "text": "Excellent",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Good",
+            "text": "Good",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Only fair",
+            "text": "Only fair",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Poor",
+            "text": "Poor",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ECON1B_W54",
+    "questions": [
+      {
+        "key": "ECON1B_W54",
+        "text": "A year from now, do you expect that economic conditions in the country as a whole will be",
+        "valid_options": [
+          {
+            "raw": "Better",
+            "text": "Better",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Worse",
+            "text": "Worse",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "About the same as now",
+            "text": "About the same as now",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ECON3_a_W54",
+    "questions": [
+      {
+        "key": "ECON3_a_W54",
+        "text": "How much, if at all, do you think the availability of jobs is contributing to your opinion about how the economy is doing?",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much",
+            "text": "Not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ECON3_b_W54",
+    "questions": [
+      {
+        "key": "ECON3_b_W54",
+        "text": "How much, if at all, do you think how the stock market is doing is contributing to your opinion about how the economy is doing?",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much",
+            "text": "Not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ECON3_c_W54",
+    "questions": [
+      {
+        "key": "ECON3_c_W54",
+        "text": "How much, if at all, do you think prices for food and consumer goods are contributing to your opinion about how the economy is doing?",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much",
+            "text": "Not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ECON3_d_W54",
+    "questions": [
+      {
+        "key": "ECON3_d_W54",
+        "text": "How much, if at all, do you think the cost of health care is contributing to your opinion about how the economy is doing?",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much",
+            "text": "Not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ECON3_e_W54",
+    "questions": [
+      {
+        "key": "ECON3_e_W54",
+        "text": "How much, if at all, do you think real estate values are contributing to your opinion about how the economy is doing?",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much",
+            "text": "Not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ECON3_f_W54",
+    "questions": [
+      {
+        "key": "ECON3_f_W54",
+        "text": "How much, if at all, do you think gas prices are contributing to your opinion about how the economy is doing?",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much",
+            "text": "Not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ECON3_g_W54",
+    "questions": [
+      {
+        "key": "ECON3_g_W54",
+        "text": "How much, if at all, do you think the federal budget deficit is contributing to your opinion about how the economy is doing?",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much",
+            "text": "Not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ECON3_h_W54",
+    "questions": [
+      {
+        "key": "ECON3_h_W54",
+        "text": "How much, if at all, do you think wages and incomes are contributing to your opinion about how the economy is doing?",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much",
+            "text": "Not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ECON3_i_W54",
+    "questions": [
+      {
+        "key": "ECON3_i_W54",
+        "text": "How much, if at all, do you think the country's tax system is contributing to your opinion about how the economy is doing?",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much",
+            "text": "Not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ECON4_a_W54",
+    "questions": [
+      {
+        "key": "ECON4_a_W54",
+        "text": "Thinking about your own household's financial situation, how much, if at all, does the availability of jobs in your area affect your household's financial situation?",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much",
+            "text": "Not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ECON4_b_W54",
+    "questions": [
+      {
+        "key": "ECON4_b_W54",
+        "text": "Thinking about your own household's financial situation, how much, if at all, does how the stock market is doing affect your household's financial situation?",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much",
+            "text": "Not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ECON4_c_W54",
+    "questions": [
+      {
+        "key": "ECON4_c_W54",
+        "text": "Thinking about your own household's financial situation, how much, if at all, does prices for food and consumer goods affect your household's financial situation?",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much",
+            "text": "Not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ECON4_d_W54",
+    "questions": [
+      {
+        "key": "ECON4_d_W54",
+        "text": "Thinking about your own household's financial situation, how much, if at all, does the cost of health care affect your household's financial situation?",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much",
+            "text": "Not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ECON4_e_W54",
+    "questions": [
+      {
+        "key": "ECON4_e_W54",
+        "text": "Thinking about your own household's financial situation, how much, if at all, does real estate values in your area affect your household's financial situation?",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much",
+            "text": "Not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ECON4_f_W54",
+    "questions": [
+      {
+        "key": "ECON4_f_W54",
+        "text": "Thinking about your own household's financial situation, how much, if at all, does gas prices affect your household's financial situation?",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much",
+            "text": "Not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ECON4_g_W54",
+    "questions": [
+      {
+        "key": "ECON4_g_W54",
+        "text": "Thinking about your own household's financial situation, how much, if at all, does the federal budget deficit affect your household's financial situation?",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much",
+            "text": "Not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ECON4_h_W54",
+    "questions": [
+      {
+        "key": "ECON4_h_W54",
+        "text": "Thinking about your own household's financial situation, how much, if at all, does wages and incomes in your area affect your household's financial situation?",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much",
+            "text": "Not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ECON4_i_W54",
+    "questions": [
+      {
+        "key": "ECON4_i_W54",
+        "text": "Thinking about your own household's financial situation, how much, if at all, does the country's tax system affect your household's financial situation?",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much",
+            "text": "Not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INEQ1_W54",
+    "questions": [
+      {
+        "key": "INEQ1_W54",
+        "text": "Thinking about the level of economic inequality in the country these days, would you say there is",
+        "valid_options": [
+          {
+            "raw": "Too much economic inequality",
+            "text": "Too much economic inequality",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Too little economic inequality",
+            "text": "Too little economic inequality",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "About the right amount of economic inequality",
+            "text": "About the right amount of economic inequality",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INEQ2_W54",
+    "questions": [
+      {
+        "key": "INEQ2_W54",
+        "text": "Do you think that",
+        "valid_options": [
+          {
+            "raw": "Some amount of economic inequality is acceptable",
+            "text": "Some amount of economic inequality is acceptable",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No amount of economic inequality is acceptable",
+            "text": "No amount of economic inequality is acceptable",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INEQ3_W54",
+    "questions": [
+      {
+        "key": "INEQ3_W54",
+        "text": "In order to address economic inequality in this country, do you think our economic system",
+        "valid_options": [
+          {
+            "raw": "Requires only minor changes",
+            "text": "Requires only minor changes",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Requires major changes",
+            "text": "Requires major changes",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Needs to be completely rebuilt",
+            "text": "Needs to be completely rebuilt",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INEQ4_a_W54",
+    "questions": [
+      {
+        "key": "INEQ4_a_W54",
+        "text": "How much responsibility, if any, should the federal government have in reducing economic inequality in our country?",
+        "valid_options": [
+          {
+            "raw": "A lot",
+            "text": "A lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Only a little",
+            "text": "Only a little",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "None",
+            "text": "None",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INEQ4_b_W54",
+    "questions": [
+      {
+        "key": "INEQ4_b_W54",
+        "text": "How much responsibility, if any, should state governments have in reducing economic inequality in our country?",
+        "valid_options": [
+          {
+            "raw": "A lot",
+            "text": "A lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Only a little",
+            "text": "Only a little",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "None",
+            "text": "None",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INEQ4_c_W54",
+    "questions": [
+      {
+        "key": "INEQ4_c_W54",
+        "text": "How much responsibility, if any, should large businesses and corporations have in reducing economic inequality in our country?",
+        "valid_options": [
+          {
+            "raw": "A lot",
+            "text": "A lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Only a little",
+            "text": "Only a little",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "None",
+            "text": "None",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INEQ4_d_W54",
+    "questions": [
+      {
+        "key": "INEQ4_d_W54",
+        "text": "How much responsibility, if any, should churches and other religious organizations have in reducing economic inequality in our country?",
+        "valid_options": [
+          {
+            "raw": "A lot",
+            "text": "A lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Only a little",
+            "text": "Only a little",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "None",
+            "text": "None",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INEQ4_e_W54",
+    "questions": [
+      {
+        "key": "INEQ4_e_W54",
+        "text": "How much responsibility, if any, should wealthy individuals have in reducing economic inequality in our country?",
+        "valid_options": [
+          {
+            "raw": "A lot",
+            "text": "A lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Only a little",
+            "text": "Only a little",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "None",
+            "text": "None",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INEQ5_a_W54",
+    "questions": [
+      {
+        "key": "INEQ5_a_W54",
+        "text": "How much, if at all, do you think the outsourcing of jobs to other countries contributes to economic inequality in this country?",
+        "valid_options": [
+          {
+            "raw": "Contributes a great deal",
+            "text": "Contributes a great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Contributes a fair amount",
+            "text": "Contributes a fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Contributes not too much",
+            "text": "Contributes not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Contributes not at all",
+            "text": "Contributes not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INEQ5_b_W54",
+    "questions": [
+      {
+        "key": "INEQ5_b_W54",
+        "text": "How much, if at all, do you think our current trade policies with other countries contributes to economic inequality in this country?",
+        "valid_options": [
+          {
+            "raw": "Contributes a great deal",
+            "text": "Contributes a great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Contributes a fair amount",
+            "text": "Contributes a fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Contributes not too much",
+            "text": "Contributes not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Contributes not at all",
+            "text": "Contributes not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INEQ5_c_W54",
+    "questions": [
+      {
+        "key": "INEQ5_c_W54",
+        "text": "How much, if at all, do you think the automation of jobs contributes to economic inequality in this country?",
+        "valid_options": [
+          {
+            "raw": "Contributes a great deal",
+            "text": "Contributes a great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Contributes a fair amount",
+            "text": "Contributes a fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Contributes not too much",
+            "text": "Contributes not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Contributes not at all",
+            "text": "Contributes not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INEQ5_d_W54",
+    "questions": [
+      {
+        "key": "INEQ5_d_W54",
+        "text": "How much, if at all, do you think too much regulation of major corporations contributes to economic inequality in this country?",
+        "valid_options": [
+          {
+            "raw": "Contributes a great deal",
+            "text": "Contributes a great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Contributes a fair amount",
+            "text": "Contributes a fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Contributes not too much",
+            "text": "Contributes not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Contributes not at all",
+            "text": "Contributes not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INEQ5_e_W54",
+    "questions": [
+      {
+        "key": "INEQ5_e_W54",
+        "text": "How much, if at all, do you think not enough regulation of major corporations contributes to economic inequality in this country?",
+        "valid_options": [
+          {
+            "raw": "Contributes a great deal",
+            "text": "Contributes a great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Contributes a fair amount",
+            "text": "Contributes a fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Contributes not too much",
+            "text": "Contributes not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Contributes not at all",
+            "text": "Contributes not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INEQ5_f_W54",
+    "questions": [
+      {
+        "key": "INEQ5_f_W54",
+        "text": "How much, if at all, do you think some people work harder than others contributes to economic inequality in this country?",
+        "valid_options": [
+          {
+            "raw": "Contributes a great deal",
+            "text": "Contributes a great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Contributes a fair amount",
+            "text": "Contributes a fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Contributes not too much",
+            "text": "Contributes not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Contributes not at all",
+            "text": "Contributes not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INEQ5_g_W54",
+    "questions": [
+      {
+        "key": "INEQ5_g_W54",
+        "text": "How much, if at all, do you think our tax system contributes to economic inequality in this country?",
+        "valid_options": [
+          {
+            "raw": "Contributes a great deal",
+            "text": "Contributes a great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Contributes a fair amount",
+            "text": "Contributes a fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Contributes not too much",
+            "text": "Contributes not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Contributes not at all",
+            "text": "Contributes not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INEQ5_h_W54",
+    "questions": [
+      {
+        "key": "INEQ5_h_W54",
+        "text": "How much, if at all, do you think the different life choices people make contributes to economic inequality in this country?",
+        "valid_options": [
+          {
+            "raw": "Contributes a great deal",
+            "text": "Contributes a great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Contributes a fair amount",
+            "text": "Contributes a fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Contributes not too much",
+            "text": "Contributes not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Contributes not at all",
+            "text": "Contributes not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INEQ5_i_W54",
+    "questions": [
+      {
+        "key": "INEQ5_i_W54",
+        "text": "How much, if at all, do you think some people starting out with more opportunities than others contributes to economic inequality in this country?",
+        "valid_options": [
+          {
+            "raw": "Contributes a great deal",
+            "text": "Contributes a great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Contributes a fair amount",
+            "text": "Contributes a fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Contributes not too much",
+            "text": "Contributes not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Contributes not at all",
+            "text": "Contributes not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INEQ5_j_W54",
+    "questions": [
+      {
+        "key": "INEQ5_j_W54",
+        "text": "How much, if at all, do you think problems with our educational system contributes to economic inequality in this country?",
+        "valid_options": [
+          {
+            "raw": "Contributes a great deal",
+            "text": "Contributes a great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Contributes a fair amount",
+            "text": "Contributes a fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Contributes not too much",
+            "text": "Contributes not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Contributes not at all",
+            "text": "Contributes not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INEQ5_k_W54",
+    "questions": [
+      {
+        "key": "INEQ5_k_W54",
+        "text": "How much, if at all, do you think discrimination against racial and ethnic minorities contributes to economic inequality in this country?",
+        "valid_options": [
+          {
+            "raw": "Contributes a great deal",
+            "text": "Contributes a great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Contributes a fair amount",
+            "text": "Contributes a fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Contributes not too much",
+            "text": "Contributes not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Contributes not at all",
+            "text": "Contributes not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INEQ5_l_W54",
+    "questions": [
+      {
+        "key": "INEQ5_l_W54",
+        "text": "How much, if at all, do you think the growing number of illegal immigrants working in the U.S. contributes to economic inequality in this country?",
+        "valid_options": [
+          {
+            "raw": "Contributes a great deal",
+            "text": "Contributes a great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Contributes a fair amount",
+            "text": "Contributes a fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Contributes not too much",
+            "text": "Contributes not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Contributes not at all",
+            "text": "Contributes not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INEQ5_m_W54",
+    "questions": [
+      {
+        "key": "INEQ5_m_W54",
+        "text": "How much, if at all, do you think the growing number of legal immigrants working in the U.S. contributes to economic inequality in this country?",
+        "valid_options": [
+          {
+            "raw": "Contributes a great deal",
+            "text": "Contributes a great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Contributes a fair amount",
+            "text": "Contributes a fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Contributes not too much",
+            "text": "Contributes not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Contributes not at all",
+            "text": "Contributes not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INEQ6_W54",
+    "questions": [
+      {
+        "key": "INEQ6_W54",
+        "text": "Thinking about children growing up in this country these days, how much, if at all, do you think their family's financial situation impacts their ability to succeed in life?",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much",
+            "text": "Not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INEQ7_W54",
+    "questions": [
+      {
+        "key": "INEQ7_W54",
+        "text": "Thinking about children growing up in the area where you live these days, how much, if at all, do you think their family's financial situation impacts their ability to succeed in life?",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much",
+            "text": "Not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INEQ8_a_W54",
+    "questions": [
+      {
+        "key": "INEQ8_a_W54",
+        "text": "How much, if at all, do you think the following proposals would do to reduce economic inequality in the U.S.? Increasing the federal minimum wage",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much",
+            "text": "Not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Nothing at all",
+            "text": "Nothing at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INEQ8_b_W54",
+    "questions": [
+      {
+        "key": "INEQ8_b_W54",
+        "text": "How much, if at all, do you think the following proposals would do to reduce economic inequality in the U.S.? Making college tuition free at both public two-year and four-year colleges",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much",
+            "text": "Not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Nothing at all",
+            "text": "Nothing at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INEQ8_c_W54",
+    "questions": [
+      {
+        "key": "INEQ8_c_W54",
+        "text": "How much, if at all, do you think the following proposals would do to reduce economic inequality in the U.S.? Increasing taxes on the wealthiest Americans",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much",
+            "text": "Not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Nothing at all",
+            "text": "Nothing at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INEQ8_d_W54",
+    "questions": [
+      {
+        "key": "INEQ8_d_W54",
+        "text": "How much, if at all, do you think the following proposals would do to reduce economic inequality in the U.S.? Expanding Medicare so that it covers Americans of all ages",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much",
+            "text": "Not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Nothing at all",
+            "text": "Nothing at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INEQ8_e_W54",
+    "questions": [
+      {
+        "key": "INEQ8_e_W54",
+        "text": "How much, if at all, do you think the following proposals would do to reduce economic inequality in the U.S.? Ensuring that workers have the skills they need for today's jobs",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much",
+            "text": "Not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Nothing at all",
+            "text": "Nothing at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INEQ8_f_W54",
+    "questions": [
+      {
+        "key": "INEQ8_f_W54",
+        "text": "How much, if at all, do you think the following proposals would do to reduce economic inequality in the U.S.? Making college tuition free at public two-year colleges",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much",
+            "text": "Not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Nothing at all",
+            "text": "Nothing at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INEQ8_g_W54",
+    "questions": [
+      {
+        "key": "INEQ8_g_W54",
+        "text": "How much, if at all, do you think the following proposals would do to reduce economic inequality in the U.S.? Eliminating college debt",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much",
+            "text": "Not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Nothing at all",
+            "text": "Nothing at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INEQ8_h_W54",
+    "questions": [
+      {
+        "key": "INEQ8_h_W54",
+        "text": "How much, if at all, do you think the following proposals would do to reduce economic inequality in the U.S.? Reducing illegal immigration",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much",
+            "text": "Not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Nothing at all",
+            "text": "Nothing at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INEQ8_i_W54",
+    "questions": [
+      {
+        "key": "INEQ8_i_W54",
+        "text": "How much, if at all, do you think the following proposals would do to reduce economic inequality in the U.S.? Expanding government benefits for the poor",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much",
+            "text": "Not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Nothing at all",
+            "text": "Nothing at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INEQ8_j_W54",
+    "questions": [
+      {
+        "key": "INEQ8_j_W54",
+        "text": "How much, if at all, do you think the following proposals would do to reduce economic inequality in the U.S.? Breaking up large corporations",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much",
+            "text": "Not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Nothing at all",
+            "text": "Nothing at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INEQ9_W54",
+    "questions": [
+      {
+        "key": "INEQ9_W54",
+        "text": "In order to address economic inequality in this country, do you think it would be better for the government to",
+        "valid_options": [
+          {
+            "raw": "Give direct assistance to people who are poor in the form of cash payments or tax credits",
+            "text": "Give direct assistance to people who are poor in the form of cash payments or tax credits",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Invest in education and job training programs for people who are poor",
+            "text": "Invest in education and job training programs for people who are poor",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INEQ10_W54",
+    "questions": [
+      {
+        "key": "INEQ10_W54",
+        "text": "In order to address economic inequality in this country, do you think the government",
+        "valid_options": [
+          {
+            "raw": "Should raise taxes on the wealthiest Americans",
+            "text": "Should raise taxes on the wealthiest Americans",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Should not raise taxes on the wealthiest Americans",
+            "text": "Should not raise taxes on the wealthiest Americans",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INEQ11_W54",
+    "questions": [
+      {
+        "key": "INEQ11_W54",
+        "text": "In order to address economic inequality in this country, do you think the government",
+        "valid_options": [
+          {
+            "raw": "Should raise taxes on people like you",
+            "text": "Should raise taxes on people like you",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Should not raise taxes on people like you",
+            "text": "Should not raise taxes on people like you",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ECON5_a_W54",
+    "questions": [
+      {
+        "key": "ECON5_a_W54",
+        "text": "Do you think the country's current economic conditions are helping or hurting you and your family?",
+        "valid_options": [
+          {
+            "raw": "Helping a lot",
+            "text": "Helping a lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Helping a little",
+            "text": "Helping a little",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hurting a little",
+            "text": "Hurting a little",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Hurting a lot",
+            "text": "Hurting a lot",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Neither helping nor hurting",
+            "text": "Neither helping nor hurting",
+            "natural_language": null,
+            "ordinal": 2.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ECON5_b_W54",
+    "questions": [
+      {
+        "key": "ECON5_b_W54",
+        "text": "Do you think the country's current economic conditions are helping or hurting people who are wealthy?",
+        "valid_options": [
+          {
+            "raw": "Helping a lot",
+            "text": "Helping a lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Helping a little",
+            "text": "Helping a little",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hurting a little",
+            "text": "Hurting a little",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Hurting a lot",
+            "text": "Hurting a lot",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Neither helping nor hurting",
+            "text": "Neither helping nor hurting",
+            "natural_language": null,
+            "ordinal": 2.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ECON5_c_W54",
+    "questions": [
+      {
+        "key": "ECON5_c_W54",
+        "text": "Do you think the country's current economic conditions are helping or hurting the middle class?",
+        "valid_options": [
+          {
+            "raw": "Helping a lot",
+            "text": "Helping a lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Helping a little",
+            "text": "Helping a little",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hurting a little",
+            "text": "Hurting a little",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Hurting a lot",
+            "text": "Hurting a lot",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Neither helping nor hurting",
+            "text": "Neither helping nor hurting",
+            "natural_language": null,
+            "ordinal": 2.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ECON5_d_W54",
+    "questions": [
+      {
+        "key": "ECON5_d_W54",
+        "text": "Do you think the country's current economic conditions are helping or hurting people who are poor?",
+        "valid_options": [
+          {
+            "raw": "Helping a lot",
+            "text": "Helping a lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Helping a little",
+            "text": "Helping a little",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hurting a little",
+            "text": "Hurting a little",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Hurting a lot",
+            "text": "Hurting a lot",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Neither helping nor hurting",
+            "text": "Neither helping nor hurting",
+            "natural_language": null,
+            "ordinal": 2.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ECON5_e_W54",
+    "questions": [
+      {
+        "key": "ECON5_e_W54",
+        "text": "Do you think the country's current economic conditions are helping or hurting older adults?",
+        "valid_options": [
+          {
+            "raw": "Helping a lot",
+            "text": "Helping a lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Helping a little",
+            "text": "Helping a little",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hurting a little",
+            "text": "Hurting a little",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Hurting a lot",
+            "text": "Hurting a lot",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Neither helping nor hurting",
+            "text": "Neither helping nor hurting",
+            "natural_language": null,
+            "ordinal": 2.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ECON5_f_W54",
+    "questions": [
+      {
+        "key": "ECON5_f_W54",
+        "text": "Do you think the country's current economic conditions are helping or hurting young adults?",
+        "valid_options": [
+          {
+            "raw": "Helping a lot",
+            "text": "Helping a lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Helping a little",
+            "text": "Helping a little",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hurting a little",
+            "text": "Hurting a little",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Hurting a lot",
+            "text": "Hurting a lot",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Neither helping nor hurting",
+            "text": "Neither helping nor hurting",
+            "natural_language": null,
+            "ordinal": 2.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ECON5_g_W54",
+    "questions": [
+      {
+        "key": "ECON5_g_W54",
+        "text": "Do you think the country's current economic conditions are helping or hurting people who are white?",
+        "valid_options": [
+          {
+            "raw": "Helping a lot",
+            "text": "Helping a lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Helping a little",
+            "text": "Helping a little",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hurting a little",
+            "text": "Hurting a little",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Hurting a lot",
+            "text": "Hurting a lot",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Neither helping nor hurting",
+            "text": "Neither helping nor hurting",
+            "natural_language": null,
+            "ordinal": 2.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ECON5_h_W54",
+    "questions": [
+      {
+        "key": "ECON5_h_W54",
+        "text": "Do you think the country's current economic conditions are helping or hurting people who are black?",
+        "valid_options": [
+          {
+            "raw": "Helping a lot",
+            "text": "Helping a lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Helping a little",
+            "text": "Helping a little",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hurting a little",
+            "text": "Hurting a little",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Hurting a lot",
+            "text": "Hurting a lot",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Neither helping nor hurting",
+            "text": "Neither helping nor hurting",
+            "natural_language": null,
+            "ordinal": 2.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ECON5_i_W54",
+    "questions": [
+      {
+        "key": "ECON5_i_W54",
+        "text": "Do you think the country's current economic conditions are helping or hurting people who are Hispanic?",
+        "valid_options": [
+          {
+            "raw": "Helping a lot",
+            "text": "Helping a lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Helping a little",
+            "text": "Helping a little",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hurting a little",
+            "text": "Hurting a little",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Hurting a lot",
+            "text": "Hurting a lot",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Neither helping nor hurting",
+            "text": "Neither helping nor hurting",
+            "natural_language": null,
+            "ordinal": 2.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ECON5_j_W54",
+    "questions": [
+      {
+        "key": "ECON5_j_W54",
+        "text": "Do you think the country's current economic conditions are helping or hurting people without college degrees?",
+        "valid_options": [
+          {
+            "raw": "Helping a lot",
+            "text": "Helping a lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Helping a little",
+            "text": "Helping a little",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hurting a little",
+            "text": "Hurting a little",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Hurting a lot",
+            "text": "Hurting a lot",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Neither helping nor hurting",
+            "text": "Neither helping nor hurting",
+            "natural_language": null,
+            "ordinal": 2.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ECON5_k_W54",
+    "questions": [
+      {
+        "key": "ECON5_k_W54",
+        "text": "Do you think the country's current economic conditions are helping or hurting people with college degrees?",
+        "valid_options": [
+          {
+            "raw": "Helping a lot",
+            "text": "Helping a lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Helping a little",
+            "text": "Helping a little",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hurting a little",
+            "text": "Hurting a little",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Hurting a lot",
+            "text": "Hurting a lot",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Neither helping nor hurting",
+            "text": "Neither helping nor hurting",
+            "natural_language": null,
+            "ordinal": 2.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ECIMPa_W54",
+    "questions": [
+      {
+        "key": "ECIMPa_W54",
+        "text": "How much power and influence do you think politicians have on today's economy?",
+        "valid_options": [
+          {
+            "raw": "Too much power and influence",
+            "text": "Too much power and influence",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Not enough power and influence",
+            "text": "Not enough power and influence",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "About the right amount",
+            "text": "About the right amount",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ECIMPb_W54",
+    "questions": [
+      {
+        "key": "ECIMPb_W54",
+        "text": "How much power and influence do you think technology companies have on today's economy?",
+        "valid_options": [
+          {
+            "raw": "Too much power and influence",
+            "text": "Too much power and influence",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Not enough power and influence",
+            "text": "Not enough power and influence",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "About the right amount",
+            "text": "About the right amount",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ECIMPc_W54",
+    "questions": [
+      {
+        "key": "ECIMPc_W54",
+        "text": "How much power and influence do you think labor unions have on today's economy?",
+        "valid_options": [
+          {
+            "raw": "Too much power and influence",
+            "text": "Too much power and influence",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Not enough power and influence",
+            "text": "Not enough power and influence",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "About the right amount",
+            "text": "About the right amount",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ECIMPd_W54",
+    "questions": [
+      {
+        "key": "ECIMPd_W54",
+        "text": "How much power and influence do you think banks and other financial institutions have on today's economy?",
+        "valid_options": [
+          {
+            "raw": "Too much power and influence",
+            "text": "Too much power and influence",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Not enough power and influence",
+            "text": "Not enough power and influence",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "About the right amount",
+            "text": "About the right amount",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ECIMPe_W54",
+    "questions": [
+      {
+        "key": "ECIMPe_W54",
+        "text": "How much power and influence do you think small businesses have on today's economy?",
+        "valid_options": [
+          {
+            "raw": "Too much power and influence",
+            "text": "Too much power and influence",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Not enough power and influence",
+            "text": "Not enough power and influence",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "About the right amount",
+            "text": "About the right amount",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ECIMPf_W54",
+    "questions": [
+      {
+        "key": "ECIMPf_W54",
+        "text": "How much power and influence do you think large corporations have on today's economy?",
+        "valid_options": [
+          {
+            "raw": "Too much power and influence",
+            "text": "Too much power and influence",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Not enough power and influence",
+            "text": "Not enough power and influence",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "About the right amount",
+            "text": "About the right amount",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ECIMPg_W54",
+    "questions": [
+      {
+        "key": "ECIMPg_W54",
+        "text": "How much power and influence do you think people who are wealthy have on today's economy?",
+        "valid_options": [
+          {
+            "raw": "Too much power and influence",
+            "text": "Too much power and influence",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Not enough power and influence",
+            "text": "Not enough power and influence",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "About the right amount",
+            "text": "About the right amount",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ECIMPh_W54",
+    "questions": [
+      {
+        "key": "ECIMPh_W54",
+        "text": "How much power and influence do you think people who are poor have on today's economy?",
+        "valid_options": [
+          {
+            "raw": "Too much power and influence",
+            "text": "Too much power and influence",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Not enough power and influence",
+            "text": "Not enough power and influence",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "About the right amount",
+            "text": "About the right amount",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ECIMPi_W54",
+    "questions": [
+      {
+        "key": "ECIMPi_W54",
+        "text": "How much power and influence do you think the middle class have on today's economy?",
+        "valid_options": [
+          {
+            "raw": "Too much power and influence",
+            "text": "Too much power and influence",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Not enough power and influence",
+            "text": "Not enough power and influence",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "About the right amount",
+            "text": "About the right amount",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ECIMPj_W54",
+    "questions": [
+      {
+        "key": "ECIMPj_W54",
+        "text": "How much power and influence do you think Health insurance companies have on today's economy?",
+        "valid_options": [
+          {
+            "raw": "Too much power and influence",
+            "text": "Too much power and influence",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Not enough power and influence",
+            "text": "Not enough power and influence",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "About the right amount",
+            "text": "About the right amount",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WORRY2a_W54",
+    "questions": [
+      {
+        "key": "WORRY2a_W54",
+        "text": "How often, if ever, do you worry about the amount of debt you have?",
+        "valid_options": [
+          {
+            "raw": "Every day",
+            "text": "Every day",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Almost every day",
+            "text": "Almost every day",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Sometimes",
+            "text": "Sometimes",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Rarely",
+            "text": "Rarely",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Never",
+            "text": "Never",
+            "natural_language": null,
+            "ordinal": 5.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WORRY2b_W54",
+    "questions": [
+      {
+        "key": "WORRY2b_W54",
+        "text": "How often, if ever, do you worry about losing your job?",
+        "valid_options": [
+          {
+            "raw": "Every day",
+            "text": "Every day",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Almost every day",
+            "text": "Almost every day",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Sometimes",
+            "text": "Sometimes",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Rarely",
+            "text": "Rarely",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Never",
+            "text": "Never",
+            "natural_language": null,
+            "ordinal": 5.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WORRY2c_W54",
+    "questions": [
+      {
+        "key": "WORRY2c_W54",
+        "text": "How often, if ever, do you worry about paying your bills?",
+        "valid_options": [
+          {
+            "raw": "Every day",
+            "text": "Every day",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Almost every day",
+            "text": "Almost every day",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Sometimes",
+            "text": "Sometimes",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Rarely",
+            "text": "Rarely",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Never",
+            "text": "Never",
+            "natural_language": null,
+            "ordinal": 5.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WORRY2d_W54",
+    "questions": [
+      {
+        "key": "WORRY2d_W54",
+        "text": "How often, if ever, do you worry about the cost of health care for you and your family?",
+        "valid_options": [
+          {
+            "raw": "Every day",
+            "text": "Every day",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Almost every day",
+            "text": "Almost every day",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Sometimes",
+            "text": "Sometimes",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Rarely",
+            "text": "Rarely",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Never",
+            "text": "Never",
+            "natural_language": null,
+            "ordinal": 5.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WORRY2e_W54",
+    "questions": [
+      {
+        "key": "WORRY2e_W54",
+        "text": "How often, if ever, do you worry about being able to save enough for your retirement?",
+        "valid_options": [
+          {
+            "raw": "Every day",
+            "text": "Every day",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Almost every day",
+            "text": "Almost every day",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Sometimes",
+            "text": "Sometimes",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Rarely",
+            "text": "Rarely",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Never",
+            "text": "Never",
+            "natural_language": null,
+            "ordinal": 5.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FINANCEa_W54",
+    "questions": [
+      {
+        "key": "FINANCEa_W54",
+        "text": "Do you have a savings account?",
+        "valid_options": [
+          {
+            "raw": "Yes, have this",
+            "text": "Yes, have this",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, do not have this",
+            "text": "No, do not have this",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FINANCEb_W54",
+    "questions": [
+      {
+        "key": "FINANCEb_W54",
+        "text": "Do you have an IRA, 401K or a similar kind of retirement account?",
+        "valid_options": [
+          {
+            "raw": "Yes, have this",
+            "text": "Yes, have this",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, do not have this",
+            "text": "No, do not have this",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FINANCEc_W54",
+    "questions": [
+      {
+        "key": "FINANCEc_W54",
+        "text": "Do you have personal investments in stocks, bonds or mutual funds other than those held in an IRA or 401K?",
+        "valid_options": [
+          {
+            "raw": "Yes, have this",
+            "text": "Yes, have this",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, do not have this",
+            "text": "No, do not have this",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "DEBTa_W54",
+    "questions": [
+      {
+        "key": "DEBTa_W54",
+        "text": "Do you have the following type of loans or debt: Credit card debt",
+        "valid_options": [
+          {
+            "raw": "Yes, have this",
+            "text": "Yes, have this",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, do not have this",
+            "text": "No, do not have this",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "DEBTb_W54",
+    "questions": [
+      {
+        "key": "DEBTb_W54",
+        "text": "Do you have the following type of loans or debt: Car loan",
+        "valid_options": [
+          {
+            "raw": "Yes, have this",
+            "text": "Yes, have this",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, do not have this",
+            "text": "No, do not have this",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "DEBTc_W54",
+    "questions": [
+      {
+        "key": "DEBTc_W54",
+        "text": "Do you have the following type of loans or debt: Student loans",
+        "valid_options": [
+          {
+            "raw": "Yes, have this",
+            "text": "Yes, have this",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, do not have this",
+            "text": "No, do not have this",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "DEBTd_W54",
+    "questions": [
+      {
+        "key": "DEBTd_W54",
+        "text": "Do you have the following type of loans or debt: A mortgage or a home loan",
+        "valid_options": [
+          {
+            "raw": "Yes, have this",
+            "text": "Yes, have this",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, do not have this",
+            "text": "No, do not have this",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "DEBTe_W54",
+    "questions": [
+      {
+        "key": "DEBTe_W54",
+        "text": "Do you have the following type of loans or debt: Debt from medical bills",
+        "valid_options": [
+          {
+            "raw": "Yes, have this",
+            "text": "Yes, have this",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, do not have this",
+            "text": "No, do not have this",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BENEFITSa_W54",
+    "questions": [
+      {
+        "key": "BENEFITSa_W54",
+        "text": "Have you or anyone in your household received food assistance, such as SNAP benefits government services and benefits in the past 12 months?",
+        "valid_options": [
+          {
+            "raw": "Yes, have received in the past 12 months",
+            "text": "Yes, have received in the past 12 months",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, have not received in the past 12 months",
+            "text": "No, have not received in the past 12 months",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BENEFITSb_W54",
+    "questions": [
+      {
+        "key": "BENEFITSb_W54",
+        "text": "Have you or anyone in your household received medicaid benefits government services and benefits in the past 12 months?",
+        "valid_options": [
+          {
+            "raw": "Yes, have received in the past 12 months",
+            "text": "Yes, have received in the past 12 months",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, have not received in the past 12 months",
+            "text": "No, have not received in the past 12 months",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BENEFITSc_W54",
+    "questions": [
+      {
+        "key": "BENEFITSc_W54",
+        "text": "Have you or anyone in your household received unemployment benefits government services and benefits in the past 12 months?",
+        "valid_options": [
+          {
+            "raw": "Yes, have received in the past 12 months",
+            "text": "Yes, have received in the past 12 months",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, have not received in the past 12 months",
+            "text": "No, have not received in the past 12 months",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WORKHARD_W53",
+    "questions": [
+      {
+        "key": "WORKHARD_W53",
+        "text": "Please choose the statement that comes closer to your own views.",
+        "valid_options": [
+          {
+            "raw": "Most people who want to get ahead can make it if they're willing to work hard",
+            "text": "Most people who want to get ahead can make it if they're willing to work hard",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Hard work and determination are no guarantee of success for most people",
+            "text": "Hard work and determination are no guarantee of success for most people",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "POOREASY_W53",
+    "questions": [
+      {
+        "key": "POOREASY_W53",
+        "text": "Please choose the statement that comes closer to your own views.",
+        "valid_options": [
+          {
+            "raw": "Poor people today have it easy because they can get government benefits without doing anything in return",
+            "text": "Poor people today have it easy because they can get government benefits without doing anything in return",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Poor people have hard lives because government benefits don't go far enough to help them live decently",
+            "text": "Poor people have hard lives because government benefits don't go far enough to help them live decently",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ECONFAIR_W53",
+    "questions": [
+      {
+        "key": "ECONFAIR_W53",
+        "text": "Please choose the statement that comes closer to your own views",
+        "valid_options": [
+          {
+            "raw": "The economic system in this country unfairly favors powerful interests",
+            "text": "The economic system in this country unfairly favors powerful interests",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "The economic system in this country is generally fair to most Americans",
+            "text": "The economic system in this country is generally fair to most Americans",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CREGION",
+    "questions": [
+      {
+        "key": "CREGION",
+        "text": "Which part of the United States do you currently live in?",
+        "valid_options": [
+          {
+            "raw": "Midwest",
+            "text": "Midwest",
+            "natural_language": "I live in the Midwest of the United States."
+          },
+          {
+            "raw": "Northeast",
+            "text": "Northeast",
+            "natural_language": "I live in the Northeast of the United States."
+          },
+          {
+            "raw": "South",
+            "text": "South",
+            "natural_language": "I live in the South of the United States."
+          },
+          {
+            "raw": "West",
+            "text": "West",
+            "natural_language": "I live in the West of the United States."
+          }
+        ],
+        "invalid_options": []
+      }
+    ]
+  },
+  {
+    "name": "AGE",
+    "questions": [
+      {
+        "key": "AGE",
+        "text": "How old are you?",
+        "valid_options": [
+          {
+            "raw": "18-29",
+            "text": "18-29",
+            "natural_language": "I am between 18-29 years old."
+          },
+          {
+            "raw": "30-49",
+            "text": "30-49",
+            "natural_language": "I am between 30-49 years old."
+          },
+          {
+            "raw": "50-64",
+            "text": "50-64",
+            "natural_language": "I am between 50-64 years old."
+          },
+          {
+            "raw": "65+",
+            "text": "65+",
+            "natural_language": "I am 65+ years old."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SEX",
+    "questions": [
+      {
+        "key": "SEX",
+        "text": "What is the sex that you were assigned at birth?",
+        "valid_options": [
+          {
+            "raw": "Female",
+            "text": "Female",
+            "natural_language": "I am female."
+          },
+          {
+            "raw": "Male",
+            "text": "Male",
+            "natural_language": "I am male."
+          }
+        ],
+        "invalid_options": [
+          "In some other way",
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "EDUCATION",
+    "questions": [
+      {
+        "key": "EDUCATION",
+        "text": "What is the highest level of schooling or degree that you have completed?",
+        "valid_options": [
+          {
+            "raw": "Associate's degree",
+            "text": "Associate's degree",
+            "natural_language": "I earned an associate's degree."
+          },
+          {
+            "raw": "College graduate/some postgrad",
+            "text": "graduated from college",
+            "natural_language": "I graduated from college."
+          },
+          {
+            "raw": "High school graduate",
+            "text": "High school graduate",
+            "natural_language": "I graduated from high school."
+          },
+          {
+            "raw": "Less than high school",
+            "text": "Less than high school",
+            "natural_language": "I did not graduate from high school."
+          },
+          {
+            "raw": "Postgraduate",
+            "text": "Postgraduate",
+            "natural_language": "I went to graduate school."
+          },
+          {
+            "raw": "Some college, no degree",
+            "text": "Some college, no degree",
+            "natural_language": "I went to some college."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CITIZEN",
+    "questions": [
+      {
+        "key": "CITIZEN",
+        "text": "Are you a citizen of the United States?",
+        "valid_options": [
+          {
+            "raw": "No",
+            "text": "No",
+            "natural_language": "I am not a citizen of the United States."
+          },
+          {
+            "raw": "Yes",
+            "text": "Yes",
+            "natural_language": "I am a citizen of the United States."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MARITAL",
+    "questions": [
+      {
+        "key": "MARITAL",
+        "text": "Which of these best describes you?",
+        "valid_options": [
+          {
+            "raw": "Divorced",
+            "text": "Divorced",
+            "natural_language": "I am divorced."
+          },
+          {
+            "raw": "Living with a partner",
+            "text": "Living with a partner",
+            "natural_language": "I am living with a partner."
+          },
+          {
+            "raw": "Married",
+            "text": "Married",
+            "natural_language": "I am married."
+          },
+          {
+            "raw": "Never been married",
+            "text": "Never been married",
+            "natural_language": "I have never been married."
+          },
+          {
+            "raw": "Separated",
+            "text": "Separated",
+            "natural_language": "I am separated from my partner."
+          },
+          {
+            "raw": "Widowed",
+            "text": "Widowed",
+            "natural_language": "I am widowed."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RELIG",
+    "questions": [
+      {
+        "key": "RELIG",
+        "text": "What is your present religion, if any?",
+        "valid_options": [
+          {
+            "raw": "Agnostic",
+            "text": "Agnostic",
+            "natural_language": "Religiously speaking, I am agnostic."
+          },
+          {
+            "raw": "Atheist",
+            "text": "Atheist",
+            "natural_language": "Religiously speaking, I am atheist."
+          },
+          {
+            "raw": "Buddhist",
+            "text": "Buddhist",
+            "natural_language": "Religiously speaking, I am Buddhist."
+          },
+          {
+            "raw": "Hindu",
+            "text": "Hindu",
+            "natural_language": "Religiously speaking, I am Hindu."
+          },
+          {
+            "raw": "Jewish",
+            "text": "Jewish",
+            "natural_language": "Religiously speaking, I am Jewish."
+          },
+          {
+            "raw": "Mormon",
+            "text": "Mormon",
+            "natural_language": "Religiously speaking, I am a member of the Church of Jesus Christ of Latter-day Saints."
+          },
+          {
+            "raw": "Muslim",
+            "text": "Muslim",
+            "natural_language": "Religiously speaking, I am Muslim."
+          },
+          {
+            "raw": "Nothing in particular",
+            "text": "Nothing in particular",
+            "natural_language": "Religiously speaking, I don't identify with anything in particular."
+          },
+          {
+            "raw": "Orthodox",
+            "text": "Orthodox",
+            "natural_language": "Religiously speaking, I am Orthodox."
+          },
+          {
+            "raw": "Other",
+            "text": "Other",
+            "natural_language": "Religiously speaking, I am not mainstream."
+          },
+          {
+            "raw": "Protestant",
+            "text": "Protestant",
+            "natural_language": "Religiously speaking, I am Protestant."
+          },
+          {
+            "raw": "Roman Catholic",
+            "text": "Roman Catholic",
+            "natural_language": "Religiously speaking, I am Roman Catholic."
+          }
+        ],
+        "invalid_options": [
+          "Refused",
+          "Christian",
+          "Unitarian"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RELIGATTEND",
+    "questions": [
+      {
+        "key": "RELIGATTEND",
+        "text": "Aside from weddings and funerals, how often do you attend religious services?",
+        "valid_options": [
+          {
+            "raw": "A few times a year",
+            "text": "A few times a year",
+            "natural_language": "I attend religious services a few times a year."
+          },
+          {
+            "raw": "More than once a week",
+            "text": "More than once a week",
+            "natural_language": "I attend religious services more than once a week."
+          },
+          {
+            "raw": "Never",
+            "text": "Never",
+            "natural_language": "I never attend religious services."
+          },
+          {
+            "raw": "Once a week",
+            "text": "Once a week",
+            "natural_language": "I attend religious services once a week."
+          },
+          {
+            "raw": "Once or twice a month",
+            "text": "Once or twice a month",
+            "natural_language": "I attend religious services once or twice a month."
+          },
+          {
+            "raw": "Seldom",
+            "text": "Seldom",
+            "natural_language": "I seldom attend religious services."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "POLPARTY",
+    "questions": [
+      {
+        "key": "POLPARTY",
+        "text": "In politics today, what do you consider yourself?",
+        "valid_options": [
+          {
+            "raw": "Democrat",
+            "text": "Democrat",
+            "natural_language": "Politically, I am a Democrat."
+          },
+          {
+            "raw": "Independent",
+            "text": "Independent",
+            "natural_language": "Politically, I am an independent."
+          },
+          {
+            "raw": "Republican",
+            "text": "Republican",
+            "natural_language": "Politically, I am a Republican."
+          }
+        ],
+        "invalid_options": [
+          "Other",
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INCOME",
+    "questions": [
+      {
+        "key": "INCOME",
+        "text": "Last year, what was your total family income from all sources, before taxes?",
+        "valid_options": [
+          {
+            "raw": "$100,000 or more",
+            "text": "$100,000 or more",
+            "natural_language": "Last year, my household income was $100,000 or more before taxes."
+          },
+          {
+            "raw": "$30,000-$50,000",
+            "text": "$30,000-$50,000",
+            "natural_language": "Last year, my household income was $30,000-$50,000 before taxes."
+          },
+          {
+            "raw": "$50,000-$75,000",
+            "text": "$50,000-$75,000",
+            "natural_language": "Last year, my household income was $50,000-$75,000 before taxes."
+          },
+          {
+            "raw": "$75,000-$100,000",
+            "text": "$75,000-$100,000",
+            "natural_language": "Last year, my household income was $75,000-$100,000 before taxes."
+          },
+          {
+            "raw": "Less than $30,000",
+            "text": "Less than $30,000",
+            "natural_language": "Last year, my household income was less than $30,000 before taxes."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "POLIDEOLOGY",
+    "questions": [
+      {
+        "key": "POLIDEOLOGY",
+        "text": "In general, how would you describe your political ideology?",
+        "valid_options": [
+          {
+            "raw": "Conservative",
+            "text": "Conservative",
+            "natural_language": "Politically, I am conservative."
+          },
+          {
+            "raw": "Liberal",
+            "text": "Liberal",
+            "natural_language": "Politically, I am liberal."
+          },
+          {
+            "raw": "Moderate",
+            "text": "Moderate",
+            "natural_language": "Politically, I am moderate."
+          },
+          {
+            "raw": "Very conservative",
+            "text": "Very conservative",
+            "natural_language": "Politically, I am very conservative."
+          },
+          {
+            "raw": "Very liberal",
+            "text": "Very liberal",
+            "natural_language": "Politically, I am very liberal."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACE",
+    "questions": [
+      {
+        "key": "RACE",
+        "text": "What is your race or origin?",
+        "valid_options": [
+          {
+            "raw": "Asian",
+            "text": "Asian",
+            "natural_language": "I am Asian."
+          },
+          {
+            "raw": "Black",
+            "text": "Black",
+            "natural_language": "I am Black."
+          },
+          {
+            "raw": "Hispanic",
+            "text": "Hispanic",
+            "natural_language": "I am Hispanic."
+          },
+          {
+            "raw": "Mixed Race",
+            "text": "Mixed Race",
+            "natural_language": "I am mixed race."
+          },
+          {
+            "raw": "Other",
+            "text": "Other",
+            "natural_language": "I am racially ambiguous."
+          },
+          {
+            "raw": "White",
+            "text": "White",
+            "natural_language": "I am White."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  }
+]

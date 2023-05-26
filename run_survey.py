@@ -1,6 +1,7 @@
 import argparse
 import asyncio
 import json
+import logging
 import os
 import typing
 
@@ -11,6 +12,27 @@ from tqdm.asyncio import tqdm_asyncio
 from lm_survey.samplers import AutoSampler
 from lm_survey.survey import DependentVariableSample, Survey
 from pathlib import Path
+
+
+def infill_missing_responses(
+    results_filepath,
+) -> typing.Tuple[
+    typing.List[DependentVariableSample],
+    typing.List[DependentVariableSample],
+]:
+    with open(results_filepath, "r") as file:
+        results = json.load(file)
+    question_samples = [
+        DependentVariableSample(
+            **sample_dict,
+        )
+        for sample_dict in results
+    ]
+    # Find the question_samples that are missing responses
+    missing_responses = [qs for qs in question_samples if not qs.has_response()]
+    filled_responses = [qs for qs in question_samples if qs.has_response()]
+
+    return missing_responses, filled_responses
 
 
 def parse_model_name(model_name: str) -> str:
@@ -80,6 +102,17 @@ async def main(
     variables_dir = os.path.join("variables", survey_name)
     experiment_dir = os.path.join("experiments", experiment_name, survey_name)
 
+    if logging:
+        logger = logging.getLogger(__name__)
+        logger.setLevel(logging.ERROR)
+        handler = logging.FileHandler(Path(experiment_dir) / "errors.log")
+        handler.setLevel(logging.ERROR)
+        formatter = logging.Formatter("%(asctime)s %(message)s")
+        handler.setFormatter(formatter)
+        logger.addHandler(handler)
+    else:
+        logger = None
+
     with open(os.path.join(experiment_dir, "config.json"), "r") as file:
         config = json.load(file)
 
@@ -91,13 +124,26 @@ async def main(
         dependent_variable_names=config["dependent_variable_names"],
     )
 
-    sampler = AutoSampler(model_name=model_name)
+    sampler = AutoSampler(model_name=model_name, logger=logger)
 
-    dependent_variable_samples = list(
-        survey.iterate(
-            n_samples_per_dependent_variable=n_samples_per_dependent_variable
+    parsed_model_name = parse_model_name(model_name)
+    experiment_metadata_dir = os.path.join(experiment_dir, parsed_model_name)
+    # Use pathlib to check if experiment_metadata_dir/results.json exists.
+    # If it does, then we default to filling in missing response objects instead of re-running the survey.
+    results_path = Path(experiment_metadata_dir) / "results.json"
+    if results_path.exists():
+        (
+            dependent_variable_samples,
+            finished_samples,
+        ) = infill_missing_responses(results_path)
+
+    else:
+        dependent_variable_samples = list(
+            survey.iterate(
+                n_samples_per_dependent_variable=n_samples_per_dependent_variable
+            )
         )
-    )
+        finished_samples = []
 
     # TODO: This is a really lame way to do this. We should probably do it another way,
     # especially because it seems obvious that the model name should not be tied to its
@@ -113,7 +159,7 @@ async def main(
                 ) = await sampler.rank_completions(
                     prompt=dependent_variable_sample.prompt,
                     completions=dependent_variable_sample.completion.possible_completions,
-                )
+                )  # type: ignore
                 dependent_variable_sample.completion.set_completion_log_probs(
                     completion_log_probs
                 )
@@ -131,7 +177,7 @@ async def main(
             completion_log_probs, response_object = sampler.rank_completions(
                 prompt=dependent_variable_sample.prompt,
                 completions=dependent_variable_sample.completion.possible_completions,
-            )
+            )  # type: ignore
             dependent_variable_sample.completion.set_completion_log_probs(
                 completion_log_probs
             )
@@ -150,6 +196,8 @@ async def main(
         f"Accuracy: {accuracy * 100:.2f}%"
         f" ({len(dependent_variable_samples)} samples)"
     )
+
+    dependent_variable_samples += finished_samples
 
     save_experiment(
         model_name=model_name,
@@ -189,11 +237,11 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     # To prevent overbilling OpenAI.
-    if (
-        args.model_name.startswith("gpt3")
-        and args.n_samples_per_dependent_variable is None
-    ):
-        args.n_samples_per_dependent_variable = 100
+    # if (
+    #     args.model_name.startswith("gpt3")
+    #     and args.n_samples_per_dependent_variable is None
+    # ):
+    #     args.n_samples_per_dependent_variable = 100
 
     if args.survey_name == "all":
         paths = sorted(Path("data").glob("ATP/American*/"))
