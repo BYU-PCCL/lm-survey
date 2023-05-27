@@ -12,10 +12,7 @@ from scipy.stats import wasserstein_distance
 class SurveyResults:
     def __init__(self, question_samples: typing.List[DependentVariableSample]):
         df = pd.DataFrame(
-            data=[
-                self._flatten_layer(sample.to_dict())
-                for sample in question_samples
-            ]
+            data=[self._flatten_layer(sample.to_dict()) for sample in question_samples]
         )
         # Make the index the index column and sort by it
         df.set_index("index", inplace=True)
@@ -67,13 +64,6 @@ class SurveyResults:
     ) -> pd.Series:
         return groups.is_completion_correct.mean()
 
-    def _compute_WD(
-        self,
-    ) -> pd.Series:
-        # Calculate the WD between the columns D_H and D_M
-
-        return groups.is_completion_correct.mean()
-
     def _bootstrap_sample(self, df: pd.DataFrame) -> pd.DataFrame:
         return df.sample(frac=1, replace=True)  # type: ignore
 
@@ -89,9 +79,7 @@ class SurveyResults:
         groups: pandas.core.groupby.generic.DataFrameGroupBy,
         n_bootstraps: int = 1000,
     ) -> pd.Series:
-        bootstraps = pd.concat(
-            [self._bootstrap(groups) for _ in range(n_bootstraps)]
-        )
+        bootstraps = pd.concat([self._bootstrap(groups) for _ in range(n_bootstraps)])
 
         return bootstraps.groupby(level=0).std()
 
@@ -137,15 +125,11 @@ class SurveyResults:
             D_H = D.copy()
             D_M = D.copy()
             for k, v in (
-                tdf.correct_completion.str.strip()
-                .value_counts(normalize=True)
-                .items()
+                tdf.correct_completion.str.strip().value_counts(normalize=True).items()
             ):
                 D_H[k] = v
             for k, v in (
-                tdf.top_completion.str.strip()
-                .value_counts(normalize=True)
-                .items()
+                tdf.top_completion.str.strip().value_counts(normalize=True).items()
             ):
                 D_M[k] = v
 
@@ -183,21 +167,19 @@ class SurveyResults:
         return (df.shape[0] / len(df.variable_name.unique()),)
 
     def _get_max_wd(self, ordered_ref_weights):
-        d0, d1 = np.zeros(len(ordered_ref_weights)), np.zeros(
-            len(ordered_ref_weights)
-        )
+        d0, d1 = np.zeros(len(ordered_ref_weights)), np.zeros(len(ordered_ref_weights))
         d0[np.argmax(ordered_ref_weights)] = 1
         d1[np.argmin(ordered_ref_weights)] = 1
-        max_wd = wasserstein_distance(
-            ordered_ref_weights, ordered_ref_weights, d0, d1
-        )
+        max_wd = wasserstein_distance(ordered_ref_weights, ordered_ref_weights, d0, d1)
         return max_wd
 
 
 if __name__ == "__main__":
     input_filepath = os.path.join(
-        "results",
-        "roper",
+        "experiments",
+        "breadth",
+        "ATP/American_Trends_Panel_W26",
+        "llama-7b-hf",
         "results.json",
     )
 
@@ -208,7 +190,7 @@ if __name__ == "__main__":
         DependentVariableSample(
             **sample_dict,
         )
-        for sample_dict in results["llama-7b-hf"]
+        for sample_dict in results
     ]
 
     survey_results = SurveyResults(question_samples=question_samples)
