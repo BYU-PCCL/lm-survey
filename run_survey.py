@@ -177,6 +177,15 @@ async def main(
         )
         finished_samples = []
 
+    # TODO: Doing this here avoids making any architectural decisions to explicitly
+    # support chat models in the sampler. We should consider doing that.
+    def get_sample_prompt(
+        dependent_variable_sample: DependentVariableSample,
+    ) -> str:
+        if hasattr(sampler, "using_chat_model") and sampler.using_chat_model:
+            return dependent_variable_sample.chat_prompt
+        return dependent_variable_sample.completion_prompt
+
     # TODO: This is a really lame way to do this. We should probably do it another way,
     # especially because it seems obvious that the model name should not be tied to its
     # sampler implementation. This is a symptom of a very lazy async implementation.
@@ -184,12 +193,14 @@ async def main(
         sample_coroutines = []
         for dependent_variable_sample in dependent_variable_samples:
 
-            async def request_completion(dependent_variable_sample):
+            async def request_completion(
+                dependent_variable_sample: DependentVariableSample,
+            ):
                 (
                     completion_log_probs,
                     response_object,
                 ) = await sampler.rank_completions(
-                    prompt=dependent_variable_sample.prompt,
+                    prompt=get_sample_prompt(dependent_variable_sample),
                     completions=dependent_variable_sample.completion.possible_completions,
                 )  # type: ignore
                 dependent_variable_sample.completion.set_completion_log_probs(
@@ -207,7 +218,7 @@ async def main(
     else:
         for dependent_variable_sample in tqdm(dependent_variable_samples):
             completion_log_probs, response_object = sampler.rank_completions(
-                prompt=dependent_variable_sample.prompt,
+                prompt=get_sample_prompt(dependent_variable_sample),
                 completions=dependent_variable_sample.completion.possible_completions,
             )  # type: ignore
             dependent_variable_sample.completion.set_completion_log_probs(

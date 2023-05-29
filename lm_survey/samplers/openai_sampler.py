@@ -21,6 +21,8 @@ OPENAI_TOKEN_COSTS = {
     "ada": 0.04,
 }
 
+CHAT_MODELS = ["gpt-4", "gpt-3.5-turbo"]
+
 
 class OpenAiSampler(BaseSampler):
     def __init__(self, *args, **kwargs):
@@ -36,6 +38,8 @@ class OpenAiSampler(BaseSampler):
 
         if openai.api_key is None:
             raise ValueError("OpenAI API key must be set")
+
+        self.using_chat_model = self.engine in CHAT_MODELS
 
         self.tokenizer = None
 
@@ -64,20 +68,30 @@ class OpenAiSampler(BaseSampler):
         self, prompt: str, n_probs: int, **kwargs
     ) -> typing.Tuple[typing.Dict[str, int], typing.Any]:
         try:
-            response = openai.Completion.create(
-                engine=self.engine,
-                prompt=prompt,
-                max_tokens=1,
-                logprobs=n_probs,
-                temperature=0,
-                **kwargs,
-            )
-            logprobs = response["choices"][0]["logprobs"]["top_logprobs"][0]  # type: ignore
-            # sort dictionary by values
-            sorted_logprobs = dict(
-                sorted(logprobs.items(), key=lambda x: x[1], reverse=True)
-            )
-            raise Exception("testing logging")
+            if self.using_chat_model:
+                response = openai.ChatCompletion.create(
+                    model=self.engine,
+                    messages=[{"role": "system", "content": prompt}],
+                    max_tokens=1,
+                    logprobs=n_probs,
+                    temperature=0,
+                    **kwargs,
+                )
+                token_response = response["choices"][0]["message"]["content"]  # type: ignore
+                sorted_logprobs = {f" {token_response}": 1}
+            else:
+                response = openai.Completion.create(
+                    engine=self.engine,
+                    prompt=prompt,
+                    max_tokens=1,
+                    temperature=0,
+                    **kwargs,
+                )
+                logprobs = response["choices"][0]["logprobs"]["top_logprobs"][0]  # type: ignore
+                # sort dictionary by values
+                sorted_logprobs = dict(
+                    sorted(logprobs.items(), key=lambda x: x[1], reverse=True)
+                )
             return sorted_logprobs, response
         except Exception as e:
             print(e)

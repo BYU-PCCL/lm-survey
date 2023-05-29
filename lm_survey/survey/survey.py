@@ -13,7 +13,7 @@ from lm_survey.survey.dependent_variable_sample import (
 )
 from lm_survey.survey.question import Question, ValidOption
 from lm_survey.survey.variable import Variable
-from lm_survey.prompt_templates import INDEPENDENT_VARIABLE_SUMMARY_TEMPLATE
+from lm_survey.prompt_templates import COMPLETION_TEMPLATE, CHAT_SYSTEM_TEMPLATE
 import json
 import functools
 import argparse
@@ -119,12 +119,22 @@ class Survey:
             for variable in self._independent_variables
         }
 
-    def _templatize(
+    def _templatize_completion(
         self,
         independent_variable_summary: str,
         dependent_variable_prompt: str,
     ) -> str:
-        return INDEPENDENT_VARIABLE_SUMMARY_TEMPLATE.format(
+        return COMPLETION_TEMPLATE.format(
+            context_summary=independent_variable_summary,
+            dependent_variable_prompt=dependent_variable_prompt,
+        )
+
+    def _templatize_chat(
+        self,
+        independent_variable_summary: str,
+        dependent_variable_prompt: str,
+    ) -> str:
+        return CHAT_SYSTEM_TEMPLATE.format(
             context_summary=independent_variable_summary,
             dependent_variable_prompt=dependent_variable_prompt,
         )
@@ -494,7 +504,12 @@ class Survey:
 
                 dependent_variable_prompt = dependent_variable.to_prompt(row)
 
-                prompt = self._templatize(
+                completion_prompt = self._templatize_completion(
+                    independent_variable_summary=independent_variable_summary,
+                    dependent_variable_prompt=dependent_variable_prompt,
+                )
+
+                chat_prompt = self._templatize_chat(
                     independent_variable_summary=independent_variable_summary,
                     dependent_variable_prompt=dependent_variable_prompt,
                 )
@@ -516,7 +531,8 @@ class Survey:
                     question=dependent_variable.to_question(row),
                     independent_variables=independent_variables,
                     index=i,  # type: ignore
-                    prompt=prompt,
+                    completion_prompt=completion_prompt,
+                    chat_prompt=chat_prompt,
                     completion=completion,
                 )
 
