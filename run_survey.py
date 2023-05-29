@@ -3,6 +3,7 @@ import asyncio
 import json
 import logging
 import os
+import time
 import typing
 
 import numpy as np
@@ -92,30 +93,53 @@ def save_experiment(
         )
 
 
+def count_off(seconds: int = 5):
+    for i in range(seconds):
+        print(seconds - i)
+        time.sleep(1)
+
+
 async def main(
     model_name: str,
     survey_name: str,
     experiment_name: str,
     n_samples_per_dependent_variable: typing.Optional[int] = None,
-    should_overwrite: bool = False,
+    overwrite: bool = False,
+    infill: bool = False,
 ) -> None:
     data_dir = os.path.join("data", survey_name)
     variables_dir = os.path.join("variables", survey_name)
     experiment_dir = os.path.join("experiments", experiment_name, survey_name)
 
     parsed_model_name = parse_model_name(model_name)
+    results_path = Path(experiment_dir) / parsed_model_name / "results.json"
 
     # Use pathlib to check if  a file exists
-    if Path(
-        os.path.join(experiment_dir, parsed_model_name, "results.json")
-    ).is_file():
+    if results_path.is_file():
         print(f"Experiment {experiment_name} already exists.")
 
-        if not should_overwrite:
-            print("Use --force to overwrite. Exiting.")
+        if overwrite and infill:
+            print("Choose whether to overwrite or infill. Exiting.")
             return
+        elif infill:
+            print("\nINFILLING MISSING RESPONSE OBJECTS IN")
+            # count_off()
+        elif overwrite:
+            print("\nOVERWRITING IN")
+            # count_off()
         else:
-            print("Overwriting.")
+            print(
+                "Use --force to overwrite or --infill to infill missing"
+                " response_objects. Exiting."
+            )
+            return
+    else:
+        if infill:
+            print(
+                "Cannot infill missing response objects if the experiment does"
+                " not exist. Exiting."
+            )
+            return
 
     if logging:
         logger = logging.getLogger(__name__)
@@ -131,28 +155,21 @@ async def main(
     with open(os.path.join(experiment_dir, "config.json"), "r") as file:
         config = json.load(file)
 
-    survey = Survey(
-        name=survey_name,
-        data_filename=os.path.join(data_dir, "data.csv"),
-        variables_filename=os.path.join(variables_dir, "variables.json"),
-        independent_variable_names=config["independent_variable_names"],
-        dependent_variable_names=config["dependent_variable_names"],
-    )
-
     sampler = AutoSampler(model_name=model_name, logger=logger)
 
-    parsed_model_name = parse_model_name(model_name)
-    experiment_metadata_dir = os.path.join(experiment_dir, parsed_model_name)
-    # Use pathlib to check if experiment_metadata_dir/results.json exists.
-    # If it does, then we default to filling in missing response objects instead of re-running the survey.
-    results_path = Path(experiment_metadata_dir) / "results.json"
-    if results_path.exists():
+    if infill:
         (
             dependent_variable_samples,
             finished_samples,
         ) = infill_missing_responses(results_path)
-
     else:
+        survey = Survey(
+            name=survey_name,
+            data_filename=os.path.join(data_dir, "data.csv"),
+            variables_filename=os.path.join(variables_dir, "variables.json"),
+            independent_variable_names=config["independent_variable_names"],
+            dependent_variable_names=config["dependent_variable_names"],
+        )
         dependent_variable_samples = list(
             survey.iterate(
                 n_samples_per_dependent_variable=n_samples_per_dependent_variable
@@ -254,6 +271,12 @@ if __name__ == "__main__":
         action="store_true",
         help="Force overwrite of existing experiment.",
     )
+    parser.add_argument(
+        "-i",
+        "--infill",
+        action="store_true",
+        help="Fill in missing response_objects of existing experiment.",
+    )
 
     args = parser.parse_args()
 
@@ -265,16 +288,19 @@ if __name__ == "__main__":
     #     args.n_samples_per_dependent_variable = 100
 
     if args.survey_name == "all":
-        paths = sorted(Path("data").glob("ATP/American*/"))
+        exp_dir = "experiments" / Path(args.experiment_name)
+        paths = sorted(Path(exp_dir).glob("ATP/American*/"))
+        print(paths)
         for path in tqdm(paths):
-            args.survey_name = str(path.relative_to("data"))
+            args.survey_name = str(path.relative_to(exp_dir))
             asyncio.run(
                 main(
                     model_name=args.model_name,
                     survey_name=args.survey_name,
                     experiment_name=args.experiment_name,
                     n_samples_per_dependent_variable=args.n_samples_per_dependent_variable,
-                    should_overwrite=args.force,
+                    overwrite=args.force,
+                    infill=args.infill,
                 )
             )
 
@@ -285,6 +311,7 @@ if __name__ == "__main__":
                 survey_name=args.survey_name,
                 experiment_name=args.experiment_name,
                 n_samples_per_dependent_variable=args.n_samples_per_dependent_variable,
-                should_overwrite=args.force,
+                overwrite=args.force,
+                infill=args.infill,
             )
         )

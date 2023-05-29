@@ -144,3 +144,12 @@ class DependentVariableSample:
     def has_response(self) -> bool:
         # Check if self_dict['completion']['response_object'] is an empty dictionary
         return bool(self.completion.response_object)
+
+    def remove_response(self):
+        # For testing purposes
+        copy = DependentVariableSample(**self.to_dict())
+        copy.completion.response_object = {}
+        return copy
+
+    def copy(self):
+        return DependentVariableSample(**self.to_dict())

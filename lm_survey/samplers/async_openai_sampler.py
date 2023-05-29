@@ -62,6 +62,8 @@ class AsyncOpenAiSampler(BaseSampler):
                 except RateLimitError:
                     # TODO: This is not a good way to do logging; we should actually use
                     # the logging module or something similar.
+                    if self.logger:
+                        self.logger.exception("Rate limited, retrying...")
                     print("Rate limited, retrying...", file=sys.stderr)
                     continue
 
@@ -79,7 +81,6 @@ class AsyncOpenAiSampler(BaseSampler):
             sorted_logprobs = dict(
                 sorted(logprobs.items(), key=lambda x: x[1], reverse=True)
             )
-            raise ValueError("This is a test")
             return sorted_logprobs, response
         except Exception as e:
             print(e)
