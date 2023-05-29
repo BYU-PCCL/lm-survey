@@ -6,7 +6,7 @@ from openai.error import RateLimitError
 import torch
 from aiolimiter import AsyncLimiter
 
-from lm_survey.samplers.base_sampler import BaseSampler, MaybeAwaitable
+from lm_survey.samplers.base_sampler import BaseSampler
 
 # Constants for throttling
 OPENAI_RPM = 3000
