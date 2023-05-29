@@ -5,6 +5,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 from sklearn.metrics import normalized_mutual_info_score
+from tqdm import tqdm
 
 from lm_survey.survey.dependent_variable_sample import (
     Completion,
@@ -441,7 +442,9 @@ class Survey:
                 key=variable_name,
                 text=question_text,
                 valid_options=[
-                    ValidOption(raw=option, text=option, ordinal=ordinal).to_dict()
+                    ValidOption(
+                        raw=option, text=option, ordinal=ordinal
+                    ).to_dict()
                     for ordinal, option in zip(option_ordinals, valid_options)
                 ],
                 invalid_options=invalid_options,
@@ -472,7 +475,7 @@ class Survey:
 
         # The index from iterrows gives type errors when using it as a key in iloc.
         for name, dependent_variable in self._dependent_variables.items():
-            for i, row in self.df.sample(frac=1).iterrows():
+            for i, row in tqdm(self.df.sample(frac=1).iterrows()):
                 try:
                     independent_variable_summary = (
                         self._create_independent_variable_summary(row)

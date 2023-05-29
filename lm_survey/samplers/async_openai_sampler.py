@@ -34,7 +34,10 @@ class AsyncOpenAiSampler(BaseSampler):
         top_log_probs, response = await self.send_prompt(prompt, n_probs=100)
 
         log_probs = torch.tensor(
-            [top_log_probs.get(completion, -torch.inf) for completion in completions]
+            [
+                top_log_probs.get(completion, -torch.inf)
+                for completion in completions
+            ]
         )
 
         normalized_log_probs = torch.nn.functional.log_softmax(log_probs, dim=0)
@@ -53,10 +56,14 @@ class AsyncOpenAiSampler(BaseSampler):
             # We do this inside of the loop so that retries respect the rate limit too.
             async with self._async_limiter:
                 try:
-                    return await openai.Completion.acreate(engine=self.engine, **kwargs)
+                    return await openai.Completion.acreate(
+                        engine=self.engine, **kwargs
+                    )
                 except RateLimitError:
                     # TODO: This is not a good way to do logging; we should actually use
                     # the logging module or something similar.
+                    if self.logger:
+                        self.logger.exception("Rate limited, retrying...")
                     print("Rate limited, retrying...", file=sys.stderr)
                     continue
 
@@ -77,6 +84,8 @@ class AsyncOpenAiSampler(BaseSampler):
             return sorted_logprobs, response
         except Exception as e:
             print(e)
+            if self.logger:
+                self.logger.exception(e)
             return {}, None
 
     async def sample_several(self, prompt, temperature=0, n_tokens=10):

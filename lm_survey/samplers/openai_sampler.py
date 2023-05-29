@@ -4,6 +4,7 @@ import tiktoken
 import torch
 
 from lm_survey.samplers.base_sampler import BaseSampler
+import logging
 import openai
 
 OPENAI_TOKEN_COSTS = {
@@ -76,9 +77,12 @@ class OpenAiSampler(BaseSampler):
             sorted_logprobs = dict(
                 sorted(logprobs.items(), key=lambda x: x[1], reverse=True)
             )
+            raise Exception("testing logging")
             return sorted_logprobs, response
         except Exception as e:
             print(e)
+            if self.logger:
+                self.logger.exception(e)
             return {}, None
 
     def sample_several(
