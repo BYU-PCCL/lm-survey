@@ -14,51 +14,25 @@ from lm_survey.survey import Survey
 def estimate_survey_costs(
     sampler: BaseSampler,
     survey_name: str,
+    experiment_name: str,
     *,
     n_samples_per_dependent_variable: typing.Optional[int] = None,
     n_top_mutual_info_dvs: typing.Optional[int] = None,
 ):
-    # TODO(vinhowe): fix this
-    survey_directory = survey_name
+    data_dir = os.path.join("data", survey_name)
+    variables_dir = os.path.join("variables", survey_name)
+    experiment_dir = os.path.join("experiments", experiment_name, survey_name)
 
-    with open(
-        os.path.join(survey_directory, "independent-variables.json"), "r"
-    ) as file:
-        independent_variable_names = json.load(file)
-
-    with open(os.path.join(survey_directory, "dependent-variables.json"), "r") as file:
-        dependent_variable_names = json.load(file)
-
-    data_filename = os.path.join(survey_directory, "data.csv")
-    variables_filename = os.path.join(survey_directory, "config.json")
+    with open(os.path.join(experiment_dir, "config.json"), "r") as file:
+        config = json.load(file)
 
     survey = Survey(
         name=survey_name,
-        data_filename=data_filename,
-        variables_filename=variables_filename,
-        independent_variable_names=independent_variable_names,
-        dependent_variable_names=dependent_variable_names,
+        data_filename=os.path.join(data_dir, "data.csv"),
+        variables_filename=os.path.join(variables_dir, "variables.json"),
+        independent_variable_names=config["independent_variable_names"],
+        dependent_variable_names=config["dependent_variable_names"],
     )
-
-    if n_top_mutual_info_dvs is not None:
-        cached_mutual_info_stats_filename = os.path.join(
-            survey_directory, "cached_mutual_info_stats.csv"
-        )
-        if os.path.exists(cached_mutual_info_stats_filename):
-            mutual_info_stats = pd.read_csv(
-                cached_mutual_info_stats_filename, index_col=0
-            )
-        else:
-            mutual_info_stats = survey.mutual_info_stats()
-            mutual_info_stats.to_csv(cached_mutual_info_stats_filename)
-        dependent_variable_names = mutual_info_stats.index[:n_top_mutual_info_dvs]
-        survey = Survey(
-            name=survey_name,
-            data_filename=data_filename,
-            variables_filename=variables_filename,
-            independent_variable_names=independent_variable_names,
-            dependent_variable_names=dependent_variable_names,
-        )
 
     dependent_variable_samples = list(
         survey.iterate(
@@ -71,7 +45,7 @@ def estimate_survey_costs(
     if hasattr(sampler, "batch_estimate_prompt_cost"):
         completion_costs = sampler.batch_estimate_prompt_cost(
             [
-                dependent_variable_sample.prompt
+                dependent_variable_sample.completion_prompt
                 for dependent_variable_sample in dependent_variable_samples
             ]
         )
@@ -79,7 +53,7 @@ def estimate_survey_costs(
         completion_costs = []
         for dependent_variable_sample in tqdm(dependent_variable_samples):
             completion_cost = sampler.estimate_prompt_cost(
-                dependent_variable_sample.prompt
+                dependent_variable_sample.completion_prompt
             )
             completion_costs.append(completion_cost)
 
@@ -94,6 +68,7 @@ def estimate_survey_costs(
 def main(
     model_name: str,
     survey_names: typing.List[str],
+    experiment_name: str,
     n_samples_per_dependent_variable: typing.Optional[int] = None,
     n_top_mutual_info_dvs: typing.Optional[int] = None,
 ) -> None:
@@ -104,6 +79,7 @@ def main(
         estimate = estimate_survey_costs(
             sampler=sampler,
             survey_name=survey_name,
+            experiment_name=experiment_name,
             n_samples_per_dependent_variable=n_samples_per_dependent_variable,
             n_top_mutual_info_dvs=n_top_mutual_info_dvs,
         )
@@ -144,6 +120,12 @@ if __name__ == "__main__":
         "--n_top_mutual_info_dvs",
         type=int,
     )
+    parser.add_argument(
+        "-e",
+        "--experiment_name",
+        type=str,
+        default="default",
+    )
     # Positional argument for survey dir(s)
     parser.add_argument(
         "survey_name",
@@ -156,6 +138,7 @@ if __name__ == "__main__":
     main(
         model_name=args.model_name,
         survey_names=args.survey_name,
+        experiment_name=args.experiment_name,
         n_samples_per_dependent_variable=args.n_samples_per_dependent_variable,
         n_top_mutual_info_dvs=args.n_top_mutual_info_dvs,
     )

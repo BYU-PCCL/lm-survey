@@ -1,0 +1,770 @@
+[
+    {
+        "name": "age",
+        "questions": [
+            {
+                "key": "age",
+                "text": "",
+                "valid_options": [
+                    {
+                        "raw": "18",
+                        "text": "18",
+                        "natural_language": "I am 18 years old."
+                    },
+                    {
+                        "raw": "19",
+                        "text": "19",
+                        "natural_language": "I am 19 years old."
+                    },
+                    {
+                        "raw": "20",
+                        "text": "20",
+                        "natural_language": "I am 20 years old."
+                    },
+                    {
+                        "raw": "21",
+                        "text": "21",
+                        "natural_language": "I am 21 years old."
+                    },
+                    {
+                        "raw": "22",
+                        "text": "22",
+                        "natural_language": "I am 22 years old."
+                    },
+                    {
+                        "raw": "23",
+                        "text": "23",
+                        "natural_language": "I am 23 years old."
+                    },
+                    {
+                        "raw": "24",
+                        "text": "24",
+                        "natural_language": "I am 24 years old."
+                    },
+                    {
+                        "raw": "25",
+                        "text": "25",
+                        "natural_language": "I am 25 years old."
+                    },
+                    {
+                        "raw": "26",
+                        "text": "26",
+                        "natural_language": "I am 26 years old."
+                    },
+                    {
+                        "raw": "27",
+                        "text": "27",
+                        "natural_language": "I am 27 years old."
+                    },
+                    {
+                        "raw": "28",
+                        "text": "28",
+                        "natural_language": "I am 28 years old."
+                    },
+                    {
+                        "raw": "29",
+                        "text": "29",
+                        "natural_language": "I am 29 years old."
+                    },
+                    {
+                        "raw": "30",
+                        "text": "30",
+                        "natural_language": "I am 30 years old."
+                    },
+                    {
+                        "raw": "31",
+                        "text": "31",
+                        "natural_language": "I am 31 years old."
+                    },
+                    {
+                        "raw": "32",
+                        "text": "32",
+                        "natural_language": "I am 32 years old."
+                    },
+                    {
+                        "raw": "33",
+                        "text": "33",
+                        "natural_language": "I am 33 years old."
+                    },
+                    {
+                        "raw": "34",
+                        "text": "34",
+                        "natural_language": "I am 34 years old."
+                    },
+                    {
+                        "raw": "35",
+                        "text": "35",
+                        "natural_language": "I am 35 years old."
+                    },
+                    {
+                        "raw": "36",
+                        "text": "36",
+                        "natural_language": "I am 36 years old."
+                    },
+                    {
+                        "raw": "37",
+                        "text": "37",
+                        "natural_language": "I am 37 years old."
+                    },
+                    {
+                        "raw": "38",
+                        "text": "38",
+                        "natural_language": "I am 38 years old."
+                    },
+                    {
+                        "raw": "39",
+                        "text": "39",
+                        "natural_language": "I am 39 years old."
+                    },
+                    {
+                        "raw": "40",
+                        "text": "40",
+                        "natural_language": "I am 40 years old."
+                    },
+                    {
+                        "raw": "41",
+                        "text": "41",
+                        "natural_language": "I am 41 years old."
+                    },
+                    {
+                        "raw": "42",
+                        "text": "42",
+                        "natural_language": "I am 42 years old."
+                    },
+                    {
+                        "raw": "43",
+                        "text": "43",
+                        "natural_language": "I am 43 years old."
+                    },
+                    {
+                        "raw": "44",
+                        "text": "44",
+                        "natural_language": "I am 44 years old."
+                    },
+                    {
+                        "raw": "45",
+                        "text": "45",
+                        "natural_language": "I am 45 years old."
+                    },
+                    {
+                        "raw": "46",
+                        "text": "46",
+                        "natural_language": "I am 46 years old."
+                    },
+                    {
+                        "raw": "51",
+                        "text": "51",
+                        "natural_language": "I am 51 years old."
+                    },
+                    {
+                        "raw": "53",
+                        "text": "53",
+                        "natural_language": "I am 53 years old."
+                    },
+                    {
+                        "raw": "54",
+                        "text": "54",
+                        "natural_language": "I am 54 years old."
+                    },
+                    {
+                        "raw": "55",
+                        "text": "55",
+                        "natural_language": "I am 55 years old."
+                    },
+                    {
+                        "raw": "56",
+                        "text": "56",
+                        "natural_language": "I am 56 years old."
+                    },
+                    {
+                        "raw": "57",
+                        "text": "57",
+                        "natural_language": "I am 57 years old."
+                    },
+                    {
+                        "raw": "58",
+                        "text": "58",
+                        "natural_language": "I am 58 years old."
+                    },
+                    {
+                        "raw": "59",
+                        "text": "59",
+                        "natural_language": "I am 59 years old."
+                    },
+                    {
+                        "raw": "60",
+                        "text": "60",
+                        "natural_language": "I am 60 years old."
+                    },
+                    {
+                        "raw": "61",
+                        "text": "61",
+                        "natural_language": "I am 61 years old."
+                    },
+                    {
+                        "raw": "62",
+                        "text": "62",
+                        "natural_language": "I am 62 years old."
+                    },
+                    {
+                        "raw": "63",
+                        "text": "63",
+                        "natural_language": "I am 63 years old."
+                    },
+                    {
+                        "raw": "64",
+                        "text": "64",
+                        "natural_language": "I am 64 years old."
+                    },
+                    {
+                        "raw": "65",
+                        "text": "65",
+                        "natural_language": "I am 65 years old."
+                    },
+                    {
+                        "raw": "66",
+                        "text": "66",
+                        "natural_language": "I am 66 years old."
+                    },
+                    {
+                        "raw": "67",
+                        "text": "67",
+                        "natural_language": "I am 67 years old."
+                    },
+                    {
+                        "raw": "68",
+                        "text": "68",
+                        "natural_language": "I am 68 years old."
+                    },
+                    {
+                        "raw": "69",
+                        "text": "69",
+                        "natural_language": "I am 69 years old."
+                    },
+                    {
+                        "raw": "70",
+                        "text": "70",
+                        "natural_language": "I am 70 years old."
+                    },
+                    {
+                        "raw": "71",
+                        "text": "71",
+                        "natural_language": "I am 71 years old."
+                    },
+                    {
+                        "raw": "72",
+                        "text": "72",
+                        "natural_language": "I am 72 years old."
+                    },
+                    {
+                        "raw": "73",
+                        "text": "73",
+                        "natural_language": "I am 73 years old."
+                    },
+                    {
+                        "raw": "74",
+                        "text": "74",
+                        "natural_language": "I am 74 years old."
+                    },
+                    {
+                        "raw": "75",
+                        "text": "75",
+                        "natural_language": "I am 75 years old."
+                    },
+                    {
+                        "raw": "76",
+                        "text": "76",
+                        "natural_language": "I am 76 years old."
+                    },
+                    {
+                        "raw": "77",
+                        "text": "77",
+                        "natural_language": "I am 77 years old."
+                    },
+                    {
+                        "raw": "78",
+                        "text": "78",
+                        "natural_language": "I am 78 years old."
+                    },
+                    {
+                        "raw": "79",
+                        "text": "79",
+                        "natural_language": "I am 79 years old."
+                    },
+                    {
+                        "raw": "80",
+                        "text": "80",
+                        "natural_language": "I am 80 years old."
+                    },
+                    {
+                        "raw": "81",
+                        "text": "81",
+                        "natural_language": "I am 81 years old."
+                    },
+                    {
+                        "raw": "82",
+                        "text": "82",
+                        "natural_language": "I am 82 years old."
+                    },
+                    {
+                        "raw": "86",
+                        "text": "86",
+                        "natural_language": "I am 86 years old."
+                    },
+                    {
+                        "raw": "83",
+                        "text": "83",
+                        "natural_language": "I am 83 years old."
+                    },
+                    {
+                        "raw": "84",
+                        "text": "84",
+                        "natural_language": "I am 84 years old."
+                    },
+                    {
+                        "raw": "85",
+                        "text": "85",
+                        "natural_language": "I am 85 years old."
+                    },
+                    {
+                        "raw": "94",
+                        "text": "94",
+                        "natural_language": "I am 94 years old."
+                    }
+                ],
+                "invalid_options": [
+                    NaN
+                ]
+            }
+        ]
+    },
+    {
+        "name": "gender",
+        "questions": [
+            {
+                "key": "female",
+                "text": "",
+                "valid_options": [
+                    {
+                        "raw": "0",
+                        "text": "no",
+                        "natural_language": "I am male."
+                    },
+                    {
+                        "raw": "1",
+                        "text": "yes",
+                        "natural_language": "I am female."
+                    }
+                ],
+                "invalid_options": [
+                    NaN
+                ]
+            }
+        ]
+    },
+    {
+        "name": "race",
+        "questions": [
+            {
+                "key": "hisp",
+                "text": "Are you hispanic?",
+                "valid_options": [
+                    {
+                        "raw": "1",
+                        "text": "hispanic",
+                        "natural_language": "I am Hispanic."
+                    }
+                ],
+                "invalid_options": [
+                    NaN,
+                    "0"
+                ]
+            },
+            {
+                "key": "white",
+                "text": "",
+                "valid_options": [
+                    {
+                        "raw": "1",
+                        "text": "1",
+                        "natural_language": "I am White."
+                    }
+                ],
+                "invalid_options": [
+                    NaN,
+                    "0"
+                ]
+            },
+            {
+                "key": "black",
+                "text": "",
+                "valid_options": [
+                    {
+                        "raw": "1",
+                        "text": "1",
+                        "natural_language": "I am Black."
+                    }
+                ],
+                "invalid_options": [
+                    NaN,
+                    "0"
+                ]
+            },
+            {
+                "key": "other_race",
+                "text": "",
+                "valid_options": [
+                    {
+                        "raw": "1",
+                        "text": "1",
+                        "natural_language": "I am not Hispanic or White or Black."
+                    }
+                ],
+                "invalid_options": [
+                    NaN,
+                    "0"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "income",
+        "questions": [
+            {
+                "key": "income",
+                "text": "",
+                "valid_options": [
+                    {
+                        "raw": "1",
+                        "text": "less than $10,000",
+                        "natural_language": "My annual household income before taxes is less than $10,000."
+                    },
+                    {
+                        "raw": "2",
+                        "text": "$10,000 to $19,999",
+                        "natural_language": "My annual household income before taxes is $10,000 to $19,999."
+                    },
+                    {
+                        "raw": "3",
+                        "text": "$20,000 to $29,999",
+                        "natural_language": "My annual household income before taxes is $20,000 to $29,999."
+                    },
+                    {
+                        "raw": "4",
+                        "text": "$30,000 to $39,999",
+                        "natural_language": "My annual household income before taxes is $30,000 to $39,999."
+                    },
+                    {
+                        "raw": "5",
+                        "text": "$40,000 to $49,999",
+                        "natural_language": "My annual household income before taxes is $40,000 to $49,999."
+                    },
+                    {
+                        "raw": "6",
+                        "text": "$50,000 to $59,999",
+                        "natural_language": "My annual household income before taxes is $50,000 to $59,999."
+                    },
+                    {
+                        "raw": "7",
+                        "text": "$60,000 to $69,999",
+                        "natural_language": "My annual household income before taxes is $60,000 to $69,999."
+                    },
+                    {
+                        "raw": "8",
+                        "text": "$70,000 to $79,999",
+                        "natural_language": "My annual household income before taxes is $70,000 to $79,999."
+                    },
+                    {
+                        "raw": "9",
+                        "text": "$80,000 to $89,999",
+                        "natural_language": "My annual household income before taxes is $80,000 to $89,999."
+                    },
+                    {
+                        "raw": "10",
+                        "text": "$90,000 to $99,999",
+                        "natural_language": "My annual household income before taxes is $90,000 to $99,999."
+                    },
+                    {
+                        "raw": "11",
+                        "text": "$100,000 to $149,999",
+                        "natural_language": "My annual household income before taxes is $100,000 to $149,999."
+                    },
+                    {
+                        "raw": "12",
+                        "text": "$150,000 or more",
+                        "natural_language": "My annual household income before taxes is $150,000 or more."
+                    }
+                ],
+                "invalid_options": [
+                    NaN,
+                    "-99"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "educ",
+        "questions": [
+            {
+                "key": "educ",
+                "text": "What is the highest level of school you have completed or the highest degree you have received?\u00a0",
+                "valid_options": [
+                    {
+                        "raw": "1",
+                        "text": "didn't graduate from high school",
+                        "natural_language": "I didn't graduate from high school."
+                    },
+                    {
+                        "raw": "2",
+                        "text": "graduated from high school",
+                        "natural_language": "I graduated from high school."
+                    },
+                    {
+                        "raw": "3",
+                        "text": "went to some college",
+                        "natural_language": "I went to some college."
+                    },
+                    {
+                        "raw": "4",
+                        "text": "got my associate's degree",
+                        "natural_language": "I got an associate's degree."
+                    },
+                    {
+                        "raw": "5",
+                        "text": "got my bachelor's degree",
+                        "natural_language": "I got a bachelor's degree."
+                    },
+                    {
+                        "raw": "6",
+                        "text": "got my master's degree",
+                        "natural_language": "I got a master's degree."
+                    },
+                    {
+                        "raw": "7",
+                        "text": "got a PhD",
+                        "natural_language": "I got a PhD."
+                    },
+                    {
+                        "raw": "8",
+                        "text": "went to graduate school",
+                        "natural_language": "I got a professional degree."
+                    }
+                ],
+                "invalid_options": [
+                    NaN
+                ]
+            }
+        ]
+    },
+    {
+        "name": "vote_lastelection",
+        "questions": [
+            {
+                "key": "vote_lastelection",
+                "text": "",
+                "valid_options": [
+                    {
+                        "raw": "1",
+                        "text": "voted",
+                        "natural_language": "I voted in the last election."
+                    },
+                    {
+                        "raw": "2",
+                        "text": "didn't vote",
+                        "natural_language": "I didn't vote in the last election."
+                    }
+                ],
+                "invalid_options": [
+                    NaN,
+                    "-99"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "pid7",
+        "questions": [
+            {
+                "key": "pid7",
+                "text": "",
+                "valid_options": [
+                    {
+                        "raw": "1",
+                        "text": "am a strong Republican",
+                        "natural_language": "I am a strong Republican."
+                    },
+                    {
+                        "raw": "2",
+                        "text": "am a weak Republican",
+                        "natural_language": "I am a weak Republican."
+                    },
+                    {
+                        "raw": "3",
+                        "text": "lean Republican",
+                        "natural_language": "I lean Republican."
+                    },
+                    {
+                        "raw": "5",
+                        "text": "lean Democrat",
+                        "natural_language": "I lean Democrat."
+                    },
+                    {
+                        "raw": "6",
+                        "text": "am a weak Democrat",
+                        "natural_language": "I am a weak Democrat."
+                    },
+                    {
+                        "raw": "7",
+                        "text": "am a strong Democrat",
+                        "natural_language": "I am a strong Democrat."
+                    }
+                ],
+                "invalid_options": [
+                    NaN
+                ]
+            }
+        ]
+    },
+    {
+        "name": "socmedia_freq",
+        "questions": [
+            {
+                "key": "socmedia_freq",
+                "text": "",
+                "valid_options": [
+                    {
+                        "raw": "1",
+                        "text": "daily",
+                        "natural_language": "I use social media daily."
+                    },
+                    {
+                        "raw": "2",
+                        "text": "4-6 times a week",
+                        "natural_language": "I use social media 4-6 times a week."
+                    },
+                    {
+                        "raw": "3",
+                        "text": "2-3 times a week",
+                        "natural_language": "I use social media 2-3 times a week."
+                    },
+                    {
+                        "raw": "4",
+                        "text": "once a week",
+                        "natural_language": "I use social media once a week."
+                    },
+                    {
+                        "raw": "5",
+                        "text": "once a month",
+                        "natural_language": "I use social media once a month."
+                    },
+                    {
+                        "raw": "6",
+                        "text": "6",
+                        "natural_language": "I never use social media."
+                    }
+                ],
+                "invalid_options": [
+                    NaN,
+                    "-99"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "fox_pref",
+        "questions": [
+            {
+                "key": "fox_pref",
+                "text": "",
+                "valid_options": [
+                    {
+                        "raw": "0",
+                        "text": "MSNBC",
+                        "natural_language": "I prefer MSNBC."
+                    },
+                    {
+                        "raw": "1",
+                        "text": "Fox News",
+                        "natural_language": "I prefer Fox News."
+                    }
+                ],
+                "invalid_options": [
+                    NaN
+                ]
+            }
+        ]
+    },
+    {
+        "name": "treatment",
+        "questions": [
+            {
+                "key": "treatment",
+                "text": "",
+                "valid_options": [
+                    {
+                        "raw": "AP",
+                        "text": "1",
+                        "natural_language": "\nAP News Article\n\nA surprising burst of US hiring in January: 517,000 jobs\nBy PAUL WISEMAN February 3, 2023\n\nWASHINGTON (AP) — For nearly a year, the Federal Reserve has been on a mission to cool down the job market to help curb the nation’s worst inflation bout in four decades.\n\nThe job market hasn’t been cooperating.\n\nConsider what happened in January: The government said Friday that employers added a sizzling 517,000 jobs last month and that the unemployment rate dipped to 3.4%, the lowest level since 1969.\n\nThe job gain was so large it left economists scratching their heads and wondering why the Fed’s aggressive interest rate hikes haven’t slowed hiring at a time when many foresee a recession nearing.\n\nFriday’s report added instead to the picture of a resilient U.S. labor market, with low unemployment, relatively few layoffs and many job openings. Though good for workers, employers’ steady demand for labor has also helped accelerate wage growth and contributed to high inflation.\n\nStill, the Fed’s inflation watchers might be reassured somewhat by January’s wage data: Average hourly pay rose 4.4% last month from a year earlier, slower than the 4.8% year-over-year increase in December. And from December to January, wages rose 0.3%, below the 0.4% increase the previous month.\n\nOn top of the sizzling job growth it reported for January, the government on Friday also revised up its estimate of the gains in November and December by a combined 71,000.\n\nPresident Joe Biden called the jobs report “strikingly good news” and asserted that his Republican critics were wrong in their warnings of continued high inflation and a coming recession and layoffs.\n\n“Our plan is working,” Biden said, “because of the grit and resolve of the American worker.”\n\nJanuary’s hiring gain, which far exceeded December’s 260,000, was broad-based across industries. A category that includes restaurants and bars added 99,000 workers. Professional and business services jobs, including bookkeepers and consultants, rose by 82,000.\n\n“This is a labor market on heat,” said Seema Shah, chief global strategist at Principal Asset Management. It would be difficult, she suggested, “to see the Fed stop raising rates and entertain ideas of rate cuts when there is such explosive economic news coming in.”\nThe Fed has raised its key rate eight times since March to try to slow the job market and contain inflation, which hit a 40-year high last year but has slowed since then.\n\nYet companies are still seeking more workers and are hanging tightly onto the ones they have. Putting aside some high-profile layoffs at big tech companies like Microsoft, Google, Amazon and others, most workers are enjoying an unusual level of job security even at a time when many economists foresee a recession approaching.\n\nFor all of 2022, the economy added a sizzling average of roughly 375,000 jobs a month. That was a pace vigorous enough to have contributed to some of the painful inflation Americans have endured. A tight job market tends to put upward pressure on wages, which, in turn, feed into inflation.\n\nBut year-over-year measures of consumer inflation have steadily eased since peaking at 9.1% in June. At 6.5% in December, though, inflation remains far above the Fed’s 2% target, which is why the central bank’s policymakers have reiterated their intent to keep raising borrowing rates for at least a few more months.\n\nGiacomo Santangelo, an economist at the jobs website Monster, said he doubted the Fed would take much comfort from the decelerating wage gains — or relent in its rate-hiking campaign.\n\n“As long as unemployment continues to go down,” Santangelo said, “as long as the economy continues to be strong, the Fed’s going to keep fighting inflation.”\n\nThe Fed is aiming to achieve a “soft landing” — a pullback in the economy that is just enough to tame high inflation without triggering a recession. The policymakers hope that employers can slow wage increases and inflationary pressures by reducing job openings but not necessarily by laying off many employees."
+                    },
+                    {
+                        "raw": "CBS",
+                        "text": "2",
+                        "natural_language": "\nCBS Clip Transcript, from “CBS Nightly News with Norah O’Donnell”:\n\n{O’Donnell}: Back here at home, now to the economy. In the surprising monthly jobs report, US employers added 517,000 jobs in January, and the unemployment rate fell to 3.4%. That is the lowest it's been in more than half a century. Stocks however, fell over concerns that the strong Labor report will mean the Federal Reserve will keep raising those interest rates.\nCBS's Carter Evans has more.\n{Evans}: Business is back at the Tally Brand restaurant in Burbank, California. Owner Karen Ross says she just made five new hires. How have things changed? \n{Ross}: I've had in the last two, three months, more applications than I've seen on my desk in four years. \n{Evans}: An abundance of people looking for work. Jobs in hospitality and leisure got the biggest boost with restaurants and bars and counting for one out of every five hires in January. In all more than half million jobs were created nearly triple expectations. And today, President Biden took a victory lap. \n{Biden}: We have created more jobs in two years than any presidential term. \n{Bunker}: You look at all the data from the labor market right now and, and there's no sign that we're about to tip into a recession.\n{Evans}: But economist Nick Bunker with the job posting site indeed.com says there are still caution signs. \n{Bunker}: The cautious part of my optimism comes from how this data is interpreted by policy makers, particularly at the Federal Reserve. \n{Evans}: With the Fed raising interest rates at the fastest clip in 40 years, some business leaders have been preparing for a recession. The tech industry cut almost 100,000 jobs in 2022, and the layoffs are accelerating. Just last month, almost 42 thousand tech jobs were lost.\n{Bunker}: But the tech sector's actually a very small percent of the overall labor market. What would concern me is if we start hearing these sorts of announcements from companies like Walmart or large fast food chains.\n{Evans}: Are you still hiring? {Ross}: Still hiring, \n{Evans}: but Karen Ross is still struggling with inflation. \n{Ross}: The profit margin is very, very tight. We can only raise our prices so much.\n{Evans}: Now, inflation has been declining in recent months, but it's still stubbornly high. And after today's blockbuster jobs report, many Fed Watchers think the Central Bank is almost sure to raise rates above 5% in May. Norah.\n{O’Donnell}: Carter Evans, thank you so much."
+                    },
+                    {
+                        "raw": "Fox",
+                        "text": "3",
+                        "natural_language": "\nFox News Clip Transcript, from “Fox News at Night” with Shannon Bream:\n\n{Bream}: The unemployment rate dipped to its lowest level since 1969. Susan Li of  Fox Business joins us from New York to tell us what all of these numbers mean. Hello, Susan.\n{Li}: Hi there, Shannon. Yeah, so the US jobs market starting off 2023 with its biggest gain in five months, and a lot of those jobs came in the leisure and hospitality sectors. Healthcare, retail, and construction, all adding thousands of jobs last month. Now wages went up by almost four and a half percent, but that's still less than inflation, which went up 6.5% year over year in December. President Biden also asked today if he would take any responsibility for higher consumer prices. \n{Biden}: [mumbled: Please, please. Thank you, uh, Bobby. Short, there's, uh, we have some good news.] Am I taking blame for inflation. No. Why not? Because it was already there when I got here, man. Remember what the economy was like when I got here? Jobs were hemorrhaging. Inflation was rising. We weren't manufacturing a damn thing here. We were in real economic difficulty. That's why I don't. \n{Li}: Inflation was only 1.4% when Biden took office. And before Covid started in February, 2020, the labor market was pretty similar to what we see today. Back then, the economy added a better than expected 273,000 jobs. The jobless rate was near those 50 year lows. \nBut one way that 2023 is different technology giants, including Amazon, Alphabet, and Facebook's parent Meta laying off tens of thousands. And all of these companies reported corporate earnings this week that were weaker than expected. \nNow in my conversation with Apple's CEO, Tim Cook, he told me “In many areas in the company, we are not hiring at all. In engineering we continue to hire. Only some, but everybody's really just being very prudent.” \nAnd Google's parent company, Alphabet's financial chief, also telling me this week that “we are meaningfully slowing the pace of hiring in 2023. Yes, we added almost 3,500 people last quarter, but the majority of these hires were for technical jobs.”\nAlso, remember that Alphabet also announced those 12,000 job cuts. But like all other companies, they will still need to hire, if needed. And another factor to keep in mind here, those severance packages for laid off workers, that'll likely last for weeks, if not months, and may not be counted in those jobless numbers. Shannon."
+                    },
+                    {
+                        "raw": "MSNBC",
+                        "text": "4",
+                        "natural_language": "\nMSNBC Clip Transcript, from “The Last Word with Lawrence O’Donnell”:\n\n{O’Donnell}: Alright, remember when it was said that corporations are people? Uh, yeah. No. You know, who are people? People are people. Workers are people. People who need jobs to pay rent, to buy food, to get diapers. And tonight, three years after Covid sent our economy into a nose dive, the great news is that people are able to find jobs to do all those things again.\nHere's today's blockbuster jobs report for January. 517,000 net new jobs were created. I've been in this business for a long time. I cover the economy. That's a lot of jobs. That's nearly triple the number of jobs that economists predicted, and it far outpaces the average monthly job growth throughout all of 2022.\nOn top of that, the Bureau of Labor Statistics, part of the Department of Labor, released data today that showed the job growth for nearly every month in the past year was stronger than originally estimated. Meaning hundreds of thousands more jobs were created in 2022 than we originally thought. \nThe unemployment rate fell to 3.4%. That's a near historic low. The last time unemployment was this uh, low go all the way to the left of your screen. May of 1969. President Biden had this to say following the release of the jobs numbers this morning.\n{Biden}: We created 12 million. 12 million jobs since I took office. That means we have created more jobs in two years than any presidential term. \nHere's where we stand. The strongest job, growth in history, the lowest unemployment rate in 54 years, manufacturing rebounding at a faster rate than in the last 40 years. Inflation coming down. \nPut simply, I would argue, the Biden economic plan is working. \n{O’Donnell}: In addition to the unemployment rate being at the lowest rate since Richard Nixon was president, some of the communities that were economically battered the most by the Covid-19 pandemic are now among the biggest beneficiaries of this record job creation."
+                    }
+                ],
+                "invalid_options": [
+                    NaN
+                ]
+            }
+        ]
+    },
+    {
+        "name": "news_rating_1",
+        "questions": [
+            {
+                "key": "news_rating_1",
+                "text": "To what extent do you agree or disagree with the following statement: 'In general, I found the news story to be informative.",
+                "valid_options": [
+                    {
+                        "raw": "1",
+                        "text": "Strongly disagree",
+                        "natural_language": "Strongly disagree"
+                    },
+                    {
+                        "raw": "2",
+                        "text": "Somewhat disagree",
+                        "natural_language": "Somewhat disagree"
+                    },
+                    {
+                        "raw": "3",
+                        "text": "Neither agree nor disagree",
+                        "natural_language": "Neither agree nor disagree"
+                    },
+                    {
+                        "raw": "4",
+                        "text": "Somewhat agree",
+                        "natural_language": "Somewhat agree"
+                    },
+                    {
+                        "raw": "5",
+                        "text": "Strongly agree",
+                        "natural_language": "Strongly agree"
+                    }
+                ],
+                "invalid_options": [
+                    NaN
+                ]
+            }
+        ]
+    }
+]

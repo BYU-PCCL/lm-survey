@@ -1,9 +1,12 @@
 import json
 import os
+import numpy as np
 import typing
 import pandas as pd
 import pandas.core.groupby.generic
 from lm_survey.survey.dependent_variable_sample import DependentVariableSample
+import swifter
+from scipy.stats import wasserstein_distance
 
 
 class SurveyResults:
@@ -90,7 +93,8 @@ class SurveyResults:
         improvement_lower_bounds = means - baselines - errors
 
         scores_df = pd.concat(
-            [means, errors, baselines, improvement_lower_bounds, n_samples], axis=1
+            [means, errors, baselines, improvement_lower_bounds, n_samples],
+            axis=1,
         )
         scores_df.columns = [
             "mean",
@@ -102,11 +106,80 @@ class SurveyResults:
 
         return scores_df
 
+    def get_representativeness(
+        self,
+        # slice_by: typing.List[str] = []
+    ):
+        """
+        Calculate the representativeness for each dv and print it
+        """
+        df = self.df.copy()
+        reps = []
+        for dv in sorted(df.variable_name.unique()):
+            if dv == "INDUSTRY_W27":
+                print("here")
+            tdf = df[df.variable_name == dv]
+            ordinal = [k["ordinal"] for k in tdf.iloc[0]["valid_options"]]
+            # Make a dictionary where the keys are the possible_completions and the values are the number of times they appear
+            D = {k.strip(): 0.0 for k in tdf.iloc[0]["possible_completions"]}
+            D_H = D.copy()
+            D_M = D.copy()
+            for k, v in (
+                tdf.correct_completion.str.strip().value_counts(normalize=True).items()
+            ):
+                D_H[k] = v
+            for k, v in (
+                tdf.top_completion.str.strip().value_counts(normalize=True).items()
+            ):
+                D_M[k] = v
+
+            # Calculate the WD between the columns D_H and D_M
+            wd = wasserstein_distance(
+                ordinal, ordinal, list(D_H.values()), list(D_M.values())
+            ) / self._get_max_wd(ordinal)
+            rep = 1 - wd
+            # For a dv, print the keys of D_H and D_M and then their respective values
+            tab = 2
+            print("For dv:", dv)
+            print(f"{tab * ' '}Rep:", rep)
+            # print(f"{tab * ' '}WD:", wd)
+            print(f"{tab * ' '}{''.ljust(tab)}D_M D_H")
+            for k in D_H.keys():
+                print(f"{tab * ' '}{k.ljust(tab)}{D_M[k]} {D_H[k]}")
+            print("\n")
+            reps.append(rep)
+        mean_score = np.mean(reps)
+        if np.isnan(mean_score):
+            raise ValueError("Mean score is NaN")
+        return mean_score
+
+    def calculate_avg_samples(self):
+        """
+        Calculate the average number of samples per dv
+        """
+        df = self.df.copy()
+        f = lambda x: (isinstance(x, dict) and len(x) == 0)
+        print(
+            df.variable_name.iloc[0][-3:],
+            df.completion_log_probs.apply(f).sum(),
+            df.response_object.apply(f).sum(),
+        )
+        return (df.shape[0] / len(df.variable_name.unique()),)
+
+    def _get_max_wd(self, ordered_ref_weights):
+        d0, d1 = np.zeros(len(ordered_ref_weights)), np.zeros(len(ordered_ref_weights))
+        d0[np.argmax(ordered_ref_weights)] = 1
+        d1[np.argmin(ordered_ref_weights)] = 1
+        max_wd = wasserstein_distance(ordered_ref_weights, ordered_ref_weights, d0, d1)
+        return max_wd
+
 
 if __name__ == "__main__":
     input_filepath = os.path.join(
-        "results",
-        "roper",
+        "experiments",
+        "breadth",
+        "ATP/American_Trends_Panel_W26",
+        "llama-7b-hf",
         "results.json",
     )
 
@@ -117,10 +190,10 @@ if __name__ == "__main__":
         DependentVariableSample(
             **sample_dict,
         )
-        for sample_dict in results["llama-7b-hf"]
+        for sample_dict in results
     ]
 
     survey_results = SurveyResults(question_samples=question_samples)
 
     # Print with 2 decimal places
-    print(survey_results.get_mean_score(slice_by=["gender"]).round(2))
+    print(survey_results.get_representativeness())

@@ -1,0 +1,4147 @@
+[
+  {
+    "name": "GAP21Q1_W82",
+    "questions": [
+      {
+        "key": "GAP21Q1_W82",
+        "text": "Thinking about our economic situation, how would you describe the current economic situation in the US?",
+        "valid_options": [
+          {
+            "raw": "Very good",
+            "text": "Very good",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat good",
+            "text": "Somewhat good",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Somewhat bad",
+            "text": "Somewhat bad",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Very bad",
+            "text": "Very bad",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q2_W82",
+    "questions": [
+      {
+        "key": "GAP21Q2_W82",
+        "text": "When children today in the US grow up, do you think they will be",
+        "valid_options": [
+          {
+            "raw": "Better off financially than their parents",
+            "text": "Better off financially than their parents",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Worse off financially than their parents",
+            "text": "Worse off financially than their parents",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q3_W82",
+    "questions": [
+      {
+        "key": "GAP21Q3_W82",
+        "text": "How satisfied are you with the way democracy is working in the US?",
+        "valid_options": [
+          {
+            "raw": "Very satisfied",
+            "text": "Very satisfied",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat satisfied",
+            "text": "Somewhat satisfied",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too satisfied",
+            "text": "Not too satisfied",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all satisfied",
+            "text": "Not at all satisfied",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q4_a_W82",
+    "questions": [
+      {
+        "key": "GAP21Q4_a_W82",
+        "text": "Do you have a favorable or unfavorable opinion of the United States",
+        "valid_options": [
+          {
+            "raw": "Very favorable",
+            "text": "Very favorable",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat favorable",
+            "text": "Somewhat favorable",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Somewhat unfavorable",
+            "text": "Somewhat unfavorable",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Very unfavorable",
+            "text": "Very unfavorable",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q4_b_W82",
+    "questions": [
+      {
+        "key": "GAP21Q4_b_W82",
+        "text": "Do you have a favorable or unfavorable opinion of China",
+        "valid_options": [
+          {
+            "raw": "Very favorable",
+            "text": "Very favorable",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat favorable",
+            "text": "Somewhat favorable",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Somewhat unfavorable",
+            "text": "Somewhat unfavorable",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Very unfavorable",
+            "text": "Very unfavorable",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q4_c_W82",
+    "questions": [
+      {
+        "key": "GAP21Q4_c_W82",
+        "text": "Do you have a favorable or unfavorable opinion of Germany",
+        "valid_options": [
+          {
+            "raw": "Very favorable",
+            "text": "Very favorable",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat favorable",
+            "text": "Somewhat favorable",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Somewhat unfavorable",
+            "text": "Somewhat unfavorable",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Very unfavorable",
+            "text": "Very unfavorable",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q4_d_W82",
+    "questions": [
+      {
+        "key": "GAP21Q4_d_W82",
+        "text": "Do you have a favorable or unfavorable opinion of the European Union",
+        "valid_options": [
+          {
+            "raw": "Very favorable",
+            "text": "Very favorable",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat favorable",
+            "text": "Somewhat favorable",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Somewhat unfavorable",
+            "text": "Somewhat unfavorable",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Very unfavorable",
+            "text": "Very unfavorable",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q4_e_W82",
+    "questions": [
+      {
+        "key": "GAP21Q4_e_W82",
+        "text": "Do you have a favorable or unfavorable opinion of the United Nations",
+        "valid_options": [
+          {
+            "raw": "Very favorable",
+            "text": "Very favorable",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat favorable",
+            "text": "Somewhat favorable",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Somewhat unfavorable",
+            "text": "Somewhat unfavorable",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Very unfavorable",
+            "text": "Very unfavorable",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q4_f_W82",
+    "questions": [
+      {
+        "key": "GAP21Q4_f_W82",
+        "text": "Do you have a favorable or unfavorable opinion of nato, that is, North Atlantic Treaty Organization",
+        "valid_options": [
+          {
+            "raw": "Very favorable",
+            "text": "Very favorable",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat favorable",
+            "text": "Somewhat favorable",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Somewhat unfavorable",
+            "text": "Somewhat unfavorable",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Very unfavorable",
+            "text": "Very unfavorable",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q5_a_W82",
+    "questions": [
+      {
+        "key": "GAP21Q5_a_W82",
+        "text": "Do you think the government of China respects the personal freedoms of its people?",
+        "valid_options": [
+          {
+            "raw": "Yes, respects personal freedoms",
+            "text": "Yes, respects personal freedoms",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, does not respect personal freedoms",
+            "text": "No, does not respect personal freedoms",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q5_b_W82",
+    "questions": [
+      {
+        "key": "GAP21Q5_b_W82",
+        "text": "Do you think the government of the US respects the personal freedoms of its people?",
+        "valid_options": [
+          {
+            "raw": "Yes, respects personal freedoms",
+            "text": "Yes, respects personal freedoms",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, does not respect personal freedoms",
+            "text": "No, does not respect personal freedoms",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q6_W82",
+    "questions": [
+      {
+        "key": "GAP21Q6_W82",
+        "text": "Which statement comes closest to your own views, even if neither is exactly right? Democracy in the US",
+        "valid_options": [
+          {
+            "raw": "Is a good example for other countries to follow",
+            "text": "Is a good example for other countries to follow",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Used to be a good example, but has not been in recent years",
+            "text": "Used to be a good example, but has not been in recent years",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Has never been a good example for other countries to follow",
+            "text": "Has never been a good example for other countries to follow",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q7_a_W82",
+    "questions": [
+      {
+        "key": "GAP21Q7_a_W82",
+        "text": "Would you say the US has done a good or bad job dealing with the coronavirus outbreak?",
+        "valid_options": [
+          {
+            "raw": "Very good",
+            "text": "Very good",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat good",
+            "text": "Somewhat good",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Somewhat bad",
+            "text": "Somewhat bad",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Very bad",
+            "text": "Very bad",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q7_b_W82",
+    "questions": [
+      {
+        "key": "GAP21Q7_b_W82",
+        "text": "Would you say China has done a good or bad job dealing with the coronavirus outbreak?",
+        "valid_options": [
+          {
+            "raw": "Very good",
+            "text": "Very good",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat good",
+            "text": "Somewhat good",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Somewhat bad",
+            "text": "Somewhat bad",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Very bad",
+            "text": "Very bad",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q7_c_W82",
+    "questions": [
+      {
+        "key": "GAP21Q7_c_W82",
+        "text": "Would you say the European Union has done a good or bad job dealing with the coronavirus outbreak?",
+        "valid_options": [
+          {
+            "raw": "Very good",
+            "text": "Very good",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat good",
+            "text": "Somewhat good",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Somewhat bad",
+            "text": "Somewhat bad",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Very bad",
+            "text": "Very bad",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q7_d_W82",
+    "questions": [
+      {
+        "key": "GAP21Q7_d_W82",
+        "text": "Would you say the World Health Organization, or WHO has done a good or bad job dealing with the coronavirus outbreak?",
+        "valid_options": [
+          {
+            "raw": "Very good",
+            "text": "Very good",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat good",
+            "text": "Somewhat good",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Somewhat bad",
+            "text": "Somewhat bad",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Very bad",
+            "text": "Very bad",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q7_e_W82",
+    "questions": [
+      {
+        "key": "GAP21Q7_e_W82",
+        "text": "Would you say Germany has done a good or bad job dealing with the coronavirus outbreak?",
+        "valid_options": [
+          {
+            "raw": "Very good",
+            "text": "Very good",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat good",
+            "text": "Somewhat good",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Somewhat bad",
+            "text": "Somewhat bad",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Very bad",
+            "text": "Very bad",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q8_W82",
+    "questions": [
+      {
+        "key": "GAP21Q8_W82",
+        "text": "As a result of the coronavirus outbreak, has your own life changed",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much",
+            "text": "Not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q9_W82",
+    "questions": [
+      {
+        "key": "GAP21Q9_W82",
+        "text": "Thinking about the US as a whole, do you think this country is now",
+        "valid_options": [
+          {
+            "raw": "More united than before the coronavirus outbreak",
+            "text": "More united than before the coronavirus outbreak",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "More divided than before the coronavirus outbreak",
+            "text": "More divided than before the coronavirus outbreak",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q10_W82",
+    "questions": [
+      {
+        "key": "GAP21Q10_W82",
+        "text": "Thinking about restrictions on public activity in the US over the course of the coronavirus outbreak, do you think there should have been",
+        "valid_options": [
+          {
+            "raw": "More restrictions",
+            "text": "More restrictions",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Fewer restrictions",
+            "text": "Fewer restrictions",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "The restrictions were about right",
+            "text": "The restrictions were about right",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q11_W82",
+    "questions": [
+      {
+        "key": "GAP21Q11_W82",
+        "text": "Which statement comes closer to your view, even if neither is exactly right? America's economy is",
+        "valid_options": [
+          {
+            "raw": "Recovering from the effects of the coronavirus outbreak in ways that show the strengths of its economic system",
+            "text": "Recovering from the effects of the coronavirus outbreak in ways that show the strengths of its economic system",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Failing to recover from the effects of the coronavirus outbreak in ways that show the weaknesses of its economic system",
+            "text": "Failing to recover from the effects of the coronavirus outbreak in ways that show the weaknesses of its economic system",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q12_W82",
+    "questions": [
+      {
+        "key": "GAP21Q12_W82",
+        "text": "How much confidence, if any, do you have in the healthcare system in the US to handle a future global health emergency that might occur?",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much",
+            "text": "Not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "None at all",
+            "text": "None at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q13_a_W82",
+    "questions": [
+      {
+        "key": "GAP21Q13_a_W82",
+        "text": "Thinking about the US, how much would you say the economic system needs to be changed, if at all?",
+        "valid_options": [
+          {
+            "raw": "It needs to be completely reformed",
+            "text": "It needs to be completely reformed",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "It needs major changes",
+            "text": "It needs major changes",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "It needs minor changes",
+            "text": "It needs minor changes",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "It doesn't need to be changed",
+            "text": "It doesn't need to be changed",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q13_b_W82",
+    "questions": [
+      {
+        "key": "GAP21Q13_b_W82",
+        "text": "Thinking about the US, how much would you say the healthcare system needs to be changed, if at all?",
+        "valid_options": [
+          {
+            "raw": "It needs to be completely reformed",
+            "text": "It needs to be completely reformed",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "It needs major changes",
+            "text": "It needs major changes",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "It needs minor changes",
+            "text": "It needs minor changes",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "It doesn't need to be changed",
+            "text": "It doesn't need to be changed",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q13_c_W82",
+    "questions": [
+      {
+        "key": "GAP21Q13_c_W82",
+        "text": "Thinking about the US, how much would you say the political system needs to be changed, if at all?",
+        "valid_options": [
+          {
+            "raw": "It needs to be completely reformed",
+            "text": "It needs to be completely reformed",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "It needs major changes",
+            "text": "It needs major changes",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "It needs minor changes",
+            "text": "It needs minor changes",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "It doesn't need to be changed",
+            "text": "It doesn't need to be changed",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q14_W82",
+    "questions": [
+      {
+        "key": "GAP21Q14_W82",
+        "text": "And how confident are you that America's political system can be changed effectively?",
+        "valid_options": [
+          {
+            "raw": "Very confident",
+            "text": "Very confident",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat confident",
+            "text": "Somewhat confident",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too confident",
+            "text": "Not too confident",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all confident",
+            "text": "Not at all confident",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q15_a_W82",
+    "questions": [
+      {
+        "key": "GAP21Q15_a_W82",
+        "text": "Please compare the US to other developed nations in a few different areas. In each instance, how does the US compare? Healthcare system",
+        "valid_options": [
+          {
+            "raw": "The best",
+            "text": "The best",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Above average",
+            "text": "Above average",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Average",
+            "text": "Average",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Below average",
+            "text": "Below average",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "The worst",
+            "text": "The worst",
+            "natural_language": null,
+            "ordinal": 5.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q15_b_W82",
+    "questions": [
+      {
+        "key": "GAP21Q15_b_W82",
+        "text": "Please compare the US to other developed nations in a few different areas. In each instance, how does the US compare? Colleges and universities",
+        "valid_options": [
+          {
+            "raw": "The best",
+            "text": "The best",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Above average",
+            "text": "Above average",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Average",
+            "text": "Average",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Below average",
+            "text": "Below average",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "The worst",
+            "text": "The worst",
+            "natural_language": null,
+            "ordinal": 5.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q15_c_W82",
+    "questions": [
+      {
+        "key": "GAP21Q15_c_W82",
+        "text": "Please compare the US to other developed nations in a few different areas. In each instance, how does the US compare? Standard of living",
+        "valid_options": [
+          {
+            "raw": "The best",
+            "text": "The best",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Above average",
+            "text": "Above average",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Average",
+            "text": "Average",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Below average",
+            "text": "Below average",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "The worst",
+            "text": "The worst",
+            "natural_language": null,
+            "ordinal": 5.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q15_d_W82",
+    "questions": [
+      {
+        "key": "GAP21Q15_d_W82",
+        "text": "Please compare the US to other developed nations in a few different areas. In each instance, how does the US compare? Military",
+        "valid_options": [
+          {
+            "raw": "The best",
+            "text": "The best",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Above average",
+            "text": "Above average",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Average",
+            "text": "Average",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Below average",
+            "text": "Below average",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "The worst",
+            "text": "The worst",
+            "natural_language": null,
+            "ordinal": 5.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q15_e_W82",
+    "questions": [
+      {
+        "key": "GAP21Q15_e_W82",
+        "text": "Please compare the US to other developed nations in a few different areas. In each instance, how does the US compare? Technological achievements",
+        "valid_options": [
+          {
+            "raw": "The best",
+            "text": "The best",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Above average",
+            "text": "Above average",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Average",
+            "text": "Average",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Below average",
+            "text": "Below average",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "The worst",
+            "text": "The worst",
+            "natural_language": null,
+            "ordinal": 5.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q15_f_W82",
+    "questions": [
+      {
+        "key": "GAP21Q15_f_W82",
+        "text": "Please compare the US to other developed nations in a few different areas. In each instance, how does the US compare? Entertainment, including movies, music and television",
+        "valid_options": [
+          {
+            "raw": "The best",
+            "text": "The best",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Above average",
+            "text": "Above average",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Average",
+            "text": "Average",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Below average",
+            "text": "Below average",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "The worst",
+            "text": "The worst",
+            "natural_language": null,
+            "ordinal": 5.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q17_W82",
+    "questions": [
+      {
+        "key": "GAP21Q17_W82",
+        "text": "In making international policy decisions, to what extent, if at all, do you think the US takes into account the interests of other countries around the world?",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much",
+            "text": "Not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q18_W82",
+    "questions": [
+      {
+        "key": "GAP21Q18_W82",
+        "text": "Which statement comes closer to your view, even if neither is exactly right? The US should",
+        "valid_options": [
+          {
+            "raw": "Try to promote human rights in China, even if it harms economic relations with China",
+            "text": "Try to promote human rights in China, even if it harms economic relations with China",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Prioritize strengthening economic relations with China, even if it means not addressing human rights issues",
+            "text": "Prioritize strengthening economic relations with China, even if it means not addressing human rights issues",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q19_a_W82",
+    "questions": [
+      {
+        "key": "GAP21Q19_a_W82",
+        "text": "How much confidence do you have in us President Joe Biden to do the right thing regarding world affairs?",
+        "valid_options": [
+          {
+            "raw": "A lot of confidence",
+            "text": "A lot of confidence",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some confidence",
+            "text": "Some confidence",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much confidence",
+            "text": "Not too much confidence",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "No confidence at all",
+            "text": "No confidence at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q19_b_W82",
+    "questions": [
+      {
+        "key": "GAP21Q19_b_W82",
+        "text": "How much confidence do you have in chinese President Xi Jinping to do the right thing regarding world affairs?",
+        "valid_options": [
+          {
+            "raw": "A lot of confidence",
+            "text": "A lot of confidence",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some confidence",
+            "text": "Some confidence",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much confidence",
+            "text": "Not too much confidence",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "No confidence at all",
+            "text": "No confidence at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q19_c_W82",
+    "questions": [
+      {
+        "key": "GAP21Q19_c_W82",
+        "text": "How much confidence do you have in russian President Vladimir Putin to do the right thing regarding world affairs?",
+        "valid_options": [
+          {
+            "raw": "A lot of confidence",
+            "text": "A lot of confidence",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some confidence",
+            "text": "Some confidence",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much confidence",
+            "text": "Not too much confidence",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "No confidence at all",
+            "text": "No confidence at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q19_d_W82",
+    "questions": [
+      {
+        "key": "GAP21Q19_d_W82",
+        "text": "How much confidence do you have in german Chancellor Angela Merkel to do the right thing regarding world affairs?",
+        "valid_options": [
+          {
+            "raw": "A lot of confidence",
+            "text": "A lot of confidence",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some confidence",
+            "text": "Some confidence",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much confidence",
+            "text": "Not too much confidence",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "No confidence at all",
+            "text": "No confidence at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q19_e_W82",
+    "questions": [
+      {
+        "key": "GAP21Q19_e_W82",
+        "text": "How much confidence do you have in french President Emmanuel Macron to do the right thing regarding world affairs?",
+        "valid_options": [
+          {
+            "raw": "A lot of confidence",
+            "text": "A lot of confidence",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some confidence",
+            "text": "Some confidence",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much confidence",
+            "text": "Not too much confidence",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "No confidence at all",
+            "text": "No confidence at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q20_W82",
+    "questions": [
+      {
+        "key": "GAP21Q20_W82",
+        "text": "Overall, do you think having people of many different backgrounds, such as different ethnic groups, religions and races, makes the US",
+        "valid_options": [
+          {
+            "raw": "A better place to live",
+            "text": "A better place to live",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A worse place to live",
+            "text": "A worse place to live",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q21_a_W82",
+    "questions": [
+      {
+        "key": "GAP21Q21_a_W82",
+        "text": "In the US, how strong, if at all, are conflicts between people who support different political parties?",
+        "valid_options": [
+          {
+            "raw": "Very strong conflicts",
+            "text": "Very strong conflicts",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Strong conflicts",
+            "text": "Strong conflicts",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not very strong conflicts",
+            "text": "Not very strong conflicts",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "There are not conflicts",
+            "text": "There are not conflicts",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q21_b_W82",
+    "questions": [
+      {
+        "key": "GAP21Q21_b_W82",
+        "text": "In the US, how strong, if at all, are conflicts between people who live in cities and people who live in rural areas?",
+        "valid_options": [
+          {
+            "raw": "Very strong conflicts",
+            "text": "Very strong conflicts",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Strong conflicts",
+            "text": "Strong conflicts",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not very strong conflicts",
+            "text": "Not very strong conflicts",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "There are not conflicts",
+            "text": "There are not conflicts",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q21_c_W82",
+    "questions": [
+      {
+        "key": "GAP21Q21_c_W82",
+        "text": "In the US, how strong, if at all, are conflicts between people who are religious and people who are not religious?",
+        "valid_options": [
+          {
+            "raw": "Very strong conflicts",
+            "text": "Very strong conflicts",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Strong conflicts",
+            "text": "Strong conflicts",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not very strong conflicts",
+            "text": "Not very strong conflicts",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "There are not conflicts",
+            "text": "There are not conflicts",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q21_d_W82",
+    "questions": [
+      {
+        "key": "GAP21Q21_d_W82",
+        "text": "In the US, how strong, if at all, are conflicts between people with different ethnic or racial backgrounds?",
+        "valid_options": [
+          {
+            "raw": "Very strong conflicts",
+            "text": "Very strong conflicts",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Strong conflicts",
+            "text": "Strong conflicts",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not very strong conflicts",
+            "text": "Not very strong conflicts",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "There are not conflicts",
+            "text": "There are not conflicts",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q21_e_W82",
+    "questions": [
+      {
+        "key": "GAP21Q21_e_W82",
+        "text": "In the US, how strong, if at all, are conflicts between people who practice different religions?",
+        "valid_options": [
+          {
+            "raw": "Very strong conflicts",
+            "text": "Very strong conflicts",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Strong conflicts",
+            "text": "Strong conflicts",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not very strong conflicts",
+            "text": "Not very strong conflicts",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "There are not conflicts",
+            "text": "There are not conflicts",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q22_W82",
+    "questions": [
+      {
+        "key": "GAP21Q22_W82",
+        "text": "When it comes to important issues facing the US, people may disagree over policies, but do you think most people",
+        "valid_options": [
+          {
+            "raw": "Agree on the basic facts",
+            "text": "Agree on the basic facts",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Disagree on the basic facts",
+            "text": "Disagree on the basic facts",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q23_W82",
+    "questions": [
+      {
+        "key": "GAP21Q23_W82",
+        "text": "In the US, do you think discrimination against people based on their race or ethnicity is a",
+        "valid_options": [
+          {
+            "raw": "Very serious problem",
+            "text": "Very serious problem",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat serious problem",
+            "text": "Somewhat serious problem",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too serious problem",
+            "text": "Not too serious problem",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not a problem at all",
+            "text": "Not a problem at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q24_W82",
+    "questions": [
+      {
+        "key": "GAP21Q24_W82",
+        "text": "How concerned are you, if at all, that global climate change will harm you personally at some point in your lifetime?",
+        "valid_options": [
+          {
+            "raw": "Very concerned",
+            "text": "Very concerned",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat concerned",
+            "text": "Somewhat concerned",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too concerned",
+            "text": "Not too concerned",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all concerned",
+            "text": "Not at all concerned",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q25_W82",
+    "questions": [
+      {
+        "key": "GAP21Q25_W82",
+        "text": "How much, if anything, would you be willing to change about how you live and work to help reduce the effects of global climate change? Would you be willing to make",
+        "valid_options": [
+          {
+            "raw": "A lot of changes",
+            "text": "A lot of changes",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some changes",
+            "text": "Some changes",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Only a few changes",
+            "text": "Only a few changes",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "No changes at all",
+            "text": "No changes at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q26_a_W82",
+    "questions": [
+      {
+        "key": "GAP21Q26_a_W82",
+        "text": "Would you say the US is doing a good or bad job dealing with global climate change?",
+        "valid_options": [
+          {
+            "raw": "Very good job",
+            "text": "Very good job",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat good job",
+            "text": "Somewhat good job",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Somewhat bad job",
+            "text": "Somewhat bad job",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Very bad job",
+            "text": "Very bad job",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q26_b_W82",
+    "questions": [
+      {
+        "key": "GAP21Q26_b_W82",
+        "text": "Would you say the United Nations are doing a good or bad job dealing with global climate change?",
+        "valid_options": [
+          {
+            "raw": "Very good job",
+            "text": "Very good job",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat good job",
+            "text": "Somewhat good job",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Somewhat bad job",
+            "text": "Somewhat bad job",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Very bad job",
+            "text": "Very bad job",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q26_c_W82",
+    "questions": [
+      {
+        "key": "GAP21Q26_c_W82",
+        "text": "Would you say China is doing a good or bad job dealing with global climate change?",
+        "valid_options": [
+          {
+            "raw": "Very good job",
+            "text": "Very good job",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat good job",
+            "text": "Somewhat good job",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Somewhat bad job",
+            "text": "Somewhat bad job",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Very bad job",
+            "text": "Very bad job",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q26_d_W82",
+    "questions": [
+      {
+        "key": "GAP21Q26_d_W82",
+        "text": "Would you say the European Union is doing a good or bad job dealing with global climate change?",
+        "valid_options": [
+          {
+            "raw": "Very good job",
+            "text": "Very good job",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat good job",
+            "text": "Somewhat good job",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Somewhat bad job",
+            "text": "Somewhat bad job",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Very bad job",
+            "text": "Very bad job",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q27_W82",
+    "questions": [
+      {
+        "key": "GAP21Q27_W82",
+        "text": "Do you think actions taken by the international community to address global climate change, such as the Paris climate agreement, will mostly",
+        "valid_options": [
+          {
+            "raw": "Benefit America's economy",
+            "text": "Benefit America's economy",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Harm America's economy",
+            "text": "Harm America's economy",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Have no impact on America's economy",
+            "text": "Have no impact on America's economy",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q28_W82",
+    "questions": [
+      {
+        "key": "GAP21Q28_W82",
+        "text": "How confident are you, if at all, that the actions taken by the international community will significantly reduce the effects of global climate change?",
+        "valid_options": [
+          {
+            "raw": "Very confident",
+            "text": "Very confident",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat confident",
+            "text": "Somewhat confident",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too confident",
+            "text": "Not too confident",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all confident",
+            "text": "Not at all confident",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q29_W82",
+    "questions": [
+      {
+        "key": "GAP21Q29_W82",
+        "text": "What kind of leadership role should the US play in the world? It should",
+        "valid_options": [
+          {
+            "raw": "Be the single world leader",
+            "text": "Be the single world leader",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Play a shared leadership role",
+            "text": "Play a shared leadership role",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not play any leadership role",
+            "text": "Not play any leadership role",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q30_W82",
+    "questions": [
+      {
+        "key": "GAP21Q30_W82",
+        "text": "Should the US be the most active of the leading nations, or should it be about as active as other leading nations?",
+        "valid_options": [
+          {
+            "raw": "Most active",
+            "text": "Most active",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "About as active",
+            "text": "About as active",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q31_W82",
+    "questions": [
+      {
+        "key": "GAP21Q31_W82",
+        "text": "How important, if at all, is it that the US is generally respected by other countries around the world?",
+        "valid_options": [
+          {
+            "raw": "Very important",
+            "text": "Very important",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat important",
+            "text": "Somewhat important",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too important",
+            "text": "Not too important",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all important",
+            "text": "Not at all important",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q32_W82",
+    "questions": [
+      {
+        "key": "GAP21Q32_W82",
+        "text": "Now that Joe Biden is president, do you think other countries view the U.S",
+        "valid_options": [
+          {
+            "raw": "A lot more positively",
+            "text": "A lot more positively",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A little more positively",
+            "text": "A little more positively",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "A little more negatively",
+            "text": "A little more negatively",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "A lot more negatively",
+            "text": "A lot more negatively",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q33_a_W82",
+    "questions": [
+      {
+        "key": "GAP21Q33_a_W82",
+        "text": "Thinking about long-range foreign policy goals, how much priority, if any, do you think preventing the spread of weapons of mass destruction should be given?",
+        "valid_options": [
+          {
+            "raw": "Top priority",
+            "text": "Top priority",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some priority",
+            "text": "Some priority",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No priority",
+            "text": "No priority",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q33_b_W82",
+    "questions": [
+      {
+        "key": "GAP21Q33_b_W82",
+        "text": "Thinking about long-range foreign policy goals, how much priority, if any, do you think protecting the jobs of American workers should be given?",
+        "valid_options": [
+          {
+            "raw": "Top priority",
+            "text": "Top priority",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some priority",
+            "text": "Some priority",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No priority",
+            "text": "No priority",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q33_c_W82",
+    "questions": [
+      {
+        "key": "GAP21Q33_c_W82",
+        "text": "Thinking about long-range foreign policy goals, how much priority, if any, do you think strengthening the United Nations should be given?",
+        "valid_options": [
+          {
+            "raw": "Top priority",
+            "text": "Top priority",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some priority",
+            "text": "Some priority",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No priority",
+            "text": "No priority",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q33_d_W82",
+    "questions": [
+      {
+        "key": "GAP21Q33_d_W82",
+        "text": "Thinking about long-range foreign policy goals, how much priority, if any, do you think reducing US military commitments overseas should be given?",
+        "valid_options": [
+          {
+            "raw": "Top priority",
+            "text": "Top priority",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some priority",
+            "text": "Some priority",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No priority",
+            "text": "No priority",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q33_e_W82",
+    "questions": [
+      {
+        "key": "GAP21Q33_e_W82",
+        "text": "Thinking about long-range foreign policy goals, how much priority, if any, do you think limiting the power and influence of Russia should be given?",
+        "valid_options": [
+          {
+            "raw": "Top priority",
+            "text": "Top priority",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some priority",
+            "text": "Some priority",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No priority",
+            "text": "No priority",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q33_f_W82",
+    "questions": [
+      {
+        "key": "GAP21Q33_f_W82",
+        "text": "Thinking about long-range foreign policy goals, how much priority, if any, do you think promoting democracy in other nations should be given?",
+        "valid_options": [
+          {
+            "raw": "Top priority",
+            "text": "Top priority",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some priority",
+            "text": "Some priority",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No priority",
+            "text": "No priority",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q33_g_W82",
+    "questions": [
+      {
+        "key": "GAP21Q33_g_W82",
+        "text": "Thinking about long-range foreign policy goals, how much priority, if any, do you think reducing illegal immigration into the US should be given?",
+        "valid_options": [
+          {
+            "raw": "Top priority",
+            "text": "Top priority",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some priority",
+            "text": "Some priority",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No priority",
+            "text": "No priority",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q33_h_W82",
+    "questions": [
+      {
+        "key": "GAP21Q33_h_W82",
+        "text": "Thinking about long-range foreign policy goals, how much priority, if any, do you think limiting the power and influence of China should be given?",
+        "valid_options": [
+          {
+            "raw": "Top priority",
+            "text": "Top priority",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some priority",
+            "text": "Some priority",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No priority",
+            "text": "No priority",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q33_i_W82",
+    "questions": [
+      {
+        "key": "GAP21Q33_i_W82",
+        "text": "Thinking about long-range foreign policy goals, how much priority, if any, do you think maintaining the US military advantage over all other countries should be given?",
+        "valid_options": [
+          {
+            "raw": "Top priority",
+            "text": "Top priority",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some priority",
+            "text": "Some priority",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No priority",
+            "text": "No priority",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q33_j_W82",
+    "questions": [
+      {
+        "key": "GAP21Q33_j_W82",
+        "text": "Thinking about long-range foreign policy goals, how much priority, if any, do you think dealing with global climate change should be given?",
+        "valid_options": [
+          {
+            "raw": "Top priority",
+            "text": "Top priority",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some priority",
+            "text": "Some priority",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No priority",
+            "text": "No priority",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q33_k_W82",
+    "questions": [
+      {
+        "key": "GAP21Q33_k_W82",
+        "text": "Thinking about long-range foreign policy goals, how much priority, if any, do you think reducing our trade deficit with foreign countries should be given?",
+        "valid_options": [
+          {
+            "raw": "Top priority",
+            "text": "Top priority",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some priority",
+            "text": "Some priority",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No priority",
+            "text": "No priority",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q33_l_W82",
+    "questions": [
+      {
+        "key": "GAP21Q33_l_W82",
+        "text": "Thinking about long-range foreign policy goals, how much priority, if any, do you think promoting and defending human rights in other countries should be given?",
+        "valid_options": [
+          {
+            "raw": "Top priority",
+            "text": "Top priority",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some priority",
+            "text": "Some priority",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No priority",
+            "text": "No priority",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q33_m_W82",
+    "questions": [
+      {
+        "key": "GAP21Q33_m_W82",
+        "text": "Thinking about long-range foreign policy goals, how much priority, if any, do you think reducing the spread of infectious diseases should be given?",
+        "valid_options": [
+          {
+            "raw": "Top priority",
+            "text": "Top priority",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some priority",
+            "text": "Some priority",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No priority",
+            "text": "No priority",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q33_n_W82",
+    "questions": [
+      {
+        "key": "GAP21Q33_n_W82",
+        "text": "Thinking about long-range foreign policy goals, how much priority, if any, do you think limiting the power and influence of Iran should be given?",
+        "valid_options": [
+          {
+            "raw": "Top priority",
+            "text": "Top priority",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some priority",
+            "text": "Some priority",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No priority",
+            "text": "No priority",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q33_o_W82",
+    "questions": [
+      {
+        "key": "GAP21Q33_o_W82",
+        "text": "Thinking about long-range foreign policy goals, how much priority, if any, do you think improving relationships with our allies should be given?",
+        "valid_options": [
+          {
+            "raw": "Top priority",
+            "text": "Top priority",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some priority",
+            "text": "Some priority",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No priority",
+            "text": "No priority",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q33_p_W82",
+    "questions": [
+      {
+        "key": "GAP21Q33_p_W82",
+        "text": "Thinking about long-range foreign policy goals, how much priority, if any, do you think taking measures to protect the U.S. from terrorist attacks should be given?",
+        "valid_options": [
+          {
+            "raw": "Top priority",
+            "text": "Top priority",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some priority",
+            "text": "Some priority",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No priority",
+            "text": "No priority",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q33_q_W82",
+    "questions": [
+      {
+        "key": "GAP21Q33_q_W82",
+        "text": "Thinking about long-range foreign policy goals, how much priority, if any, do you think getting other countries to assume more of the costs of maintaining world order should be given?",
+        "valid_options": [
+          {
+            "raw": "Top priority",
+            "text": "Top priority",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some priority",
+            "text": "Some priority",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No priority",
+            "text": "No priority",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q33_r_W82",
+    "questions": [
+      {
+        "key": "GAP21Q33_r_W82",
+        "text": "Thinking about long-range foreign policy goals, how much priority, if any, do you think aiding refugees fleeing violence around the world should be given?",
+        "valid_options": [
+          {
+            "raw": "Top priority",
+            "text": "Top priority",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some priority",
+            "text": "Some priority",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No priority",
+            "text": "No priority",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q33_s_W82",
+    "questions": [
+      {
+        "key": "GAP21Q33_s_W82",
+        "text": "Thinking about long-range foreign policy goals, how much priority, if any, do you think reducing legal immigrations into the US should be given?",
+        "valid_options": [
+          {
+            "raw": "Top priority",
+            "text": "Top priority",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some priority",
+            "text": "Some priority",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No priority",
+            "text": "No priority",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q33_t_W82",
+    "questions": [
+      {
+        "key": "GAP21Q33_t_W82",
+        "text": "Thinking about long-range foreign policy goals, how much priority, if any, do you think limiting the power and influence of North Korea should be given?",
+        "valid_options": [
+          {
+            "raw": "Top priority",
+            "text": "Top priority",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some priority",
+            "text": "Some priority",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No priority",
+            "text": "No priority",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q34_a_W82",
+    "questions": [
+      {
+        "key": "GAP21Q34_a_W82",
+        "text": "Thinking about Joe Biden's ability to handle a number of things, how confident are you that Joe Biden can do make good decisions about international trade?",
+        "valid_options": [
+          {
+            "raw": "Very confident",
+            "text": "Very confident",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat confident",
+            "text": "Somewhat confident",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too confident",
+            "text": "Not too confident",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all confident",
+            "text": "Not at all confident",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q34_b_W82",
+    "questions": [
+      {
+        "key": "GAP21Q34_b_W82",
+        "text": "Thinking about Joe Biden's ability to handle a number of things, how confident are you that Joe Biden can do deal effectively with the threat of terrorism?",
+        "valid_options": [
+          {
+            "raw": "Very confident",
+            "text": "Very confident",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat confident",
+            "text": "Somewhat confident",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too confident",
+            "text": "Not too confident",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all confident",
+            "text": "Not at all confident",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q34_c_W82",
+    "questions": [
+      {
+        "key": "GAP21Q34_c_W82",
+        "text": "Thinking about Joe Biden's ability to handle a number of things, how confident are you that Joe Biden can do make good decisions about the use of military force?",
+        "valid_options": [
+          {
+            "raw": "Very confident",
+            "text": "Very confident",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat confident",
+            "text": "Somewhat confident",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too confident",
+            "text": "Not too confident",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all confident",
+            "text": "Not at all confident",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q34_d_W82",
+    "questions": [
+      {
+        "key": "GAP21Q34_d_W82",
+        "text": "Thinking about Joe Biden's ability to handle a number of things, how confident are you that Joe Biden can do deal effectively with global climate change?",
+        "valid_options": [
+          {
+            "raw": "Very confident",
+            "text": "Very confident",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat confident",
+            "text": "Somewhat confident",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too confident",
+            "text": "Not too confident",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all confident",
+            "text": "Not at all confident",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q34_e_W82",
+    "questions": [
+      {
+        "key": "GAP21Q34_e_W82",
+        "text": "Thinking about Joe Biden's ability to handle a number of things, how confident are you that Joe Biden can do improve relationships with our allies?",
+        "valid_options": [
+          {
+            "raw": "Very confident",
+            "text": "Very confident",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat confident",
+            "text": "Somewhat confident",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too confident",
+            "text": "Not too confident",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all confident",
+            "text": "Not at all confident",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q34_f_W82",
+    "questions": [
+      {
+        "key": "GAP21Q34_f_W82",
+        "text": "Thinking about Joe Biden's ability to handle a number of things, how confident are you that Joe Biden can do deal effectively with China?",
+        "valid_options": [
+          {
+            "raw": "Very confident",
+            "text": "Very confident",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat confident",
+            "text": "Somewhat confident",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too confident",
+            "text": "Not too confident",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all confident",
+            "text": "Not at all confident",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q35_W82",
+    "questions": [
+      {
+        "key": "GAP21Q35_W82",
+        "text": "Which statement comes closer to your view, even if neither is exactly right?",
+        "valid_options": [
+          {
+            "raw": "many of the problems facing our country can be solved by working with other countries",
+            "text": "many of the problems facing our country can be solved by working with other countries",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "few of the problems facing our country can be solved by working with other countries",
+            "text": "few of the problems facing our country can be solved by working with other countries",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q36_W82",
+    "questions": [
+      {
+        "key": "GAP21Q36_W82",
+        "text": "Please choose the statement that comes closer to your own views.",
+        "valid_options": [
+          {
+            "raw": "In foreign policy, the US should take into account the interests of its allies even if it means making compromises wit",
+            "text": "In foreign policy, the US should take into account the interests of its allies even if it means making compromises wit",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "In foreign policy, the US should follow its own national interests even when its allies strongly disagree",
+            "text": "In foreign policy, the US should follow its own national interests even when its allies strongly disagree",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q37_W82",
+    "questions": [
+      {
+        "key": "GAP21Q37_W82",
+        "text": "Please choose the statement that comes closer to your own views.",
+        "valid_options": [
+          {
+            "raw": "It's best for the future of our country to be active in world affairs",
+            "text": "It's best for the future of our country to be active in world affairs",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "We should pay less attention to problems overseas and concentrate on problems here at home",
+            "text": "We should pay less attention to problems overseas and concentrate on problems here at home",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q38_a_W82",
+    "questions": [
+      {
+        "key": "GAP21Q38_a_W82",
+        "text": "How much, if at all, do you think the US benefits from being a member of north Atlantic Treaty Organization, or NATO organizations?",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much",
+            "text": "Not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q38_b_W82",
+    "questions": [
+      {
+        "key": "GAP21Q38_b_W82",
+        "text": "How much, if at all, do you think the US benefits from being a member of the United Nations organizations?",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much",
+            "text": "Not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q38_c_W82",
+    "questions": [
+      {
+        "key": "GAP21Q38_c_W82",
+        "text": "How much, if at all, do you think the US benefits from being a member of the World Health Organization, or WHO organizations?",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much",
+            "text": "Not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q40_W82",
+    "questions": [
+      {
+        "key": "GAP21Q40_W82",
+        "text": "On balance, do you think of China as a partner of the US, a competitor of the US or an enemy of the US?",
+        "valid_options": [
+          {
+            "raw": "Partner",
+            "text": "Partner",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Competitor",
+            "text": "Competitor",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Enemy",
+            "text": "Enemy",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q41_W82",
+    "questions": [
+      {
+        "key": "GAP21Q41_W82",
+        "text": "Overall, do you think current economic relations between the US and China are very good, somewhat good, somewhat bad or very bad?",
+        "valid_options": [
+          {
+            "raw": "Very good",
+            "text": "Very good",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat good",
+            "text": "Somewhat good",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Somewhat bad",
+            "text": "Somewhat bad",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Very bad",
+            "text": "Very bad",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q42_W82",
+    "questions": [
+      {
+        "key": "GAP21Q42_W82",
+        "text": "Thinking about our economic and trade policy toward China, which is more important?",
+        "valid_options": [
+          {
+            "raw": "Building a strong relationship with China on economic issues",
+            "text": "Building a strong relationship with China on economic issues",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Getting tougher with China on economic issues",
+            "text": "Getting tougher with China on economic issues",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q43_a_W82",
+    "questions": [
+      {
+        "key": "GAP21Q43_a_W82",
+        "text": "Please indicate how much of a problem, if at all, the following would be for the US: The loss of US jobs to China",
+        "valid_options": [
+          {
+            "raw": "Very serious problem",
+            "text": "Very serious problem",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat serious problem",
+            "text": "Somewhat serious problem",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too serious of a problem",
+            "text": "Not too serious of a problem",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not a problem at all",
+            "text": "Not a problem at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q43_b_W82",
+    "questions": [
+      {
+        "key": "GAP21Q43_b_W82",
+        "text": "Please indicate how much of a problem, if at all, the following would be for the US: The US trade deficit with China",
+        "valid_options": [
+          {
+            "raw": "Very serious problem",
+            "text": "Very serious problem",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat serious problem",
+            "text": "Somewhat serious problem",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too serious of a problem",
+            "text": "Not too serious of a problem",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not a problem at all",
+            "text": "Not a problem at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q43_c_W82",
+    "questions": [
+      {
+        "key": "GAP21Q43_c_W82",
+        "text": "Please indicate how much of a problem, if at all, the following would be for the US: China's policies on human rights",
+        "valid_options": [
+          {
+            "raw": "Very serious problem",
+            "text": "Very serious problem",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat serious problem",
+            "text": "Somewhat serious problem",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too serious of a problem",
+            "text": "Not too serious of a problem",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not a problem at all",
+            "text": "Not a problem at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q43_d_W82",
+    "questions": [
+      {
+        "key": "GAP21Q43_d_W82",
+        "text": "Please indicate how much of a problem, if at all, the following would be for the US: Tensions between China and Taiwan",
+        "valid_options": [
+          {
+            "raw": "Very serious problem",
+            "text": "Very serious problem",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat serious problem",
+            "text": "Somewhat serious problem",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too serious of a problem",
+            "text": "Not too serious of a problem",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not a problem at all",
+            "text": "Not a problem at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q43_e_W82",
+    "questions": [
+      {
+        "key": "GAP21Q43_e_W82",
+        "text": "Please indicate how much of a problem, if at all, the following would be for the US: Cyberattacks from China",
+        "valid_options": [
+          {
+            "raw": "Very serious problem",
+            "text": "Very serious problem",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat serious problem",
+            "text": "Somewhat serious problem",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too serious of a problem",
+            "text": "Not too serious of a problem",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not a problem at all",
+            "text": "Not a problem at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q43_f_W82",
+    "questions": [
+      {
+        "key": "GAP21Q43_f_W82",
+        "text": "Please indicate how much of a problem, if at all, the following would be for the US: China's growing military power",
+        "valid_options": [
+          {
+            "raw": "Very serious problem",
+            "text": "Very serious problem",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat serious problem",
+            "text": "Somewhat serious problem",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too serious of a problem",
+            "text": "Not too serious of a problem",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not a problem at all",
+            "text": "Not a problem at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q43_g_W82",
+    "questions": [
+      {
+        "key": "GAP21Q43_g_W82",
+        "text": "Please indicate how much of a problem, if at all, the following would be for the US: China's growing technological power",
+        "valid_options": [
+          {
+            "raw": "Very serious problem",
+            "text": "Very serious problem",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat serious problem",
+            "text": "Somewhat serious problem",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too serious of a problem",
+            "text": "Not too serious of a problem",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not a problem at all",
+            "text": "Not a problem at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q43_h_W82",
+    "questions": [
+      {
+        "key": "GAP21Q43_h_W82",
+        "text": "Please indicate how much of a problem, if at all, the following would be for the US: Tensions between Mainland China and Hong Kong",
+        "valid_options": [
+          {
+            "raw": "Very serious problem",
+            "text": "Very serious problem",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat serious problem",
+            "text": "Somewhat serious problem",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too serious of a problem",
+            "text": "Not too serious of a problem",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not a problem at all",
+            "text": "Not a problem at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q46_W82",
+    "questions": [
+      {
+        "key": "GAP21Q46_W82",
+        "text": "Do you think it's good or bad for US colleges and universities to accept international students?",
+        "valid_options": [
+          {
+            "raw": "Good",
+            "text": "Good",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Bad",
+            "text": "Bad",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GAP21Q47_W82",
+    "questions": [
+      {
+        "key": "GAP21Q47_W82",
+        "text": "When it comes to whether or not to limit Chinese students studying in the US, do you",
+        "valid_options": [
+          {
+            "raw": "Strongly support limiting Chinese students",
+            "text": "Strongly support limiting Chinese students",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat support limiting Chinese students",
+            "text": "Somewhat support limiting Chinese students",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Somewhat oppose limiting Chinese students",
+            "text": "Somewhat oppose limiting Chinese students",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Strongly oppose limiting Chinese students",
+            "text": "Strongly oppose limiting Chinese students",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CREGION",
+    "questions": [
+      {
+        "key": "CREGION",
+        "text": "Which part of the United States do you currently live in?",
+        "valid_options": [
+          {
+            "raw": "Midwest",
+            "text": "Midwest",
+            "natural_language": "I live in the Midwest of the United States."
+          },
+          {
+            "raw": "Northeast",
+            "text": "Northeast",
+            "natural_language": "I live in the Northeast of the United States."
+          },
+          {
+            "raw": "South",
+            "text": "South",
+            "natural_language": "I live in the South of the United States."
+          },
+          {
+            "raw": "West",
+            "text": "West",
+            "natural_language": "I live in the West of the United States."
+          }
+        ],
+        "invalid_options": []
+      }
+    ]
+  },
+  {
+    "name": "AGE",
+    "questions": [
+      {
+        "key": "AGE",
+        "text": "How old are you?",
+        "valid_options": [
+          {
+            "raw": "18-29",
+            "text": "18-29",
+            "natural_language": "I am between 18-29 years old."
+          },
+          {
+            "raw": "30-49",
+            "text": "30-49",
+            "natural_language": "I am between 30-49 years old."
+          },
+          {
+            "raw": "50-64",
+            "text": "50-64",
+            "natural_language": "I am between 50-64 years old."
+          },
+          {
+            "raw": "65+",
+            "text": "65+",
+            "natural_language": "I am 65+ years old."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SEX",
+    "questions": [
+      {
+        "key": "SEX",
+        "text": "What is the sex that you were assigned at birth?",
+        "valid_options": [
+          {
+            "raw": "Female",
+            "text": "Female",
+            "natural_language": "I am female."
+          },
+          {
+            "raw": "Male",
+            "text": "Male",
+            "natural_language": "I am male."
+          }
+        ],
+        "invalid_options": [
+          "In some other way",
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "EDUCATION",
+    "questions": [
+      {
+        "key": "EDUCATION",
+        "text": "What is the highest level of schooling or degree that you have completed?",
+        "valid_options": [
+          {
+            "raw": "Associate's degree",
+            "text": "Associate's degree",
+            "natural_language": "I earned an associate's degree."
+          },
+          {
+            "raw": "College graduate/some postgrad",
+            "text": "graduated from college",
+            "natural_language": "I graduated from college."
+          },
+          {
+            "raw": "High school graduate",
+            "text": "High school graduate",
+            "natural_language": "I graduated from high school."
+          },
+          {
+            "raw": "Less than high school",
+            "text": "Less than high school",
+            "natural_language": "I did not graduate from high school."
+          },
+          {
+            "raw": "Postgraduate",
+            "text": "Postgraduate",
+            "natural_language": "I went to graduate school."
+          },
+          {
+            "raw": "Some college, no degree",
+            "text": "Some college, no degree",
+            "natural_language": "I went to some college."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CITIZEN",
+    "questions": [
+      {
+        "key": "CITIZEN",
+        "text": "Are you a citizen of the United States?",
+        "valid_options": [
+          {
+            "raw": "No",
+            "text": "No",
+            "natural_language": "I am not a citizen of the United States."
+          },
+          {
+            "raw": "Yes",
+            "text": "Yes",
+            "natural_language": "I am a citizen of the United States."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MARITAL",
+    "questions": [
+      {
+        "key": "MARITAL",
+        "text": "Which of these best describes you?",
+        "valid_options": [
+          {
+            "raw": "Divorced",
+            "text": "Divorced",
+            "natural_language": "I am divorced."
+          },
+          {
+            "raw": "Living with a partner",
+            "text": "Living with a partner",
+            "natural_language": "I am living with a partner."
+          },
+          {
+            "raw": "Married",
+            "text": "Married",
+            "natural_language": "I am married."
+          },
+          {
+            "raw": "Never been married",
+            "text": "Never been married",
+            "natural_language": "I have never been married."
+          },
+          {
+            "raw": "Separated",
+            "text": "Separated",
+            "natural_language": "I am separated from my partner."
+          },
+          {
+            "raw": "Widowed",
+            "text": "Widowed",
+            "natural_language": "I am widowed."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RELIG",
+    "questions": [
+      {
+        "key": "RELIG",
+        "text": "What is your present religion, if any?",
+        "valid_options": [
+          {
+            "raw": "Agnostic",
+            "text": "Agnostic",
+            "natural_language": "Religiously speaking, I am agnostic."
+          },
+          {
+            "raw": "Atheist",
+            "text": "Atheist",
+            "natural_language": "Religiously speaking, I am atheist."
+          },
+          {
+            "raw": "Buddhist",
+            "text": "Buddhist",
+            "natural_language": "Religiously speaking, I am Buddhist."
+          },
+          {
+            "raw": "Hindu",
+            "text": "Hindu",
+            "natural_language": "Religiously speaking, I am Hindu."
+          },
+          {
+            "raw": "Jewish",
+            "text": "Jewish",
+            "natural_language": "Religiously speaking, I am Jewish."
+          },
+          {
+            "raw": "Mormon",
+            "text": "Mormon",
+            "natural_language": "Religiously speaking, I am a member of the Church of Jesus Christ of Latter-day Saints."
+          },
+          {
+            "raw": "Muslim",
+            "text": "Muslim",
+            "natural_language": "Religiously speaking, I am Muslim."
+          },
+          {
+            "raw": "Nothing in particular",
+            "text": "Nothing in particular",
+            "natural_language": "Religiously speaking, I don't identify with anything in particular."
+          },
+          {
+            "raw": "Orthodox",
+            "text": "Orthodox",
+            "natural_language": "Religiously speaking, I am Orthodox."
+          },
+          {
+            "raw": "Other",
+            "text": "Other",
+            "natural_language": "Religiously speaking, I am not mainstream."
+          },
+          {
+            "raw": "Protestant",
+            "text": "Protestant",
+            "natural_language": "Religiously speaking, I am Protestant."
+          },
+          {
+            "raw": "Roman Catholic",
+            "text": "Roman Catholic",
+            "natural_language": "Religiously speaking, I am Roman Catholic."
+          }
+        ],
+        "invalid_options": [
+          "Refused",
+          "Christian",
+          "Unitarian"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RELIGATTEND",
+    "questions": [
+      {
+        "key": "RELIGATTEND",
+        "text": "Aside from weddings and funerals, how often do you attend religious services?",
+        "valid_options": [
+          {
+            "raw": "A few times a year",
+            "text": "A few times a year",
+            "natural_language": "I attend religious services a few times a year."
+          },
+          {
+            "raw": "More than once a week",
+            "text": "More than once a week",
+            "natural_language": "I attend religious services more than once a week."
+          },
+          {
+            "raw": "Never",
+            "text": "Never",
+            "natural_language": "I never attend religious services."
+          },
+          {
+            "raw": "Once a week",
+            "text": "Once a week",
+            "natural_language": "I attend religious services once a week."
+          },
+          {
+            "raw": "Once or twice a month",
+            "text": "Once or twice a month",
+            "natural_language": "I attend religious services once or twice a month."
+          },
+          {
+            "raw": "Seldom",
+            "text": "Seldom",
+            "natural_language": "I seldom attend religious services."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "POLPARTY",
+    "questions": [
+      {
+        "key": "POLPARTY",
+        "text": "In politics today, what do you consider yourself?",
+        "valid_options": [
+          {
+            "raw": "Democrat",
+            "text": "Democrat",
+            "natural_language": "Politically, I am a Democrat."
+          },
+          {
+            "raw": "Independent",
+            "text": "Independent",
+            "natural_language": "Politically, I am an independent."
+          },
+          {
+            "raw": "Republican",
+            "text": "Republican",
+            "natural_language": "Politically, I am a Republican."
+          }
+        ],
+        "invalid_options": [
+          "Other",
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INCOME",
+    "questions": [
+      {
+        "key": "INCOME",
+        "text": "Last year, what was your total family income from all sources, before taxes?",
+        "valid_options": [
+          {
+            "raw": "$100,000 or more",
+            "text": "$100,000 or more",
+            "natural_language": "Last year, my household income was $100,000 or more before taxes."
+          },
+          {
+            "raw": "$30,000-$50,000",
+            "text": "$30,000-$50,000",
+            "natural_language": "Last year, my household income was $30,000-$50,000 before taxes."
+          },
+          {
+            "raw": "$50,000-$75,000",
+            "text": "$50,000-$75,000",
+            "natural_language": "Last year, my household income was $50,000-$75,000 before taxes."
+          },
+          {
+            "raw": "$75,000-$100,000",
+            "text": "$75,000-$100,000",
+            "natural_language": "Last year, my household income was $75,000-$100,000 before taxes."
+          },
+          {
+            "raw": "Less than $30,000",
+            "text": "Less than $30,000",
+            "natural_language": "Last year, my household income was less than $30,000 before taxes."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "POLIDEOLOGY",
+    "questions": [
+      {
+        "key": "POLIDEOLOGY",
+        "text": "In general, how would you describe your political ideology?",
+        "valid_options": [
+          {
+            "raw": "Conservative",
+            "text": "Conservative",
+            "natural_language": "Politically, I am conservative."
+          },
+          {
+            "raw": "Liberal",
+            "text": "Liberal",
+            "natural_language": "Politically, I am liberal."
+          },
+          {
+            "raw": "Moderate",
+            "text": "Moderate",
+            "natural_language": "Politically, I am moderate."
+          },
+          {
+            "raw": "Very conservative",
+            "text": "Very conservative",
+            "natural_language": "Politically, I am very conservative."
+          },
+          {
+            "raw": "Very liberal",
+            "text": "Very liberal",
+            "natural_language": "Politically, I am very liberal."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACE",
+    "questions": [
+      {
+        "key": "RACE",
+        "text": "What is your race or origin?",
+        "valid_options": [
+          {
+            "raw": "Asian",
+            "text": "Asian",
+            "natural_language": "I am Asian."
+          },
+          {
+            "raw": "Black",
+            "text": "Black",
+            "natural_language": "I am Black."
+          },
+          {
+            "raw": "Hispanic",
+            "text": "Hispanic",
+            "natural_language": "I am Hispanic."
+          },
+          {
+            "raw": "Mixed Race",
+            "text": "Mixed Race",
+            "natural_language": "I am mixed race."
+          },
+          {
+            "raw": "Other",
+            "text": "Other",
+            "natural_language": "I am racially ambiguous."
+          },
+          {
+            "raw": "White",
+            "text": "White",
+            "natural_language": "I am White."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  }
+]

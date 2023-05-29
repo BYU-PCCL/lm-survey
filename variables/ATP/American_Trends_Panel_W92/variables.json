@@ -1,0 +1,2911 @@
+[
+  {
+    "name": "POL1JB_W92",
+    "questions": [
+      {
+        "key": "POL1JB_W92",
+        "text": "Do you approve or disapprove of the way Joe Biden is handling his job as president?",
+        "valid_options": [
+          {
+            "raw": "Approve",
+            "text": "Approve",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Disapprove",
+            "text": "Disapprove",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "LIFEFIFTY_W92",
+    "questions": [
+      {
+        "key": "LIFEFIFTY_W92",
+        "text": "In general, would you say life in America today is better, worse, or about the same as it was 50 years ago for people like you?",
+        "valid_options": [
+          {
+            "raw": "Better",
+            "text": "Better",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Worse",
+            "text": "Worse",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "About the same",
+            "text": "About the same",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BIGHOUSES_W92",
+    "questions": [
+      {
+        "key": "BIGHOUSES_W92",
+        "text": "Would you prefer to live in a community where the houses are",
+        "valid_options": [
+          {
+            "raw": "Larger and farther apart, but schools, stores, and restaurants are several miles away",
+            "text": "Larger and farther apart, but schools, stores, and restaurants are several miles away",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Smaller and closer to each other, but schools, stores, and restaurants are within walking distance",
+            "text": "Smaller and closer to each other, but schools, stores, and restaurants are within walking distance",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INSTN_CHR_W92",
+    "questions": [
+      {
+        "key": "INSTN_CHR_W92",
+        "text": "Are churches and religious organizations having a positive or negative effect on the way things are going in the country these days?",
+        "valid_options": [
+          {
+            "raw": "Positive effect",
+            "text": "Positive effect",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Negative effect",
+            "text": "Negative effect",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INSTN_CLGS_W92",
+    "questions": [
+      {
+        "key": "INSTN_CLGS_W92",
+        "text": "Are colleges and universities having a positive or negative effect on the way things are going in the country these days?",
+        "valid_options": [
+          {
+            "raw": "Positive effect",
+            "text": "Positive effect",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Negative effect",
+            "text": "Negative effect",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INSTN_LGECRP_W92",
+    "questions": [
+      {
+        "key": "INSTN_LGECRP_W92",
+        "text": "Are large corporations having a positive or negative effect on the way things are going in the country these days?",
+        "valid_options": [
+          {
+            "raw": "Positive effect",
+            "text": "Positive effect",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Negative effect",
+            "text": "Negative effect",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INSTN_MSCENT_W92",
+    "questions": [
+      {
+        "key": "INSTN_MSCENT_W92",
+        "text": "Is the entertainment industry having a positive or negative effect on the way things are going in the country these days?",
+        "valid_options": [
+          {
+            "raw": "Positive effect",
+            "text": "Positive effect",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Negative effect",
+            "text": "Negative effect",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INSTN_LBRUN_W92",
+    "questions": [
+      {
+        "key": "INSTN_LBRUN_W92",
+        "text": "Are labor unions having a positive or negative effect on the way things are going in the country these days?",
+        "valid_options": [
+          {
+            "raw": "Positive effect",
+            "text": "Positive effect",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Negative effect",
+            "text": "Negative effect",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INSTN_K12_W92",
+    "questions": [
+      {
+        "key": "INSTN_K12_W92",
+        "text": "Are k-12 public schools having a positive or negative effect on the way things are going in the country these days?",
+        "valid_options": [
+          {
+            "raw": "Positive effect",
+            "text": "Positive effect",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Negative effect",
+            "text": "Negative effect",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INSTN_BNKS_W92",
+    "questions": [
+      {
+        "key": "INSTN_BNKS_W92",
+        "text": "Are banks and other financial institutions having a positive or negative effect on the way things are going in the country these days?",
+        "valid_options": [
+          {
+            "raw": "Positive effect",
+            "text": "Positive effect",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Negative effect",
+            "text": "Negative effect",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INSTN_TECHCMP_W92",
+    "questions": [
+      {
+        "key": "INSTN_TECHCMP_W92",
+        "text": "Are technology companies having a positive or negative effect on the way things are going in the country these days?",
+        "valid_options": [
+          {
+            "raw": "Positive effect",
+            "text": "Positive effect",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Negative effect",
+            "text": "Negative effect",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "DIFFPARTY_W92",
+    "questions": [
+      {
+        "key": "DIFFPARTY_W92",
+        "text": "Thinking about the Democratic and Republican parties, would you say there is",
+        "valid_options": [
+          {
+            "raw": "A great deal of difference in what they stand for",
+            "text": "A great deal of difference in what they stand for",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount of difference in what they stand for",
+            "text": "A fair amount of difference in what they stand for",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hardly any difference at all in what they stand for",
+            "text": "Hardly any difference at all in what they stand for",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GOVSIZE1_W92",
+    "questions": [
+      {
+        "key": "GOVSIZE1_W92",
+        "text": "If you had to choose, would you rather have",
+        "valid_options": [
+          {
+            "raw": "A smaller government providing fewer services",
+            "text": "A smaller government providing fewer services",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A bigger government providing more services",
+            "text": "A bigger government providing more services",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GOVSIZE2_W92",
+    "questions": [
+      {
+        "key": "GOVSIZE2_W92",
+        "text": "When you say you favor a smaller government providing fewer services, do you think it would be better to",
+        "valid_options": [
+          {
+            "raw": "Eliminate most current government services",
+            "text": "Eliminate most current government services",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Modestly reduce current government services",
+            "text": "Modestly reduce current government services",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GOVSIZE3_W92",
+    "questions": [
+      {
+        "key": "GOVSIZE3_W92",
+        "text": "When you say you favor a bigger government providing more services, do you think it would be better to",
+        "valid_options": [
+          {
+            "raw": "Modestly expand on current government services",
+            "text": "Modestly expand on current government services",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Greatly expand on current government services",
+            "text": "Greatly expand on current government services",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "USEXCEPT_W92",
+    "questions": [
+      {
+        "key": "USEXCEPT_W92",
+        "text": "Which of these statements best describes your opinion about the United States?",
+        "valid_options": [
+          {
+            "raw": "The U.S. stands above all other countries in the world",
+            "text": "The U.S. stands above all other countries in the world",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "The U.S. is one of the greatest countries in the world, along with some others",
+            "text": "The U.S. is one of the greatest countries in the world, along with some others",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "There are other countries that are better than the U.S.",
+            "text": "There are other countries that are better than the U.S.",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WOMENOBS_W92",
+    "questions": [
+      {
+        "key": "WOMENOBS_W92",
+        "text": "Please choose the statement that comes closer to your own views.",
+        "valid_options": [
+          {
+            "raw": "The obstacles that once made it harder for women than men to get ahead are now largely gone",
+            "text": "The obstacles that once made it harder for women than men to get ahead are now largely gone",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "There are still significant obstacles that make it harder for women to get ahead than men",
+            "text": "There are still significant obstacles that make it harder for women to get ahead than men",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ECONFAIR_W92",
+    "questions": [
+      {
+        "key": "ECONFAIR_W92",
+        "text": "Please choose the statement that comes closer to your own views.",
+        "valid_options": [
+          {
+            "raw": "The economic system in this country unfairly favors powerful interests",
+            "text": "The economic system in this country unfairly favors powerful interests",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "The economic system in this country is generally fair to most Americans",
+            "text": "The economic system in this country is generally fair to most Americans",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "OPENIDEN_W92",
+    "questions": [
+      {
+        "key": "OPENIDEN_W92",
+        "text": "Please choose the statement that comes closer to your own views.",
+        "valid_options": [
+          {
+            "raw": "America's openness to people from all over the world is essential to who we are as a nation",
+            "text": "America's openness to people from all over the world is essential to who we are as a nation",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "If America is too open to people from all over the world, we risk losing our identity as a nation",
+            "text": "If America is too open to people from all over the world, we risk losing our identity as a nation",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "VTRGHTPRIV1_W92",
+    "questions": [
+      {
+        "key": "VTRGHTPRIV1_W92",
+        "text": "Please choose the statement that comes closer to your own views.",
+        "valid_options": [
+          {
+            "raw": "Voting is a fundamental right for every adult U.S. citizen and should not be restricted in any way",
+            "text": "Voting is a fundamental right for every adult U.S. citizen and should not be restricted in any way",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Voting is a privilege that comes with responsibilities and can be limited if adult U.S. citizens don't meet some require",
+            "text": "Voting is a privilege that comes with responsibilities and can be limited if adult U.S. citizens don't meet some require",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ALLIES_W92",
+    "questions": [
+      {
+        "key": "ALLIES_W92",
+        "text": "Please choose the statement that comes closer to your own views.",
+        "valid_options": [
+          {
+            "raw": "In foreign policy, the U.S. should take into account the interests of its allies even if it means making compromises",
+            "text": "In foreign policy, the U.S. should take into account the interests of its allies even if it means making compromises",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "In foreign policy, the U.S. should follow its own national interests even when its allies strongly disagree",
+            "text": "In foreign policy, the U.S. should follow its own national interests even when its allies strongly disagree",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "PEACESTR_W92",
+    "questions": [
+      {
+        "key": "PEACESTR_W92",
+        "text": "Please choose the statement that comes closer to your own views.",
+        "valid_options": [
+          {
+            "raw": "The best way to ensure peace is through military strength",
+            "text": "The best way to ensure peace is through military strength",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Good diplomacy is the best way to ensure peace",
+            "text": "Good diplomacy is the best way to ensure peace",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GOVWASTE_W92",
+    "questions": [
+      {
+        "key": "GOVWASTE_W92",
+        "text": "Please choose the statement that comes closer to your own views.",
+        "valid_options": [
+          {
+            "raw": "Government is almost always wasteful and inefficient",
+            "text": "Government is almost always wasteful and inefficient",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Government often does a better job than people give it credit for",
+            "text": "Government often does a better job than people give it credit for",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "COMPROMISEVAL_W92",
+    "questions": [
+      {
+        "key": "COMPROMISEVAL_W92",
+        "text": "Please choose the statement that comes closer to your own views.",
+        "valid_options": [
+          {
+            "raw": "Compromise in politics is really just selling out on what you believe in",
+            "text": "Compromise in politics is really just selling out on what you believe in",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Compromise is how things get done in politics, even though it sometimes means sacrificing your beliefs",
+            "text": "Compromise is how things get done in politics, even though it sometimes means sacrificing your beliefs",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "POORASSIST_W92",
+    "questions": [
+      {
+        "key": "POORASSIST_W92",
+        "text": "Thinking about assistance the government provides to people in need, do you think the government",
+        "valid_options": [
+          {
+            "raw": "Should provide more assistance",
+            "text": "Should provide more assistance",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Should provide less assistance",
+            "text": "Should provide less assistance",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Is providing about the right amount of assistance",
+            "text": "Is providing about the right amount of assistance",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "PAR2CHILD_W92",
+    "questions": [
+      {
+        "key": "PAR2CHILD_W92",
+        "text": "Children with two parents are",
+        "valid_options": [
+          {
+            "raw": "Better off when a parent stays home to focus on the family",
+            "text": "Better off when a parent stays home to focus on the family",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Just as well off when their parents work outside the home",
+            "text": "Just as well off when their parents work outside the home",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "PAR2CHILDa_W92",
+    "questions": [
+      {
+        "key": "PAR2CHILDa_W92",
+        "text": "If one parent is able to stay home to focus on the family, is it generally better if that parent is the",
+        "valid_options": [
+          {
+            "raw": "Mother",
+            "text": "Mother",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Father",
+            "text": "Father",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "It doesn't matter which parent stays home",
+            "text": "It doesn't matter which parent stays home",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "POLICY3MOD_W92",
+    "questions": [
+      {
+        "key": "POLICY3MOD_W92",
+        "text": "In general, would you say experts who study a subject for many years are",
+        "valid_options": [
+          {
+            "raw": "Usually better at making good policy decisions about that subject than other people",
+            "text": "Usually better at making good policy decisions about that subject than other people",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Usually worse at making good policy decisions about that subject than other people",
+            "text": "Usually worse at making good policy decisions about that subject than other people",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "neither better nor worse at making good policy decisions about that subject than other people",
+            "text": "neither better nor worse at making good policy decisions about that subject than other people",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WHADVANT_W92",
+    "questions": [
+      {
+        "key": "WHADVANT_W92",
+        "text": "In general, how much do White people benefit from advantages in society that Black people do not have?",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A fair amount",
+            "text": "A fair amount",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too much",
+            "text": "Not too much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SUPERPWR_W92",
+    "questions": [
+      {
+        "key": "SUPERPWR_W92",
+        "text": "In the future, do you think",
+        "valid_options": [
+          {
+            "raw": "U.S. policies should try to keep it so America is the only military superpower",
+            "text": "U.S. policies should try to keep it so America is the only military superpower",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "It would be acceptable if another country became as militarily powerful as the U.S.",
+            "text": "It would be acceptable if another country became as militarily powerful as the U.S.",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "IL_IMM_PRI_W92",
+    "questions": [
+      {
+        "key": "IL_IMM_PRI_W92",
+        "text": "What should be the priority for dealing with illegal immigration in the U.S.?",
+        "valid_options": [
+          {
+            "raw": "Better border security and stronger enforcement of our immigration laws",
+            "text": "Better border security and stronger enforcement of our immigration laws",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Creating a way for immigrants already here illegally to become citizens if they meet certain requirements",
+            "text": "Creating a way for immigrants already here illegally to become citizens if they meet certain requirements",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Both should be given equal priority",
+            "text": "Both should be given equal priority",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BILLION_W92",
+    "questions": [
+      {
+        "key": "BILLION_W92",
+        "text": "Do you think the fact that there are some people in this country who have personal fortunes of a billion dollars or more is",
+        "valid_options": [
+          {
+            "raw": "A good thing for the country",
+            "text": "A good thing for the country",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A bad thing for the country",
+            "text": "A bad thing for the country",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Neither a good thing or a bad thing",
+            "text": "Neither a good thing or a bad thing",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GLBLZE_W92",
+    "questions": [
+      {
+        "key": "GLBLZE_W92",
+        "text": "All in all, would you say that the U.S. has",
+        "valid_options": [
+          {
+            "raw": "Gained more than it has lost from increased trade",
+            "text": "Gained more than it has lost from increased trade",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Lost more than it has gained from increased trade",
+            "text": "Lost more than it has gained from increased trade",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FP_AUTH_W92",
+    "questions": [
+      {
+        "key": "FP_AUTH_W92",
+        "text": "In foreign policy, the U.S. should",
+        "valid_options": [
+          {
+            "raw": "Work with any country to achieve U.S. goals, even if that sometimes means working closely with dictators or countries th",
+            "text": "Work with any country to achieve U.S. goals, even if that sometimes means working closely with dictators or countries th",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Not work with dictators or countries that do not share our democratic values, even if that sometimes makes it harder to",
+            "text": "Not work with dictators or countries that do not share our democratic values, even if that sometimes makes it harder to",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GOVTHC_W92",
+    "questions": [
+      {
+        "key": "GOVTHC_W92",
+        "text": "Do you think it is the responsibility of the federal government to make sure all Americans have health care coverage?",
+        "valid_options": [
+          {
+            "raw": "Yes, it is",
+            "text": "Yes, it is",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, it is not",
+            "text": "No, it is not",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SNGLPYER_W92",
+    "questions": [
+      {
+        "key": "SNGLPYER_W92",
+        "text": "Should health insurance",
+        "valid_options": [
+          {
+            "raw": "Be provided through a single national health insurance system run by the government",
+            "text": "Be provided through a single national health insurance system run by the government",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Continue to be provided through a mix of private insurance companies and government programs",
+            "text": "Continue to be provided through a mix of private insurance companies and government programs",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "NOGOVTHC_W92",
+    "questions": [
+      {
+        "key": "NOGOVTHC_W92",
+        "text": "Should the government",
+        "valid_options": [
+          {
+            "raw": "Not be involved in providing health insurance at all",
+            "text": "Not be involved in providing health insurance at all",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Continue programs like Medicare and Medicaid for seniors and the very poor",
+            "text": "Continue programs like Medicare and Medicaid for seniors and the very poor",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FREECOLL_W92",
+    "questions": [
+      {
+        "key": "FREECOLL_W92",
+        "text": "Would you favor or oppose making tuition at public colleges and universities free for all American students?",
+        "valid_options": [
+          {
+            "raw": "Strongly favor",
+            "text": "Strongly favor",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat favor",
+            "text": "Somewhat favor",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Somewhat oppose",
+            "text": "Somewhat oppose",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Strongly oppose",
+            "text": "Strongly oppose",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CRIM_SENT2_W92",
+    "questions": [
+      {
+        "key": "CRIM_SENT2_W92",
+        "text": "Overall, would you say people who are convicted of crimes in this country serve",
+        "valid_options": [
+          {
+            "raw": "Too much time in prison",
+            "text": "Too much time in prison",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Too little time in prison",
+            "text": "Too little time in prison",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "About the right amount of time in prison",
+            "text": "About the right amount of time in prison",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "USMILSIZ_W92",
+    "questions": [
+      {
+        "key": "USMILSIZ_W92",
+        "text": "Thinking about the size of America's military, do you think it should be",
+        "valid_options": [
+          {
+            "raw": "Reduced a great deal",
+            "text": "Reduced a great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Reduced somewhat",
+            "text": "Reduced somewhat",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Kept about as is",
+            "text": "Kept about as is",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Increased somewhat",
+            "text": "Increased somewhat",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Increased a great deal",
+            "text": "Increased a great deal",
+            "natural_language": null,
+            "ordinal": 5.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "PROG_RRETRO_W92",
+    "questions": [
+      {
+        "key": "PROG_RRETRO_W92",
+        "text": "How much progress, if any, do you think the country has made over the last 50 years toward ensuring equal rights for all Americans regardless of their racial or ethnic backgrounds?",
+        "valid_options": [
+          {
+            "raw": "A lot",
+            "text": "A lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A little",
+            "text": "A little",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "None at all",
+            "text": "None at all",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "PROG_RNEED_W92",
+    "questions": [
+      {
+        "key": "PROG_RNEED_W92",
+        "text": "How much more, if anything, needs to be done to ensure equal rights for all Americans regardless of their racial or ethnic backgrounds?",
+        "valid_options": [
+          {
+            "raw": "A lot",
+            "text": "A lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A little",
+            "text": "A little",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Nothing at all",
+            "text": "Nothing at all",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "PROG_RNEED2b_W92",
+    "questions": [
+      {
+        "key": "PROG_RNEED2b_W92",
+        "text": "Which comes closer to your view about what needs to be done to ensure equal rights for all Americans regardless of their racial or ethnic backgrounds?",
+        "valid_options": [
+          {
+            "raw": "Most U.S. laws and major institutions need to be completely rebuilt because they are fundamentally biased against some r",
+            "text": "Most U.S. laws and major institutions need to be completely rebuilt because they are fundamentally biased against some r",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "While there are many inequities in U.S. laws and institutions, necessary changes can be made by working within the curre",
+            "text": "While there are many inequities in U.S. laws and institutions, necessary changes can be made by working within the curre",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ELITEUNDMOD_W92",
+    "questions": [
+      {
+        "key": "ELITEUNDMOD_W92",
+        "text": "In general, do you think people in influential and powerful positions throughout our society understand the challenges people like you face in their daily lives",
+        "valid_options": [
+          {
+            "raw": "Very well",
+            "text": "Very well",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat well",
+            "text": "Somewhat well",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too well",
+            "text": "Not too well",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all well",
+            "text": "Not at all well",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "POLINTOL2_a_W92",
+    "questions": [
+      {
+        "key": "POLINTOL2_a_W92",
+        "text": "In general, how comfortable do you think Republicans in this country are to freely and openly express their political views?",
+        "valid_options": [
+          {
+            "raw": "Very comfortable",
+            "text": "Very comfortable",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat comfortable",
+            "text": "Somewhat comfortable",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too comfortable",
+            "text": "Not too comfortable",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all comfortable",
+            "text": "Not at all comfortable",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "POLINTOL2_b_W92",
+    "questions": [
+      {
+        "key": "POLINTOL2_b_W92",
+        "text": "In general, how comfortable do you think Democrats in this country are to freely and openly express their political views?",
+        "valid_options": [
+          {
+            "raw": "Very comfortable",
+            "text": "Very comfortable",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat comfortable",
+            "text": "Somewhat comfortable",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too comfortable",
+            "text": "Not too comfortable",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all comfortable",
+            "text": "Not at all comfortable",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CANQUALPOL_W92",
+    "questions": [
+      {
+        "key": "CANQUALPOL_W92",
+        "text": "In general, would you say the quality of the candidates running for political office in the last several years has been",
+        "valid_options": [
+          {
+            "raw": "Very good",
+            "text": "Very good",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat good",
+            "text": "Somewhat good",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Somewhat bad",
+            "text": "Somewhat bad",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Very bad",
+            "text": "Very bad",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CANMTCHPOL_W92",
+    "questions": [
+      {
+        "key": "CANMTCHPOL_W92",
+        "text": "I usually feel like",
+        "valid_options": [
+          {
+            "raw": "There is at least one candidate who shares most of my views",
+            "text": "There is at least one candidate who shares most of my views",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "None of the candidates represent my views well",
+            "text": "None of the candidates represent my views well",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SOCIETY_TRANS_W92",
+    "questions": [
+      {
+        "key": "SOCIETY_TRANS_W92",
+        "text": "Do you think greater social acceptance of people who are transgender (people who identify as a gender that is different from the sex they were assigned at birth) is generally good or bad for our society?",
+        "valid_options": [
+          {
+            "raw": "Very good for society",
+            "text": "Very good for society",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat good for society",
+            "text": "Somewhat good for society",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Neither good nor bad for society",
+            "text": "Neither good nor bad for society",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Somewhat bad for society",
+            "text": "Somewhat bad for society",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Very bad for society",
+            "text": "Very bad for society",
+            "natural_language": null,
+            "ordinal": 5.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SOCIETY_RHIST_W92",
+    "questions": [
+      {
+        "key": "SOCIETY_RHIST_W92",
+        "text": "Do you think increased public attention to the history of slavery and racism in America is generally good or bad for our society?",
+        "valid_options": [
+          {
+            "raw": "Very good for society",
+            "text": "Very good for society",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat good for society",
+            "text": "Somewhat good for society",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Neither good nor bad for society",
+            "text": "Neither good nor bad for society",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Somewhat bad for society",
+            "text": "Somewhat bad for society",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Very bad for society",
+            "text": "Very bad for society",
+            "natural_language": null,
+            "ordinal": 5.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SOCIETY_JBCLL_W92",
+    "questions": [
+      {
+        "key": "SOCIETY_JBCLL_W92",
+        "text": "Do you think good-paying jobs requiring a college degree more often than they used to is generally good or bad for our society?",
+        "valid_options": [
+          {
+            "raw": "Very good for society",
+            "text": "Very good for society",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat good for society",
+            "text": "Somewhat good for society",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Neither good nor bad for society",
+            "text": "Neither good nor bad for society",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Somewhat bad for society",
+            "text": "Somewhat bad for society",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Very bad for society",
+            "text": "Very bad for society",
+            "natural_language": null,
+            "ordinal": 5.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SOCIETY_RELG_W92",
+    "questions": [
+      {
+        "key": "SOCIETY_RELG_W92",
+        "text": "Do you think a decline in the share of Americans belonging to an organized religion is generally good or bad for our society?",
+        "valid_options": [
+          {
+            "raw": "Very good for society",
+            "text": "Very good for society",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat good for society",
+            "text": "Somewhat good for society",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Neither good nor bad for society",
+            "text": "Neither good nor bad for society",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Somewhat bad for society",
+            "text": "Somewhat bad for society",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Very bad for society",
+            "text": "Very bad for society",
+            "natural_language": null,
+            "ordinal": 5.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SOCIETY_WHT_W92",
+    "questions": [
+      {
+        "key": "SOCIETY_WHT_W92",
+        "text": "Do you think white people declining as a share of the U.S. population is generally good or bad for our society?",
+        "valid_options": [
+          {
+            "raw": "Very good for society",
+            "text": "Very good for society",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat good for society",
+            "text": "Somewhat good for society",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Neither good nor bad for society",
+            "text": "Neither good nor bad for society",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Somewhat bad for society",
+            "text": "Somewhat bad for society",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Very bad for society",
+            "text": "Very bad for society",
+            "natural_language": null,
+            "ordinal": 5.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SOCIETY_GUNS_W92",
+    "questions": [
+      {
+        "key": "SOCIETY_GUNS_W92",
+        "text": "Do you think an increase in the number of guns in the U.S. is generally good or bad for our society?",
+        "valid_options": [
+          {
+            "raw": "Very good for society",
+            "text": "Very good for society",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat good for society",
+            "text": "Somewhat good for society",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Neither good nor bad for society",
+            "text": "Neither good nor bad for society",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Somewhat bad for society",
+            "text": "Somewhat bad for society",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Very bad for society",
+            "text": "Very bad for society",
+            "natural_language": null,
+            "ordinal": 5.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SOCIETY_SSM_W92",
+    "questions": [
+      {
+        "key": "SOCIETY_SSM_W92",
+        "text": "Do you think same-sex marriages being legal in the U.S. is generally good or bad for our society?",
+        "valid_options": [
+          {
+            "raw": "Very good for society",
+            "text": "Very good for society",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat good for society",
+            "text": "Somewhat good for society",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Neither good nor bad for society",
+            "text": "Neither good nor bad for society",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Somewhat bad for society",
+            "text": "Somewhat bad for society",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Very bad for society",
+            "text": "Very bad for society",
+            "natural_language": null,
+            "ordinal": 5.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "PROBOFF_a_W92",
+    "questions": [
+      {
+        "key": "PROBOFF_a_W92",
+        "text": "How much of a problem, if any, would you say people being too easily offended by things others say is in the country today?",
+        "valid_options": [
+          {
+            "raw": "Major problem",
+            "text": "Major problem",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor problem",
+            "text": "Minor problem",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a problem",
+            "text": "Not a problem",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "PROBOFF_b_W92",
+    "questions": [
+      {
+        "key": "PROBOFF_b_W92",
+        "text": "How much of a problem, if any, would you say people saying things that are very offensive to others are in the country today?",
+        "valid_options": [
+          {
+            "raw": "Major problem",
+            "text": "Major problem",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor problem",
+            "text": "Minor problem",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a problem",
+            "text": "Not a problem",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BUSPROFIT_W92",
+    "questions": [
+      {
+        "key": "BUSPROFIT_W92",
+        "text": "Please choose the statement that comes closer to your own views.",
+        "valid_options": [
+          {
+            "raw": "Business corporations make too much profit",
+            "text": "Business corporations make too much profit",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Most corporations make a fair and reasonable amount of profit",
+            "text": "Most corporations make a fair and reasonable amount of profit",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CNTRYFAIR_W92",
+    "questions": [
+      {
+        "key": "CNTRYFAIR_W92",
+        "text": "Please choose the statement that comes closer to your own views.",
+        "valid_options": [
+          {
+            "raw": "Other countries generally treat the United States about as fairly as we treat them",
+            "text": "Other countries generally treat the United States about as fairly as we treat them",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Other countries often take unfair advantage of the United States",
+            "text": "Other countries often take unfair advantage of the United States",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GOVPROTCT_W92",
+    "questions": [
+      {
+        "key": "GOVPROTCT_W92",
+        "text": "Please choose the statement that comes closer to your own views.",
+        "valid_options": [
+          {
+            "raw": "It's not the government's job to protect people from themselves",
+            "text": "It's not the government's job to protect people from themselves",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Sometimes laws to protect people from themselves are necessary",
+            "text": "Sometimes laws to protect people from themselves are necessary",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MARRFAM_W92",
+    "questions": [
+      {
+        "key": "MARRFAM_W92",
+        "text": "Please choose the statement that comes closer to your own views.",
+        "valid_options": [
+          {
+            "raw": "Society is better off if people make marriage and having children a priority",
+            "text": "Society is better off if people make marriage and having children a priority",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Society is just as well off if people have priorities other than marriage and children",
+            "text": "Society is just as well off if people have priorities other than marriage and children",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GOVAID_W92",
+    "questions": [
+      {
+        "key": "GOVAID_W92",
+        "text": "Please choose the statement that comes closer to your own views.",
+        "valid_options": [
+          {
+            "raw": "Government aid to the poor does more harm than good, by making people too dependent on government assistance",
+            "text": "Government aid to the poor does more harm than good, by making people too dependent on government assistance",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Government aid to the poor does more good than harm, because people can't get out of poverty until their basic needs are",
+            "text": "Government aid to the poor does more good than harm, because people can't get out of poverty until their basic needs are",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RELIG_GOV_W92",
+    "questions": [
+      {
+        "key": "RELIG_GOV_W92",
+        "text": "Please choose the statement that comes closer to your own views.",
+        "valid_options": [
+          {
+            "raw": "Religion should be kept separate from government policies",
+            "text": "Religion should be kept separate from government policies",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Government policies should support religious values and beliefs",
+            "text": "Government policies should support religious values and beliefs",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GOODEVIL_W92",
+    "questions": [
+      {
+        "key": "GOODEVIL_W92",
+        "text": "Please choose the statement that comes closer to your own views.",
+        "valid_options": [
+          {
+            "raw": "Most things in society can be pretty clearly divided into good and evil",
+            "text": "Most things in society can be pretty clearly divided into good and evil",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Most things in society are too complicated to be clearly divided between good and evil",
+            "text": "Most things in society are too complicated to be clearly divided between good and evil",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "PPLRESP_W92",
+    "questions": [
+      {
+        "key": "PPLRESP_W92",
+        "text": "Please choose the statement that comes closer to your own views.",
+        "valid_options": [
+          {
+            "raw": "People like me just don't get the respect we deserve in this country",
+            "text": "People like me just don't get the respect we deserve in this country",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "People like me generally get the respect we deserve in this country",
+            "text": "People like me generally get the respect we deserve in this country",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACESURV52MOD_W92",
+    "questions": [
+      {
+        "key": "RACESURV52MOD_W92",
+        "text": "How much, if at all, would it bother you to regularly hear people speak a language other than English in public places in your community?",
+        "valid_options": [
+          {
+            "raw": "A lot",
+            "text": "A lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not much",
+            "text": "Not much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ELECT_IMPT3_PRVFR_W92",
+    "questions": [
+      {
+        "key": "ELECT_IMPT3_PRVFR_W92",
+        "text": "Thinking about elections in the country, how important, if at all, is people who are not legally qualified to vote are prevented from casting a ballot?",
+        "valid_options": [
+          {
+            "raw": "Very important",
+            "text": "Very important",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat important",
+            "text": "Somewhat important",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too important",
+            "text": "Not too important",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all important",
+            "text": "Not at all important",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ELECT_IMPT3_PRVSUP_W92",
+    "questions": [
+      {
+        "key": "ELECT_IMPT3_PRVSUP_W92",
+        "text": "Thinking about elections in the country, how important, if at all, is people who are legally qualified and want to vote are able to cast a ballot?",
+        "valid_options": [
+          {
+            "raw": "Very important",
+            "text": "Very important",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat important",
+            "text": "Somewhat important",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too important",
+            "text": "Not too important",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all important",
+            "text": "Not at all important",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ELECT_CONF3_PRVFR_W92",
+    "questions": [
+      {
+        "key": "ELECT_CONF3_PRVFR_W92",
+        "text": "Still thinking about elections in the country, how confident, if at all, are you that people who are not legally qualified to vote are prevented from casting a ballot",
+        "valid_options": [
+          {
+            "raw": "Very confident",
+            "text": "Very confident",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat confident",
+            "text": "Somewhat confident",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too confident",
+            "text": "Not too confident",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all confident",
+            "text": "Not at all confident",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ELECT_CONF3_PRVSUP_W92",
+    "questions": [
+      {
+        "key": "ELECT_CONF3_PRVSUP_W92",
+        "text": "Still thinking about elections in the country, how confident, if at all, are you that people who are legally qualified and want to vote are able to cast a ballot",
+        "valid_options": [
+          {
+            "raw": "Very confident",
+            "text": "Very confident",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat confident",
+            "text": "Somewhat confident",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too confident",
+            "text": "Not too confident",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all confident",
+            "text": "Not at all confident",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CANDEXP_W92",
+    "questions": [
+      {
+        "key": "CANDEXP_W92",
+        "text": "How important is it, if at all, that candidates running for high levels of political office have prior government experience?",
+        "valid_options": [
+          {
+            "raw": "Very important",
+            "text": "Very important",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat important",
+            "text": "Somewhat important",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too important",
+            "text": "Not too important",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all important",
+            "text": "Not at all important",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "LEGALIMMIGAMT_W92",
+    "questions": [
+      {
+        "key": "LEGALIMMIGAMT_W92",
+        "text": "Do you think the number of legal immigrants the U.S. admits should",
+        "valid_options": [
+          {
+            "raw": "Increase a lot",
+            "text": "Increase a lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Increase a little",
+            "text": "Increase a little",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Stay about the same",
+            "text": "Stay about the same",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Decrease a little",
+            "text": "Decrease a little",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "Decrease a lot",
+            "text": "Decrease a lot",
+            "natural_language": null,
+            "ordinal": 5.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "UNIMMIGCOMM_W92",
+    "questions": [
+      {
+        "key": "UNIMMIGCOMM_W92",
+        "text": "When it comes to people who have immigrated to the U.S illegally, do you think they generally make the communities they live in",
+        "valid_options": [
+          {
+            "raw": "A lot better",
+            "text": "A lot better",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A little better",
+            "text": "A little better",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "A little worse",
+            "text": "A little worse",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "A lot worse",
+            "text": "A lot worse",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GODMORALIMP_W92",
+    "questions": [
+      {
+        "key": "GODMORALIMP_W92",
+        "text": "Regardless of your own religious beliefs, how important, if at all, do you think it is for a person to believe in God in order to be considered good and moral?",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important, but not essential",
+            "text": "Important, but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too important",
+            "text": "Not too important",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all important",
+            "text": "Not at all important",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "REPRSNTREP_W92",
+    "questions": [
+      {
+        "key": "REPRSNTREP_W92",
+        "text": "How well does the Republican party represent the interests of people like you?",
+        "valid_options": [
+          {
+            "raw": "Very well",
+            "text": "Very well",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat well",
+            "text": "Somewhat well",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too well",
+            "text": "Not too well",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all well",
+            "text": "Not at all well",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "REPRSNTDEM_W92",
+    "questions": [
+      {
+        "key": "REPRSNTDEM_W92",
+        "text": "How well does the Democratic party represent the interests of people like you?",
+        "valid_options": [
+          {
+            "raw": "Very well",
+            "text": "Very well",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat well",
+            "text": "Somewhat well",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too well",
+            "text": "Not too well",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all well",
+            "text": "Not at all well",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "VTRS_VALS_W92",
+    "questions": [
+      {
+        "key": "VTRS_VALS_W92",
+        "text": "They may feel differently than I do about politics",
+        "valid_options": [
+          {
+            "raw": "But they probably share many of my other values and goals",
+            "text": "But they probably share many of my other values and goals",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "And they probably don't share many of my other values and goals, either",
+            "text": "And they probably don't share many of my other values and goals, either",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CREGION",
+    "questions": [
+      {
+        "key": "CREGION",
+        "text": "Which part of the United States do you currently live in?",
+        "valid_options": [
+          {
+            "raw": "Midwest",
+            "text": "Midwest",
+            "natural_language": "I live in the Midwest of the United States."
+          },
+          {
+            "raw": "Northeast",
+            "text": "Northeast",
+            "natural_language": "I live in the Northeast of the United States."
+          },
+          {
+            "raw": "South",
+            "text": "South",
+            "natural_language": "I live in the South of the United States."
+          },
+          {
+            "raw": "West",
+            "text": "West",
+            "natural_language": "I live in the West of the United States."
+          }
+        ],
+        "invalid_options": []
+      }
+    ]
+  },
+  {
+    "name": "AGE",
+    "questions": [
+      {
+        "key": "AGE",
+        "text": "How old are you?",
+        "valid_options": [
+          {
+            "raw": "18-29",
+            "text": "18-29",
+            "natural_language": "I am between 18-29 years old."
+          },
+          {
+            "raw": "30-49",
+            "text": "30-49",
+            "natural_language": "I am between 30-49 years old."
+          },
+          {
+            "raw": "50-64",
+            "text": "50-64",
+            "natural_language": "I am between 50-64 years old."
+          },
+          {
+            "raw": "65+",
+            "text": "65+",
+            "natural_language": "I am 65+ years old."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SEX",
+    "questions": [
+      {
+        "key": "SEX",
+        "text": "What is the sex that you were assigned at birth?",
+        "valid_options": [
+          {
+            "raw": "Female",
+            "text": "Female",
+            "natural_language": "I am female."
+          },
+          {
+            "raw": "Male",
+            "text": "Male",
+            "natural_language": "I am male."
+          }
+        ],
+        "invalid_options": [
+          "In some other way",
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "EDUCATION",
+    "questions": [
+      {
+        "key": "EDUCATION",
+        "text": "What is the highest level of schooling or degree that you have completed?",
+        "valid_options": [
+          {
+            "raw": "Associate's degree",
+            "text": "Associate's degree",
+            "natural_language": "I earned an associate's degree."
+          },
+          {
+            "raw": "College graduate/some postgrad",
+            "text": "graduated from college",
+            "natural_language": "I graduated from college."
+          },
+          {
+            "raw": "High school graduate",
+            "text": "High school graduate",
+            "natural_language": "I graduated from high school."
+          },
+          {
+            "raw": "Less than high school",
+            "text": "Less than high school",
+            "natural_language": "I did not graduate from high school."
+          },
+          {
+            "raw": "Postgraduate",
+            "text": "Postgraduate",
+            "natural_language": "I went to graduate school."
+          },
+          {
+            "raw": "Some college, no degree",
+            "text": "Some college, no degree",
+            "natural_language": "I went to some college."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CITIZEN",
+    "questions": [
+      {
+        "key": "CITIZEN",
+        "text": "Are you a citizen of the United States?",
+        "valid_options": [
+          {
+            "raw": "No",
+            "text": "No",
+            "natural_language": "I am not a citizen of the United States."
+          },
+          {
+            "raw": "Yes",
+            "text": "Yes",
+            "natural_language": "I am a citizen of the United States."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MARITAL",
+    "questions": [
+      {
+        "key": "MARITAL",
+        "text": "Which of these best describes you?",
+        "valid_options": [
+          {
+            "raw": "Divorced",
+            "text": "Divorced",
+            "natural_language": "I am divorced."
+          },
+          {
+            "raw": "Living with a partner",
+            "text": "Living with a partner",
+            "natural_language": "I am living with a partner."
+          },
+          {
+            "raw": "Married",
+            "text": "Married",
+            "natural_language": "I am married."
+          },
+          {
+            "raw": "Never been married",
+            "text": "Never been married",
+            "natural_language": "I have never been married."
+          },
+          {
+            "raw": "Separated",
+            "text": "Separated",
+            "natural_language": "I am separated from my partner."
+          },
+          {
+            "raw": "Widowed",
+            "text": "Widowed",
+            "natural_language": "I am widowed."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RELIG",
+    "questions": [
+      {
+        "key": "RELIG",
+        "text": "What is your present religion, if any?",
+        "valid_options": [
+          {
+            "raw": "Agnostic",
+            "text": "Agnostic",
+            "natural_language": "Religiously speaking, I am agnostic."
+          },
+          {
+            "raw": "Atheist",
+            "text": "Atheist",
+            "natural_language": "Religiously speaking, I am atheist."
+          },
+          {
+            "raw": "Buddhist",
+            "text": "Buddhist",
+            "natural_language": "Religiously speaking, I am Buddhist."
+          },
+          {
+            "raw": "Hindu",
+            "text": "Hindu",
+            "natural_language": "Religiously speaking, I am Hindu."
+          },
+          {
+            "raw": "Jewish",
+            "text": "Jewish",
+            "natural_language": "Religiously speaking, I am Jewish."
+          },
+          {
+            "raw": "Mormon",
+            "text": "Mormon",
+            "natural_language": "Religiously speaking, I am a member of the Church of Jesus Christ of Latter-day Saints."
+          },
+          {
+            "raw": "Muslim",
+            "text": "Muslim",
+            "natural_language": "Religiously speaking, I am Muslim."
+          },
+          {
+            "raw": "Nothing in particular",
+            "text": "Nothing in particular",
+            "natural_language": "Religiously speaking, I don't identify with anything in particular."
+          },
+          {
+            "raw": "Orthodox",
+            "text": "Orthodox",
+            "natural_language": "Religiously speaking, I am Orthodox."
+          },
+          {
+            "raw": "Other",
+            "text": "Other",
+            "natural_language": "Religiously speaking, I am not mainstream."
+          },
+          {
+            "raw": "Protestant",
+            "text": "Protestant",
+            "natural_language": "Religiously speaking, I am Protestant."
+          },
+          {
+            "raw": "Roman Catholic",
+            "text": "Roman Catholic",
+            "natural_language": "Religiously speaking, I am Roman Catholic."
+          }
+        ],
+        "invalid_options": [
+          "Refused",
+          "Christian",
+          "Unitarian"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RELIGATTEND",
+    "questions": [
+      {
+        "key": "RELIGATTEND",
+        "text": "Aside from weddings and funerals, how often do you attend religious services?",
+        "valid_options": [
+          {
+            "raw": "A few times a year",
+            "text": "A few times a year",
+            "natural_language": "I attend religious services a few times a year."
+          },
+          {
+            "raw": "More than once a week",
+            "text": "More than once a week",
+            "natural_language": "I attend religious services more than once a week."
+          },
+          {
+            "raw": "Never",
+            "text": "Never",
+            "natural_language": "I never attend religious services."
+          },
+          {
+            "raw": "Once a week",
+            "text": "Once a week",
+            "natural_language": "I attend religious services once a week."
+          },
+          {
+            "raw": "Once or twice a month",
+            "text": "Once or twice a month",
+            "natural_language": "I attend religious services once or twice a month."
+          },
+          {
+            "raw": "Seldom",
+            "text": "Seldom",
+            "natural_language": "I seldom attend religious services."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "POLPARTY",
+    "questions": [
+      {
+        "key": "POLPARTY",
+        "text": "In politics today, what do you consider yourself?",
+        "valid_options": [
+          {
+            "raw": "Democrat",
+            "text": "Democrat",
+            "natural_language": "Politically, I am a Democrat."
+          },
+          {
+            "raw": "Independent",
+            "text": "Independent",
+            "natural_language": "Politically, I am an independent."
+          },
+          {
+            "raw": "Republican",
+            "text": "Republican",
+            "natural_language": "Politically, I am a Republican."
+          }
+        ],
+        "invalid_options": [
+          "Other",
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INCOME",
+    "questions": [
+      {
+        "key": "INCOME",
+        "text": "Last year, what was your total family income from all sources, before taxes?",
+        "valid_options": [
+          {
+            "raw": "$100,000 or more",
+            "text": "$100,000 or more",
+            "natural_language": "Last year, my household income was $100,000 or more before taxes."
+          },
+          {
+            "raw": "$30,000-$50,000",
+            "text": "$30,000-$50,000",
+            "natural_language": "Last year, my household income was $30,000-$50,000 before taxes."
+          },
+          {
+            "raw": "$50,000-$75,000",
+            "text": "$50,000-$75,000",
+            "natural_language": "Last year, my household income was $50,000-$75,000 before taxes."
+          },
+          {
+            "raw": "$75,000-$100,000",
+            "text": "$75,000-$100,000",
+            "natural_language": "Last year, my household income was $75,000-$100,000 before taxes."
+          },
+          {
+            "raw": "Less than $30,000",
+            "text": "Less than $30,000",
+            "natural_language": "Last year, my household income was less than $30,000 before taxes."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "POLIDEOLOGY",
+    "questions": [
+      {
+        "key": "POLIDEOLOGY",
+        "text": "In general, how would you describe your political ideology?",
+        "valid_options": [
+          {
+            "raw": "Conservative",
+            "text": "Conservative",
+            "natural_language": "Politically, I am conservative."
+          },
+          {
+            "raw": "Liberal",
+            "text": "Liberal",
+            "natural_language": "Politically, I am liberal."
+          },
+          {
+            "raw": "Moderate",
+            "text": "Moderate",
+            "natural_language": "Politically, I am moderate."
+          },
+          {
+            "raw": "Very conservative",
+            "text": "Very conservative",
+            "natural_language": "Politically, I am very conservative."
+          },
+          {
+            "raw": "Very liberal",
+            "text": "Very liberal",
+            "natural_language": "Politically, I am very liberal."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACE",
+    "questions": [
+      {
+        "key": "RACE",
+        "text": "What is your race or origin?",
+        "valid_options": [
+          {
+            "raw": "Asian",
+            "text": "Asian",
+            "natural_language": "I am Asian."
+          },
+          {
+            "raw": "Black",
+            "text": "Black",
+            "natural_language": "I am Black."
+          },
+          {
+            "raw": "Hispanic",
+            "text": "Hispanic",
+            "natural_language": "I am Hispanic."
+          },
+          {
+            "raw": "Mixed Race",
+            "text": "Mixed Race",
+            "natural_language": "I am mixed race."
+          },
+          {
+            "raw": "Other",
+            "text": "Other",
+            "natural_language": "I am racially ambiguous."
+          },
+          {
+            "raw": "White",
+            "text": "White",
+            "natural_language": "I am White."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  }
+]

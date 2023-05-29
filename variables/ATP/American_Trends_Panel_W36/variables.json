@@ -1,0 +1,4907 @@
+[
+  {
+    "name": "HAPPYLIFE_W36",
+    "questions": [
+      {
+        "key": "HAPPYLIFE_W36",
+        "text": "Generally, how would you say things are these days in your life? Would you say that you are",
+        "valid_options": [
+          {
+            "raw": "Very happy",
+            "text": "Very happy",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Pretty happy",
+            "text": "Pretty happy",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too happy",
+            "text": "Not too happy",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESSENPOLF1A_W36",
+    "questions": [
+      {
+        "key": "ESSENPOLF1A_W36",
+        "text": "In general, how important, if at all, is it to you for someone in high political office to be honest and ethical?",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important, but not essential",
+            "text": "Important, but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESSENPOLF1B_W36",
+    "questions": [
+      {
+        "key": "ESSENPOLF1B_W36",
+        "text": "In general, how important, if at all, is it to you for someone in high political office to be compassionate and empathetic?",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important, but not essential",
+            "text": "Important, but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESSENPOLF1C_W36",
+    "questions": [
+      {
+        "key": "ESSENPOLF1C_W36",
+        "text": "In general, how important, if at all, is it to you for someone in high political office to be able to work out compromises?",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important, but not essential",
+            "text": "Important, but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESSENPOLF1D_W36",
+    "questions": [
+      {
+        "key": "ESSENPOLF1D_W36",
+        "text": "In general, how important, if at all, is it to you for someone in high political office to work well under pressure?",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important, but not essential",
+            "text": "Important, but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESSENPOLF1E_W36",
+    "questions": [
+      {
+        "key": "ESSENPOLF1E_W36",
+        "text": "In general, how important, if at all, is it to you for someone in high political office to be willing to take risks?",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important, but not essential",
+            "text": "Important, but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESSENPOLF1F_W36",
+    "questions": [
+      {
+        "key": "ESSENPOLF1F_W36",
+        "text": "In general, how important, if at all, is it to you for someone in high political office to stand up for what they believe in, despite political pressure?",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important, but not essential",
+            "text": "Important, but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESSENPOLF1G_W36",
+    "questions": [
+      {
+        "key": "ESSENPOLF1G_W36",
+        "text": "In general, how important, if at all, is it to you for someone in high political office to be persuasive?",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important, but not essential",
+            "text": "Important, but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESSENPOLF1H_W36",
+    "questions": [
+      {
+        "key": "ESSENPOLF1H_W36",
+        "text": "In general, how important, if at all, is it to you for someone in high political office to maintain a tone of civility and respect in politics?",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important, but not essential",
+            "text": "Important, but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESSENPOLF1I_W36",
+    "questions": [
+      {
+        "key": "ESSENPOLF1I_W36",
+        "text": "In general, how important, if at all, is it to you for someone in high political office to serve as a role model for children?",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important, but not essential",
+            "text": "Important, but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESSENBIZF2A_W36",
+    "questions": [
+      {
+        "key": "ESSENBIZF2A_W36",
+        "text": "In general, how important, if at all, is it to you for someone in a top executive business position to be honest and ethical?",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important, but not essential",
+            "text": "Important, but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESSENBIZF2B_W36",
+    "questions": [
+      {
+        "key": "ESSENBIZF2B_W36",
+        "text": "In general, how important, if at all, is it to you for someone in a top executive business position to be compassionate and empathetic?",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important, but not essential",
+            "text": "Important, but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESSENBIZF2C_W36",
+    "questions": [
+      {
+        "key": "ESSENBIZF2C_W36",
+        "text": "In general, how important, if at all, is it to you for someone in a top executive business position to be able to work out compromises?",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important, but not essential",
+            "text": "Important, but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESSENBIZF2D_W36",
+    "questions": [
+      {
+        "key": "ESSENBIZF2D_W36",
+        "text": "In general, how important, if at all, is it to you for someone in a top executive business position to work well under pressure?",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important, but not essential",
+            "text": "Important, but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESSENBIZF2E_W36",
+    "questions": [
+      {
+        "key": "ESSENBIZF2E_W36",
+        "text": "In general, how important, if at all, is it to you for someone in a top executive business position to be willing to take risks?",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important, but not essential",
+            "text": "Important, but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESSENBIZF2F_W36",
+    "questions": [
+      {
+        "key": "ESSENBIZF2F_W36",
+        "text": "In general, how important, if at all, is it to you for someone in a top executive business position to value people from different backgrounds?",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important, but not essential",
+            "text": "Important, but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESSENBIZF2G_W36",
+    "questions": [
+      {
+        "key": "ESSENBIZF2G_W36",
+        "text": "In general, how important, if at all, is it to you for someone in a top executive business position to provide fair pay and good benefits?",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important, but not essential",
+            "text": "Important, but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESSENBIZF2H_W36",
+    "questions": [
+      {
+        "key": "ESSENBIZF2H_W36",
+        "text": "In general, how important, if at all, is it to you for someone in a top executive business position to negotiate profitable deals?",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important, but not essential",
+            "text": "Important, but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESSENBIZF2I_W36",
+    "questions": [
+      {
+        "key": "ESSENBIZF2I_W36",
+        "text": "In general, how important, if at all, is it to you for someone in a top executive business position to consider the impact of business decisions on society?",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important, but not essential",
+            "text": "Important, but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESSENBIZF2J_W36",
+    "questions": [
+      {
+        "key": "ESSENBIZF2J_W36",
+        "text": "In general, how important, if at all, is it to you for someone in a top executive business position to provide guidance or mentorship to young employees?",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important, but not essential",
+            "text": "Important, but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESSENBIZF2K_W36",
+    "questions": [
+      {
+        "key": "ESSENBIZF2K_W36",
+        "text": "In general, how important, if at all, is it to you for someone in a top executive business position to create a safe and respectful workplace?",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important, but not essential",
+            "text": "Important, but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESSENBIZF2L_W36",
+    "questions": [
+      {
+        "key": "ESSENBIZF2L_W36",
+        "text": "In general, how important, if at all, is it to you for someone in a top executive business position to stand up for what they believe in, despite pressure to make a profit?",
+        "valid_options": [
+          {
+            "raw": "Essential",
+            "text": "Essential",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Important, but not essential",
+            "text": "Important, but not essential",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not important",
+            "text": "Not important",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "STYLE1_W36",
+    "questions": [
+      {
+        "key": "STYLE1_W36",
+        "text": "Next, please think about the leadership styles of people in top positions in business and politics. In general, when it comes to their approach to leadership, do you think that",
+        "valid_options": [
+          {
+            "raw": "Men and women are basically similar",
+            "text": "Men and women are basically similar",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Men and women are basically different",
+            "text": "Men and women are basically different",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "STYLE2_W36",
+    "questions": [
+      {
+        "key": "STYLE2_W36",
+        "text": "Thinking about the ways in which men and women in top positions in business and politics are different in their approach to leadership, would you say",
+        "valid_options": [
+          {
+            "raw": "Women generally have a better approach",
+            "text": "Women generally have a better approach",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Men generally have a better approach",
+            "text": "Men generally have a better approach",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Neither is better",
+            "text": "Neither is better",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "AMNTWMNPF1_W36",
+    "questions": [
+      {
+        "key": "AMNTWMNPF1_W36",
+        "text": "Thinking about the country today, would you say there are",
+        "valid_options": [
+          {
+            "raw": "Too many women in high political offices",
+            "text": "Too many women in high political offices",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Too few women in high political offices",
+            "text": "Too few women in high political offices",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "About the right number of women in high political offices",
+            "text": "About the right number of women in high political offices",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "AMNTWMNP2F1_W36",
+    "questions": [
+      {
+        "key": "AMNTWMNP2F1_W36",
+        "text": "What do you think would be the ideal situation when it comes to the number of women in high political office?",
+        "valid_options": [
+          {
+            "raw": "Having more women than there are now but still not as many women as men",
+            "text": "Having more women than there are now but still not as many women as men",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Having about an equal number of women and men",
+            "text": "Having about an equal number of women and men",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Having more women than men",
+            "text": "Having more women than men",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "AMNTWMNBF1_W36",
+    "questions": [
+      {
+        "key": "AMNTWMNBF1_W36",
+        "text": "Thinking about the country today, would you say there are",
+        "valid_options": [
+          {
+            "raw": "Too many women in top executive business positions",
+            "text": "Too many women in top executive business positions",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Too few women in top executive business positions",
+            "text": "Too few women in top executive business positions",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "About the right number of women in top executive business positions",
+            "text": "About the right number of women in top executive business positions",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "AMNTWMNB2F1_W36",
+    "questions": [
+      {
+        "key": "AMNTWMNB2F1_W36",
+        "text": "What do you think would be the ideal situation when it comes to the number of women in top executive business positions?",
+        "valid_options": [
+          {
+            "raw": "Having more women than there are now but still not as many women as men",
+            "text": "Having more women than there are now but still not as many women as men",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Having about an equal number of women and men",
+            "text": "Having about an equal number of women and men",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Having more women than men",
+            "text": "Having more women than men",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "EASIERBIZF2_W36",
+    "questions": [
+      {
+        "key": "EASIERBIZF2_W36",
+        "text": "Thinking about top executive positions in business these days, would you say it is generally",
+        "valid_options": [
+          {
+            "raw": "Easier for men to get these positions",
+            "text": "Easier for men to get these positions",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Easier for women to get these positions",
+            "text": "Easier for women to get these positions",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not much difference",
+            "text": "Not much difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "EASIERPOLF2_W36",
+    "questions": [
+      {
+        "key": "EASIERPOLF2_W36",
+        "text": "Thinking about high political offices these days, would you say it is generally",
+        "valid_options": [
+          {
+            "raw": "Easier for men to get elected to high political offices",
+            "text": "Easier for men to get elected to high political offices",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Easier for women to get elected to high political offices",
+            "text": "Easier for women to get elected to high political offices",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not much difference",
+            "text": "Not much difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "EQUALPOLF2_W36",
+    "questions": [
+      {
+        "key": "EQUALPOLF2_W36",
+        "text": "Which of these two statements comes closer to your own view, even if neither is exactly right?",
+        "valid_options": [
+          {
+            "raw": "As more women run for office, it is only a matter of time before there are as many women as men in high political office",
+            "text": "As more women run for office, it is only a matter of time before there are as many women as men in high political office",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Even as more women run for office, men will continue to hold more high political offices in the future",
+            "text": "Even as more women run for office, men will continue to hold more high political offices in the future",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "EQUALBIZF2_W36",
+    "questions": [
+      {
+        "key": "EQUALBIZF2_W36",
+        "text": "Which of these two statements comes closer to your own view, even if neither is exactly right?",
+        "valid_options": [
+          {
+            "raw": "As more women move into management roles, it is only a matter of time before there are as many women as men in top execu",
+            "text": "As more women move into management roles, it is only a matter of time before there are as many women as men in top execu",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Even as more women move into management roles, men will continue to hold more top executive positions in business in the",
+            "text": "Even as more women move into management roles, men will continue to hold more top executive positions in business in the",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "IMPROVE1_W36",
+    "questions": [
+      {
+        "key": "IMPROVE1_W36",
+        "text": "How much, if anything, do you think having more women in top leadership positions in business and government would do to improve the quality of life for women?",
+        "valid_options": [
+          {
+            "raw": "A lot",
+            "text": "A lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not much",
+            "text": "Not much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Nothing at all",
+            "text": "Nothing at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "IMPROVE2_W36",
+    "questions": [
+      {
+        "key": "IMPROVE2_W36",
+        "text": "How much, if anything, do you think having more women in top leadership positions in business and government would do to improve the quality of life for men?",
+        "valid_options": [
+          {
+            "raw": "A lot",
+            "text": "A lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not much",
+            "text": "Not much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Nothing at all",
+            "text": "Nothing at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "IMPROVE3_W36",
+    "questions": [
+      {
+        "key": "IMPROVE3_W36",
+        "text": "How much, if anything, do you think having more women in top leadership positions in business and government would do to improve the quality of life for all Americans?",
+        "valid_options": [
+          {
+            "raw": "A lot",
+            "text": "A lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not much",
+            "text": "Not much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Nothing at all",
+            "text": "Nothing at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WHYNOTPOLF1A_W36",
+    "questions": [
+      {
+        "key": "WHYNOTPOLF1A_W36",
+        "text": "Please indicate whether you think the following is is a reason why there are fewer women than men in high political offices. Many Americans aren't ready to elect a woman to higher office",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WHYNOTPOLF1B_W36",
+    "questions": [
+      {
+        "key": "WHYNOTPOLF1B_W36",
+        "text": "Please indicate whether you think the following is is a reason why there are fewer women than men in high political offices. Women in politics face gender discrimination",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WHYNOTPOLF1C_W36",
+    "questions": [
+      {
+        "key": "WHYNOTPOLF1C_W36",
+        "text": "Please indicate whether you think the following is is a reason why there are fewer women than men in high political offices. Family responsibilities make it harder for women to run for higher office",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WHYNOTPOLF1D_W36",
+    "questions": [
+      {
+        "key": "WHYNOTPOLF1D_W36",
+        "text": "Please indicate whether you think the following is is a reason why there are fewer women than men in high political offices. Women aren't tough enough for politics",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WHYNOTPOLF1E_W36",
+    "questions": [
+      {
+        "key": "WHYNOTPOLF1E_W36",
+        "text": "Please indicate whether you think the following is is a reason why there are fewer women than men in high political offices. Fewer women have the experience required for higher office",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WHYNOTPOLF1F_W36",
+    "questions": [
+      {
+        "key": "WHYNOTPOLF1F_W36",
+        "text": "Please indicate whether you think the following is is a reason why there are fewer women than men in high political offices. Women get less support from party leaders",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WHYNOTPOLF1G_W36",
+    "questions": [
+      {
+        "key": "WHYNOTPOLF1G_W36",
+        "text": "Please indicate whether you think the following is is a reason why there are fewer women than men in high political offices. Women who run for office are held to higher standards than men",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WHYNOTPOLF1H_W36",
+    "questions": [
+      {
+        "key": "WHYNOTPOLF1H_W36",
+        "text": "Please indicate whether you think the following is is a reason why there are fewer women than men in high political offices. Women who run for office have to more to prove themselves than men",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WHYNOTPOLF1I_W36",
+    "questions": [
+      {
+        "key": "WHYNOTPOLF1I_W36",
+        "text": "Please indicate whether you think the following is is a reason why there are fewer women than men in high political offices. Not as many women are interested in holding higher office",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WHYNOTPOLF1J_W36",
+    "questions": [
+      {
+        "key": "WHYNOTPOLF1J_W36",
+        "text": "Please indicate whether you think the following is is a reason why there are fewer women than men in high political offices. Women aren't encouraged to pursue leadership positions from an early age",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WHYNOTPOLF1K_W36",
+    "questions": [
+      {
+        "key": "WHYNOTPOLF1K_W36",
+        "text": "Please indicate whether you think the following is is a reason why there are fewer women than men in high political offices. Women don't do as good of a job selling their accomplishments",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WHYNOTPOLF1L_W36",
+    "questions": [
+      {
+        "key": "WHYNOTPOLF1L_W36",
+        "text": "Please indicate whether you think the following is is a reason why there are fewer women than men in high political offices. Sexual harassment creates an environment that makes it harder for women to succeed in politics",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WHYNOTBIZF2A_W36",
+    "questions": [
+      {
+        "key": "WHYNOTBIZF2A_W36",
+        "text": "For each one of the following, please indicate whether you think it is a reason why there aren't more women in top executive business positions. Many businesses are not ready to hire women for top executive positions",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WHYNOTBIZF2B_W36",
+    "questions": [
+      {
+        "key": "WHYNOTBIZF2B_W36",
+        "text": "For each one of the following, please indicate whether you think it is a reason why there aren't more women in top executive business positions. Women in business face gender discrimination",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WHYNOTBIZF2C_W36",
+    "questions": [
+      {
+        "key": "WHYNOTBIZF2C_W36",
+        "text": "For each one of the following, please indicate whether you think it is a reason why there aren't more women in top executive business positions. Family responsibilities make it harder for women to move up in business",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WHYNOTBIZF2D_W36",
+    "questions": [
+      {
+        "key": "WHYNOTBIZF2D_W36",
+        "text": "For each one of the following, please indicate whether you think it is a reason why there aren't more women in top executive business positions. Women aren't tough enough for business",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WHYNOTBIZF2F_W36",
+    "questions": [
+      {
+        "key": "WHYNOTBIZF2F_W36",
+        "text": "For each one of the following, please indicate whether you think it is a reason why there aren't more women in top executive business positions. Women don't make as good managers as men",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WHYNOTBIZF2G_W36",
+    "questions": [
+      {
+        "key": "WHYNOTBIZF2G_W36",
+        "text": "For each one of the following, please indicate whether you think it is a reason why there aren't more women in top executive business positions. Women are held to higher standards than men",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WHYNOTBIZF2H_W36",
+    "questions": [
+      {
+        "key": "WHYNOTBIZF2H_W36",
+        "text": "For each one of the following, please indicate whether you think it is a reason why there aren't more women in top executive business positions. Women have to more to prove themselves than men",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WHYNOTBIZF2I_W36",
+    "questions": [
+      {
+        "key": "WHYNOTBIZF2I_W36",
+        "text": "For each one of the following, please indicate whether you think it is a reason why there aren't more women in top executive business positions. Not as many women are interested in top executive business positions",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WHYNOTBIZF2J_W36",
+    "questions": [
+      {
+        "key": "WHYNOTBIZF2J_W36",
+        "text": "For each one of the following, please indicate whether you think it is a reason why there aren't more women in top executive business positions. Women aren't encouraged to pursue leadership positions from an early age",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WHYNOTBIZF2K_W36",
+    "questions": [
+      {
+        "key": "WHYNOTBIZF2K_W36",
+        "text": "For each one of the following, please indicate whether you think it is a reason why there aren't more women in top executive business positions. Women don't do as good of a job selling their accomplishments",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WHYNOTBIZF2L_W36",
+    "questions": [
+      {
+        "key": "WHYNOTBIZF2L_W36",
+        "text": "For each one of the following, please indicate whether you think it is a reason why there aren't more women in top executive business positions. Women don't have access to the same kinds of personal networks and connections that men have",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WHYNOTBIZF2M_W36",
+    "questions": [
+      {
+        "key": "WHYNOTBIZF2M_W36",
+        "text": "For each one of the following, please indicate whether you think it is a reason why there aren't more women in top executive business positions. Women have fewer opportunities to interact with people in senior positions outside of work",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WHYNOTBIZF2N_W36",
+    "questions": [
+      {
+        "key": "WHYNOTBIZF2N_W36",
+        "text": "For each one of the following, please indicate whether you think it is a reason why there aren't more women in top executive business positions. Women are less likely than men to ask for promotions and raises",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WHYNOTBIZF2O_W36",
+    "questions": [
+      {
+        "key": "WHYNOTBIZF2O_W36",
+        "text": "For each one of the following, please indicate whether you think it is a reason why there aren't more women in top executive business positions. Sexual harassment creates an environment that makes it harder for women to succeed in business",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "HIGHED_W36",
+    "questions": [
+      {
+        "key": "HIGHED_W36",
+        "text": "Now, thinking about the higher education system, that is colleges and universities, in the United States today",
+        "valid_options": [
+          {
+            "raw": "Right direction",
+            "text": "Right direction",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Wrong direction",
+            "text": "Wrong direction",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "HIGHEDWRNGA_W36",
+    "questions": [
+      {
+        "key": "HIGHEDWRNGA_W36",
+        "text": "For tuition costs are too high, please indicate whether this is a reason why you think the higher education system in the U.S. is going in the wrong direction.",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "HIGHEDWRNGB_W36",
+    "questions": [
+      {
+        "key": "HIGHEDWRNGB_W36",
+        "text": "Please indicate whether this is a reason why you think the higher education system in the U.S. is going in the wrong direction. Professors are bringing their political and social views into the classroom",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "HIGHEDWRNGC_W36",
+    "questions": [
+      {
+        "key": "HIGHEDWRNGC_W36",
+        "text": "Please indicate whether this is a reason why you think the higher education system in the U.S. is going in the wrong direction. Colleges and universities are too concerned about protecting students from views they might find offensive",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "HIGHEDWRNGD_W36",
+    "questions": [
+      {
+        "key": "HIGHEDWRNGD_W36",
+        "text": "Please indicate whether this is a reason why you think the higher education system in the U.S. is going in the wrong direction. Students are not getting the skills they need to succeed in the workplace",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "HIGHEDWRNGS_W36",
+    "questions": [
+      {
+        "key": "HIGHEDWRNGS_W36",
+        "text": "Are there any other major reasons why you think the higher education system in the U.S. is going in the wrong direction?",
+        "valid_options": [
+          {
+            "raw": "Yes",
+            "text": "Yes",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No",
+            "text": "No",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BETTERPOL1F1A_W36",
+    "questions": [
+      {
+        "key": "BETTERPOL1F1A_W36",
+        "text": "In general, do you think men or women in high political offices are better at being honest and ethical?",
+        "valid_options": [
+          {
+            "raw": "Men are better",
+            "text": "Men are better",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Women are better",
+            "text": "Women are better",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No difference",
+            "text": "No difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BETTERPOL1F1B_W36",
+    "questions": [
+      {
+        "key": "BETTERPOL1F1B_W36",
+        "text": "In general, do you think men or women in high political offices are better at being compassionate and empathetic?",
+        "valid_options": [
+          {
+            "raw": "Men are better",
+            "text": "Men are better",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Women are better",
+            "text": "Women are better",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No difference",
+            "text": "No difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BETTERPOL1F1C_W36",
+    "questions": [
+      {
+        "key": "BETTERPOL1F1C_W36",
+        "text": "In general, do you think men or women in high political offices are better at working out compromises?",
+        "valid_options": [
+          {
+            "raw": "Men are better",
+            "text": "Men are better",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Women are better",
+            "text": "Women are better",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No difference",
+            "text": "No difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BETTERPOL1F1D_W36",
+    "questions": [
+      {
+        "key": "BETTERPOL1F1D_W36",
+        "text": "In general, do you think men or women in high political offices are better at working well under pressure?",
+        "valid_options": [
+          {
+            "raw": "Men are better",
+            "text": "Men are better",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Women are better",
+            "text": "Women are better",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No difference",
+            "text": "No difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BETTERPOL1F1E_W36",
+    "questions": [
+      {
+        "key": "BETTERPOL1F1E_W36",
+        "text": "In general, do you think men or women in high political offices are better at being willing to take risks?",
+        "valid_options": [
+          {
+            "raw": "Men are better",
+            "text": "Men are better",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Women are better",
+            "text": "Women are better",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No difference",
+            "text": "No difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BETTERPOL1F1F_W36",
+    "questions": [
+      {
+        "key": "BETTERPOL1F1F_W36",
+        "text": "In general, do you think men or women in high political offices are better at standing up for what they believe in, despite political pressure?",
+        "valid_options": [
+          {
+            "raw": "Men are better",
+            "text": "Men are better",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Women are better",
+            "text": "Women are better",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No difference",
+            "text": "No difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BETTERPOL1F1G_W36",
+    "questions": [
+      {
+        "key": "BETTERPOL1F1G_W36",
+        "text": "In general, do you think men or women in high political offices are better at being persuasive?",
+        "valid_options": [
+          {
+            "raw": "Men are better",
+            "text": "Men are better",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Women are better",
+            "text": "Women are better",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No difference",
+            "text": "No difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BETTERPOL1F1H_W36",
+    "questions": [
+      {
+        "key": "BETTERPOL1F1H_W36",
+        "text": "In general, do you think men or women in high political offices are better at maintaining a tone of civility and respect in politics?",
+        "valid_options": [
+          {
+            "raw": "Men are better",
+            "text": "Men are better",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Women are better",
+            "text": "Women are better",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No difference",
+            "text": "No difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BETTERPOL1F1I_W36",
+    "questions": [
+      {
+        "key": "BETTERPOL1F1I_W36",
+        "text": "In general, do you think men or women in high political offices are better at serving as a role model for children?",
+        "valid_options": [
+          {
+            "raw": "Men are better",
+            "text": "Men are better",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Women are better",
+            "text": "Women are better",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No difference",
+            "text": "No difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BETTERPOL2F1A_W36",
+    "questions": [
+      {
+        "key": "BETTERPOL2F1A_W36",
+        "text": "And thinking about some specific policy areas, in general, do you think men or women in high political offices are better at handling economic conditions?",
+        "valid_options": [
+          {
+            "raw": "Men are better",
+            "text": "Men are better",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Women are better",
+            "text": "Women are better",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No difference",
+            "text": "No difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BETTERPOL2F1B_W36",
+    "questions": [
+      {
+        "key": "BETTERPOL2F1B_W36",
+        "text": "And thinking about some specific policy areas, in general, do you think men or women in high political offices are better at dealing with social issues such as education and health care?",
+        "valid_options": [
+          {
+            "raw": "Men are better",
+            "text": "Men are better",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Women are better",
+            "text": "Women are better",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No difference",
+            "text": "No difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BETTERPOL2F1C_W36",
+    "questions": [
+      {
+        "key": "BETTERPOL2F1C_W36",
+        "text": "And thinking about some specific policy areas, in general, do you think men or women in high political offices are better at dealing with immigration policy?",
+        "valid_options": [
+          {
+            "raw": "Men are better",
+            "text": "Men are better",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Women are better",
+            "text": "Women are better",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No difference",
+            "text": "No difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BETTERPOL2F1D_W36",
+    "questions": [
+      {
+        "key": "BETTERPOL2F1D_W36",
+        "text": "And thinking about some specific policy areas, in general, do you think men or women in high political offices are better at dealing with national security and defense?",
+        "valid_options": [
+          {
+            "raw": "Men are better",
+            "text": "Men are better",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Women are better",
+            "text": "Women are better",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No difference",
+            "text": "No difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BETTERPOL2F1E_W36",
+    "questions": [
+      {
+        "key": "BETTERPOL2F1E_W36",
+        "text": "And thinking about some specific policy areas, in general, do you think men or women in high political offices are better at dealing with the federal budget deficit?",
+        "valid_options": [
+          {
+            "raw": "Men are better",
+            "text": "Men are better",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Women are better",
+            "text": "Women are better",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No difference",
+            "text": "No difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BETTERPOL2F1F_W36",
+    "questions": [
+      {
+        "key": "BETTERPOL2F1F_W36",
+        "text": "And thinking about some specific policy areas, in general, do you think men or women in high political offices are better at dealing with gun policy?",
+        "valid_options": [
+          {
+            "raw": "Men are better",
+            "text": "Men are better",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Women are better",
+            "text": "Women are better",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No difference",
+            "text": "No difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BETTERBIZ1F2A_W36",
+    "questions": [
+      {
+        "key": "BETTERBIZ1F2A_W36",
+        "text": "In general, do you think men or women in top executive business positions are better at being honest and ethical?",
+        "valid_options": [
+          {
+            "raw": "Men are better",
+            "text": "Men are better",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Women are better",
+            "text": "Women are better",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No difference",
+            "text": "No difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BETTERBIZ1F2B_W36",
+    "questions": [
+      {
+        "key": "BETTERBIZ1F2B_W36",
+        "text": "In general, do you think men or women in top executive business positions are better at being compassionate and empathetic?",
+        "valid_options": [
+          {
+            "raw": "Men are better",
+            "text": "Men are better",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Women are better",
+            "text": "Women are better",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No difference",
+            "text": "No difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BETTERBIZ1F2C_W36",
+    "questions": [
+      {
+        "key": "BETTERBIZ1F2C_W36",
+        "text": "In general, do you think men or women in top executive business positions are better at working out compromises?",
+        "valid_options": [
+          {
+            "raw": "Men are better",
+            "text": "Men are better",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Women are better",
+            "text": "Women are better",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No difference",
+            "text": "No difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BETTERBIZ1F2D_W36",
+    "questions": [
+      {
+        "key": "BETTERBIZ1F2D_W36",
+        "text": "In general, do you think men or women in top executive business positions are better at working well under pressure?",
+        "valid_options": [
+          {
+            "raw": "Men are better",
+            "text": "Men are better",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Women are better",
+            "text": "Women are better",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No difference",
+            "text": "No difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BETTERBIZ1F2E_W36",
+    "questions": [
+      {
+        "key": "BETTERBIZ1F2E_W36",
+        "text": "In general, do you think men or women in top executive business positions are better at being willing to take risks?",
+        "valid_options": [
+          {
+            "raw": "Men are better",
+            "text": "Men are better",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Women are better",
+            "text": "Women are better",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No difference",
+            "text": "No difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BETTERBIZ1F2F_W36",
+    "questions": [
+      {
+        "key": "BETTERBIZ1F2F_W36",
+        "text": "In general, do you think men or women in top executive business positions are better at valuing people from different backgrounds?",
+        "valid_options": [
+          {
+            "raw": "Men are better",
+            "text": "Men are better",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Women are better",
+            "text": "Women are better",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No difference",
+            "text": "No difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BETTERBIZ1F2G_W36",
+    "questions": [
+      {
+        "key": "BETTERBIZ1F2G_W36",
+        "text": "In general, do you think men or women in top executive business positions are better at providing fair pay and good benefits?",
+        "valid_options": [
+          {
+            "raw": "Men are better",
+            "text": "Men are better",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Women are better",
+            "text": "Women are better",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No difference",
+            "text": "No difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BETTERBIZ1F2H_W36",
+    "questions": [
+      {
+        "key": "BETTERBIZ1F2H_W36",
+        "text": "In general, do you think men or women in top executive business positions are better at negotiating profitable deals?",
+        "valid_options": [
+          {
+            "raw": "Men are better",
+            "text": "Men are better",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Women are better",
+            "text": "Women are better",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No difference",
+            "text": "No difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BETTERBIZ1F2I_W36",
+    "questions": [
+      {
+        "key": "BETTERBIZ1F2I_W36",
+        "text": "In general, do you think men or women in top executive business positions are better at considering the impact of business decisions on society?",
+        "valid_options": [
+          {
+            "raw": "Men are better",
+            "text": "Men are better",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Women are better",
+            "text": "Women are better",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No difference",
+            "text": "No difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BETTERBIZ1F2J_W36",
+    "questions": [
+      {
+        "key": "BETTERBIZ1F2J_W36",
+        "text": "In general, do you think men or women in top executive business positions are better at providing guidance or mentorship to young employees?",
+        "valid_options": [
+          {
+            "raw": "Men are better",
+            "text": "Men are better",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Women are better",
+            "text": "Women are better",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No difference",
+            "text": "No difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BETTERBIZ1F2K_W36",
+    "questions": [
+      {
+        "key": "BETTERBIZ1F2K_W36",
+        "text": "In general, do you think men or women in top executive business positions are better at creating a safe and respectful workplace?",
+        "valid_options": [
+          {
+            "raw": "Men are better",
+            "text": "Men are better",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Women are better",
+            "text": "Women are better",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No difference",
+            "text": "No difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BETTERBIZ1F2L_W36",
+    "questions": [
+      {
+        "key": "BETTERBIZ1F2L_W36",
+        "text": "In general, do you think men or women in top executive business positions are better at standing up for what they believe in, despite pressure to make a profit?",
+        "valid_options": [
+          {
+            "raw": "Men are better",
+            "text": "Men are better",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Women are better",
+            "text": "Women are better",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No difference",
+            "text": "No difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BETTERBIZ2F2A_W36",
+    "questions": [
+      {
+        "key": "BETTERBIZ2F2A_W36",
+        "text": "In general, do you think men or women would do a better job running a major technology company types of companies?",
+        "valid_options": [
+          {
+            "raw": "Men would do a better job",
+            "text": "Men would do a better job",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Women would do a better job",
+            "text": "Women would do a better job",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No difference",
+            "text": "No difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BETTERBIZ2F2B_W36",
+    "questions": [
+      {
+        "key": "BETTERBIZ2F2B_W36",
+        "text": "In general, do you think men or women would do a better job running a major retail chain types of companies?",
+        "valid_options": [
+          {
+            "raw": "Men would do a better job",
+            "text": "Men would do a better job",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Women would do a better job",
+            "text": "Women would do a better job",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No difference",
+            "text": "No difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BETTERBIZ2F2C_W36",
+    "questions": [
+      {
+        "key": "BETTERBIZ2F2C_W36",
+        "text": "In general, do you think men or women would do a better job running a large bank or financial institution types of companies?",
+        "valid_options": [
+          {
+            "raw": "Men would do a better job",
+            "text": "Men would do a better job",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Women would do a better job",
+            "text": "Women would do a better job",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No difference",
+            "text": "No difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BETTERBIZ2F2D_W36",
+    "questions": [
+      {
+        "key": "BETTERBIZ2F2D_W36",
+        "text": "In general, do you think men or women would do a better job running a large oil or gas company types of companies?",
+        "valid_options": [
+          {
+            "raw": "Men would do a better job",
+            "text": "Men would do a better job",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Women would do a better job",
+            "text": "Women would do a better job",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No difference",
+            "text": "No difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BETTERBIZ2F2E_W36",
+    "questions": [
+      {
+        "key": "BETTERBIZ2F2E_W36",
+        "text": "In general, do you think men or women would do a better job running a major hospital types of companies?",
+        "valid_options": [
+          {
+            "raw": "Men would do a better job",
+            "text": "Men would do a better job",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Women would do a better job",
+            "text": "Women would do a better job",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No difference",
+            "text": "No difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BETTERBIZ2F2F_W36",
+    "questions": [
+      {
+        "key": "BETTERBIZ2F2F_W36",
+        "text": "In general, do you think men or women would do a better job running a professional sports team types of companies?",
+        "valid_options": [
+          {
+            "raw": "Men would do a better job",
+            "text": "Men would do a better job",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Women would do a better job",
+            "text": "Women would do a better job",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "No difference",
+            "text": "No difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "TRAITPOLWF1A_W36",
+    "questions": [
+      {
+        "key": "TRAITPOLWF1A_W36",
+        "text": "In general, how do you think being decisive impacts a woman's chances of getting elected to high political office?",
+        "valid_options": [
+          {
+            "raw": "Mostly helps a woman's chances",
+            "text": "Mostly helps a woman's chances",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Mostly hurts a woman's chances",
+            "text": "Mostly hurts a woman's chances",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Doesn't make much of a difference",
+            "text": "Doesn't make much of a difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "TRAITPOLWF1B_W36",
+    "questions": [
+      {
+        "key": "TRAITPOLWF1B_W36",
+        "text": "In general, how do you think being compassionate impacts a woman's chances of getting elected to high political office?",
+        "valid_options": [
+          {
+            "raw": "Mostly helps a woman's chances",
+            "text": "Mostly helps a woman's chances",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Mostly hurts a woman's chances",
+            "text": "Mostly hurts a woman's chances",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Doesn't make much of a difference",
+            "text": "Doesn't make much of a difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "TRAITPOLWF1C_W36",
+    "questions": [
+      {
+        "key": "TRAITPOLWF1C_W36",
+        "text": "In general, how do you think being ambitious impacts a woman's chances of getting elected to high political office?",
+        "valid_options": [
+          {
+            "raw": "Mostly helps a woman's chances",
+            "text": "Mostly helps a woman's chances",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Mostly hurts a woman's chances",
+            "text": "Mostly hurts a woman's chances",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Doesn't make much of a difference",
+            "text": "Doesn't make much of a difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "TRAITPOLWF1D_W36",
+    "questions": [
+      {
+        "key": "TRAITPOLWF1D_W36",
+        "text": "In general, how do you think being approachable impacts a woman's chances of getting elected to high political office?",
+        "valid_options": [
+          {
+            "raw": "Mostly helps a woman's chances",
+            "text": "Mostly helps a woman's chances",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Mostly hurts a woman's chances",
+            "text": "Mostly hurts a woman's chances",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Doesn't make much of a difference",
+            "text": "Doesn't make much of a difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "TRAITPOLWF1E_W36",
+    "questions": [
+      {
+        "key": "TRAITPOLWF1E_W36",
+        "text": "In general, how do you think being assertive impacts a woman's chances of getting elected to high political office?",
+        "valid_options": [
+          {
+            "raw": "Mostly helps a woman's chances",
+            "text": "Mostly helps a woman's chances",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Mostly hurts a woman's chances",
+            "text": "Mostly hurts a woman's chances",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Doesn't make much of a difference",
+            "text": "Doesn't make much of a difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "TRAITPOLWF1F_W36",
+    "questions": [
+      {
+        "key": "TRAITPOLWF1F_W36",
+        "text": "In general, how do you think showing emotions impacts a woman's chances of getting elected to high political office?",
+        "valid_options": [
+          {
+            "raw": "Mostly helps a woman's chances",
+            "text": "Mostly helps a woman's chances",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Mostly hurts a woman's chances",
+            "text": "Mostly hurts a woman's chances",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Doesn't make much of a difference",
+            "text": "Doesn't make much of a difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "TRAITPOLWF1G_W36",
+    "questions": [
+      {
+        "key": "TRAITPOLWF1G_W36",
+        "text": "In general, how do you think being physically attractive impacts a woman's chances of getting elected to high political office?",
+        "valid_options": [
+          {
+            "raw": "Mostly helps a woman's chances",
+            "text": "Mostly helps a woman's chances",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Mostly hurts a woman's chances",
+            "text": "Mostly hurts a woman's chances",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Doesn't make much of a difference",
+            "text": "Doesn't make much of a difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "TRAITPOLMF1A_W36",
+    "questions": [
+      {
+        "key": "TRAITPOLMF1A_W36",
+        "text": "In general, how do you think being decisive impacts a man's chances of getting elected to high political office?",
+        "valid_options": [
+          {
+            "raw": "Mostly helps a man's chances",
+            "text": "Mostly helps a man's chances",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Mostly hurts a man's chances",
+            "text": "Mostly hurts a man's chances",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Doesn't make much of a difference",
+            "text": "Doesn't make much of a difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "TRAITPOLMF1B_W36",
+    "questions": [
+      {
+        "key": "TRAITPOLMF1B_W36",
+        "text": "In general, how do you think being compassionate impacts a man's chances of getting elected to high political office?",
+        "valid_options": [
+          {
+            "raw": "Mostly helps a man's chances",
+            "text": "Mostly helps a man's chances",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Mostly hurts a man's chances",
+            "text": "Mostly hurts a man's chances",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Doesn't make much of a difference",
+            "text": "Doesn't make much of a difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "TRAITPOLMF1C_W36",
+    "questions": [
+      {
+        "key": "TRAITPOLMF1C_W36",
+        "text": "In general, how do you think being ambitious impacts a man's chances of getting elected to high political office?",
+        "valid_options": [
+          {
+            "raw": "Mostly helps a man's chances",
+            "text": "Mostly helps a man's chances",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Mostly hurts a man's chances",
+            "text": "Mostly hurts a man's chances",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Doesn't make much of a difference",
+            "text": "Doesn't make much of a difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "TRAITPOLMF1D_W36",
+    "questions": [
+      {
+        "key": "TRAITPOLMF1D_W36",
+        "text": "In general, how do you think being approachable impacts a man's chances of getting elected to high political office?",
+        "valid_options": [
+          {
+            "raw": "Mostly helps a man's chances",
+            "text": "Mostly helps a man's chances",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Mostly hurts a man's chances",
+            "text": "Mostly hurts a man's chances",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Doesn't make much of a difference",
+            "text": "Doesn't make much of a difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "TRAITPOLMF1E_W36",
+    "questions": [
+      {
+        "key": "TRAITPOLMF1E_W36",
+        "text": "In general, how do you think being assertive impacts a man's chances of getting elected to high political office?",
+        "valid_options": [
+          {
+            "raw": "Mostly helps a man's chances",
+            "text": "Mostly helps a man's chances",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Mostly hurts a man's chances",
+            "text": "Mostly hurts a man's chances",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Doesn't make much of a difference",
+            "text": "Doesn't make much of a difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "TRAITPOLMF1F_W36",
+    "questions": [
+      {
+        "key": "TRAITPOLMF1F_W36",
+        "text": "In general, how do you think showing emotions impacts a man's chances of getting elected to high political office?",
+        "valid_options": [
+          {
+            "raw": "Mostly helps a man's chances",
+            "text": "Mostly helps a man's chances",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Mostly hurts a man's chances",
+            "text": "Mostly hurts a man's chances",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Doesn't make much of a difference",
+            "text": "Doesn't make much of a difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "TRAITPOLMF1G_W36",
+    "questions": [
+      {
+        "key": "TRAITPOLMF1G_W36",
+        "text": "In general, how do you think being physically attractive impacts a man's chances of getting elected to high political office?",
+        "valid_options": [
+          {
+            "raw": "Mostly helps a man's chances",
+            "text": "Mostly helps a man's chances",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Mostly hurts a man's chances",
+            "text": "Mostly hurts a man's chances",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Doesn't make much of a difference",
+            "text": "Doesn't make much of a difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "POLCHF1_W36",
+    "questions": [
+      {
+        "key": "POLCHF1_W36",
+        "text": "In general, what do you think is better for a woman who wants to reach high political office?",
+        "valid_options": [
+          {
+            "raw": "Having children before she enters politics",
+            "text": "Having children before she enters politics",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Waiting until she is well-established in her political career to have children",
+            "text": "Waiting until she is well-established in her political career to have children",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not having children at all",
+            "text": "Not having children at all",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "TRAITBIZWF2A_W36",
+    "questions": [
+      {
+        "key": "TRAITBIZWF2A_W36",
+        "text": "In general, how do you think being decisive impacts a woman's chances of getting a top executive business position?",
+        "valid_options": [
+          {
+            "raw": "Mostly helps a woman's chances",
+            "text": "Mostly helps a woman's chances",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Mostly hurts a woman's chances",
+            "text": "Mostly hurts a woman's chances",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Doesn't make much of a difference",
+            "text": "Doesn't make much of a difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "TRAITBIZWF2B_W36",
+    "questions": [
+      {
+        "key": "TRAITBIZWF2B_W36",
+        "text": "In general, how do you think being compassionate impacts a woman's chances of getting a top executive business position?",
+        "valid_options": [
+          {
+            "raw": "Mostly helps a woman's chances",
+            "text": "Mostly helps a woman's chances",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Mostly hurts a woman's chances",
+            "text": "Mostly hurts a woman's chances",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Doesn't make much of a difference",
+            "text": "Doesn't make much of a difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "TRAITBIZWF2C_W36",
+    "questions": [
+      {
+        "key": "TRAITBIZWF2C_W36",
+        "text": "In general, how do you think being ambitious impacts a woman's chances of getting a top executive business position?",
+        "valid_options": [
+          {
+            "raw": "Mostly helps a woman's chances",
+            "text": "Mostly helps a woman's chances",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Mostly hurts a woman's chances",
+            "text": "Mostly hurts a woman's chances",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Doesn't make much of a difference",
+            "text": "Doesn't make much of a difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "TRAITBIZWF2D_W36",
+    "questions": [
+      {
+        "key": "TRAITBIZWF2D_W36",
+        "text": "In general, how do you think being approachable impacts a woman's chances of getting a top executive business position?",
+        "valid_options": [
+          {
+            "raw": "Mostly helps a woman's chances",
+            "text": "Mostly helps a woman's chances",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Mostly hurts a woman's chances",
+            "text": "Mostly hurts a woman's chances",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Doesn't make much of a difference",
+            "text": "Doesn't make much of a difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "TRAITBIZWF2E_W36",
+    "questions": [
+      {
+        "key": "TRAITBIZWF2E_W36",
+        "text": "In general, how do you think being assertive impacts a woman's chances of getting a top executive business position?",
+        "valid_options": [
+          {
+            "raw": "Mostly helps a woman's chances",
+            "text": "Mostly helps a woman's chances",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Mostly hurts a woman's chances",
+            "text": "Mostly hurts a woman's chances",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Doesn't make much of a difference",
+            "text": "Doesn't make much of a difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "TRAITBIZWF2F_W36",
+    "questions": [
+      {
+        "key": "TRAITBIZWF2F_W36",
+        "text": "In general, how do you think showing emotions impacts a woman's chances of getting a top executive business position?",
+        "valid_options": [
+          {
+            "raw": "Mostly helps a woman's chances",
+            "text": "Mostly helps a woman's chances",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Mostly hurts a woman's chances",
+            "text": "Mostly hurts a woman's chances",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Doesn't make much of a difference",
+            "text": "Doesn't make much of a difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "TRAITBIZWF2G_W36",
+    "questions": [
+      {
+        "key": "TRAITBIZWF2G_W36",
+        "text": "In general, how do you think being physically attractive impacts a woman's chances of getting a top executive business position?",
+        "valid_options": [
+          {
+            "raw": "Mostly helps a woman's chances",
+            "text": "Mostly helps a woman's chances",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Mostly hurts a woman's chances",
+            "text": "Mostly hurts a woman's chances",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Doesn't make much of a difference",
+            "text": "Doesn't make much of a difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "TRAITBIZMF2A_W36",
+    "questions": [
+      {
+        "key": "TRAITBIZMF2A_W36",
+        "text": "In general, how do you think being decisive impacts a man's chances of getting a top executive business position?",
+        "valid_options": [
+          {
+            "raw": "Mostly helps a man's chances",
+            "text": "Mostly helps a man's chances",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Mostly hurts a man's chances",
+            "text": "Mostly hurts a man's chances",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Doesn't make much of a difference",
+            "text": "Doesn't make much of a difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "TRAITBIZMF2B_W36",
+    "questions": [
+      {
+        "key": "TRAITBIZMF2B_W36",
+        "text": "In general, how do you think being compassionate impacts a man's chances of getting a top executive business position?",
+        "valid_options": [
+          {
+            "raw": "Mostly helps a man's chances",
+            "text": "Mostly helps a man's chances",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Mostly hurts a man's chances",
+            "text": "Mostly hurts a man's chances",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Doesn't make much of a difference",
+            "text": "Doesn't make much of a difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "TRAITBIZMF2C_W36",
+    "questions": [
+      {
+        "key": "TRAITBIZMF2C_W36",
+        "text": "In general, how do you think being ambitious impacts a man's chances of getting a top executive business position?",
+        "valid_options": [
+          {
+            "raw": "Mostly helps a man's chances",
+            "text": "Mostly helps a man's chances",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Mostly hurts a man's chances",
+            "text": "Mostly hurts a man's chances",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Doesn't make much of a difference",
+            "text": "Doesn't make much of a difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "TRAITBIZMF2D_W36",
+    "questions": [
+      {
+        "key": "TRAITBIZMF2D_W36",
+        "text": "In general, how do you think being approachable impacts a man's chances of getting a top executive business position?",
+        "valid_options": [
+          {
+            "raw": "Mostly helps a man's chances",
+            "text": "Mostly helps a man's chances",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Mostly hurts a man's chances",
+            "text": "Mostly hurts a man's chances",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Doesn't make much of a difference",
+            "text": "Doesn't make much of a difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "TRAITBIZMF2E_W36",
+    "questions": [
+      {
+        "key": "TRAITBIZMF2E_W36",
+        "text": "In general, how do you think being assertive impacts a man's chances of getting a top executive business position?",
+        "valid_options": [
+          {
+            "raw": "Mostly helps a man's chances",
+            "text": "Mostly helps a man's chances",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Mostly hurts a man's chances",
+            "text": "Mostly hurts a man's chances",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Doesn't make much of a difference",
+            "text": "Doesn't make much of a difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "TRAITBIZMF2F_W36",
+    "questions": [
+      {
+        "key": "TRAITBIZMF2F_W36",
+        "text": "In general, how do you think showing emotions impacts a man's chances of getting a top executive business position?",
+        "valid_options": [
+          {
+            "raw": "Mostly helps a man's chances",
+            "text": "Mostly helps a man's chances",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Mostly hurts a man's chances",
+            "text": "Mostly hurts a man's chances",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Doesn't make much of a difference",
+            "text": "Doesn't make much of a difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "TRAITBIZMF2G_W36",
+    "questions": [
+      {
+        "key": "TRAITBIZMF2G_W36",
+        "text": "In general, how do you think being physically attractive impacts a man's chances of getting a top executive business position?",
+        "valid_options": [
+          {
+            "raw": "Mostly helps a man's chances",
+            "text": "Mostly helps a man's chances",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Mostly hurts a man's chances",
+            "text": "Mostly hurts a man's chances",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Doesn't make much of a difference",
+            "text": "Doesn't make much of a difference",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "EXECCHF2_W36",
+    "questions": [
+      {
+        "key": "EXECCHF2_W36",
+        "text": "In general, what do you think is better for a woman who wants to reach a top executive position in business?",
+        "valid_options": [
+          {
+            "raw": "Having children early on in her career",
+            "text": "Having children early on in her career",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Waiting until she is well-established in her career to have children",
+            "text": "Waiting until she is well-established in her career to have children",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not having children at all",
+            "text": "Not having children at all",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WMNPRZ1_W36",
+    "questions": [
+      {
+        "key": "WMNPRZ1_W36",
+        "text": "Do you think it would be a good thing or a bad thing for the country if a woman was elected president?",
+        "valid_options": [
+          {
+            "raw": "Very good",
+            "text": "Very good",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat good",
+            "text": "Somewhat good",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Somewhat bad",
+            "text": "Somewhat bad",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Very bad",
+            "text": "Very bad",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MOREWMN1F2_W36",
+    "questions": [
+      {
+        "key": "MOREWMN1F2_W36",
+        "text": "As you may know, more women are running for U.S. Congress this year than in the past. Do you think this is",
+        "valid_options": [
+          {
+            "raw": "A good thing",
+            "text": "A good thing",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A bad thing",
+            "text": "A bad thing",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Neither a good thing nor a bad thing",
+            "text": "Neither a good thing nor a bad thing",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MOREWMN2F2_W36",
+    "questions": [
+      {
+        "key": "MOREWMN2F2_W36",
+        "text": "If there were more women in the U.S. Congress, do you think Congress would",
+        "valid_options": [
+          {
+            "raw": "Do a better job of dealing with the country's problems",
+            "text": "Do a better job of dealing with the country's problems",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Do a worse job of dealing with the country's problems",
+            "text": "Do a worse job of dealing with the country's problems",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "The number of women in Congress doesn't have much to with this",
+            "text": "The number of women in Congress doesn't have much to with this",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MOREWMN3F2_W36",
+    "questions": [
+      {
+        "key": "MOREWMN3F2_W36",
+        "text": "If there were more women in the U.S. Congress, do you think there would be",
+        "valid_options": [
+          {
+            "raw": "more openness and transparency in government",
+            "text": "more openness and transparency in government",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "less openness and transparency in government",
+            "text": "less openness and transparency in government",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "The number of women in Congress doesn't have much to with this",
+            "text": "The number of women in Congress doesn't have much to with this",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MOREWMN4F2_W36",
+    "questions": [
+      {
+        "key": "MOREWMN4F2_W36",
+        "text": "If there were more women in the U.S. Congress, do you think",
+        "valid_options": [
+          {
+            "raw": "The tone of political debate in Washington would be more respectful",
+            "text": "The tone of political debate in Washington would be more respectful",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "The tone of political debate in Washington would be less respectful",
+            "text": "The tone of political debate in Washington would be less respectful",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "The number of women in Congress doesn't have much to with this",
+            "text": "The number of women in Congress doesn't have much to with this",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "COLSPEECH_W36",
+    "questions": [
+      {
+        "key": "COLSPEECH_W36",
+        "text": "Thinking again about colleges and universities which of the following do you think should be more important on college campuses these days?",
+        "valid_options": [
+          {
+            "raw": "Allowing people to speak their minds freely, even if some students find their views upsetting or offensive",
+            "text": "Allowing people to speak their minds freely, even if some students find their views upsetting or offensive",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Ensuring that students aren't exposed to views they find upsetting or offensive, even if that limits what people are a",
+            "text": "Ensuring that students aren't exposed to views they find upsetting or offensive, even if that limits what people are a",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "E5_W36",
+    "questions": [
+      {
+        "key": "E5_W36",
+        "text": "This question is about your household is your spouse now employed full-time, part-time or not employed?",
+        "valid_options": [
+          {
+            "raw": "Full-time",
+            "text": "Full-time",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Part-time",
+            "text": "Part-time",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not employed",
+            "text": "Not employed",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "EARN_W36",
+    "questions": [
+      {
+        "key": "EARN_W36",
+        "text": "Which of the following applies to your household income?",
+        "valid_options": [
+          {
+            "raw": "I earn more than my spouse",
+            "text": "I earn more than my spouse",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "My spouse earns more than me",
+            "text": "My spouse earns more than me",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "My spouse and I earn about the same",
+            "text": "My spouse and I earn about the same",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FERTIL1_W36",
+    "questions": [
+      {
+        "key": "FERTIL1_W36",
+        "text": "Have you or anyone you know personally ever used fertility treatments to try to have a baby or not?",
+        "valid_options": [
+          {
+            "raw": "Yes",
+            "text": "Yes",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No",
+            "text": "No",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CREGION",
+    "questions": [
+      {
+        "key": "CREGION",
+        "text": "Which part of the United States do you currently live in?",
+        "valid_options": [
+          {
+            "raw": "Midwest",
+            "text": "Midwest",
+            "natural_language": "I live in the Midwest of the United States."
+          },
+          {
+            "raw": "Northeast",
+            "text": "Northeast",
+            "natural_language": "I live in the Northeast of the United States."
+          },
+          {
+            "raw": "South",
+            "text": "South",
+            "natural_language": "I live in the South of the United States."
+          },
+          {
+            "raw": "West",
+            "text": "West",
+            "natural_language": "I live in the West of the United States."
+          }
+        ],
+        "invalid_options": []
+      }
+    ]
+  },
+  {
+    "name": "AGE",
+    "questions": [
+      {
+        "key": "AGE",
+        "text": "How old are you?",
+        "valid_options": [
+          {
+            "raw": "18-29",
+            "text": "18-29",
+            "natural_language": "I am between 18-29 years old."
+          },
+          {
+            "raw": "30-49",
+            "text": "30-49",
+            "natural_language": "I am between 30-49 years old."
+          },
+          {
+            "raw": "50-64",
+            "text": "50-64",
+            "natural_language": "I am between 50-64 years old."
+          },
+          {
+            "raw": "65+",
+            "text": "65+",
+            "natural_language": "I am 65+ years old."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SEX",
+    "questions": [
+      {
+        "key": "SEX",
+        "text": "What is the sex that you were assigned at birth?",
+        "valid_options": [
+          {
+            "raw": "Female",
+            "text": "Female",
+            "natural_language": "I am female."
+          },
+          {
+            "raw": "Male",
+            "text": "Male",
+            "natural_language": "I am male."
+          }
+        ],
+        "invalid_options": [
+          "In some other way",
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "EDUCATION",
+    "questions": [
+      {
+        "key": "EDUCATION",
+        "text": "What is the highest level of schooling or degree that you have completed?",
+        "valid_options": [
+          {
+            "raw": "Associate's degree",
+            "text": "Associate's degree",
+            "natural_language": "I earned an associate's degree."
+          },
+          {
+            "raw": "College graduate/some postgrad",
+            "text": "graduated from college",
+            "natural_language": "I graduated from college."
+          },
+          {
+            "raw": "High school graduate",
+            "text": "High school graduate",
+            "natural_language": "I graduated from high school."
+          },
+          {
+            "raw": "Less than high school",
+            "text": "Less than high school",
+            "natural_language": "I did not graduate from high school."
+          },
+          {
+            "raw": "Postgraduate",
+            "text": "Postgraduate",
+            "natural_language": "I went to graduate school."
+          },
+          {
+            "raw": "Some college, no degree",
+            "text": "Some college, no degree",
+            "natural_language": "I went to some college."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CITIZEN",
+    "questions": [
+      {
+        "key": "CITIZEN",
+        "text": "Are you a citizen of the United States?",
+        "valid_options": [
+          {
+            "raw": "No",
+            "text": "No",
+            "natural_language": "I am not a citizen of the United States."
+          },
+          {
+            "raw": "Yes",
+            "text": "Yes",
+            "natural_language": "I am a citizen of the United States."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MARITAL",
+    "questions": [
+      {
+        "key": "MARITAL",
+        "text": "Which of these best describes you?",
+        "valid_options": [
+          {
+            "raw": "Divorced",
+            "text": "Divorced",
+            "natural_language": "I am divorced."
+          },
+          {
+            "raw": "Living with a partner",
+            "text": "Living with a partner",
+            "natural_language": "I am living with a partner."
+          },
+          {
+            "raw": "Married",
+            "text": "Married",
+            "natural_language": "I am married."
+          },
+          {
+            "raw": "Never been married",
+            "text": "Never been married",
+            "natural_language": "I have never been married."
+          },
+          {
+            "raw": "Separated",
+            "text": "Separated",
+            "natural_language": "I am separated from my partner."
+          },
+          {
+            "raw": "Widowed",
+            "text": "Widowed",
+            "natural_language": "I am widowed."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RELIG",
+    "questions": [
+      {
+        "key": "RELIG",
+        "text": "What is your present religion, if any?",
+        "valid_options": [
+          {
+            "raw": "Agnostic",
+            "text": "Agnostic",
+            "natural_language": "Religiously speaking, I am agnostic."
+          },
+          {
+            "raw": "Atheist",
+            "text": "Atheist",
+            "natural_language": "Religiously speaking, I am atheist."
+          },
+          {
+            "raw": "Buddhist",
+            "text": "Buddhist",
+            "natural_language": "Religiously speaking, I am Buddhist."
+          },
+          {
+            "raw": "Hindu",
+            "text": "Hindu",
+            "natural_language": "Religiously speaking, I am Hindu."
+          },
+          {
+            "raw": "Jewish",
+            "text": "Jewish",
+            "natural_language": "Religiously speaking, I am Jewish."
+          },
+          {
+            "raw": "Mormon",
+            "text": "Mormon",
+            "natural_language": "Religiously speaking, I am a member of the Church of Jesus Christ of Latter-day Saints."
+          },
+          {
+            "raw": "Muslim",
+            "text": "Muslim",
+            "natural_language": "Religiously speaking, I am Muslim."
+          },
+          {
+            "raw": "Nothing in particular",
+            "text": "Nothing in particular",
+            "natural_language": "Religiously speaking, I don't identify with anything in particular."
+          },
+          {
+            "raw": "Orthodox",
+            "text": "Orthodox",
+            "natural_language": "Religiously speaking, I am Orthodox."
+          },
+          {
+            "raw": "Other",
+            "text": "Other",
+            "natural_language": "Religiously speaking, I am not mainstream."
+          },
+          {
+            "raw": "Protestant",
+            "text": "Protestant",
+            "natural_language": "Religiously speaking, I am Protestant."
+          },
+          {
+            "raw": "Roman Catholic",
+            "text": "Roman Catholic",
+            "natural_language": "Religiously speaking, I am Roman Catholic."
+          }
+        ],
+        "invalid_options": [
+          "Refused",
+          "Christian",
+          "Unitarian"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RELIGATTEND",
+    "questions": [
+      {
+        "key": "RELIGATTEND",
+        "text": "Aside from weddings and funerals, how often do you attend religious services?",
+        "valid_options": [
+          {
+            "raw": "A few times a year",
+            "text": "A few times a year",
+            "natural_language": "I attend religious services a few times a year."
+          },
+          {
+            "raw": "More than once a week",
+            "text": "More than once a week",
+            "natural_language": "I attend religious services more than once a week."
+          },
+          {
+            "raw": "Never",
+            "text": "Never",
+            "natural_language": "I never attend religious services."
+          },
+          {
+            "raw": "Once a week",
+            "text": "Once a week",
+            "natural_language": "I attend religious services once a week."
+          },
+          {
+            "raw": "Once or twice a month",
+            "text": "Once or twice a month",
+            "natural_language": "I attend religious services once or twice a month."
+          },
+          {
+            "raw": "Seldom",
+            "text": "Seldom",
+            "natural_language": "I seldom attend religious services."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "POLPARTY",
+    "questions": [
+      {
+        "key": "POLPARTY",
+        "text": "In politics today, what do you consider yourself?",
+        "valid_options": [
+          {
+            "raw": "Democrat",
+            "text": "Democrat",
+            "natural_language": "Politically, I am a Democrat."
+          },
+          {
+            "raw": "Independent",
+            "text": "Independent",
+            "natural_language": "Politically, I am an independent."
+          },
+          {
+            "raw": "Republican",
+            "text": "Republican",
+            "natural_language": "Politically, I am a Republican."
+          }
+        ],
+        "invalid_options": [
+          "Other",
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INCOME",
+    "questions": [
+      {
+        "key": "INCOME",
+        "text": "Last year, what was your total family income from all sources, before taxes?",
+        "valid_options": [
+          {
+            "raw": "$100,000 or more",
+            "text": "$100,000 or more",
+            "natural_language": "Last year, my household income was $100,000 or more before taxes."
+          },
+          {
+            "raw": "$30,000-$50,000",
+            "text": "$30,000-$50,000",
+            "natural_language": "Last year, my household income was $30,000-$50,000 before taxes."
+          },
+          {
+            "raw": "$50,000-$75,000",
+            "text": "$50,000-$75,000",
+            "natural_language": "Last year, my household income was $50,000-$75,000 before taxes."
+          },
+          {
+            "raw": "$75,000-$100,000",
+            "text": "$75,000-$100,000",
+            "natural_language": "Last year, my household income was $75,000-$100,000 before taxes."
+          },
+          {
+            "raw": "Less than $30,000",
+            "text": "Less than $30,000",
+            "natural_language": "Last year, my household income was less than $30,000 before taxes."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "POLIDEOLOGY",
+    "questions": [
+      {
+        "key": "POLIDEOLOGY",
+        "text": "In general, how would you describe your political ideology?",
+        "valid_options": [
+          {
+            "raw": "Conservative",
+            "text": "Conservative",
+            "natural_language": "Politically, I am conservative."
+          },
+          {
+            "raw": "Liberal",
+            "text": "Liberal",
+            "natural_language": "Politically, I am liberal."
+          },
+          {
+            "raw": "Moderate",
+            "text": "Moderate",
+            "natural_language": "Politically, I am moderate."
+          },
+          {
+            "raw": "Very conservative",
+            "text": "Very conservative",
+            "natural_language": "Politically, I am very conservative."
+          },
+          {
+            "raw": "Very liberal",
+            "text": "Very liberal",
+            "natural_language": "Politically, I am very liberal."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACE",
+    "questions": [
+      {
+        "key": "RACE",
+        "text": "What is your race or origin?",
+        "valid_options": [
+          {
+            "raw": "Asian",
+            "text": "Asian",
+            "natural_language": "I am Asian."
+          },
+          {
+            "raw": "Black",
+            "text": "Black",
+            "natural_language": "I am Black."
+          },
+          {
+            "raw": "Hispanic",
+            "text": "Hispanic",
+            "natural_language": "I am Hispanic."
+          },
+          {
+            "raw": "Mixed Race",
+            "text": "Mixed Race",
+            "natural_language": "I am mixed race."
+          },
+          {
+            "raw": "Other",
+            "text": "Other",
+            "natural_language": "I am racially ambiguous."
+          },
+          {
+            "raw": "White",
+            "text": "White",
+            "natural_language": "I am White."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  }
+]

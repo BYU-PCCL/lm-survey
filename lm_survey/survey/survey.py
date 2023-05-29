@@ -5,6 +5,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 from sklearn.metrics import normalized_mutual_info_score
+from tqdm import tqdm
 
 from lm_survey.survey.dependent_variable_sample import (
     Completion,
@@ -12,7 +13,7 @@ from lm_survey.survey.dependent_variable_sample import (
 )
 from lm_survey.survey.question import Question, ValidOption
 from lm_survey.survey.variable import Variable
-from lm_survey.prompt_templates import INDEPENDENT_VARIABLE_SUMMARY_TEMPLATE
+from lm_survey.prompt_templates import COMPLETION_TEMPLATE, CHAT_SYSTEM_TEMPLATE
 import json
 import functools
 import argparse
@@ -40,8 +41,12 @@ class Survey:
         self.name = name
         self.df = pd.read_csv(data_filename, dtype=str)
 
-        if variables_filename is not None and os.path.exists(variables_filename):
-            self.variables = self._load_variables(variables_filename=variables_filename)
+        if variables_filename is not None and os.path.exists(
+            variables_filename
+        ):
+            self.variables = self._load_variables(
+                variables_filename=variables_filename
+            )
         else:
             self.variables = []
             print(
@@ -53,20 +58,28 @@ class Survey:
             independent_variable_names=independent_variable_names
         )
 
-        self.set_dependent_variables(dependent_variable_names=dependent_variable_names)
+        self.set_dependent_variables(
+            dependent_variable_names=dependent_variable_names
+        )
 
     def _load_variables(self, variables_filename: str) -> typing.List[Variable]:
         with open(variables_filename, "r") as file:
             return [Variable(**variable) for variable in json.load(file)]
 
-    def set_independent_variables(self, independent_variable_names: typing.List[str]):
+    def set_independent_variables(
+        self, independent_variable_names: typing.List[str]
+    ):
         acceptable_names = set(independent_variable_names)
 
         self._independent_variables = [
-            variable for variable in self.variables if variable.name in acceptable_names
+            variable
+            for variable in self.variables
+            if variable.name in acceptable_names
         ]
 
-    def set_dependent_variables(self, dependent_variable_names: typing.List[str]):
+    def set_dependent_variables(
+        self, dependent_variable_names: typing.List[str]
+    ):
         acceptable_names = set(dependent_variable_names)
 
         self._dependent_variables = {
@@ -98,18 +111,30 @@ class Survey:
         )
 
     @_handle_missing_independent_variable
-    def _get_independent_variable_dict(self, row: pd.Series) -> typing.Dict[str, str]:
+    def _get_independent_variable_dict(
+        self, row: pd.Series
+    ) -> typing.Dict[str, str]:
         return {
             variable.name: variable.to_text(row)
             for variable in self._independent_variables
         }
 
-    def _templatize(
+    def _templatize_completion(
         self,
         independent_variable_summary: str,
         dependent_variable_prompt: str,
     ) -> str:
-        return INDEPENDENT_VARIABLE_SUMMARY_TEMPLATE.format(
+        return COMPLETION_TEMPLATE.format(
+            context_summary=independent_variable_summary,
+            dependent_variable_prompt=dependent_variable_prompt,
+        )
+
+    def _templatize_chat(
+        self,
+        independent_variable_summary: str,
+        dependent_variable_prompt: str,
+    ) -> str:
+        return CHAT_SYSTEM_TEMPLATE.format(
             context_summary=independent_variable_summary,
             dependent_variable_prompt=dependent_variable_prompt,
         )
@@ -183,7 +208,9 @@ class Survey:
             raw=raw, text=text, natural_language=natural_language
         )
 
-    def _process_valid_option_exceptions(self, valid_options: typing.List[ValidOption]):
+    def _process_valid_option_exceptions(
+        self, valid_options: typing.List[ValidOption]
+    ):
         while True:
             print(
                 "\nHere is what you have so far:\n",
@@ -234,7 +261,9 @@ class Survey:
 
                 if natural_language != "":
                     try:
-                        valid_options[option_index].natural_language = natural_language
+                        valid_options[
+                            option_index
+                        ].natural_language = natural_language
                     except IndexError:
                         print(
                             f"Index {option_index} is not a valid option."
@@ -254,7 +283,11 @@ class Survey:
             " specific answer)\nPress ENTER to skip\n:"
         )
 
-        return natural_language_template if natural_language_template != "" else "{X}"
+        return (
+            natural_language_template
+            if natural_language_template != ""
+            else "{X}"
+        )
 
     def _process_options(
         self, valid_indices: typing.Set[int], unique_raw_options: np.ndarray
@@ -307,7 +340,9 @@ class Survey:
         except KeyError:
             raise ValueError(f"{key} is not a valid column name.")
 
-        unique_raw_options = sorted(unique_raw_options, key=self._get_raw_sort_key)
+        unique_raw_options = sorted(
+            unique_raw_options, key=self._get_raw_sort_key
+        )
 
         print(
             "\nFor that question, here is a list of the possible responses,"
@@ -338,7 +373,9 @@ class Survey:
             question_text = self._get_question_text(key=column_name)
 
             try:
-                valid_options, invalid_options = self._get_options(key=column_name)
+                valid_options, invalid_options = self._get_options(
+                    key=column_name
+                )
             except ValueError as error:
                 print(f"Skipping {column_name}: {error}.")
                 continue
@@ -384,7 +421,8 @@ class Survey:
                 column_names_input = variable_name
 
             column_names = [
-                column_name.strip() for column_name in column_names_input.split(",")
+                column_name.strip()
+                for column_name in column_names_input.split(",")
             ]
 
             for question in self._create_question(column_names=column_names):
@@ -407,14 +445,16 @@ class Survey:
             option_ordinals = eval(str(variable_row["option_ordinal"]))
 
             original_options = list(option_mapping.values())
-            valid_options = [o for o in original_options if o != "Refused"]
-            invalid_options = [o for o in original_options if o == "Refused"]
+            valid_options = original_options[: len(option_ordinals)]
+            invalid_options = original_options[len(option_ordinals) :]
 
             question = Question(
                 key=variable_name,
                 text=question_text,
                 valid_options=[
-                    ValidOption(raw=option, text=option, ordinal=ordinal).to_dict()
+                    ValidOption(
+                        raw=option, text=option, ordinal=ordinal
+                    ).to_dict()
                     for ordinal, option in zip(option_ordinals, valid_options)
                 ],
                 invalid_options=invalid_options,
@@ -445,7 +485,7 @@ class Survey:
 
         # The index from iterrows gives type errors when using it as a key in iloc.
         for name, dependent_variable in self._dependent_variables.items():
-            for i, row in self.df.sample(frac=1).iterrows():
+            for i, row in tqdm(self.df.sample(frac=1).iterrows()):
                 try:
                     independent_variable_summary = (
                         self._create_independent_variable_summary(row)
@@ -464,7 +504,12 @@ class Survey:
 
                 dependent_variable_prompt = dependent_variable.to_prompt(row)
 
-                prompt = self._templatize(
+                completion_prompt = self._templatize_completion(
+                    independent_variable_summary=independent_variable_summary,
+                    dependent_variable_prompt=dependent_variable_prompt,
+                )
+
+                chat_prompt = self._templatize_chat(
                     independent_variable_summary=independent_variable_summary,
                     dependent_variable_prompt=dependent_variable_prompt,
                 )
@@ -486,7 +531,8 @@ class Survey:
                     question=dependent_variable.to_question(row),
                     independent_variables=independent_variables,
                     index=i,  # type: ignore
-                    prompt=prompt,
+                    completion_prompt=completion_prompt,
+                    chat_prompt=chat_prompt,
                     completion=completion,
                 )
 
@@ -494,7 +540,9 @@ class Survey:
 
     def mutual_info_stats(self, include_demographics=False) -> pd.DataFrame:
         mutual_info_dvs = {}
-        independent_variable_names = [iv.name for iv in self._independent_variables]
+        independent_variable_names = [
+            iv.name for iv in self._independent_variables
+        ]
         dependent_variable_names = [
             dv.name for dv in self._dependent_variables.values()
         ]
@@ -515,12 +563,17 @@ class Survey:
                     compliant_responses[dv] != "Refused"
                 ]
                 cleaned_dv_col = compliant_responses.iloc[:, 0].dropna()
-                cleaned_demographic_col = compliant_responses.iloc[:, 1].dropna()
+                cleaned_demographic_col = compliant_responses.iloc[
+                    :, 1
+                ].dropna()
                 mi = normalized_mutual_info_score(
                     cleaned_dv_col, cleaned_demographic_col
                 )
                 dv_mi[demographic] = mi
-            mutual_info_dvs[dv] = {"average": np.mean(list(dv_mi.values())), **dv_mi}
+            mutual_info_dvs[dv] = {
+                "average": np.mean(list(dv_mi.values())),
+                **dv_mi,
+            }
         mi_df = pd.DataFrame.from_dict(mutual_info_dvs, orient="index")
         mi_df = mi_df.sort_values(by="average", ascending=False)
         return mi_df
@@ -559,7 +612,9 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     data_dir = os.path.join("data", args.survey_name)
-    experiment_dir = os.path.join("experiments", args.survey_name, args.experiment_name)
+    experiment_dir = os.path.join(
+        "experiments", args.survey_name, args.experiment_name
+    )
     variable_dir = os.path.join("variables", args.survey_name)
 
     with open(os.path.join(experiment_dir, "config.json"), "r") as file:
@@ -567,7 +622,7 @@ if __name__ == "__main__":
 
     survey = Survey(
         name="roper",
-        data_filename=os.path.join(data_dir, "data.csv"),
+        data_filename=os.path.join(data_dir, "responses.csv"),
         variables_filename=os.path.join(variable_dir, "variable.json"),
         independent_variable_names=config["independent_variable_names"],
         dependent_variable_names=config["dependent_variable_names"],

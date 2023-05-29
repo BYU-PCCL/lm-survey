@@ -1,0 +1,3632 @@
+[
+  {
+    "name": "NEWS_PLATFORMg_W45",
+    "questions": [
+      {
+        "key": "NEWS_PLATFORMg_W45",
+        "text": "Thinking about news (by news we mean information about events and issues that involve more than just your friends and family), how often do you get news from a social media site (such as Facebook, Twitter, or Snapchat)",
+        "valid_options": [
+          {
+            "raw": "Often",
+            "text": "Often",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Sometimes",
+            "text": "Sometimes",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hardly ever",
+            "text": "Hardly ever",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Never",
+            "text": "Never",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "NEWS_PLATFORMh_W45",
+    "questions": [
+      {
+        "key": "NEWS_PLATFORMh_W45",
+        "text": "Thinking about news (by news we mean information about events and issues that involve more than just your friends and family), how often do you get news from a news website or app",
+        "valid_options": [
+          {
+            "raw": "Often",
+            "text": "Often",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Sometimes",
+            "text": "Sometimes",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hardly ever",
+            "text": "Hardly ever",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Never",
+            "text": "Never",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "NEWSPREFV2_W45",
+    "questions": [
+      {
+        "key": "NEWSPREFV2_W45",
+        "text": "Which of the following would you say you prefer for getting news?",
+        "valid_options": [
+          {
+            "raw": "A print newspaper",
+            "text": "A print newspaper",
+            "natural_language": null,
+            "ordinal": 1
+          },
+          {
+            "raw": "Radio",
+            "text": "Radio",
+            "natural_language": null,
+            "ordinal": 1
+          },
+          {
+            "raw": "Television",
+            "text": "Television",
+            "natural_language": null,
+            "ordinal": 1
+          },
+          {
+            "raw": "A social media site (such as Facebook, Twitter or Snapchat)",
+            "text": "A social media site (such as Facebook, Twitter or Snapchat)",
+            "natural_language": null,
+            "ordinal": 1
+          },
+          {
+            "raw": "A news website or app",
+            "text": "A news website or app",
+            "natural_language": null,
+            "ordinal": 1
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SOURCESKEPa_W45",
+    "questions": [
+      {
+        "key": "SOURCESKEPa_W45",
+        "text": "How much do you trust the accuracy of the news and information that you get from your main news outlets",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not much",
+            "text": "Not much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SOURCESKEPb_W45",
+    "questions": [
+      {
+        "key": "SOURCESKEPb_W45",
+        "text": "How much do you trust the accuracy of the news and information that you get from news outlets you don't come across often",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not much",
+            "text": "Not much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SOURCESKEPc_W45",
+    "questions": [
+      {
+        "key": "SOURCESKEPc_W45",
+        "text": "How much do you trust the accuracy of the news and information that you get from political leaders and public officials",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not much",
+            "text": "Not much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SOURCESKEPd_W45",
+    "questions": [
+      {
+        "key": "SOURCESKEPd_W45",
+        "text": "How much do you trust the accuracy of the news and information that you get from friends and family",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not much",
+            "text": "Not much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SOURCESKEPe_W45",
+    "questions": [
+      {
+        "key": "SOURCESKEPe_W45",
+        "text": "How much do you trust the accuracy of the news and information that you get from Social media sites (such as Facebook, Twitter or Snapchat)",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not much",
+            "text": "Not much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INFOCONFUSEa_W45",
+    "questions": [
+      {
+        "key": "INFOCONFUSEa_W45",
+        "text": "How much do you think the following type of news and information leaves Americans confused about the basic facts of current issues and events? Made-up information that is intended to mislead the public",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not much",
+            "text": "Not much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INFOCONFUSEb_W45",
+    "questions": [
+      {
+        "key": "INFOCONFUSEb_W45",
+        "text": "How much do you think the following type of news and information leaves Americans confused about the basic facts of current issues and events? Satire about an issue or event",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not much",
+            "text": "Not much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INFOCONFUSEc_W45",
+    "questions": [
+      {
+        "key": "INFOCONFUSEc_W45",
+        "text": "How much do you think the following type of news and information leaves Americans confused about the basic facts of current issues and events? Breaking information that is published before everything is verified",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not much",
+            "text": "Not much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INFOCONFUSEd_W45",
+    "questions": [
+      {
+        "key": "INFOCONFUSEd_W45",
+        "text": "How much do you think the following type of news and information leaves Americans confused about the basic facts of current issues and events? Factual information presented to favor one side of an issue",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not much",
+            "text": "Not much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INFOCONFUSEe_W45",
+    "questions": [
+      {
+        "key": "INFOCONFUSEe_W45",
+        "text": "How much do you think the following type of news and information leaves Americans confused about the basic facts of current issues and events? A video or image that is altered or made up to mislead the public",
+        "valid_options": [
+          {
+            "raw": "A great deal",
+            "text": "A great deal",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not much",
+            "text": "Not much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INFOKNOWa_W45",
+    "questions": [
+      {
+        "key": "INFOKNOWa_W45",
+        "text": "How do you feel about the average American's ability to recognize the following type of news and information? Made-up information that is intended to mislead the public",
+        "valid_options": [
+          {
+            "raw": "The average American should be able to recognize it",
+            "text": "The average American should be able to recognize it",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "It is too much to ask of the average American to be able to recognize it",
+            "text": "It is too much to ask of the average American to be able to recognize it",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INFOKNOWb_W45",
+    "questions": [
+      {
+        "key": "INFOKNOWb_W45",
+        "text": "How do you feel about the average American's ability to recognize the following type of news and information? Satire about an issue or event",
+        "valid_options": [
+          {
+            "raw": "The average American should be able to recognize it",
+            "text": "The average American should be able to recognize it",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "It is too much to ask of the average American to be able to recognize it",
+            "text": "It is too much to ask of the average American to be able to recognize it",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INFOKNOWc_W45",
+    "questions": [
+      {
+        "key": "INFOKNOWc_W45",
+        "text": "How do you feel about the average American's ability to recognize the following type of news and information? Breaking information that is published before everything is verified",
+        "valid_options": [
+          {
+            "raw": "The average American should be able to recognize it",
+            "text": "The average American should be able to recognize it",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "It is too much to ask of the average American to be able to recognize it",
+            "text": "It is too much to ask of the average American to be able to recognize it",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INFOKNOWd_W45",
+    "questions": [
+      {
+        "key": "INFOKNOWd_W45",
+        "text": "How do you feel about the average American's ability to recognize the following type of news and information? Factual information presented to favor one side of an issue",
+        "valid_options": [
+          {
+            "raw": "The average American should be able to recognize it",
+            "text": "The average American should be able to recognize it",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "It is too much to ask of the average American to be able to recognize it",
+            "text": "It is too much to ask of the average American to be able to recognize it",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INFOKNOWe_W45",
+    "questions": [
+      {
+        "key": "INFOKNOWe_W45",
+        "text": "How do you feel about the average American's ability to recognize the following type of news and information? A video or image that is altered or made up to mislead the public",
+        "valid_options": [
+          {
+            "raw": "The average American should be able to recognize it",
+            "text": "The average American should be able to recognize it",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "It is too much to ask of the average American to be able to recognize it",
+            "text": "It is too much to ask of the average American to be able to recognize it",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INFOOWNa_W45",
+    "questions": [
+      {
+        "key": "INFOOWNa_W45",
+        "text": "How do you feel about your own ability to recognize the following type of news and information? Made-up information that is intended to mislead the public",
+        "valid_options": [
+          {
+            "raw": "I find it easy to recognize it",
+            "text": "I find it easy to recognize it",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "It find it hard to recognize it",
+            "text": "It find it hard to recognize it",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INFOOWNb_W45",
+    "questions": [
+      {
+        "key": "INFOOWNb_W45",
+        "text": "How do you feel about your own ability to recognize the following type of news and information? Satire about an issue or event",
+        "valid_options": [
+          {
+            "raw": "I find it easy to recognize it",
+            "text": "I find it easy to recognize it",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "It find it hard to recognize it",
+            "text": "It find it hard to recognize it",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INFOOWNc_W45",
+    "questions": [
+      {
+        "key": "INFOOWNc_W45",
+        "text": "How do you feel about your own ability to recognize the following type of news and information? Breaking information that is published before everything is verified",
+        "valid_options": [
+          {
+            "raw": "I find it easy to recognize it",
+            "text": "I find it easy to recognize it",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "It find it hard to recognize it",
+            "text": "It find it hard to recognize it",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INFOOWNd_W45",
+    "questions": [
+      {
+        "key": "INFOOWNd_W45",
+        "text": "How do you feel about your own ability to recognize the following type of news and information? Factual information presented to favor one side of an issue",
+        "valid_options": [
+          {
+            "raw": "I find it easy to recognize it",
+            "text": "I find it easy to recognize it",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "It find it hard to recognize it",
+            "text": "It find it hard to recognize it",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INFOOWNe_W45",
+    "questions": [
+      {
+        "key": "INFOOWNe_W45",
+        "text": "How do you feel about your own ability to recognize the following type of news and information? A video or image that is altered or made up to mislead the public",
+        "valid_options": [
+          {
+            "raw": "I find it easy to recognize it",
+            "text": "I find it easy to recognize it",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "It find it hard to recognize it",
+            "text": "It find it hard to recognize it",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MEDIALOYAL3_W45",
+    "questions": [
+      {
+        "key": "MEDIALOYAL3_W45",
+        "text": "Which of the following statements comes closer to your view?",
+        "valid_options": [
+          {
+            "raw": "I consider myself to be loyal to the news source(s) I get my news from",
+            "text": "I consider myself to be loyal to the news source(s) I get my news from",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "I am not particularly loyal to the news source(s) I get my news from",
+            "text": "I am not particularly loyal to the news source(s) I get my news from",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "LEAD_W45",
+    "questions": [
+      {
+        "key": "LEAD_W45",
+        "text": "When you talk with friends and family about the news, do you tend to",
+        "valid_options": [
+          {
+            "raw": "Listen to the conversation more than lead",
+            "text": "Listen to the conversation more than lead",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Lead the conversation more than listen",
+            "text": "Lead the conversation more than listen",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SEEK_W45",
+    "questions": [
+      {
+        "key": "SEEK_W45",
+        "text": "Which statement best describes how you get news?",
+        "valid_options": [
+          {
+            "raw": "I mostly get news because I'm looking for it",
+            "text": "I mostly get news because I'm looking for it",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "I mostly get news because I happen to come across it",
+            "text": "I mostly get news because I happen to come across it",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INFORESTRICTa_W45",
+    "questions": [
+      {
+        "key": "INFORESTRICTa_W45",
+        "text": "Which comes closer to your view about the following type of news and information? Made-up information that is intended to mislead the public",
+        "valid_options": [
+          {
+            "raw": "The freedom to publish and access it should be protected",
+            "text": "The freedom to publish and access it should be protected",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Steps should be taken to restrict it",
+            "text": "Steps should be taken to restrict it",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INFORESTRICTb_W45",
+    "questions": [
+      {
+        "key": "INFORESTRICTb_W45",
+        "text": "Which comes closer to your view about the following type of news and information? Satire about an issue or event",
+        "valid_options": [
+          {
+            "raw": "The freedom to publish and access it should be protected",
+            "text": "The freedom to publish and access it should be protected",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Steps should be taken to restrict it",
+            "text": "Steps should be taken to restrict it",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INFORESTRICTc_W45",
+    "questions": [
+      {
+        "key": "INFORESTRICTc_W45",
+        "text": "Which comes closer to your view about the following type of news and information? Breaking information that is published before everything is verified",
+        "valid_options": [
+          {
+            "raw": "The freedom to publish and access it should be protected",
+            "text": "The freedom to publish and access it should be protected",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Steps should be taken to restrict it",
+            "text": "Steps should be taken to restrict it",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INFORESTRICTd_W45",
+    "questions": [
+      {
+        "key": "INFORESTRICTd_W45",
+        "text": "Which comes closer to your view about the following type of news and information? Factual information presented to favor one side of an issue",
+        "valid_options": [
+          {
+            "raw": "The freedom to publish and access it should be protected",
+            "text": "The freedom to publish and access it should be protected",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Steps should be taken to restrict it",
+            "text": "Steps should be taken to restrict it",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INFORESTRICTe_W45",
+    "questions": [
+      {
+        "key": "INFORESTRICTe_W45",
+        "text": "Which comes closer to your view about the following type of news and information? A video or image that is altered or made up to mislead the public",
+        "valid_options": [
+          {
+            "raw": "The freedom to publish and access it should be protected",
+            "text": "The freedom to publish and access it should be protected",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Steps should be taken to restrict it",
+            "text": "Steps should be taken to restrict it",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INFOWHYa_W45",
+    "questions": [
+      {
+        "key": "INFOWHYa_W45",
+        "text": "How much do you think to make money is a reason why made-up news and information is created?",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INFOWHYb_W45",
+    "questions": [
+      {
+        "key": "INFOWHYb_W45",
+        "text": "How much do you think to push an agenda or viewpoint is a reason why made-up news and information is created?",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INFOWHYc_W45",
+    "questions": [
+      {
+        "key": "INFOWHYc_W45",
+        "text": "How much do you think for fame is a reason why made-up news and information is created?",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INFOWHYd_W45",
+    "questions": [
+      {
+        "key": "INFOWHYd_W45",
+        "text": "How much do you think to be funny is a reason why made-up news and information is created?",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INFOCREATEa_W45",
+    "questions": [
+      {
+        "key": "INFOCREATEa_W45",
+        "text": "How much made-up news and information do you think is created by journalists",
+        "valid_options": [
+          {
+            "raw": "A lot",
+            "text": "A lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not much",
+            "text": "Not much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "None",
+            "text": "None",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INFOCREATEb_W45",
+    "questions": [
+      {
+        "key": "INFOCREATEb_W45",
+        "text": "How much made-up news and information do you think is created by political leaders and their staff",
+        "valid_options": [
+          {
+            "raw": "A lot",
+            "text": "A lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not much",
+            "text": "Not much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "None",
+            "text": "None",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INFOCREATEc_W45",
+    "questions": [
+      {
+        "key": "INFOCREATEc_W45",
+        "text": "How much made-up news and information do you think is created by members of the public",
+        "valid_options": [
+          {
+            "raw": "A lot",
+            "text": "A lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not much",
+            "text": "Not much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "None",
+            "text": "None",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INFOCREATEd_W45",
+    "questions": [
+      {
+        "key": "INFOCREATEd_W45",
+        "text": "How much made-up news and information do you think is created by foreign-based individuals or groups",
+        "valid_options": [
+          {
+            "raw": "A lot",
+            "text": "A lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not much",
+            "text": "Not much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "None",
+            "text": "None",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INFOCREATEe_W45",
+    "questions": [
+      {
+        "key": "INFOCREATEe_W45",
+        "text": "How much made-up news and information do you think is created by activist groups",
+        "valid_options": [
+          {
+            "raw": "A lot",
+            "text": "A lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not much",
+            "text": "Not much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "None",
+            "text": "None",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MADEUPOFT_W45",
+    "questions": [
+      {
+        "key": "MADEUPOFT_W45",
+        "text": "How often do you come across made-up news and information that is intended to mislead the public?",
+        "valid_options": [
+          {
+            "raw": "Often",
+            "text": "Often",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Sometimes",
+            "text": "Sometimes",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hardly ever",
+            "text": "Hardly ever",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Never",
+            "text": "Never",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MADEUPSHARE1_W45",
+    "questions": [
+      {
+        "key": "MADEUPSHARE1_W45",
+        "text": "Have you ever shared news and information that you later found out was made-up?",
+        "valid_options": [
+          {
+            "raw": "Yes",
+            "text": "Yes",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No",
+            "text": "No",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MADEUPSHARE2_W45",
+    "questions": [
+      {
+        "key": "MADEUPSHARE2_W45",
+        "text": "Have you ever shared news and information that you knew at the time was made-up?",
+        "valid_options": [
+          {
+            "raw": "Yes",
+            "text": "Yes",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No",
+            "text": "No",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MADEUPSHAREWHY_W45",
+    "questions": [
+      {
+        "key": "MADEUPSHAREWHY_W45",
+        "text": "What is the main reason why you shared news and information that you knew at the time was made-up?",
+        "valid_options": [
+          {
+            "raw": "I thought it was surprising or entertaining",
+            "text": "I thought it was surprising or entertaining",
+            "natural_language": null,
+            "ordinal": 1
+          },
+          {
+            "raw": "I liked what it said",
+            "text": "I liked what it said",
+            "natural_language": null,
+            "ordinal": 1
+          },
+          {
+            "raw": "I wanted to create a discussion about it",
+            "text": "I wanted to create a discussion about it",
+            "natural_language": null,
+            "ordinal": 1
+          },
+          {
+            "raw": "I wanted to tell others it was inaccurate",
+            "text": "I wanted to tell others it was inaccurate",
+            "natural_language": null,
+            "ordinal": 1
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MADEUPTOPICa_W45",
+    "questions": [
+      {
+        "key": "MADEUPTOPICa_W45",
+        "text": "How much made-up news and information do you think is created about politics and elections topics?",
+        "valid_options": [
+          {
+            "raw": "A lot",
+            "text": "A lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not much",
+            "text": "Not much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "None",
+            "text": "None",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MADEUPTOPICb_W45",
+    "questions": [
+      {
+        "key": "MADEUPTOPICb_W45",
+        "text": "How much made-up news and information do you think is created about entertainment and celebrities topics?",
+        "valid_options": [
+          {
+            "raw": "A lot",
+            "text": "A lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not much",
+            "text": "Not much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "None",
+            "text": "None",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MADEUPTOPICc_W45",
+    "questions": [
+      {
+        "key": "MADEUPTOPICc_W45",
+        "text": "How much made-up news and information do you think is created about science and technology topics?",
+        "valid_options": [
+          {
+            "raw": "A lot",
+            "text": "A lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not much",
+            "text": "Not much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "None",
+            "text": "None",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MADEUPTOPICd_W45",
+    "questions": [
+      {
+        "key": "MADEUPTOPICd_W45",
+        "text": "How much made-up news and information do you think is created about Health and medicine topics?",
+        "valid_options": [
+          {
+            "raw": "A lot",
+            "text": "A lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not much",
+            "text": "Not much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "None",
+            "text": "None",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MADEUPTOPICe_W45",
+    "questions": [
+      {
+        "key": "MADEUPTOPICe_W45",
+        "text": "How much made-up news and information do you think is created about emergencies, such as shootings or natural disasters topics?",
+        "valid_options": [
+          {
+            "raw": "A lot",
+            "text": "A lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not much",
+            "text": "Not much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "None",
+            "text": "None",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MADEUPTOPICf_W45",
+    "questions": [
+      {
+        "key": "MADEUPTOPICf_W45",
+        "text": "How much made-up news and information do you think is created about business and finance topics?",
+        "valid_options": [
+          {
+            "raw": "A lot",
+            "text": "A lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not much",
+            "text": "Not much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "None",
+            "text": "None",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MADEUPLEVELa_W45",
+    "questions": [
+      {
+        "key": "MADEUPLEVELa_W45",
+        "text": "How much made-up news and information do you think is created about National issues, events and public figures?",
+        "valid_options": [
+          {
+            "raw": "A lot",
+            "text": "A lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not much",
+            "text": "Not much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "None",
+            "text": "None",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MADEUPLEVELb_W45",
+    "questions": [
+      {
+        "key": "MADEUPLEVELb_W45",
+        "text": "How much made-up news and information do you think is created about local issues, events and public figures?",
+        "valid_options": [
+          {
+            "raw": "A lot",
+            "text": "A lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not much",
+            "text": "Not much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "None",
+            "text": "None",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MADEUPRESa_W45",
+    "questions": [
+      {
+        "key": "MADEUPRESa_W45",
+        "text": "Has the issue of made-up news and information led you to stop getting news from a specific outlet?",
+        "valid_options": [
+          {
+            "raw": "Yes, have done this",
+            "text": "Yes, have done this",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, have not done this",
+            "text": "No, have not done this",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MADEUPRESb_W45",
+    "questions": [
+      {
+        "key": "MADEUPRESb_W45",
+        "text": "Has the issue of made-up news and information led you to reduce the amount of news you get overall?",
+        "valid_options": [
+          {
+            "raw": "Yes, have done this",
+            "text": "Yes, have done this",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, have not done this",
+            "text": "No, have not done this",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MADEUPRESc_W45",
+    "questions": [
+      {
+        "key": "MADEUPRESc_W45",
+        "text": "Has the issue of made-up news and information led you to check the facts of news stories yourself?",
+        "valid_options": [
+          {
+            "raw": "Yes, have done this",
+            "text": "Yes, have done this",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, have not done this",
+            "text": "No, have not done this",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MADEUPRESd_W45",
+    "questions": [
+      {
+        "key": "MADEUPRESd_W45",
+        "text": "Has the issue of made-up news and information led you to report or flag a story that you think is made-up?",
+        "valid_options": [
+          {
+            "raw": "Yes, have done this",
+            "text": "Yes, have done this",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, have not done this",
+            "text": "No, have not done this",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MADEUPRESe_W45",
+    "questions": [
+      {
+        "key": "MADEUPRESe_W45",
+        "text": "Has the issue of made-up news and information led you to change the way you use social media?",
+        "valid_options": [
+          {
+            "raw": "Yes, have done this",
+            "text": "Yes, have done this",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, have not done this",
+            "text": "No, have not done this",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MADEUPIMPa_W45",
+    "questions": [
+      {
+        "key": "MADEUPIMPa_W45",
+        "text": "Overall, how much of an impact do you think made-up news and information has on americans' confidence in government institutions?",
+        "valid_options": [
+          {
+            "raw": "Big impact",
+            "text": "Big impact",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Moderate impact",
+            "text": "Moderate impact",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Small impact",
+            "text": "Small impact",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "No impact at all",
+            "text": "No impact at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MADEUPIMPb_W45",
+    "questions": [
+      {
+        "key": "MADEUPIMPb_W45",
+        "text": "Overall, how much of an impact do you think made-up news and information has on americans' confidence in each other?",
+        "valid_options": [
+          {
+            "raw": "Big impact",
+            "text": "Big impact",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Moderate impact",
+            "text": "Moderate impact",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Small impact",
+            "text": "Small impact",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "No impact at all",
+            "text": "No impact at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MADEUPIMPc_W45",
+    "questions": [
+      {
+        "key": "MADEUPIMPc_W45",
+        "text": "Overall, how much of an impact do you think made-up news and information has on political leaders' ability to get work done?",
+        "valid_options": [
+          {
+            "raw": "Big impact",
+            "text": "Big impact",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Moderate impact",
+            "text": "Moderate impact",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Small impact",
+            "text": "Small impact",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "No impact at all",
+            "text": "No impact at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MADEUPIMPd_W45",
+    "questions": [
+      {
+        "key": "MADEUPIMPd_W45",
+        "text": "Overall, how much of an impact do you think made-up news and information has on journalists' ability to get the information they need for their stories?",
+        "valid_options": [
+          {
+            "raw": "Big impact",
+            "text": "Big impact",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Moderate impact",
+            "text": "Moderate impact",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Small impact",
+            "text": "Small impact",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "No impact at all",
+            "text": "No impact at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MADEUPIMPe_W45",
+    "questions": [
+      {
+        "key": "MADEUPIMPe_W45",
+        "text": "Overall, how much of an impact do you think made-up news and information has on the public's ability to solve community problems?",
+        "valid_options": [
+          {
+            "raw": "Big impact",
+            "text": "Big impact",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Moderate impact",
+            "text": "Moderate impact",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Small impact",
+            "text": "Small impact",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "No impact at all",
+            "text": "No impact at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MADEUPDIS_W45",
+    "questions": [
+      {
+        "key": "MADEUPDIS_W45",
+        "text": "How often do you discuss the topic of made-up news and information with others?",
+        "valid_options": [
+          {
+            "raw": "Often",
+            "text": "Often",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Sometimes",
+            "text": "Sometimes",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hardly ever",
+            "text": "Hardly ever",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Never",
+            "text": "Never",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "DISAVOID_W45",
+    "questions": [
+      {
+        "key": "DISAVOID_W45",
+        "text": "Have you ever avoided talking with someone because you thought they might bring made-up news and information into the conversation?",
+        "valid_options": [
+          {
+            "raw": "Yes",
+            "text": "Yes",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No",
+            "text": "No",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SMSHARER_W45",
+    "questions": [
+      {
+        "key": "SMSHARER_W45",
+        "text": "On social media, do you think of yourself more as a",
+        "valid_options": [
+          {
+            "raw": "Sharer of news",
+            "text": "Sharer of news",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Receiver of news",
+            "text": "Receiver of news",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SMLIKESa_W45",
+    "questions": [
+      {
+        "key": "SMLIKESa_W45",
+        "text": "How much is each of the following a reason why you click on links to news stories on social media? The story was something I had been following in the news",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SMLIKESb_W45",
+    "questions": [
+      {
+        "key": "SMLIKESb_W45",
+        "text": "How much is each of the following a reason why you click on links to news stories on social media? A friend recommended the story",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SMLIKESc_W45",
+    "questions": [
+      {
+        "key": "SMLIKESc_W45",
+        "text": "How much is each of the following a reason why you click on links to news stories on social media? The story was published by a news organization I prefer",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SMLIKESd_W45",
+    "questions": [
+      {
+        "key": "SMLIKESd_W45",
+        "text": "How much is each of the following a reason why you click on links to news stories on social media? The story had a lot of shares, comments or likes",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SMLIKESe_W45",
+    "questions": [
+      {
+        "key": "SMLIKESe_W45",
+        "text": "How much is each of the following a reason why you click on links to news stories on social media? I was interested in the topic",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SMLIKESf_W45",
+    "questions": [
+      {
+        "key": "SMLIKESf_W45",
+        "text": "How much is each of the following a reason why you click on links to news stories on social media? The story was surprising or entertaining",
+        "valid_options": [
+          {
+            "raw": "Major reason",
+            "text": "Major reason",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Minor reason",
+            "text": "Minor reason",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not a reason",
+            "text": "Not a reason",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SMSHARE_W45",
+    "questions": [
+      {
+        "key": "SMSHARE_W45",
+        "text": "When you share a news story on social media, how much do you think it impacts the story's overall reach to the public?",
+        "valid_options": [
+          {
+            "raw": "A lot",
+            "text": "A lot",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Some",
+            "text": "Some",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not much",
+            "text": "Not much",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all",
+            "text": "Not at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "I don't share news stories on social media",
+            "text": "I don't share news stories on social media",
+            "natural_language": null,
+            "ordinal": 2.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MADEUPSMCLICK_W45",
+    "questions": [
+      {
+        "key": "MADEUPSMCLICK_W45",
+        "text": "When you see a news story on social media that you think is made-up, how often do you click on the link to that story?",
+        "valid_options": [
+          {
+            "raw": "Often",
+            "text": "Often",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Sometimes",
+            "text": "Sometimes",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hardly ever",
+            "text": "Hardly ever",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Never",
+            "text": "Never",
+            "natural_language": null,
+            "ordinal": 4.0
+          },
+          {
+            "raw": "I don't see these types of stories on social media",
+            "text": "I don't see these types of stories on social media",
+            "natural_language": null,
+            "ordinal": 2.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MADEUPSMFOL1_W45",
+    "questions": [
+      {
+        "key": "MADEUPSMFOL1_W45",
+        "text": "Have you ever hidden, blocked or stopped following A news source or organization on social media because you thought they were posting made-up news and information?",
+        "valid_options": [
+          {
+            "raw": "Yes, have done this",
+            "text": "Yes, have done this",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, have not done this",
+            "text": "No, have not done this",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MADEUPSMFOL2_W45",
+    "questions": [
+      {
+        "key": "MADEUPSMFOL2_W45",
+        "text": "Have you ever hidden, blocked, or stopped following someone you know on social media because you thought they were posting made-up news and information?",
+        "valid_options": [
+          {
+            "raw": "Yes, have done this",
+            "text": "Yes, have done this",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No, have not done this",
+            "text": "No, have not done this",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ONLINESOURCE_W45",
+    "questions": [
+      {
+        "key": "ONLINESOURCE_W45",
+        "text": "In general, does most of the news you see online come from",
+        "valid_options": [
+          {
+            "raw": "Sources you are familiar with",
+            "text": "Sources you are familiar with",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Sources you are not familiar with",
+            "text": "Sources you are not familiar with",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Not sure",
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "DIGWDOG_3_W45",
+    "questions": [
+      {
+        "key": "DIGWDOG_3_W45",
+        "text": "Thinking about the news that your friends, family and acquaintances post or send you online about political and social issues, overall, do you think the mix of news you get from them",
+        "valid_options": [
+          {
+            "raw": "Represents just one side",
+            "text": "Represents just one side",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Represents more than one side",
+            "text": "Represents more than one side",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "They don't send me news about political and social issues",
+            "text": "They don't send me news about political and social issues",
+            "natural_language": null,
+            "ordinal": 1.5
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "NEWSPROBa_W45",
+    "questions": [
+      {
+        "key": "NEWSPROBa_W45",
+        "text": "How much of a problem is the amount of made-up news and information when it comes to how the public stays informed about the basic facts of current issues and events?",
+        "valid_options": [
+          {
+            "raw": "A very big problem",
+            "text": "A very big problem",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A moderately big problem",
+            "text": "A moderately big problem",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "A small problem",
+            "text": "A small problem",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not a problem at all",
+            "text": "Not a problem at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "NEWSPROBb_W45",
+    "questions": [
+      {
+        "key": "NEWSPROBb_W45",
+        "text": "How much of a problem is the public's difficulty distinguishing facts from opinions when it comes to how the public stays informed about the basic facts of current issues and events?",
+        "valid_options": [
+          {
+            "raw": "A very big problem",
+            "text": "A very big problem",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A moderately big problem",
+            "text": "A moderately big problem",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "A small problem",
+            "text": "A small problem",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not a problem at all",
+            "text": "Not a problem at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "NEWSPROBc_W45",
+    "questions": [
+      {
+        "key": "NEWSPROBc_W45",
+        "text": "How much of a problem is too many different sources to choose from when it comes to how the public stays informed about the basic facts of current issues and events?",
+        "valid_options": [
+          {
+            "raw": "A very big problem",
+            "text": "A very big problem",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A moderately big problem",
+            "text": "A moderately big problem",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "A small problem",
+            "text": "A small problem",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not a problem at all",
+            "text": "Not a problem at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "NEWSPROBd_W45",
+    "questions": [
+      {
+        "key": "NEWSPROBd_W45",
+        "text": "How much of a problem is too much news to keep up with when it comes to how the public stays informed about the basic facts of current issues and events?",
+        "valid_options": [
+          {
+            "raw": "A very big problem",
+            "text": "A very big problem",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A moderately big problem",
+            "text": "A moderately big problem",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "A small problem",
+            "text": "A small problem",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not a problem at all",
+            "text": "Not a problem at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "NEWSPROBe_W45",
+    "questions": [
+      {
+        "key": "NEWSPROBe_W45",
+        "text": "How much of a problem is journalists inserting their own views when it comes to how the public stays informed about the basic facts of current issues and events?",
+        "valid_options": [
+          {
+            "raw": "A very big problem",
+            "text": "A very big problem",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A moderately big problem",
+            "text": "A moderately big problem",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "A small problem",
+            "text": "A small problem",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not a problem at all",
+            "text": "Not a problem at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "VIDOFT_W45",
+    "questions": [
+      {
+        "key": "VIDOFT_W45",
+        "text": "How often do you come across videos or images that have been altered or made-up to mislead the public?",
+        "valid_options": [
+          {
+            "raw": "Often",
+            "text": "Often",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Sometimes",
+            "text": "Sometimes",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Hardly ever",
+            "text": "Hardly ever",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Never",
+            "text": "Never",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MADEUPSOLVE_W45",
+    "questions": [
+      {
+        "key": "MADEUPSOLVE_W45",
+        "text": "Within the next five years, do you think the issue of made-up news and information will",
+        "valid_options": [
+          {
+            "raw": "Get better",
+            "text": "Get better",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Stay the same",
+            "text": "Stay the same",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Get worse",
+            "text": "Get worse",
+            "natural_language": null,
+            "ordinal": 3.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INFOCHALa_W45",
+    "questions": [
+      {
+        "key": "INFOCHALa_W45",
+        "text": "How much of a challenge do you think political divides are in addressing made-up news and information?",
+        "valid_options": [
+          {
+            "raw": "A very big challenge",
+            "text": "A very big challenge",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A moderately big challenge",
+            "text": "A moderately big challenge",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "A small challenge",
+            "text": "A small challenge",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not a challenge at all",
+            "text": "Not a challenge at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INFOCHALb_W45",
+    "questions": [
+      {
+        "key": "INFOCHALb_W45",
+        "text": "How much of a challenge do you think the public's lack of effort is in addressing made-up news and information?",
+        "valid_options": [
+          {
+            "raw": "A very big challenge",
+            "text": "A very big challenge",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A moderately big challenge",
+            "text": "A moderately big challenge",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "A small challenge",
+            "text": "A small challenge",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not a challenge at all",
+            "text": "Not a challenge at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INFOCHALc_W45",
+    "questions": [
+      {
+        "key": "INFOCHALc_W45",
+        "text": "How much of a challenge do you think low awareness of current events are in addressing made-up news and information?",
+        "valid_options": [
+          {
+            "raw": "A very big challenge",
+            "text": "A very big challenge",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A moderately big challenge",
+            "text": "A moderately big challenge",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "A small challenge",
+            "text": "A small challenge",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not a challenge at all",
+            "text": "Not a challenge at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INFOCHALd_W45",
+    "questions": [
+      {
+        "key": "INFOCHALd_W45",
+        "text": "How much of a challenge do you think Digital technology is in addressing made-up news and information?",
+        "valid_options": [
+          {
+            "raw": "A very big challenge",
+            "text": "A very big challenge",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A moderately big challenge",
+            "text": "A moderately big challenge",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "A small challenge",
+            "text": "A small challenge",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not a challenge at all",
+            "text": "Not a challenge at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INFOCHALe_W45",
+    "questions": [
+      {
+        "key": "INFOCHALe_W45",
+        "text": "How much of a challenge do you think the ability to make money from it is in addressing made-up news and information?",
+        "valid_options": [
+          {
+            "raw": "A very big challenge",
+            "text": "A very big challenge",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "A moderately big challenge",
+            "text": "A moderately big challenge",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "A small challenge",
+            "text": "A small challenge",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not a challenge at all",
+            "text": "Not a challenge at all",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RESTRICTWHO_W45",
+    "questions": [
+      {
+        "key": "RESTRICTWHO_W45",
+        "text": "Who do you think has the most responsibility to reduce the amount of made-up news and information?",
+        "valid_options": [
+          {
+            "raw": "The government",
+            "text": "The government",
+            "natural_language": null,
+            "ordinal": 1
+          },
+          {
+            "raw": "Technology companies",
+            "text": "Technology companies",
+            "natural_language": null,
+            "ordinal": 1
+          },
+          {
+            "raw": "The public",
+            "text": "The public",
+            "natural_language": null,
+            "ordinal": 1
+          },
+          {
+            "raw": "The news media",
+            "text": "The news media",
+            "natural_language": null,
+            "ordinal": 1
+          },
+          {
+            "raw": "None of these",
+            "text": "None of these",
+            "natural_language": null,
+            "ordinal": 1
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ACCCHECK_W45",
+    "questions": [
+      {
+        "key": "ACCCHECK_W45",
+        "text": "If you wanted to check the accuracy of a news story, how confident are you that you would know what steps to take?",
+        "valid_options": [
+          {
+            "raw": "Very confident",
+            "text": "Very confident",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Somewhat confident",
+            "text": "Somewhat confident",
+            "natural_language": null,
+            "ordinal": 2.0
+          },
+          {
+            "raw": "Not too confident",
+            "text": "Not too confident",
+            "natural_language": null,
+            "ordinal": 3.0
+          },
+          {
+            "raw": "Not at all confident",
+            "text": "Not at all confident",
+            "natural_language": null,
+            "ordinal": 4.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FCFAIR_W45",
+    "questions": [
+      {
+        "key": "FCFAIR_W45",
+        "text": "Different organizations and news outlets have taken on fact-checking efforts. Do you think that those who do the fact-checking",
+        "valid_options": [
+          {
+            "raw": "Deal fairly with all sides",
+            "text": "Deal fairly with all sides",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Tend to favor one side",
+            "text": "Tend to favor one side",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WATCHDOG_1_W45",
+    "questions": [
+      {
+        "key": "WATCHDOG_1_W45",
+        "text": "Some people think that by criticizing leaders, news organizations keep political leaders from doing their job. Others think that such criticism is worth it because it keeps political leaders from doing things that should not be done. Which position is closer to your opinion?",
+        "valid_options": [
+          {
+            "raw": "Keep political leaders from doing their job",
+            "text": "Keep political leaders from doing their job",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Keep political leaders from doing things that shouldn't be done",
+            "text": "Keep political leaders from doing things that shouldn't be done",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WATCHDOG_3_W45",
+    "questions": [
+      {
+        "key": "WATCHDOG_3_W45",
+        "text": "In presenting the news dealing with political and social issues, do you think that news organizations",
+        "valid_options": [
+          {
+            "raw": "Deal fairly with all sides",
+            "text": "Deal fairly with all sides",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "Tend to favor one side",
+            "text": "Tend to favor one side",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SNSUSE_W45",
+    "questions": [
+      {
+        "key": "SNSUSE_W45",
+        "text": "Do you ever use social media (such as Facebook, Twitter or Snapchat)?",
+        "valid_options": [
+          {
+            "raw": "Yes",
+            "text": "Yes",
+            "natural_language": null,
+            "ordinal": 1.0
+          },
+          {
+            "raw": "No",
+            "text": "No",
+            "natural_language": null,
+            "ordinal": 2.0
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CREGION",
+    "questions": [
+      {
+        "key": "CREGION",
+        "text": "Which part of the United States do you currently live in?",
+        "valid_options": [
+          {
+            "raw": "Midwest",
+            "text": "Midwest",
+            "natural_language": "I live in the Midwest of the United States."
+          },
+          {
+            "raw": "Northeast",
+            "text": "Northeast",
+            "natural_language": "I live in the Northeast of the United States."
+          },
+          {
+            "raw": "South",
+            "text": "South",
+            "natural_language": "I live in the South of the United States."
+          },
+          {
+            "raw": "West",
+            "text": "West",
+            "natural_language": "I live in the West of the United States."
+          }
+        ],
+        "invalid_options": []
+      }
+    ]
+  },
+  {
+    "name": "AGE",
+    "questions": [
+      {
+        "key": "AGE",
+        "text": "How old are you?",
+        "valid_options": [
+          {
+            "raw": "18-29",
+            "text": "18-29",
+            "natural_language": "I am between 18-29 years old."
+          },
+          {
+            "raw": "30-49",
+            "text": "30-49",
+            "natural_language": "I am between 30-49 years old."
+          },
+          {
+            "raw": "50-64",
+            "text": "50-64",
+            "natural_language": "I am between 50-64 years old."
+          },
+          {
+            "raw": "65+",
+            "text": "65+",
+            "natural_language": "I am 65+ years old."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SEX",
+    "questions": [
+      {
+        "key": "SEX",
+        "text": "What is the sex that you were assigned at birth?",
+        "valid_options": [
+          {
+            "raw": "Female",
+            "text": "Female",
+            "natural_language": "I am female."
+          },
+          {
+            "raw": "Male",
+            "text": "Male",
+            "natural_language": "I am male."
+          }
+        ],
+        "invalid_options": [
+          "In some other way",
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "EDUCATION",
+    "questions": [
+      {
+        "key": "EDUCATION",
+        "text": "What is the highest level of schooling or degree that you have completed?",
+        "valid_options": [
+          {
+            "raw": "Associate's degree",
+            "text": "Associate's degree",
+            "natural_language": "I earned an associate's degree."
+          },
+          {
+            "raw": "College graduate/some postgrad",
+            "text": "graduated from college",
+            "natural_language": "I graduated from college."
+          },
+          {
+            "raw": "High school graduate",
+            "text": "High school graduate",
+            "natural_language": "I graduated from high school."
+          },
+          {
+            "raw": "Less than high school",
+            "text": "Less than high school",
+            "natural_language": "I did not graduate from high school."
+          },
+          {
+            "raw": "Postgraduate",
+            "text": "Postgraduate",
+            "natural_language": "I went to graduate school."
+          },
+          {
+            "raw": "Some college, no degree",
+            "text": "Some college, no degree",
+            "natural_language": "I went to some college."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CITIZEN",
+    "questions": [
+      {
+        "key": "CITIZEN",
+        "text": "Are you a citizen of the United States?",
+        "valid_options": [
+          {
+            "raw": "No",
+            "text": "No",
+            "natural_language": "I am not a citizen of the United States."
+          },
+          {
+            "raw": "Yes",
+            "text": "Yes",
+            "natural_language": "I am a citizen of the United States."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MARITAL",
+    "questions": [
+      {
+        "key": "MARITAL",
+        "text": "Which of these best describes you?",
+        "valid_options": [
+          {
+            "raw": "Divorced",
+            "text": "Divorced",
+            "natural_language": "I am divorced."
+          },
+          {
+            "raw": "Living with a partner",
+            "text": "Living with a partner",
+            "natural_language": "I am living with a partner."
+          },
+          {
+            "raw": "Married",
+            "text": "Married",
+            "natural_language": "I am married."
+          },
+          {
+            "raw": "Never been married",
+            "text": "Never been married",
+            "natural_language": "I have never been married."
+          },
+          {
+            "raw": "Separated",
+            "text": "Separated",
+            "natural_language": "I am separated from my partner."
+          },
+          {
+            "raw": "Widowed",
+            "text": "Widowed",
+            "natural_language": "I am widowed."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RELIG",
+    "questions": [
+      {
+        "key": "RELIG",
+        "text": "What is your present religion, if any?",
+        "valid_options": [
+          {
+            "raw": "Agnostic",
+            "text": "Agnostic",
+            "natural_language": "Religiously speaking, I am agnostic."
+          },
+          {
+            "raw": "Atheist",
+            "text": "Atheist",
+            "natural_language": "Religiously speaking, I am atheist."
+          },
+          {
+            "raw": "Buddhist",
+            "text": "Buddhist",
+            "natural_language": "Religiously speaking, I am Buddhist."
+          },
+          {
+            "raw": "Hindu",
+            "text": "Hindu",
+            "natural_language": "Religiously speaking, I am Hindu."
+          },
+          {
+            "raw": "Jewish",
+            "text": "Jewish",
+            "natural_language": "Religiously speaking, I am Jewish."
+          },
+          {
+            "raw": "Mormon",
+            "text": "Mormon",
+            "natural_language": "Religiously speaking, I am a member of the Church of Jesus Christ of Latter-day Saints."
+          },
+          {
+            "raw": "Muslim",
+            "text": "Muslim",
+            "natural_language": "Religiously speaking, I am Muslim."
+          },
+          {
+            "raw": "Nothing in particular",
+            "text": "Nothing in particular",
+            "natural_language": "Religiously speaking, I don't identify with anything in particular."
+          },
+          {
+            "raw": "Orthodox",
+            "text": "Orthodox",
+            "natural_language": "Religiously speaking, I am Orthodox."
+          },
+          {
+            "raw": "Other",
+            "text": "Other",
+            "natural_language": "Religiously speaking, I am not mainstream."
+          },
+          {
+            "raw": "Protestant",
+            "text": "Protestant",
+            "natural_language": "Religiously speaking, I am Protestant."
+          },
+          {
+            "raw": "Roman Catholic",
+            "text": "Roman Catholic",
+            "natural_language": "Religiously speaking, I am Roman Catholic."
+          }
+        ],
+        "invalid_options": [
+          "Refused",
+          "Christian",
+          "Unitarian"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RELIGATTEND",
+    "questions": [
+      {
+        "key": "RELIGATTEND",
+        "text": "Aside from weddings and funerals, how often do you attend religious services?",
+        "valid_options": [
+          {
+            "raw": "A few times a year",
+            "text": "A few times a year",
+            "natural_language": "I attend religious services a few times a year."
+          },
+          {
+            "raw": "More than once a week",
+            "text": "More than once a week",
+            "natural_language": "I attend religious services more than once a week."
+          },
+          {
+            "raw": "Never",
+            "text": "Never",
+            "natural_language": "I never attend religious services."
+          },
+          {
+            "raw": "Once a week",
+            "text": "Once a week",
+            "natural_language": "I attend religious services once a week."
+          },
+          {
+            "raw": "Once or twice a month",
+            "text": "Once or twice a month",
+            "natural_language": "I attend religious services once or twice a month."
+          },
+          {
+            "raw": "Seldom",
+            "text": "Seldom",
+            "natural_language": "I seldom attend religious services."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "POLPARTY",
+    "questions": [
+      {
+        "key": "POLPARTY",
+        "text": "In politics today, what do you consider yourself?",
+        "valid_options": [
+          {
+            "raw": "Democrat",
+            "text": "Democrat",
+            "natural_language": "Politically, I am a Democrat."
+          },
+          {
+            "raw": "Independent",
+            "text": "Independent",
+            "natural_language": "Politically, I am an independent."
+          },
+          {
+            "raw": "Republican",
+            "text": "Republican",
+            "natural_language": "Politically, I am a Republican."
+          }
+        ],
+        "invalid_options": [
+          "Other",
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "INCOME",
+    "questions": [
+      {
+        "key": "INCOME",
+        "text": "Last year, what was your total family income from all sources, before taxes?",
+        "valid_options": [
+          {
+            "raw": "$100,000 or more",
+            "text": "$100,000 or more",
+            "natural_language": "Last year, my household income was $100,000 or more before taxes."
+          },
+          {
+            "raw": "$30,000-$50,000",
+            "text": "$30,000-$50,000",
+            "natural_language": "Last year, my household income was $30,000-$50,000 before taxes."
+          },
+          {
+            "raw": "$50,000-$75,000",
+            "text": "$50,000-$75,000",
+            "natural_language": "Last year, my household income was $50,000-$75,000 before taxes."
+          },
+          {
+            "raw": "$75,000-$100,000",
+            "text": "$75,000-$100,000",
+            "natural_language": "Last year, my household income was $75,000-$100,000 before taxes."
+          },
+          {
+            "raw": "Less than $30,000",
+            "text": "Less than $30,000",
+            "natural_language": "Last year, my household income was less than $30,000 before taxes."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "POLIDEOLOGY",
+    "questions": [
+      {
+        "key": "POLIDEOLOGY",
+        "text": "In general, how would you describe your political ideology?",
+        "valid_options": [
+          {
+            "raw": "Conservative",
+            "text": "Conservative",
+            "natural_language": "Politically, I am conservative."
+          },
+          {
+            "raw": "Liberal",
+            "text": "Liberal",
+            "natural_language": "Politically, I am liberal."
+          },
+          {
+            "raw": "Moderate",
+            "text": "Moderate",
+            "natural_language": "Politically, I am moderate."
+          },
+          {
+            "raw": "Very conservative",
+            "text": "Very conservative",
+            "natural_language": "Politically, I am very conservative."
+          },
+          {
+            "raw": "Very liberal",
+            "text": "Very liberal",
+            "natural_language": "Politically, I am very liberal."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RACE",
+    "questions": [
+      {
+        "key": "RACE",
+        "text": "What is your race or origin?",
+        "valid_options": [
+          {
+            "raw": "Asian",
+            "text": "Asian",
+            "natural_language": "I am Asian."
+          },
+          {
+            "raw": "Black",
+            "text": "Black",
+            "natural_language": "I am Black."
+          },
+          {
+            "raw": "Hispanic",
+            "text": "Hispanic",
+            "natural_language": "I am Hispanic."
+          },
+          {
+            "raw": "Mixed Race",
+            "text": "Mixed Race",
+            "natural_language": "I am mixed race."
+          },
+          {
+            "raw": "Other",
+            "text": "Other",
+            "natural_language": "I am racially ambiguous."
+          },
+          {
+            "raw": "White",
+            "text": "White",
+            "natural_language": "I am White."
+          }
+        ],
+        "invalid_options": [
+          "Refused"
+        ]
+      }
+    ]
+  }
+]

@@ -78,13 +78,15 @@ class Completion:
             for rank, completion in enumerate(self._completion_log_probs.keys())  # type: ignore
         }
 
-        return ranked_completions_dict[self._extract_letter(self.correct_completion)]
+        return ranked_completions_dict[
+            self._extract_letter(self.correct_completion)
+        ]
 
     @property
     def is_completion_correct(self) -> bool:
-        return self._extract_letter(self.top_completion) == self._extract_letter(
-            self.correct_completion
-        )
+        return self._extract_letter(
+            self.top_completion
+        ) == self._extract_letter(self.correct_completion)
 
 
 class DependentVariableSample:
@@ -94,14 +96,16 @@ class DependentVariableSample:
         independent_variables: typing.Dict[str, str],
         variable_name: str,
         question: typing.Union[Question, typing.Dict[str, typing.Any]],
-        prompt: str,
+        completion_prompt: str,
+        chat_prompt: str,
         completion: typing.Union[Completion, typing.Dict[str, typing.Any]],
         **kwargs,
     ) -> None:
         self.index = index
         self.independent_variables = independent_variables
         self.variable_name = variable_name
-        self.prompt = prompt
+        self.completion_prompt = completion_prompt
+        self.chat_prompt = chat_prompt
 
         if isinstance(completion, Completion):
             self.completion = completion
@@ -116,9 +120,9 @@ class DependentVariableSample:
     def __str__(self) -> str:
         sep = "\n\n"
         prompt = (
-            self.prompt + self.completion.top_completion
+            self.completion_prompt + self.completion.top_completion
             if self.completion.are_completion_log_probs_set()
-            else self.prompt
+            else self.completion_prompt
         )
         return sep.join(
             [
@@ -138,3 +142,16 @@ class DependentVariableSample:
         self_dict["question"] = self.question.to_dict()
 
         return self_dict
+
+    def has_response(self) -> bool:
+        # Check if self_dict['completion']['response_object'] is an empty dictionary
+        return bool(self.completion.response_object)
+
+    def remove_response(self):
+        # For testing purposes
+        copy = DependentVariableSample(**self.to_dict())
+        copy.completion.response_object = {}
+        return copy
+
+    def copy(self):
+        return DependentVariableSample(**self.to_dict())

@@ -1,5 +1,6 @@
 from abc import ABCMeta, abstractmethod
 import typing
+import logging
 
 T = typing.TypeVar("T")
 MaybeAwaitable = typing.Union[T, typing.Awaitable[T]]
@@ -11,10 +12,12 @@ class BaseSampler(metaclass=ABCMeta):
         model_name: str,
         state_dict_path: typing.Optional[str] = None,
         config_path: typing.Optional[str] = None,
+        logger: typing.Optional[logging.Logger] = None,
     ):
         self.model_name = model_name
         self.state_dict_path = state_dict_path
         self.config_path = config_path
+        self.logger = logger
 
     @abstractmethod
     def send_prompt(
@@ -49,7 +52,9 @@ class BaseSampler(metaclass=ABCMeta):
         """
         # TODO(vinhowe): This is an AWFUL way to do this and it is SO FRAGILE
         if not self.model_name.startswith("async"):
-            logprobs, response = self.send_prompt(prompt=prompt, n_probs=1, **kwargs)
+            logprobs, response = self.send_prompt(
+                prompt=prompt, n_probs=1, **kwargs
+            )
             return list(logprobs.keys())[0], response
 
         async def _get_best_next_token():
@@ -61,7 +66,9 @@ class BaseSampler(metaclass=ABCMeta):
         return _get_best_next_token()
 
     @abstractmethod
-    def estimate_prompt_cost(self, prompt: str, **kwargs) -> MaybeAwaitable[float]:
+    def estimate_prompt_cost(
+        self, prompt: str, **kwargs
+    ) -> MaybeAwaitable[float]:
         """
         Estimates the cost of sending the given prompt to a LM.
         Arguments:
