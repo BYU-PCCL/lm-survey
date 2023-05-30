@@ -14,12 +14,11 @@ Please respond with the letter of the answer choice that best fits the context.
 
 Answer:"""
 
-CHAT_SYSTEM_TEMPLATE = """
-As a large language model, your training data contains information about online \
-conversation between individuals with various demographics. In this example, you are \
-asked to answer a survey question given a demographic description. You may elaborate \
-on your answer,  but you must start your response with the letter corresponding the \
-correct response. An example: "Z, because..."
+CHAT_SYSTEM_TEMPLATE = """As a large language model, your training data contains \
+information about online conversation between individuals with various demographics. \
+In this example, you are asked to answer a survey question given a demographic \
+description. You may elaborate on your answer, but you must start your response with \
+the letter corresponding the correct response. An example: "A, because..."
 
 '''
 
@@ -29,8 +28,7 @@ Context: {context_summary}
 
 Please respond with the letter of the answer choice that best fits the context.
 
-Answer:
-"""
+Answer:"""
 
 
 def format_multiple_choice_options(
