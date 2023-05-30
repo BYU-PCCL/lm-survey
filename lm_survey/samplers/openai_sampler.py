@@ -7,18 +7,23 @@ from lm_survey.samplers.base_sampler import BaseSampler
 import logging
 import openai
 
+# model cost in cents per 1000 tokens (https://openai.com/pricing)
+# tuple is (prompt cost per token, completion cost per token)
 OPENAI_TOKEN_COSTS = {
-    # cents per 1000 tokens
-    "text-davinci-003": 2,
-    "text-davinci-002": 2,
-    "text-davinci-001": 2,
-    "text-curie-001": 0.2,
-    "text-babbage-001": 0.05,
-    "text-ada-001": 0.04,
-    "davinci": 2,
-    "curie": 0.2,
-    "babbage": 0.05,
-    "ada": 0.04,
+    # chat
+    "gpt-4": (3, 6),
+    "gpt-3.5-turbo": (0.2, 0.2),
+    # text
+    "text-davinci-003": (2, 2),
+    "text-davinci-002": (2, 2),
+    "text-davinci-001": (2, 2),
+    "text-curie-001": (0.2, 0.2),
+    "text-babbage-001": (0.05, 0.05),
+    "text-ada-001": (0.04, 0.04),
+    "davinci": (2, 2),
+    "curie": (0.2, 0.2),
+    "babbage": (0.05, 0.05),
+    "ada": (0.04, 0.04),
 }
 
 CHAT_MODELS = ["gpt-4", "gpt-3.5-turbo"]
@@ -117,8 +122,9 @@ class OpenAiSampler(BaseSampler):
     def estimate_prompt_cost(self, prompt: str):
         self._setup_tokenizer()
         # +1 for single token completion
-        token_count = len(self.tokenizer.encode(prompt)) + 1  # type: ignore
-        return OPENAI_TOKEN_COSTS[self.engine] * token_count / 1000
+        prompt_token_count = len(self.tokenizer.encode(prompt))  # type: ignore
+        prompt_cost, completion_cost = OPENAI_TOKEN_COSTS[self.engine]
+        return ((prompt_cost * prompt_token_count) + (completion_cost)) / 1000
 
     def batch_estimate_prompt_cost(
         self, prompts: typing.List[str]
@@ -128,8 +134,9 @@ class OpenAiSampler(BaseSampler):
         token_counts = [
             len(encoded) + 1 for encoded in self.tokenizer.encode_batch(prompts)  # type: ignore
         ]
+        prompt_cost, completion_cost = OPENAI_TOKEN_COSTS[self.engine]
         return [
-            OPENAI_TOKEN_COSTS[self.engine] * (token_count / 1000)
+            ((prompt_cost * token_count) + completion_cost) / 1000
             for token_count in token_counts
         ]
 
