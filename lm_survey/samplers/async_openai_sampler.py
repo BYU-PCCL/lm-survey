@@ -10,7 +10,21 @@ from lm_survey.samplers.base_sampler import BaseSampler
 from lm_survey.samplers.openai_sampler import CHAT_MODELS
 
 # Constants for throttling
-OPENAI_RPM = 3000
+OPENAI_RPMS = {
+    "gpt-4": 200,
+    # guessing
+    "gpt-3.5-turbo": 400,
+    "text-davinci-003": 3000,
+    "text-davinci-002": 3000,
+    "text-davinci-001": 3000,
+    "text-curie-001": 3000,
+    "text-babbage-001": 3000,
+    "text-ada-001": 3000,
+    "davinci": 3000,
+    "curie": 3000,
+    "babbage": 3000,
+    "ada": 3000
+}
 
 
 class AsyncOpenAiSampler(BaseSampler):
@@ -23,7 +37,7 @@ class AsyncOpenAiSampler(BaseSampler):
         else:
             self.engine = self.model_name
 
-        self._async_limiter = AsyncLimiter(OPENAI_RPM)
+        self._async_limiter = AsyncLimiter(OPENAI_RPMS[self.engine])
 
         print(f"Using async {self.engine} engine.")
 
