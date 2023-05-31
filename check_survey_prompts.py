@@ -35,7 +35,7 @@ def check_survey_prompts(
     print()
     print('"""')
     print(
-        f"{next_survey_sample.prompt}█{next_survey_sample.completion.correct_completion}"
+        f"{next_survey_sample.completion_prompt}█{next_survey_sample.completion.correct_completion}"
     )
     print('"""')
     print()

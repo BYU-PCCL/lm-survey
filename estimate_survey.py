@@ -45,7 +45,7 @@ def estimate_survey_costs(
     if hasattr(sampler, "batch_estimate_prompt_cost"):
         completion_costs = sampler.batch_estimate_prompt_cost(
             [
-                dependent_variable_sample.prompt
+                dependent_variable_sample.completion_prompt
                 for dependent_variable_sample in dependent_variable_samples
             ]
         )
@@ -53,7 +53,7 @@ def estimate_survey_costs(
         completion_costs = []
         for dependent_variable_sample in tqdm(dependent_variable_samples):
             completion_cost = sampler.estimate_prompt_cost(
-                dependent_variable_sample.prompt
+                dependent_variable_sample.completion_prompt
             )
             completion_costs.append(completion_cost)
 

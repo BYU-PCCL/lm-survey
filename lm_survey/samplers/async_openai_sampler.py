@@ -7,9 +7,24 @@ import torch
 from aiolimiter import AsyncLimiter
 
 from lm_survey.samplers.base_sampler import BaseSampler
+from lm_survey.samplers.openai_sampler import CHAT_MODELS
 
 # Constants for throttling
-OPENAI_RPM = 3000
+OPENAI_RPMS = {
+    "gpt-4": 200,
+    # guessing
+    "gpt-3.5-turbo": 400,
+    "text-davinci-003": 3000,
+    "text-davinci-002": 3000,
+    "text-davinci-001": 3000,
+    "text-curie-001": 3000,
+    "text-babbage-001": 3000,
+    "text-ada-001": 3000,
+    "davinci": 3000,
+    "curie": 3000,
+    "babbage": 3000,
+    "ada": 3000
+}
 
 
 class AsyncOpenAiSampler(BaseSampler):
@@ -22,12 +37,14 @@ class AsyncOpenAiSampler(BaseSampler):
         else:
             self.engine = self.model_name
 
-        self._async_limiter = AsyncLimiter(OPENAI_RPM)
+        self._async_limiter = AsyncLimiter(OPENAI_RPMS[self.engine])
 
         print(f"Using async {self.engine} engine.")
 
         if openai.api_key is None:
             raise ValueError("OpenAI API key must be set")
+
+        self.using_chat_model = self.engine in CHAT_MODELS
 
     async def rank_completions(self, prompt, completions):
         # 100 is the maximum number of log probs we can get.
@@ -51,13 +68,19 @@ class AsyncOpenAiSampler(BaseSampler):
 
         return completion_log_probs, response
 
-    async def _throttled_completion(self, **kwargs):
+    async def _throttled_completion(self, prompt, logprobs=None, **kwargs):
         while True:
             # We do this inside of the loop so that retries respect the rate limit too.
             async with self._async_limiter:
                 try:
+                    if self.using_chat_model:
+                        return await openai.ChatCompletion.acreate(
+                            model=self.engine,
+                            messages=[{"role": "system", "content": prompt}],
+                            **kwargs
+                        )
                     return await openai.Completion.acreate(
-                        engine=self.engine, **kwargs
+                        model=self.engine, logprobs=logprobs, **kwargs
                     )
                 except RateLimitError:
                     continue
@@ -71,11 +94,17 @@ class AsyncOpenAiSampler(BaseSampler):
                 temperature=0,
                 **kwargs,
             )
-            logprobs = response["choices"][0]["logprobs"]["top_logprobs"][0]  # type: ignore
-            # sort dictionary by values
-            sorted_logprobs = dict(
-                sorted(logprobs.items(), key=lambda x: x[1], reverse=True)
-            )
+            if self.using_chat_model:
+                token_response = response["choices"][0]["message"]["content"]  # type: ignore
+                # To get exact matching with existing completion model code, we need to
+                # add a space to the beginning of the token.
+                sorted_logprobs = {f" {token_response}": 1}
+            else:
+                logprobs = response["choices"][0]["logprobs"]["top_logprobs"][0]  # type: ignore
+                # sort dictionary by values
+                sorted_logprobs = dict(
+                    sorted(logprobs.items(), key=lambda x: x[1], reverse=True)
+                )
             return sorted_logprobs, response
         except Exception as e:
             print(e)
