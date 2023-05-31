@@ -59,8 +59,7 @@ def save_experiment(
     parsed_model_name = parse_model_name(model_name)
 
     results = [
-        question_sample.to_dict()
-        for question_sample in dependent_variable_samples
+        question_sample.to_dict() for question_sample in dependent_variable_samples
     ]
 
     metadata = {
@@ -74,18 +73,14 @@ def save_experiment(
     if not os.path.exists(experiment_metadata_dir):
         os.makedirs(experiment_metadata_dir)
 
-    with open(
-        os.path.join(experiment_metadata_dir, "metadata.json"), "w"
-    ) as file:
+    with open(os.path.join(experiment_metadata_dir, "metadata.json"), "w") as file:
         json.dump(
             metadata,
             file,
             indent=4,
         )
 
-    with open(
-        os.path.join(experiment_metadata_dir, "results.json"), "w"
-    ) as file:
+    with open(os.path.join(experiment_metadata_dir, "results.json"), "w") as file:
         json.dump(
             results,
             file,
@@ -112,7 +107,7 @@ async def main(
     experiment_dir = os.path.join("experiments", experiment_name, survey_name)
 
     parsed_model_name = parse_model_name(model_name)
-    results_path = Path(experiment_dir) / parsed_model_name / "results.json"
+    results_path = Path(experiment_dir, parsed_model_name, "results.json")
 
     # Use pathlib to check if  a file exists
     if results_path.is_file():
@@ -206,13 +201,9 @@ async def main(
                 dependent_variable_sample.completion.set_completion_log_probs(
                     completion_log_probs
                 )
-                dependent_variable_sample.completion.response_object = (
-                    response_object
-                )
+                dependent_variable_sample.completion.response_object = response_object
 
-            sample_coroutines.append(
-                request_completion(dependent_variable_sample)
-            )
+            sample_coroutines.append(request_completion(dependent_variable_sample))
 
         await tqdm_asyncio.gather(*sample_coroutines)
     else:
@@ -224,9 +215,7 @@ async def main(
             dependent_variable_sample.completion.set_completion_log_probs(
                 completion_log_probs
             )
-            dependent_variable_sample.completion.response_object = (
-                response_object
-            )
+            dependent_variable_sample.completion.response_object = response_object
 
     accuracy = np.mean(
         [

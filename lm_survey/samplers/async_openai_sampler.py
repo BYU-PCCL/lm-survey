@@ -69,11 +69,6 @@ class AsyncOpenAiSampler(BaseSampler):
                         model=self.engine, logprobs=logprobs, **kwargs
                     )
                 except RateLimitError:
-                    # TODO: This is not a good way to do logging; we should actually use
-                    # the logging module or something similar.
-                    if self.logger:
-                        self.logger.exception("Rate limited, retrying...")
-                    print("Rate limited, retrying...", file=sys.stderr)
                     continue
 
     async def send_prompt(self, prompt, n_probs=100, **kwargs):

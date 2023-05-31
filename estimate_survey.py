@@ -9,6 +9,7 @@ from tqdm import tqdm
 
 from lm_survey.samplers import AutoSampler, BaseSampler
 from lm_survey.survey import Survey
+from pathlib import Path
 
 
 def estimate_survey_costs(
@@ -17,7 +18,6 @@ def estimate_survey_costs(
     experiment_name: str,
     *,
     n_samples_per_dependent_variable: typing.Optional[int] = None,
-    n_top_mutual_info_dvs: typing.Optional[int] = None,
 ):
     data_dir = os.path.join("data", survey_name)
     variables_dir = os.path.join("variables", survey_name)
@@ -70,7 +70,6 @@ def main(
     survey_names: typing.List[str],
     experiment_name: str,
     n_samples_per_dependent_variable: typing.Optional[int] = None,
-    n_top_mutual_info_dvs: typing.Optional[int] = None,
 ) -> None:
     sampler = AutoSampler(model_name=model_name)
 
@@ -81,7 +80,6 @@ def main(
             survey_name=survey_name,
             experiment_name=experiment_name,
             n_samples_per_dependent_variable=n_samples_per_dependent_variable,
-            n_top_mutual_info_dvs=n_top_mutual_info_dvs,
         )
         survey_costs[survey_name] = estimate
 
@@ -117,10 +115,6 @@ if __name__ == "__main__":
         type=int,
     )
     parser.add_argument(
-        "--n_top_mutual_info_dvs",
-        type=int,
-    )
-    parser.add_argument(
         "-e",
         "--experiment_name",
         type=str,
@@ -129,16 +123,25 @@ if __name__ == "__main__":
     # Positional argument for survey dir(s)
     parser.add_argument(
         "survey_name",
-        nargs="+",
+        # nargs="+",
         type=str,
     )
 
     args = parser.parse_args()
 
-    main(
-        model_name=args.model_name,
-        survey_names=args.survey_name,
-        experiment_name=args.experiment_name,
-        n_samples_per_dependent_variable=args.n_samples_per_dependent_variable,
-        n_top_mutual_info_dvs=args.n_top_mutual_info_dvs,
-    )
+    if args.survey_name == "all":
+        paths = sorted(Path("data").glob("ATP/American*/"))
+        survey_names = [path.relative_to("data") for path in paths]
+        main(
+            model_name=args.model_name,
+            survey_names=survey_names,
+            experiment_name=args.experiment_name,
+            n_samples_per_dependent_variable=args.n_samples_per_dependent_variable,
+        )
+    else:
+        main(
+            model_name=args.model_name,
+            survey_names=args.survey_name,
+            experiment_name=args.experiment_name,
+            n_samples_per_dependent_variable=args.n_samples_per_dependent_variable,
+        )
