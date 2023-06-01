@@ -1,15 +1,23 @@
-import json
-import os
 import typing
+
 import pandas as pd
 import pandas.core.groupby.generic
 from lm_survey.survey.dependent_variable_sample import DependentVariableSample
 
 
 class SurveyResults:
-    def __init__(self, question_samples: typing.List[DependentVariableSample]):
+    def __init__(
+        self, question_samples: typing.List[typing.Union[DependentVariableSample, dict]]
+    ):
         df = pd.DataFrame(
-            data=[self._flatten_layer(sample.to_dict()) for sample in question_samples]
+            data=[
+                self._flatten_layer(
+                    sample.to_dict()
+                    if isinstance(sample, DependentVariableSample)
+                    else sample
+                )
+                for sample in question_samples
+            ]
         )
         # Make the index the index column and sort by it
         df.set_index("index", inplace=True)
@@ -101,39 +109,3 @@ class SurveyResults:
         ]
 
         return scores_df
-
-
-if __name__ == "__main__":
-    experiment_dir = "experiments/default/roper"
-    center_path = os.path.join(experiment_dir, "llama-65b-hf","results.json")
-    left_path = os.path.join(experiment_dir, "llama-65b-hf-left","results.json")
-
-    with open(center_path, "r") as file:
-        center_results = json.load(file)
-
-    with open(left_path, "r") as file:
-        left_results = json.load(file)
-
-    center_question_samples = [
-        DependentVariableSample(
-            **sample_dict,
-        )
-        for sample_dict in center_results
-    ]
-
-    left_question_samples = [
-        DependentVariableSample(
-            **sample_dict,
-        )
-        for sample_dict in left_results
-    ]
-
-    center_survey_results = SurveyResults(question_samples=center_question_samples)
-    left_survey_results = SurveyResults(question_samples=left_question_samples)
-
-    slices = ["ethnicity"]
-
-    print("CENTER", center_survey_results.get_mean_score(slice_by=slices).round(2), sep="\n", end="\n\n")
-    print("LEFT", left_survey_results.get_mean_score(slice_by=slices).round(2), sep="\n", end="\n\n")
-
-    # Give battery of standard tests and view performance
