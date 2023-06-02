@@ -40,8 +40,8 @@ if __name__ == "__main__":
 
     paths: typing.Dict[str, Path] = {
         "center": experiment_dir / args.model / results_filename,
-        "left": experiment_dir / f"{args.model}-left" / results_filename,
-        "right": experiment_dir / f"{args.model}-right" / results_filename,
+        # "left": experiment_dir / f"{args.model}-left" / results_filename,
+        # "right": experiment_dir / f"{args.model}-right" / results_filename,
     }
 
     results = {}
@@ -59,7 +59,7 @@ if __name__ == "__main__":
         for ideology, ideology_results in results.items()
     }
 
-    slices = ["ethnicity"]
+    slices = []
 
     for ideology, ideology_survey_results in survey_results.items():
         print(ideology)

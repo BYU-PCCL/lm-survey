@@ -12,11 +12,13 @@ class HfSampler(BaseSampler):
         print(f"Loading {self.model_name}...")
 
         self.model = AutoModelForCausalLM.from_pretrained(
-            self.model_name, device_map="balanced"
+            self.model_name, device_map="balanced", trust_remote_code=True
         )
         self.model.eval()
 
-        self.tokenizer = AutoTokenizer.from_pretrained(self.model_name, use_fast=False)
+        self.tokenizer = AutoTokenizer.from_pretrained(
+            self.model_name, use_fast=False, trust_remote_code=True
+        )
         self.tokenizer.pad_token = self.tokenizer.eos_token
 
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -35,6 +37,7 @@ class HfSampler(BaseSampler):
             padding="max_length",
             truncation=True,
             return_tensors="pt",
+            return_token_type_ids=False,
         ).to(self.device)
 
         with torch.no_grad():
@@ -63,6 +66,7 @@ class HfSampler(BaseSampler):
             padding="max_length",
             truncation=True,
             return_tensors="pt",
+            return_token_type_ids=False,
         ).to(self.device)
 
         with torch.no_grad():
@@ -91,8 +95,12 @@ class HfSampler(BaseSampler):
 
         return self.pred_dict
 
-    def sample_several(self, prompt, temperature=0, n_tokens=10):
-        inputs = self.tokenizer(prompt, return_tensors="pt").to(self.device)
+    def sample_several(self, prompt, temperature: float = 0, n_tokens=10):
+        inputs = self.tokenizer(
+            prompt,
+            return_tensors="pt",
+            return_token_type_ids=False,
+        ).to(self.device)
         tokens = self.model.generate(
             **inputs,
             max_new_tokens=n_tokens,
@@ -106,8 +114,12 @@ class HfSampler(BaseSampler):
 
 
 if __name__ == "__main__":
-    sampler = HfSampler(model_name="/mnt/pccfs2/backed_up/models/llama/finetunes/llama-30b-hf-left")
+    sampler = HfSampler(
+        model_name="/mnt/pccfs2/backed_up/models/llama/finetunes/llama-30b-hf-left"
+    )
 
-    generation = sampler.sample_several("I think abortion is", temperature=0.7, n_tokens=200)
+    generation = sampler.sample_several(
+        "I think abortion is", temperature=0.7, n_tokens=200
+    )
 
     print(generation)
