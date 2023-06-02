@@ -96,14 +96,19 @@ class DependentVariableSample:
         independent_variables: typing.Dict[str, str],
         variable_name: str,
         question: typing.Union[Question, typing.Dict[str, typing.Any]],
-        prompt: str,
         completion: typing.Union[Completion, typing.Dict[str, typing.Any]],
+        prompt: typing.Optional[str] = None,
+        chat_prompt: typing.Optional[str] = None,
         **kwargs,
     ) -> None:
         self.index = index
         self.independent_variables = independent_variables
         self.variable_name = variable_name
-        self.prompt = prompt
+        if chat_prompt:
+            self.prompt = chat_prompt
+        elif prompt:
+            self.prompt = prompt
+        # self.prompt = prompt
 
         if isinstance(completion, Completion):
             self.completion = completion

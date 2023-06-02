@@ -1,5 +1,6 @@
 from lm_survey.survey.results import SurveyResults
 import numpy as np
+from lm_survey.helpers import *
 import os
 import json
 from lm_survey.survey.dependent_variable_sample import DependentVariableSample
@@ -10,28 +11,22 @@ import sys
 
 # Grab all the files called "results.json" in the "experiments" directory
 input_filepaths = glob.glob(
-    os.path.join("experiments/breadth", "**", "results.json"), recursive=True
+    os.path.join("experiments/breadth", "**", "*3.5*/results.json"),
+    recursive=True,
 )
 
-print(input_filepaths)
 
 # read input filepaths into pandas dfs
-dfs = []
 mean_reps = {}
-for input_filepath in input_filepaths:
-    with open(input_filepath, "r") as file:
-        results = json.load(file)
-    question_samples = [
-        DependentVariableSample(
-            **sample_dict,
-        )
-        for sample_dict in results
-    ]
 
-    survey_results = SurveyResults(question_samples=question_samples)
+question_samples = []
+for input_filepath in input_filepaths:
+    question_samples += filepath_to_DVS_list(input_filepath)
     wave = input_filepath.split("/")[3][-3:]
     # mean_reps[wave] = survey_results.get_representativeness()
-    print(f"{wave}: {survey_results.calculate_avg_samples()}")
+
+survey_results = SurveyResults(question_samples=question_samples)
+
 
 # print("Average representativeness: ", np.mean(list(mean_reps.values())))
 # print(
