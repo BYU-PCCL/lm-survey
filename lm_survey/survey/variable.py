@@ -31,9 +31,14 @@ class Variable:
             f"This row has no key containing a valid value for the variable: {self.name}."
         )
 
+    # TODO remove this once templatize is working
     def to_prompt(self, row: pd.Series) -> str:
         key = self._get_key(row)
         return self.questions[key].to_prompt()
+
+    def to_options(self, row: pd.Series) -> typing.List[str]:
+        key = self._get_key(row)
+        return self.questions[key].to_options()
 
     def _to_value(self, value_key: str, row: pd.Series) -> str:
         key = self._get_key(row)
@@ -56,9 +61,13 @@ class Variable:
     def to_natural_language(self, row: pd.Series) -> str:
         return self._to_value(value_key="natural_language", row=row)
 
-    def to_question(self, row: pd.Series) -> str:
+    def to_question_text(self, row: pd.Series) -> str:
         key = self._get_key(row)
         return self.questions[key].text
+
+    def to_question(self, row: pd.Series) -> Question:
+        key = self._get_key(row)
+        return self.questions[key]
 
     def get_correct_letter(self, row: pd.Series) -> str:
         key = self._get_key(row)
