@@ -15,11 +15,17 @@ Please respond with the letter of the answer choice that best fits the context.
 
 Answer:"""
 
-QUESTION_TEMPLATE = """Question: {question}
+MULTIPLE_CHOICE_QUESTION_TEMPLATE = """Question: {question}
 
 {choices}
 
 Please respond with the letter of the answer choice that best fits your opinion.
+
+Answer:"""
+
+OPEN_RESPONSE_QUESTION_TEMPLATE = """Question: {question}
+
+Please respond with your answer.
 
 Answer:"""
 
@@ -39,7 +45,7 @@ def format_interview_prompt(
     return "\n\n".join(
         [
             (
-                QUESTION_TEMPLATE.format(
+                MULTIPLE_CHOICE_QUESTION_TEMPLATE.format(
                     question=question["question"],
                     choices=format_multiple_choice_options(question["choices"]),
                 )

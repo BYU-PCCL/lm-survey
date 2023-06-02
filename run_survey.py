@@ -11,7 +11,9 @@ from lm_survey.survey import DependentVariableSample, Survey
 
 
 def parse_model_name(model_name: str) -> str:
-    if model_name.startswith("/"):
+    if model_name.startswith("/") and model_name.endswith("/"):
+        model_name = model_name.split("/")[-2]
+    elif model_name.startswith("/"):
         model_name = model_name.split("/")[-1]
     else:
         model_name = model_name.replace("/", "-")
@@ -28,6 +30,7 @@ def save_experiment(
     model_name: str,
     experiment_dir: str,
     dependent_variable_samples: typing.List[DependentVariableSample],
+    prompt_name: str,
     n_samples_per_dependent_variable: typing.Optional[int] = None,
 ):
     parsed_model_name = parse_model_name(model_name)
@@ -40,6 +43,7 @@ def save_experiment(
         "model_name": model_name,
         "n_samples_per_dependent_variable": n_samples_per_dependent_variable,
         "commit_hash": get_commit_hash(),
+        "prompt_name": prompt_name,
     }
 
     experiment_metadata_dir = os.path.join(experiment_dir, parsed_model_name)
@@ -66,6 +70,7 @@ def main(
     model_name: str,
     survey_name: str,
     experiment_name: str,
+    prompt_name: str,
     n_samples_per_dependent_variable: typing.Optional[int] = None,
 ) -> None:
     data_dir = os.path.join("data", survey_name)
@@ -87,12 +92,12 @@ def main(
 
     dependent_variable_samples = list(
         survey.iterate(
-            n_samples_per_dependent_variable=n_samples_per_dependent_variable
+            n_samples_per_dependent_variable=n_samples_per_dependent_variable,
+            prompt_name=prompt_name,
         )
     )
 
     for dependent_variable_sample in tqdm(dependent_variable_samples):
-
         completion_log_probs = sampler.rank_completions(
             prompt=dependent_variable_sample.prompt,
             completions=dependent_variable_sample.completion.possible_completions,
@@ -116,6 +121,7 @@ def main(
         model_name=model_name,
         experiment_dir=experiment_dir,
         dependent_variable_samples=dependent_variable_samples,
+        prompt_name=prompt_name,
         n_samples_per_dependent_variable=n_samples_per_dependent_variable,
     )
 
@@ -146,6 +152,12 @@ if __name__ == "__main__":
         type=str,
         default="default",
     )
+    parser.add_argument(
+        "-p",
+        "--prompt_name",
+        type=str,
+        default="first_person_natural_language_context",
+    )
 
     args = parser.parse_args()
 
@@ -161,4 +173,5 @@ if __name__ == "__main__":
         survey_name=args.survey_name,
         experiment_name=args.experiment_name,
         n_samples_per_dependent_variable=args.n_samples_per_dependent_variable,
+        prompt_name=args.prompt_name,
     )

@@ -11,7 +11,6 @@ from lm_survey.survey.prompts.prompt import (
     FirstPersonNaturalLanguageContextPrompt,
     SecondPersonEnumeratedContextPrompt,
     SecondPersonInterviewContextPrompt,
-    BasePrompt,
 )
 from lm_survey.survey.dependent_variable_sample import (
     Completion,
@@ -59,7 +58,7 @@ class Survey:
         self.set_dependent_variables(dependent_variable_names=dependent_variable_names)
 
         self._prompts = {
-            "second_person_natural_language_context": BasePrompt(),
+            "second_person_natural_language_context": None,
             "first_person_natural_language_context": FirstPersonNaturalLanguageContextPrompt(),
             "second_person_enumerate_context": SecondPersonEnumeratedContextPrompt(),
             "second_person_interview_context": SecondPersonInterviewContextPrompt(),
@@ -87,9 +86,9 @@ class Survey:
 
     def _handle_missing_variable(func: typing.Callable) -> typing.Callable:  # type: ignore
         @functools.wraps(func)
-        def wrapper(self, row: pd.Series) -> str:
+        def wrapper(self, *args, **kwargs) -> str:
             try:
-                return func(self, row)
+                return func(self, *args, **kwargs)
             except ValueError as error:
                 raise ValueError(
                     "Row does not contain all fields for the required"
@@ -497,7 +496,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     data_dir = os.path.join("data", args.survey_name)
-    experiment_dir = os.path.join("experiments", args.survey_name, args.experiment_name)
+    experiment_dir = os.path.join("experiments", args.experiment_name, args.survey_name)
     variable_dir = os.path.join("variables", args.survey_name)
 
     with open(os.path.join(experiment_dir, "config.json"), "r") as file:
@@ -511,8 +510,15 @@ if __name__ == "__main__":
         dependent_variable_names=config["dependent_variable_names"],
     )
 
-    question_samples = list(iter(survey))
-
-    print(
-        f"{len(question_samples) / len(config['dependent_variable_names']) / len(survey.df) * 100:.2f}%"
+    question_samples = list(
+        [
+            sample
+            for sample in survey.iterate(prompt_name="second_person_interview_context")
+        ]
     )
+
+    print(question_samples[0].prompt)
+
+    # print(
+    #     f"{len(question_samples) / len(config['dependent_variable_names']) / len(survey.df) * 100:.2f}%"
+    # )

@@ -5,7 +5,8 @@ import pandas as pd
 from lm_survey.survey.variable import Variable
 from lm_survey.survey.prompts.prompt_templates import (
     CONTEXT_AND_QUESTION_TEMPLATE,
-    QUESTION_TEMPLATE,
+    MULTIPLE_CHOICE_QUESTION_TEMPLATE,
+    OPEN_RESPONSE_QUESTION_TEMPLATE,
     format_multiple_choice_options,
     QUESTION_REFERENCING_CONTEXT_TEMPLATE,
 )
@@ -89,13 +90,39 @@ class SecondPersonEnumeratedContextPrompt(BasePrompt):
 
 
 class SecondPersonInterviewContextPrompt(BasePrompt):
-    def _format_variable(self, variable: Variable, row: pd.Series):
-        choices = format_multiple_choice_options(variable.to_options(row))
+    def _format_long_variable(
+        self, variable: Variable, row: pd.Series, include_answer: bool = False
+    ):
+        variable_prompt = OPEN_RESPONSE_QUESTION_TEMPLATE.format(
+            question=variable.to_question_text(row)
+        )
 
-        return QUESTION_TEMPLATE.format(
+        if include_answer:
+            variable_prompt = variable_prompt + f" {variable.to_natural_language(row)}"
+
+        return variable_prompt
+
+    def _format_variable(
+        self, variable: Variable, row: pd.Series, include_answer: bool = False
+    ):
+        options = variable.to_options(row)
+
+        if len(options) > 10:
+            return self._format_long_variable(
+                variable=variable, row=row, include_answer=include_answer
+            )
+
+        choices = format_multiple_choice_options(options=options)
+
+        variable_prompt = MULTIPLE_CHOICE_QUESTION_TEMPLATE.format(
             question=variable.to_question_text(row),
             choices=choices,
         )
+
+        if include_answer:
+            variable_prompt = variable_prompt + f" {variable.get_correct_letter(row)}"
+
+        return variable_prompt
 
     def format(
         self,
@@ -106,11 +133,15 @@ class SecondPersonInterviewContextPrompt(BasePrompt):
         sep = "\n\n###\n\n"
         preliminary_interview = sep.join(
             [
-                f"{self._format_variable(variable, row)} {variable.get_correct_letter(row)}"
+                f"{self._format_variable(variable=variable, row=row, include_answer=True)}"
                 for variable in independent_variables
             ]
         )
 
         return (
-            preliminary_interview + sep + self._format_variable(dependent_variable, row)
+            preliminary_interview
+            + sep
+            + self._format_variable(
+                variable=dependent_variable, row=row, include_answer=False
+            )
         )

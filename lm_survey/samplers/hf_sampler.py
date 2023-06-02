@@ -17,7 +17,10 @@ class HfSampler(BaseSampler):
         self.model.eval()
 
         self.tokenizer = AutoTokenizer.from_pretrained(
-            self.model_name, use_fast=False, trust_remote_code=True
+            self.model_name,
+            use_fast=False,
+            trust_remote_code=True,
+            truncation_side="left",
         )
         self.tokenizer.pad_token = self.tokenizer.eos_token
 
