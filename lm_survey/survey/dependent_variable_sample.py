@@ -99,6 +99,7 @@ class DependentVariableSample:
         completion: typing.Union[Completion, typing.Dict[str, typing.Any]],
         prompt: typing.Optional[str] = None,
         chat_prompt: typing.Optional[str] = None,
+        weight: typing.Optional[float] = None,
         **kwargs,
     ) -> None:
         self.index = index
@@ -108,6 +109,8 @@ class DependentVariableSample:
             self.prompt = chat_prompt
         elif prompt:
             self.prompt = prompt
+        if weight:
+            self.weight = weight
         # self.prompt = prompt
 
         if isinstance(completion, Completion):

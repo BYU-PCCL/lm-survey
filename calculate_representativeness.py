@@ -1,18 +1,17 @@
-from lm_survey.survey.results import SurveyResults
+from lm_survey.survey import SurveyResults
 import numpy as np
 from lm_survey.helpers import *
 import os
 import json
-from lm_survey.survey.dependent_variable_sample import DependentVariableSample
+from lm_survey.survey import DependentVariableSample
 import glob
 import pandas as pd
 import sys
 
 
 # Grab all the files called "results.json" in the "experiments" directory
-input_filepaths = glob.glob(
-    os.path.join("experiments/breadth", "**", "*3.5*/results.json"),
-    recursive=True,
+input_filepaths = Path("experiments/breadth").glob(
+    "**/*davinci*/results.json",
 )
 
 
@@ -20,12 +19,16 @@ input_filepaths = glob.glob(
 mean_reps = {}
 
 question_samples = []
-for input_filepath in input_filepaths:
-    question_samples += filepath_to_DVS_list(input_filepath)
-    wave = input_filepath.split("/")[3][-3:]
+for input_filepath in list(input_filepaths):
+    question_samples += filepath_to_dvs_list(input_filepath, add_weights=True)
+    # wave = input_filepath.split("/")[3][-3:]
     # mean_reps[wave] = survey_results.get_representativeness()
 
-survey_results = SurveyResults(question_samples=question_samples)
+    survey_results = SurveyResults(question_samples=question_samples)
+    rep = survey_results.get_representativeness(
+        survey_results.df.groupby("variable_name")
+    )
+    print(rep.mean())
 
 
 # print("Average representativeness: ", np.mean(list(mean_reps.values())))
