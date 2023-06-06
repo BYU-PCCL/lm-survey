@@ -60,7 +60,7 @@ class Survey:
         self._prompts = {
             "second_person_natural_language_context": None,
             "first_person_natural_language_context": FirstPersonNaturalLanguageContextPrompt(),
-            "second_person_enumerate_context": SecondPersonEnumeratedContextPrompt(),
+            "second_person_enumerated_context": SecondPersonEnumeratedContextPrompt(),
             "second_person_interview_context": SecondPersonInterviewContextPrompt(),
         }
 
