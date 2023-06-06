@@ -88,7 +88,21 @@ class SurveyResults:
 
         return bootstraps.groupby(level=0).std()
 
-    def get_mean_score(self, slice_by: typing.List[str] = []) -> pd.DataFrame:
+    def _get_distribution(
+        self,
+        column_name: str,
+        suffix: str,
+        groups: pandas.core.groupby.generic.DataFrameGroupBy,
+    ) -> pd.DataFrame:
+        frequency_df = groups[column_name].value_counts(normalize=True).unstack()
+        frequency_df.columns = [
+            f"{column}_{suffix}".strip() for column in frequency_df.columns
+        ]
+        frequency_df.fillna(0, inplace=True)
+
+        return frequency_df
+
+    def summarize(self, slice_by: typing.List[str] = []) -> pd.DataFrame:
         groups = self.slice(columns=slice_by)
 
         means = self._compute_mean(groups)
@@ -96,11 +110,18 @@ class SurveyResults:
         baselines = self._calculate_random_guess(groups)
         n_samples = groups.size()
         improvement_lower_bounds = means - baselines - errors * 1.96
+        guess_distribution = self._get_distribution(
+            column_name="top_completion", groups=groups, suffix="pred_freq"
+        )
+        true_distribution = self._get_distribution(
+            column_name="correct_completion", groups=groups, suffix="true_freq"
+        )
 
-        scores_df = pd.concat(
+        summary_df = pd.concat(
             [means, errors, baselines, improvement_lower_bounds, n_samples], axis=1
         )
-        scores_df.columns = [
+
+        summary_df.columns = [
             "mean",
             "std_error",
             "baseline",
@@ -108,4 +129,8 @@ class SurveyResults:
             "n_samples",
         ]
 
-        return scores_df
+        summary_df = pd.concat(
+            [summary_df, guess_distribution, true_distribution], axis=1
+        )
+
+        return summary_df

@@ -12,7 +12,7 @@ class HfSampler(BaseSampler):
         print(f"Loading {self.model_name}...")
 
         self.model = AutoModelForCausalLM.from_pretrained(
-            self.model_name, device_map="balanced", trust_remote_code=True
+            self.model_name, device_map="auto", trust_remote_code=True
         )
         self.model.eval()
 

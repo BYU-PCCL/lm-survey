@@ -43,7 +43,7 @@ class FirstPersonNaturalLanguageContextPrompt(BasePrompt):
         )
 
         dependent_variable_prompt = QUESTION_REFERENCING_CONTEXT_TEMPLATE.format(
-            question=dependent_variable.to_natural_language(row),
+            question=dependent_variable.to_question_text(row),
             choices=choices,
         )
 
@@ -57,12 +57,14 @@ class SecondPersonEnumeratedContextPrompt(BasePrompt):
     def _create_independent_variable_summary(
         self, independent_variables: typing.List[Variable], row: pd.Series
     ) -> str:
-        return "\n".join(
+        summary = "\n".join(
             [
-                f"{variable.name.title()}: {variable.to_text(row).title()}"
+                f"    {variable.name.lower()}: {variable.to_text(row).lower()},"
                 for variable in independent_variables
             ]
         )
+
+        return "{\n" + summary + "\n}"
 
     def format(
         self,
@@ -79,12 +81,12 @@ class SecondPersonEnumeratedContextPrompt(BasePrompt):
         )
 
         dependent_variable_prompt = QUESTION_REFERENCING_CONTEXT_TEMPLATE.format(
-            question=dependent_variable.to_natural_language(row),
+            question=dependent_variable.to_question_text(row),
             choices=choices,
         )
 
         return CONTEXT_AND_QUESTION_TEMPLATE.format(
-            context_summary="\n" + independent_variable_summary,
+            context_summary=independent_variable_summary,
             dependent_variable_prompt=dependent_variable_prompt,
         )
 

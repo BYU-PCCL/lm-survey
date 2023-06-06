@@ -66,6 +66,17 @@ def save_experiment(
         )
 
 
+def calculate_accuracy(
+    dependent_variable_samples: typing.List[DependentVariableSample],
+) -> float:
+    scores = [
+        dependent_variable_sample.completion.is_completion_correct
+        for dependent_variable_sample in dependent_variable_samples
+    ]
+
+    return np.mean(scores)
+
+
 def main(
     model_name: str,
     survey_name: str,
@@ -97,7 +108,9 @@ def main(
         )
     )
 
-    for dependent_variable_sample in tqdm(dependent_variable_samples):
+    loop = tqdm(dependent_variable_samples)
+
+    for dependent_variable_sample in loop:
         completion_log_probs = sampler.rank_completions(
             prompt=dependent_variable_sample.prompt,
             completions=dependent_variable_sample.completion.possible_completions,
@@ -106,12 +119,9 @@ def main(
             completion_log_probs
         )
 
-    accuracy = np.mean(
-        [
-            dependent_variable_sample.completion.is_completion_correct
-            for dependent_variable_sample in dependent_variable_samples
-        ]
-    )
+        accuracy = calculate_accuracy(dependent_variable_samples)
+
+        loop.set_description(f"Accuracy: {accuracy * 100:.2f}%")
 
     print(
         f"Accuracy: {accuracy * 100:.2f}% ({len(dependent_variable_samples)} samples)"

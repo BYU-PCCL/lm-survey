@@ -180,7 +180,7 @@ def test_first_person_natural_language_context_prompt_format(
     expected_prompt = """
 Context: I'm male. I'm White.
 
-Question:  
+Question: Do you (support) or (oppose) laws prohibiting abortions once cardiac activity, sometimes known as a fetal heartbeat, is detected?
 
 A) Oppose
 B) Support
@@ -208,12 +208,15 @@ def test_second_person_enumerated_context_prompt_format(
         independent_variables=independent_variables,
     )
 
-    expected_prompt = """
-Context: 
-Gender: Male
-Ethnicity: White
+    print(formatted_prompt)
 
-Question:  
+    expected_prompt = """
+Context: {
+    gender: male,
+    ethnicity: white,
+}
+
+Question: Do you (support) or (oppose) laws prohibiting abortions once cardiac activity, sometimes known as a fetal heartbeat, is detected?
 
 A) Oppose
 B) Support
