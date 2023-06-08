@@ -2,15 +2,16 @@ import argparse
 import functools
 import json
 import os
+from pathlib import Path
 import typing
 
 import numpy as np
 import pandas as pd
 
 from lm_survey.survey.prompts.prompt import (
-    FirstPersonNaturalLanguageContextPrompt,
-    SecondPersonEnumeratedContextPrompt,
-    SecondPersonInterviewContextPrompt,
+    NaturalLanguageContextPrompt,
+    EnumeratedContextPrompt,
+    InterviewContextPrompt,
 )
 from lm_survey.survey.dependent_variable_sample import (
     Completion,
@@ -24,8 +25,8 @@ class Survey:
     def __init__(
         self,
         name: str,
-        data_filename: str,
-        variables_filename: typing.Optional[str] = None,
+        data_filename: typing.Union[Path, str],
+        variables_filename: typing.Optional[typing.Union[Path, str]] = None,
         independent_variable_names: typing.List[str] = [],
         dependent_variable_names: typing.List[str] = [],
     ):
@@ -58,13 +59,15 @@ class Survey:
         self.set_dependent_variables(dependent_variable_names=dependent_variable_names)
 
         self._prompts = {
-            "second_person_natural_language_context": None,
-            "first_person_natural_language_context": FirstPersonNaturalLanguageContextPrompt(),
-            "second_person_enumerated_context": SecondPersonEnumeratedContextPrompt(),
-            "second_person_interview_context": SecondPersonInterviewContextPrompt(),
+            "second_person_natural_language_context": NaturalLanguageContextPrompt(),
+            "first_person_natural_language_context": NaturalLanguageContextPrompt(),
+            "second_person_enumerated_context": EnumeratedContextPrompt(),
+            "second_person_interview_context": InterviewContextPrompt(),
         }
 
-    def _load_variables(self, variables_filename: str) -> typing.List[Variable]:
+    def _load_variables(
+        self, variables_filename: typing.Union[Path, str]
+    ) -> typing.List[Variable]:
         with open(variables_filename, "r") as file:
             return [Variable(**variable) for variable in json.load(file)]
 

@@ -1,8 +1,8 @@
 import typing
 from lm_survey.survey.prompts.prompt import (
-    SecondPersonEnumeratedContextPrompt,
-    FirstPersonNaturalLanguageContextPrompt,
-    SecondPersonInterviewContextPrompt,
+    EnumeratedContextPrompt,
+    NaturalLanguageContextPrompt,
+    InterviewContextPrompt,
 )
 import pytest
 import pandas as pd
@@ -169,7 +169,7 @@ def test_first_person_natural_language_context_prompt_format(
     dependent_variables: Variable,
     independent_variables: typing.List[Variable],
 ) -> str:
-    prompt = FirstPersonNaturalLanguageContextPrompt()
+    prompt = NaturalLanguageContextPrompt()
 
     formatted_prompt = prompt.format(
         row=row,
@@ -200,7 +200,7 @@ def test_second_person_enumerated_context_prompt_format(
     dependent_variables: Variable,
     independent_variables: typing.List[Variable],
 ) -> str:
-    prompt = SecondPersonEnumeratedContextPrompt()
+    prompt = EnumeratedContextPrompt()
 
     formatted_prompt = prompt.format(
         row=row,
@@ -236,7 +236,7 @@ def test_second_person_interview_context_prompt_format(
     dependent_variables: Variable,
     independent_variables: typing.List[Variable],
 ) -> str:
-    prompt = SecondPersonInterviewContextPrompt()
+    prompt = InterviewContextPrompt()
 
     formatted_prompt = prompt.format(
         row=row,

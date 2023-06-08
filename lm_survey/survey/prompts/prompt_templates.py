@@ -40,7 +40,7 @@ def format_enumerated_iv_summary(independent_variables: typing.Dict[str, str]) -
 
 
 def format_interview_prompt(
-    questions: typing.List[typing.Dict[str, typing.Union[str, typing.List[str]]]],
+    questions: typing.List[typing.Dict[str, typing.List[typing.Union[str, None]]]],
 ) -> str:
     return "\n\n".join(
         [
@@ -57,7 +57,7 @@ def format_interview_prompt(
 
 
 def format_multiple_choice_options(
-    options: typing.List[typing.Union[str, None]]
+    options: typing.Union[typing.List[str], typing.List[typing.Union[str, None]]]
 ) -> str:
     return "\n".join(
         [f"{MULTIPLE_CHOICE_LIST[i]}) {option}" for i, option in enumerate(options)]

@@ -20,7 +20,7 @@ class BasePrompt(ABC):
         pass
 
 
-class FirstPersonNaturalLanguageContextPrompt(BasePrompt):
+class NaturalLanguageContextPrompt(BasePrompt):
     def _create_independent_variable_summary(
         self, independent_variables: typing.List[Variable], row: pd.Series
     ) -> str:
@@ -53,7 +53,7 @@ class FirstPersonNaturalLanguageContextPrompt(BasePrompt):
         )
 
 
-class SecondPersonEnumeratedContextPrompt(BasePrompt):
+class EnumeratedContextPrompt(BasePrompt):
     def _create_independent_variable_summary(
         self, independent_variables: typing.List[Variable], row: pd.Series
     ) -> str:
@@ -91,7 +91,7 @@ class SecondPersonEnumeratedContextPrompt(BasePrompt):
         )
 
 
-class SecondPersonInterviewContextPrompt(BasePrompt):
+class InterviewContextPrompt(BasePrompt):
     def _format_long_variable(
         self, variable: Variable, row: pd.Series, include_answer: bool = False
     ):
