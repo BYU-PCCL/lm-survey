@@ -1,6 +1,7 @@
 import argparse
 import json
 import os
+from pathlib import Path
 import typing
 
 import numpy as np
@@ -11,7 +12,9 @@ from lm_survey.survey import DependentVariableSample, Survey
 
 
 def parse_model_name(model_name: str) -> str:
-    if model_name.startswith("/"):
+    if model_name.startswith("/") and model_name.endswith("/"):
+        model_name = model_name.split("/")[-2]
+    elif model_name.startswith("/"):
         model_name = model_name.split("/")[-1]
     else:
         model_name = model_name.replace("/", "-")
@@ -26,8 +29,9 @@ def get_commit_hash():
 
 def save_experiment(
     model_name: str,
-    experiment_dir: str,
+    experiment_dir: Path,
     dependent_variable_samples: typing.List[DependentVariableSample],
+    prompt_name: str,
     n_samples_per_dependent_variable: typing.Optional[int] = None,
 ):
     parsed_model_name = parse_model_name(model_name)
@@ -40,21 +44,22 @@ def save_experiment(
         "model_name": model_name,
         "n_samples_per_dependent_variable": n_samples_per_dependent_variable,
         "commit_hash": get_commit_hash(),
+        "prompt_name": prompt_name,
     }
 
-    experiment_metadata_dir = os.path.join(experiment_dir, parsed_model_name)
+    experiment_metadata_dir = experiment_dir / parsed_model_name
 
-    if not os.path.exists(experiment_metadata_dir):
-        os.makedirs(experiment_metadata_dir)
+    if not experiment_metadata_dir.exists():
+        experiment_metadata_dir.mkdir(parents=True)
 
-    with open(os.path.join(experiment_metadata_dir, "metadata.json"), "w") as file:
+    with open(experiment_metadata_dir / "metadata.json", "w") as file:
         json.dump(
             metadata,
             file,
             indent=4,
         )
 
-    with open(os.path.join(experiment_metadata_dir, "results.json"), "w") as file:
+    with open(experiment_metadata_dir / "results.json", "w") as file:
         json.dump(
             results,
             file,
@@ -62,23 +67,54 @@ def save_experiment(
         )
 
 
+def calculate_accuracy(
+    dependent_variable_samples: typing.List[DependentVariableSample],
+) -> float:
+    scores = [
+        dependent_variable_sample.completion.is_completion_correct
+        for dependent_variable_sample in dependent_variable_samples
+        if dependent_variable_sample.completion.are_completion_log_probs_set()
+    ]
+
+    return np.mean(scores)
+
+
+def calculate_baseline(
+    dependent_variable_samples: typing.List[DependentVariableSample],
+) -> float:
+    scores = [
+        1 / len(dependent_variable_sample.completion.possible_completions)
+        for dependent_variable_sample in dependent_variable_samples
+        if dependent_variable_sample.completion.are_completion_log_probs_set()
+    ]
+
+    return np.mean(scores)
+
+
 def main(
     model_name: str,
     survey_name: str,
     experiment_name: str,
+    prompt_name: str,
     n_samples_per_dependent_variable: typing.Optional[int] = None,
 ) -> None:
-    data_dir = os.path.join("data", survey_name)
-    variable_dir = os.path.join("variables", survey_name)
-    experiment_dir = os.path.join("experiments", experiment_name, survey_name)
+    data_dir = Path("data", survey_name)
+    experiment_dir = Path("experiments", experiment_name, survey_name)
 
-    with open(os.path.join(experiment_dir, "config.json"), "r") as file:
+    with open(Path(experiment_dir, "config.json"), "r") as file:
         config = json.load(file)
+
+    # If there is a variables file in the experiment directory, use that.
+    variables_filename = experiment_dir / "variables.json"
+
+    # Otherwise, use the default variables file for the survey.
+    if not variables_filename.exists():
+        variables_filename = Path("variables", survey_name, "variables.json")
 
     survey = Survey(
         name=survey_name,
-        data_filename=os.path.join(data_dir, "data.csv"),
-        variables_filename=os.path.join(variable_dir, "variables.json"),
+        data_filename=Path(data_dir, "data.csv"),
+        variables_filename=variables_filename,
         independent_variable_names=config["independent_variable_names"],
         dependent_variable_names=config["dependent_variable_names"],
     )
@@ -87,12 +123,15 @@ def main(
 
     dependent_variable_samples = list(
         survey.iterate(
-            n_samples_per_dependent_variable=n_samples_per_dependent_variable
+            n_samples_per_dependent_variable=n_samples_per_dependent_variable,
+            prompt_name=prompt_name,
         )
     )
 
-    for dependent_variable_sample in tqdm(dependent_variable_samples):
+    loop = tqdm(dependent_variable_samples)
+    accuracy = 0.0
 
+    for dependent_variable_sample in loop:
         completion_log_probs = sampler.rank_completions(
             prompt=dependent_variable_sample.prompt,
             completions=dependent_variable_sample.completion.possible_completions,
@@ -101,12 +140,12 @@ def main(
             completion_log_probs
         )
 
-    accuracy = np.mean(
-        [
-            dependent_variable_sample.completion.is_completion_correct
-            for dependent_variable_sample in dependent_variable_samples
-        ]
-    )
+        accuracy = calculate_accuracy(dependent_variable_samples)
+        baseline = calculate_baseline(dependent_variable_samples)
+
+        loop.set_description(
+            f"Accuracy: {accuracy * 100:.2f}%, Baseline: {baseline * 100:.2f}%"
+        )
 
     print(
         f"Accuracy: {accuracy * 100:.2f}% ({len(dependent_variable_samples)} samples)"
@@ -116,6 +155,7 @@ def main(
         model_name=model_name,
         experiment_dir=experiment_dir,
         dependent_variable_samples=dependent_variable_samples,
+        prompt_name=prompt_name,
         n_samples_per_dependent_variable=n_samples_per_dependent_variable,
     )
 
@@ -146,6 +186,12 @@ if __name__ == "__main__":
         type=str,
         default="default",
     )
+    parser.add_argument(
+        "-p",
+        "--prompt_name",
+        type=str,
+        default="first_person_natural_language_context",
+    )
 
     args = parser.parse_args()
 
@@ -161,4 +207,5 @@ if __name__ == "__main__":
         survey_name=args.survey_name,
         experiment_name=args.experiment_name,
         n_samples_per_dependent_variable=args.n_samples_per_dependent_variable,
+        prompt_name=args.prompt_name,
     )

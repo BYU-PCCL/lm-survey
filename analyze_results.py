@@ -61,12 +61,21 @@ if __name__ == "__main__":
 
     slices = []
 
-    for ideology, ideology_survey_results in survey_results.items():
-        print(ideology)
-        print(
-            ideology_survey_results.get_mean_score(slice_by=slices).nlargest(
-                3, "95%_lower_bound_gain"
-            ),
-            sep="\n",
-            end="\n\n",
-        )
+    # for ideology, ideology_survey_results in survey_results.items():
+    #     print(ideology)
+    #     print(
+    #         ideology_survey_results.get_mean_score(slice_by=slices).nlargest(
+    #             3, "95%_lower_bound_gain"
+    #         ),
+    #         sep="\n",
+    #         end="\n\n",
+    #     )
+
+    analysis_path = experiment_dir / args.model / "analysis.json"
+
+    summary_df = (
+        survey_results["center"]
+        .summarize(slice_by=slices)
+        .round(2)
+        .to_json(analysis_path, indent=4)
+    )

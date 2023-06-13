@@ -1,26 +1,32 @@
+import argparse
+import functools
+import json
 import os
+from pathlib import Path
 import typing
+
 import numpy as np
 import pandas as pd
 
+from lm_survey.survey.prompts.prompt import (
+    NaturalLanguageContextPrompt,
+    EnumeratedContextPrompt,
+    InterviewContextPrompt,
+)
 from lm_survey.survey.dependent_variable_sample import (
     Completion,
     DependentVariableSample,
 )
 from lm_survey.survey.question import Question, ValidOption
 from lm_survey.survey.variable import Variable
-from lm_survey.prompt_templates import INDEPENDENT_VARIABLE_SUMMARY_TEMPLATE
-import json
-import functools
-import argparse
 
 
 class Survey:
     def __init__(
         self,
         name: str,
-        data_filename: str,
-        variables_filename: typing.Optional[str] = None,
+        data_filename: typing.Union[Path, str],
+        variables_filename: typing.Optional[typing.Union[Path, str]] = None,
         independent_variable_names: typing.List[str] = [],
         dependent_variable_names: typing.List[str] = [],
     ):
@@ -52,7 +58,16 @@ class Survey:
 
         self.set_dependent_variables(dependent_variable_names=dependent_variable_names)
 
-    def _load_variables(self, variables_filename: str) -> typing.List[Variable]:
+        self._prompts = {
+            "second_person_natural_language_context": NaturalLanguageContextPrompt(),
+            "first_person_natural_language_context": NaturalLanguageContextPrompt(),
+            "second_person_enumerated_context": EnumeratedContextPrompt(),
+            "second_person_interview_context": InterviewContextPrompt(),
+        }
+
+    def _load_variables(
+        self, variables_filename: typing.Union[Path, str]
+    ) -> typing.List[Variable]:
         with open(variables_filename, "r") as file:
             return [Variable(**variable) for variable in json.load(file)]
 
@@ -72,43 +87,39 @@ class Survey:
             if variable.name in acceptable_names
         }
 
-    def _handle_missing_independent_variable(func: typing.Callable) -> typing.Callable:  # type: ignore
+    def _handle_missing_variable(func: typing.Callable) -> typing.Callable:  # type: ignore
         @functools.wraps(func)
-        def wrapper(self, row: pd.Series) -> str:
+        def wrapper(self, *args, **kwargs) -> str:
             try:
-                return func(self, row)
+                return func(self, *args, **kwargs)
             except ValueError as error:
                 raise ValueError(
-                    "Row does not contain all fields for the independent"
-                    f" variable summary. {error}"
+                    "Row does not contain all fields for the required"
+                    f" variables. {error}"
                 )
 
         return wrapper
 
-    @_handle_missing_independent_variable
-    def _create_independent_variable_summary(self, row: pd.Series) -> str:
-        return " ".join(
-            [
-                variable.to_natural_language(row)
-                for variable in self._independent_variables
-            ]
-        )
-
-    @_handle_missing_independent_variable
+    @_handle_missing_variable
     def _get_independent_variable_dict(self, row: pd.Series) -> typing.Dict[str, str]:
         return {
             variable.name: variable.to_text(row)
             for variable in self._independent_variables
         }
 
+    @_handle_missing_variable
     def _templatize(
         self,
-        independent_variable_summary: str,
-        dependent_variable_prompt: str,
+        row: pd.Series,
+        dependent_variable: str,
+        prompt_name: str,
     ) -> str:
-        return INDEPENDENT_VARIABLE_SUMMARY_TEMPLATE.format(
-            context_summary=independent_variable_summary,
-            dependent_variable_prompt=dependent_variable_prompt,
+        independent_variables = [variable for variable in self._independent_variables]
+
+        return self._prompts[prompt_name].format(
+            row=row,
+            independent_variables=independent_variables,
+            dependent_variable=dependent_variable,
         )
 
     def _get_question_text(self, key: str) -> str:
@@ -400,8 +411,17 @@ class Survey:
         return [variable.to_dict() for variable in self.variables]
 
     def iterate(
-        self, n_samples_per_dependent_variable: typing.Optional[int] = None
+        self,
+        n_samples_per_dependent_variable: typing.Optional[int] = None,
+        prompt_name: str = "first_person_natural_language_context",
+        n_shots: int = 0,
     ) -> typing.Iterator[DependentVariableSample]:
+        if prompt_name not in self._prompts:
+            raise ValueError(
+                f"{prompt_name} is not a valid prompt name. Valid prompt names are"
+                f" {self._prompts.keys()}"
+            )
+
         if n_samples_per_dependent_variable is None:
             n_samples_per_dependent_variable = len(self.df)
 
@@ -412,13 +432,6 @@ class Survey:
         # The index from iterrows gives type errors when using it as a key in iloc.
         for name, dependent_variable in self._dependent_variables.items():
             for i, row in self.df.sample(frac=1).iterrows():
-                try:
-                    independent_variable_summary = (
-                        self._create_independent_variable_summary(row)
-                    )
-                except ValueError:
-                    continue
-
                 if (
                     n_sampled_per_dependent_variable[name]
                     >= n_samples_per_dependent_variable
@@ -428,12 +441,14 @@ class Survey:
                 if not dependent_variable.is_valid(row):
                     continue
 
-                dependent_variable_prompt = dependent_variable.to_prompt(row)
-
-                prompt = self._templatize(
-                    independent_variable_summary=independent_variable_summary,
-                    dependent_variable_prompt=dependent_variable_prompt,
-                )
+                try:
+                    prompt = self._templatize(
+                        row=row,
+                        prompt_name=prompt_name,
+                        dependent_variable=dependent_variable,
+                    )
+                except ValueError:
+                    continue
 
                 correct_completion = dependent_variable.get_correct_letter(row)
                 possible_completions = [
@@ -449,7 +464,7 @@ class Survey:
 
                 yield DependentVariableSample(
                     variable_name=name,
-                    question=dependent_variable.to_question(row),
+                    question=dependent_variable.to_question_text(row),
                     independent_variables=independent_variables,
                     index=i,  # type: ignore
                     prompt=prompt,
@@ -484,7 +499,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     data_dir = os.path.join("data", args.survey_name)
-    experiment_dir = os.path.join("experiments", args.survey_name, args.experiment_name)
+    experiment_dir = os.path.join("experiments", args.experiment_name, args.survey_name)
     variable_dir = os.path.join("variables", args.survey_name)
 
     with open(os.path.join(experiment_dir, "config.json"), "r") as file:
@@ -498,8 +513,15 @@ if __name__ == "__main__":
         dependent_variable_names=config["dependent_variable_names"],
     )
 
-    question_samples = list(iter(survey))
-
-    print(
-        f"{len(question_samples) / len(config['dependent_variable_names']) / len(survey.df) * 100:.2f}%"
+    question_samples = list(
+        [
+            sample
+            for sample in survey.iterate(prompt_name="second_person_interview_context")
+        ]
     )
+
+    print(question_samples[0].prompt)
+
+    # print(
+    #     f"{len(question_samples) / len(config['dependent_variable_names']) / len(survey.df) * 100:.2f}%"
+    # )

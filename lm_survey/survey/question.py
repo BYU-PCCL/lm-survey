@@ -1,10 +1,6 @@
 import typing
 import pandas as pd
 from lm_survey.constants import MULTIPLE_CHOICE_LIST
-from lm_survey.prompt_templates import (
-    DEPENDENT_VARIABLE_TEMPLATE,
-    format_multiple_choice_options,
-)
 
 
 class ValidOption:
@@ -67,13 +63,8 @@ class Question:
             "invalid_options": list(self.invalid_options),
         }
 
-    def to_prompt(self) -> str:
-        return DEPENDENT_VARIABLE_TEMPLATE.format(
-            question=self.text,
-            choices=format_multiple_choice_options(
-                [value.text for value in self.valid_options.values()]
-            ),
-        )
+    def to_options(self) -> typing.List[str]:
+        return [value.text for value in self.valid_options.values()]
 
     def is_valid(self, row: pd.Series) -> bool:
         return row[self.key] not in self.invalid_options and not pd.isna(row[self.key])
