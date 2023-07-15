@@ -18,22 +18,18 @@ def test_format_interview_prompt():
         },
     ]
     expected_output = """
-Question: What is your name?
+What is your name?
 
-A) Chris
-B) Alex
-
-Please respond with the letter of the answer choice that best fits your opinion.
+A. Chris
+B. Alex
 
 Answer: A
 
-Question: What is your favorite color?
+What is your favorite color?
 
-A) Red
-B) Green
-C) Blue
-
-Please respond with the letter of the answer choice that best fits your opinion.
+A. Red
+B. Green
+C. Blue
 
 Answer: B
     """.strip()

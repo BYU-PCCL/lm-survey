@@ -166,9 +166,9 @@ def row():
 
 def test_first_person_natural_language_context_prompt_format(
     row: pd.Series,
-    dependent_variables: Variable,
+    dependent_variables: typing.List[Variable],
     independent_variables: typing.List[Variable],
-) -> str:
+):
     prompt = NaturalLanguageContextPrompt()
 
     formatted_prompt = prompt.format(
@@ -178,14 +178,12 @@ def test_first_person_natural_language_context_prompt_format(
     )
 
     expected_prompt = """
-Context: I'm male. I'm White.
+I'm male. I'm White.
 
-Question: Do you (support) or (oppose) laws prohibiting abortions once cardiac activity, sometimes known as a fetal heartbeat, is detected?
+Do you (support) or (oppose) laws prohibiting abortions once cardiac activity, sometimes known as a fetal heartbeat, is detected?
 
-A) Oppose
-B) Support
-
-Please respond with the letter of the answer choice that best fits the context.
+A. Oppose
+B. Support
 
 Answer:
     """.strip()
@@ -197,9 +195,9 @@ Answer:
 
 def test_second_person_enumerated_context_prompt_format(
     row: pd.Series,
-    dependent_variables: Variable,
+    dependent_variables: typing.List[Variable],
     independent_variables: typing.List[Variable],
-) -> str:
+):
     prompt = EnumeratedContextPrompt()
 
     formatted_prompt = prompt.format(
@@ -211,17 +209,15 @@ def test_second_person_enumerated_context_prompt_format(
     print(formatted_prompt)
 
     expected_prompt = """
-Context: {
+{
     gender: male,
     ethnicity: white,
 }
 
-Question: Do you (support) or (oppose) laws prohibiting abortions once cardiac activity, sometimes known as a fetal heartbeat, is detected?
+Do you (support) or (oppose) laws prohibiting abortions once cardiac activity, sometimes known as a fetal heartbeat, is detected?
 
-A) Oppose
-B) Support
-
-Please respond with the letter of the answer choice that best fits the context.
+A. Oppose
+B. Support
 
 Answer:
     """.strip()
@@ -233,9 +229,9 @@ Answer:
 
 def test_second_person_interview_context_prompt_format(
     row: pd.Series,
-    dependent_variables: Variable,
+    dependent_variables: typing.List[Variable],
     independent_variables: typing.List[Variable],
-) -> str:
+):
     prompt = InterviewContextPrompt()
 
     formatted_prompt = prompt.format(
@@ -245,38 +241,32 @@ def test_second_person_interview_context_prompt_format(
     )
 
     expected_prompt = """
-Question: What is your gender? 
+What is your gender? 
 
-A) Male
-B) Female
-C) Other (Vol. for phone)
-
-Please respond with the letter of the answer choice that best fits your opinion.
+A. Male
+B. Female
+C. Other (Vol. for phone)
 
 Answer: A
 
 ###
 
-Question: Do you consider yourself white, black or African American, Asian, Native American, Pacific Islander, mixed race or some other race?
+Do you consider yourself white, black or African American, Asian, Native American, Pacific Islander, mixed race or some other race?
 
-A) White
-B) Black or African American
-C) Native American/American Indian/Alaska Native
-D) Asian/Chinese/Japanese
-E) Mixed
-
-Please respond with the letter of the answer choice that best fits your opinion.
+A. White
+B. Black or African American
+C. Native American/American Indian/Alaska Native
+D. Asian/Chinese/Japanese
+E. Mixed
 
 Answer: A
 
 ###
 
-Question: Do you (support) or (oppose) laws prohibiting abortions once cardiac activity, sometimes known as a fetal heartbeat, is detected?
+Do you (support) or (oppose) laws prohibiting abortions once cardiac activity, sometimes known as a fetal heartbeat, is detected?
 
-A) Oppose
-B) Support
-
-Please respond with the letter of the answer choice that best fits your opinion.
+A. Oppose
+B. Support
 
 Answer:
     """.strip()

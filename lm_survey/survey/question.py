@@ -9,6 +9,7 @@ class ValidOption:
         raw: str,
         text: typing.Optional[str] = None,
         natural_language: typing.Optional[str] = None,
+        **kwargs,
     ) -> None:
         self.raw = raw
         self.text = text

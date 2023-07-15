@@ -8,7 +8,6 @@ from lm_survey.survey.prompts.prompt_templates import (
     MULTIPLE_CHOICE_QUESTION_TEMPLATE,
     OPEN_RESPONSE_QUESTION_TEMPLATE,
     format_multiple_choice_options,
-    QUESTION_REFERENCING_CONTEXT_TEMPLATE,
 )
 
 
@@ -42,7 +41,7 @@ class NaturalLanguageContextPrompt(BasePrompt):
             options=dependent_variable.to_options(row)
         )
 
-        dependent_variable_prompt = QUESTION_REFERENCING_CONTEXT_TEMPLATE.format(
+        dependent_variable_prompt = MULTIPLE_CHOICE_QUESTION_TEMPLATE.format(
             question=dependent_variable.to_question_text(row),
             choices=choices,
         )
@@ -80,7 +79,7 @@ class EnumeratedContextPrompt(BasePrompt):
             options=dependent_variable.to_options(row)
         )
 
-        dependent_variable_prompt = QUESTION_REFERENCING_CONTEXT_TEMPLATE.format(
+        dependent_variable_prompt = MULTIPLE_CHOICE_QUESTION_TEMPLATE.format(
             question=dependent_variable.to_question_text(row),
             choices=choices,
         )

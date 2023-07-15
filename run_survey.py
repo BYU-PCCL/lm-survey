@@ -11,15 +11,14 @@ from lm_survey.samplers import AutoSampler
 from lm_survey.survey import DependentVariableSample, Survey
 
 
-def parse_model_name(model_name: str) -> str:
-    if model_name.startswith("/") and model_name.endswith("/"):
-        model_name = model_name.split("/")[-2]
-    elif model_name.startswith("/"):
-        model_name = model_name.split("/")[-1]
+def get_experiment_path(experiment_dir: Path, model_path: Path) -> Path:
+    """
+    The model_path should look like: /**/{topic}/{model_name}/{raw|instruct}/{ideology}
+    """
+    if "models" in model_path.parts:
+        return Path(experiment_dir, model_path.name, "base")
     else:
-        model_name = model_name.replace("/", "-")
-
-    return model_name
+        return Path(experiment_dir, *model_path.parts[-3:])
 
 
 def get_commit_hash():
@@ -34,8 +33,6 @@ def save_experiment(
     prompt_name: str,
     n_samples_per_dependent_variable: typing.Optional[int] = None,
 ):
-    parsed_model_name = parse_model_name(model_name)
-
     results = [
         question_sample.to_dict() for question_sample in dependent_variable_samples
     ]
@@ -47,19 +44,21 @@ def save_experiment(
         "prompt_name": prompt_name,
     }
 
-    experiment_metadata_dir = experiment_dir / parsed_model_name
+    experiment_path = get_experiment_path(
+        experiment_dir=experiment_dir,
+        model_path=Path(model_name),
+    )
 
-    if not experiment_metadata_dir.exists():
-        experiment_metadata_dir.mkdir(parents=True)
+    experiment_path.mkdir(exist_ok=True, parents=True)
 
-    with open(experiment_metadata_dir / "metadata.json", "w") as file:
+    with open(experiment_path / "metadata.json", "w") as file:
         json.dump(
             metadata,
             file,
             indent=4,
         )
 
-    with open(experiment_metadata_dir / "results.json", "w") as file:
+    with open(experiment_path / "results.json", "w") as file:
         json.dump(
             results,
             file,
@@ -190,7 +189,7 @@ if __name__ == "__main__":
         "-p",
         "--prompt_name",
         type=str,
-        default="first_person_natural_language_context",
+        default="second_person_natural_language_context",
     )
 
     args = parser.parse_args()

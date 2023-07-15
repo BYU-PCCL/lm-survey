@@ -1,8 +1,8 @@
 import typing
-from lm_survey.samplers.base_sampler import BaseSampler
 
 import torch
-from transformers import AutoTokenizer, AutoModelForCausalLM
+from lm_survey.samplers.base_sampler import BaseSampler
+from transformers import AutoModelForCausalLM, AutoTokenizer
 
 
 class HfSampler(BaseSampler):
@@ -12,14 +12,15 @@ class HfSampler(BaseSampler):
         print(f"Loading {self.model_name}...")
 
         self.model = AutoModelForCausalLM.from_pretrained(
-            self.model_name, device_map="auto", trust_remote_code=True
+            self.model_name, device_map="auto"
         )
+
         self.model.eval()
 
+        print("Loading tokenizer...")
         self.tokenizer = AutoTokenizer.from_pretrained(
             self.model_name,
             use_fast=False,
-            trust_remote_code=True,
             truncation_side="left",
         )
         self.tokenizer.pad_token = self.tokenizer.eos_token
@@ -37,10 +38,9 @@ class HfSampler(BaseSampler):
     ) -> typing.Dict[str, float]:
         inputs = self.tokenizer(
             prompt,
-            padding="max_length",
             truncation=True,
             return_tensors="pt",
-            return_token_type_ids=False,
+            # return_token_type_ids=False,
         ).to(self.device)
 
         with torch.no_grad():
@@ -66,10 +66,9 @@ class HfSampler(BaseSampler):
     ) -> typing.Dict[str, float]:
         inputs = self.tokenizer(
             prompt,
-            padding="max_length",
             truncation=True,
             return_tensors="pt",
-            return_token_type_ids=False,
+            # return_token_type_ids=False,
         ).to(self.device)
 
         with torch.no_grad():
@@ -109,6 +108,7 @@ class HfSampler(BaseSampler):
             max_new_tokens=n_tokens,
             temperature=temperature,
             pad_token_id=self.tokenizer.eos_token_id,
+            num_beams=4,
         ).to("cpu")
         preds = self.tokenizer.batch_decode(
             tokens, clean_up_tokenization_spaces=True, skip_special_tokens=True
@@ -118,11 +118,13 @@ class HfSampler(BaseSampler):
 
 if __name__ == "__main__":
     sampler = HfSampler(
-        model_name="/mnt/pccfs2/backed_up/models/llama/finetunes/llama-30b-hf-left"
+        model_name="/home/ashaw8/compute/finetunes/abortion/llama-30b-hf/instruct/right",
     )
 
     generation = sampler.sample_several(
-        "I think abortion is", temperature=0.7, n_tokens=200
+        "When asked if I think abortion should be legal, I respond",
+        temperature=1,
+        n_tokens=200,
     )
 
     print(generation)

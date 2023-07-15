@@ -55,7 +55,7 @@ class OpenAiSampler(BaseSampler):
             print(e)
             return {}
 
-    def sample_several(self, prompt, temperature=0, n_tokens=10):
+    def sample_several(self, prompt, temperature: float = 0, n_tokens=10):
         response = openai.Completion.create(
             engine=self.engine,
             prompt=prompt,

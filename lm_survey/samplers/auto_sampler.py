@@ -18,7 +18,7 @@ class AutoSampler(BaseSampler):
     def send_prompt(self, prompt, n_probs):
         return self.sampler.send_prompt(prompt, n_probs)
 
-    def sample_several(self, prompt, temperature=0, n_tokens=10):
+    def sample_several(self, prompt, temperature: float = 0, n_tokens=10):
         return self.sampler.sample_several(prompt, temperature, n_tokens)
 
 

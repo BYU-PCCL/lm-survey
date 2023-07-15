@@ -140,3 +140,5 @@ experiments
 variables
 *.zip
 *.tar.gz
+slurm-*
+plots
